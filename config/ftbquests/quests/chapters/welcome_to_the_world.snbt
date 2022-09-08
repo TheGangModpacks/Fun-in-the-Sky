@@ -1,0 +1,146 @@
+{
+	id: "0FA1839D49117C8D"
+	group: "67B4334297F15B2D"
+	order_index: 0
+	filename: "welcome_to_the_world"
+	title: "Welcome to the World"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "minecraft:grass_block"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "The End is never the End"
+			description: ["Hey there! Welcome to Fun in the Sky! Please refer to the info checks up above for extra things :)"]
+			id: "02CC8DCEBD4C93A4"
+			tasks: [{
+				id: "05D827DAB1289B1D"
+				type: "checkmark"
+				title: "The Beginning"
+			}]
+			rewards: [{
+				id: "71663ECB59E54D6A"
+				type: "item"
+				item: "botania:grass_seeds"
+			}]
+		}
+		{
+			icon: "botania:white_floating_flower"
+			x: 0.0d
+			y: -3.5d
+			subtitle: "Above the sea"
+			description: [
+				"Some notes about the island you seem to be stranded on:                                         "
+				"You see a little mound, it appears to be a bit... bright, on the inside. You take a look, and it appears to be Lava, trapped under a single piece of glass. Do be careful when interacting here.               "
+				"You also see a chest, with a very interesting look. Might be worth checking."
+			]
+			dependencies: ["02CC8DCEBD4C93A4"]
+			id: "10F52602C501C23E"
+			tasks: [{
+				id: "14DCC4E555624AC0"
+				type: "checkmark"
+				title: "The Island"
+			}]
+			rewards: [{
+				id: "625908FA02BECCA1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			subtitle: "The 2nd most wanted thing in all of Modded"
+			description: ["When you look at blocks, an interesting... box, appears at the top of the screen. This little box appears to show information about the things I look at. I believe crouching shows even more information..."]
+			dependencies: ["10F52602C501C23E"]
+			id: "671DAED3A445DA96"
+			tasks: [{
+				id: "0F59B7F9AB3B54C6"
+				type: "checkmark"
+				title: "What am I lookin at??"
+			}]
+			rewards: [{
+				id: "6B6B9F782A894D08"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			subtitle: "Recipes at a glance"
+			description: ["In your inventory, you see a very large list of some kind to your right. It's a list of every block and item in the game. You can click on them to view recipes, or show what recipes they are used for. What a revoluntionary invention!"]
+			dependencies: ["10F52602C501C23E"]
+			id: "13CD8476A2D573FB"
+			tasks: [{
+				id: "361238872470EBC1"
+				type: "checkmark"
+				title: "I've Just Had Enough!"
+			}]
+			rewards: [{
+				id: "5E22FB23BD4ADA54"
+				type: "item"
+				item: "farmersdelight:canvas_sign"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			subtitle: "Help! I need somebody, Help!"
+			description: [
+				"Do you require assistance? Join our Discord server and ask any question that you could possibly have in that blocky head of yours.                           "
+				"Additionally, if you think you found some bugs, we recommend you open a bug report in our Github page.                      "
+				"Oh, you didn't get a sapling? Sorry about that, here, take this one."
+			]
+			dependencies: ["10F52602C501C23E"]
+			id: "6BE0B3E7D92C4158"
+			tasks: [{
+				id: "0A051D9EDF8B329B"
+				type: "checkmark"
+				title: "I need help!"
+			}]
+			rewards: [{
+				id: "3EF3FA435106E5C3"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			subtitle: "They never last"
+			description: ["You can use /skyblock commands to invite friends over, or do other \"skyblock\" things, if you prefer."]
+			dependencies: ["10F52602C501C23E"]
+			id: "3C6DE5E194C9A3E0"
+			tasks: [{
+				id: "0FF80134833E9856"
+				type: "checkmark"
+				title: "Friendship!"
+			}]
+			rewards: [{
+				id: "531E6453A2A8DD9E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			subtitle: "Those darn Silverfish, and their silly Endermen"
+			description: ["Your island appears to be mostly made of stone. You might wonder if there are hidden secrets deep within..."]
+			dependencies: ["10F52602C501C23E"]
+			id: "5D12CDDC22B20DB0"
+			tasks: [{
+				id: "79F294B62B287207"
+				type: "checkmark"
+				title: "Infestation!"
+			}]
+			rewards: [{
+				id: "759F62E1B069B666"
+				type: "xp"
+				xp: 50
+			}]
+		}
+	]
+}
