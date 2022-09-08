@@ -1,6 +1,6 @@
 # Fun-Pack
 
-This is the official repository and issue-tracker for the modpack Fun-Pack, for Minecraft 1.18.2
+This is the official repository and issue-tracker for the modpack Fun-Pack, for Minecraft 1.16.5
 
 ### Table of Contents
 
