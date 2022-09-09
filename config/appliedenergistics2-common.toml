@@ -86,10 +86,10 @@
 
 [worldGen]
 	#Range: 0.0 ~ 1.0
-	spawnChargedChance = 0.08
+	spawnChargedChance = 0
 	meteoriteBiomeBlacklist = []
-	quartzOresPerCluster = 4
-	quartzOresClusterAmount = 20
+	quartzOresPerCluster = 0
+	quartzOresClusterAmount = 0
 	quartzOresBiomeBlacklist = []
 
 [wireless]
