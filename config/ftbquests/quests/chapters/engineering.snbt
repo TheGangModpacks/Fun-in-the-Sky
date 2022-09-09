@@ -1,0 +1,11 @@
+{
+	id: "47A9629B1BC157D9"
+	group: "67B4334297F15B2D"
+	order_index: 1
+	filename: "engineering"
+	title: "Engineering"
+	icon: "immersiveengineering:storage_steel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

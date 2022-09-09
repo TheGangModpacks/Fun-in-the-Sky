@@ -4,6 +4,7 @@
 	order_index: 0
 	filename: "welcome_to_the_world"
 	title: "Welcome to the World"
+	icon: "minecraft:lime_wool"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -140,6 +141,509 @@
 				id: "759F62E1B069B666"
 				type: "xp"
 				xp: 50
+			}]
+		}
+		{
+			title: "Punch! Slam! Whack!"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "Push it real good"
+			description: ["Need I explain anything else?"]
+			dependencies: ["02CC8DCEBD4C93A4"]
+			id: "6747D20A2F73D877"
+			tasks: [{
+				id: "21B0EC540E5176DC"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 16L
+			}]
+			rewards: [{
+				id: "3A09D655BD6D65F2"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 8
+			}]
+		}
+		{
+			title: "A Tinkerer's Dream"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Hot fudge on a stick"
+			description: ["Tinker's Construct is a tool mod, giving you the ability to make tools with parts made out of whatever you can think of. Neat!... is a mod by Vazkii"]
+			dependencies: ["6747D20A2F73D877"]
+			id: "0453ED5C2BBC52D3"
+			tasks: [{
+				id: "7EAE8427D0C6E56D"
+				type: "item"
+				item: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_log"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0C800A0C371C81E5"
+				type: "random"
+				table_id: 5818872724677911183L
+			}]
+		}
+		{
+			title: "Basic Needs"
+			x: 3.0d
+			y: -1.5d
+			subtitle: "Classic"
+			description: ["You will require Patterns to make basic molds for your tool parts. The Part Builder takes those patterns and a common material to create the parts. Then you put it all together in the Tinker station to make the tool."]
+			dependencies: ["0453ED5C2BBC52D3"]
+			id: "0CF1CF7CA2C80789"
+			tasks: [
+				{
+					id: "1C5FB9C1CE79FFA2"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "3754924B79FF8DF8"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3CF62050E70BFF73"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 12
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			subtitle: "I'm actually important?"
+			description: ["Materials and You provides information about everything related to tools, modifiers, and parts."]
+			dependencies: ["0CF1CF7CA2C80789"]
+			id: "6254ABDC1BD8B41B"
+			tasks: [{
+				id: "56C57660B6091106"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+			rewards: [{
+				id: "5C741B466E595ABC"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Advanced"
+			x: 5.0d
+			y: -1.5d
+			subtitle: "Wumbo"
+			description: ["Metal tool parts can only be made through the Meltery/Smeltery."]
+			dependencies: [
+				"66C14B2AA65C2AF6"
+				"6B1BD9D2E4155D32"
+			]
+			id: "76E94BBBF2AE7446"
+			tasks: [{
+				id: "1123E3DFB61D3C8E"
+				type: "item"
+				item: {
+					id: "tconstruct:pickaxe_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			subtitle: "Oh-clay"
+			description: ["Puny Smelting guides you through the early stages of advanced Tinkering."]
+			dependencies: ["6254ABDC1BD8B41B"]
+			id: "6B1BD9D2E4155D32"
+			tasks: [{
+				id: "25F7F5AA72A2FA5C"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+		}
+		{
+			title: "Time to Grind"
+			icon: "tconstruct:seared_melter"
+			x: 7.0d
+			y: -1.5d
+			subtitle: "Must be nice to not be made of rock"
+			description: ["The Meltery is the first step to advanced tinkering. To continue on from here, you will need to use this to pour 4 ingots worth of molten Copper onto a Seared Brick block to make the Smeltery Controller."]
+			dependencies: ["6B1BD9D2E4155D32"]
+			id: "66C14B2AA65C2AF6"
+			tasks: [
+				{
+					id: "028DCB339EBF657C"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "6C8FBC1ED542BD95"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "692C3946966ABE5E"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "5DB007296A573EE1"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
+			rewards: [{
+				id: "3FEDFF583C697F22"
+				type: "random"
+				table_id: 5818872724677911183L
+			}]
+		}
+		{
+			title: "The Smeltery"
+			icon: "tconstruct:smeltery_controller"
+			x: 8.0d
+			y: 0.0d
+			subtitle: "Advanced Darkness"
+			description: ["The famous Smeltery is built in any way as long as the floor is a non-functional Seared block, and the sides are made up as functional blocks or regular ones. You will require some extra things to get this to work."]
+			dependencies: ["66C14B2AA65C2AF6"]
+			id: "7D3E3033DAECC8D5"
+			tasks: [
+				{
+					id: "7564E7B82600BAB9"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "69C733B36A44D96B"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "7FAACE1D2196C060"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 8L
+				}
+				{
+					id: "10C7A59931B2A215"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "704DD6A0748DDB10"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+			]
+			rewards: [{
+				id: "0F47F22E6E177E50"
+				type: "random"
+				table_id: 5818872724677911183L
+			}]
+		}
+		{
+			title: "Shiver me Timbers"
+			icon: {
+				id: "exnihilosequentia:crook_wood"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.0d
+			y: 2.5d
+			subtitle: "I will steal everything"
+			description: ["You seem pretty tired, a lot more apples would probably make you feel better. Make a Crook, and break the leaves with it to get more drops."]
+			dependencies: ["6747D20A2F73D877"]
+			id: "16E134A810EFBBE2"
+			tasks: [
+				{
+					id: "1E30C4F625E4C218"
+					type: "item"
+					item: {
+						id: "exnihilosequentia:crook_wood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "40A8DFF7EA91FE69"
+					type: "item"
+					item: "minecraft:apple"
+					count: 6L
+				}
+			]
+			rewards: [{
+				id: "1D4735B310FECF8D"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:crook_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Silky Smooth"
+			icon: "exnihilosequentia:silkworm"
+			x: 4.5d
+			y: 2.5d
+			subtitle: "This ain't gonna make your crops grow faster"
+			description: ["You noticed little worms falling from the tree when breaking leaves with the crook. You remember being able to use said worms on the leaves to infest them, and recieve string when breaking them with a crook."]
+			dependencies: ["16E134A810EFBBE2"]
+			id: "0D31C93B435987F8"
+			tasks: [
+				{
+					id: "33F1B11C361853D3"
+					type: "item"
+					item: "exnihilosequentia:silkworm"
+				}
+				{
+					id: "1AD43523E6E73A67"
+					type: "item"
+					item: "minecraft:string"
+					count: 64L
+				}
+			]
+			rewards: [{
+				id: "51B211D79A17204E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "A Step-Up"
+			icon: "exnihilosequentia:sieve"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "Not up! Look down!"
+			description: ["You can use that string and turn it into a form of mesh, and sift through different blocks to get different resources. How Neat!"]
+			dependencies: ["0D31C93B435987F8"]
+			id: "151BA5F11D763A60"
+			tasks: [
+				{
+					id: "0D97C5B55E79BADF"
+					type: "item"
+					item: "exnihilosequentia:sieve"
+				}
+				{
+					id: "64DAFC94820C7E0D"
+					type: "item"
+					item: "exnihilosequentia:mesh_string"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 4.0d
+			subtitle: "Not Loot Lake again!"
+			description: ["Each type of Mesh can yield different resources, or the same resources at a higher chance of getting them. Make sure to check JEI before claiming a material is gotten from the Nether."]
+			dependencies: ["151BA5F11D763A60"]
+			id: "4C81CD71381AC197"
+			tasks: [{
+				id: "0CF5B9F0E995ADC1"
+				type: "checkmark"
+				title: "Loot Tables"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 4.0d
+			subtitle: "Hard on my fingers"
+			description: ["The Flint mesh enables the chance of getting metallic resources."]
+			dependencies: ["151BA5F11D763A60"]
+			id: "2C36E1B6F2C00110"
+			tasks: [{
+				id: "53BBE3EACAE6B397"
+				type: "item"
+				item: "exnihilosequentia:mesh_flint"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.0d
+			subtitle: "This hurts even more!"
+			description: ["The Iron mesh allows for less common materials to have a higher chance of being revealed. It also allows rarer resources to be found."]
+			dependencies: ["2C36E1B6F2C00110"]
+			id: "30DAF513A1C43A1F"
+			tasks: [{
+				id: "3333AC738E38360F"
+				type: "item"
+				item: "exnihilosequentia:mesh_iron"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 6.0d
+			subtitle: "Why are they all so sharp!"
+			description: ["The Diamond mesh doesn't really add much to get, it only increses the chance of getting rarer and less common resources."]
+			dependencies: ["30DAF513A1C43A1F"]
+			id: "0241F635A2243EC4"
+			tasks: [{
+				id: "313BCCF1EAD0A80B"
+				type: "item"
+				item: "exnihilosequentia:mesh_diamond"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 7.0d
+			subtitle: "Arghhhhh!"
+			description: ["The Emerald mesh more or less does the same as the Diamond mesh."]
+			dependencies: ["0241F635A2243EC4"]
+			id: "03FB16F3CD7AE883"
+			tasks: [{
+				id: "3988C8E41340DDEE"
+				type: "item"
+				item: "exnihilosequentia:mesh_emerald"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 8.0d
+			subtitle: "x_x"
+			description: ["Same deal as the last two mesh's, but hey at least it looks cool."]
+			dependencies: ["03FB16F3CD7AE883"]
+			id: "3A979E50C46CACB3"
+			tasks: [{
+				id: "1DC8B20196D08419"
+				type: "item"
+				item: "exnihilosequentia:mesh_netherite"
+			}]
+		}
+		{
+			title: "A Barrel of Fun... in the Sky!"
+			x: 11.5d
+			y: 2.5d
+			subtitle: "One more reference..."
+			description: ["The Barrel is used to make a few things with a combination of fluids. It can also be used like a Vanilla Composter."]
+			dependencies: ["335DC1FD12424DF4"]
+			id: "7DBFC1A05C1B91C8"
+			tasks: [{
+				id: "6404FD2275C37EDA"
+				type: "item"
+				item: "exnihilosequentia:barrel_wood"
+			}]
+		}
+		{
+			title: "The Stone Age"
+			x: 11.5d
+			y: 4.0d
+			subtitle: "Knock on Stone!"
+			description: ["The Stone barrel allows for extra things related to Barrels, including making Dolls to spawn certain mobs."]
+			dependencies: ["7DBFC1A05C1B91C8"]
+			id: "5A36BF36EF99F18C"
+			tasks: [{
+				id: "3C7E6210DE6396A5"
+				type: "item"
+				item: "exnihilosequentia:barrel_stone"
+			}]
+		}
+		{
+			title: "Crucible Delight"
+			x: 10.0d
+			y: 2.5d
+			subtitle: "Water we waiting for?"
+			description: ["Any Wooden crucible can be used to make Water, and possibly some other things..."]
+			dependencies: ["151BA5F11D763A60"]
+			id: "335DC1FD12424DF4"
+			tasks: [{
+				id: "6B59B0B54FBF6831"
+				type: "item"
+				item: "exnihilosequentia:crucible_wood"
+			}]
+		}
+		{
+			title: "Hot Topic"
+			x: 13.0d
+			y: 2.5d
+			subtitle: "Too hot to handle"
+			description: ["The Fired Crucible allows for the easy creation of Lava. Don't forget there is already a lava source block on your island. You will need a heat source underneath the crucible."]
+			dependencies: ["7DBFC1A05C1B91C8"]
+			id: "20250DC6750C070D"
+			tasks: [{
+				id: "1DAEA3884CF266A6"
+				type: "item"
+				item: "exnihilosequentia:crucible_fired"
+			}]
+		}
+		{
+			title: "Hammer Time"
+			x: 3.0d
+			y: 4.0d
+			subtitle: "hammer go bonk"
+			description: ["You can use this Hammer to turn Cobblestone into Gravel, Gravel into Sand, and then Sand into Dust."]
+			dependencies: ["16E134A810EFBBE2"]
+			id: "189839D3B182DD2D"
+			tasks: [{
+				id: "4165C87C58CAA1AD"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:hammer_wood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			subtitle: "Un-bee-lievable"
+			description: ["If you really really want Bees on your island, you can."]
+			dependencies: ["0D31C93B435987F8"]
+			optional: true
+			id: "70950FA02A77E26C"
+			tasks: [{
+				id: "525B8DF0983A14A0"
+				type: "item"
+				item: "exnihilosequentia:beehive_frame"
+			}]
+			rewards: [{
+				id: "404B11DA0D4B8F52"
+				type: "item"
+				item: "minecraft:beehive"
+			}]
+		}
+		{
+			title: "Witchwater"
+			x: 11.5d
+			y: 5.5d
+			subtitle: "Witches of the Mist"
+			description: ["Witchwater is used to prepare Doll activity, and a few other misc things. You make it by making a 3x3 square of Mycelium, putting a Barrel in the middle with a bucket's worth of Water, and it will transform into Witchwater."]
+			dependencies: ["5A36BF36EF99F18C"]
+			id: "5BF8EE3FF2BB1103"
+			tasks: [{
+				id: "47821050DF88112F"
+				type: "item"
+				item: "exnihilosequentia:bucket_witchwater"
 			}]
 		}
 	]
