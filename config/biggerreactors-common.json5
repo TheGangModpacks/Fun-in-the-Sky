@@ -142,7 +142,7 @@
         /* 
          * Default: true
          */
-        EnableYelloriteGeneration: true,
+        EnableYelloriteGeneration: false,
 
         /* 
          * Valid range: [5,)
