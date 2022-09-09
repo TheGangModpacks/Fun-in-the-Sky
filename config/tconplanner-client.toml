@@ -1,11 +1,11 @@
 
 ["UI Button"]
-	#X position of the "Open Planner" button. Default: 155
-	#Range: -300 ~ 300
-	"X Position" = 155
 	#Y position of the "Open Planner" button. Default: 8
 	#Range: -300 ~ 300
 	"Y Position" = 8
+	#X position of the "Open Planner" button. Default: 155
+	#Range: -300 ~ 300
+	"X Position" = 155
 
 [Planner]
 	#The scroll direction for paginated lists

@@ -10,7 +10,7 @@
 	#Enable cheating items into the hotbar by using the shift+number keys.
 	CheatToHotbarUsingHotkeysEnabled = false
 	#Display search bar in the center
-	CenterSearch = false
+	CenterSearch = true
 	#Max. recipe gui height
 	#Range: > 175
 	RecipeGuiHeight = 350
