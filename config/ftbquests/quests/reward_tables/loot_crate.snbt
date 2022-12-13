@@ -2,7 +2,87 @@
 	id: "50C0C9E9D3A2E28F"
 	order_index: 0
 	title: "Loot Crate"
-	icon: "mekanism:personal_chest"
+	icon: {
+		id: "botania:dice"
+		Count: 1b
+		tag: { }
+	}
 	loot_size: 1
-	rewards: [{ item: "minecraft:cobblestone", count: 64 }]
+	rewards: [
+		{ item: "minecraft:cobblestone", count: 64 }
+		{ item: "minecraft:oak_log", count: 32 }
+		{ item: "ironfurnaces:emerald_furnace" }
+		{ item: "minecraft:sponge" }
+		{
+			xp_levels: 5
+			type: "xp_levels"
+		}
+		{ item: "minecraft:diorite", count: 64 }
+		{ item: "minecraft:andesite", count: 64 }
+		{ item: "minecraft:granite", count: 64 }
+		{
+			item: {
+				id: "dankstorage:dank_4"
+				Count: 1b
+				tag: {
+					inv: { }
+				}
+			}
+		}
+		{
+			item: {
+				id: "mysticalagradditions:tertium_paxel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "mysticalagradditions:imperium_paxel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "mekanism:enriched_redstone", count: 8 }
+		{ item: "quark:brimstone_bricks", count: 64 }
+		{ item: "ironchest:crystal_chest" }
+		{
+			item: {
+				id: "chisel:hitech_chisel"
+				Count: 1b
+				tag: {
+					Damage: 0
+					chiseldata: { }
+				}
+			}
+		}
+		{ item: "compactmachines:machine_normal" }
+		{ item: "minecraft:clay", count: 6 }
+		{
+			item: {
+				id: "minecraft:trident"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "mysticalagriculture:tertium_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "chancecubes:chance_cube" }
+		{ item: "chancecubes:compact_giant_chance_cube" }
+		{ item: "framedblocks:framed_cube", count: 64 }
+		{ item: "appliedenergistics2:sky_stone_block", count: 32 }
+	]
 }
