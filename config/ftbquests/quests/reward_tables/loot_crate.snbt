@@ -1,8 +1,0 @@
-{
-	id: "50C0C9E9D3A2E28F"
-	order_index: 0
-	title: "Loot Crate"
-	icon: "mekanism:personal_chest"
-	loot_size: 1
-	rewards: [{ item: "minecraft:cobblestone", count: 64 }]
-}
