@@ -1,0 +1,88 @@
+event.custom({
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAABBBAAA",
+    "ACDEFGDCA",
+    "ADHIIIHDA",
+    "BJKLMLKNB",
+    "BOKMPMKQB",
+    "BRKLMLKSB",
+    "ADHIIIHDA",
+    "ACDTUVDCA",
+    "AAABBBAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "create:fluid_tank"
+    },
+    "B": {
+      "item": "mekanism:ultimate_fluid_tank"
+    },
+    "C": {
+      "item": "mob_grinding_utils:tank"
+    },
+    "D": {
+      "item": "mob_grinding_utils:tank_sink"
+    },
+    "E": {
+      "item": "mekanismgenerators:fusion_fuel_bucket"
+    },
+    "F": {
+      "item": "mekanism:brine_bucket"
+    },
+    "G": {
+      "item": "tconstruct:molten_debris_bucket"
+    },
+    "H": {
+      "item": "minecraft:netherite_block"
+    },
+    "I": {
+      "item": "immersiveengineering:insulating_glass"
+    },
+    "J": {
+      "item": "tconstruct:molten_queens_slime_bucket"
+    },
+    "K": {
+      "item": "thermal:enderium_glass"
+    },
+    "L": {
+      "item": "mekanismgenerators:reactor_glass"
+    },
+    "M": {
+      "item": "refinedstorage:4096k_fluid_storage_block"
+    },
+    "N": {
+      "item": "industrialforegoing:ether_gas_bucket"
+    },
+    "O": {
+      "item": "tconstruct:blazing_blood_bucket"
+    },
+    "P": {
+      "item": "mob_grinding_utils:jumbo_tank"
+    },
+    "Q": {
+      "item": "tinkers_reforged:molten_lavium_bucket"
+    },
+    "R": {
+      "item": "mekanism:uranium_hexafluoride_bucket"
+    },
+    "S": {
+      "item": "mekanism:chlorine_bucket"
+    },
+    "T": {
+      "item": "tinkers_reforged:molten_qivium_bucket"
+    },
+    "U": {
+      "item": "mysticalagradditions:molten_supremium_bucket"
+    },
+    "V": {
+      "item": "exnihilosequentia:bucket_witchwater"
+    }
+  },
+  "result": {
+    "item": "mekanism:creative_fluid_tank"
+  }
+}
+	}
+)
