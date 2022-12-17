@@ -1,0 +1,69 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 10000000,
+  "input": {
+    "item": "extendedcrafting:the_ultimate_catalyst"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:wither_rose"
+    },
+    {
+      "item": "mysticalagriculture:master_infusion_crystal"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "inventorypets:pet_wither",
+      "count": 1,
+      "nbt": "{Damage:0}"
+    },
+    {
+      "item": "mysticalagradditions:supremium_coal"
+    },
+    {
+      "item": "botania:ancient_will_karil"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:8.0d,Type:\"mysticalagriculture:wither_skeleton\"}"
+    },
+    {
+      "item": "mysticalagradditions:withering_soul"
+    },
+    {
+      "item": "mysticalagriculture:soulium_ingot_block"
+    },
+    {
+      "item": "extendedcrafting:nether_star_block"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagriculture:netherite_seeds"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:8.0d,Type:\"mysticalagriculture:wither_skeleton\"}"
+    },
+    {
+      "item": "mysticalagriculture:witherproof_block"
+    }
+  ],
+  "result": {
+    "item": "mysticalagriculture:nether_star_seeds"
+  }
+}

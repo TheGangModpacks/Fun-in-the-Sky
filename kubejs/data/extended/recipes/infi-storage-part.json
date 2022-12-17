@@ -1,0 +1,46 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCDCDCBA",
+    "BEFCFCFEB",
+    "CFEGGGEFC",
+    "DCGEHEGCD",
+    "CFGHIHGFC",
+    "DCGEHEGCD",
+    "CFEGGGEFC",
+    "BEFCFCFEB",
+    "ABCDCDCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "extendedcrafting:ender_star_block"
+    },
+    "B": {
+      "item": "extradisks:withering_processor"
+    },
+    "C": {
+      "item": "extradisks:16384k_storage_part"
+    },
+    "D": {
+      "item": "extradisks:65536k_storage_part"
+    },
+    "E": {
+      "item": "extradisks:1024k_storage_part"
+    },
+    "F": {
+      "item": "extradisks:262144k_storage_part"
+    },
+    "G": {
+      "item": "extradisks:4096k_storage_part"
+    },
+    "H": {
+      "item": "extradisks:1048576k_storage_part"
+    },
+    "I": {
+      "item": "extendedcrafting:ultimate_singularity"
+    }
+  },
+  "result": {
+    "item": "extradisks:infinite_storage_part"
+  }
+}

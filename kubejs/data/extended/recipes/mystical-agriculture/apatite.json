@@ -1,0 +1,22 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "emendatusenigmatica:apatite_block"
+    },
+    "B": {
+      "item": "mysticalagriculture:prudentium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:apatite_seeds"
+  }
+}

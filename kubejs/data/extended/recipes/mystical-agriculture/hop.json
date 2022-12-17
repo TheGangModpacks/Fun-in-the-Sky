@@ -1,0 +1,29 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAAAAAA",
+    "ABBBBBA",
+    "ABBBBBA",
+    "ABBCBBA",
+    "ABBBBBA",
+    "ABBBBBA",
+    "AAAAAAA"
+  ],
+  "key": {
+    "A": {
+      "type": "forge:nbt",
+      "item": "immersiveengineering:graphite_electrode",
+      "count": 1,
+      "nbt": "{graphDmg:0}"
+    },
+    "B": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:hop_graphite_seeds"
+  }
+}

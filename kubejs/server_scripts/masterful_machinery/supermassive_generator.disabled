@@ -1,0 +1,24 @@
+//SupermassiveGenerator
+event.custom({
+    "type": "masterfulmachinery:machine_process",
+    "structureId": "supermassive_generator",
+    "controllerId": "supermassive",
+    "ticks": 100,
+    "inputs": [
+        {
+            "type": "masterfulmachinery:items",
+            "data":{
+                "tag": "powah:nitro_crystal_block",
+                "count": 1
+            }
+        }
+    ],
+    "outputs":[
+        {
+            "type": "masterfulmachinery:energy",
+            "data":{
+                "capacity": 100000000
+            }
+        }
+    ]
+})
