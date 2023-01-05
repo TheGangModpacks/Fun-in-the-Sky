@@ -1,0 +1,24 @@
+{
+    "type": "exnihilosequentia:sieve",
+    "rolls": [
+		{
+            "chance": 0.12,
+            "mesh": "diamond"
+        },
+		{
+            "chance": 0.15,
+            "mesh": "emerald"
+        },
+		{
+            "chance": 0.17,
+            "mesh": "netherite"
+        }
+    ],
+    "input": {
+        "item": "exnihilosequentia:dust"
+    },
+    "result": {
+        "item": "emendatusenigmatica:dimensional_gem"
+    },
+    "waterlogged": true
+}

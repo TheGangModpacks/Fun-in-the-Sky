@@ -1,0 +1,38 @@
+{
+    "type": "masterfulmachinery:machine_process",
+    "structureId": "sas",
+    "controllerId": "sas",
+    "ticks": 0,
+    "inputs": [
+		{
+            "type": "masterfulmachinery:items",
+            "data":{
+                "item": "emendatusenigmatica:cast_iron_ingot",
+                "count": 2
+            }
+        }
+		{
+            "type": "masterfulmachinery:items",
+            "data":{
+                "item": "emendatusenigmatica:zinc_ingot",
+                "count": 3
+            }
+        }
+		{
+            "type": "masterfulmachinery:mekanism_gas",
+            "data":{
+                "gas": "mekanism:nuclear_waste",
+                "amount": 10
+            }
+        }
+    ],
+    "outputs":[
+        {
+            "type": "masterfulmachinery:items",
+            "data":{
+                "item": "kubejs:compressed_nuclear_waste",
+                "count": 1
+            }
+        }
+    ]
+}
