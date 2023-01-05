@@ -1,4 +1,0 @@
-onEvent('tags.items', event => {
-event.modify(event.items.copper_ingot, {tags: ['#!forge:ingots/copper']});
-event.modify('emendatusenigmatica:copper_ingot', {tags: ['forge:ingots/copper']});
-})
