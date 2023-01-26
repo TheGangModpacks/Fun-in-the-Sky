@@ -1,1 +1,0 @@
-{"type":"mekanism:nucleosynthesizing","itemInput":{"ingredient":{"item":"tconstruct:ender_slime_ball"}},"gasInput":{"amount":1000,"gas":"kubejs:clean_delightful_slurry"},"output":{"item":"kubejs:super_nutrition_paste"},"duration":200}
