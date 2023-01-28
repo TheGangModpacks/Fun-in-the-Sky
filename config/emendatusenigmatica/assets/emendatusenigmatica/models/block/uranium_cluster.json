@@ -1,0 +1,12 @@
+{
+  "parent": "emendatusenigmatica:block/bud",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "base": "emendatusenigmatica:blocks/templates/clusters/cluster/02",
+    "highlight1": "emendatusenigmatica:blocks/templates/clusters/cluster/01",
+    "highlight2": "emendatusenigmatica:blocks/templates/clusters/cluster/00",
+    "particle": "emendatusenigmatica:blocks/templates/clusters/cluster/02",
+    "shadow1": "emendatusenigmatica:blocks/templates/clusters/cluster/03",
+    "shadow2": "emendatusenigmatica:blocks/templates/clusters/cluster/04"
+  }
+}
