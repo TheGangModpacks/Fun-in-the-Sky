@@ -1,0 +1,40 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCCCCCBA",
+    "BDEEDEEDB",
+    "CEBFDFBEC",
+    "CEFAFAFEC",
+    "CDDFGFDDC",
+    "CEFAFAFEC",
+    "CEBFDFBEC",
+    "BDEEDEEDB",
+    "ABCCCCCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "B": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "C": {
+      "item": "create:shadow_steel"
+    },
+    "D": {
+      "item": "powah:capacitor_nitro"
+    },
+    "E": {
+      "item": "emendatusenigmatica:lead_plate"
+    },
+    "F": {
+      "item": "emendatusenigmatica:steel_plate"
+    },
+    "G": {
+      "item": "extradisks:infinite_storage_part"
+    }
+  },
+  "result": {
+    "item": "extradisks:infinite_storage_disk"
+  }
+}

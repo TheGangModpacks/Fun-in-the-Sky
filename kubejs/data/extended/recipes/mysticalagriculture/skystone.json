@@ -1,0 +1,24 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAAAA",
+    "ABBBA",
+    "ABCBA",
+    "ABBBA",
+    "AAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "appliedenergistics2:smooth_sky_stone_block"
+    },
+    "B": {
+      "item": "mysticalagriculture:tertium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:sky_stone_seeds"
+  }
+}

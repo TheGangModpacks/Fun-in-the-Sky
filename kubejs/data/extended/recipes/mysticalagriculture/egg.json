@@ -1,0 +1,60 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 10000000,
+  "input": {
+    "item": "extendedcrafting:the_ultimate_catalyst"
+  },
+  "ingredients": [
+    {
+      "item": "extendedcrafting:black_iron_block"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagriculture:enderman_seeds"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "minecraft:dragon_egg"
+    },
+    {
+      "item": "mysticalagriculture:master_infusion_crystal"
+    },
+    {
+      "item": "botania:dragonstone_block"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "tconstruct:dragon_scale"
+    },
+    {
+      "item": "mysticalagradditions:dragon_scale"
+    },
+    {
+      "item": "minecraft:dragon_head"
+    },
+    {
+      "item": "quark:dragon_scale"
+    },
+    {
+      "item": "extendedcrafting:ultimate_singularity"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    }
+  ],
+  "result": {
+    "item": "mysticalagriculture:dragon_egg_seeds"
+  }
+}

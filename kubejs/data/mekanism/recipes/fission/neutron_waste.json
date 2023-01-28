@@ -1,0 +1,12 @@
+{
+	"type": "mekanism:fission",
+	"input": {
+		"gas": "kubejs:fissile_x",
+		"amount": 1
+	},
+	"output" {
+		"gas": "kubejs:neutron_waste",
+		"amount": 1
+	},
+	"heat": 3
+}

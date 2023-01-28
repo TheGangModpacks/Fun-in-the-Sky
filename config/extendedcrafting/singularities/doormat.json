@@ -1,0 +1,10 @@
+{
+  "name": "Doormat",
+  "colors": [
+    "85665C",
+    "85665C"
+  ],
+  "ingredient": {
+    "item": "supplementaries:doormat"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredients": [
+        {"emendatusenigmatica:copper_block"},
+        {"thermal:copper_block"},
+        {"mekanism:block_copper"},
+        {"create:copper_block"},
+        {"immersiveengineering:storage_copper"},
+        {"tmechworks:copper_block"}
+    ],
+    "results": [
+        "tmechworks:copper_block",
+        "immersiveengineering:storage_copper",
+        "create:copper_block",
+        "mekanism:block_copper",
+        "thermal:copper_block",
+        "emendatusenigmatica:copper_block"
+    ],
+    "count": 1
+}

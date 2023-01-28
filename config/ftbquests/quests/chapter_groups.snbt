@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "67B4334297F15B2D", title: "The Beginnings" }
+		{ id: "45EE6B8D98E9487B", title: "The Mid Game" }
+		{ id: "38BD432DB63F5D9C", title: "The End Game" }
+	]
+}

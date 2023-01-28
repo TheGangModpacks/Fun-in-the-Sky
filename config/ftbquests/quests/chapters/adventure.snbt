@@ -1,0 +1,77 @@
+{
+	id: "54388A6C62EEE281"
+	group: "67B4334297F15B2D"
+	order_index: 2
+	filename: "adventure"
+	title: "Adventure"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "mekanism:teleportation_core"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "To the skys!"
+			description: ["It's time for you to find your purpose. Go out and have fun!"]
+			id: "38F90C1A2CBCBBF5"
+			tasks: [{
+				id: "642492F06AA7AA71"
+				type: "checkmark"
+				title: "Adventure!"
+			}]
+			rewards: [{
+				id: "76244482C0C1808B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "The Twilight Forest"
+			x: 1.5d
+			y: -2.5d
+			subtitle: "The OG"
+			description: ["The Twilight Forest is a very extensive dimension mod. Here, you will escape to a new world, with many bosses and things to defeat, ores to collect, etc. We warn you, armor is required if you want to live."]
+			dependencies: ["38F90C1A2CBCBBF5"]
+			id: "5B82169408E63EDB"
+			tasks: [{
+				id: "3C09328FF89F42B5"
+				type: "dimension"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				dimension: "twilightforest:twilight_forest"
+			}]
+		}
+		{
+			title: "The Nether"
+			icon: "minecraft:netherrack"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Nether me timbers"
+			description: ["The Nether wastelands are known for their mass amounts of lava, piglins, skeletons, and more. We recommend bringing armor, but it's not required. At least bring a good sword."]
+			dependencies: ["38F90C1A2CBCBBF5"]
+			id: "0B58B1C5B752810C"
+			tasks: [{
+				id: "223798BBC4AA9AE0"
+				type: "dimension"
+				title: "Visit the Nether"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			title: "The End"
+			icon: "minecraft:end_stone"
+			x: 1.5d
+			y: 2.5d
+			subtitle: "Is it though?"
+			description: ["The End is the deadly floating island world, walk into that void and you'll never make it out. Be careful of the dragon!"]
+			dependencies: ["38F90C1A2CBCBBF5"]
+			id: "0F730F08331EDA84"
+			tasks: [{
+				id: "31DA322F6B3F86F7"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

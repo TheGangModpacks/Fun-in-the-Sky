@@ -1,0 +1,11 @@
+type = customizablemenus
+
+net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
+}
+
+net.minecraft.client.gui.screens.TitleScreen {
+}
+

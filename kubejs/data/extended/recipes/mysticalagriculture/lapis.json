@@ -1,0 +1,26 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAAAAAA",
+    "ABBBBBA",
+    "ABBBBBA",
+    "ABBCBBA",
+    "ABBBBBA",
+    "ABBBBBA",
+    "AAAAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:lapis_block"
+    },
+    "B": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:lapis_lazuli_seeds"
+  }
+}

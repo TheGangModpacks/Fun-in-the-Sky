@@ -1,0 +1,26 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAAAAAA",
+    "ABBBBBA",
+    "ABBBBBA",
+    "ABBCBBA",
+    "ABBBBBA",
+    "ABBBBBA",
+    "AAAAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mysticalagriculture:end_agglomeratio"
+    },
+    "B": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:end_seeds"
+  }
+}

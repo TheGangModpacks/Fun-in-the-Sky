@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:gas_coolant",
+  "input": {
+    "gas": "kubejs:reactor_coolant",
+    "amount": 1
+  },
+  "output": {
+    "tag": "forge:heavy_water",
+    "amount": 1
+  },
+  "efficiency": 2
+}
