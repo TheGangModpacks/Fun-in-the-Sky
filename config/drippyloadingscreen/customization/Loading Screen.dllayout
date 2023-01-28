@@ -1,0 +1,32 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  renderorder = foreground
+  randommode = false
+  scale = 3
+  randomonlyfirsttime = false
+  backgroundcolor = 2E2F30
+}
+
+customization {
+  action = editprogressbar
+  barcolor = 0DC6E9
+}
+
+customization {
+  orientation = top-left
+  basecolor = #ffff00
+  shadow = true
+  rotation = 20.0
+  x = 452
+  actionid = 2d84c340-4181-4ee3-9533-d4add24da6381674834840986
+  action = addsplash
+  y = 141
+  scale = 1.0
+  refresh = false
+  text = Welcome, %playername%!
+  bouncing = true
+}
+
