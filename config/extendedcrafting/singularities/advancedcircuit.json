@@ -1,0 +1,10 @@
+{
+  "name": "Advanced Circuit",
+  "colors": [
+    "C62F00",
+    "C62F00"
+  ],
+  "ingredient": {
+    "item": "mekanism:advanced_control_circuit"
+  }
+}

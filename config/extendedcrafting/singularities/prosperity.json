@@ -1,0 +1,10 @@
+{
+  "name": "Prosperity",
+  "colors": [
+    "BFD0BC",
+    "BFD0BC"
+  ],
+  "ingredient": {
+    "item": "mysticalagriculture:prosperity_ingot"
+  }
+}

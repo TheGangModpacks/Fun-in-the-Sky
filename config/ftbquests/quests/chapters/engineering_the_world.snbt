@@ -1,0 +1,278 @@
+{
+	id: "6123E762619A563C"
+	group: "67B4334297F15B2D"
+	order_index: 3
+	filename: "engineering_the_world"
+	title: "Beginning Engineering"
+	icon: {
+		id: "immersiveengineering:hammer"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "minecraft:bricks"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Bang bang into the rooom"
+			description: [
+				"This chapter will show you the first steps of Engineering! We recommend not skipping ahead and paying attention, you'll need it."
+				""
+				"Many recipes in this pack have been altered heavily, do take note."
+			]
+			id: "59E4E09BD3378F5B"
+			tasks: [{
+				id: "50AEDF0BB14D8454"
+				type: "checkmark"
+				title: "Engineering!"
+			}]
+			rewards: [{
+				id: "7BC78C85B949E0BC"
+				type: "command"
+				title: "Command"
+				auto: "no_toast"
+				command: "/say @p has started Engineering!"
+				player_command: false
+			}]
+		}
+		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:coke_oven"
+			x: 0.0d
+			y: -7.0d
+			subtitle: "First oven to produce coal?"
+			description: [
+				"The Coke Oven is a very basic machine, make it into a 3x3x3 block, smack it with a hammer, and now you have a Coke Oven."
+				""
+				"Providing the oven with Coal will produce Coal Coke and Creosote."
+			]
+			id: "3BA9C67CC6E29A59"
+			tasks: [{
+				id: "7CD841B605589541"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "7DA255FD87CD11AD"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+				count: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "It's hammer time!"
+			description: ["The Engineer's Hammer is a must-have for every Immersive Engineering user. It allows for the creation of multiblocks, mostly."]
+			id: "0DBF8550418D9901"
+			tasks: [{
+				id: "33C0E49FBD7BB627"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "43A7455F2B3F9F61"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5818872724677911183L
+			}]
+		}
+		{
+			title: "Blast Furnace"
+			icon: "immersiveengineering:blast_furnace"
+			x: 0.0d
+			y: -8.5d
+			subtitle: "Supah hot topic"
+			description: ["The Blast Furnace is a multiblock that creates Steel, very, very slowly. It's created in the same 3x3x3 form as the Coke Oven."]
+			dependencies: [
+				"0B58B1C5B752810C"
+				"3BA9C67CC6E29A59"
+			]
+			id: "642DF490F8521F4E"
+			tasks: [
+				{
+					id: "634BD75ECCF08284"
+					type: "item"
+					item: "immersiveengineering:blastbrick"
+					count: 27L
+				}
+				{
+					id: "57CBF43D5277A59D"
+					type: "item"
+					item: "emendatusenigmatica:steel_ingot"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Creosote"
+			icon: "immersiveengineering:treated_wood_horizontal"
+			x: 1.5d
+			y: -7.0d
+			subtitle: "Don't stand in it!"
+			description: ["Creosote is a fluid required to make Treated Planks. The Planks are used for various wooden engineering things."]
+			id: "353CD0C4E4E52421"
+			tasks: [
+				{
+					id: "2193B29D7F2AA6A6"
+					type: "item"
+					item: "immersiveengineering:creosote_bucket"
+				}
+				{
+					id: "47E7193A6C2603B1"
+					type: "item"
+					item: "immersiveengineering:treated_wood_horizontal"
+					count: 64L
+				}
+			]
+		}
+		{
+			title: "Engineer's Crafting Stations"
+			icon: "immersiveengineering:workbench"
+			x: 3.0d
+			y: -8.5d
+			description: [
+				"Treated Wood can be used to create a few different things, like an Engineer's Crafting Table and Workbench."
+				""
+				"The Workbench is used for many special components."
+				""
+				"The Crafting Table holds items for easy later use, and holds things in the crafting grid while you're not using it."
+			]
+			id: "5E0D7BD45D9D48D4"
+			tasks: [
+				{
+					id: "55936812D4DD2F74"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "64BD9596714AFC5C"
+					type: "item"
+					item: "immersiveengineering:craftingtable"
+				}
+			]
+		}
+		{
+			title: "Components"
+			x: 3.6d
+			y: -8.0d
+			description: ["You will need this blueprint to give you Workbench recipes for various components."]
+			size: 0.8d
+			id: "604DFAFFF1DB12B9"
+			tasks: [{
+				id: "3B6B05D505BF6F52"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			icon: "immersiveengineering:empty_shell"
+			x: 2.0d
+			y: -11.0d
+			subtitle: "This town ain't big enough"
+			description: ["With Steel in hand, you now have the ability to create many different tools and weapons from IE."]
+			id: "573E61DE595B5B97"
+			tasks: [{
+				id: "7E8CD9D92115CCBF"
+				type: "checkmark"
+				title: "Engineer's Tools and Weapons"
+			}]
+		}
+		{
+			icon: {
+				id: "immersiveengineering:buzzsaw"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Size: 5
+						Items: [ ]
+					}
+				}
+			}
+			x: 4.0d
+			y: -12.5d
+			subtitle: "Do I really need a haircut?"
+			description: ["The Buzzsaw is a mechanical tool that, if paired with a sawblade, can destroy trees with ease. Aditionally, you can install a Rockcutter blade, which will cut through rocks!"]
+			id: "3F1B25F5EC9E8051"
+			tasks: [
+				{
+					id: "34644FB03B5EEBDA"
+					type: "item"
+					item: {
+						id: "immersiveengineering:buzzsaw"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4871D99F34FEA5E1"
+					type: "item"
+					title: "Blades"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "quests:buzzsaw"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "160BB157EE57B8BA"
+				type: "choice"
+				icon: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				exclude_from_claim_all: true
+				table_id: 564292043603773045L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -13.5d
+			id: "4A6AD29CB480CB13"
+			tasks: [{
+				id: "325BDD88E4C030AC"
+				type: "item"
+				item: {
+					id: "immersiveengineering:chemthrower"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}
