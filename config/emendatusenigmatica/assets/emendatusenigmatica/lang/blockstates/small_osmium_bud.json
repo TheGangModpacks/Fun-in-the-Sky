@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "emendatusenigmatica:block/small_osmium_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "emendatusenigmatica:block/small_osmium_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "emendatusenigmatica:block/small_osmium_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "emendatusenigmatica:block/small_osmium_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "emendatusenigmatica:block/small_osmium_bud"
+    },
+    "facing=west": {
+      "model": "emendatusenigmatica:block/small_osmium_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
