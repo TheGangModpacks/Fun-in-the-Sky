@@ -1,7 +1,7 @@
 {
 	id: "27A0C883FBEAB0FD"
 	group: "45EE6B8D98E9487B"
-	order_index: 0
+	order_index: 2
 	filename: "refined_storage"
 	title: "Digital Storage"
 	icon: "refinedstorage:creative_controller"
@@ -9,27 +9,19 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Refined Storage"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 			shape: "gear"
-			description: ["Refined Storage (RS) is a form of digital storage. Storage drives store all your items in one place and they can be upgraded."]
 			id: "0640073DDD7DCF38"
 			tasks: [{
 				id: "10D64B26500F3A10"
 				type: "item"
 				item: "refinedstorage:quartz_enriched_iron"
 			}]
-			rewards: [{
-				id: "78F5C9E4337D2437"
-				type: "item"
-				item: "refinedstorage:quartz_enriched_iron"
-				count: 4
-			}]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
+			x: -0.5d
+			y: 3.0d
 			dependencies: ["0640073DDD7DCF38"]
 			id: "020D21BAB43DAAE0"
 			tasks: [{
@@ -37,17 +29,10 @@
 				type: "item"
 				item: "refinedstorage:silicon"
 			}]
-			rewards: [{
-				id: "2242A20E376B809F"
-				type: "item"
-				item: "mysticalagriculture:silicon_essence"
-				count: 3
-				random_bonus: 3
-			}]
 		}
 		{
-			x: 1.5d
-			y: 1.5d
+			x: 0.5d
+			y: 3.0d
 			dependencies: ["0640073DDD7DCF38"]
 			id: "607A51FFADD8E177"
 			tasks: [{
@@ -55,15 +40,10 @@
 				type: "item"
 				item: "refinedstorage:processor_binding"
 			}]
-			rewards: [{
-				id: "3969C19979D42527"
-				type: "item"
-				item: "minecraft:slime_block"
-			}]
 		}
 		{
-			x: 0.0d
-			y: 3.0d
+			x: -1.0d
+			y: 4.5d
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"607A51FFADD8E177"
@@ -74,16 +54,10 @@
 				type: "item"
 				item: "refinedstorage:raw_basic_processor"
 			}]
-			rewards: [{
-				id: "460281F84AAE5ACE"
-				type: "item"
-				item: "refinedstorage:raw_basic_processor"
-				count: 2
-			}]
 		}
 		{
-			x: 1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 4.0d
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"607A51FFADD8E177"
@@ -94,16 +68,10 @@
 				type: "item"
 				item: "refinedstorage:raw_improved_processor"
 			}]
-			rewards: [{
-				id: "08C4696130FE0D9A"
-				type: "item"
-				item: "refinedstorage:raw_improved_processor"
-				count: 2
-			}]
 		}
 		{
-			x: 3.0d
-			y: 3.0d
+			x: 1.0d
+			y: 4.5d
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"607A51FFADD8E177"
@@ -114,33 +82,33 @@
 				type: "item"
 				item: "refinedstorage:raw_advanced_processor"
 			}]
-			rewards: [{
-				id: "3EECA61A5A0A51A0"
-				type: "item"
-				item: "refinedstorage:raw_advanced_processor"
-				count: 2
-			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			dependencies: ["01835A47430DA015"]
+			id: "5514D78050505642"
+			tasks: [
+				{
+					id: "372C433D8821D5F0"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+				}
+				{
+					id: "4F962BCE391BBA27"
+					type: "item"
+					item: "refinedstorage:construction_core"
+				}
+				{
+					id: "7336F23840D4FC4E"
+					type: "item"
+					item: "refinedstorage:destruction_core"
+				}
+			]
 		}
 		{
 			x: 0.0d
-			y: 4.5d
-			dependencies: ["01835A47430DA015"]
-			id: "5514D78050505642"
-			tasks: [{
-				id: "372C433D8821D5F0"
-				type: "item"
-				item: "refinedstorage:basic_processor"
-			}]
-			rewards: [{
-				id: "5DA3AD1539989086"
-				type: "item"
-				item: "refinedstorage:basic_processor"
-				count: 2
-			}]
-		}
-		{
-			x: 1.5d
-			y: 4.5d
+			y: 5.0d
 			dependencies: ["3739D515F26E8629"]
 			id: "74B1061F3B87DB02"
 			tasks: [{
@@ -148,16 +116,10 @@
 				type: "item"
 				item: "refinedstorage:improved_processor"
 			}]
-			rewards: [{
-				id: "304032833FC0064C"
-				type: "item"
-				item: "refinedstorage:improved_processor"
-				count: 2
-			}]
 		}
 		{
-			x: 3.0d
-			y: 4.5d
+			x: 1.5d
+			y: 5.5d
 			dependencies: ["3D446563D0ACB58C"]
 			id: "499BB1709FA0CE62"
 			tasks: [{
@@ -165,19 +127,11 @@
 				type: "item"
 				item: "refinedstorage:advanced_processor"
 			}]
-			rewards: [{
-				id: "16D75934E5BE6083"
-				type: "item"
-				item: "refinedstorage:advanced_processor"
-				count: 2
-			}]
 		}
 		{
-			title: "The Most Important Part"
-			x: 3.0d
-			y: 6.0d
+			x: 0.0d
+			y: 8.0d
 			shape: "hexagon"
-			description: ["The controller is the base of your RS system and needs power to run. You will connect all other blocks to this one either by cables or by being adjacent to the controller or another RS block."]
 			dependencies: [
 				"5514D78050505642"
 				"74B1061F3B87DB02"
@@ -189,23 +143,10 @@
 				type: "item"
 				item: "refinedstorage:controller"
 			}]
-			rewards: [
-				{
-					id: "1E420F74951C8979"
-					type: "item"
-					item: "minecraft:diamond"
-				}
-				{
-					id: "7E76EB6557D5E5B6"
-					type: "item"
-					item: "farmersdelight:roast_chicken_block"
-				}
-			]
 		}
 		{
-			x: 6.0d
-			y: 6.0d
-			description: ["To view your items, you will need a grid."]
+			x: 0.0d
+			y: 11.0d
 			dependencies: ["4172A1B728825CAA"]
 			id: "4B209209709BF5E4"
 			tasks: [{
@@ -213,16 +154,10 @@
 				type: "item"
 				item: "refinedstorage:grid"
 			}]
-			rewards: [{
-				id: "01257AC2E76579B5"
-				type: "item"
-				item: "refinedstorage:grid"
-			}]
 		}
 		{
-			x: 7.5d
-			y: 6.0d
-			description: ["Now you can craft in your grid!"]
+			x: 1.0d
+			y: 12.5d
 			dependencies: ["4B209209709BF5E4"]
 			id: "43B8736F2D130E10"
 			tasks: [{
@@ -230,16 +165,10 @@
 				type: "item"
 				item: "refinedstorage:crafting_grid"
 			}]
-			rewards: [{
-				id: "6FE35A10AE178770"
-				type: "item"
-				item: "extendedcrafting:handheld_table"
-			}]
 		}
 		{
-			x: 7.5d
-			y: 7.5d
-			description: ["Make patterns for all your autocrafting desires."]
+			x: 0.0d
+			y: 12.5d
 			dependencies: ["4B209209709BF5E4"]
 			id: "7650CA7E092F1D11"
 			tasks: [{
@@ -247,16 +176,10 @@
 				type: "item"
 				item: "refinedstorage:pattern_grid"
 			}]
-			rewards: [{
-				id: "4C9E7632F6DBADDF"
-				type: "item"
-				item: "refinedstorage:pattern"
-			}]
 		}
 		{
-			x: 7.5d
-			y: 4.5d
-			description: ["Lets you see the fluids in a fluid drive."]
+			x: -1.0d
+			y: 12.5d
 			dependencies: ["4B209209709BF5E4"]
 			id: "12A90AABB2B9B4E3"
 			tasks: [{
@@ -264,16 +187,10 @@
 				type: "item"
 				item: "refinedstorage:fluid_grid"
 			}]
-			rewards: [{
-				id: "05CE7D83BECFA867"
-				type: "item"
-				item: "minecraft:bucket"
-			}]
 		}
 		{
-			x: 9.0d
-			y: 4.5d
-			description: ["Access fluids anywhere."]
+			x: -0.5d
+			y: 13.5d
 			dependencies: ["12A90AABB2B9B4E3"]
 			id: "6AA3B68C52B4E265"
 			tasks: [{
@@ -281,16 +198,10 @@
 				type: "item"
 				item: "refinedstorage:wireless_fluid_grid"
 			}]
-			rewards: [{
-				id: "12EF7909DCE0531B"
-				type: "item"
-				item: "minecraft:axolotl_bucket"
-			}]
 		}
 		{
-			x: 9.0d
-			y: 6.0d
-			description: ["Acessing your storage from anywhere?"]
+			x: 0.5d
+			y: 13.5d
 			dependencies: ["43B8736F2D130E10"]
 			id: "0E200AD51EEE2750"
 			tasks: [{
@@ -298,20 +209,10 @@
 				type: "item"
 				item: "refinedstorage:wireless_crafting_monitor"
 			}]
-			rewards: [{
-				id: "20964E51B936CD7E"
-				type: "xp"
-				xp: 50
-			}]
 		}
 		{
-			x: 6.0d
-			y: 7.5d
-			description: [
-				"With these cables you can make far away connections with your RS system. The functional cables like importers and constructors will have an option to switch between item or fluid mode. This lets them interact with that kind of item or fluid but not both."
-				" "
-				"You need to specify in the filter slots what the functional cables should use."
-			]
+			x: -3.0d
+			y: 8.0d
 			dependencies: ["4172A1B728825CAA"]
 			id: "347A4B790B6E5DFF"
 			tasks: [{
@@ -319,18 +220,10 @@
 				type: "item"
 				item: "refinedstorage:cable"
 			}]
-			rewards: [{
-				id: "1F38990CAE4C209C"
-				type: "item"
-				item: "refinedstorage:cable"
-				count: 8
-				random_bonus: 4
-			}]
 		}
 		{
-			x: 9.0d
-			y: 7.5d
-			description: ["You can only use the wireless crafting monitor as long as you are in range of the wireless transmitter. Adding range upgrades will increase the available range."]
+			x: -0.5d
+			y: 14.5d
 			dependencies: ["0E200AD51EEE2750"]
 			id: "4F79494843C24C3A"
 			tasks: [
@@ -345,16 +238,33 @@
 					item: "refinedstorage:range_upgrade"
 				}
 			]
-			rewards: [{
-				id: "09E1EE7A97F97971"
+		}
+		{
+			x: -0.5d
+			y: 15.5d
+			dependencies: ["4F79494843C24C3A"]
+			id: "014E6942437BDD38"
+			tasks: [{
+				id: "4491FA4EBFFE3C6E"
 				type: "item"
-				item: "refinedstorage:range_upgrade"
+				item: "rsinfinitybooster:dimension_card"
 			}]
 		}
 		{
-			x: 3.0d
-			y: 7.5d
-			description: ["Stores up to 10 drives in a block."]
+			x: -0.5d
+			y: 16.5d
+			shape: "hexagon"
+			dependencies: ["014E6942437BDD38"]
+			id: "7442D0639B2D2800"
+			tasks: [{
+				id: "56515CB3615AE1D4"
+				type: "item"
+				item: "rsinfinitybooster:infinity_card"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.5d
 			dependencies: ["4172A1B728825CAA"]
 			id: "5076877606BEF7A0"
 			tasks: [{
@@ -364,43 +274,30 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 9.0d
-			description: ["These drive parts can be made into a drive. RS drives have no item type limit and can hold the amount said in the name of the drive."]
-			dependencies: ["5076877606BEF7A0"]
+			x: 2.5d
+			y: 6.5d
+			dependencies: ["4172A1B728825CAA"]
 			id: "3F6F4D3AA9DF9424"
 			tasks: [{
 				id: "3B3E7611F232488A"
 				type: "item"
 				item: "refinedstorage:1k_storage_part"
 			}]
-			rewards: [{
-				id: "3445EE3784E3B4E7"
-				type: "item"
-				item: "refinedstorage:1k_storage_part"
-			}]
 		}
 		{
-			x: 1.5d
-			y: 7.5d
-			description: ["Stores fliuds. You can import and export fluids with the importer and exporter."]
-			dependencies: ["5076877606BEF7A0"]
+			x: -2.5d
+			y: 6.5d
+			dependencies: ["4172A1B728825CAA"]
 			id: "47BBC9DEFA3783BA"
 			tasks: [{
 				id: "4C39D6B0D8271866"
 				type: "item"
 				item: "refinedstorage:64k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "037400162F4C35CA"
-				type: "item"
-				item: "refinedstorage:64k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 7.5d
+			x: -4.0d
 			y: 9.0d
-			description: ["Take in or take out items from a storage medium including your RS system."]
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "1AF8EE6C488ADA9C"
 			tasks: [
@@ -417,9 +314,8 @@
 			]
 		}
 		{
-			x: 9.0d
-			y: 9.0d
-			description: ["Places or breaks blocks."]
+			x: -3.5d
+			y: 10.5d
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "5AFAD2DE1CD555BE"
 			tasks: [
@@ -436,10 +332,9 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 10.5d
-			description: ["Have a place you need to link up that too far away for cables? Have no fear the transmitter is here! Place a receiver somwhere and a transmitter at your RS system. Use a network card on the receiver to set the location and then put the card into the transmitter to finish the link."]
-			dependencies: ["347A4B790B6E5DFF"]
+			x: -5.5d
+			y: 10.0d
+			dependencies: ["1AF8EE6C488ADA9C"]
 			id: "6F3C396F5D6D5728"
 			tasks: [
 				{
@@ -460,10 +355,8 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: 7.5d
-			subtitle: "No million item transfer by hand"
-			description: ["With this, you can transfer items from a disk into your RS system. This way, you can clear up the space in a disk so that you can use its storage part to upgrade."]
+			x: 2.5d
+			y: 11.5d
 			dependencies: ["5076877606BEF7A0"]
 			id: "615B0C1E3C9ECAAA"
 			tasks: [{
@@ -471,30 +364,10 @@
 				type: "item"
 				item: "refinedstorage:disk_manipulator"
 			}]
-			rewards: [{
-				id: "7B9FFB2E3A8D24FF"
-				type: "item"
-				item: {
-					id: "reliquary:ender_staff"
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							Items: [{
-								filter: {
-									id: "minecraft:ender_pearl"
-									Count: 1b
-								}
-								amount: 0
-							}]
-						}
-					}
-				}
-			}]
 		}
 		{
-			x: 6.0d
-			y: 9.0d
-			description: ["Connect this to a chest to be able to view its contents in a grid."]
+			x: -5.5d
+			y: 8.0d
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "021BFBE258BE347C"
 			tasks: [{
@@ -504,9 +377,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 6.0d
-			description: ["If you set a security card to your player data, other players will not be able to access your RS system or break its blocks unless they too have a card in your security manager."]
+			x: 2.5d
+			y: 9.5d
 			dependencies: ["4172A1B728825CAA"]
 			id: "11F1AAFF003813F9"
 			tasks: [
@@ -521,36 +393,21 @@
 					item: "refinedstorage:security_card"
 				}
 			]
-			rewards: [{
-				id: "5D037F5BA00281CA"
-				type: "item"
-				item: "refinedstorage:security_card"
-			}]
 		}
 		{
-			x: 4.5d
-			y: 3.0d
-			description: [
-				"The crafter makes life a whole lot easier. You can request crafting operations from your grid."
-				" "
-				"Higher tier crafters can autocraft faster."
-			]
-			dependencies: ["718A7D7BBEEDEE1C"]
+			x: 3.0d
+			y: 8.0d
+			dependencies: ["4172A1B728825CAA"]
 			id: "7D19FC6B2D404DCE"
 			tasks: [{
 				id: "7C6A050A99B15475"
 				type: "item"
 				item: "refinedstorage:crafter"
 			}]
-			rewards: [{
-				id: "18D4A4142514259D"
-				type: "item"
-				item: "refinedstorage:4k_storage_block"
-			}]
 		}
 		{
-			x: 6.0d
-			y: 3.0d
+			x: 4.0d
+			y: 9.0d
 			dependencies: ["7D19FC6B2D404DCE"]
 			id: "3B33A29CFD9B4327"
 			tasks: [{
@@ -560,8 +417,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 3.0d
+			x: 5.5d
+			y: 8.0d
 			dependencies: ["3B33A29CFD9B4327"]
 			id: "72A7DA1ABD053B49"
 			tasks: [{
@@ -571,8 +428,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 1.5d
+			x: 3.5d
+			y: 10.5d
 			dependencies: ["72A7DA1ABD053B49"]
 			id: "449490DD3258E894"
 			tasks: [{
@@ -582,8 +439,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 1.5d
+			x: 5.5d
+			y: 10.0d
 			dependencies: ["449490DD3258E894"]
 			id: "7ADE6FBB31211E63"
 			tasks: [{
@@ -591,17 +448,11 @@
 				type: "item"
 				item: "extrastorage:netherite_crafter"
 			}]
-			rewards: [{
-				id: "3202144B15806A26"
-				type: "item"
-				item: "minecraft:nether_star"
-			}]
 		}
 		{
-			x: 7.5d
+			x: -1.5d
 			y: 10.5d
-			description: ["Speeds up various machines like crafters and importers."]
-			dependencies: ["347A4B790B6E5DFF"]
+			dependencies: ["4172A1B728825CAA"]
 			id: "4DAFFCFE336F008C"
 			tasks: [{
 				id: "1E2A4C85E120A418"
@@ -610,9 +461,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 10.5d
-			description: ["Now your importers/exporters can transfer a stack of items at a time."]
+			x: -2.5d
+			y: 11.5d
 			dependencies: ["4DAFFCFE336F008C"]
 			id: "7E94FAA5334C54A4"
 			tasks: [{
@@ -622,10 +472,9 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 4.5d
-			description: ["Lets you see autocrafting processes at work."]
-			dependencies: ["718A7D7BBEEDEE1C"]
+			x: -2.5d
+			y: 9.5d
+			dependencies: ["4172A1B728825CAA"]
 			id: "18AD3389A288925C"
 			tasks: [{
 				id: "03F639615FBF08BB"
@@ -634,8 +483,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 9.0d
+			x: 4.0d
+			y: 6.0d
 			dependencies: ["3F6F4D3AA9DF9424"]
 			id: "3C46043749FD947D"
 			tasks: [{
@@ -643,15 +492,10 @@
 				type: "item"
 				item: "refinedstorage:4k_storage_part"
 			}]
-			rewards: [{
-				id: "70843F8B1B19CA1C"
-				type: "item"
-				item: "refinedstorage:4k_storage_part"
-			}]
 		}
 		{
-			x: 4.5d
-			y: 10.5d
+			x: 5.5d
+			y: 6.5d
 			dependencies: ["3C46043749FD947D"]
 			id: "4F20EF93BF779569"
 			tasks: [{
@@ -659,15 +503,10 @@
 				type: "item"
 				item: "refinedstorage:16k_storage_part"
 			}]
-			rewards: [{
-				id: "473E0CBE5CDA0E3A"
-				type: "item"
-				item: "refinedstorage:16k_storage_part"
-			}]
 		}
 		{
-			x: 3.0d
-			y: 10.5d
+			x: 6.5d
+			y: 7.5d
 			dependencies: ["4F20EF93BF779569"]
 			id: "250EAF1C761CC404"
 			tasks: [{
@@ -675,15 +514,10 @@
 				type: "item"
 				item: "refinedstorage:64k_storage_part"
 			}]
-			rewards: [{
-				id: "1E8E8E69A138C686"
-				type: "item"
-				item: "refinedstorage:64k_storage_part"
-			}]
 		}
 		{
-			x: 3.0d
-			y: 12.0d
+			x: 7.0d
+			y: 9.0d
 			dependencies: ["250EAF1C761CC404"]
 			id: "449BD24020BEDB19"
 			tasks: [{
@@ -691,15 +525,10 @@
 				type: "item"
 				item: "extradisks:256k_storage_part"
 			}]
-			rewards: [{
-				id: "673C50894686EED6"
-				type: "item"
-				item: "extradisks:256k_storage_part"
-			}]
 		}
 		{
-			x: 4.5d
-			y: 12.0d
+			x: 6.5d
+			y: 10.5d
 			dependencies: ["449BD24020BEDB19"]
 			id: "2A2CE0A19A131B98"
 			tasks: [{
@@ -707,15 +536,10 @@
 				type: "item"
 				item: "extradisks:1024k_storage_part"
 			}]
-			rewards: [{
-				id: "203098DE7FCD72E7"
-				type: "item"
-				item: "extradisks:1024k_storage_part"
-			}]
 		}
 		{
-			x: 4.5d
-			y: 13.5d
+			x: 5.0d
+			y: 11.5d
 			dependencies: ["2A2CE0A19A131B98"]
 			id: "1FE3C9DDC8361F83"
 			tasks: [{
@@ -723,15 +547,10 @@
 				type: "item"
 				item: "extradisks:4096k_storage_part"
 			}]
-			rewards: [{
-				id: "702985873FDBE20E"
-				type: "item"
-				item: "extradisks:4096k_storage_part"
-			}]
 		}
 		{
-			x: 3.0d
-			y: 13.5d
+			x: 3.5d
+			y: 12.0d
 			dependencies: ["1FE3C9DDC8361F83"]
 			id: "2C7CC40D9456CF86"
 			tasks: [{
@@ -739,15 +558,10 @@
 				type: "item"
 				item: "extradisks:16384k_storage_part"
 			}]
-			rewards: [{
-				id: "1D6AC391D957CBF8"
-				type: "item"
-				item: "extradisks:16384k_storage_part"
-			}]
 		}
 		{
-			x: 3.0d
-			y: 15.0d
+			x: 2.0d
+			y: 13.5d
 			dependencies: ["2C7CC40D9456CF86"]
 			id: "114E7B7857B39FBE"
 			tasks: [{
@@ -755,15 +569,10 @@
 				type: "item"
 				item: "extradisks:65536k_storage_part"
 			}]
-			rewards: [{
-				id: "649EC21BBB0D7211"
-				type: "item"
-				item: "extradisks:65536k_storage_part"
-			}]
 		}
 		{
-			x: 4.5d
-			y: 15.0d
+			x: 0.5d
+			y: 14.5d
 			dependencies: ["114E7B7857B39FBE"]
 			id: "6FAFB708BF97DFF9"
 			tasks: [{
@@ -771,15 +580,10 @@
 				type: "item"
 				item: "extradisks:262144k_storage_part"
 			}]
-			rewards: [{
-				id: "0C1E2D2174FDC614"
-				type: "item"
-				item: "extradisks:262144k_storage_part"
-			}]
 		}
 		{
-			x: 4.5d
-			y: 16.5d
+			x: 0.5d
+			y: 15.5d
 			dependencies: ["6FAFB708BF97DFF9"]
 			id: "6844253313DB8373"
 			tasks: [{
@@ -787,17 +591,11 @@
 				type: "item"
 				item: "extradisks:1048576k_storage_part"
 			}]
-			rewards: [{
-				id: "1C5948CDB5A74ABA"
-				type: "item"
-				item: "extradisks:1048576k_storage_part"
-			}]
 		}
 		{
-			x: 3.0d
+			x: 0.5d
 			y: 16.5d
 			shape: "hexagon"
-			description: ["This drive holds an infinite amount of items."]
 			dependencies: ["6844253313DB8373"]
 			id: "1E949C3E39386CEC"
 			tasks: [{
@@ -805,28 +603,10 @@
 				type: "item"
 				item: "extradisks:infinite_storage_part"
 			}]
-			rewards: [{
-				id: "77A77911415CC12F"
-				type: "item"
-				item: {
-					id: "industrialforegoing:infinity_drill"
-					Count: 1b
-					tag: {
-						CanCharge: 1b
-						Special: 1b
-						Selected: "ARTIFACT"
-						Energy: 9223372036854775807L
-						Fluid: {
-							FluidName: "biofuel"
-							Amount: 1000000
-						}
-					}
-				}
-			}]
 		}
 		{
-			x: 0.0d
-			y: 7.5d
+			x: -4.0d
+			y: 6.0d
 			dependencies: ["47BBC9DEFA3783BA"]
 			id: "345E87F6556FC7F3"
 			tasks: [{
@@ -834,15 +614,10 @@
 				type: "item"
 				item: "refinedstorage:256k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "62E73C29AB1CF4BC"
-				type: "item"
-				item: "refinedstorage:256k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 0.0d
-			y: 9.0d
+			x: -5.5d
+			y: 6.5d
 			dependencies: ["345E87F6556FC7F3"]
 			id: "3D585207D845FF52"
 			tasks: [{
@@ -850,15 +625,10 @@
 				type: "item"
 				item: "refinedstorage:1024k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "1EB92F68F48982CA"
-				type: "item"
-				item: "refinedstorage:1024k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 1.5d
-			y: 9.0d
+			x: -6.5d
+			y: 7.5d
 			dependencies: ["3D585207D845FF52"]
 			id: "636051CC75D6DD6F"
 			tasks: [{
@@ -866,15 +636,10 @@
 				type: "item"
 				item: "refinedstorage:4096k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "3E06CB06FF5ECEBD"
-				type: "item"
-				item: "refinedstorage:4096k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 1.5d
-			y: 10.5d
+			x: -7.0d
+			y: 9.0d
 			dependencies: ["636051CC75D6DD6F"]
 			id: "265D36686BF59D44"
 			tasks: [{
@@ -882,14 +647,9 @@
 				type: "item"
 				item: "extradisks:16384k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "072038131F862A90"
-				type: "item"
-				item: "extradisks:16384k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 0.0d
+			x: -6.5d
 			y: 10.5d
 			dependencies: ["265D36686BF59D44"]
 			id: "06164A77014CDB83"
@@ -898,15 +658,10 @@
 				type: "item"
 				item: "extradisks:65536k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "2FFF7271B7BA24B6"
-				type: "item"
-				item: "extradisks:65536k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 0.0d
-			y: 12.0d
+			x: -5.0d
+			y: 11.5d
 			dependencies: ["06164A77014CDB83"]
 			id: "3549258E20D1787F"
 			tasks: [{
@@ -914,14 +669,9 @@
 				type: "item"
 				item: "extradisks:262144k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "7E2DE9D1253A717A"
-				type: "item"
-				item: "extradisks:262144k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 1.5d
+			x: -3.5d
 			y: 12.0d
 			dependencies: ["3549258E20D1787F"]
 			id: "4D1E68C4456CA843"
@@ -930,84 +680,17 @@
 				type: "item"
 				item: "extradisks:1048576k_fluid_storage_part"
 			}]
-			rewards: [{
-				id: "674F6D75DC1FAE1A"
-				type: "item"
-				item: "extradisks:1048576k_fluid_storage_part"
-			}]
 		}
 		{
-			x: 1.5d
+			x: -2.0d
 			y: 13.5d
 			shape: "hexagon"
-			description: ["This drive holds an infinite amount of fluids."]
 			dependencies: ["4D1E68C4456CA843"]
 			id: "7BF4B0BEDBE39BFA"
 			tasks: [{
 				id: "15E2BF136C2F0A56"
 				type: "item"
 				item: "extradisks:infinite_fluid_storage_part"
-			}]
-			rewards: [{
-				id: "263C8EDA5F1B069C"
-				type: "item"
-				item: {
-					id: "industrialforegoing:infinity_hammer"
-					Count: 1b
-					tag: {
-						CanCharge: 1b
-						Energy: 9223372036854775807L
-						Fluid: {
-							FluidName: "biofuel"
-							Amount: 1000000
-						}
-						Special: 1b
-						Selected: "ARTIFACT"
-						Beheading: 0
-					}
-				}
-			}]
-		}
-		{
-			x: 0.0d
-			y: 6.0d
-			dependencies: ["5514D78050505642"]
-			id: "4A2EBD606242C00A"
-			tasks: [
-				{
-					id: "1AE2E663D4CFCE13"
-					type: "item"
-					item: "refinedstorage:construction_core"
-				}
-				{
-					id: "0177FA72C8F78CE1"
-					type: "item"
-					item: "refinedstorage:destruction_core"
-				}
-			]
-			rewards: [{
-				id: "46863F2D59AC5E15"
-				type: "item"
-				item: "create:builders_tea"
-				count: 4
-			}]
-		}
-		{
-			x: 4.5d
-			y: 4.5d
-			description: ["Put this into a pattern grid to make a crafting pattern. Then put the pattern into a crafter."]
-			dependencies: ["4172A1B728825CAA"]
-			id: "718A7D7BBEEDEE1C"
-			tasks: [{
-				id: "26A9137DBD4D21DE"
-				type: "item"
-				item: "refinedstorage:pattern"
-			}]
-			rewards: [{
-				id: "267C1779B21E4357"
-				type: "item"
-				item: "refinedstorage:pattern"
-				count: 2
 			}]
 		}
 	]

@@ -1,6 +1,6 @@
 {
 	id: "58146AA7D3DDCA90"
-	group: "67B4334297F15B2D"
+	group: "45EE6B8D98E9487B"
 	order_index: 1
 	filename: "creating_the_world"
 	title: "Creating the World"
@@ -46,7 +46,7 @@
 				{
 					id: "429D21B6F4DF62BD"
 					type: "item"
-					title: "Any #forge:cogwheels"
+					title: "Any Cogwheel"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -58,7 +58,7 @@
 				{
 					id: "77E93F47552B4675"
 					type: "item"
-					title: "Any #forge:large_cogwheels"
+					title: "Any Large Cogwheel"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1049,13 +1049,13 @@
 			}]
 		}
 		{
-			x: 3.7142857142857153d
-			y: -0.6785714285714235d
+			x: 3.7857142857142847d
+			y: -0.5357142857142918d
 			shape: "hexagon"
 			subtitle: "Late for work! Coming through!"
 			description: ["Train Schedules can be given to the conductor of any train, and gives them the ability to automatically stop at any train station."]
 			dependencies: ["79C07CC9B082B414"]
-			size: 0.7d
+			size: 0.75d
 			id: "223FA57224786674"
 			tasks: [{
 				id: "72D2C5C87D749381"
