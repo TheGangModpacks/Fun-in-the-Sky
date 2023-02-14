@@ -1,0 +1,29 @@
+{
+  "id": "brass",
+  "source": "modded",
+  "localizedName": "Brass",
+  "processedTypes": [
+    "storage_block",
+    "ingot",
+    "nugget",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid",
+	"crushed_ore"
+  ],
+  "properties": {
+  "materialType": "alloy",
+  "harvestLevel": 2
+},
+  "colors": {
+    "fluidColor": "E9BA54",
+    "materialColor": "E9BA54"
+  },
+  "compat": {
+    "thermal": true,
+    "mekanism": false,
+    "ars_novea": false
+  }
+}

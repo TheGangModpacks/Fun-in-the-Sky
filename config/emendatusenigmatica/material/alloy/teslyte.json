@@ -1,0 +1,74 @@
+{
+"id": "teslyte",
+"source": "modded",
+"localizedName": "Teslyte",
+"processedTypes": [
+"storage_block",
+"ingot",
+"dust",
+"gas",
+"pickaxe",
+"axe",
+"shovel",
+"hoe",
+"sword",
+"paxel"
+],
+"properties": {
+"materialType": "metal",
+"harvestLevel": 4,
+"isBurnable": false,
+"isEmissive": true,
+"hasOxidization": false
+},
+"colors": {
+"materialColor": "EBEBEB",
+"gasColor": "EBEBEB"
+},
+"tools": {
+		"attackDamage": 2.0,
+		"level": 4,
+		"enchantability": 11,
+		"efficiency": 11,
+		"sword": {
+			"damage": 8.5,
+			"speed": -2.0,
+			"durability": 4062
+		},
+		"pickaxe": {
+			"damage": 0.0,
+			"speed": -2.4,
+			"durability": 4062
+		},
+		"paxel": {
+			"damage": 0.0,
+			"speed": -2.4,
+			"durability": 5860
+		},
+		"axe": {
+			"damage": 5.0,
+			"speed": -3.1,
+			"durability": 4062
+		},
+		"hoe": {
+			"damage": 0.0,
+			"speed": -2.4,
+			"durability": 4062
+		},
+		"shovel": {
+			"damage": 0.0,
+			"speed": -2.4,
+			"durability": 4062
+		}
+	},
+"gas": {
+	"isBurnable": false,
+	"isRadioactive": false,
+	"isCoolant": false
+},
+"compat": {
+"create": false,
+"occultism": false,
+"mekanism": false
+}
+}

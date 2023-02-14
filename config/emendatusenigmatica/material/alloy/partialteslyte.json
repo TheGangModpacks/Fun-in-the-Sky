@@ -1,0 +1,28 @@
+{
+  "id": "partial_teslyte",
+  "source": "modded",
+  "localizedName": "Partial Teslyte",
+  "processedTypes": [
+  "gas"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2,
+    "isBurnable": false,
+    "isEmissive": false,
+    "hasOxidization": false
+  },
+  "colors": {
+    "gasColor":"DFDDC7"
+  },
+  "gas": {
+    "isBurnable": false,
+    "isRadioactive": false,
+    "isCoolant": false
+  },
+  "compat": {
+    "create": false,
+    "occultism": false,
+    "mekanism": false
+  }
+}
