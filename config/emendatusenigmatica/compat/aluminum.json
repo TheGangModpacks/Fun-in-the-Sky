@@ -1,0 +1,30 @@
+{
+  "id": "aluminum",
+  "recipes" : [
+    {
+      "mod": "create",
+      "machine": "crushing_wheels",
+      "values": [
+        {
+          "type": "ore",
+          "output": [
+            { "item": "emendatusenigmatica:crushed_aluminum_ore", "count": 3, "chance": 0.25 },
+            { "item": "minecraft:sand", "count": 1, "chance": 0.65 }
+          ]
+        }
+      ]
+    },
+    {
+      "mod": "create",
+      "machine": "fan_washing",
+      "values": [
+        {
+          "type": "crushed_ore",
+          "output": [
+            { "item": "emendatusenigmatica:aluminum_nugget", "count": 2, "chance": 0.75 }
+          ]
+        }
+      ]
+    }
+  ]
+}

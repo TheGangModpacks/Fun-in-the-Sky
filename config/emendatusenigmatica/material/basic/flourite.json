@@ -1,0 +1,29 @@
+{
+  "id": "fluorite",
+  "source": "modded",
+  "localizedName": "Fluorite",
+  "processedTypes": [
+    "ore",
+    "dust",
+	"storage_block",
+	"gem"
+	],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 2,
+	"gemTexture": 5
+  },
+  "oreDrop": {
+    "drop": "emendatusenigmatica:fluorite",
+    "min": 4,
+    "max": 12
+  },
+  "colors": {
+    "materialColor": "77A272"
+  },
+  "compat": {
+    "create": false,
+    "occultism": false,
+    "mekanism": false
+  }
+}

@@ -10,8 +10,8 @@
 	quests: [
 		{
 			icon: "minecraft:grass_block"
-			x: 0.0d
-			y: -0.5d
+			x: 1.5d
+			y: -2.0d
 			subtitle: "The End is never the End"
 			description: ["Hey there! Welcome to Fun in the Sky! Please refer to the info checks up above for extra things :)"]
 			id: "02CC8DCEBD4C93A4"
@@ -20,22 +20,24 @@
 				type: "checkmark"
 				title: "The Beginning"
 			}]
-			rewards: [{
-				id: "71663ECB59E54D6A"
-				type: "item"
-				item: "botania:grass_seeds"
-			}]
+			rewards: [
+				{
+					id: "71663ECB59E54D6A"
+					type: "item"
+					item: "botania:grass_seeds"
+				}
+				{
+					id: "0BA417A82EC232F3"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+			]
 		}
 		{
 			icon: "botania:white_floating_flower"
-			x: 0.0d
+			x: 1.5d
 			y: -3.5d
 			subtitle: "Above the sea"
-			description: [
-				"Some notes about the island you seem to be stranded on:                                         "
-				"You see a little mound, it appears to be a bit... bright, on the inside. You take a look, and it appears to be Lava, trapped under a single piece of glass. Do be careful when interacting here.               "
-				"You also see a chest, with a very interesting look. Might be worth checking."
-			]
 			dependencies: ["02CC8DCEBD4C93A4"]
 			id: "10F52602C501C23E"
 			tasks: [{
@@ -51,10 +53,10 @@
 		}
 		{
 			icon: "minecraft:oak_leaves"
-			x: 0.0d
+			x: 1.5d
 			y: -5.0d
 			subtitle: "The 2nd most wanted thing in all of Modded"
-			description: ["When you look at blocks, an interesting... box, appears at the top of the screen. This little box appears to show information about the things I look at. I believe crouching shows even more information..."]
+			description: ["Jade is a mod that adds a tooltip to the top of your screen. It shows whenever you look at something, showing you what block it is, and some extra info."]
 			dependencies: ["10F52602C501C23E"]
 			id: "671DAED3A445DA96"
 			tasks: [{
@@ -71,7 +73,7 @@
 		{
 			title: "There's Roughly enough items!"
 			icon: "minecraft:oak_leaves"
-			x: -1.0d
+			x: 0.5d
 			y: -4.5d
 			subtitle: "Recipes at a glance"
 			description: ["In your inventory, you see a very large list of some kind to your right. It's a list of every block and item in the game. You can click on them to view recipes, or show what recipes they are used for. What a revoluntionary invention!"]
@@ -90,7 +92,7 @@
 		}
 		{
 			icon: "minecraft:oak_leaves"
-			x: -1.5d
+			x: 0.0d
 			y: -3.5d
 			subtitle: "Help! I need somebody, Help!"
 			description: [
@@ -113,7 +115,7 @@
 		}
 		{
 			icon: "minecraft:oak_leaves"
-			x: 1.0d
+			x: 2.5d
 			y: -4.5d
 			subtitle: "They never last"
 			description: ["You can use /skyblock commands to invite friends over, or do other \"skyblock\" things, if you prefer."]
@@ -131,28 +133,9 @@
 			}]
 		}
 		{
-			icon: "minecraft:oak_leaves"
-			x: 1.5d
-			y: -3.5d
-			subtitle: "Those darn Silverfish, and their silly Endermen"
-			description: ["Your island appears to be mostly made of stone. You might wonder if there are hidden secrets deep within..."]
-			dependencies: ["10F52602C501C23E"]
-			id: "5D12CDDC22B20DB0"
-			tasks: [{
-				id: "79F294B62B287207"
-				type: "checkmark"
-				title: "Infestation!"
-			}]
-			rewards: [{
-				id: "759F62E1B069B666"
-				type: "xp"
-				xp: 50
-			}]
-		}
-		{
 			title: "Punch! Slam! Whack!"
-			x: 0.0d
-			y: -2.0d
+			x: 1.5d
+			y: -0.5d
 			subtitle: "Push it real good"
 			description: ["Need I explain anything else?"]
 			dependencies: ["02CC8DCEBD4C93A4"]
@@ -204,17 +187,24 @@
 					count: 6L
 				}
 			]
-			rewards: [{
-				id: "1D4735B310FECF8D"
-				type: "item"
-				item: {
-					id: "exnihilosequentia:deepslate_crook"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "1D4735B310FECF8D"
+					type: "item"
+					item: {
+						id: "exnihilosequentia:deepslate_crook"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+				{
+					id: "3CC9115A01AC7DBC"
+					type: "xp"
+					xp: 50
+				}
+			]
 		}
 		{
 			title: "Silky Smooth"
@@ -245,7 +235,7 @@
 			}]
 		}
 		{
-			title: "A Step-Up"
+			title: "Sieving"
 			icon: "exnihilosequentia:oak_sieve"
 			x: 2.5d
 			y: 4.0d
@@ -272,6 +262,13 @@
 					item: "exnihilosequentia:string_mesh"
 				}
 			]
+			rewards: [{
+				id: "43B28CF0C41EB1CE"
+				type: "random"
+				title: "Ex Nihilo Basket"
+				icon: "farmersdelight:basket"
+				table_id: 5630983009744291639L
+			}]
 		}
 		{
 			x: 2.5d
@@ -300,6 +297,11 @@
 				type: "item"
 				item: "exnihilosequentia:flint_mesh"
 			}]
+			rewards: [{
+				id: "46BC6F8D8F714BF9"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 3.5d
@@ -313,6 +315,11 @@
 				id: "3333AC738E38360F"
 				type: "item"
 				item: "exnihilosequentia:iron_mesh"
+			}]
+			rewards: [{
+				id: "3E212A7877A33A6E"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -328,6 +335,11 @@
 				type: "item"
 				item: "exnihilosequentia:diamond_mesh"
 			}]
+			rewards: [{
+				id: "1E199CBFA560553C"
+				type: "xp"
+				xp: 75
+			}]
 		}
 		{
 			x: 4.0d
@@ -341,6 +353,11 @@
 				id: "3988C8E41340DDEE"
 				type: "item"
 				item: "exnihilosequentia:emerald_mesh"
+			}]
+			rewards: [{
+				id: "0F5E6BEB0AEC11E0"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -356,6 +373,20 @@
 				type: "item"
 				item: "exnihilosequentia:netherite_mesh"
 			}]
+			rewards: [
+				{
+					id: "467BA31A2F0DAD5A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "07F1468DB36F90E1"
+					type: "random"
+					title: "Ex Nihilo Basket"
+					icon: "farmersdelight:basket"
+					table_id: 5630983009744291639L
+				}
+			]
 		}
 		{
 			title: "Barrels of Fun"
@@ -378,6 +409,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1589CEEAFC59E80D"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			title: "The Stone Age"
@@ -391,6 +427,11 @@
 				id: "3C7E6210DE6396A5"
 				type: "item"
 				item: "exnihilosequentia:stone_barrel"
+			}]
+			rewards: [{
+				id: "25FDA687BD4E77F3"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -414,6 +455,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "38D149A0943F7085"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			title: "Hot Topic"
@@ -427,6 +473,13 @@
 				id: "1DAEA3884CF266A6"
 				type: "item"
 				item: "exnihilosequentia:fired_crucible"
+			}]
+			rewards: [{
+				id: "4B091929127C48B8"
+				type: "random"
+				title: "Ex Nihilo Basket"
+				icon: "farmersdelight:basket"
+				table_id: 5630983009744291639L
 			}]
 		}
 		{
@@ -447,6 +500,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "16ED3800A67D4063"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -481,6 +539,11 @@
 				type: "item"
 				item: "exnihilosequentia:witch_water_bucket"
 			}]
+			rewards: [{
+				id: "57115528ED1BAC15"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Too old to play with Dolls"
@@ -496,6 +559,11 @@
 				type: "item"
 				item: "exnihilosequentia:porcelain_doll"
 			}]
+			rewards: [{
+				id: "54B35ECC5EDE161B"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 6.5d
@@ -508,6 +576,11 @@
 				id: "7FA1A53A5E295DD9"
 				type: "item"
 				item: "exnihilosequentia:blaze_doll"
+			}]
+			rewards: [{
+				id: "3F400DA9FA814EFE"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -522,6 +595,11 @@
 				type: "item"
 				item: "exnihilosequentia:enderman_doll"
 			}]
+			rewards: [{
+				id: "22A9D4B258705B6C"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 6.5d
@@ -534,6 +612,11 @@
 				id: "48113E4586926507"
 				type: "item"
 				item: "exnihilosequentia:shulker_doll"
+			}]
+			rewards: [{
+				id: "09F6692796B1AEFA"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -548,6 +631,11 @@
 				type: "item"
 				item: "exnihilosequentia:guardian_doll"
 			}]
+			rewards: [{
+				id: "7EBEAA9A37499FCB"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 7.0d
@@ -561,26 +649,16 @@
 				type: "item"
 				item: "exnihilosequentia:bee_doll"
 			}]
-		}
-		{
-			title: "Seeds!"
-			x: 1.0d
-			y: 4.0d
-			description: ["Seeds can be obtained by sieving Dirt on a String Mesh. This quest unlocks the Agriculture Questline."]
-			dependencies: ["151BA5F11D763A60"]
-			invisible: true
-			invisible_until_tasks: 1
-			id: "446D8DB1D80663E9"
-			tasks: [{
-				id: "5DB7153D95BB441A"
-				type: "item"
-				item: "minecraft:wheat_seeds"
+			rewards: [{
+				id: "6DC3D0DBF344C234"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
 			icon: "minecraft:oak_leaves"
-			x: 1.0d
-			y: -2.5d
+			x: 3.0d
+			y: -3.5d
 			subtitle: "Big gains"
 			description: [
 				"By holding the ` or ~ or \"GRAVE\" key, you get a message in the top left, showing you that Ultimine is active! Ultimine is like Vein Miner, allowing you to destroy more than one block at a time."
@@ -593,6 +671,403 @@
 				id: "06316717A8A12DA8"
 				type: "checkmark"
 				title: "Ultimate Mining!"
+			}]
+		}
+		{
+			title: "Cobblestone Generator"
+			x: 1.5d
+			y: 6.0d
+			subtitle: "Cobble cobble cobble"
+			description: ["The Cobblestone Generator does exactly what it says. It generates cobblestone. Welcome to Skyblock."]
+			dependencies: ["151BA5F11D763A60"]
+			id: "75D13DC4058348DD"
+			tasks: [{
+				id: "075E25504D6A88D6"
+				type: "item"
+				item: "cobblefordays:tier_1"
+			}]
+			rewards: [{
+				id: "3F8DFC99756E9F9E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			shape: "diamond"
+			description: ["Decreases cook time by 40 ticks (2 seconds)"]
+			dependencies: ["151BA5F11D763A60"]
+			id: "3B18C8FE299F3058"
+			tasks: [{
+				id: "4394A188DDB126DA"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+			rewards: [{
+				id: "537EE4DEABDC4BB5"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			description: ["Increased Cobble gen speed."]
+			dependencies: ["75D13DC4058348DD"]
+			id: "0E736F77EF203478"
+			tasks: [{
+				id: "2909D65552A12C14"
+				type: "item"
+				item: "cobblefordays:tier_2"
+			}]
+			rewards: [{
+				id: "41C2F37338750635"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			shape: "diamond"
+			description: ["Decreases cook time by another 40 ticks (2 seconds)"]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "18CF5C6C30CD92FE"
+			tasks: [{
+				id: "1A78A5EC7BB809D3"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+			rewards: [{
+				id: "2ABE2351B90B6D9A"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			description: ["Increased Cobble gen speed."]
+			dependencies: ["0E736F77EF203478"]
+			id: "52007C17B062F046"
+			tasks: [{
+				id: "09B4EEBF342B0901"
+				type: "item"
+				item: "cobblefordays:tier_3"
+			}]
+			rewards: [{
+				id: "5907C875D4547601"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			shape: "diamond"
+			description: ["Decreases cook time by another 40 ticks (2 seconds)"]
+			dependencies: ["18CF5C6C30CD92FE"]
+			id: "44795C843AA6A245"
+			tasks: [{
+				id: "1B6C794E937C3C29"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+			rewards: [{
+				id: "768CD6F89E80437E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			description: ["Increased Cobble gen speed."]
+			dependencies: ["52007C17B062F046"]
+			id: "3DD80F9F666A2C74"
+			tasks: [{
+				id: "774B8B5F2AEAADD6"
+				type: "item"
+				item: "cobblefordays:tier_4"
+			}]
+			rewards: [{
+				id: "435E5044B260118F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			shape: "diamond"
+			description: ["Decreases cook time by another 40 ticks (2 seconds)"]
+			dependencies: ["44795C843AA6A245"]
+			id: "5F82A59C8719119F"
+			tasks: [{
+				id: "31A16310120F8EE0"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+			rewards: [{
+				id: "0CB63C18591C0A70"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.0d
+			description: ["Fastest Cobble Generator."]
+			dependencies: ["3DD80F9F666A2C74"]
+			id: "12D5F86B54E7E43B"
+			tasks: [{
+				id: "4F62852C5CD31C1E"
+				type: "item"
+				item: "cobblefordays:tier_5"
+			}]
+			rewards: [
+				{
+					id: "2082C12AFD11B80E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "0BE913A30E8056D4"
+					type: "random"
+					title: "Ex Nihilo Basket"
+					icon: "farmersdelight:basket"
+					table_id: 5630983009744291639L
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			shape: "diamond"
+			description: ["Decreases cook time by 20 ticks (1 second)"]
+			min_required_dependencies: 1
+			dependencies: [
+				"5F82A59C8719119F"
+				"116577F92478FF21"
+			]
+			dependency_requirement: "one_completed"
+			id: "2215FD0345A3C52F"
+			tasks: [{
+				id: "2EB9558CBE1758F7"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+			rewards: [{
+				id: "5338880FC766874D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.5d
+			shape: "diamond"
+			description: ["Increases cook time by another 40 ticks (2 seconds)"]
+			dependencies: ["44795C843AA6A245"]
+			id: "116577F92478FF21"
+			tasks: [{
+				id: "31A2AE417244A0C7"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+			rewards: [{
+				id: "584E9982D67B998B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			shape: "diamond"
+			description: ["Decreases cook time by 15 ticks (1.5 seconds)"]
+			dependencies: ["2215FD0345A3C52F"]
+			id: "22EFEB263AFADEE5"
+			tasks: [{
+				id: "3950D1E3ADE35829"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [{
+				id: "46FF897B7CBE8FF6"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			shape: "diamond"
+			description: ["Cooktime is 20 ticks (1 second) and generates Energy if all other furnaces are producing power."]
+			dependencies: ["22EFEB263AFADEE5"]
+			id: "53224F55F3F28F01"
+			tasks: [{
+				id: "3C3F73D7959E72DA"
+				type: "item"
+				item: {
+					id: "ironfurnaces:million_furnace"
+					Count: 1b
+					tag: {
+						display: {
+							Name: "{\"extra\":[{\"color\":\"red\",\"text\":\"R\"},{\"color\":\"aqua\",\"text\":\"a\"},{\"color\":\"green\",\"text\":\"i\"},{\"color\":\"yellow\",\"text\":\"n\"},{\"color\":\"blue\",\"text\":\"b\"},{\"color\":\"yellow\",\"text\":\"o\"},{\"color\":\"light_purple\",\"text\":\"w\"},{\"color\":\"red\",\"text\":\" \"},{\"color\":\"yellow\",\"text\":\"F\"},{\"color\":\"green\",\"text\":\"u\"},{\"color\":\"yellow\",\"text\":\"r\"},{\"color\":\"red\",\"text\":\"n\"},{\"color\":\"light_purple\",\"text\":\"a\"},{\"color\":\"green\",\"text\":\"c\"},{\"color\":\"yellow\",\"text\":\"e\"}],\"text\":\"\"}"
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6801A0E39A70D717"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "690A1CE4359FD6E1"
+					type: "random"
+					title: "Ex Nihilo Basket"
+					icon: "farmersdelight:basket"
+					table_id: 5630983009744291639L
+				}
+			]
+		}
+		{
+			title: "Wireless Heat"
+			icon: "ironfurnaces:heater"
+			x: -0.5d
+			y: 3.5d
+			shape: "diamond"
+			description: ["The Wireless Heat Transmitter sends heat to the Reciever placed in the furnace's Fuel slot, as long as the block is powered."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "3B9782C0853F6055"
+			tasks: [
+				{
+					id: "5F4A6B6B013A943E"
+					type: "item"
+					item: "ironfurnaces:heater"
+				}
+				{
+					id: "092BDF78A46E6A7D"
+					type: "item"
+					item: "ironfurnaces:item_heater"
+				}
+			]
+			rewards: [{
+				id: "262980989B573C86"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			shape: "diamond"
+			description: ["Decreases cook time of Blasting recipes. Does not accept regular recipes."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "0B0B7BD71F817989"
+			tasks: [{
+				id: "067CC0CDACC57D64"
+				type: "item"
+				item: "ironfurnaces:augment_blasting"
+			}]
+			rewards: [{
+				id: "40437F6239C947B1"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			shape: "diamond"
+			description: ["Decreases cook time of Smoking recipes. Does not accept regular recipes."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "479AE1FE316B4CDC"
+			tasks: [{
+				id: "1AF4454BBC81BF22"
+				type: "item"
+				item: "ironfurnaces:augment_smoking"
+			}]
+			rewards: [{
+				id: "620A008E007F7571"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			shape: "diamond"
+			description: ["General speed upgrade. Increases Fuel Usage."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "54D19842A17A4322"
+			tasks: [{
+				id: "0392F7E98709B29C"
+				type: "item"
+				item: "ironfurnaces:augment_speed"
+			}]
+			rewards: [{
+				id: "015542736621FF15"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			shape: "diamond"
+			description: ["Decreases Fuel Usage. Also decreases Cooktime."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "0B5C350A41FA03BA"
+			tasks: [{
+				id: "3C083FA6440DDBDC"
+				type: "item"
+				item: "ironfurnaces:augment_fuel"
+			}]
+			rewards: [{
+				id: "1A9DD3D59600D486"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			shape: "diamond"
+			description: ["Adds extra Processing slots. Now requires Energy."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "763049B8AC6FDCAB"
+			tasks: [{
+				id: "56D0C160FE0AC10E"
+				type: "item"
+				item: "ironfurnaces:augment_factory"
+			}]
+			rewards: [{
+				id: "4AC8508731EE8587"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			shape: "diamond"
+			description: ["Generates Energy. Disables regular Furnace function."]
+			dependencies: ["3B18C8FE299F3058"]
+			id: "7CAE7D1B2333822F"
+			tasks: [{
+				id: "3A3AC6B9B3095480"
+				type: "item"
+				item: "ironfurnaces:augment_generator"
+			}]
+			rewards: [{
+				id: "7A1CD5FCC5B51527"
+				type: "xp"
+				xp: 50
 			}]
 		}
 	]

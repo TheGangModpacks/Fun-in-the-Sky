@@ -173,7 +173,7 @@ customization {
   width = 108
   action = deep_customization_element:title_screen_branding
   actionid = 83e0c026-d440-4f6d-ae6c-2277d07c99761674793330235
-  y = 312
+  y = 318
   height = 40
 }
 
@@ -184,7 +184,7 @@ customization {
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 6cb44b5b-84eb-42ef-b334-581c93906c391674793330235
-  y = 334
+  y = 340
   height = 9
 }
 
@@ -243,5 +243,10 @@ customization {
   actionid = 0e78bd7a-15e3-4533-9a40-1c6e31a18f6d1674827428991
   y = 57
   height = 100
+}
+
+customization {
+  identifier = %id=376346%
+  action = hidebutton
 }
 
