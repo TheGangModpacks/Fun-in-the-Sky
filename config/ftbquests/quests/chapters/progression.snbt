@@ -7,6 +7,7 @@
 	icon: "twilightforest:filled_ore_map"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			icon: "mcwdoors:acacia_western_door"
@@ -35,13 +36,13 @@
 			}]
 		}
 		{
-			title: "&lMain"
+			title: "&lAdventure"
 			icon: "minecraft:mangrove_propagule"
 			x: 0.0d
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"The Main path takes you through the required mods to enter the end-game"
+				"The Adventure Questlines bring you through adventurous travels! "
 				""
 				"You start out with Welcome to the World, Adventure, and Storage."
 			]

@@ -1,7 +1,7 @@
 {
 	id: "7F2B95D3EAB90A14"
 	group: "45EE6B8D98E9487B"
-	order_index: 0
+	order_index: 1
 	filename: "agriculture"
 	title: "Agriculture"
 	icon: {
@@ -13,6 +13,7 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "Agriculture Beginnings"
@@ -1584,6 +1585,19 @@
 				id: "4C331CC6C0235A78"
 				type: "item"
 				item: "mysticalagriculture:air_seeds"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -7.5d
+			shape: "octagon"
+			description: ["Gaia Spirit Seeds produce Gaia Essence, used for expensive Gaia Spirits. (How many times am I gonna repeat the same quest descriptions?)"]
+			dependencies: ["63AF39BCAE4956B6"]
+			id: "496DF14646548FA9"
+			tasks: [{
+				id: "25F5A6E51DBFD968"
+				type: "item"
+				item: "mysticalagriculture:gaia_spirit_seeds"
 			}]
 		}
 	]

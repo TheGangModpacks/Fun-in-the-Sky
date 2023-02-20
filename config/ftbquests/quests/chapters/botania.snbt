@@ -1,12 +1,13 @@
 {
 	id: "31F09D08092FDCBE"
 	group: "45EE6B8D98E9487B"
-	order_index: 2
+	order_index: 3
 	filename: "botania"
 	title: "Botania"
 	icon: "botania:glimmering_livingwood"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			x: 0.0d

@@ -1,12 +1,13 @@
 {
 	id: "5F7987B2EB807351"
 	group: "67B4334297F15B2D"
-	order_index: 5
+	order_index: 4
 	filename: "enchanting"
 	title: "Enchanting"
 	icon: "minecraft:enchanting_table"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "Enchanted Beginnings"

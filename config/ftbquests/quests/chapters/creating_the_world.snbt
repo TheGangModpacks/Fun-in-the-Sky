@@ -1,12 +1,13 @@
 {
 	id: "58146AA7D3DDCA90"
 	group: "45EE6B8D98E9487B"
-	order_index: 1
+	order_index: 2
 	filename: "creating_the_world"
 	title: "Creating the World"
 	icon: "create:cogwheel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			icon: "create:goggles"
@@ -28,7 +29,7 @@
 		{
 			title: "Cogsworth"
 			icon: "create:large_cogwheel"
-			x: 0.0d
+			x: -4.0d
 			y: -3.5d
 			shape: "pentagon"
 			subtitle: "Two Centurys Later"
@@ -88,7 +89,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 4.5d
 			y: -3.5d
 			shape: "diamond"
 			description: ["The Waterwheel is a basic kinetic energy source. Will require lots of space."]
@@ -103,8 +104,8 @@
 		}
 		{
 			title: "Steam!"
-			icon: "create:flywheel"
-			x: 7.5d
+			icon: "create:steam_engine"
+			x: 4.0d
 			y: -4.0d
 			shape: "diamond"
 			subtitle: "Is this DLC?"
@@ -125,7 +126,7 @@
 		{
 			title: "Windmill"
 			icon: "create:white_sail"
-			x: 7.5d
+			x: 4.0d
 			y: -3.0d
 			shape: "diamond"
 			description: ["The Windmill is a mid-tier source of kinetic energy. Easy to set up."]
@@ -405,7 +406,7 @@
 				""
 				"Ponder for more info."
 			]
-			dependencies: ["1E2518E28DDAFF97"]
+			dependencies: ["4716E7AB57F8C77D"]
 			hide: true
 			id: "14836CDF5740CA00"
 			tasks: [{
@@ -443,8 +444,9 @@
 		}
 		{
 			title: "Kinetic Energy"
-			x: 6.5d
+			x: 3.0d
 			y: -3.5d
+			shape: "pentagon"
 			description: [
 				"Most of Create uses kinetic energy to power blocks. Make sure you're using the right source for the job."
 				"The Hand Crack is the most basic form of kinetic energy."
@@ -1007,7 +1009,7 @@
 		{
 			title: "Choo Choo!"
 			icon: "create:railway_casing"
-			x: 2.5d
+			x: 0.0d
 			y: -3.5d
 			shape: "pentagon"
 			subtitle: "Road-Killer!"
@@ -1024,10 +1026,11 @@
 		}
 		{
 			title: "Train Tracks"
-			x: 2.0d
+			x: -0.5d
 			y: -1.0d
 			subtitle: "What, you thought you could add wings to trains?"
 			description: ["Train Tracks are, well, tracks. You know, for the train?"]
+			dependencies: ["348AC59A917B7849"]
 			id: "1C6AA4DCB5C737C5"
 			tasks: [{
 				id: "4029245E0C132C8B"
@@ -1037,10 +1040,11 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 0.5d
 			y: -1.0d
 			subtitle: "Chooooo"
 			description: ["The Train Station is used to define stops for all incoming Trains. Give it a name, set it up next to a track, and start building a train! You won't be able to create Boegys without it"]
+			dependencies: ["348AC59A917B7849"]
 			id: "79C07CC9B082B414"
 			tasks: [{
 				id: "68B0A1351BE29096"
@@ -1049,7 +1053,7 @@
 			}]
 		}
 		{
-			x: 3.7857142857142847d
+			x: 1.2857142857142847d
 			y: -0.5357142857142918d
 			shape: "hexagon"
 			subtitle: "Late for work! Coming through!"
@@ -1065,7 +1069,7 @@
 		}
 		{
 			title: "Misc Train Things"
-			x: 3.0d
+			x: 0.5d
 			y: 0.0d
 			subtitle: "Observe."
 			description: [
@@ -1073,6 +1077,7 @@
 				""
 				"Train Observers look for trains entering stations, and outputs redstone signals accordingly."
 			]
+			dependencies: ["348AC59A917B7849"]
 			id: "331C2C5D418D4CDE"
 			tasks: [
 				{
@@ -1090,7 +1095,7 @@
 		{
 			title: "Train Workings"
 			icon: "create:controls"
-			x: 2.0d
+			x: -0.5d
 			y: 0.0d
 			subtitle: "All aboard!"
 			description: [
@@ -1098,6 +1103,7 @@
 				""
 				"Train Doors | Trapdoors are doors specifically designed for train use. They close automatically when the train is in motion."
 			]
+			dependencies: ["348AC59A917B7849"]
 			id: "7CF758A7F310A205"
 			tasks: [
 				{
