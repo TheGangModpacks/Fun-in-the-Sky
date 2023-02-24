@@ -1,0 +1,55 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABBCDCBBB",
+    "DDEFCFEDD",
+    "FDDDCDDDF",
+    "FGGDDDHHF",
+    "FFFFIFFFF",
+    "FJJDDDKKF",
+    "FDDDCDDDF",
+    "DDEFCFEDD",
+    "BBBCDCBBA"
+  ],
+  "key": {
+    "A": {
+      "item": "powah:energizing_rod_spirited"
+    },
+    "B": {
+      "item": "powah:energy_cable_spirited"
+    },
+    "C": {
+      "item": "emendatusenigmatica:uranium_block"
+    },
+    "D": {
+      "item": "mysticalagriculture:supremium_essence"
+    },
+    "E": {
+      "item": "powah:capacitor_spirited"
+    },
+    "F": {
+      "item": "powah:uraninite_block"
+    },
+    "G": {
+      "type": "forge:nbt",
+      "item": "thermal:energy_cell",
+      "count": 1,
+      "nbt": "{BlockEntityTag:{Energy:0,EnergyMax:1000000,EnergyRecv:1000,EnergySend:1000}}"
+    },
+    "H": {
+      "item": "ae2:dense_energy_cell"
+    },
+    "I": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    },
+    "J": {
+      "item": "powah:ender_cell_spirited"
+    },
+    "K": {
+      "item": "powah:energy_cell_spirited"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:uraninite_seeds"
+  }
+}

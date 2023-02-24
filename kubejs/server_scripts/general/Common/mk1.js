@@ -10,16 +10,6 @@ ServerEvents.recipes(event => {
 	C: 'immersiveengineering:component_steel',
 	D: 'immersiveengineering:wire_lead'
   })
-  event.remove({output: 'thermal:machine_frame'})
-  event.shaped('thermal:machine_frame', [
-    'ASA',
-    'SBS',
-    'ASA'
-  ], {
-    S: '#forge:glass',
-	A: 'minecraft:iron_ingot',
-	B: 'kubejs:mk1circuit'
-  })
   event.remove({output: 'industrialforegoing:machine_frame_pity'})
   event.custom({
 	  type: 'lychee:block_interacting',

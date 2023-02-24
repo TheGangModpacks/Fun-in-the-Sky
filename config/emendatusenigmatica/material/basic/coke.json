@@ -1,0 +1,15 @@
+{
+	"id": "coal_coke",
+	"source": "modded",
+	"localizedName": "Coal Coke",
+	"processedTypes": [
+	"dust",
+	"gem",
+	"storage_block"
+	],
+	"properties": {
+		"materialType": "gem",
+		"gemTexture": 6,
+		"harvestLevel": 2
+	}
+}

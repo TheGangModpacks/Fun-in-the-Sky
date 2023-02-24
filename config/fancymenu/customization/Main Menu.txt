@@ -23,7 +23,7 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 47
+  y = 21
 }
 
 customization {
@@ -42,7 +42,7 @@ customization {
   orientation = mid-centered
   x = 0
   action = movebutton
-  y = 22
+  y = 44
 }
 
 customization {
@@ -63,7 +63,7 @@ customization {
   orientation = mid-centered
   x = 53
   action = movebutton
-  y = 22
+  y = 44
 }
 
 customization {
@@ -77,12 +77,6 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   action = setbuttonlabel
   value = Quit
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  action = sethoverlabel
-  label = Don't leave!
 }
 
 customization {
@@ -119,7 +113,7 @@ customization {
   orientation = mid-centered
   x = -51
   action = movebutton
-  y = 22
+  y = 44
 }
 
 customization {
@@ -145,7 +139,7 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 22
+  y = 44
 }
 
 customization {
@@ -153,6 +147,11 @@ customization {
   width = 46
   action = resizebutton
   height = 20
+}
+
+customization {
+  identifier = %id=376346%
+  action = hidebutton
 }
 
 customization {
@@ -243,10 +242,5 @@ customization {
   actionid = 0e78bd7a-15e3-4533-9a40-1c6e31a18f6d1674827428991
   y = 57
   height = 100
-}
-
-customization {
-  identifier = %id=376346%
-  action = hidebutton
 }
 

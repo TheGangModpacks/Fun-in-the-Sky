@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": [
+    {
+      "tag": "forge:ores/aluminum"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "item": "emendatusenigmatica:crushed_aluminum_ore"
+    },
+    {
+      "chance": 0.25,
+      "count": 3,
+      "item": "emendatusenigmatica:crushed_aluminum_ore"
+    },
+    {
+      "chance": 0.65,
+      "count": 1,
+      "item": "minecraft:sand"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emendatusenigmatica:items/templates/axe/00",
+    "layer1": "emendatusenigmatica:items/templates/axe/01",
+    "layer2": "emendatusenigmatica:items/templates/axe/02",
+    "layer3": "emendatusenigmatica:items/templates/axe/03",
+    "layer4": "emendatusenigmatica:items/templates/axe/grip"
+  }
+}

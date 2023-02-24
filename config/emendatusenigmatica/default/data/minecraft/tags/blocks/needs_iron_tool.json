@@ -1,0 +1,23 @@
+{
+  "values": [
+    "emendatusenigmatica:cinnabar_block",
+    "emendatusenigmatica:apatite_block",
+    "emendatusenigmatica:sulfur_block",
+    "emendatusenigmatica:fluorite_block",
+    "emendatusenigmatica:invar_block",
+    "emendatusenigmatica:nickel_block",
+    "emendatusenigmatica:raw_nickel_block",
+    "emendatusenigmatica:electrum_block",
+    "emendatusenigmatica:salt_block",
+    "emendatusenigmatica:raw_salt_block",
+    "emendatusenigmatica:coal_coke_block",
+    "emendatusenigmatica:brass_block",
+    "emendatusenigmatica:constantan_block",
+    "emendatusenigmatica:lead_block",
+    "emendatusenigmatica:raw_lead_block",
+    "emendatusenigmatica:silver_block",
+    "emendatusenigmatica:raw_silver_block",
+    "emendatusenigmatica:uranium_block",
+    "emendatusenigmatica:raw_uranium_block"
+  ]
+}
