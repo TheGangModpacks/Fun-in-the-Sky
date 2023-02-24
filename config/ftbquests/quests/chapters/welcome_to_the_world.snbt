@@ -3,10 +3,11 @@
 	group: "67B4334297F15B2D"
 	order_index: 0
 	filename: "welcome_to_the_world"
-	title: "Welcome to the World"
+	title: "&aWelcome to the World"
 	icon: "minecraft:lime_wool"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			icon: "minecraft:grass_block"
@@ -274,7 +275,7 @@
 			x: 2.5d
 			y: 5.5d
 			subtitle: "Not Loot Lake again!"
-			description: ["Each type of Mesh can yield different resources, or the same resources at a higher chance of getting them. Make sure to check JEI before claiming a material is gotten from the Nether."]
+			description: ["Each type of Mesh can yield different resources, or the same resources at a higher chance of getting them. Make sure to check JEI before claiming a material is obtained from the Nether."]
 			dependencies: ["151BA5F11D763A60"]
 			id: "4C81CD71381AC197"
 			tasks: [{
@@ -285,8 +286,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 5.5d
+			x: 2.5d
+			y: 6.5d
 			shape: "diamond"
 			subtitle: "Hard on my fingers"
 			description: ["The Flint mesh enables the chance of getting metallic resources."]
@@ -304,8 +305,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 6.0d
+			x: 2.0d
+			y: 7.0d
 			shape: "diamond"
 			subtitle: "This hurts even more!"
 			description: ["The Iron mesh allows for less common materials to have a higher chance of being revealed. It also allows rarer resources to be found."]
@@ -323,8 +324,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 6.0d
+			x: 3.0d
+			y: 7.0d
 			shape: "diamond"
 			subtitle: "Why are they all so sharp!"
 			description: ["The Diamond mesh doesn't really add much to get, it only increses the chance of getting rarer and less common resources."]
@@ -342,8 +343,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 6.5d
+			x: 2.5d
+			y: 7.5d
 			shape: "diamond"
 			subtitle: "Arghhhhh!"
 			description: ["The Emerald mesh more or less does the same as the Diamond mesh."]
@@ -361,8 +362,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 7.5d
+			x: 2.5d
+			y: 8.5d
 			shape: "pentagon"
 			subtitle: "x_x"
 			description: ["Same deal as the last two mesh's, but hey at least it looks cool."]
@@ -1069,6 +1070,30 @@
 				type: "xp"
 				xp: 50
 			}]
+		}
+		{
+			icon: "kubejs:leaded_iron"
+			x: 4.0d
+			y: 5.5d
+			description: [
+				"Leaded Iron Alloy is used for lots of \"Immersive\" stuff."
+				""
+				"When dropping the items in water, wait 30 seconds."
+			]
+			dependencies: ["151BA5F11D763A60"]
+			id: "2CA294BAE1134404"
+			tasks: [
+				{
+					id: "2E1CF1E8C5C0743B"
+					type: "item"
+					item: "kubejs:leaded_iron_compound"
+				}
+				{
+					id: "5378D96930C314E1"
+					type: "item"
+					item: "kubejs:leaded_iron"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

@@ -18,9 +18,6 @@
     "min": 4,
     "max": 12
   },
-  "colors": {
-    "materialColor": "77A272"
-  },
   "compat": {
     "create": false,
     "occultism": false,

@@ -1,0 +1,25 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABABA",
+    "BAAAB",
+    "AACAA",
+    "BAAAB",
+    "ABABA"
+  ],
+  "tier": 2,
+  "key": {
+    "A": {
+      "item": "mysticalagriculture:tertium_essence"
+    },
+    "B": {
+      "item": "minecraft:obsidian"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:obsidian_seeds"
+  }
+}

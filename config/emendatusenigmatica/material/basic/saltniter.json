@@ -1,0 +1,17 @@
+{
+  "id": "salt",
+  "source": "modded",
+  "localizedName": "Niter",
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "raw",
+    "dust",
+	"gem"
+  ],
+  "properties": {
+    "materialType": "gem",
+	"gemTexture":  1,
+    "harvestLevel": 2
+  }
+}

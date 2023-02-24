@@ -1,9 +1,9 @@
 {
 	id: "6123E762619A563C"
 	group: "67B4334297F15B2D"
-	order_index: 2
+	order_index: 1
 	filename: "engineering_the_world"
-	title: "Immersive Engineering"
+	title: "&7Immersive Engineering"
 	icon: {
 		id: "immersiveengineering:hammer"
 		Count: 1b
@@ -13,6 +13,7 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			icon: "minecraft:bricks"
@@ -72,10 +73,7 @@
 			y: -4.5d
 			subtitle: "Supah hot topic"
 			description: ["The Blast Furnace is a multiblock that creates Steel, very, very slowly. It's created in the same 3x3x3 form as the Coke Oven."]
-			dependencies: [
-				"0B58B1C5B752810C"
-				"3BA9C67CC6E29A59"
-			]
+			dependencies: ["3BA9C67CC6E29A59"]
 			id: "642DF490F8521F4E"
 			tasks: [
 				{
@@ -403,7 +401,7 @@
 				}
 			}
 			x: 3.0d
-			y: -7.0d
+			y: -6.5d
 			subtitle: "Snip"
 			description: ["The Wire Cutters are used to create Wires from Plates."]
 			dependencies: ["5E0D7BD45D9D48D4"]
@@ -756,63 +754,15 @@
 			}]
 		}
 		{
-			x: -6.500000000000001d
-			y: -5.2d
-			shape: "octagon"
-			subtitle: "Advance to the future!"
-			description: [
-				"The MK1 Circuit is the primary item to creating some electrical machinery, and moving away from this basic nonesense."
-				""
-				"Crafting this item unlocks the Engineering 2 Questline."
-			]
-			size: 1.3d
-			id: "57E42AEBB4604FB1"
-			tasks: [{
-				id: "3F1B29B7721CB599"
-				type: "item"
-				item: "kubejs:mk1circuit"
-			}]
-		}
-		{
-			x: -8.5d
-			y: -6.0d
-			subtitle: ":tada:"
-			description: ["Finishing every quest not marked as [Optional] earns you this quest! You are now a complete Basic Engineer!"]
-			id: "19A40DEBE4CAFF18"
-			tasks: [{
-				id: "643A53B030E9E1ED"
-				type: "checkmark"
-				title: "Completion"
-			}]
-			rewards: [
-				{
-					id: "5D20C1F3EE1693AA"
-					type: "command"
-					auto: "invisible"
-					exclude_from_claim_all: true
-					command: "/say @p has finished the Basic Engineering questline!"
-					player_command: false
-				}
-				{
-					id: "0F3F72B2768BF19B"
-					type: "gamestage"
-					auto: "invisible"
-					ignore_reward_blocking: true
-					stage: "Engineering 2"
-				}
-				{
-					id: "1FDC327172E88F63"
-					type: "custom"
-					exclude_from_claim_all: true
-				}
-			]
-		}
-		{
 			title: "Arc Electrodes"
 			x: 3.7499999999999787d
 			y: -4.678571428571431d
 			description: ["The Arc Furnace Electrodes blueprint allows for the creation of Graphite Electrodes."]
-			dependencies: ["5E0D7BD45D9D48D4"]
+			hide_dependency_lines: true
+			dependencies: [
+				"5E0D7BD45D9D48D4"
+				"35CE2659F4FDBC77"
+			]
 			size: 0.8d
 			id: "3D1AE48360ED8C18"
 			tasks: [{
@@ -893,7 +843,7 @@
 			x: -2.5d
 			y: -7.5d
 			description: ["Immersive Engineering adds many giant machines, used for many different purposes. You can find schematic files for all of these machines in your Structures folder in the root directory of the modpack. If you want to build them yourself, you can see how in the IE Manual."]
-			dependencies: ["642DF490F8521F4E"]
+			dependencies: ["33B53E150A61D34C"]
 			id: "3E364FE6057E9D50"
 			tasks: [{
 				id: "3C9753D8B87993AF"
@@ -907,6 +857,7 @@
 			x: -0.5d
 			y: -7.0d
 			description: ["The Metal Press is the main way you're going to make Gears, Sheets, Rods, everything."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "782BE6B4E0EAFBC7"
 			tasks: [
 				{
@@ -941,9 +892,10 @@
 		{
 			title: "Crusher"
 			icon: "immersiveengineering:crusher"
-			x: -4.5d
+			x: -4.0d
 			y: -6.0d
 			description: ["The Crusher grinds downs things into a much simpler form, like Iron ingots to Iron dust."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "1296C2B9D422B2E6"
 			tasks: [
 				{
@@ -983,6 +935,7 @@
 			x: -3.0d
 			y: -9.5d
 			description: ["The Sawmill cuts down your logs into more Planks than usual. It also creates Sawdust, useful for things like Boxes."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "325C01D7AB674133"
 			tasks: [
 				{
@@ -1025,10 +978,11 @@
 		{
 			title: "Assembler"
 			icon: "immersiveengineering:assembler"
-			x: -3.5d
+			x: -3.0d
 			y: -5.5d
 			subtitle: "Some Assembly Required"
 			description: ["The Assembler automatically crafts specified Crafting Table recipes."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "3FB8A06C43A48D7E"
 			tasks: [
 				{
@@ -1075,6 +1029,7 @@
 			x: -4.0d
 			y: -9.0d
 			description: ["The Automatic Engineer's Workbench does exactly what it says on the tin. Say goodbye to manually crafting Vacuum Tubes."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "58877BF1670D91C5"
 			tasks: [
 				{
@@ -1124,9 +1079,10 @@
 		{
 			title: "Squeezer"
 			icon: "immersiveengineering:squeezer"
-			x: -5.5d
-			y: -6.5d
+			x: -2.0d
+			y: -5.5d
 			description: ["The Industrial Squeezer converts many items into weird things like... Plant Oil?"]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "2187236BC7E20AA2"
 			tasks: [
 				{
@@ -1174,9 +1130,10 @@
 		{
 			title: "Fermenter"
 			icon: "immersiveengineering:fermenter"
-			x: -5.0d
-			y: -7.5d
+			x: -4.5d
+			y: -7.0d
 			description: ["The Industrial Fermenter is used to make Ethanol."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "50A0BC31F7325275"
 			tasks: [
 				{
@@ -1219,10 +1176,11 @@
 		{
 			title: "Mixer"
 			icon: "immersiveengineering:mixer"
-			x: -2.0d
-			y: -9.5d
+			x: -1.0d
+			y: -9.0d
 			subtitle: "Sorry Microsoft, you had your chance"
 			description: ["The Mixer is used for Potion crafting, Herbicide, and Concrete."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "0531BD1A30971729"
 			tasks: [
 				{
@@ -1264,9 +1222,10 @@
 		{
 			title: "Refinery"
 			icon: "immersiveengineering:refinery"
-			x: -1.0d
-			y: -9.0d
+			x: -2.0d
+			y: -9.5d
 			description: ["The Refinery is used for making Biodiesel, Phenolic Resin, and Acetaldehyde."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "4FC2B44A7C18CFDF"
 			tasks: [
 				{
@@ -1312,6 +1271,7 @@
 			x: -0.5d
 			y: -8.0d
 			description: ["The Bottling Machine puts fluids in things like Bottles, Buckets, pretty much anything. Make sure you place those conveyor belts correctly."]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "24B887E98A705B18"
 			tasks: [
 				{
@@ -1358,6 +1318,7 @@
 			shape: "rsquare"
 			subtitle: "The Biggest Chungus"
 			description: ["The Arc Furnace is the largest base IE machine... good lord. It has powerful ore processing capabilities, makes some other IE blocks, and recycles old parts you don't or didn't need."]
+			dependencies: ["3E364FE6057E9D50"]
 			size: 1.2d
 			id: "35CE2659F4FDBC77"
 			tasks: [
@@ -1418,13 +1379,14 @@
 		{
 			title: "Excavator"
 			icon: "immersiveengineering:excavator"
-			x: -5.0d
-			y: -8.5d
+			x: -4.5d
+			y: -8.0d
 			description: [
 				"The Excavator is used to mine resources from Mineral Deposits, unseen by the human eyes."
 				""
 				"The Excavator is made of two structures, the rig itself and the... digger part? Is that what it's called?"
 			]
+			dependencies: ["3E364FE6057E9D50"]
 			id: "48C0CDBACF9C2F5B"
 			tasks: [
 				{
@@ -1473,13 +1435,14 @@
 		{
 			title: "Basic Power Generation"
 			icon: "immersiveengineering:windmill_blade"
-			x: 3.5d
-			y: -2.0d
+			x: 5.0d
+			y: -5.0d
 			description: [
 				"Windmills and Waterwheels are the most basic form of Energy generation."
 				""
 				"A Windmill can be upgraded with Sails to improve it's speed."
 			]
+			dependencies: ["333C1112B5FF188C"]
 			id: "3510B00CE37BDE6D"
 			tasks: [
 				{
@@ -1496,6 +1459,227 @@
 					id: "2676AE02BE9256CB"
 					type: "item"
 					item: "immersiveengineering:dynamo"
+				}
+			]
+		}
+		{
+			title: "Low Voltage"
+			icon: "immersiveengineering:wirecoil_copper"
+			x: 5.0d
+			y: -6.5d
+			description: ["LV Wires transmit 2048FE /t."]
+			dependencies: ["6376FB902DEC6AA1"]
+			id: "333C1112B5FF188C"
+			tasks: [
+				{
+					id: "42FC66B1AA8E7BB6"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+				{
+					id: "43FD79601AF03263"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "3FDA4DD9C960AB39"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+			]
+		}
+		{
+			title: "Medium Voltage"
+			icon: "immersiveengineering:wirecoil_electrum"
+			x: 7.0d
+			y: -6.5d
+			description: ["MV Wires transmit 8192FE /t."]
+			dependencies: ["333C1112B5FF188C"]
+			id: "74B5997B5F7A9993"
+			tasks: [
+				{
+					id: "38C3B96789190A1E"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+				{
+					id: "0282A29DEA8F4125"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "48C7B0B6C7DFE0FD"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+			]
+		}
+		{
+			title: "High Voltage"
+			icon: "immersiveengineering:wirecoil_steel"
+			x: 9.0d
+			y: -6.5d
+			description: ["HV Wires transmit 32,768FE /t."]
+			dependencies: ["74B5997B5F7A9993"]
+			id: "09A912B68AA73BAB"
+			tasks: [
+				{
+					id: "4777C963EFD82A4E"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "57F0409893436BC6"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "3BE2675CDC31385D"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+			]
+		}
+		{
+			title: "Insulation"
+			icon: "immersiveengineering:wirecoil_copper_ins"
+			x: 6.0d
+			y: -8.0d
+			min_required_dependencies: 1
+			dependencies: [
+				"74B5997B5F7A9993"
+				"333C1112B5FF188C"
+			]
+			id: "4B4C6C547A9E7290"
+			tasks: [{
+				id: "47D54A0DEDCDC6BA"
+				type: "item"
+				title: "Insulated Cabling"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:wirecoil_electrum_ins"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:wirecoil_copper_ins"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Diesel Generator"
+			icon: "immersiveengineering:diesel_generator"
+			x: 9.0d
+			y: -5.0d
+			description: ["The Diesel Generator is a massive Energy generator. Harnessing the power of Biodiesel, this big rig creates 4096FE /t. Make sure you're keeping up with Biofuel production!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"09A912B68AA73BAB"
+				"4FC2B44A7C18CFDF"
+			]
+			id: "40C42C98C1CD175A"
+			tasks: [
+				{
+					id: "4720340064E36C53"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "7CEF1A999C5155D8"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "6225480DD07675BC"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "1FDA821CDD69B0D3"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "67D66577BBC5D53A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4DD73B836032A451"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -5.0d
+			description: ["Place Ice and Lava next to the Thermo Generator to produce Energy."]
+			dependencies: ["74B5997B5F7A9993"]
+			id: "2D4209B53BCF661A"
+			tasks: [{
+				id: "0201C57ECC5909F0"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			title: "Conveyor Belt"
+			x: 1.0d
+			y: -9.0d
+			shape: "pentagon"
+			description: [
+				"The Conveyor Belt is a really cheap solution to your Item Logistics issue."
+				""
+				"There are a bunch of other Conveyor Belts, vertical, import, even covered."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			id: "2DFDD5759C417D3A"
+			tasks: [{
+				id: "1E3A0E7381033FA9"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+				count: 16L
+			}]
+		}
+		{
+			title: "Engineering Blocks"
+			icon: "immersiveengineering:heavy_engineering"
+			x: -1.0d
+			y: -6.0d
+			description: ["Engineering Blocks are used in every multiblock in IE. We'd recommend making lots of them."]
+			dependencies: ["642DF490F8521F4E"]
+			id: "33B53E150A61D34C"
+			tasks: [
+				{
+					id: "3DAD7D6359AFF85F"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "6B6DE9B10B5351B6"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+					count: 4L
+				}
+				{
+					id: "123D07E3D25C7EAC"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
 				}
 			]
 		}

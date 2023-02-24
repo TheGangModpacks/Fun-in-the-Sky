@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "emendatusenigmatica",
+  "key": {
+    "#": {
+      "tag": "forge:gems/apatite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "emendatusenigmatica:apatite_block"
+  }
+}

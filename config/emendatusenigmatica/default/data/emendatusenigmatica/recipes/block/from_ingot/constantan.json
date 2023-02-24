@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "emendatusenigmatica",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/constantan"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "emendatusenigmatica:constantan_block"
+  }
+}

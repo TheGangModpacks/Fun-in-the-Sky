@@ -1,0 +1,10 @@
+{
+	"id": "stone",
+	"baseTexture": "minecraftLblock/stone",
+	"suffix": "stone",
+	"fillerType": "stone",
+	"localizedName": "Stone",
+	"harvestTool": "pickaxe",
+	"hardness": 0.5,
+	"resistance": 0.7,
+}

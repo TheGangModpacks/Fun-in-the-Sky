@@ -1,0 +1,16 @@
+{
+	"id": "apatite",
+	"source": "modded",
+	"localizedName": "Apatite",
+	"processedTypes": [
+	"ore",
+	"gem",
+	"dust",
+	"storage_block"
+	],
+	"properties": {
+		"materialType": "gem",
+		"gemTexture": 5,
+		"harvestLevel": 2
+	}
+}

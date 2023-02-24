@@ -1,0 +1,16 @@
+{
+	"id": "cinnabar",
+	"source": "modded",
+	"localizedName": "Cinnabar",
+	"processedTypes": [
+	"gem",
+	"ore",
+	"dust",
+	"storage_block"
+	],
+	"properties": {
+		"materialType": "gem",
+		"gemTexture": 4,
+		"harvestLevel": 2
+	}
+}

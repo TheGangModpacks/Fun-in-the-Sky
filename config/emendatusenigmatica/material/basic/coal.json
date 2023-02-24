@@ -1,0 +1,18 @@
+{
+  "id": "coal",
+  "source": "vanilla",
+  "localizedName": "Coal",
+  "disableDefaultOre": false,
+  "processedTypes": [
+    "dust"
+  ],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 0,
+    "isBurnable": true,
+    "burnTime": 1600
+  },
+  "colors": {
+    "materialColor": "3C3C3C"
+  }
+}

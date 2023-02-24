@@ -1,0 +1,6 @@
+{
+  "type": "mekanism:purifying",
+  "itemInput": "botania:manasteel_ingot",
+  "gasInput": "emendatusenigmatica:gaseous_teslyte",
+  "output": "emendatusenigmatica:teslyte_ingot"
+}

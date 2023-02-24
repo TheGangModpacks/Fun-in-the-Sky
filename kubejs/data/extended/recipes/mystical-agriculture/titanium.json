@@ -1,0 +1,30 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCCCBA",
+    "BABCBAB",
+    "CBABABC",
+    "CCBDBCC",
+    "CBABABC",
+    "BABCBAB",
+    "ABCCCBA"
+  ],
+  "tier": 3,
+  "key": {
+    "A": {
+      "tag": "forge:storage_blocks/titanium"
+    },
+    "B": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "C": {
+      "tag": "forge:ingots/titanium"
+    },
+    "D": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:titanium_seeds"
+  }
+}
