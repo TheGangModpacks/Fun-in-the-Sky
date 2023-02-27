@@ -1,7 +1,7 @@
 {
 	"id": "silicon",
 	"source": "modded",
-	"localizedName": "Silicon Crystal",
+	"localizedName": "Silicon",
 	"processedTypes": [
 	"gem"
 	],
@@ -9,5 +9,5 @@
 		"materialType": "gem",
 		"harvestLevel": 2,
 		"gemTexture": 4
-	},
+	}
 }

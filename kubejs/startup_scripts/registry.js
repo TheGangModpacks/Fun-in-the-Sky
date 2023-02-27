@@ -20,5 +20,9 @@ StartupEvents.registry('item', event => {
 	event.create('liquifacted_graphite')
     .thickTexture(0x373737)
     .bucketColor(0x373737)
-    .displayName('Liquifacted Graphite')
+    .displayName('Liquifacted Graphite'),
+	event.create('basalz_blood')
+    .thickTexture(0x29110D)
+    .bucketColor(0x29110D)
+    .displayName('Basalz Blood')
 })
