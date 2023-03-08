@@ -123,4 +123,26 @@ ServerEvents.recipes(event =>{
 		{ item: 'thermal:lightning_charge', count: 5 }
 		]
 	})
+	event.custom({
+		type: 'create:mixing',
+		heatRequirement: 'heated',
+		ingredients: [ Item.of('bigreactors:graphite_ingot').toJson() ],
+		results: [ Fluid.of('kubejs:liquifacted_graphite').withAmount(144).toJson() ]
+	})
+	event.custom({
+		type: 'create:mixing',
+		heatRequirement: 'heated',
+		ingredients: [
+		Fluid.of('kubejs:liquifacted_graphite').withAmount(1000).toJson(),
+		Fluid.of('industrialforegoing:sewage').withAmount(1000).toJson() ],
+		results: [ Fluid.of('kubejs:raw_oil_mixture').withAmount(500).toJson() ]
+	})
+	event.custom({
+		type: 'create:mixing',
+		heatRequirement: 'heated',
+		ingredients: [
+		Fluid.of('kubejs:raw_oil_mixture').withAmount(1000).toJson(),
+		Fluid.of('immersiveengineering:creosote').withAmount(750).toJson() ],
+		results: [ Fluid.of('pneumaticcraft:oil').withAmount(450).toJson() ]
+	})
 })

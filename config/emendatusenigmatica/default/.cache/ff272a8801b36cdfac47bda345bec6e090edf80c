@@ -1,6 +1,6 @@
-// 1.19.2	2023-02-24T12:25:17.9913825	Emendatus Enigmatica Block Harvest Level Tags
+// 1.19.2	2023-03-07T09:12:06.9652624	Emendatus Enigmatica Block Harvest Level Tags
 b45e5345eb6096b1c1008d423bdb71ccd327f659 data/forge/tags/blocks/needs_netherite_tool.json
 e22548f0ede1f1d95982c6cf83d5d6b518b672b3 data/forge/tags/blocks/needs_wood_tool.json
 0886f7324b3945092d41908b5a51a3a9b311619c data/minecraft/tags/blocks/needs_diamond_tool.json
-28ac3f2cc2b2bd0bf8c7eafe1187702bf5a2212c data/minecraft/tags/blocks/needs_iron_tool.json
-a22d2bbc44b3b51a51484b8587222f81f9202d93 data/minecraft/tags/blocks/needs_stone_tool.json
+d464ddba8c98e9dc74ea9684f7b0ea9113fec7a2 data/minecraft/tags/blocks/needs_iron_tool.json
+25f44744c8caa23b2224c64514651344654d9156 data/minecraft/tags/blocks/needs_stone_tool.json

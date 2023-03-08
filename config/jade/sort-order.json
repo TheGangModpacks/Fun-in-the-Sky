@@ -108,6 +108,7 @@
   "create:exact_block": null,
   "create:filter": null,
   "create:goggles": null,
+  "modularrouters:router": null,
   "apotheosis:spawner": null,
   "apotheosis:ench": null,
   "apotheosis:adventure": null,
@@ -216,5 +217,6 @@
   "reliquary:mortar": null,
   "reliquary:altar": null,
   "reliquary:cauldron": null,
-  "reliquary:pedestal": null
+  "reliquary:pedestal": null,
+  "modularrouters:router": null
 }

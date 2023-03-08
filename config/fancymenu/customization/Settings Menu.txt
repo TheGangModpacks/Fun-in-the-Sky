@@ -1,0 +1,371 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.OptionsScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  custom_menu_title = Settings
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=505154%
+  orientation = bottom-centered
+  x = 55
+  action = movebutton
+  y = -77
+}
+
+customization {
+  identifier = %id=505154%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=505154%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=345280%
+  orientation = bottom-centered
+  x = -151
+  action = movebutton
+  y = -54
+}
+
+customization {
+  identifier = %id=345280%
+  action = setbuttonlabel
+  value = Resources
+}
+
+customization {
+  identifier = %id=345280%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=345154%
+  orientation = bottom-centered
+  x = -151
+  action = movebutton
+  y = -100
+}
+
+customization {
+  identifier = %id=505280%
+  orientation = bottom-centered
+  x = 3
+  action = movebutton
+  y = -54
+}
+
+customization {
+  identifier = %id=505280%
+  width = 152
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=505280%
+  action = setbuttonlabel
+  value = Accessibility
+}
+
+customization {
+  identifier = %id=505280%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=400334%
+  orientation = bottom-centered
+  x = -100
+  action = movebutton
+  y = -29
+}
+
+customization {
+  identifier = %id=400334%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt.png
+}
+
+customization {
+  identifier = %id=345256%
+  orientation = bottom-centered
+  x = -151
+  action = movebutton
+  y = -77
+}
+
+customization {
+  identifier = %id=345256%
+  width = 74
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=345256%
+  action = setbuttonlabel
+  value = Lang
+}
+
+customization {
+  identifier = %id=345256%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_shorter_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_shorter.png
+}
+
+customization {
+  identifier = %id=505256%
+  orientation = bottom-centered
+  x = -73
+  action = movebutton
+  y = -77
+}
+
+customization {
+  identifier = %id=505256%
+  width = 72
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=505256%
+  action = setbuttonlabel
+  value = Chat
+}
+
+customization {
+  identifier = %id=505256%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_shorter_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_shorter.png
+}
+
+customization {
+  identifier = %id=345232%
+  orientation = mid-centered
+  x = -151
+  action = movebutton
+  y = 56
+}
+
+customization {
+  identifier = %id=345232%
+  action = setbuttonlabel
+  value = Video Settings
+}
+
+customization {
+  identifier = %id=345232%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=505232%
+  orientation = bottom-centered
+  x = 3
+  action = movebutton
+  y = -100
+}
+
+customization {
+  identifier = %id=505232%
+  width = 152
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=505232%
+  action = setbuttonlabel
+  value = Controls
+}
+
+customization {
+  identifier = %id=505232%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=635154%
+  orientation = bottom-right
+  x = -161
+  action = movebutton
+  y = -77
+}
+
+customization {
+  identifier = %id=345208%
+  orientation = top-centered
+  x = 3
+  action = movebutton
+  y = 283
+}
+
+customization {
+  identifier = %id=345208%
+  width = 50
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=345208%
+  action = setbuttonlabel
+  value = Skin
+}
+
+customization {
+  identifier = %id=345208%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_short.png
+}
+
+customization {
+  identifier = %id=505304%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=505304%
+  orientation = top-centered
+  x = -77
+  action = movebutton
+  y = 60
+}
+
+customization {
+  identifier = %id=505304%
+  action = setbuttonlabel
+  value = Essential Settings
+}
+
+customization {
+  identifier = %id=505304%
+  vr:showif:modloaded = true
+  action = vanilla_button_visibility_requirements
+  vr:value:modloaded = essential
+}
+
+customization {
+  identifier = %id=505208%
+  orientation = mid-centered
+  x = 3
+  action = movebutton
+  y = 56
+}
+
+customization {
+  identifier = %id=505208%
+  width = 152
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=505208%
+  action = setbuttonlabel
+  value = Music & Sounds
+}
+
+customization {
+  identifier = %id=505208%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  orientation = mid-centered
+  copy_client_player = true
+  slim = false
+  auto_skin = false
+  scale = 50
+  headrotationy = 0.0
+  headrotationx = 0.0
+  skinurl = http://textures.minecraft.net/texture/e7979f9ebb2ad3f211ea5b440372d3e7498234b3b5f3687236f36a782773e6e7
+  showname = false
+  crouching = false
+  follow_mouse = true
+  x = -18
+  width = 30
+  parrot_left_shoulder = false
+  action = custom_layout_element:fancymenu_customization_player_entity
+  actionid = ef99d2eb-2793-4f32-88f3-7a7900268c0a1677883770116
+  y = -102
+  playername = FooterMan15
+  bodyrotationx = 0.0
+  parrot = false
+  bodyrotationy = 0.0
+  auto_cape = false
+  is_baby = false
+  height = 90
+}
+
+customization {
+  orientation = top-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = {"placeholder":"playername"}
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -101
+  width = 200
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = e4e1b429-05c8-420c-b4bc-127b96ab73b31677902401807
+  y = 62
+  alignment = centered
+  height = 40
+}
+

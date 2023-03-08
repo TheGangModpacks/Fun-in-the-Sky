@@ -5,7 +5,6 @@ minecraft:azalea_tree
 minecraft:bamboo_no_podzol
 minecraft:bamboo_some_podzol
 minecraft:bamboo_vegetation
-supplementaries:basalt_ash
 minecraft:basalt_blobs
 minecraft:basalt_pillar
 immersiveengineering:bauxite
@@ -26,7 +25,6 @@ apotheosis:boss_dungeon_2
 botania:brown_mystical_flower_patch
 artifacts:campsite
 twilightforest:canopy_fallen_log
-supplementaries:cave_urns
 minecraft:cave_vine
 minecraft:cave_vine_in_moss
 minecraft:chorus_plant
@@ -300,7 +298,6 @@ twilightforest:pumpkin_lamppost
 botania:purple_mystical_flower_patch
 botania:red_mystical_flower_patch
 rftoolsdim:rftfeature
-supplementaries:road_sign
 apotheosis:rogue_spawner
 minecraft:rooted_azalea_tree
 mekanism:salt
@@ -424,7 +421,6 @@ twilightforest:webs
 minecraft:weeping_vines
 twilightforest:well_placer
 botania:white_mystical_flower_patch
-supplementaries:wild_flax
 bigreactors:yellorite_deepslate_ore
 bigreactors:yellorite_ore
 botania:yellow_mystical_flower_patch

@@ -5,13 +5,12 @@
   "processedTypes": [
     "ore",
     "storage_block",
-    "raw",
     "dust",
 	"gem"
   ],
   "properties": {
     "materialType": "gem",
-	"gemTexture":  1,
+	"gemTexture":  6,
     "harvestLevel": 2
   }
 }

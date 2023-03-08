@@ -7,11 +7,7 @@
     "ingot",
     "nugget",
     "dust",
-    "plate",
-    "gear",
-    "rod",
-    "fluid",
-	"crushed_ore"
+    "fluid"
   ],
   "properties": {
   "materialType": "alloy",
@@ -22,7 +18,7 @@
     "materialColor": "1C7AA0"
   },
   "compat": {
-    "thermal": true,
+    "thermal": false,
     "mekanism": false,
     "ars_novea": false
   }

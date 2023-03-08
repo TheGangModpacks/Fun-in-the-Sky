@@ -9,9 +9,7 @@
     "dust",
     "plate",
     "gear",
-    "rod",
-    "fluid",
-	"crushed_ore"
+    "fluid"
   ],
   "properties": {
   "materialType": "alloy",
@@ -22,7 +20,7 @@
     "materialColor": "E55912"
   },
   "compat": {
-    "thermal": true,
+    "thermal": false,
     "mekanism": false,
     "ars_novea": false
   }

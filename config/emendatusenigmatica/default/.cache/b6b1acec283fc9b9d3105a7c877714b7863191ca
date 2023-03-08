@@ -1,6 +1,6 @@
-// 1.19.2	2023-02-24T12:25:17.9994004	Emendatus Enigmatica Block Tags
+// 1.19.2	2023-03-07T09:12:06.9642637	Emendatus Enigmatica Block Tags
 bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f data/forge/tags/blocks/ores.json
-51e33d0db62e2b8a01b68aa9d778290fa534600c data/forge/tags/blocks/storage_blocks.json
+836e3f455cca672113f14edd792df1f394960f37 data/forge/tags/blocks/storage_blocks.json
 b68c74fe9eb756915affccb895d94e2736b13e40 data/forge/tags/blocks/storage_blocks/aluminum.json
 d2bdd38d8c6a67368d6cf893fddb4d20732e25e4 data/forge/tags/blocks/storage_blocks/apatite.json
 86afe004137e11fb7fe5c116391d4e2a712aa01e data/forge/tags/blocks/storage_blocks/brass.json
@@ -20,11 +20,9 @@ d2bdd38d8c6a67368d6cf893fddb4d20732e25e4 data/forge/tags/blocks/storage_blocks/a
 ac6a2a39900f03e2acc2264c1aae0812e02b4b9c data/forge/tags/blocks/storage_blocks/raw_lead.json
 5da706022dff653039c9a9db08e4a52cc22871c6 data/forge/tags/blocks/storage_blocks/raw_nickel.json
 5bca6880f326821d46b9283594a4b8b1f5a61ad9 data/forge/tags/blocks/storage_blocks/raw_osmium.json
-6f02ac5d20c55a3cd28689690d63e2a4cd479965 data/forge/tags/blocks/storage_blocks/raw_salt.json
 3661431a26d86fde02825eae4c66b7ad3f40f952 data/forge/tags/blocks/storage_blocks/raw_silver.json
 36ad9f30aab29a333ec39aa947deb4664f6c621a data/forge/tags/blocks/storage_blocks/raw_tin.json
 787fd8d5826958c4bdd930ebf0adb810ed2bb27c data/forge/tags/blocks/storage_blocks/raw_uranium.json
-d773fb91c1ffc8778ac1ba619c778fa0c748893b data/forge/tags/blocks/storage_blocks/raw_zinc.json
 f0f176c30c724d4197fe366d9a4f3acf6a732d8a data/forge/tags/blocks/storage_blocks/salt.json
 123808a1c91dac28de536fc4b2e91d751bb6a49b data/forge/tags/blocks/storage_blocks/signalum.json
 2d7d0c4d6b75efd5a7a3690d7c27c803be5fd34b data/forge/tags/blocks/storage_blocks/silver.json
@@ -33,4 +31,3 @@ d017b87e70782909902c7262be84291f48bb6130 data/forge/tags/blocks/storage_blocks/s
 b45e5345eb6096b1c1008d423bdb71ccd327f659 data/forge/tags/blocks/storage_blocks/teslyte.json
 cb5d85c7fb5a739f09af71a3515c3442261b5058 data/forge/tags/blocks/storage_blocks/tin.json
 1b88c4b25ba95b8c801373452f9867a5abb6f1e2 data/forge/tags/blocks/storage_blocks/uranium.json
-44a0b8dc6542ca2ecfa529100552cc41621deb01 data/forge/tags/blocks/storage_blocks/zinc.json

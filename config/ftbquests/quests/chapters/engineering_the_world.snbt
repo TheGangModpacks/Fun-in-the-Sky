@@ -1,0 +1,1688 @@
+{
+	id: "6123E762619A563C"
+	group: "67B4334297F15B2D"
+	order_index: 1
+	filename: "engineering_the_world"
+	title: "&7Immersive Engineering"
+	icon: {
+		id: "immersiveengineering:hammer"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			icon: "minecraft:bricks"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Bang bang into the rooom"
+			description: [
+				"This chapter will show you the first steps of Engineering! We recommend not skipping ahead and paying attention, you'll need it."
+				""
+				"Many recipes in this pack have been altered heavily, do take note."
+			]
+			id: "59E4E09BD3378F5B"
+			tasks: [{
+				id: "50AEDF0BB14D8454"
+				type: "checkmark"
+				title: "Engineering!"
+			}]
+			rewards: [{
+				id: "7BC78C85B949E0BC"
+				type: "command"
+				title: "Command"
+				auto: "no_toast"
+				command: "/say @p has started Engineering!"
+				player_command: false
+			}]
+		}
+		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:coke_oven"
+			x: 0.0d
+			y: -3.0d
+			subtitle: "First oven to produce coal?"
+			description: [
+				"The Coke Oven is a very basic machine, make it into a 3x3x3 block, smack it with a hammer, and now you have a Coke Oven."
+				""
+				"Providing the oven with Coal will produce Coal Coke and Creosote."
+			]
+			dependencies: ["59E4E09BD3378F5B"]
+			id: "3BA9C67CC6E29A59"
+			tasks: [{
+				id: "7CD841B605589541"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "7DA255FD87CD11AD"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+				count: 16
+			}]
+		}
+		{
+			title: "Blast Furnace"
+			icon: "immersiveengineering:blast_furnace"
+			x: 0.0d
+			y: -4.5d
+			subtitle: "Supah hot topic"
+			description: ["The Blast Furnace is a multiblock that creates Steel, very, very slowly. It's created in the same 3x3x3 form as the Coke Oven."]
+			dependencies: ["3BA9C67CC6E29A59"]
+			id: "642DF490F8521F4E"
+			tasks: [
+				{
+					id: "634BD75ECCF08284"
+					type: "item"
+					item: "immersiveengineering:blastbrick"
+					count: 27L
+				}
+				{
+					id: "57CBF43D5277A59D"
+					type: "item"
+					item: "emendatusenigmatica:steel_ingot"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Creosote"
+			icon: "immersiveengineering:treated_wood_horizontal"
+			x: 1.5d
+			y: -3.0d
+			subtitle: "Don't stand in it!"
+			description: ["Creosote is a fluid required to make Treated Planks. The Planks are used for various wooden engineering things."]
+			dependencies: ["3BA9C67CC6E29A59"]
+			id: "353CD0C4E4E52421"
+			tasks: [
+				{
+					id: "2193B29D7F2AA6A6"
+					type: "item"
+					item: "immersiveengineering:creosote_bucket"
+				}
+				{
+					id: "47E7193A6C2603B1"
+					type: "item"
+					item: "immersiveengineering:treated_wood_horizontal"
+					count: 64L
+				}
+			]
+		}
+		{
+			title: "Engineer's Crafting Stations"
+			icon: "immersiveengineering:workbench"
+			x: 3.0d
+			y: -4.5d
+			description: [
+				"Treated Wood can be used to create a few different things, like an Engineer's Crafting Table and Workbench."
+				""
+				"The Workbench is used for many special components."
+				""
+				"The Crafting Table holds items for easy later use, and holds things in the crafting grid while you're not using it."
+			]
+			dependencies: ["353CD0C4E4E52421"]
+			id: "5E0D7BD45D9D48D4"
+			tasks: [
+				{
+					id: "55936812D4DD2F74"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "64BD9596714AFC5C"
+					type: "item"
+					item: "immersiveengineering:craftingtable"
+				}
+			]
+		}
+		{
+			title: "Components"
+			x: 3.5999999999999996d
+			y: -4.0d
+			description: ["You will need this blueprint to give you Workbench recipes for various components."]
+			dependencies: ["5E0D7BD45D9D48D4"]
+			size: 0.8d
+			id: "604DFAFFF1DB12B9"
+			tasks: [{
+				id: "3B6B05D505BF6F52"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			icon: "immersiveengineering:empty_shell"
+			x: 2.0d
+			y: -7.0d
+			subtitle: "This island ain't big enough"
+			description: [
+				"With Steel in hand, you now have the ability to create many different tools and weapons from IE."
+				""
+				"We also offer some very nice Steel Vanilla tools. High density, and quite helpful. Worse than Diamond, much better than Iron."
+			]
+			dependencies: [
+				"5E0D7BD45D9D48D4"
+				"642DF490F8521F4E"
+			]
+			id: "573E61DE595B5B97"
+			tasks: [{
+				id: "7E8CD9D92115CCBF"
+				type: "checkmark"
+				title: "Engineer's Tools and Weapons"
+			}]
+		}
+		{
+			icon: {
+				id: "immersiveengineering:buzzsaw"
+				Count: 1b
+				tag: { }
+				ForgeCaps: {
+					Parent: {
+						Size: 5
+						Items: [ ]
+					}
+				}
+			}
+			x: 2.5d
+			y: -10.5d
+			shape: "diamond"
+			subtitle: "Do I really need a haircut?"
+			description: ["The Buzzsaw is a mechanical tool that, if paired with a sawblade, can destroy trees with ease. Aditionally, you can install a Rockcutter blade, which will cut through rocks!"]
+			dependencies: ["573E61DE595B5B97"]
+			id: "3F1B25F5EC9E8051"
+			tasks: [
+				{
+					id: "34644FB03B5EEBDA"
+					type: "item"
+					item: {
+						id: "immersiveengineering:buzzsaw"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4871D99F34FEA5E1"
+					type: "item"
+					title: "Blades"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "quests:buzzsaw"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "160BB157EE57B8BA"
+				type: "choice"
+				icon: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				exclude_from_claim_all: true
+				table_id: 564292043603773045L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -11.5d
+			shape: "diamond"
+			subtitle: "Fireman inbound! Wait, why does he have lava?"
+			description: [
+				"The Chemical Thrower is a very... very interesting tool/weapon. You put any fluid you want into it via a tank, and then you hold R-Click. "
+				""
+				"So what's so funny about it? You may ask. Well, I gift to you a nice fluid to get you started."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			id: "4A6AD29CB480CB13"
+			tasks: [{
+				id: "325BDD88E4C030AC"
+				type: "item"
+				item: {
+					id: "immersiveengineering:chemthrower"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "5F73BFA59752B149"
+				type: "item"
+				item: "industrialforegoing:sewage_bucket"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -8.0d
+			shape: "diamond"
+			subtitle: "Pax quite a punch!"
+			description: ["The Paxel is a multi-purpose tool, having the ability to break pretty much everything!"]
+			dependencies: ["573E61DE595B5B97"]
+			id: "557CC10C9F26598C"
+			tasks: [{
+				id: "141B5F665751E85C"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:steel_paxel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.0d
+			shape: "diamond"
+			subtitle: "Ol Classy"
+			description: ["The Steel Pickaxe is... well, I'll let you figure it out."]
+			dependencies: ["573E61DE595B5B97"]
+			id: "2FB61C08F2DAF5A0"
+			tasks: [{
+				id: "1BAC094DE9D78431"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:steel_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -9.0d
+			shape: "diamond"
+			subtitle: "Buried treasure?"
+			description: ["The Shovel. The tool everyone skips :)"]
+			dependencies: ["573E61DE595B5B97"]
+			id: "2438A25CAF586901"
+			tasks: [{
+				id: "0C1E82FB87BC3AAF"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:steel_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -9.5d
+			shape: "diamond"
+			subtitle: "Hack 'n Slash"
+			description: ["It's a sword. What more did you expect?"]
+			dependencies: ["573E61DE595B5B97"]
+			id: "3B09DB4E15806407"
+			tasks: [{
+				id: "74AD42A9DC4E255B"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:steel_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -8.5d
+			shape: "diamond"
+			subtitle: "Can I axe a question?"
+			description: ["Just a general high-density tree 'choppin tool."]
+			dependencies: ["573E61DE595B5B97"]
+			id: "4CF556A9D9F46FB5"
+			tasks: [{
+				id: "3D7DB9A859BEBFB5"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:steel_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Kiln"
+			icon: "immersiveengineering:alloy_smelter"
+			x: 0.7999999999999998d
+			y: -3.5999999999999996d
+			shape: "octagon"
+			description: ["The Kiln is a smaller multiblock that allows for the creation of&l&b Basic alloys. "]
+			dependencies: ["3BA9C67CC6E29A59"]
+			size: 0.8d
+			id: "08C63A1D3207BB2A"
+			tasks: [{
+				id: "394A0609FBDBEF94"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+		}
+		{
+			title: "Wires"
+			icon: {
+				id: "immersiveengineering:wirecutter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.0d
+			y: -6.5d
+			subtitle: "Snip"
+			description: ["The Wire Cutters are used to create Wires from Plates."]
+			dependencies: ["5E0D7BD45D9D48D4"]
+			id: "6376FB902DEC6AA1"
+			tasks: [{
+				id: "31C183C76F08CD7B"
+				type: "item"
+				item: {
+					id: "immersiveengineering:wirecutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -11.0d
+			shape: "diamond"
+			subtitle: "Even the Desert Eagle would be jealous!"
+			description: [
+				"The Revolver is a very powerful handgun, with an 8 shell mag."
+				""
+				"&o Make sure you don't shoot any Vampire Hunters..."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			id: "2EECF2F88F7C3D15"
+			tasks: [{
+				id: "09F8A2B29ADECB46"
+				type: "item"
+				item: {
+					id: "immersiveengineering:revolver"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 21
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Revolver Attachments"
+			icon: {
+				id: "immersiveengineering:speedloader"
+				Count: 1b
+				tag: {
+					bullets: {
+						Items: [ ]
+					}
+				}
+				ForgeCaps: {
+					Parent: {
+						Size: 8
+						Items: [ ]
+					}
+				}
+			}
+			x: 3.5d
+			y: -10.5d
+			shape: "diamond"
+			subtitle: "Shot in the heart, and you're to blame"
+			description: [
+				"The Revolver Speedloader automatically loads the mag with extra cartridges."
+				""
+				"The Extended Mag gives the revolver more cartridge slots."
+				""
+				"The Bayonet gives the revolver extra attack damage."
+				""
+				"The Electrom Tubes make the revolver inflict Shock damage."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			hide: true
+			optional: true
+			id: "735D4C5138DF9407"
+			tasks: [
+				{
+					id: "3E70C4B07EBCF71B"
+					type: "item"
+					item: {
+						id: "immersiveengineering:speedloader"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 8
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "37519FEEE7EA1A12"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_revolver_magazine"
+				}
+				{
+					id: "669BBA9D8A399333"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_revolver_bayonet"
+				}
+				{
+					id: "44EA4E2D229BE8CA"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_revolver_electro"
+				}
+			]
+		}
+		{
+			title: "Chemical Attachments"
+			icon: "immersiveengineering:toolupgrade_drill_capacity"
+			x: 4.0d
+			y: -11.0d
+			shape: "diamond"
+			subtitle: "Gasoline in the heart, and you're to blame"
+			description: [
+				"The Large Tank is used to double your internal tank capacity."
+				""
+				"The Nozzle extends the range of your thrown fluids."
+				""
+				"The Multitank allows for multiple fluids inside the tank."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			hide: true
+			optional: true
+			id: "10F8E5B95151ECA1"
+			tasks: [
+				{
+					id: "3BEE262676CD05BD"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_capacity"
+				}
+				{
+					id: "5FBA2A6B4155D28B"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_chemthrower_focus"
+				}
+				{
+					id: "55A2570BF7E50077"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_chemthrower_multitank"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -12.0d
+			shape: "diamond"
+			subtitle: "Now that's a big gun"
+			description: [
+				"The Railgun is a very powerful weapon, shooting steel and iron rods and destroying your enemies' insides."
+				""
+				"The Railgun requires Energy, and any Iron or Steel rod as common ammo."
+				""
+				"You can also use \"exotic\" ammo types for the Railgun, such as Blaze Rods, Ender pearls, and even tridents and SAWBLADES??"
+			]
+			dependencies: ["573E61DE595B5B97"]
+			id: "0599ED6075100DFF"
+			tasks: [{
+				id: "50044F97B818D121"
+				type: "item"
+				item: {
+					id: "immersiveengineering:railgun"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 3
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Railgun Attachments"
+			icon: "immersiveengineering:toolupgrade_railgun_scope"
+			x: 4.5d
+			y: -11.5d
+			shape: "diamond"
+			subtitle: "BLASTED through the heart, and you're to blame"
+			description: [
+				"The Precision Scope allows for advanced targeting with the Railgun."
+				""
+				"The Advanced Heatsinks allow the Railgun to charge faster."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			hide: true
+			optional: true
+			id: "0A72A79AD0C7ADCF"
+			tasks: [
+				{
+					id: "025737EFEBDA2152"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+				}
+				{
+					id: "5D6032CF4AE71403"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_railgun_capacitors"
+				}
+			]
+		}
+		{
+			title: "Buzzsaw Attachments"
+			icon: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+			x: 3.0d
+			y: -10.0d
+			shape: "diamond"
+			subtitle: "Sawed into the heart, and you're to blame"
+			description: [
+				"The Blade Quiver carries extra saws for when your current ones break."
+				""
+				"The Large Tank increases the tank size."
+				""
+				"The Advanced Lubrication System protects the saw blades from extra damage."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			hide: true
+			optional: true
+			id: "700DCE054A0BD39B"
+			tasks: [
+				{
+					id: "462CB1A5E7CD3906"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+				}
+				{
+					id: "277A4F27745922B2"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_capacity"
+				}
+				{
+					id: "0B00D687B5601D27"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_lube"
+				}
+			]
+		}
+		{
+			icon: {
+				id: "immersiveengineering:drill"
+				Count: 1b
+				tag: { }
+				ForgeCaps: {
+					Parent: {
+						Size: 5
+						Items: [ ]
+					}
+				}
+			}
+			x: 2.0d
+			y: -10.0d
+			shape: "diamond"
+			subtitle: "I love drilling air!"
+			description: ["The Mining Drill is the most powerful drill the sky has ever seen! Attach a drill head and you're good to go!"]
+			dependencies: ["573E61DE595B5B97"]
+			id: "2D14C839839C50E8"
+			tasks: [
+				{
+					id: "6A51DD1526CA1594"
+					type: "item"
+					item: {
+						id: "immersiveengineering:drill"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "0AFB6F7129B6BF0F"
+					type: "item"
+					item: "immersiveengineering:drillhead_iron"
+				}
+			]
+		}
+		{
+			title: "Mining Drill Attachments"
+			icon: "immersiveengineering:drillhead_steel"
+			x: 2.5d
+			y: -9.5d
+			shape: "diamond"
+			subtitle: "Drilled through the heart, and you're to blame"
+			description: [
+				"The Air Tank allows the Drill to work underwater."
+				""
+				"The Advanced Lubrication System protects the Drill head from extra damage."
+				""
+				"The Large Tank increases the internal tank size."
+				""
+				"Additional Augers increase the Drill's mining speed and damage. Can be stacked up to 3."
+				""
+				"The Steel Drill head has extra durability, mines faster, extra attack damage, and mines in a larger area."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			hide: true
+			optional: true
+			id: "5AEC63D3855190C7"
+			tasks: [
+				{
+					id: "70E77663B3111730"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_waterproof"
+				}
+				{
+					id: "4953F29C3B907187"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_lube"
+				}
+				{
+					id: "6F653596A655CAC3"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_capacity"
+				}
+				{
+					id: "3C4B4208A17D31EF"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_drill_damage"
+				}
+				{
+					id: "324751DED3D8A2DD"
+					type: "item"
+					item: "immersiveengineering:drillhead_steel"
+				}
+			]
+		}
+		{
+			title: "Common Projectiles"
+			x: 2.5d
+			y: -11.5d
+			shape: "diamond"
+			subtitle: "Common ammo for weapons"
+			description: ["The Common Projectiles blueprint gives recipes for projectiles in the Engineer's Workbench."]
+			dependencies: ["573E61DE595B5B97"]
+			id: "4CC0794D4E6D3DAD"
+			tasks: [{
+				id: "6B973056A38FF4EF"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "bullet"
+					}
+				}
+			}]
+		}
+		{
+			title: "Arc Electrodes"
+			x: 3.7499999999999787d
+			y: -4.678571428571431d
+			description: ["The Arc Furnace Electrodes blueprint allows for the creation of Graphite Electrodes."]
+			hide_dependency_lines: true
+			dependencies: [
+				"5E0D7BD45D9D48D4"
+				"35CE2659F4FDBC77"
+			]
+			size: 0.8d
+			id: "3D1AE48360ED8C18"
+			tasks: [{
+				id: "79A91CBF8E059608"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "electrode"
+					}
+				}
+			}]
+		}
+		{
+			title: "Banner Patterns"
+			x: 2.3622448979591724d
+			y: -4.9387755102040884d
+			description: ["The Banner Patterns Blueprint is used for, well, banner patterns."]
+			dependencies: ["5E0D7BD45D9D48D4"]
+			size: 0.8d
+			id: "5E540B6DED063261"
+			tasks: [{
+				id: "5EC0E0EEF40AABF6"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "bannerpatterns"
+					}
+				}
+			}]
+		}
+		{
+			title: "Metal Press Molds"
+			x: 2.974489795918352d
+			y: -3.7142857142857224d
+			description: ["The MPMolds Blueprint allows for the creation of various molds for the Metal Press... as the name suggests."]
+			dependencies: ["5E0D7BD45D9D48D4"]
+			size: 0.8d
+			id: "179C8C2D018D8686"
+			tasks: [{
+				id: "1285E568B8A81ED0"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "molds"
+					}
+				}
+			}]
+		}
+		{
+			title: "Special Projectiles"
+			x: 3.0d
+			y: -12.0d
+			shape: "diamond"
+			subtitle: "Special ammo for weapons"
+			description: ["The Special Projectiles blueprint allows for the creation of some... experimental ammo? Is that what we're calling it?"]
+			dependencies: ["4CC0794D4E6D3DAD"]
+			id: "7AF9DD415FF0A59F"
+			tasks: [{
+				id: "0A4324AC558A7DB0"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "specialBullet"
+					}
+				}
+			}]
+		}
+		{
+			icon: "immersiveengineering:treated_scaffold"
+			x: -2.5d
+			y: -7.5d
+			description: ["Immersive Engineering adds many giant machines, used for many different purposes. You can find schematic files for all of these machines in your Structures folder in the root directory of the modpack. If you want to build them yourself, you can see how in the IE Manual."]
+			dependencies: ["33B53E150A61D34C"]
+			id: "3E364FE6057E9D50"
+			tasks: [{
+				id: "3C9753D8B87993AF"
+				type: "checkmark"
+				title: "Big Multiblocks"
+			}]
+		}
+		{
+			title: "Metal Press"
+			icon: "immersiveengineering:metal_press"
+			x: -0.5d
+			y: -7.0d
+			description: ["The Metal Press is the main way you're going to make Gears, Sheets, Rods, everything."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "782BE6B4E0EAFBC7"
+			tasks: [
+				{
+					id: "279E9B01D390D0D5"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "523B2D1B54304C6B"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "719806BB91F73633"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "1E00FFE34EA4C682"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "660DEC5373597785"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Crusher"
+			icon: "immersiveengineering:crusher"
+			x: -4.0d
+			y: -6.0d
+			description: ["The Crusher grinds downs things into a much simpler form, like Iron ingots to Iron dust."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "1296C2B9D422B2E6"
+			tasks: [
+				{
+					id: "72F8E6DA2E3D905C"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "2CE5EA10118FC951"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "21A3C15312577B61"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "7F99B71A223CAFAD"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "0897E8C8F3807A03"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+		}
+		{
+			title: "Sawmill"
+			icon: "immersiveengineering:sawmill"
+			x: -3.0d
+			y: -9.5d
+			description: ["The Sawmill cuts down your logs into more Planks than usual. It also creates Sawdust, useful for things like Boxes."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "325C01D7AB674133"
+			tasks: [
+				{
+					id: "31AA488DFDB474D8"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "6123E3AE80D18019"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 6L
+				}
+				{
+					id: "0ECEC59539E387A3"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "0536DB959750D7CC"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "2641A01A333F5025"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2A2CBD2D1F3B27D8"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Assembler"
+			icon: "immersiveengineering:assembler"
+			x: -3.0d
+			y: -5.5d
+			subtitle: "Some Assembly Required"
+			description: ["The Assembler automatically crafts specified Crafting Table recipes."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "3FB8A06C43A48D7E"
+			tasks: [
+				{
+					id: "38330CCA6EB35F9D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "14316AD8A9877AF6"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "713C7D5344EA1A66"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+					count: 2L
+				}
+				{
+					id: "178EFC388EF5882F"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 9L
+				}
+				{
+					id: "690A6EEE9A28819F"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_iron"
+					count: 6L
+				}
+				{
+					id: "0465EC970BC3C196"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Auto Workbench"
+			icon: "immersiveengineering:auto_workbench"
+			x: -4.0d
+			y: -9.0d
+			description: ["The Automatic Engineer's Workbench does exactly what it says on the tin. Say goodbye to manually crafting Vacuum Tubes."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "58877BF1670D91C5"
+			tasks: [
+				{
+					id: "7AA7D0BF25409E5E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "573895D9E836ACD5"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "33FDE5257E82C33C"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "50FBA291F533A506"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "763CBCE9E36B0097"
+					type: "item"
+					title: "Treated Wood Slab"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:treated_wood_slab"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "645BE072DC002788"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Squeezer"
+			icon: "immersiveengineering:squeezer"
+			x: -2.0d
+			y: -5.5d
+			description: ["The Industrial Squeezer converts many items into weird things like... Plant Oil?"]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "2187236BC7E20AA2"
+			tasks: [
+				{
+					id: "33A99142441AB28D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "759433A0B3972530"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "0A5C6766C613867D"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "397BA19C89EBB5F0"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "3A6C207D41BF310D"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "7818AB71159245B3"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+				{
+					id: "03E1026EA682C976"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Fermenter"
+			icon: "immersiveengineering:fermenter"
+			x: -4.5d
+			y: -7.0d
+			description: ["The Industrial Fermenter is used to make Ethanol."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "50A0BC31F7325275"
+			tasks: [
+				{
+					id: "742633C0E8A73876"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "2F9567582A98CB5A"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "4E531C0F9086EC90"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+				{
+					id: "4C5DA0EB33EB2BEA"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "269783C1818833E7"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "5218DE2F92877252"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Mixer"
+			icon: "immersiveengineering:mixer"
+			x: -1.0d
+			y: -9.0d
+			subtitle: "Sorry Microsoft, you had your chance"
+			description: ["The Mixer is used for Potion crafting, Herbicide, and Concrete."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "0531BD1A30971729"
+			tasks: [
+				{
+					id: "3E6029522931709D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "6F1CA770709E23E7"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "7494DBFDE5B5B91C"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "598AD47E5AC73533"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "19D86F72308107AF"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "13E00B9314730D7A"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "Refinery"
+			icon: "immersiveengineering:refinery"
+			x: -2.0d
+			y: -9.5d
+			description: ["The Refinery is used for making Biodiesel, Phenolic Resin, and Acetaldehyde."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "4FC2B44A7C18CFDF"
+			tasks: [
+				{
+					id: "28456641A826CF96"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "5D3B1F4703B6A8B9"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "0C3224C3DB8674C7"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "550C4B0C355E4EF8"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "5BF4F075D4DB9127"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "340ECF7731FFF6ED"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			title: "Bottling Machine"
+			icon: "immersiveengineering:bottling_machine"
+			x: -0.5d
+			y: -8.0d
+			description: ["The Bottling Machine puts fluids in things like Bottles, Buckets, pretty much anything. Make sure you place those conveyor belts correctly."]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "24B887E98A705B18"
+			tasks: [
+				{
+					id: "4FE0B61F319F0086"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 3L
+				}
+				{
+					id: "49828F6F19335048"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 2L
+				}
+				{
+					id: "34D5ED805BBFFA63"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "392BDC33A058A402"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "678D9BF33D91E2B3"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 3L
+				}
+				{
+					id: "32A801515CB41225"
+					type: "item"
+					item: "immersiveengineering:fluid_pump"
+				}
+			]
+		}
+		{
+			title: "Arc Furnace"
+			icon: "immersiveengineering:arc_furnace"
+			x: -5.0d
+			y: -10.0d
+			shape: "rsquare"
+			subtitle: "The Biggest Chungus"
+			description: ["The Arc Furnace is the largest base IE machine... good lord. It has powerful ore processing capabilities, makes some other IE blocks, and recycles old parts you don't or didn't need."]
+			dependencies: ["3E364FE6057E9D50"]
+			size: 1.2d
+			id: "35CE2659F4FDBC77"
+			tasks: [
+				{
+					id: "4A937C916B60AE24"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "17E8990A8C76A253"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "579AA153311C5E23"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "6DFB2E9006665A06"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 6L
+				}
+				{
+					id: "7E2CF666C90E9846"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "1871255DF444BA57"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "63515F22F4869C15"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4FD7A43573929480"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "5DE728631FBB39AE"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+			]
+		}
+		{
+			title: "Excavator"
+			icon: "immersiveengineering:excavator"
+			x: -4.5d
+			y: -8.0d
+			description: [
+				"The Excavator is used to mine resources from Mineral Deposits, unseen by the human eyes."
+				""
+				"The Excavator is made of two structures, the rig itself and the... digger part? Is that what it's called?"
+			]
+			dependencies: ["3E364FE6057E9D50"]
+			id: "48C0CDBACF9C2F5B"
+			tasks: [
+				{
+					id: "13CAF4E62E28DC66"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+				{
+					id: "5912A5469B40A1F2"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 26L
+				}
+				{
+					id: "5ACADAA4AA8314CD"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 3L
+				}
+				{
+					id: "71718CAD05CB66D8"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 9L
+				}
+				{
+					id: "36ABB9786B568841"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5CFD6F27E0B4F291"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "33F8BEB65640D29D"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 6L
+				}
+			]
+		}
+		{
+			title: "Basic Power Generation"
+			icon: "immersiveengineering:windmill_blade"
+			x: 5.0d
+			y: -5.0d
+			description: [
+				"Windmills and Waterwheels are the most basic form of Energy generation."
+				""
+				"A Windmill can be upgraded with Sails to improve it's speed."
+			]
+			dependencies: ["333C1112B5FF188C"]
+			id: "3510B00CE37BDE6D"
+			tasks: [
+				{
+					id: "32D1924DA6AD6CE8"
+					type: "item"
+					item: "immersiveengineering:windmill"
+				}
+				{
+					id: "0F097AA8A682D27C"
+					type: "item"
+					item: "immersiveengineering:watermill"
+				}
+				{
+					id: "2676AE02BE9256CB"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+			]
+		}
+		{
+			title: "Low Voltage"
+			icon: "immersiveengineering:wirecoil_copper"
+			x: 5.0d
+			y: -6.5d
+			description: ["LV Wires transmit 2048FE /t."]
+			dependencies: ["6376FB902DEC6AA1"]
+			id: "333C1112B5FF188C"
+			tasks: [
+				{
+					id: "42FC66B1AA8E7BB6"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+				{
+					id: "43FD79601AF03263"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "3FDA4DD9C960AB39"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+			]
+		}
+		{
+			title: "Medium Voltage"
+			icon: "immersiveengineering:wirecoil_electrum"
+			x: 7.0d
+			y: -6.5d
+			description: ["MV Wires transmit 8192FE /t."]
+			dependencies: ["333C1112B5FF188C"]
+			id: "74B5997B5F7A9993"
+			tasks: [
+				{
+					id: "38C3B96789190A1E"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+				{
+					id: "0282A29DEA8F4125"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "48C7B0B6C7DFE0FD"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+			]
+		}
+		{
+			title: "High Voltage"
+			icon: "immersiveengineering:wirecoil_steel"
+			x: 9.0d
+			y: -6.5d
+			description: ["HV Wires transmit 32,768FE /t."]
+			dependencies: ["74B5997B5F7A9993"]
+			id: "09A912B68AA73BAB"
+			tasks: [
+				{
+					id: "4777C963EFD82A4E"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "57F0409893436BC6"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "3BE2675CDC31385D"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+			]
+		}
+		{
+			title: "Insulation"
+			icon: "immersiveengineering:wirecoil_copper_ins"
+			x: 6.0d
+			y: -8.0d
+			min_required_dependencies: 1
+			dependencies: [
+				"74B5997B5F7A9993"
+				"333C1112B5FF188C"
+			]
+			id: "4B4C6C547A9E7290"
+			tasks: [{
+				id: "47D54A0DEDCDC6BA"
+				type: "item"
+				title: "Insulated Cabling"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:wirecoil_electrum_ins"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:wirecoil_copper_ins"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Diesel Generator"
+			icon: "immersiveengineering:diesel_generator"
+			x: 9.842857142857142d
+			y: -6.571428571428569d
+			description: ["The Diesel Generator is a massive Energy generator. Harnessing the power of Biodiesel, this big rig creates 4096FE /t. Make sure you're keeping up with Biofuel production!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"09A912B68AA73BAB"
+				"4FC2B44A7C18CFDF"
+			]
+			id: "40C42C98C1CD175A"
+			tasks: [
+				{
+					id: "4720340064E36C53"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "7CEF1A999C5155D8"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "6225480DD07675BC"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "1FDA821CDD69B0D3"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "67D66577BBC5D53A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4DD73B836032A451"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -5.0d
+			description: ["Place Ice and Lava next to the Thermo Generator to produce Energy."]
+			dependencies: ["74B5997B5F7A9993"]
+			id: "2D4209B53BCF661A"
+			tasks: [{
+				id: "0201C57ECC5909F0"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			title: "Conveyor Belt"
+			x: 1.0d
+			y: -9.0d
+			shape: "pentagon"
+			description: [
+				"The Conveyor Belt is a really cheap solution to your Item Logistics issue."
+				""
+				"There are a bunch of other Conveyor Belts, vertical, import, even covered."
+			]
+			dependencies: ["573E61DE595B5B97"]
+			id: "2DFDD5759C417D3A"
+			tasks: [{
+				id: "1E3A0E7381033FA9"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+				count: 16L
+			}]
+		}
+		{
+			title: "Engineering Blocks"
+			icon: "immersiveengineering:heavy_engineering"
+			x: -1.0d
+			y: -6.0d
+			description: ["Engineering Blocks are used in every multiblock in IE. We'd recommend making lots of them."]
+			dependencies: ["642DF490F8521F4E"]
+			id: "33B53E150A61D34C"
+			tasks: [
+				{
+					id: "3DAD7D6359AFF85F"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "6B6DE9B10B5351B6"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+					count: 4L
+				}
+				{
+					id: "123D07E3D25C7EAC"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

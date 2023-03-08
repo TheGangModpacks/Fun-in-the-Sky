@@ -16,12 +16,12 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 143
-  width = 354
+  x = 140
+  width = 360
   action = deep_customization_element:drippy_overlay_logo
   actionid = 90c7a3e4-9d6c-4865-91b5-5523b803d9bf1675296171367
-  y = 133
-  height = 88
+  y = 135
+  height = 90
 }
 
 customization {
@@ -39,12 +39,12 @@ customization {
 customization {
   custom_color_hex = #31DFE7
   orientation = top-left
-  hidden = false
-  x = 143
-  width = 354
+  hidden = true
+  x = 140
+  width = 360
   action = deep_customization_element:drippy_overlay_progress_bar
   actionid = bb0d6875-5788-4f6a-bbd5-6dfdeee0a4a41675296171375
-  y = 289
+  y = 294
   height = 10
 }
 
@@ -62,5 +62,31 @@ customization {
   action = addsplash
   y = 140
   text = Welcome {"placeholder":"playername"}!
+}
+
+customization {
+  path = kubejs/assets/fancymenu/gui/google_prio_high.png
+  orientation = element
+  orientation_element = e165e993-7fab-45bd-bc35-55bbabadc6531677985712332
+  x = 10
+  width = 30
+  action = addtexture
+  actionid = 2f9b5836-4b61-455f-ab8b-347ee3bae3581677985429278
+  y = 10
+  height = 30
+}
+
+customization {
+  orientation = top-left
+  background_color = #754933
+  x = 74
+  width = 500
+  bar_color = #0DBE2C
+  action = custom_layout_element:drippy_custom_loading_bar
+  actionid = e165e993-7fab-45bd-bc35-55bbabadc6531677985712332
+  y = 273
+  progress_for_element_orientation = true
+  direction = right
+  height = 12
 }
 
