@@ -23,7 +23,16 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 21
+  y = 12
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt.png
 }
 
 customization {
@@ -40,9 +49,9 @@ customization {
 customization {
   identifier = %id=4936%
   orientation = mid-centered
-  x = 0
+  x = 50
   action = movebutton
-  y = 44
+  y = 35
 }
 
 customization {
@@ -59,18 +68,20 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  orientation = mid-centered
-  x = 53
-  action = movebutton
-  y = 44
+  identifier = %id=4936%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_short.png
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  width = 47
-  action = resizebutton
-  height = 20
+  orientation = mid-centered
+  x = -50
+  action = movebutton
+  y = 58
 }
 
 customization {
@@ -80,11 +91,29 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = -3
+  y = -11
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt.png
 }
 
 customization {
@@ -99,11 +128,6 @@ customization {
 }
 
 customization {
-  identifier = %id=604346%
-  action = hidebutton
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
   action = hidebutton
 }
@@ -111,22 +135,24 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   orientation = mid-centered
-  x = -51
+  x = -50
   action = movebutton
-  y = 44
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  width = 48
-  action = resizebutton
-  height = 20
+  y = 35
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   action = setbuttonlabel
-  value = Options
+  value = Settings
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
 }
 
 customization {
@@ -139,14 +165,23 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 44
+  y = 35
 }
 
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
-  width = 46
+  width = 48
   action = resizebutton
   height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_short.png
 }
 
 customization {
@@ -156,7 +191,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 186
   width = 268
   action = deep_customization_element:title_screen_forge_top

@@ -1,0 +1,128 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.SoundOptionsScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=345286%
+  orientation = mid-centered
+  x = 5
+  action = movebutton
+  y = 0
+}
+
+customization {
+  identifier = %id=345286%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=345286%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=345154%
+  orientation = top-centered
+  x = -155
+  action = movebutton
+  y = 48
+}
+
+customization {
+  identifier = %id=345154%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400330%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = 22
+}
+
+customization {
+  identifier = %id=400330%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400330%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=345264%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -44
+}
+
+customization {
+  identifier = %id=345308%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = 0
+}
+
+customization {
+  identifier = %id=345308%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+
+customization {
+  identifier = %id=345176%
+  orientation = top-centered
+  x = 5
+  action = movebutton
+  y = 48
+}
+
+customization {
+  identifier = %id=345242%
+  orientation = top-centered
+  x = -155
+  action = movebutton
+  y = 70
+}
+
+customization {
+  identifier = %id=505308%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_150_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_150.png
+}
+

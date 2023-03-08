@@ -1,25 +1,19 @@
 {
   "values": [
     "#forge:gears/steel",
-    "#forge:gears/aluminum",
     "#forge:gears/gold",
     "#forge:gears/lumium",
     "#forge:gears/signalum",
-    "#forge:gears/enderium",
     "#forge:gears/tin",
     "#forge:gears/copper",
     "#forge:gears/invar",
-    "#forge:gears/zinc",
     "#forge:gears/nickel",
-    "#forge:gears/electrum",
     "#forge:gears/osmium",
-    "#forge:gears/brass",
     "#forge:gears/constantan",
     "#forge:gears/lead",
     "#forge:gears/bronze",
     "#forge:gears/diamond",
     "#forge:gears/iron",
-    "#forge:gears/silver",
-    "#forge:gears/uranium"
+    "#forge:gears/silver"
   ]
 }

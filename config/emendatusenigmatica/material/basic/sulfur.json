@@ -18,6 +18,7 @@
   "compat": {
     "create": false,
     "occultism": false,
-    "mekanism": false
+    "mekanism": false,
+	"thermal": false
   }
 }

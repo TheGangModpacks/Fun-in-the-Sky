@@ -5,7 +5,6 @@
   "disableDefaultOre": false,
   "processedTypes": [
     "dust",
-    "plate",
     "gear"
   ],
   "properties": {

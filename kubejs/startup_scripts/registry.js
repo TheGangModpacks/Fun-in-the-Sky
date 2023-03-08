@@ -11,6 +11,14 @@ StartupEvents.registry('item', event => {
 	event.create('incomplete_advanced_processor').displayName('Incomplete Raw Advanced Processor')
 	event.create('leaded_iron_compound').displayName('Leaded Iron Compound')
 	event.create('leaded_iron').displayName('Leaded Iron')
+	event.create('apatite_essence').displayName('Apatite Essence')
+	event.create('silicon_essence').displayName('Silicon Essence')
+	event.create('fluorite_essence').displayName('Fluorite Essence')
+	event.create('sulfuric_essence').displayName('Sulfuric Essence')
+	event.create('cinnabar_essence').displayName('Cinnabar Essence')
+})
+StartupEvents.registry('block', event =>{
+	event.create('unprocessed_frame').displayName('Unprocessed Frame').material('metal').hardness(0.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 })
 	StartupEvents.registry('fluid', event =>{
 		event.create('blitz_blood')
@@ -24,5 +32,9 @@ StartupEvents.registry('item', event => {
 	event.create('basalz_blood')
     .thickTexture(0x29110D)
     .bucketColor(0x29110D)
-    .displayName('Basalz Blood')
+    .displayName('Basalz Blood'),
+	event.create('raw_oil_mixture')
+    .thinTexture(0x544227)
+    .bucketColor(0x544227)
+    .displayName('Raw Oil Mixture')
 })

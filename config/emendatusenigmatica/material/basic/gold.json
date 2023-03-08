@@ -6,8 +6,7 @@
   "processedTypes": [
     "dust",
     "plate",
-    "gear",
-    "rod"
+    "gear"
   ],
   "properties": {
     "materialType": "metal",

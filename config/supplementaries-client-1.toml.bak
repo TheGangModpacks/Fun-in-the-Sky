@@ -159,10 +159,10 @@
 	placeable_books_glint = false
 	#Enables banner pattern tooltip image preview
 	banner_pattern_tooltip = true
-	#Wearing mob heads will apply post processing
-	mob_head_shaders = true
 	#Enables paintings tooltip image preview
 	paintings_tooltip = true
+	#Wearing mob heads will apply post processing
+	mob_head_shaders = true
 
 [items]
 

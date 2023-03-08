@@ -10,7 +10,6 @@
     "raw",
     "dust",
     "plate",
-    "gear",
     "rod",
     "fluid",
     "slurry",
@@ -22,10 +21,7 @@
   ],
   "properties": {
     "materialType": "metal",
-    "harvestLevel": 1,
-    "isBurnable": false,
-    "isEmissive": false,
-    "hasOxidization": false
+    "harvestLevel": 1
   },
   "oreDrop": {
     "drop": "emendatusenigmatica:raw_bauxite",
@@ -38,7 +34,7 @@
 	"gasColor": "BD6858"
   },
   "compat": {
-    "create": true,
+    "create": false,
     "occultism": false,
     "mekanism": true
   }

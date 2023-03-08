@@ -126,18 +126,4 @@ ServerEvents.recipes(event =>{
 			Item.of('ae2:printed_silicon').toJson()
 			]
 	})
-	event.custom({
-		type: 'pneumaticcraft:thermo_plant',
-		exothermic: false,
-		fluid_input: {
-			type: 'pneumaticcraft:fluid',
-			amount: 100,
-		fluid: 'pneumaticcraft:lubricant' },
-		fluid_output: {
-			amount: 50,
-		fluid: 'mekanism:ethene' },
-		item_input: { tag: 'forge:gems/niter' },
-		item_output: { item: 'emendatusenigmatica:silicon_gem' },
-		temperature: { min_temp: 643 }
-	})
 })

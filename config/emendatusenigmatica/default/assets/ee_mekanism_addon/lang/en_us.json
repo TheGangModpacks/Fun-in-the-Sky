@@ -30,10 +30,6 @@
   "item.emendatusenigmatica.uranium_crystal": "Uranium Crystal",
   "item.emendatusenigmatica.uranium_dirty_dust": "Dirty Uranium Dust",
   "item.emendatusenigmatica.uranium_shard": "Uranium Shard",
-  "item.emendatusenigmatica.zinc_clump": "Zinc Clump",
-  "item.emendatusenigmatica.zinc_crystal": "Zinc Crystal",
-  "item.emendatusenigmatica.zinc_dirty_dust": "Dirty Zinc Dust",
-  "item.emendatusenigmatica.zinc_shard": "Zinc Shard",
   "slurry.emendatusenigmatica.clean_aluminum": "Clean Bauxite Slurry",
   "slurry.emendatusenigmatica.clean_lead": "Clean Lead Slurry",
   "slurry.emendatusenigmatica.clean_nickel": "Clean Nickel Slurry",
@@ -41,13 +37,11 @@
   "slurry.emendatusenigmatica.clean_silver": "Clean Silver Slurry",
   "slurry.emendatusenigmatica.clean_tin": "Clean Tin Slurry",
   "slurry.emendatusenigmatica.clean_uranium": "Clean Uranium Slurry",
-  "slurry.emendatusenigmatica.clean_zinc": "Clean Zinc Slurry",
   "slurry.emendatusenigmatica.dirty_aluminum": "Dirty Bauxite Slurry",
   "slurry.emendatusenigmatica.dirty_lead": "Dirty Lead Slurry",
   "slurry.emendatusenigmatica.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.emendatusenigmatica.dirty_osmium": "Dirty Osmium Slurry",
   "slurry.emendatusenigmatica.dirty_silver": "Dirty Silver Slurry",
   "slurry.emendatusenigmatica.dirty_tin": "Dirty Tin Slurry",
-  "slurry.emendatusenigmatica.dirty_uranium": "Dirty Uranium Slurry",
-  "slurry.emendatusenigmatica.dirty_zinc": "Dirty Zinc Slurry"
+  "slurry.emendatusenigmatica.dirty_uranium": "Dirty Uranium Slurry"
 }

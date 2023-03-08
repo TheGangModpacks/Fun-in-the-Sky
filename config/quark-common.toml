@@ -259,7 +259,7 @@
 	"Hotbar Changer" = true
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = true
-	"Automatic Took Restock" = true
+	"Automatic Tool Restock" = true
 
 	[management.quick_armor_swapping]
 		"Swap Off Hand" = true
@@ -283,7 +283,7 @@
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
 
-	[management.automatic_took_restock]
+	[management.automatic_tool_restock]
 		#This feature disables itself if any of the following mods are loaded: 
 		# - inventorytweaks
 		#This is done to prevent content overlap.
@@ -441,6 +441,8 @@
 		"Deepslate Tweak Needs Haste2" = true
 		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
 		"Librarians Exchange Ancient Tomes" = true
+		#Also applies a random curse along each book
+		"Curse Gear" = false
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -476,6 +478,7 @@
 	"More Note Block Sounds" = true
 	"More Banner Layers" = true
 	"Lock Rotation" = true
+	"Horses Swim" = true
 	"Hoe Harvesting" = true
 	"Grab Chickens" = true
 	"Gold Tools Have Fortune" = true
@@ -491,7 +494,6 @@
 	"Better Elytra Rocket" = true
 	"Automatic Recipe Unlock" = true
 	"Armed Armor Stands" = true
-	"Horses Swim" = true
 
 	[tweaks.utility_recipes]
 		#Can any wool color be dyed?
@@ -1458,7 +1460,7 @@
 		"Fuel Time Divisor" = 200
 		#The value of each shank of food. Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
-		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang"]
+		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife"]
 		#A list of additional stacks to display on each enchantment
 		#The format is as follows:
 		#enchant_id=item1,item2,item3...

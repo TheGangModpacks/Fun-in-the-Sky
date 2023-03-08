@@ -10,9 +10,7 @@
 			"{id:\"ftbessentials:trash_can\",json:'{\"group\":\"ftblibrary:util\",\"icon\":\"ftblibrary:icons/bin\",\"x\":150,\"click\":\"command:/trashcan\",\"required_server_mods\":[\"ftbessentials\"]}',type:\"ftblibrary:sidebar_button\"}",
 			"{id:\"ftbchunks:chunks\",json:'{\"group\":\"ftblibrary:util\",\"icon\":\"ftblibrary:icons/map\",\"x\":310,\"click\":\"ftbchunks:open_gui\"}',type:\"ftblibrary:sidebar_button\"}"
 		],
-		"displayHistory": [
-			"{DisplayHistoryCategory:\"mekanism:pressurized_reaction_chamber\",DisplayHistoryContains:1b,DisplayHistoryData:{JEISerializer:\"mekanism:reaction\",data:\"AAEBkzsBAAEAD21pbmVjcmFmdDpmbHVpZLQBAgAADG1la2FuaXNtOmdhcx0C6AcAADwB1QUBAAxtZWthbmlzbTpnYXMeCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\",id:\"mekanism:kjs_1y3emolwjo9la3yd79jizspen\"},DisplayHistoryUUID:\"3e153983-d06a-40c5-a5d8-4a6dd69cc366\"}"
-		],
+		"displayHistory": [],
 		// Declares whether cheating mode is on.
 		"cheating": false,
 		"favoritesEnabled": true,

@@ -1,0 +1,103 @@
+{
+	id: "014408FEEAD28AB9"
+	group: "45EE6B8D98E9487B"
+	order_index: 6
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: "mekanism:antiprotonic_nucleosynthesizer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["The Metallurgic Infuser is like an Alloy Smelter, but boring. It infuses items with Carbon, or Redstone, for example."]
+			id: "34D498402298FA2C"
+			tasks: [{
+				id: "7C6B3557F0085ED1"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			shape: "square"
+			description: ["The Basic Control Circuit is used for electronic components."]
+			id: "42989B2C968224C0"
+			tasks: [{
+				id: "2955122949FA47E6"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			shape: "square"
+			description: ["The Advanced Control Circuit furthers the potency of the Basic circuit."]
+			id: "5266006C886E627A"
+			tasks: [{
+				id: "29F1093CFDDB530E"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			shape: "square"
+			description: ["                     &l&o&bElite!"]
+			id: "48E6DA15916FDD2D"
+			tasks: [{
+				id: "274C1A46E6CE5687"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			shape: "gear"
+			description: ["For when \"Basic\" isn't enough for you."]
+			id: "3654BA9F1F0025D1"
+			tasks: [{
+				id: "5338A56AFD6EBC41"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			shape: "gear"
+			id: "1B2E193663BF6BE1"
+			tasks: [{
+				id: "377B1C7B67BA6182"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			id: "397228F24B47CEE9"
+			tasks: [{
+				id: "34804CE7C51E8BF8"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			id: "57DCE8CEC664989E"
+			tasks: [{
+				id: "193A2550F6B0810A"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

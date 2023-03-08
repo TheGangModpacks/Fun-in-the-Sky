@@ -1,5 +1,9 @@
 type = cached_variables
 
 variables {
+  345154 = 10
+  volume = 100
+  fov = some_value
+  net.minecraft.client.gui.screens.OptionsScreen:345154 = 1
 }
 
