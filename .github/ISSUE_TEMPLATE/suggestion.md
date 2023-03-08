@@ -2,7 +2,7 @@
 name: Suggestion
 about: Suggest changes, fixes, anything.
 title: ''
-labels: ''
+labels: Enhancement
 assignees: ''
 
 ---
