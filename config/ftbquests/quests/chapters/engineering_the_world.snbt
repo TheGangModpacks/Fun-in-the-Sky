@@ -25,6 +25,9 @@
 				""
 				"Many recipes in this pack have been altered heavily, do take note."
 			]
+			dependencies: ["2C57309260111ED1"]
+			invisible: true
+			invisible_until_tasks: 1
 			id: "59E4E09BD3378F5B"
 			tasks: [{
 				id: "50AEDF0BB14D8454"
@@ -35,6 +38,7 @@
 				id: "7BC78C85B949E0BC"
 				type: "command"
 				title: "Command"
+				icon: "minecraft:command_block"
 				auto: "no_toast"
 				command: "/say @p has started Engineering!"
 				player_command: false
@@ -1385,6 +1389,9 @@
 				"The Excavator is used to mine resources from Mineral Deposits, unseen by the human eyes."
 				""
 				"The Excavator is made of two structures, the rig itself and the... digger part? Is that what it's called?"
+				""
+				"&lNOTE"
+				"This multiblock may not function depending on how IE handles underground deposits... when there's no underground. These things absolutely do not work in other dimentions, so it might be useless."
 			]
 			dependencies: ["3E364FE6057E9D50"]
 			id: "48C0CDBACF9C2F5B"

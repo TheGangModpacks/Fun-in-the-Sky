@@ -13,6 +13,9 @@
 			y: -1.5d
 			subtitle: "All the little things"
 			description: ["Industrial foregoing is full of various machines to help you out. The various utility machines may prove to be useful."]
+			dependencies: ["78690BEE1FDB0616"]
+			invisible: true
+			invisible_until_tasks: 1
 			id: "6CFFB7BA912D1F10"
 			tasks: [{
 				id: "461AC6FCCA9FAEF0"

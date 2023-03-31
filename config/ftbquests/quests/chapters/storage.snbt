@@ -16,7 +16,9 @@
 			y: 0.0d
 			subtitle: "Any chest will do"
 			description: ["Here are some great options for storing your random junk around your area!"]
-			dependencies: ["6747D20A2F73D877"]
+			dependencies: ["281E3F9E52446FF7"]
+			invisible: true
+			invisible_until_tasks: 1
 			id: "228D8F5233C8C00F"
 			tasks: [{
 				id: "59188B61223DBD22"

@@ -1,7 +1,7 @@
 {
 	id: "7F2B95D3EAB90A14"
 	group: "45EE6B8D98E9487B"
-	order_index: 1
+	order_index: 2
 	filename: "agriculture"
 	title: "&2Agriculture"
 	icon: "mysticalagriculture:inferium_seeds"
@@ -15,7 +15,10 @@
 			y: 0.0d
 			subtitle: "Prospector"
 			description: ["Welcome to the Agriculture questline! It's time to experience the wonderful world of Mystical Agriculture, Agricraft, and more. Good luck!"]
+			dependencies: ["5DFD54DB42FFC556"]
 			hide: true
+			invisible: true
+			invisible_until_tasks: 1
 			id: "144C5D45F93C620E"
 			tasks: [{
 				id: "369ED2C9A217366F"

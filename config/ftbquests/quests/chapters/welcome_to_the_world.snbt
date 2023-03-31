@@ -1122,25 +1122,28 @@
 			}]
 		}
 		{
-			title: "Other Rocks"
-			x: -1.0d
-			y: -1.5d
-			description: ["You can get other pebbles from clicking on them. Stone, Netherrack and End Stone pebbles are easy to get, while others have a less chance of dropping, and have a chance to destroy the block."]
-			id: "29D90ECB9AB4B21F"
-			tasks: [
-				{
-					id: "775B9158E5BE1910"
-					type: "item"
-					item: "exnihilosequentia:netherrack_pebble"
-					count: 64L
-				}
-				{
-					id: "31F5EBEF7E78DF43"
-					type: "item"
-					item: "exnihilosequentia:end_stone_pebble"
-					count: 64L
-				}
+			title: "Storage!"
+			x: 3.0d
+			y: -0.5d
+			description: [
+				"Craft Chests for storage!"
+				"This quest opens the Storage Questline."
 			]
+			dependencies: ["6747D20A2F73D877"]
+			id: "281E3F9E52446FF7"
+			tasks: [{
+				id: "69DF7E3C8BA2DA27"
+				type: "item"
+				title: "Wooden Chest"
+				icon: "minecraft:chest"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+			}]
 		}
 	]
 	quest_links: [ ]

@@ -1,7 +1,7 @@
 {
 	id: "27A0C883FBEAB0FD"
 	group: "45EE6B8D98E9487B"
-	order_index: 4
+	order_index: 5
 	filename: "refined_storage"
 	title: "&bDigital Storage"
 	icon: "refinedstorage:creative_controller"
@@ -15,6 +15,7 @@
 			y: 1.0d
 			shape: "gear"
 			description: ["Welcome to Refined Storage! "]
+			dependencies: ["0048CFCE5675B1EE"]
 			invisible: true
 			invisible_until_tasks: 1
 			id: "0640073DDD7DCF38"
@@ -786,6 +787,7 @@
 			x: 0.5d
 			y: 1.0d
 			shape: "gear"
+			dependencies: ["0048CFCE5675B1EE"]
 			invisible: true
 			invisible_until_tasks: 1
 			id: "384319551B959E84"

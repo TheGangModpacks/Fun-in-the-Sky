@@ -1,7 +1,7 @@
 {
 	id: "5F7987B2EB807351"
 	group: "45EE6B8D98E9487B"
-	order_index: 5
+	order_index: 6
 	filename: "enchanting"
 	title: "&1Enchanting"
 	icon: "minecraft:enchanting_table"
@@ -13,6 +13,9 @@
 			title: "Enchanted Beginnings"
 			x: 0.0d
 			y: -1.0d
+			dependencies: ["5F3CABDA72BC6D60"]
+			invisible: true
+			invisible_until_tasks: 1
 			id: "3D37DB12109DFFCF"
 			tasks: [
 				{
