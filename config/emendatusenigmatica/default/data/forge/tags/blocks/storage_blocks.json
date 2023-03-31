@@ -14,6 +14,8 @@
     "#forge:storage_blocks/sulfur",
     "#forge:storage_blocks/fluorite",
     "#forge:storage_blocks/invar",
+    "#forge:storage_blocks/zinc",
+    "#forge:storage_blocks/raw_zinc",
     "#forge:storage_blocks/nickel",
     "#forge:storage_blocks/raw_nickel",
     "#forge:storage_blocks/electrum",
@@ -29,6 +31,7 @@
     "#forge:storage_blocks/silver",
     "#forge:storage_blocks/raw_silver",
     "#forge:storage_blocks/uranium",
-    "#forge:storage_blocks/raw_uranium"
+    "#forge:storage_blocks/raw_uranium",
+    "#forge:storage_blocks/bismuth"
   ]
 }

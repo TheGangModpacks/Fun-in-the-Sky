@@ -8,6 +8,7 @@
     "#forge:ingots/enderium",
     "#forge:ingots/tin",
     "#forge:ingots/invar",
+    "#forge:ingots/zinc",
     "#forge:ingots/hop_graphite",
     "#forge:ingots/nickel",
     "#forge:ingots/electrum",
@@ -17,6 +18,7 @@
     "#forge:ingots/lead",
     "#forge:ingots/bronze",
     "#forge:ingots/silver",
-    "#forge:ingots/uranium"
+    "#forge:ingots/uranium",
+    "#forge:ingots/bismuth"
   ]
 }

@@ -1,4 +1,4 @@
-// 1.19.2	2023-03-07T09:12:06.968419	Emendatus Enigmatica Fluid Tags
+// 1.19.2	2023-03-09T16:55:36.0507687	Emendatus Enigmatica Fluid Tags
 be02d769ef7549ceae6b0d41441748e3bc718e7f data/forge/tags/fluids/aluminum.json
 25af38e44b0799723975313a363a9a8a129905f6 data/forge/tags/fluids/brass.json
 fac16199debad29f1c94402cb98f59efb0118a56 data/forge/tags/fluids/bronze.json
@@ -14,3 +14,4 @@ f691555f768f727f299848b30cb686854de5968b data/forge/tags/fluids/signalum.json
 ff85d88dd36de02fed967f1858d252719f25a71d data/forge/tags/fluids/silver.json
 e97cd7699349ee525fb72cc4ad865069de86dcbb data/forge/tags/fluids/tin.json
 76774c4a8d10f459ab818c2cf01f04144a5feef3 data/forge/tags/fluids/uranium.json
+0b29abd22a1354524a405e6b4df9d98e9e1f3025 data/forge/tags/fluids/zinc.json

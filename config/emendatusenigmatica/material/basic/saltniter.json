@@ -12,5 +12,7 @@
     "materialType": "gem",
 	"gemTexture":  6,
     "harvestLevel": 2
-  }
+  },
+  "colors": {"materialColor": "C6BFCC"},
+  "oreDrop": {"drop": "emendatusenigmatica:salt_gem"}
 }

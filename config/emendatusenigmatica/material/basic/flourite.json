@@ -13,14 +13,10 @@
     "harvestLevel": 2,
 	"gemTexture": 5
   },
+  "colors": {"materialColor": "0C720D"},
   "oreDrop": {
     "drop": "emendatusenigmatica:fluorite",
-    "min": 4,
-    "max": 12
-  },
-  "compat": {
-    "create": false,
-    "occultism": false,
-    "mekanism": false
+    "min": 1,
+    "max": 1
   }
 }

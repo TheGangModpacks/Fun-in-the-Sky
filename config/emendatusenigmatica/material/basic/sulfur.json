@@ -15,10 +15,8 @@
     "isEmissive": false,
     "hasOxidization": false
   },
-  "compat": {
-    "create": false,
-    "occultism": false,
-    "mekanism": false,
-	"thermal": false
-  }
+  "colors": {
+    "materialColor": "EDE42F"
+  },
+  "oreDrop": {"drop": "emendatusenigmatica:sulfur_dust", "min": 1, "max": 1}
 }

@@ -12,5 +12,7 @@
 		"materialType": "gem",
 		"gemTexture": 4,
 		"harvestLevel": 2
-	}
+	},
+	"colors": { "materialColor": "AA212B"},
+	"oreDrop": {"drop": "emendatusenigmatica:cinnabar_gem", "min": 1, "max": 1}
 }

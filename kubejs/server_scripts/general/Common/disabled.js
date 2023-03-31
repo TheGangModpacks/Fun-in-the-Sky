@@ -12,4 +12,9 @@ ServerEvents.tags('item', event => {
     event.add(tag, "immersiveengineering:hoe_steel");
     event.add(tag, "immersiveengineering:shovel_steel");
     event.add(tag, "immersiveengineering:sword_steel");
+    event.add(tag, "thermal:device_tree_extractor");
+})
+ServerEvents.recipes(event =>{
+    //Recipes that are broken, which can likely be fixed in the future.
+    event.remove({ type: 'exnihilosequentia:heat'})
 })

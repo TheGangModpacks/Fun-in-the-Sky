@@ -1,1 +1,17 @@
-{}
+{
+  "values": [
+    "#forge:ores/cinnabar",
+    "#forge:ores/aluminum",
+    "#forge:ores/apatite",
+    "#forge:ores/tin",
+    "#forge:ores/sulfur",
+    "#forge:ores/fluorite",
+    "#forge:ores/nickel",
+    "#forge:ores/salt",
+    "#forge:ores/osmium",
+    "#forge:ores/lead",
+    "#forge:ores/iron",
+    "#forge:ores/silver",
+    "#forge:ores/uranium"
+  ]
+}

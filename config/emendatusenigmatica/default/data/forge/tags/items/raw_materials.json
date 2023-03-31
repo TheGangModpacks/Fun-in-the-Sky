@@ -2,6 +2,7 @@
   "values": [
     "#forge:raw_materials/aluminum",
     "#forge:raw_materials/tin",
+    "#forge:raw_materials/zinc",
     "#forge:raw_materials/nickel",
     "#forge:raw_materials/osmium",
     "#forge:raw_materials/lead",

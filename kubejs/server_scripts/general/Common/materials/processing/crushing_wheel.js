@@ -3,7 +3,10 @@ let ER = (id) => `emendatusenigmatica:raw_${id}`
 let MC = (id) => `minecraft:${id}`
 const CR = 'create:crushing';
 ServerEvents.recipes(event =>{
-	event.custom({
+	event.recipes.createCrushing([Item.of(EE("salt_dust", 2)),
+	Item.of(EE('salt_dust')).withChance(0.45), 
+	Item.of(MC('cobblestone')).withChance(0.10),], '#forge:ores/niter')
+	/*event.custom({
 		type: 'create:crushing',
 		ingredients: [{tag: 'forge:ores/niter'}],
 		processingTime: 400,
@@ -12,7 +15,7 @@ ServerEvents.recipes(event =>{
 		Item.of(EE('salt_dust')).withChance(0.45).toJson(),
 		Item.of(MC('cobblestone')).withChance(0.10).toJson()
 		]
-	})
+	})*/
 	event.custom({
 		type: 'create:crushing',
 		ingredients: [{tag: 'forge:ores/tin'}],

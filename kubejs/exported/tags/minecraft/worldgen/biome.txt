@@ -1,17 +1,14 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 22, 2023, 10:59:50 PM
+To refresh this file, delete it and run /reload command again! Last updated: Mar 27, 2023, 3:06:20 PM
 
 #minecraft:has_structure/nether_fortress
 - #minecraft:is_nether (from Default)
 
 #forge:is_slope
-- minecraft:savanna_plateau (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:wooded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:meadow (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:grove (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_slopes (from forge-1.19.2-43.2.4-universal.jar)
-
-#supplementaries:has_cave_urns
-- #minecraft:is_overworld (from Supplementaries Generated Pack)
+- minecraft:savanna_plateau (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:wooded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:meadow (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:grove (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_slopes (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:water_on_map_outlines
 - #minecraft:is_ocean (from Default)
@@ -51,19 +48,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:lush_caves (from Default)
 
 #botania:marimorphosis_forest_bonus
-- #minecraft:is_forest (from Botania-1.19.2-437-FORGE.jar)
+- #minecraft:is_forest (from Botania-1.19.2-438-FORGE.jar)
 
 #minecraft:has_structure/jungle_temple
 - minecraft:bamboo_jungle (from Default)
 - minecraft:jungle (from Default)
 
 #botania:marimorphosis_mountain_bonus
-- #minecraft:is_mountain (from Botania-1.19.2-437-FORGE.jar)
+- #minecraft:is_mountain (from Botania-1.19.2-438-FORGE.jar)
 
 #immersiveengineering:has_mineral_veins
-- #minecraft:is_overworld (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
-- #minecraft:is_nether (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
-- #minecraft:is_end (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- #minecraft:is_overworld (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
+- #minecraft:is_nether (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
+- #minecraft:is_end (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #minecraft:is_jungle
 - minecraft:bamboo_jungle (from Default)
@@ -71,11 +68,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:sparse_jungle (from Default)
 
 #forge:is_hot/nether
-- minecraft:nether_wastes (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:soul_sand_valley (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:crimson_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:warped_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:basalt_deltas (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:nether_wastes (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:soul_sand_valley (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:crimson_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:warped_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:basalt_deltas (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:is_ocean
 - #minecraft:is_deep_ocean (from Default)
@@ -86,22 +83,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:warm_ocean (from Default)
 
 #ad_astra:has_structure/pygro_village_biomes
-- ad_astra:venus_wastelands (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:venus_wastelands (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #twilightforest:valid_yeti_cave_biomes
 - twilightforest:snowy_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #pneumaticcraft:has_surface_oil_lakes
-- #minecraft:is_overworld (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- #minecraft:is_overworld (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #ad_astra:has_structure/moon_dungeon_biomes
-- ad_astra:lunar_wastelands (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:lunar_wastelands (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #ae2:has_meteorites
 - #minecraft:is_overworld? (from appliedenergistics2-forge-12.9.2.jar)
 
 #ad_astra:has_structure/pygro_tower_biomes
-- ad_astra:venus_wastelands (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:venus_wastelands (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #twilightforest:valid_hedge_maze_biomes
 - twilightforest:clearing (from twilightforest-1.19.2-4.2.1518-universal.jar)
@@ -114,41 +111,41 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:spooky_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_hot/overworld
-- minecraft:desert (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:sparse_jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:savanna (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:savanna_plateau (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:stony_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:warm_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:windswept_savanna (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:eroded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:bamboo_jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:mangrove_swamp (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:desert (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:sparse_jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:savanna (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:savanna_plateau (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:stony_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:warm_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:windswept_savanna (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:eroded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:bamboo_jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:mangrove_swamp (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_cold
-- #forge:is_cold/overworld (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_cold/nether? (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_cold/end (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_cold/overworld (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_cold/nether? (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_cold/end (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_sparse/overworld
-- minecraft:windswept_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:savanna (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:savanna_plateau (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:wooded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_slopes (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:jagged_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:windswept_gravelly_hills (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:windswept_savanna (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:eroded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:dripstone_caves (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:windswept_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:savanna (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:savanna_plateau (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:wooded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_slopes (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:jagged_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:windswept_gravelly_hills (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:windswept_savanna (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:eroded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:dripstone_caves (from forge-1.19.2-43.2.6-universal.jar)
 
 #twilightforest:valid_mushroom_tower_biomes
 - twilightforest:dense_mushroom_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_overworld
-- quark:glimmering_weald (from Quark-3.4-389.jar)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #minecraft:has_structure/buried_treasure
 - #minecraft:is_beach (from Default)
@@ -165,7 +162,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:warm_ocean (from Default)
 
 #forge:is_desert
-- minecraft:desert (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:desert (from forge-1.19.2-43.2.6-universal.jar)
 
 #twilightforest:valid_aurora_palace_biomes
 - twilightforest:glacier (from twilightforest-1.19.2-4.2.1518-universal.jar)
@@ -180,21 +177,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:deep_dark (from Default)
 
 #forge:is_peak
-- minecraft:jagged_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:stony_peaks (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:jagged_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:stony_peaks (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/shipwreck
 - #minecraft:is_ocean (from Default)
 
 #forge:is_wet/overworld
-- minecraft:swamp (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:sparse_jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:beach (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:bamboo_jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:lush_caves (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:mangrove_swamp (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:swamp (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:sparse_jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:beach (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:bamboo_jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:lush_caves (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:mangrove_swamp (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:is_savanna
 - minecraft:savanna (from Default)
@@ -202,9 +199,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:windswept_savanna (from Default)
 
 #forge:is_hot
-- #forge:is_hot/overworld (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_hot/nether (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_hot/end? (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_hot/overworld (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_hot/nether (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_hot/end? (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/igloo
 - minecraft:snowy_taiga (from Default)
@@ -220,16 +217,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:windswept_gravelly_hills (from Default)
 
 #forge:is_wet
-- #forge:is_wet/overworld (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_wet/nether? (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_wet/end? (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_wet/overworld (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_wet/nether? (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_wet/end? (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_cold/end
-- minecraft:the_end (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:small_end_islands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:end_midlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:end_highlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:end_barrens (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:the_end (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:small_end_islands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:end_midlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:end_highlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:end_barrens (from forge-1.19.2-43.2.6-universal.jar)
 
 #twilightforest:valid_naga_courtyard_biomes
 - twilightforest:clearing (from twilightforest-1.19.2-4.2.1518-universal.jar)
@@ -242,29 +239,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:spooky_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #waystones:is_desert
-- minecraft:desert (from waystones-forge-1.19-11.1.0.jar)
+- minecraft:desert (from waystones-forge-1.19.2-11.3.1.jar)
 
 #minecraft:allows_surface_slime_spawns
 - minecraft:swamp (from Default)
 - minecraft:mangrove_swamp (from Default)
 
 #waystones:is_swamp
-- minecraft:swamp (from waystones-forge-1.19-11.1.0.jar)
-- minecraft:mangrove_swamp (from waystones-forge-1.19-11.1.0.jar)
+- minecraft:swamp (from waystones-forge-1.19.2-11.3.1.jar)
+- minecraft:mangrove_swamp (from waystones-forge-1.19.2-11.3.1.jar)
 
 #forge:is_plains
-- minecraft:plains (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_plains (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:meadow (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:sunflower_plains (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:plains (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_plains (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:meadow (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:sunflower_plains (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:required_ocean_monument_surrounding
 - #minecraft:is_ocean (from Default)
 - #minecraft:is_river (from Default)
 
 #forge:is_mountain
-- #forge:is_peak (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_slope (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_peak (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_slope (from forge-1.19.2-43.2.6-universal.jar)
 
 #mob_grinding_utils:hostile_override
 
@@ -282,20 +279,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:spooky_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_sandy
-- minecraft:desert (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:beach (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:wooded_badlands (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:desert (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:beach (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:wooded_badlands (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/ruined_portal_jungle
 - #minecraft:is_jungle (from Default)
 
 #botania:marimorphosis_desert_bonus
-- #forge:is_desert (from Botania-1.19.2-437-FORGE.jar)
-- #minecraft:is_savanna (from Botania-1.19.2-437-FORGE.jar)
+- #forge:is_desert (from Botania-1.19.2-438-FORGE.jar)
+- #minecraft:is_savanna (from Botania-1.19.2-438-FORGE.jar)
 
 #quark:stoneling_pathfinding
-- quark:glimmering_weald (from Quark-3.4-389.jar)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #minecraft:plays_underwater_music
 - #minecraft:is_ocean (from Default)
@@ -308,29 +305,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #minecraft:is_ocean (from Default)
 
 #botania:mystical_flower_blocklist
-- #forge:is_mushroom? (from Botania-1.19.2-437-FORGE.jar)
-- #c:mushroom? (from Botania-1.19.2-437-FORGE.jar)
+- #forge:is_mushroom? (from Botania-1.19.2-438-FORGE.jar)
+- #c:mushroom? (from Botania-1.19.2-438-FORGE.jar)
 
 #forge:is_rare
-- minecraft:mushroom_fields (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:sparse_jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:savanna_plateau (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:sunflower_plains (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:windswept_gravelly_hills (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:flower_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:ice_spikes (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:old_growth_birch_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:old_growth_spruce_taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:windswept_savanna (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:eroded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:bamboo_jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:deep_dark (from forge-1.19.2-43.2.4-universal.jar)
-- quark:glimmering_weald (from Quark-3.4-389.jar)
+- minecraft:mushroom_fields (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:sparse_jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:savanna_plateau (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:sunflower_plains (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:windswept_gravelly_hills (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:flower_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:ice_spikes (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:old_growth_birch_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:old_growth_spruce_taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:windswept_savanna (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:eroded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:bamboo_jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:deep_dark (from forge-1.19.2-43.2.6-universal.jar)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #forge:is_plateau
-- minecraft:savanna_plateau (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:wooded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:meadow (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:savanna_plateau (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:wooded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:meadow (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:is_deep_ocean
 - minecraft:deep_frozen_ocean (from Default)
@@ -349,14 +346,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #minecraft:is_beach (from Delightful-1.19.2-3.2.2.jar)
 
 #forge:is_lush
-- minecraft:lush_caves (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:lush_caves (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_dry/overworld
-- minecraft:desert (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:wooded_badlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:windswept_savanna (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:eroded_badlands (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:desert (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:wooded_badlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:windswept_savanna (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:eroded_badlands (from forge-1.19.2-43.2.6-universal.jar)
 
 #powah:has_dry_ice
 - #c:icy? (from Powah-4.0.6.jar)
@@ -366,14 +363,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:dark_forest (from Default)
 
 #botania:marimorphosis_plains_bonus
-- #forge:is_plains (from Botania-1.19.2-437-FORGE.jar)
-- #minecraft:is_beach (from Botania-1.19.2-437-FORGE.jar)
+- #forge:is_plains (from Botania-1.19.2-438-FORGE.jar)
+- #minecraft:is_beach (from Botania-1.19.2-438-FORGE.jar)
 
 #pneumaticcraft:has_underground_oil_lakes
-- #minecraft:is_overworld (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- #minecraft:is_overworld (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:is_void
-- minecraft:the_void (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:the_void (from forge-1.19.2-43.2.6-universal.jar)
 
 #delightful:salmonberry_spawns
 - #minecraft:is_forest (from Delightful-1.19.2-3.2.2.jar)
@@ -382,9 +379,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:final_plateau (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_dry
-- #forge:is_dry/overworld (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_dry/nether (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_dry/end (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_dry/overworld (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_dry/nether (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_dry/end (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/ocean_ruin_warm
 - minecraft:lukewarm_ocean (from Default)
@@ -392,22 +389,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:deep_lukewarm_ocean (from Default)
 
 #botania:marimorphosis_taiga_bonus
-- #forge:is_coniferous (from Botania-1.19.2-437-FORGE.jar)
-- #forge:is_cold (from Botania-1.19.2-437-FORGE.jar)
-- #forge:is_snowy (from Botania-1.19.2-437-FORGE.jar)
+- #forge:is_coniferous (from Botania-1.19.2-438-FORGE.jar)
+- #forge:is_cold (from Botania-1.19.2-438-FORGE.jar)
+- #forge:is_snowy (from Botania-1.19.2-438-FORGE.jar)
 
 #forge:is_cave
-- minecraft:lush_caves (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:dripstone_caves (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:deep_dark (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:lush_caves (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:dripstone_caves (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:deep_dark (from forge-1.19.2-43.2.6-universal.jar)
 
 #botania:mystical_mushroom_spawnlist
-- #minecraft:is_overworld (from Botania-1.19.2-437-FORGE.jar)
-- #minecraft:is_nether (from Botania-1.19.2-437-FORGE.jar)
+- #minecraft:is_overworld (from Botania-1.19.2-438-FORGE.jar)
+- #minecraft:is_nether (from Botania-1.19.2-438-FORGE.jar)
 
 #forge:is_mushroom
-- minecraft:mushroom_fields (from forge-1.19.2-43.2.4-universal.jar)
-- quark:glimmering_weald (from Quark-3.4-389.jar)
+- minecraft:mushroom_fields (from forge-1.19.2-43.2.6-universal.jar)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #botania:mystical_mushroom_blocklist
 
@@ -418,8 +415,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:desert (from Default)
 
 #botania:marimorphosis_fungal_bonus
-- #forge:is_mushroom (from Botania-1.19.2-437-FORGE.jar)
-- #forge:is_underground (from Botania-1.19.2-437-FORGE.jar)
+- #forge:is_mushroom (from Botania-1.19.2-438-FORGE.jar)
+- #forge:is_underground (from Botania-1.19.2-438-FORGE.jar)
 
 #minecraft:is_forest
 - minecraft:forest (from Default)
@@ -430,7 +427,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:grove (from Default)
 
 #ad_astra:has_structure/lunarian_village_biomes
-- ad_astra:lunar_wastelands (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:lunar_wastelands (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #minecraft:is_overworld
 - minecraft:mushroom_fields (from Default)
@@ -485,10 +482,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:dripstone_caves (from Default)
 - minecraft:lush_caves (from Default)
 - minecraft:deep_dark (from Default)
-- quark:glimmering_weald (from Quark-3.4-389.jar)
-
-#supplementaries:has_way_signs
-- #minecraft:is_overworld (from Supplementaries Generated Pack)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #minecraft:has_structure/village_savanna
 - minecraft:savanna (from Default)
@@ -530,9 +524,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #twilightforest:valid_troll_cave_biomes
 - twilightforest:highlands (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
-#supplementaries:has_basalt_ash
-- minecraft:basalt_deltas (from Supplementaries Generated Pack)
-
 #minecraft:polar_bears_spawn_on_alternate_blocks
 - minecraft:frozen_ocean (from Default)
 - minecraft:deep_frozen_ocean (from Default)
@@ -551,21 +542,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #delightful:mini_melon_spawns
 - #forge:is_plains (from Delightful-1.19.2-3.2.2.jar)
 
-#supplementaries:has_wild_flax
-- #minecraft:is_overworld (from Supplementaries Generated Pack)
-
 #ad_astra:has_structure/mars_temple_biomes
-- ad_astra:martian_wastelands (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:martian_canyon_creek (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:martian_wastelands (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:martian_canyon_creek (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:is_coniferous
-- minecraft:taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:old_growth_pine_taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:grove (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:old_growth_pine_taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:grove (from forge-1.19.2-43.2.6-universal.jar)
 
 #waystones:is_mushroom
-- minecraft:mushroom_fields (from waystones-forge-1.19-11.1.0.jar)
+- minecraft:mushroom_fields (from waystones-forge-1.19.2-11.3.1.jar)
 
 #minecraft:without_wandering_trader_spawns
 - minecraft:the_void (from Default)
@@ -575,28 +563,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:desert (from Default)
 
 #forge:is_snowy
-- minecraft:frozen_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_river (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_plains (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_beach (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:grove (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_slopes (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:jagged_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:ice_spikes (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:frozen_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_river (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_plains (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_beach (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:grove (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_slopes (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:jagged_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:ice_spikes (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_dense
-- #forge:is_dense/overworld (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_dense/nether? (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_dense/end? (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_dense/overworld (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_dense/nether? (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_dense/end? (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/ruined_portal_swamp
 - minecraft:swamp (from Default)
 - minecraft:mangrove_swamp (from Default)
 
 #ad_astra:has_structure/venus_bullet_biomes
-- ad_astra:venus_wastelands (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:venus_wastelands (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #minecraft:has_structure/swamp_hut
 - minecraft:swamp (from Default)
@@ -622,8 +610,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:enchanted_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_water
-- #minecraft:is_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- #minecraft:is_river (from forge-1.19.2-43.2.4-universal.jar)
+- #minecraft:is_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- #minecraft:is_river (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/ruined_portal_nether
 - #minecraft:is_nether (from Default)
@@ -680,20 +668,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:lush_caves (from Default)
 
 #forge:is_underground
-- #forge:is_cave (from forge-1.19.2-43.2.4-universal.jar)
-- quark:glimmering_weald (from Quark-3.4-389.jar)
+- #forge:is_cave (from forge-1.19.2-43.2.6-universal.jar)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #ad_astra:has_structure/meteor_biomes
-- #minecraft:is_jungle (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #minecraft:is_forest (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #minecraft:is_taiga (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:desert (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:plains (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:snowy_plains (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:sunflower_plains (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:savanna (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:savanna_plateau (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:windswept_savanna (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #minecraft:is_jungle (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #minecraft:is_forest (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #minecraft:is_taiga (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:desert (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:plains (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:snowy_plains (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:sunflower_plains (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:savanna (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:savanna_plateau (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:windswept_savanna (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #minecraft:without_zombie_sieges
 - minecraft:mushroom_fields (from Default)
@@ -703,14 +691,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:swamp (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_magical
-- quark:glimmering_weald (from Quark-3.4-389.jar)
+- quark:glimmering_weald (from Quark-3.4-394.jar)
 
 #forge:is_dry/nether
-- minecraft:nether_wastes (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:soul_sand_valley (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:crimson_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:warped_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:basalt_deltas (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:nether_wastes (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:soul_sand_valley (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:crimson_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:warped_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:basalt_deltas (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:is_beach
 - minecraft:beach (from Default)
@@ -740,7 +728,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:grove (from Default)
 
 #botania:mystical_flower_spawnlist
-- #minecraft:is_overworld (from Botania-1.19.2-437-FORGE.jar)
+- #minecraft:is_overworld (from Botania-1.19.2-438-FORGE.jar)
 
 #minecraft:is_taiga
 - minecraft:taiga (from Default)
@@ -763,16 +751,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:deep_dark (from Default)
 
 #forge:is_sparse
-- #forge:is_sparse/overworld (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_sparse/nether? (from forge-1.19.2-43.2.4-universal.jar)
-- #forge:is_sparse/end? (from forge-1.19.2-43.2.4-universal.jar)
+- #forge:is_sparse/overworld (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_sparse/nether? (from forge-1.19.2-43.2.6-universal.jar)
+- #forge:is_sparse/end? (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_swamp
-- minecraft:swamp (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:mangrove_swamp (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:swamp (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:mangrove_swamp (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:is_wasteland
-- minecraft:snowy_plains (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:snowy_plains (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:is_mountain
 - minecraft:meadow (from Default)
@@ -793,11 +781,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:wooded_badlands (from Default)
 
 #forge:is_dry/end
-- minecraft:the_end (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:small_end_islands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:end_midlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:end_highlands (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:end_barrens (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:the_end (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:small_end_islands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:end_midlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:end_highlands (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:end_barrens (from forge-1.19.2-43.2.6-universal.jar)
 
 #twilightforest:valid_dark_tower_biomes
 - twilightforest:dark_forest_center (from twilightforest-1.19.2-4.2.1518-universal.jar)
@@ -806,44 +794,44 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:soul_sand_valley (from Default)
 
 #botania:marimorphosis_swamp_bonus
-- #forge:is_swamp (from Botania-1.19.2-437-FORGE.jar)
-- #minecraft:is_jungle (from Botania-1.19.2-437-FORGE.jar)
+- #forge:is_swamp (from Botania-1.19.2-438-FORGE.jar)
+- #minecraft:is_jungle (from Botania-1.19.2-438-FORGE.jar)
 
 #forge:is_cold/overworld
-- minecraft:taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_river (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_plains (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_beach (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:old_growth_pine_taiga (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:grove (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:snowy_slopes (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:jagged_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:frozen_peaks (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:cold_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:deep_cold_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:deep_frozen_ocean (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:ice_spikes (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_river (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_plains (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_beach (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:old_growth_pine_taiga (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:grove (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:snowy_slopes (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:jagged_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:frozen_peaks (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:cold_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:deep_cold_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:deep_frozen_ocean (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:ice_spikes (from forge-1.19.2-43.2.6-universal.jar)
 
 #botania:marimorphosis_mesa_bonus
-- #minecraft:is_badlands (from Botania-1.19.2-437-FORGE.jar)
-- #minecraft:is_savanna (from Botania-1.19.2-437-FORGE.jar)
+- #minecraft:is_badlands (from Botania-1.19.2-438-FORGE.jar)
+- #minecraft:is_savanna (from Botania-1.19.2-438-FORGE.jar)
 
 #minecraft:has_structure/end_city
 - minecraft:end_highlands (from Default)
 - minecraft:end_midlands (from Default)
 
 #forge:is_dense/overworld
-- minecraft:jungle (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:dark_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:old_growth_birch_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:old_growth_spruce_taiga (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:jungle (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:dark_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:old_growth_birch_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:old_growth_spruce_taiga (from forge-1.19.2-43.2.6-universal.jar)
 
 #ad_astra:has_structure/oil_well_biomes
-- #minecraft:is_ocean (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #minecraft:is_deep_ocean (from ad_astra-forge-1.19.2-1.12.3.jar)
-- minecraft:swamp (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #minecraft:is_ocean (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #minecraft:is_deep_ocean (from ad_astra-forge-1.19.2-1.12.6.jar)
+- minecraft:swamp (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #minecraft:reduce_water_ambient_spawns
 - #minecraft:is_river (from Default)
@@ -865,8 +853,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - twilightforest:spooky_forest (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:is_spooky
-- minecraft:dark_forest (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:deep_dark (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:dark_forest (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:deep_dark (from forge-1.19.2-43.2.6-universal.jar)
 
 #minecraft:has_structure/ruined_portal_mountain
 - #minecraft:is_badlands (from Default)
