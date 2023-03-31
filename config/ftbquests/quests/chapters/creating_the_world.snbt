@@ -1,7 +1,7 @@
 {
 	id: "58146AA7D3DDCA90"
 	group: "45EE6B8D98E9487B"
-	order_index: 2
+	order_index: 3
 	filename: "creating_the_world"
 	title: "&6Creating the World"
 	icon: "create:cogwheel"
@@ -14,6 +14,9 @@
 			x: -4.0d
 			y: -7.0d
 			description: ["Create is a mod focused on taking the player through an industrial paradise, bringing in all sorts of engineering bits for your delight. Good luck out there."]
+			dependencies: ["648D003C88FD41AB"]
+			invisible_until_tasks: 1
+			ignore_reward_blocking: true
 			id: "764927A0428B3988"
 			tasks: [{
 				id: "4FAD9F67EAB256BD"
@@ -27,12 +30,11 @@
 			}]
 		}
 		{
-			title: "Cogsworth"
+			title: "Cogs"
 			icon: "create:large_cogwheel"
 			x: -4.0d
 			y: -3.5d
 			shape: "pentagon"
-			subtitle: "Two Centurys Later"
 			description: [
 				"Cogwheels and Shafts are the primary source for kinetic energy logistics."
 				""
@@ -78,8 +80,7 @@
 		{
 			x: -4.0d
 			y: -5.0d
-			subtitle: "Hope you kept your Andesite Pebbles."
-			description: ["Andesite Alloy is the main material for Create blocks."]
+			description: ["Compressed Alloy is the main material for Create blocks."]
 			dependencies: ["764927A0428B3988"]
 			id: "4E545380C1AE143E"
 			tasks: [{

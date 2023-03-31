@@ -12,6 +12,9 @@
 			x: 0.0d
 			y: 0.0d
 			description: ["Compressed Iron is the base material for PNC. Make lots of it."]
+			dependencies: ["1BB7C983C892EDB9"]
+			invisible: true
+			invisible_until_tasks: 1
 			id: "7B2DF7D879840487"
 			tasks: [{
 				id: "492FF3E1420BFC60"

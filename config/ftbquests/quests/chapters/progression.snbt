@@ -49,13 +49,13 @@
 			icon: "botania:orange_petal"
 			x: 0.0d
 			y: 1.5d
-			description: ["Crafting a Diluted Mana Pool opens the Botania Questline."]
+			description: ["Crafting a Petal Apothecary opens the Botania Questline."]
 			dependencies: ["6559CC67BF9CB433"]
 			id: "0E51BD89CBC21868"
 			tasks: [{
-				id: "6C97BFA07424B818"
+				id: "4D94F4E4DE4AE8CF"
 				type: "item"
-				item: "botania:diluted_pool"
+				item: "botania:apothecary_default"
 			}]
 		}
 		{
@@ -63,7 +63,7 @@
 			x: 1.5d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["Exploding Iron and obtaining the result unlocks Pneumaticcraft!"]
+			description: ["Exploding Leaded Iron and obtaining the result unlocks Pneumaticcraft!"]
 			dependencies: ["2C57309260111ED1"]
 			id: "1BB7C983C892EDB9"
 			tasks: [{
@@ -784,15 +784,139 @@
 		}
 		{
 			title: "Meka! Mekanism!"
-			x: 1.0d
-			y: 1.5d
+			x: 0.0d
+			y: 5.0d
 			description: ["Crafting a Metallurgic Infuser opens the Mekanism Questline."]
-			dependencies: ["1BB7C983C892EDB9"]
+			dependencies: ["670A163129BF4DE5"]
 			id: "62303264E2676947"
 			tasks: [{
 				id: "0C909CB374CF5AC0"
 				type: "item"
 				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			title: "Create"
+			x: 1.0d
+			y: 1.5d
+			description: ["Crafting your first Cogwheel and Andesite Casing unlocks the Create Questline!"]
+			dependencies: ["1BB7C983C892EDB9"]
+			id: "648D003C88FD41AB"
+			tasks: [{
+				id: "016C27E400C2F133"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			icon: {
+				id: "ad_astra:tier_1_rocket"
+				Count: 1b
+				tag: {
+					BotariumData: { }
+				}
+			}
+			x: 2.0d
+			y: 3.0d
+			description: ["Ad Astra currently has no dependencies. Enjoy!"]
+			dependencies: ["648D003C88FD41AB"]
+			id: "7602F7AF2F152D28"
+			tasks: [{
+				id: "745036F97AD2FCA4"
+				type: "checkmark"
+				title: "Ad Astra!"
+			}]
+		}
+		{
+			title: "Digital Storage!"
+			icon: "refinedstorage:red_creative_controller"
+			x: 2.5d
+			y: 1.0d
+			description: ["Obtaining Silicon unlocks the Digital Storage Questline!"]
+			dependencies: ["1BB7C983C892EDB9"]
+			id: "0048CFCE5675B1EE"
+			tasks: [{
+				id: "09D6A776EDF277A6"
+				type: "item"
+				item: "emendatusenigmatica:silicon_gem"
+				count: 8L
+			}]
+		}
+		{
+			icon: "rftoolsbase:machine_frame"
+			x: -1.0d
+			y: 3.0d
+			description: ["RFTools currently has no dependencies. Enjoy!"]
+			dependencies: ["0E51BD89CBC21868"]
+			id: "16EFE494874CE030"
+			tasks: [{
+				id: "0A746A9C1A9FEF78"
+				type: "checkmark"
+				title: "RFTools"
+			}]
+		}
+		{
+			title: "Mystical Agriculture!"
+			x: -1.5d
+			y: 1.0d
+			description: ["Mining Prosperity in the Twilight Forest unlocks the Agriculture Questline!"]
+			dependencies: ["6559CC67BF9CB433"]
+			id: "5DFD54DB42FFC556"
+			tasks: [{
+				id: "4FE4AA45715DEDD0"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+			}]
+		}
+		{
+			title: "Enchanting"
+			icon: "apotheosis:library"
+			x: -2.0d
+			y: 2.0d
+			description: ["Enchanting currently has no dependencies. Enjoy!"]
+			dependencies: ["16EFE494874CE030"]
+			id: "5F3CABDA72BC6D60"
+			tasks: [{
+				id: "62523D4B586A5C56"
+				type: "checkmark"
+				title: "Enchantment"
+			}]
+		}
+		{
+			title: "Compact Crafting"
+			x: 1.0d
+			y: 4.0d
+			description: [
+				"The Compact Crafting Mod adds Field Projectors, which can condense blocks placed in the world into anything!"
+				""
+				"To set up such a contraption, all you need to do is this:"
+				"1* Place down any block, and then a Field Projector on top."
+				"2* Right click the projector to show where to put the next projectors."
+				"3* Repeat until all 4 projectors are placed. After doing so, a big orange box should appear. If not, you messed it up."
+				"4* You're pretty much done! You can now build structures inside the orange box and condense them into items / blocks."
+				""
+				"Hit \"U\" on a field projector in your inventory / JEI to see the recipes. We will provide structure files for each craft, you can find them inside the \"structures\" folder in the Modpack directory."
+			]
+			dependencies: ["7602F7AF2F152D28"]
+			id: "670A163129BF4DE5"
+			tasks: [{
+				id: "442AEB4A950E1B5F"
+				type: "item"
+				item: "compactcrafting:field_projector"
+				count: 4L
+			}]
+		}
+		{
+			title: "Industrial Foregoing"
+			x: 2.0d
+			y: 5.0d
+			description: ["Craft a Pity Machine Frame to open the Industrial Foregoing Questline."]
+			dependencies: ["670A163129BF4DE5"]
+			id: "78690BEE1FDB0616"
+			tasks: [{
+				id: "1663490783C62E7A"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
 			}]
 		}
 	]
