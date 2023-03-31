@@ -2,9 +2,17 @@
   "values": [
     "emendatusenigmatica:aluminum_block",
     "emendatusenigmatica:raw_aluminum_block",
+    "emendatusenigmatica:aluminum_deepslate_ore",
+    "emendatusenigmatica:aluminum_stone_ore",
     "emendatusenigmatica:tin_block",
     "emendatusenigmatica:raw_tin_block",
+    "emendatusenigmatica:tin_deepslate_ore",
+    "emendatusenigmatica:tin_stone_ore",
+    "emendatusenigmatica:zinc_block",
+    "emendatusenigmatica:raw_zinc_block",
     "emendatusenigmatica:osmium_block",
-    "emendatusenigmatica:raw_osmium_block"
+    "emendatusenigmatica:raw_osmium_block",
+    "emendatusenigmatica:osmium_deepslate_ore",
+    "emendatusenigmatica:osmium_stone_ore"
   ]
 }

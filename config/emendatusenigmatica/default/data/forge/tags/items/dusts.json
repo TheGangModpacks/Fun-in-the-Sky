@@ -15,6 +15,7 @@
     "#forge:dusts/fluorite",
     "#forge:dusts/copper",
     "#forge:dusts/invar",
+    "#forge:dusts/zinc",
     "#forge:dusts/hop_graphite",
     "#forge:dusts/nickel",
     "#forge:dusts/electrum",
@@ -30,6 +31,7 @@
     "#forge:dusts/coal",
     "#forge:dusts/silver",
     "#forge:dusts/charcoal",
-    "#forge:dusts/uranium"
+    "#forge:dusts/uranium",
+    "#forge:dusts/bismuth"
   ]
 }

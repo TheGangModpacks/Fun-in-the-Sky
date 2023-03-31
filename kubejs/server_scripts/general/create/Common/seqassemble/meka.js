@@ -1,6 +1,7 @@
 let MK = (id) => `mekanism:${id}`
 let KF = (id) => `kubejs:unprocessed_${id}`
-ServerEvents.recipes(event =>{
+ServerEvents.recipes(event => {
+	event.remove({output: (MK('steel_casing'))})
 	event.custom({
 		type: 'create:sequenced_assembly',
 		ingredient: Item.of('powah:dielectric_casing').toJson(),

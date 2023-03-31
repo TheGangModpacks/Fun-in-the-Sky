@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 22, 2023, 10:59:50 PM
+To refresh this file, delete it and run /reload command again! Last updated: Mar 27, 2023, 3:06:20 PM
 
 #forge:invar
 - emendatusenigmatica:invar (from EE Generated Pack)
@@ -13,35 +13,35 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:flowing_water (from Default)
 - exnihilosequentia:sea_water (from ExNihiloSequentia-1.19.2-4.1.0.55-beta.jar)
 - exnihilosequentia:sea_water_flow (from ExNihiloSequentia-1.19.2-4.1.0.55-beta.jar)
-- createaddition:flowing_seed_oil (from createaddition-1.19.2-20230202b.jar)
-- createaddition:seed_oil (from createaddition-1.19.2-20230202b.jar)
-- ad_astra:fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:oil (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_oil (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:cryo_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_cryo_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- sliceanddice:flowing_fertilizer (from sliceanddice-2.0.1.jar)
-- sliceanddice:fertilizer (from sliceanddice-2.0.1.jar)
+- createaddition:flowing_seed_oil (from createaddition-1.19.2-20230315b.jar)
+- createaddition:seed_oil (from createaddition-1.19.2-20230315b.jar)
+- ad_astra:fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:oil (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_oil (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:cryo_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_cryo_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- sliceanddice:flowing_fertilizer (from sliceanddice-2.0.3.jar)
+- sliceanddice:fertilizer (from sliceanddice-2.0.3.jar)
 
 #forge:bronze
 - emendatusenigmatica:bronze (from EE Generated Pack)
 - emendatusenigmatica:flowing_bronze (from EE Generated Pack)
 
 #forge:biodiesel
-- pneumaticcraft:biodiesel (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
-- immersiveengineering:biodiesel (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- pneumaticcraft:biodiesel (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
+- immersiveengineering:biodiesel (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:milk
-- minecraft:milk? (from forge-1.19.2-43.2.4-universal.jar)
-- minecraft:flowing_milk? (from forge-1.19.2-43.2.4-universal.jar)
+- minecraft:milk? (from forge-1.19.2-43.2.6-universal.jar)
+- minecraft:flowing_milk? (from forge-1.19.2-43.2.6-universal.jar)
 
 #forge:uranium_hexafluoride
 - mekanism:uranium_hexafluoride (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_uranium_hexafluoride (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #forge:pink_slime
-- industrialforegoing:pink_slime (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
+- industrialforegoing:pink_slime (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
 
 #forge:sulfur_dioxide
 - mekanism:sulfur_dioxide (from Mekanism-1.19.2-10.3.8.477.jar)
@@ -62,44 +62,44 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #forge:steam
 - mekanism:steam (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_steam (from Mekanism-1.19.2-10.3.8.477.jar)
-- bigreactors:steam (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:steam_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:steam (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:steam_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #forge:yellorium
-- bigreactors:yellorium (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:yellorium_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:yellorium (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:yellorium_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #forge:glowstone
 - thermal:glowstone (from thermal_core-1.19.2-10.2.0.5.jar)
 
 #forge:oil
-- #ad_astra:oil (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #ad_astra:oil (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #immersiveengineering:drill_fuel
-- #forge:biodiesel (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- #forge:biodiesel (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #pneumaticcraft:plastic
-- pneumaticcraft:plastic (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:plastic (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:sludge
-- industrialforegoing:sludge (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
+- industrialforegoing:sludge (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
 
 #ad_astra:oil
-- ad_astra:oil (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_oil (from ad_astra-forge-1.19.2-1.12.3.jar)
-- techreborn:oil? (from ad_astra-forge-1.19.2-1.12.3.jar)
-- modern_industrialization:crude_oil? (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #forge:crude_oil? (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:oil (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_oil (from ad_astra-forge-1.19.2-1.12.6.jar)
+- techreborn:oil? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- modern_industrialization:crude_oil? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #forge:crude_oil? (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:blutonium
-- bigreactors:blutonium (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:blutonium_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:blutonium (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:blutonium_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #forge:crude_oil
-- pneumaticcraft:oil (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:oil (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 - thermal:crude_oil (from thermal_core-1.19.2-10.2.0.5.jar)
-- ad_astra:oil (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_oil (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:oil (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_oil (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:redstone
 - thermal:redstone (from thermal_core-1.19.2-10.2.0.5.jar)
@@ -109,29 +109,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - emendatusenigmatica:flowing_lead (from EE Generated Pack)
 
 #forge:herbicide
-- immersiveengineering:herbicide (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:herbicide (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:tritium
 - mekanismgenerators:tritium (from MekanismGenerators-1.19.2-10.3.8.477.jar)
 - mekanismgenerators:flowing_tritium (from MekanismGenerators-1.19.2-10.3.8.477.jar)
 
 #sliceanddice:moisturizing
-- minecraft:water (from sliceanddice-2.0.1.jar)
+- minecraft:water (from sliceanddice-2.0.3.jar)
 
 #forge:signalum
 - emendatusenigmatica:signalum (from EE Generated Pack)
 - emendatusenigmatica:flowing_signalum (from EE Generated Pack)
 
 #pneumaticcraft:seismic_sensor_interesting
-- #forge:crude_oil (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- #forge:crude_oil (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:electrum
 - emendatusenigmatica:electrum (from EE Generated Pack)
 - emendatusenigmatica:flowing_electrum (from EE Generated Pack)
 
 #forge:magentite
-- bigreactors:magentite (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:magentite_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:magentite (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:magentite_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #minecraft:lava
 - minecraft:lava (from Default)
@@ -146,17 +146,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - emendatusenigmatica:flowing_brass (from EE Generated Pack)
 
 #forge:ethanol
-- pneumaticcraft:ethanol (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
-- immersiveengineering:ethanol (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
-- createaddition:flowing_bioethanol (from createaddition-1.19.2-20230202b.jar)
-- createaddition:bioethanol (from createaddition-1.19.2-20230202b.jar)
+- pneumaticcraft:ethanol (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
+- immersiveengineering:ethanol (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:uranium_oxide
 - mekanism:uranium_oxide (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_uranium_oxide (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #forge:redstone_acid
-- immersiveengineering:redstone_acid (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:redstone_acid (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:constantan
 - emendatusenigmatica:constantan (from EE Generated Pack)
@@ -167,11 +165,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mekanism:flowing_sodium (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #forge:concrete
-- immersiveengineering:concrete (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:concrete (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:verderium
-- bigreactors:verderium (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:verderium_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:verderium (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:verderium_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #forge:sulfur_trioxide
 - mekanism:sulfur_trioxide (from Mekanism-1.19.2-10.3.8.477.jar)
@@ -188,12 +186,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mekanism:hydrogen_chloride (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_hydrogen_chloride (from Mekanism-1.19.2-10.3.8.477.jar)
 
+#ad_astra_platform:diesel
+- #c:diesel? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #forge:diesel? (from ad_astra-forge-1.19.2-1.12.6.jar)
+
 #forge:deuterium
 - mekanismgenerators:deuterium (from MekanismGenerators-1.19.2-10.3.8.477.jar)
 - mekanismgenerators:flowing_deuterium (from MekanismGenerators-1.19.2-10.3.8.477.jar)
 
 #pneumaticcraft:yeast_culture
-- pneumaticcraft:yeast_culture (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:yeast_culture (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:hydrofluoric_acid
 - mekanism:hydrofluoric_acid (from Mekanism-1.19.2-10.3.8.477.jar)
@@ -204,25 +206,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - emendatusenigmatica:flowing_tin (from EE Generated Pack)
 
 #forge:latex
-- industrialforegoing:latex (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
+- industrialforegoing:latex (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
 - thermal:latex (from thermal_core-1.19.2-10.2.0.5.jar)
 
 #forge:cyanite
-- bigreactors:cyanite (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:cyanite_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:cyanite (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:cyanite_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #forge:oxygen
 - mekanism:oxygen (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_oxygen (from Mekanism-1.19.2-10.3.8.477.jar)
-- #ad_astra:oxygen (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #ad_astra:oxygen (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #ad_astra:oxygen
-- ad_astra:oxygen (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:oxygen (from ad_astra-forge-1.19.2-1.12.6.jar)
+
+#forge:water
+- minecraft:water? (from fissionrecipe-3.0.1-1.19.2.jar)
+- minecraft:flowing_water? (from fissionrecipe-3.0.1-1.19.2.jar)
 
 #forge:gaseous
 - mekanism:steam (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_steam (from Mekanism-1.19.2-10.3.8.477.jar)
-- immersiveengineering:acetaldehyde (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:acetaldehyde (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #create:bottomless/deny
 
@@ -234,7 +240,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mob_grinding_utils:fluid_xp (from mob_grinding_utils-1.19.2-0.4.47.jar)
 
 #forge:sewage
-- industrialforegoing:sewage (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
+- industrialforegoing:sewage (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
 
 #create:bottomless/allow
 - minecraft:water (from create-1.19.2-0.5.0.i.jar)
@@ -245,8 +251,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mob_grinding_utils:fluid_xp (from mob_grinding_utils-1.19.2-0.4.47.jar)
 - pneumaticcraft:memory_essence? (from mob_grinding_utils-1.19.2-0.4.47.jar)
 - cofh_core:experience? (from mob_grinding_utils-1.19.2-0.4.47.jar)
-- industrialforegoing:essence (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
-- pneumaticcraft:memory_essence (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- industrialforegoing:essence (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
+- pneumaticcraft:memory_essence (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 - cofh_core:experience (from cofh_core-1.19.2-10.2.1.40.jar)
 - reliquary:xp_juice_still (from reliquary-1.19.2-2.0.20.1166.jar)
 
@@ -255,19 +261,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mekanism:flowing_lithium (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #forge:diesel
-- pneumaticcraft:diesel (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:diesel (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #ae2:blacklisted/annihilation_plane
 
 #forge:rossinite
-- bigreactors:rossinite (from ExtremeReactors2-1.19.2-2.0.60.jar)
-- bigreactors:rossinite_flowing (from ExtremeReactors2-1.19.2-2.0.60.jar)
+- bigreactors:rossinite (from ExtremeReactors2-1.19.2-2.0.62.jar)
+- bigreactors:rossinite_flowing (from ExtremeReactors2-1.19.2-2.0.62.jar)
 
 #pneumaticcraft:etching_acid
-- pneumaticcraft:etching_acid (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:etching_acid (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:kerosene
-- pneumaticcraft:kerosene (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:kerosene (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:bioethanol
 - mekanismgenerators:bioethanol (from MekanismGenerators-1.19.2-10.3.8.477.jar)
@@ -275,65 +281,67 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #forge:creosote
 - thermal:creosote (from thermal_core-1.19.2-10.2.0.5.jar)
-- immersiveengineering:creosote (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:creosote (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:phenolic_resin
-- immersiveengineering:phenolic_resin (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:phenolic_resin (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:heavy_water
 - mekanism:heavy_water (from Mekanism-1.19.2-10.3.8.477.jar)
 - mekanism:flowing_heavy_water (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #forge:lpg
-- pneumaticcraft:lpg (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:lpg (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:fuel
-- #ad_astra:fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #ad_astra:fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:osmium
 - emendatusenigmatica:osmium (from EE Generated Pack)
 - emendatusenigmatica:flowing_osmium (from EE Generated Pack)
 
 #forge:lubricant
-- pneumaticcraft:lubricant (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:lubricant (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:nickel
 - emendatusenigmatica:nickel (from EE Generated Pack)
 - emendatusenigmatica:flowing_nickel (from EE Generated Pack)
 
 #ad_astra_platform:oil
-- #c:oil? (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #forge:oil? (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #c:oil? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #forge:oil? (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:biofuel
-- industrialforegoing:biofuel (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
-- createaddition:flowing_bioethanol (from createaddition-1.19.2-20230202b.jar)
-- createaddition:bioethanol (from createaddition-1.19.2-20230202b.jar)
+- industrialforegoing:biofuel (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
+- createaddition:flowing_bioethanol (from createaddition-1.19.2-20230315b.jar)
+- createaddition:bioethanol (from createaddition-1.19.2-20230315b.jar)
 
 #twilightforest:fire_jet_fuel
 - #minecraft:lava (from twilightforest-1.19.2-4.2.1518-universal.jar)
 
 #forge:plantoil
-- pneumaticcraft:vegetable_oil (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
-- immersiveengineering:plantoil (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
-- createaddition:flowing_seed_oil (from createaddition-1.19.2-20230202b.jar)
-- createaddition:seed_oil (from createaddition-1.19.2-20230202b.jar)
+- pneumaticcraft:vegetable_oil (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
+- immersiveengineering:plantoil (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
+- createaddition:flowing_seed_oil (from createaddition-1.19.2-20230315b.jar)
+- createaddition:seed_oil (from createaddition-1.19.2-20230315b.jar)
 
 #sliceanddice:fertilizer
-- sliceanddice:flowing_fertilizer (from sliceanddice-2.0.1.jar)
-- sliceanddice:fertilizer (from sliceanddice-2.0.1.jar)
+- sliceanddice:flowing_fertilizer (from sliceanddice-2.0.3.jar)
+- sliceanddice:fertilizer (from sliceanddice-2.0.3.jar)
 
 #forge:aluminum
 - emendatusenigmatica:aluminum (from EE Generated Pack)
 - emendatusenigmatica:flowing_aluminum (from EE Generated Pack)
 
 #ad_astra:fuel
-- ad_astra:fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #ad_astra:efficient_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #ad_astra:efficient_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #ad_astra_platform:diesel? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #ad_astra_platform:biodiesel? (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:meat
-- industrialforegoing:meat (from industrial-foregoing-1.19.2-3.3.2.2-4.jar)
+- industrialforegoing:meat (from industrial-foregoing-1.19.2-3.3.2.3-5.jar)
 
 #forge:chocolate
 - create:flowing_chocolate (from create-1.19.2-0.5.0.i.jar)
@@ -344,30 +352,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mekanism:flowing_chlorine (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #ad_astra:efficient_fuel
-- ad_astra:cryo_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
-- ad_astra:flowing_cryo_fuel (from ad_astra-forge-1.19.2-1.12.3.jar)
+- ad_astra:cryo_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
+- ad_astra:flowing_cryo_fuel (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:uranium
 - emendatusenigmatica:uranium (from EE Generated Pack)
 - emendatusenigmatica:flowing_uranium (from EE Generated Pack)
 
 #sliceanddice:burning
-- minecraft:lava (from sliceanddice-2.0.1.jar)
+- minecraft:lava (from sliceanddice-2.0.3.jar)
 
 #forge:potion
 - cofh_core:potion (from cofh_core-1.19.2-10.2.1.40.jar)
-- immersiveengineering:potion (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:potion (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
 
 #forge:gasoline
-- pneumaticcraft:gasoline (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- pneumaticcraft:gasoline (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #forge:tea
 - create:flowing_tea (from create-1.19.2-0.5.0.i.jar)
 - create:tea (from create-1.19.2-0.5.0.i.jar)
 
 #ad_astra_platform:fuel
-- #c:fuel? (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #forge:fuel? (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #c:fuel? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #forge:fuel? (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:brine
 - mekanism:brine (from Mekanism-1.19.2-10.3.8.477.jar)
@@ -383,8 +391,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - create:honey (from create-1.19.2-0.5.0.i.jar)
 
 #ad_astra_platform:oxygen
-- #c:oxygen? (from ad_astra-forge-1.19.2-1.12.3.jar)
-- #forge:oxygen? (from ad_astra-forge-1.19.2-1.12.3.jar)
+- #c:oxygen? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #forge:oxygen? (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #create:no_infinite_draining
 - mekanism:hydrogen (from Mekanism-1.19.2-10.3.8.477.jar)
@@ -433,7 +441,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - mekanismgenerators:flowing_tritium (from MekanismGenerators-1.19.2-10.3.8.477.jar)
 
 #forge:acetaldehyde
-- immersiveengineering:acetaldehyde (from ImmersiveEngineering-1.19.2-9.1.2-159.jar)
+- immersiveengineering:acetaldehyde (from ImmersiveEngineering-1.19.2-9.2.0-162.jar)
+
+#ad_astra_platform:biodiesel
+- #c:biodiesel? (from ad_astra-forge-1.19.2-1.12.6.jar)
+- #forge:biodiesel? (from ad_astra-forge-1.19.2-1.12.6.jar)
 
 #forge:enderium
 - emendatusenigmatica:enderium (from EE Generated Pack)

@@ -7,6 +7,7 @@
     "#forge:plates/signalum",
     "#forge:plates/copper",
     "#forge:plates/invar",
+    "#forge:plates/zinc",
     "#forge:plates/nickel",
     "#forge:plates/electrum",
     "#forge:plates/osmium",
@@ -16,6 +17,7 @@
     "#forge:plates/bronze",
     "#forge:plates/iron",
     "#forge:plates/silver",
-    "#forge:plates/uranium"
+    "#forge:plates/uranium",
+    "#forge:plates/bismuth"
   ]
 }

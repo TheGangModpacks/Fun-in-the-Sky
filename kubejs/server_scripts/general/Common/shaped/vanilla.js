@@ -36,4 +36,5 @@ ServerEvents.recipes(event =>{
 	  B: '#forge:sand',
 	  C: 'thermal:gunpowder_block' }
 	)
+	event.replaceInput({mod: 'exnihilosequentia'}, '#forge:rods', 'minecraft:stick')
 })

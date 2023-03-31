@@ -1,18 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 22, 2023, 10:59:50 PM
-
-#supplementaries:adventure_map_destinations
-- #minecraft:village (from supplementaries-1.19.2-2.2.50.jar)
-- #minecraft:shipwreck (from supplementaries-1.19.2-2.2.50.jar)
-- #minecraft:mineshaft (from supplementaries-1.19.2-2.2.50.jar)
-- #minecraft:ocean_ruin (from supplementaries-1.19.2-2.2.50.jar)
-- #minecraft:ruined_portal (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:swamp_hut (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:bastion_remnant (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:jungle_pyramid (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:desert_pyramid (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:pillager_outpost (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:igloo (from supplementaries-1.19.2-2.2.50.jar)
-- minecraft:end_city (from supplementaries-1.19.2-2.2.50.jar)
+To refresh this file, delete it and run /reload command again! Last updated: Mar 27, 2023, 3:06:20 PM
 
 #minecraft:ocean_ruin
 - minecraft:ocean_ruin_cold (from Default)
@@ -38,14 +24,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:end_city (from morevillagers-forge-1.19-4.0.3.jar)
 
 #pneumaticcraft:no_oil_lakes
-- #minecraft:village (from pneumaticcraft-repressurized-1.19.2-4.3.2-21.jar)
+- #minecraft:village (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
 
 #minecraft:cats_spawn_as_black
 - minecraft:swamp_hut (from Default)
 
 #quark:soul_bead_target
-- minecraft:fortress (from Quark-3.4-389.jar)
-- betterfortresses:fortress? (from Quark-3.4-389.jar)
+- minecraft:fortress (from Quark-3.4-394.jar)
+- betterfortresses:fortress? (from Quark-3.4-394.jar)
 
 #morevillagers:on_jungle_temple_explorer_maps
 - minecraft:jungle_pyramid (from morevillagers-forge-1.19-4.0.3.jar)
@@ -59,33 +45,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #morevillagers:on_pillager_outpost_explorer_maps
 - minecraft:pillager_outpost (from morevillagers-forge-1.19-4.0.3.jar)
-
-#supplementaries:way_sign_destinations
-- #minecraft:village (from supplementaries-1.19.2-2.2.50.jar)
-- hauntedharvest:abandoned_farm? (from supplementaries-1.19.2-2.2.50.jar)
-- harvestseason:abandoned_farm? (from supplementaries-1.19.2-2.2.50.jar)
-- pokecube_legends:village? (from supplementaries-1.19.2-2.2.50.jar)
-- pokecube_legends:village/ocean? (from supplementaries-1.19.2-2.2.50.jar)
-- valhelsia_structures:castle? (from supplementaries-1.19.2-2.2.50.jar)
-- valhelsia_structures:castle_ruin? (from supplementaries-1.19.2-2.2.50.jar)
-- valhelsia_structures:small_castle? (from supplementaries-1.19.2-2.2.50.jar)
-- valhelsia_structures:tower_ruin? (from supplementaries-1.19.2-2.2.50.jar)
-- stoneholm:underground_village? (from supplementaries-1.19.2-2.2.50.jar)
-- blue_skies:gatekeeper_house? (from supplementaries-1.19.2-2.2.50.jar)
-- feywild:library? (from supplementaries-1.19.2-2.2.50.jar)
-- feywild:blacksmith? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:bazaar? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:castle? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:farmhouse? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:bearclaw_inn? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:treetop_tavern? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:wizardtower? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:farmhouse? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:fishermans_lodge? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:beekeepers_house? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:desert_market/desert_market? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:desert_market/desert_market_red? (from supplementaries-1.19.2-2.2.50.jar)
-- idas:desert_market/desert_market_orange? (from supplementaries-1.19.2-2.2.50.jar)
 
 #morevillagers:on_fortress_explorer_maps
 - minecraft:fortress (from morevillagers-forge-1.19-4.0.3.jar)
