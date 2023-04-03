@@ -1,0 +1,996 @@
+{
+	id: "51B3C4842A18C666"
+	group: "67B4334297F15B2D"
+	order_index: 2
+	filename: "storage"
+	title: "&6Storage"
+	icon: "minecraft:chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Storage Galore"
+			icon: "twilightforest:canopy_chest"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Any chest will do"
+			description: ["Here are some great options for storing your random junk around your area!"]
+			dependencies: ["281E3F9E52446FF7"]
+			invisible: true
+			invisible_until_tasks: 1
+			id: "228D8F5233C8C00F"
+			tasks: [{
+				id: "59188B61223DBD22"
+				type: "checkmark"
+				title: "Confirm"
+			}]
+			rewards: [{
+				id: "433C4114230EE436"
+				type: "item"
+				item: "minecraft:chest"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "The Most Convenient Storage"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "You will open this a lot"
+			description: ["Backpacks can be put into your curios slot and be opened with a hotkey. They are mostly used to hold extra items and tools that you need on you all the time."]
+			dependencies: ["228D8F5233C8C00F"]
+			id: "01241F620AC222F4"
+			tasks: [{
+				id: "085D3BEC08B4EB0C"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["01241F620AC222F4"]
+			id: "060B5E8DF9FCE5EC"
+			tasks: [{
+				id: "5DCE2A52ED54CE61"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			dependencies: ["060B5E8DF9FCE5EC"]
+			id: "3F368772CA45E638"
+			tasks: [{
+				id: "4D4E408263ED738B"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			dependencies: ["3F368772CA45E638"]
+			id: "6B980CD6DC9F158E"
+			tasks: [{
+				id: "61AC38DADCCB2364"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+		}
+		{
+			title: "The Biggest Convenience"
+			x: 0.0d
+			y: -8.0d
+			shape: "hexagon"
+			dependencies: ["6B980CD6DC9F158E"]
+			id: "00E44761718593BE"
+			tasks: [{
+				id: "673419ED69D26051"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+		}
+		{
+			title: "Storage drawers"
+			icon: "storagedrawers:warped_full_drawers_1"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Only 1"
+			description: [
+				"Storage drawers are able to hold up to 32 stacks of items. Drawers can be split into 1x2 and 2x2 which will each hold a different item but with a lower capacity. Their capacity can be increased with upgrades."
+				""
+				"Right click on the front face to add items to the drawer and left click to remove an item. Shift+rclick will remove a stack from the drawer."
+			]
+			dependencies: ["228D8F5233C8C00F"]
+			id: "18DC7BC00AC3C031"
+			tasks: [{
+				id: "06E77103493B80E1"
+				type: "item"
+				title: "Any Drawer"
+				icon: "storagedrawers:birch_full_drawers_1"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+			rewards: [{
+				id: "583C6B4D3D2E7A25"
+				type: "item"
+				item: "minecraft:hopper"
+			}]
+		}
+		{
+			title: "Control Them ALL"
+			x: 4.5d
+			y: 0.0d
+			subtitle: "Great for mob farms"
+			description: [
+				"The drawer controller can link to any drawer that is connected to it in a certain range. This range can be increased by adding drawer controller slaves."
+				""
+				"Drawers can only be linked if they are directly right, left, up or down from it. If you want drawers to connect from a different plane then use controller slaves."
+				""
+				"Do note the Refined Storage External Storage block does not function correctly with the drawer controller."
+				""
+				"Do also note drawer controllers only insert items if there are drawers connected to it in a 12 block radius."
+			]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "6D74052639486E83"
+			tasks: [{
+				id: "384204F3D94EABBC"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+			rewards: [
+				{
+					id: "388F90354A90527B"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_1"
+				}
+				{
+					id: "411B69FDF5750A0C"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_2"
+				}
+				{
+					id: "54FE1E4586C61510"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_4"
+				}
+			]
+		}
+		{
+			title: "Not that kind of slave"
+			x: 6.5d
+			y: 0.0d
+			subtitle: "Not even sure what to say about this one"
+			description: ["Drawer Slaves allow for inserting items elsewhere in your drawer network. This is quite useful if your regular controller is a bit cluttered with many cables connecting to it."]
+			dependencies: ["6D74052639486E83"]
+			id: "4610BAF157EFEDE3"
+			tasks: [{
+				id: "1D97582F0737F4C7"
+				type: "item"
+				item: "storagedrawers:controller_slave"
+			}]
+			rewards: [{
+				id: "2481EA803069D19B"
+				type: "item"
+				item: "storagedrawers:controller_slave"
+			}]
+		}
+		{
+			title: "Locked and Loaded"
+			x: 3.5d
+			y: -1.5d
+			subtitle: "Keys are under the doormat"
+			description: ["The Drawer Key locks specific items inside drawers so other's cannot be pushed in when said drawer is empty. Useful for automated drawer systems."]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "21643E01598B0E6D"
+			tasks: [{
+				id: "15D753FE03AE2823"
+				type: "item"
+				item: "storagedrawers:drawer_key"
+			}]
+			rewards: [
+				{
+					id: "6743132A9DF336B3"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+				{
+					id: "40BD1BC66EFE6CA6"
+					type: "item"
+					item: "supplementaries:doormat"
+				}
+			]
+		}
+		{
+			title: "How Much?"
+			x: 4.5d
+			y: -1.5d
+			subtitle: "That's one big package!"
+			description: ["The Quantify Key shows or hides a label on Drawers that show the amount of items inside. We recommend not using this too much, as it causes major lag once you've got more than... 60?"]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "4BE884E6920C3706"
+			tasks: [{
+				id: "47EC9D99843565CA"
+				type: "item"
+				item: "storagedrawers:quantify_key"
+			}]
+		}
+		{
+			title: "Secretive Storage"
+			x: 5.5d
+			y: -1.5d
+			subtitle: "The DS under the pillow"
+			description: ["The Concealment Key hides the item label on a Drawer. No, this will not hide your social life."]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "09E2CA3A6DFC2DCF"
+			tasks: [{
+				id: "69A845E5AD942E4C"
+				type: "item"
+				item: "storagedrawers:shroud_key"
+			}]
+			rewards: [{
+				id: "16EB9993ADD09320"
+				type: "item"
+				item: {
+					id: "apotheosis:potion_charm"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Potion: "minecraft:long_invisibility"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			subtitle: "Pocket dimentions are ramping up!"
+			description: ["Storage Upgrades made from Iron increas the base storage of a Drawer by 4 times. Yes, it does stack with other upgrades."]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "74BA2A4A8F7281D2"
+			tasks: [{
+				id: "4BBB6040C2AD1A2B"
+				type: "item"
+				item: "storagedrawers:iron_storage_upgrade"
+			}]
+			rewards: [{
+				id: "2EC8BE1A0BCAD6E6"
+				type: "item"
+				item: "storagedrawers:illumination_upgrade"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			subtitle: "An Amazon Warehouse in 16 pixels"
+			description: ["Storage Upgrades made of Gold increases a drawer's capacity by 8 times."]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "4A033AC68F4C630A"
+			tasks: [{
+				id: "681AFBD4B89D9A0E"
+				type: "item"
+				item: "storagedrawers:gold_storage_upgrade"
+			}]
+			rewards: [{
+				id: "658EDD6C02F69223"
+				type: "item"
+				item: "storagedrawers:redstone_upgrade"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			subtitle: "How about the whole universe?"
+			description: ["Storage Upgrades made of Diamonds increases a drawer's capacity by 16 times."]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "22D13568F31D09F9"
+			tasks: [{
+				id: "199C69A249343641"
+				type: "item"
+				item: "storagedrawers:diamond_storage_upgrade"
+			}]
+			rewards: [{
+				id: "69E7C8996E3F3BDC"
+				type: "item"
+				item: "storagedrawers:conversion_upgrade"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			subtitle: "Almost Limitless potential"
+			description: ["Storage Upgrades made of Emeralds increase a drawer's capacity by 32 times... don't forget they multiply with other upgrades."]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "0A15EBF801FE76CF"
+			tasks: [{
+				id: "69CC17C36C69329D"
+				type: "item"
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+			rewards: [{
+				id: "5E54FCA4A13A255F"
+				type: "item"
+				item: "storagedrawers:void_upgrade"
+			}]
+		}
+		{
+			title: "A different kind of drawers"
+			x: -1.5d
+			y: -1.5d
+			description: ["Basically Storage Drawers but more expensive"]
+			dependencies: ["228D8F5233C8C00F"]
+			id: "2F63B2CAB64FB317"
+			tasks: [{
+				id: "613659A901258EF8"
+				type: "item"
+				item: "industrialforegoing:common_black_hole_unit"
+			}]
+		}
+		{
+			title: "Pity that storage"
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["2F63B2CAB64FB317"]
+			id: "3880D87833F542A6"
+			tasks: [{
+				id: "26C5BC3D93B04158"
+				type: "item"
+				item: "industrialforegoing:pity_black_hole_unit"
+			}]
+		}
+		{
+			title: "Large but Simple"
+			x: -1.5d
+			y: -4.5d
+			dependencies: ["3880D87833F542A6"]
+			id: "10B6DB8EF91EABBB"
+			tasks: [{
+				id: "4A53F74C87241FA7"
+				type: "item"
+				item: "industrialforegoing:simple_black_hole_unit"
+			}]
+		}
+		{
+			title: "Move advanced"
+			x: -1.5d
+			y: -6.0d
+			dependencies: ["10B6DB8EF91EABBB"]
+			id: "5C392043BACAEB02"
+			tasks: [{
+				id: "517FF42DDF289C11"
+				type: "item"
+				item: "industrialforegoing:advanced_black_hole_unit"
+			}]
+		}
+		{
+			title: "Supreme Storage"
+			x: -1.5d
+			y: -7.5d
+			dependencies: ["5C392043BACAEB02"]
+			id: "4325428A039A3713"
+			tasks: [{
+				id: "1A9ABC7BDC0446BC"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_unit"
+			}]
+		}
+		{
+			title: "Too Much?"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Antimatter go brrrrr"
+			description: ["Mekanism's QIO storage system has drives that can hold mass quantities of items. They do have an item type limitation so you cant have small quantities of a lot of different items."]
+			dependencies: ["228D8F5233C8C00F"]
+			id: "1742A1B7F7007A1A"
+			tasks: [{
+				id: "71D129C9285A4841"
+				type: "item"
+				item: "mekanism:qio_drive_array"
+			}]
+			rewards: [{
+				id: "02C96F08438474BD"
+				type: "item"
+				item: "mekanism:teleportation_core"
+			}]
+		}
+		{
+			title: "Massive Beginnings"
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["228D8F5233C8C00F"]
+			id: "1F481AAE619B4ACB"
+			tasks: [{
+				id: "07E6C7383D4350A3"
+				type: "item"
+				item: "mekanism:qio_drive_base"
+			}]
+			rewards: [{
+				id: "4C069B5BA8D3E699"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			title: "Getting Bigger"
+			x: 2.5d
+			y: 2.5d
+			dependencies: ["1F481AAE619B4ACB"]
+			id: "2947E18884FC56E5"
+			tasks: [{
+				id: "083ADD9533F69C85"
+				type: "item"
+				item: "mekanism:qio_drive_hyper_dense"
+			}]
+			rewards: [{
+				id: "546BCA879F938A5A"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Bigger Than Time"
+			x: 3.5d
+			y: 3.5d
+			dependencies: ["2947E18884FC56E5"]
+			id: "1B2A36414D652898"
+			tasks: [{
+				id: "407B8A593C12A794"
+				type: "item"
+				item: "mekanism:qio_drive_time_dilating"
+			}]
+			rewards: [{
+				id: "5BBF52A31E0692D7"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+				random_bonus: 7
+			}]
+		}
+		{
+			title: "Dimensional Powers"
+			x: 4.5d
+			y: 4.5d
+			subtitle: "You'll get it back"
+			description: ["We know how annoying it is to make antimatter just to use it on a drive."]
+			dependencies: ["1B2A36414D652898"]
+			id: "256E289ECEC8B555"
+			tasks: [{
+				id: "2DE53CA6DB41D22A"
+				type: "item"
+				item: "mekanism:qio_drive_supermassive"
+			}]
+			rewards: [{
+				id: "62845C31AFF90A52"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
+		{
+			title: "How much you gonna see?"
+			x: -3.0d
+			y: -0.5d
+			description: ["Connect to the drive array to view the items in the drives."]
+			dependencies: ["1742A1B7F7007A1A"]
+			id: "12F1EF53FA3F635C"
+			tasks: [{
+				id: "568B339FF1F8050D"
+				type: "item"
+				item: "mekanism:qio_dashboard"
+			}]
+			rewards: [{
+				id: "77A72A3C63006C33"
+				type: "item"
+				item: "mekanism:qio_dashboard"
+			}]
+		}
+		{
+			title: "Mass Transfer"
+			x: -4.0d
+			y: 0.5d
+			description: ["Imports and exports items from your QIO system"]
+			dependencies: ["0AA53EF6825806EA"]
+			id: "34C3D27793CC853B"
+			tasks: [
+				{
+					id: "404422CE3D9B12CB"
+					type: "item"
+					item: "mekanism:qio_importer"
+				}
+				{
+					id: "388AD3540C64071A"
+					type: "item"
+					item: "mekanism:qio_exporter"
+				}
+			]
+		}
+		{
+			title: "Anywhere and Everywhere"
+			x: -3.0d
+			y: 1.0d
+			subtitle: "More remotes?"
+			description: ["Link to you QIO system and you can view your items anywhere."]
+			dependencies: ["12F1EF53FA3F635C"]
+			id: "0AA53EF6825806EA"
+			tasks: [{
+				id: "6BE0618FFD0AE70F"
+				type: "item"
+				item: "mekanism:portable_qio_dashboard"
+			}]
+			rewards: [{
+				id: "6C346DB45377F055"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			subtitle: "Compressers but in your pocket!... pretty much"
+			description: ["Compacting Drawers automatically compact items into another if the item has a 2x2/3x3 compressing recipe, for example, 9 iron ingots into a block. There are 3 slots, the bottom right holds the base item, to the left is the first compressed item, and the top holds a compressed version of that last compressed block. Confused? Aren't we all!"]
+			dependencies: ["18DC7BC00AC3C031"]
+			id: "23688AA3E8707BD3"
+			tasks: [{
+				id: "195AF6EC5B87C002"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+			rewards: [
+				{
+					id: "1078E3393D1994FA"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					random_bonus: 8
+				}
+				{
+					id: "196FFB0DB6DEB905"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					random_bonus: 8
+				}
+			]
+		}
+		{
+			title: "Sophisticated Storage"
+			icon: {
+				id: "sophisticatedstorage:chest"
+				Count: 1b
+				tag: {
+					woodType: "crimson"
+				}
+			}
+			x: -0.8214285714285694d
+			y: 2.000000000000007d
+			description: ["Sophisticated Storage adds a ton of customizable storage blocks for storing all of your random junk."]
+			dependencies: ["228D8F5233C8C00F"]
+			id: "35D8E336E62AEC12"
+			tasks: [{
+				id: "27C373EDEB43A198"
+				type: "item"
+				title: "Any Wooden Sophisticated Storage Block"
+				icon: {
+					id: "sophisticatedstorage:chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "sophisticatedstorage:base_tier_wooden_storage"
+					}
+				}
+			}]
+		}
+		{
+			title: "Iron Tier Upgrade"
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["35D8E336E62AEC12"]
+			id: "17155348B2E5ED99"
+			tasks: [{
+				id: "373637FD1F809AC0"
+				type: "item"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+			}]
+		}
+		{
+			title: "Gold Tier Upgrade"
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["17155348B2E5ED99"]
+			id: "57AD076812CEA525"
+			tasks: [{
+				id: "243D3C980C0A6017"
+				type: "item"
+				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+			}]
+		}
+		{
+			title: "Diamond Tier Upgrade"
+			x: -0.5d
+			y: 4.5d
+			dependencies: ["57AD076812CEA525"]
+			id: "3E8672042CDDBD7D"
+			tasks: [{
+				id: "54ECD4EC805253D6"
+				type: "item"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+			}]
+		}
+		{
+			x: -1.1d
+			y: 5.5d
+			shape: "octagon"
+			dependencies: ["3E8672042CDDBD7D"]
+			size: 1.1d
+			id: "59A9A74A44A48832"
+			tasks: [{
+				id: "60FEE6B287B232C4"
+				type: "item"
+				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+			}]
+		}
+		{
+			title: "Sophisticated Upgrades"
+			x: 0.5d
+			y: 2.0d
+			description: [
+				"You can install Upgrades to your storage blocks to increase it's functionality."
+				""
+				"There are quests below with the most useful upgrades. There are others, search for \"Upgrade\" in REI and you'll find them."
+			]
+			dependencies: ["35D8E336E62AEC12"]
+			id: "34040045D6FD5306"
+			tasks: [{
+				id: "5BEB8E5904BA547E"
+				type: "item"
+				item: "sophisticatedstorage:upgrade_base"
+				count: 3L
+			}]
+		}
+		{
+			x: 1.2d
+			y: 2.4d
+			shape: "diamond"
+			description: ["Compacts Items into a 2x2 form automatically, or 3x3 if using the Advanced upgrade."]
+			dependencies: ["34040045D6FD5306"]
+			size: 0.8d
+			id: "0C1796D67C9C2EF9"
+			tasks: [{
+				id: "3A87C134D65DFF8D"
+				type: "item"
+				item: "sophisticatedstorage:compacting_upgrade"
+			}]
+		}
+		{
+			title: "Smelting Upgrades"
+			icon: "sophisticatedstorage:smelting_upgrade"
+			x: 0.8d
+			y: 2.8d
+			shape: "diamond"
+			description: [
+				"The Smelting Upgrade adds an extra tab to your storage, containing a fully operational Furnace. Can automatically smelt items if using the Advanced upgrade."
+				""
+				"The Smoker and BFurnace upgrades are pretty much the same. Smokers cook food faster, and BFurnaces cook materials faster."
+			]
+			dependencies: ["34040045D6FD5306"]
+			size: 0.8d
+			id: "6E05CCC18B396492"
+			tasks: [
+				{
+					id: "6E4AE7F7860AFAC1"
+					type: "item"
+					item: "sophisticatedstorage:smelting_upgrade"
+				}
+				{
+					id: "47CB8F59B753987A"
+					type: "item"
+					item: "sophisticatedstorage:smoking_upgrade"
+				}
+				{
+					id: "3405ABD2BEC567EB"
+					type: "item"
+					item: "sophisticatedstorage:blasting_upgrade"
+				}
+			]
+		}
+		{
+			title: "Crafting Upgrades"
+			icon: "sophisticatedstorage:crafting_upgrade"
+			x: 1.6d
+			y: 2.8d
+			shape: "diamond"
+			description: [
+				"Don't you just hate having a Crafting Table or Stonecutter lying around? Well, fear no more! Install Crafting and Stonecutting blocks directly inside your storage block, at just 4.99!"
+				""
+				"&oBatteries not included"
+			]
+			dependencies: ["34040045D6FD5306"]
+			size: 0.8d
+			id: "10CA767E73CDC759"
+			tasks: [
+				{
+					id: "5ECB84B6960BEF16"
+					type: "item"
+					item: "sophisticatedstorage:crafting_upgrade"
+				}
+				{
+					id: "18713F551CAA7473"
+					type: "item"
+					item: "sophisticatedstorage:stonecutter_upgrade"
+				}
+			]
+		}
+		{
+			title: "Stack Upgrades"
+			icon: "sophisticatedstorage:stack_upgrade_tier_1"
+			x: 1.2d
+			y: 3.2d
+			shape: "diamond"
+			description: [
+				"Do you feel your raw Copper building up? Well, we've got just the thing to fix that! Introducing: The Stack Upgrade! Extra pocket dimensions for your storage block allow for your raw Copper to stack to the moon! A Regular Stack Upgrade can make things stack to 128, 256 if using the Iron upgrade, 512 with Gold, and 1024 with Diamond! Items that stack less originally will only stack partially."
+				""
+				"&oThe Gang Modpacks™ is not responsible for arms, legs, hands and arms stuck inside pocket dimensions."
+			]
+			dependencies: ["34040045D6FD5306"]
+			size: 0.8d
+			id: "5A9E26318A8790F1"
+			tasks: [
+				{
+					id: "11D35D3A9F09CC5D"
+					type: "item"
+					item: "sophisticatedstorage:stack_upgrade_tier_1"
+				}
+				{
+					id: "40D73B7D39D00083"
+					type: "item"
+					item: "sophisticatedstorage:stack_upgrade_tier_2"
+				}
+				{
+					id: "7DDDFF455CB9A406"
+					type: "item"
+					item: "sophisticatedstorage:stack_upgrade_tier_3"
+				}
+				{
+					id: "018E57D526D6269F"
+					type: "item"
+					item: "sophisticatedstorage:stack_upgrade_tier_4"
+				}
+			]
+		}
+		{
+			title: "Sophisticated Upgrades"
+			x: 1.5d
+			y: -2.5d
+			description: ["You can install Upgrades to your Backpack to increase it's functionality."]
+			dependencies: ["228D8F5233C8C00F"]
+			id: "18D5C8D927C8981F"
+			tasks: [{
+				id: "62FB8CE9B93684D1"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Utility Upgrades"
+			icon: "sophisticatedbackpacks:tool_swapper_upgrade"
+			x: 2.5d
+			y: -3.4000000000000004d
+			shape: "square"
+			description: [
+				"Feeding Upgrade feeds the player with foods inside the Backpack."
+				""
+				"Restocking Upgrade pulls items from storage blocks."
+				""
+				"Deposit Upgrade does the opposite of Restock."
+				""
+				"Refill Upgrade restocks items in your hotbar."
+				""
+				"Tool Swapper Upgrade does exactly what it says on the tin... or leather."
+			]
+			dependencies: ["18D5C8D927C8981F"]
+			size: 0.8d
+			id: "52D3A67EA492FEE9"
+			tasks: [
+				{
+					id: "14CC98569C100835"
+					type: "item"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+				}
+				{
+					id: "1883D91CD15CD8F2"
+					type: "item"
+					item: "sophisticatedbackpacks:restock_upgrade"
+				}
+				{
+					id: "4A04C2F94A813F5C"
+					type: "item"
+					item: "sophisticatedbackpacks:deposit_upgrade"
+				}
+				{
+					id: "150F2651A5D029E5"
+					type: "item"
+					item: "sophisticatedbackpacks:refill_upgrade"
+				}
+				{
+					id: "6DD45C8B43481263"
+					type: "item"
+					item: "sophisticatedbackpacks:tool_swapper_upgrade"
+				}
+			]
+		}
+		{
+			title: "Logistics Upgrades"
+			icon: "sophisticatedbackpacks:pickup_upgrade"
+			x: 3.3d
+			y: -3.4000000000000004d
+			shape: "square"
+			description: [
+				"The Magnet and Pickup upgrades automatically send items on the ground to your Backpack."
+				""
+				"Add a Filter upgrade to only allow certain items to enter the Backpack. Advanced versions of the upgrades also allow for filtering."
+			]
+			dependencies: ["18D5C8D927C8981F"]
+			size: 0.8d
+			id: "1708DCFD08D668DB"
+			tasks: [
+				{
+					id: "2F668BB3F92C3BC2"
+					type: "item"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+				}
+				{
+					id: "638B16C410D6920B"
+					type: "item"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+				}
+				{
+					id: "71F41FFC3046EE52"
+					type: "item"
+					item: "sophisticatedbackpacks:filter_upgrade"
+				}
+			]
+		}
+		{
+			title: "Compressing Upgrades"
+			icon: "sophisticatedbackpacks:compacting_upgrade"
+			x: 3.3d
+			y: -4.2d
+			shape: "square"
+			description: [
+				"The Compacting Upgrade automatically compresses items with a 2x2 recipe, or 3x3 if using the advanced version."
+				""
+				"Stack Upgrades increase the stack size of items inside the Backpack. Upgrading the upgrade upgrade's the stack limit."
+				""
+				"The Void Upgrade needs no introduction."
+			]
+			dependencies: ["18D5C8D927C8981F"]
+			size: 0.8d
+			id: "6B323B8B5875C554"
+			tasks: [
+				{
+					id: "3FFE416C07402A76"
+					type: "item"
+					item: "sophisticatedbackpacks:compacting_upgrade"
+				}
+				{
+					id: "59768F27FB7F4ECD"
+					type: "item"
+					item: "sophisticatedbackpacks:void_upgrade"
+				}
+				{
+					id: "798C7E946CBF00EB"
+					type: "item"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+				}
+			]
+		}
+		{
+			title: "Crafting Upgrades"
+			icon: "sophisticatedbackpacks:crafting_upgrade"
+			x: 2.5d
+			y: -4.2d
+			shape: "square"
+			description: ["The Upgrades shown above all add their respective crafting interface to your Backpack."]
+			dependencies: ["18D5C8D927C8981F"]
+			size: 0.8d
+			id: "554C75055EDCB0EB"
+			tasks: [
+				{
+					id: "4DAF1C4290358843"
+					type: "item"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+				}
+				{
+					id: "75319A01A081DAE1"
+					type: "item"
+					item: "sophisticatedbackpacks:smelting_upgrade"
+				}
+				{
+					id: "3F8E478D7544B6D0"
+					type: "item"
+					item: "sophisticatedbackpacks:smoking_upgrade"
+				}
+				{
+					id: "6BA6BFF82129EB7D"
+					type: "item"
+					item: "sophisticatedbackpacks:blasting_upgrade"
+				}
+				{
+					id: "226A5D0FE61F0A20"
+					type: "item"
+					item: "sophisticatedbackpacks:stonecutter_upgrade"
+				}
+			]
+		}
+		{
+			title: "Misc Upgrades"
+			icon: "sophisticatedbackpacks:jukebox_upgrade"
+			x: 3.3d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"Jukebox Upgrade adds a little CD drive in your Backpack."
+				""
+				"Tank and Battery upgrades add fluid and energy storage."
+			]
+			dependencies: ["18D5C8D927C8981F"]
+			size: 0.8d
+			id: "29D244A4BC8872A6"
+			tasks: [
+				{
+					id: "6AE6D542E6072DDF"
+					type: "item"
+					item: "sophisticatedbackpacks:jukebox_upgrade"
+				}
+				{
+					id: "7E50388BA4D3CF52"
+					type: "item"
+					item: "sophisticatedbackpacks:tank_upgrade"
+				}
+				{
+					id: "7949C963B5276A67"
+					type: "item"
+					item: "sophisticatedbackpacks:battery_upgrade"
+				}
+			]
+		}
+		{
+			title: "Endgame Upgrades"
+			icon: "sophisticatedbackpacks:everlasting_upgrade"
+			x: 2.5d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"Inception Upgrade allows you to put other Backpacks inside your existing one."
+				""
+				"Everlasting Upgrade protects the Backpack from any form of destruction, lava, void, etc."
+			]
+			dependencies: ["18D5C8D927C8981F"]
+			size: 0.8d
+			id: "345F7BEA3F9A91DC"
+			tasks: [
+				{
+					id: "42E80DFCD46530EC"
+					type: "item"
+					item: "sophisticatedbackpacks:inception_upgrade"
+				}
+				{
+					id: "302404CEB2C80613"
+					type: "item"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
