@@ -1,4 +1,5 @@
 ServerEvents.recipes(event =>{
+	event.remove({output: 'emendatusenigmatica:silicon_gem'})
 	event.custom({
 		type: 'pneumaticcraft:thermo_plant',
 		exothermic: false,
