@@ -14,6 +14,9 @@
 			x: 0.0d
 			y: 0.0d
 			description: ["Welcome to the questline for one of the most iconic mods- and a confusing one!.. (At least not as confusing as Integrated Dynamics)"]
+			dependencies: ["16EFE494874CE030"]
+			invisible: true
+			invisible_until_tasks: 1
 			id: "510E50CF1047BE9D"
 			tasks: [{
 				id: "61327A17A7CDEE29"
@@ -62,21 +65,6 @@
 				id: "205C0AE348712499"
 				type: "item"
 				item: "rftoolsutility:analog"
-			}]
-		}
-		{
-			title: "The Rftools Manual"
-			x: 0.0d
-			y: -2.0d
-			id: "3666E0DBAA91C8E6"
-			tasks: [{
-				id: "30237E50968B32BB"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "473AC6C54BE3885F"
-				type: "item"
-				item: "rftoolsbase:manual"
 			}]
 		}
 		{

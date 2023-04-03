@@ -1,3 +1,4 @@
+//priority: 11
 ServerEvents.tags('item', event => {
     //Tags for adding to items that will be disabled and hidden from REI.
     const tag = "custom:disabled";
@@ -13,6 +14,8 @@ ServerEvents.tags('item', event => {
     event.add(tag, "immersiveengineering:shovel_steel");
     event.add(tag, "immersiveengineering:sword_steel");
     event.add(tag, "thermal:device_tree_extractor");
+    event.add(tag, '/^powah:.*_starter/');
+    event.add(tag, '/^powah:.*solar/')
 })
 ServerEvents.recipes(event =>{
     //Recipes that are broken, which can likely be fixed in the future.

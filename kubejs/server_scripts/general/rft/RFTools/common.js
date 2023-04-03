@@ -10,20 +10,55 @@ ServerEvents.recipes(event =>{
 			item: 'rftoolsbase:smartwrench'
 		}
 	})
-	event.custom({
-  type: 'powah:energizing',
-  ingredients: [
-    Item.of('kubejs:mk3circuit').toJson(),
-    Item.of('botania:mana_tablet', '{ mana: 500000 }').toJson()
+  event.remove({output: "rftoolsbase:machine_frame"})
+  event.custom({
+  type: 'compactcrafting:miniaturization',
+  recipeSize: 5,
+  layers:[
+      {type: 'compactcrafting:mixed', pattern:[
+          ['A', 'A', 'A', 'A', 'A'],
+          ['A', 'B', 'B', 'B', 'A'],
+          ['A', 'B', 'B', 'B', 'A'],
+          ['A', 'B', 'B', 'B', 'A'],
+          ['A', 'A', 'A', 'A', 'A'],
+      ]},
+      {type: 'compactcrafting:mixed', pattern:[
+        ['A', 'B', 'B', 'B', 'A'],
+        ['B', 'C', 'C', 'C', 'B'],
+        ['B', 'C', 'E', 'C', 'B'],
+        ['B', 'C', 'C', 'C', 'B'],
+        ['A', 'B', 'B', 'B', 'A'],
+      ]},
+      {type: 'compactcrafting:mixed', pattern:[
+        ['A', 'A', 'A', 'A', 'A'],
+        ['A', 'D', 'D', 'D', 'A'],
+        ['A', 'D', 'E', 'D', 'A'],
+        ['A', 'D', 'D', 'D', 'A'],
+        ['A', 'A', 'A', 'A', 'A'],
+      ]},
+      {type: 'compactcrafting:mixed', pattern:[
+        ['A', 'B', 'B', 'B', 'A'],
+        ['B', 'C', 'C', 'C', 'B'],
+        ['B', 'C', 'E', 'C', 'B'],
+        ['B', 'C', 'C', 'C', 'B'],
+        ['A', 'B', 'B', 'B', 'A'],
+      ]},
+      {type: 'compactcrafting:mixed', pattern:[
+        ['A', 'A', 'A', 'A', 'A'],
+        ['A', 'B', 'B', 'B', 'A'],
+        ['A', 'B', 'B', 'B', 'A'],
+        ['A', 'B', 'B', 'B', 'A'],
+        ['A', 'A', 'A', 'A', 'A'],
+      ]},
   ],
-  energy: '400000',
-  result: Item.of('rftoolsbase:machine_frame').toJson()
-})
-event.shapeless(
-  'rftoolsbase:machine_frame',
-  [ 
-    'kubejs:mk3circuit',
-    Item.of('minecraft:diamond_pickaxe', '{Damage:1200}')
-  ]
-)
+  catalyst: {id: 'emendatusenigmatica:invar_gear', Count: 1},
+  components:{
+      A: {type: 'compactcrafting:block', block: 'create:brass_casing'},
+      B: {type: 'compactcrafting:block', block: 'create:polished_cut_andesite'},
+      C: {type: 'compactcrafting:block', block: 'create:gearbox'},
+      E: {type: 'compactcrafting:block', block: 'immersiveengineering:coil_mv'},
+      D: {type: 'compactcrafting:block', block: 'emendatusenigmatica:bronze_block'}
+  },
+  outputs: [{id: 'rftoolsbase:machine_frame', Count: 1}]
+  })
 })

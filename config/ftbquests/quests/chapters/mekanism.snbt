@@ -7,6 +7,7 @@
 	icon: "mekanism:antiprotonic_nucleosynthesizer"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			x: 0.0d
@@ -22,6 +23,13 @@
 				id: "7C6B3557F0085ED1"
 				type: "item"
 				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [{
+				id: "366B1DB7CA62B11A"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Mekanism Machines"
 			}]
 		}
 		{

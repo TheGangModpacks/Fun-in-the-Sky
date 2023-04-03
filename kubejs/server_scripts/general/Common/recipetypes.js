@@ -67,6 +67,7 @@ const oxygen_conversion = 'ad_astra:oxygen_conversion';
 const cryo_conversion = 'ad_astra:cryo_fuel_conversion';
 //Ex Nihilo Sequentia
 const compost = 'exnihilosequentia:compost';
+const sieve = 'exnihilosequentia:sieve';
 const crook = 'exnihilosequentia:crook';
 const seq_crucible = 'exnihilosequentia:crucible';
 const fluid_item = 'exnihilosequentia:fluid_item';

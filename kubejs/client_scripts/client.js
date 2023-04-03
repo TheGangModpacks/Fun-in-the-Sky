@@ -33,6 +33,10 @@ JEIEvents.information(event =>{
   console.log('JEI Information');
 })
 
+JEIEvents.hideItems(event =>{
+  event.hide('mekanism:enrichment_chamber').stage('mekanism_machines')
+})
+
 JEIEvents.removeCategories(event =>{
   event.remove('minecraft:anvil')
   event.remove('twilightforest:uncrafting')

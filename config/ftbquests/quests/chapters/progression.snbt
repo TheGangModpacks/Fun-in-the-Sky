@@ -7,7 +7,6 @@
 	icon: "twilightforest:filled_ore_map"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "&7Immersive Engineering"
@@ -83,6 +82,7 @@
 			}
 			x: -3.5d
 			y: -6.5d
+			dependencies: ["11AC41B7BCDD7FBE"]
 			id: "4E74D97CFEDC2DFA"
 			tasks: [
 				{
@@ -156,6 +156,7 @@
 			}
 			x: -2.5d
 			y: -6.5d
+			dependencies: ["4E74D97CFEDC2DFA"]
 			id: "33CD099ABD559296"
 			tasks: [
 				{
@@ -215,6 +216,7 @@
 			}
 			x: -1.5d
 			y: -6.5d
+			dependencies: ["33CD099ABD559296"]
 			id: "3EF6C2D699388881"
 			tasks: [
 				{
@@ -274,6 +276,7 @@
 			}
 			x: 0.5d
 			y: -6.5d
+			dependencies: ["7C4B3DEAAD259143"]
 			id: "702A2EBBD10BEDFA"
 			tasks: [
 				{
@@ -333,6 +336,7 @@
 			}
 			x: -0.5d
 			y: -6.5d
+			dependencies: ["3EF6C2D699388881"]
 			id: "7C4B3DEAAD259143"
 			tasks: [
 				{
@@ -392,6 +396,7 @@
 			}
 			x: 1.5d
 			y: -6.5d
+			dependencies: ["702A2EBBD10BEDFA"]
 			id: "1A074E2912E68350"
 			tasks: [
 				{
@@ -455,6 +460,7 @@
 			}
 			x: 2.5d
 			y: -6.5d
+			dependencies: ["1A074E2912E68350"]
 			id: "57B656BEED2B1330"
 			tasks: [
 				{
@@ -530,6 +536,7 @@
 			}
 			x: 3.5d
 			y: -6.5d
+			dependencies: ["57B656BEED2B1330"]
 			id: "604DD1CE38FD37B0"
 			tasks: [
 				{
@@ -589,6 +596,7 @@
 			}
 			x: 4.5d
 			y: -6.5d
+			dependencies: ["604DD1CE38FD37B0"]
 			id: "0E4542128A70D4EF"
 			tasks: [
 				{
@@ -652,6 +660,7 @@
 			}
 			x: 5.5d
 			y: -7.0d
+			dependencies: ["0E4542128A70D4EF"]
 			id: "7505DB55F55D90CA"
 			tasks: [
 				{
@@ -697,6 +706,7 @@
 			}
 			x: 5.5d
 			y: -6.0d
+			dependencies: ["0E4542128A70D4EF"]
 			id: "63B81D2CA3D2A2BA"
 			tasks: [
 				{
@@ -734,6 +744,10 @@
 			}
 			x: 6.5d
 			y: -6.5d
+			dependencies: [
+				"7505DB55F55D90CA"
+				"63B81D2CA3D2A2BA"
+			]
 			id: "153DF699CD8B04A5"
 			tasks: [
 				{
@@ -917,6 +931,19 @@
 				id: "1663490783C62E7A"
 				type: "item"
 				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "Powah!"
+			x: 3.5d
+			y: 0.0d
+			description: ["Crafting Dielectric Paste opens the Powah! Questline."]
+			dependencies: ["1BB7C983C892EDB9"]
+			id: "1F788C5B5AF4DEF7"
+			tasks: [{
+				id: "0B43C170C0E2DDEE"
+				type: "item"
+				item: "powah:dielectric_paste"
 			}]
 		}
 	]

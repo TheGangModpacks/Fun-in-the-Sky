@@ -17,6 +17,11 @@ StartupEvents.registry('item', event => {
 	event.create('sulfuric_essence').displayName('Sulfuric Essence')
 	event.create('cinnabar_essence').displayName('Cinnabar Essence')
 	event.create('incomplete_electrolytic_core').displayName('Incomplete Electrolytic Core').texture('mekanism:item/electrolytic_core')
+	event.create('photovoltaic_cell_hardened')
+	event.create('photovoltaic_cell_blazing')
+	event.create('photovoltaic_cell_niotic')
+	event.create('photovoltaic_cell_spirited')
+	event.create('photovoltaic_cell_nitro')
 })
 StartupEvents.registry('block', event =>{
 	event.create('dielectric_block').displayName('Dielectric Block').material('moss').hardness(0.5).tagBlock('minecraft:mineable/hoe').requiresTool(false)
@@ -38,5 +43,9 @@ StartupEvents.registry('block', event =>{
 	event.create('raw_oil_mixture')
     .thinTexture(0x544227)
     .bucketColor(0x544227)
-    .displayName('Raw Oil Mixture')
+    .displayName('Raw Oil Mixture'),
+	event.create('blaze_blood')
+	.thickTexture(0xFFA300)
+    .bucketColor(0xFFA300)
+    .displayName('Blaze Blood')
 })
