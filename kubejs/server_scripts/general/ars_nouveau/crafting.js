@@ -23,25 +23,6 @@ ServerEvents.recipes(event => {
         S: 'ars_nouveau:source_gem'
     })
 
-    event.shaped('ars_nouveau:enchanting_apparatus', [
-        'NSN',
-        'GDG',
-        'NSN'
-    ], {
-        N: '#forge:nuggets/gold',
-        G: '#forge:plates/gold',
-        S: 'ars_nouveau:sourcestone',
-        D: 'minecraft:diamond'
-    })
-    
-    event.shaped('ars_nouveau:arcane_core', [
-        'SSS',
-        'GTG',
-        'SSS'
-    ], {
-        T: 'ars_nouveau:source_gem',
-        G: '#forge:plates/gold',
-        S: 'ars_nouveau:sourcestone',
-    })
+    event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', 'emendatusenigmatica:gold_plate')
 
 })
