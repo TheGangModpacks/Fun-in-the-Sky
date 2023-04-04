@@ -1,0 +1,712 @@
+{
+	id: "03B3086A7456AF55"
+	group: "45EE6B8D98E9487B"
+	order_index: 10
+	filename: "ars_novua"
+	title: "Ars Nouveau"
+	icon: "ars_nouveau:creative_spell_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: 0.5d
+			id: "2303FB822DB52138"
+			tasks: [{
+				id: "38BE577523BBB0B9"
+				type: "item"
+				item: "ars_nouveau:source_berry"
+			}]
+			rewards: [{
+				id: "3A9EAE7F2C0602E7"
+				type: "item"
+				item: "ars_nouveau:source_berry"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "7FFB7D8409D6C0F8"
+			tasks: [{
+				id: "660B8191532B9AB8"
+				type: "item"
+				title: "Any #forge:logs/archwood"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "56B48A74A4962E7A"
+					type: "item"
+					item: "ars_nouveau:blue_archwood_sapling"
+				}
+				{
+					id: "4B91AA0B5FD34EBD"
+					type: "item"
+					item: "ars_nouveau:purple_archwood_sapling"
+				}
+				{
+					id: "0D02499799BACED2"
+					type: "item"
+					item: "ars_nouveau:green_archwood_sapling"
+				}
+				{
+					id: "1A5128139C401B76"
+					type: "item"
+					item: "ars_nouveau:red_archwood_sapling"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "Infusion overload"
+			description: [
+				"The imbuement chamber will be very important in the creation of source gems. "
+				""
+				"Source will slowly accumulate naturally into the imbuement chamber but this process can be sped up by having a source jar nearby from which the machine can take source from."
+			]
+			dependencies: [
+				"7FFB7D8409D6C0F8"
+				"2303FB822DB52138"
+			]
+			id: "107414CED3D9E41D"
+			tasks: [{
+				id: "53914296C30AC467"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+			rewards: [{
+				id: "435FB9A5EFDC41BD"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Here be your magic"
+			dependencies: ["107414CED3D9E41D"]
+			id: "7823A794DD3530C1"
+			tasks: [{
+				id: "369065C5C7E36167"
+				type: "item"
+				item: "ars_nouveau:source_gem"
+			}]
+			rewards: [{
+				id: "471164F6ACA8E961"
+				type: "item"
+				item: "ars_nouveau:source_gem"
+				count: 3
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			subtitle: "Magical Stone"
+			dependencies: ["7823A794DD3530C1"]
+			id: "496A280D4274970B"
+			tasks: [{
+				id: "5367FC32EA5F36A1"
+				type: "item"
+				item: "ars_nouveau:sourcestone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			description: [
+				"Welcome to Sourcelinks! They will be your way of generating source. There are various kinds of sourcelinks that each provide a different way to produce source so experiment around. Sourcelinks will automatically output source to nearby source jars (usually within 5 blocks of the sourcelink)"
+				""
+				"For now, make an argonomic sourcelink. This will produce source every time a nearby crop grows. You will probably want to automate the farm too so that crops can keep on growing. Perhaps there are some better crops to grow?"
+			]
+			dependencies: ["7823A794DD3530C1"]
+			id: "59BD528CE93FB07F"
+			tasks: [{
+				id: "6E64A72BF6E52D1C"
+				type: "item"
+				item: "ars_nouveau:agronomic_sourcelink"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			subtitle: "Gimme the source"
+			description: ["Holds source."]
+			dependencies: ["7823A794DD3530C1"]
+			id: "1596D1BD7A8558F3"
+			tasks: [{
+				id: "6553EFE55C00FB8D"
+				type: "item"
+				item: "ars_nouveau:source_jar"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "Wrong kind of enchanting"
+			description: ["Basically how ars crafts. Place the enchanting apparatus on top of the arcane core and put some pedestals around it. To craft, place the required items on the pedestal and then place the final item in the enchanting apparatus."]
+			dependencies: ["496A280D4274970B"]
+			id: "705AE902289716BB"
+			tasks: [
+				{
+					id: "529B797785E30A0C"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "0DFD30D2C9B1A2F5"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+				{
+					id: "3BCC46B29004118B"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "7D80AC2B92306A54"
+				type: "item"
+				item: "ars_nouveau:source_berry_pie"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			description: ["Use to configure various things."]
+			dependencies: ["705AE902289716BB"]
+			id: "455552FB7385BB83"
+			tasks: [{
+				id: "1966D8E9904D01D6"
+				type: "item"
+				item: {
+					id: "ars_nouveau:dominion_wand"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			shape: "hexagon"
+			description: ["Rituals provide plenty of benificial effects to use. Look around the book to see all the available rituals."]
+			dependencies: ["496A280D4274970B"]
+			id: "0AA9EFB1DBD77B91"
+			tasks: [{
+				id: "5ED2A5BF6AD3FDFD"
+				type: "item"
+				item: "ars_nouveau:ritual_brazier"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["The scribe's table is where you will craft spells. Rclick on it with a spell book to choose which spell you want to craft. Throw the required items into the table and out will pop your spell. To learn the spell, just rclick with it in hand."]
+			dependencies: [
+				"496A280D4274970B"
+				"107414CED3D9E41D"
+			]
+			id: "6D2888F507FD1883"
+			tasks: [{
+				id: "3D787600E91739BB"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+		}
+		{
+			x: 1.25d
+			y: 4.875d
+			description: ["The spell book is the main part of casting spells. As you upgrade your spell book, you can use better and better spells."]
+			dependencies: ["5DCEA36676D28F9F"]
+			size: 0.75d
+			id: "479ABD3072238AFD"
+			tasks: [{
+				id: "1DFCE078A393AD06"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.25d
+			dependencies: ["479ABD3072238AFD"]
+			size: 0.75d
+			id: "50F0ED803874C6D1"
+			tasks: [{
+				id: "7BC175E6A660F60F"
+				type: "item"
+				item: "ars_nouveau:apprentice_spell_book"
+			}]
+		}
+		{
+			x: 2.75d
+			y: 4.875d
+			description: ["Have fun fighting the boss."]
+			dependencies: ["50F0ED803874C6D1"]
+			size: 0.75d
+			id: "0B398C01B0BF297E"
+			tasks: [{
+				id: "50716C2FDA910BF7"
+				type: "item"
+				item: "ars_nouveau:archmage_spell_book"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			description: ["You need magebloom fibers to craft mage armour. Its not included in the quests because why would you actually use it when you can have a mekasuit?"]
+			dependencies: ["59BD528CE93FB07F"]
+			id: "30AB6836866A537F"
+			tasks: [
+				{
+					id: "6D8916D61131604F"
+					type: "item"
+					item: "ars_nouveau:magebloom_crop"
+				}
+				{
+					id: "506EFB5A97BBAF96"
+					type: "item"
+					item: "ars_nouveau:magebloom"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			description: [
+				"Ars is known for having some fun with spells. To make a spell, open your spell book and put in a pattern of spells and augments. Save your spell to a slot and you can then start casting!"
+				""
+				"There are plenty of spells to learn so get crafting!"
+			]
+			dependencies: ["6D2888F507FD1883"]
+			id: "5DCEA36676D28F9F"
+			tasks: [{
+				id: "447CA92D9493B1AC"
+				type: "checkmark"
+				title: "Spell Casting"
+			}]
+			rewards: [{
+				id: "68BCB473D1BC14B3"
+				type: "item"
+				item: "ars_nouveau:glyph_light"
+			}]
+		}
+		{
+			x: -1.625d
+			y: 1.5d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "5FA10D9325429387"
+			tasks: [{
+				id: "4D43B748832EC1B2"
+				type: "item"
+				item: "ars_nouveau:abjuration_essence"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.25d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "4F43B8A47F25CF84"
+			tasks: [{
+				id: "60F16225D7EB2EA1"
+				type: "item"
+				item: "ars_nouveau:conjuration_essence"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "552836F77F0EA316"
+			tasks: [{
+				id: "00D59AD057D2D80D"
+				type: "item"
+				item: "ars_nouveau:air_essence"
+			}]
+		}
+		{
+			x: -1.625d
+			y: 3.75d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "27021E89E71BD2CD"
+			tasks: [{
+				id: "1CB6587147F4FF68"
+				type: "item"
+				item: "ars_nouveau:earth_essence"
+			}]
+		}
+		{
+			x: -0.875d
+			y: 4.125d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "6477EBB2A22D24D2"
+			tasks: [{
+				id: "0928B4BC9E886EC7"
+				type: "item"
+				item: "ars_nouveau:fire_essence"
+			}]
+		}
+		{
+			x: -0.125d
+			y: 4.125d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "6A06A310AB15E851"
+			tasks: [{
+				id: "4C4CA6919A9F25B6"
+				type: "item"
+				item: "ars_nouveau:manipulation_essence"
+			}]
+		}
+		{
+			x: 0.625d
+			y: 3.75d
+			dependencies: ["539CDE3509D672AA"]
+			size: 0.75d
+			id: "0BBEC27E01D78979"
+			tasks: [{
+				id: "7DA7C68F559F32AA"
+				type: "item"
+				item: "ars_nouveau:water_essence"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.625d
+			description: ["Most spells require essences to craft. You need an imbuement chamber to craft them. Place pedestals around the imbument chamber and then put in a source gem. It should imbue into the corresponding essence."]
+			dependencies: ["107414CED3D9E41D"]
+			size: 0.75d
+			id: "539CDE3509D672AA"
+			tasks: [{
+				id: "6B7F1DC160DE224B"
+				type: "checkmark"
+				title: "Essences"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -0.5d
+			description: ["Charms can spawn little companions that will do your bidding. Read up in the book for what each one does."]
+			dependencies: ["705AE902289716BB"]
+			size: 0.75d
+			id: "6B692F07450C940B"
+			tasks: [{
+				id: "6B5168F42B391C1B"
+				type: "checkmark"
+				title: "Your Little Friends"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			dependencies: ["6B692F07450C940B"]
+			size: 0.75d
+			id: "3FFFE3F8A1E544CA"
+			tasks: [{
+				id: "167C4C17F2A84A44"
+				type: "item"
+				item: "ars_nouveau:starbuncle_shards"
+			}]
+		}
+		{
+			x: 7.25d
+			y: -2.0d
+			dependencies: ["6B692F07450C940B"]
+			size: 0.75d
+			id: "2748D6521E9D0958"
+			tasks: [{
+				id: "484FC471385DD499"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_shards"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.25d
+			dependencies: ["6B692F07450C940B"]
+			size: 0.75d
+			id: "1E2AB29409320125"
+			tasks: [{
+				id: "5676E7D11E06C1B2"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			dependencies: ["6B692F07450C940B"]
+			size: 0.75d
+			id: "73902E5AE7AD0541"
+			tasks: [{
+				id: "65A3A34F86759623"
+				type: "item"
+				item: "ars_nouveau:drygmy_shard"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.75d
+			dependencies: ["3FFFE3F8A1E544CA"]
+			size: 0.75d
+			id: "4899AC99E2C2E260"
+			tasks: [{
+				id: "142679AC9A4ED76B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6CD02424AB98CA7F"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 7.25d
+			y: -2.75d
+			dependencies: ["2748D6521E9D0958"]
+			size: 0.75d
+			id: "5FB0EC1F575B824D"
+			tasks: [{
+				id: "4C891495D294250C"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_charm"
+			}]
+			rewards: [{
+				id: "24A22207C2562EC2"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_charm"
+			}]
+		}
+		{
+			x: 8.75d
+			y: -1.25d
+			dependencies: ["1E2AB29409320125"]
+			size: 0.75d
+			id: "61345E5C030DD029"
+			tasks: [{
+				id: "334AB38F91831639"
+				type: "item"
+				item: "ars_nouveau:wixie_charm"
+			}]
+			rewards: [{
+				id: "0832720BAAAB927A"
+				type: "item"
+				item: "ars_nouveau:wixie_charm"
+			}]
+		}
+		{
+			x: 8.75d
+			y: -0.5d
+			dependencies: ["73902E5AE7AD0541"]
+			size: 0.75d
+			id: "17CDC4DEE6EA76C9"
+			tasks: [{
+				id: "06F0350E0C2DA288"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+			rewards: [{
+				id: "422414CD12E65BAA"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+		}
+		{
+			x: 5.75d
+			y: -2.0d
+			dependencies: ["6B692F07450C940B"]
+			size: 0.75d
+			id: "663586978EDB8B45"
+			tasks: [{
+				id: "798FBE0E2905A5FE"
+				type: "item"
+				item: "ars_nouveau:bookwyrm_charm"
+			}]
+			rewards: [{
+				id: "3A1ACEB75084A4B1"
+				type: "item"
+				item: "ars_nouveau:bookwyrm_charm"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.25d
+			dependencies: ["6B692F07450C940B"]
+			size: 0.75d
+			id: "0B0F89E42AAE436C"
+			tasks: [{
+				id: "7604832379F4420A"
+				type: "item"
+				item: "ars_nouveau:amethyst_golem_charm"
+			}]
+			rewards: [{
+				id: "181AF1FE47BE9529"
+				type: "item"
+				item: "ars_nouveau:amethyst_golem_charm"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			description: ["Transports source from one jar to another jar, a machine, or another relay. Use the dominion wand to configure them."]
+			dependencies: ["1596D1BD7A8558F3"]
+			id: "7A1B3FFA75C27DA1"
+			tasks: [{
+				id: "1A149C2F020AB9BE"
+				type: "item"
+				item: "ars_nouveau:relay"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			description: ["You can catch pretty much any mob into this jar with the containment ritual. From sheep to dragons. Perhaps your little drygmy friends can help out with tending to your new sealed comrades."]
+			dependencies: ["0AA9EFB1DBD77B91"]
+			id: "577466721D76DD90"
+			tasks: [
+				{
+					id: "44AAB0FA9B57319B"
+					type: "item"
+					item: "ars_nouveau:ritual_containment"
+				}
+				{
+					id: "7277E0BB641128E8"
+					type: "item"
+					item: "ars_nouveau:mob_jar"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["705AE902289716BB"]
+			size: 0.75d
+			id: "104902F79679AA03"
+			tasks: [{
+				id: "7E989528737FC607"
+				type: "item"
+				item: {
+					id: "ars_nouveau:enchanters_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.75d
+			y: 2.375d
+			dependencies: ["705AE902289716BB"]
+			size: 0.75d
+			id: "7D28071C63BB63F5"
+			tasks: [{
+				id: "03C741C7633EBB34"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_bow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.75d
+			dependencies: ["705AE902289716BB"]
+			size: 0.75d
+			id: "0FDFEB216B93775E"
+			tasks: [{
+				id: "423639A775707332"
+				type: "item"
+				item: {
+					id: "ars_nouveau:wand"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			description: ["Early flight if you can get it working well."]
+			dependencies: ["0AA9EFB1DBD77B91"]
+			id: "2999DE4BC5C72632"
+			tasks: [{
+				id: "5585BCA92BB184B0"
+				type: "item"
+				item: "ars_nouveau:ritual_flight"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			subtitle: "Magic All Around You"
+			description: ["Ars Nouveau is a unique magic mod based on spell casting. The type of mana in this mod is called \"source\" which is used in many machines and rituals. Source can be generated and a good supply of it will be integral to reaching your maximum potential with ars."]
+			id: "454D388EF654D7C0"
+			tasks: [{
+				id: "7E0DA92DB9D47225"
+				type: "checkmark"
+				title: "Critical Information"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			subtitle: "When all else fails..."
+			description: ["Ars Nouveau has in game documentation that describes every aspect of the mod. The quests will not explain everything so please take a look through the book if you get confused."]
+			id: "328DD704555CBC5D"
+			tasks: [{
+				id: "7089499C974479DA"
+				type: "checkmark"
+				title: "The Notebook"
+			}]
+			rewards: [{
+				id: "1E07C8097D046AB0"
+				type: "item"
+				item: "ars_nouveau:worn_notebook"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			description: ["As far as I know (ogmon) the best way to make source is to run a blazing archwood farm with create and use volcanic sourcelinks to burn the logs into source. This may not be the best way but it worked extremely well for me!"]
+			dependencies: ["30AB6836866A537F"]
+			id: "6BD82D7294D02600"
+			tasks: [{
+				id: "1BF0AFE4185A8E16"
+				type: "checkmark"
+				title: "The Best Source Gen"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
