@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#forge:rods/steel",
+    "#forge:rods/aluminum",
+    "#forge:rods/copper",
+    "#forge:rods/nickel",
+    "#forge:rods/brass",
+    "#forge:rods/iron"
+  ]
+}

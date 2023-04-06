@@ -1,0 +1,18 @@
+{
+  "id": "gold",
+  "source": "vanilla",
+  "localizedName": "Gold",
+  "disableDefaultOre": false,
+  "processedTypes": [
+    "dust",
+    "plate",
+    "gear"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2
+  },
+  "colors": {
+    "materialColor": "D7A649"
+  }
+}

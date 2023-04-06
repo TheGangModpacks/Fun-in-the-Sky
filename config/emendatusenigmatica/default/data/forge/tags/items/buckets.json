@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#forge:buckets/aluminum",
+    "#forge:buckets/lumium",
+    "#forge:buckets/signalum",
+    "#forge:buckets/enderium",
+    "#forge:buckets/tin",
+    "#forge:buckets/invar",
+    "#forge:buckets/zinc",
+    "#forge:buckets/nickel",
+    "#forge:buckets/electrum",
+    "#forge:buckets/osmium",
+    "#forge:buckets/brass",
+    "#forge:buckets/constantan",
+    "#forge:buckets/lead",
+    "#forge:buckets/bronze",
+    "#forge:buckets/silver",
+    "#forge:buckets/uranium"
+  ]
+}

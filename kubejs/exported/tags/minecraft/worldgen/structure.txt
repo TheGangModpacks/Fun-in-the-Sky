@@ -1,0 +1,82 @@
+To refresh this file, delete it and run /reload command again! Last updated: Mar 27, 2023, 3:06:20 PM
+
+#minecraft:ocean_ruin
+- minecraft:ocean_ruin_cold (from Default)
+- minecraft:ocean_ruin_warm (from Default)
+
+#morevillagers:on_ancient_city_explorer_maps
+- minecraft:ancient_city (from morevillagers-forge-1.19-4.0.3.jar)
+
+#minecraft:mineshaft
+- minecraft:mineshaft (from Default)
+- minecraft:mineshaft_mesa (from Default)
+
+#minecraft:on_woodland_explorer_maps
+- minecraft:mansion (from Default)
+
+#morevillagers:on_bastion_remnant_explorer_maps
+- minecraft:bastion_remnant (from morevillagers-forge-1.19-4.0.3.jar)
+
+#minecraft:cats_spawn_in
+- minecraft:swamp_hut (from Default)
+
+#morevillagers:on_end_city_explorer_maps
+- minecraft:end_city (from morevillagers-forge-1.19-4.0.3.jar)
+
+#pneumaticcraft:no_oil_lakes
+- #minecraft:village (from pneumaticcraft-repressurized-1.19.2-4.3.3-22.jar)
+
+#minecraft:cats_spawn_as_black
+- minecraft:swamp_hut (from Default)
+
+#quark:soul_bead_target
+- minecraft:fortress (from Quark-3.4-394.jar)
+- betterfortresses:fortress? (from Quark-3.4-394.jar)
+
+#morevillagers:on_jungle_temple_explorer_maps
+- minecraft:jungle_pyramid (from morevillagers-forge-1.19-4.0.3.jar)
+
+#minecraft:shipwreck
+- minecraft:shipwreck (from Default)
+- minecraft:shipwreck_beached (from Default)
+
+#minecraft:on_ocean_explorer_maps
+- minecraft:monument (from Default)
+
+#morevillagers:on_pillager_outpost_explorer_maps
+- minecraft:pillager_outpost (from morevillagers-forge-1.19-4.0.3.jar)
+
+#morevillagers:on_fortress_explorer_maps
+- minecraft:fortress (from morevillagers-forge-1.19-4.0.3.jar)
+
+#minecraft:on_treasure_maps
+- minecraft:buried_treasure (from Default)
+
+#morevillagers:on_mineshaft_explorer_maps
+- minecraft:mineshaft (from morevillagers-forge-1.19-4.0.3.jar)
+
+#minecraft:eye_of_ender_located
+- minecraft:stronghold (from Default)
+
+#minecraft:ruined_portal
+- minecraft:ruined_portal_desert (from Default)
+- minecraft:ruined_portal_jungle (from Default)
+- minecraft:ruined_portal_mountain (from Default)
+- minecraft:ruined_portal_nether (from Default)
+- minecraft:ruined_portal_ocean (from Default)
+- minecraft:ruined_portal (from Default)
+- minecraft:ruined_portal_swamp (from Default)
+
+#morevillagers:on_swamp_hut_explorer_maps
+- minecraft:swamp_hut (from morevillagers-forge-1.19-4.0.3.jar)
+
+#minecraft:village
+- minecraft:village_plains (from Default)
+- minecraft:village_desert (from Default)
+- minecraft:village_savanna (from Default)
+- minecraft:village_snowy (from Default)
+- minecraft:village_taiga (from Default)
+
+#minecraft:dolphin_located
+- #minecraft:ocean_ruin (from Default)
+- #minecraft:shipwreck (from Default)

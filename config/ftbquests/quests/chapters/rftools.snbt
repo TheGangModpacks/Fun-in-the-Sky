@@ -1,0 +1,586 @@
+{
+	id: "2D1180F257D11A06"
+	group: "45EE6B8D98E9487B"
+	order_index: 0
+	filename: "rftools"
+	title: "&8RFTools"
+	icon: "rftoolsbase:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			title: "RFTools"
+			x: 0.0d
+			y: 0.0d
+			description: ["Welcome to the questline for one of the most iconic mods- and a confusing one!.. (At least not as confusing as Integrated Dynamics)"]
+			dependencies: ["16EFE494874CE030"]
+			invisible: true
+			invisible_until_tasks: 1
+			id: "510E50CF1047BE9D"
+			tasks: [{
+				id: "61327A17A7CDEE29"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			title: "RFTools Utility"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Half as useful"
+			description: ["The Utility addon for RFTools adds a bunch of logic related blocks to aid you in your technological ecosystem."]
+			dependencies: ["510E50CF1047BE9D"]
+			id: "4DDAEA909ECB5C96"
+			tasks: [{
+				id: "6B4588477E6D5AB0"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+			}]
+		}
+		{
+			x: 4.85d
+			y: 1.7999999999999998d
+			shape: "rsquare"
+			subtitle: "Right on time! "
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "0894DC7105C87F17"
+			tasks: [{
+				id: "3715B134413582A3"
+				type: "item"
+				item: "rftoolsutility:timer"
+			}]
+		}
+		{
+			x: 5.75d
+			y: 1.7999999999999998d
+			shape: "rsquare"
+			subtitle: "Not a clock"
+			description: ["The Analog sensor sends a redstone signal based on signals affecting the sides."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "7AB3364489318219"
+			tasks: [{
+				id: "205C0AE348712499"
+				type: "item"
+				item: "rftoolsutility:analog"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["510E50CF1047BE9D"]
+			id: "11E446AD4234F52E"
+			tasks: [{
+				id: "7F6ADD493C8935BD"
+				type: "item"
+				item: "rftoolsbase:dimensionalshard"
+			}]
+		}
+		{
+			x: 5.75d
+			y: 0.9000000000000004d
+			shape: "rsquare"
+			subtitle: "/invsee"
+			description: ["Checks a player's inventory for items. If the specified item is found, a redstone signal is activated."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "54B9A38163E98657"
+			tasks: [{
+				id: "6BF1ACA3BEAE858C"
+				type: "item"
+				item: "rftoolsutility:invchecker"
+			}]
+		}
+		{
+			x: 5.75d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Censored"
+			description: ["The Sensor works like an Observer, but with much more functionality."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "78289F1635FFBF89"
+			tasks: [{
+				id: "334EB8E0117BD79E"
+				type: "item"
+				item: "rftoolsutility:sensor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"Using a shape card, you can have the builder place or mine blocks in a massive area. Quarries cards will clear away blocks and pump cards will pump fluids for you."
+				""
+				"Place a chest chest or tank to the builder block for mined items or drained fluids to be deposited and then give it the flick of a lever to start the process."
+			]
+			dependencies: ["510E50CF1047BE9D"]
+			id: "509E68A514DD536F"
+			tasks: [{
+				id: "55532F4FFFCA66C3"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+		}
+		{
+			x: 5.75d
+			y: -0.9000000000000004d
+			shape: "rsquare"
+			description: ["Sends out redstone signals in pulses under certain conditions."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "6D81844EC11150B0"
+			tasks: [{
+				id: "4BB89FBE7BDE3F69"
+				type: "item"
+				item: "rftoolsutility:sequencer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["Basic shape building shape card."]
+			dependencies: ["509E68A514DD536F"]
+			id: "2873D1E45E39226F"
+			tasks: [{
+				id: "3C4E0D7181A5655A"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_def"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["2AEA745A8F641E27"]
+			id: "7E34BB0AAB196374"
+			tasks: [{
+				id: "2AB13AE7718E792F"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_liquid"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			subtitle: "Ocean be gone"
+			description: ["Beware it will replace the fluids with dirt so dont use it to drain an ocean if you want the ocean to still be there."]
+			dependencies: ["2873D1E45E39226F"]
+			id: "2AEA745A8F641E27"
+			tasks: [{
+				id: "3E3DCB8C2A6B81D5"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_pump"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["2AEA745A8F641E27"]
+			id: "5B18ABC382F6D375"
+			tasks: [{
+				id: "375A1161BE325B73"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_pump_clear"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			subtitle: "Destroy the world"
+			description: ["Quarries mine blocks in an area and replaces them with dirt"]
+			dependencies: ["2873D1E45E39226F"]
+			id: "021459C9B006877A"
+			tasks: [{
+				id: "0ACF842ADA62EBCA"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry"
+			}]
+		}
+		{
+			x: 4.85d
+			y: 0.9000000000000004d
+			shape: "rsquare"
+			subtitle: "Ecological"
+			description: ["Logic is a complex little mechanism with extreme functionality if setup properly. The GUI may be a little confusing, better check the manual."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "64B557CA3056FD1A"
+			tasks: [{
+				id: "232E107485C3C866"
+				type: "item"
+				item: "rftoolsutility:logic"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			dependencies: ["0CB3D40F7DE5AAA4"]
+			id: "07D51ABA7CF442C3"
+			tasks: [{
+				id: "3CE65071AB1EE800"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry_clear_fortune"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["Clearing quarries mine blocks but do not replace them with dirt."]
+			dependencies: ["021459C9B006877A"]
+			id: "73987500C6EB5EEC"
+			tasks: [{
+				id: "6EE7895989309278"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry_clear"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			dependencies: ["753FC781B99F2A94"]
+			id: "6B09DF61577B22FD"
+			tasks: [{
+				id: "3830C618D8015DCF"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry_clear_silk"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			subtitle: "Nothing left"
+			dependencies: ["2873D1E45E39226F"]
+			id: "6A20FCE555B1A93C"
+			tasks: [{
+				id: "3F5F017903A014C4"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_void"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			subtitle: "I NEED MORE"
+			description: ["Mines blocks with fortune."]
+			dependencies: ["021459C9B006877A"]
+			id: "0CB3D40F7DE5AAA4"
+			tasks: [{
+				id: "40427E355106BDD0"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry_fortune"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			subtitle: "Silky"
+			description: ["Mines blocks with silk touch."]
+			dependencies: ["021459C9B006877A"]
+			id: "753FC781B99F2A94"
+			tasks: [{
+				id: "46CCEB9F72E11CE1"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry_silk"
+			}]
+		}
+		{
+			x: 4.85d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "How boring"
+			description: ["Literally just a glorified redstone dust. Only runs straight, but lag-free."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "621493310DD048F4"
+			tasks: [{
+				id: "39CD0330B8417F18"
+				type: "item"
+				item: "rftoolsutility:wire"
+			}]
+		}
+		{
+			title: "Wireless Redstone"
+			x: 4.85d
+			y: -0.9000000000000004d
+			shape: "rsquare"
+			description: ["Have you ever felt the need to send redstone signals over long distances, but you don't have enough redstone? Well fear not, we've gone Wireless!"]
+			dependencies: ["4DDAEA909ECB5C96"]
+			size: 0.9d
+			id: "1A7D8FABEB20890E"
+			tasks: [
+				{
+					id: "72B9592BA85F98F4"
+					type: "item"
+					item: "rftoolsutility:redstone_receiver"
+				}
+				{
+					id: "16B22454FCDF95F7"
+					type: "item"
+					item: "rftoolsutility:redstone_transmitter"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			dependencies: ["4DDAEA909ECB5C96"]
+			id: "6BAD5C647B9AAEDB"
+			tasks: [{
+				id: "07D9222572040D43"
+				type: "item"
+				item: "rftoolsutility:crafter1"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["6BAD5C647B9AAEDB"]
+			id: "42D97A576AC334B1"
+			tasks: [{
+				id: "2C6197687B0C9F5A"
+				type: "item"
+				item: "rftoolsutility:crafter2"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.0d
+			dependencies: ["42D97A576AC334B1"]
+			id: "6A233C2BC1EDDB0D"
+			tasks: [{
+				id: "53C0ECB0D378F349"
+				type: "item"
+				item: "rftoolsutility:crafter3"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			subtitle: "You Shall not PASS"
+			description: [
+				"The shield projector makes a barrier of which only things you specify can pass or take damage. Open the gui to set filters with the options."
+				""
+				"Use a shape card or shield template blocks to specify the sheild's area. To finalize the sheild, rclick the controller with the smart wrench."
+			]
+			dependencies: ["510E50CF1047BE9D"]
+			id: "6E3F2EAB1E7F6568"
+			tasks: [{
+				id: "57B034163F9E14EE"
+				type: "item"
+				item: "rftoolsbuilder:shield_block1"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			description: ["Each level lets you have more blocks of shield"]
+			dependencies: ["6E3F2EAB1E7F6568"]
+			id: "06BF687C01B83A46"
+			tasks: [{
+				id: "1A6833E92E769C64"
+				type: "item"
+				item: "rftoolsbuilder:shield_block2"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: ["06BF687C01B83A46"]
+			id: "4CF370759E6006D3"
+			tasks: [{
+				id: "75B7F4895433A1AF"
+				type: "item"
+				item: "rftoolsbuilder:shield_block3"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["4CF370759E6006D3"]
+			id: "141928C36691FDDB"
+			tasks: [{
+				id: "2CB4A51A30CEB30A"
+				type: "item"
+				item: "rftoolsbuilder:shield_block4"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["6E3F2EAB1E7F6568"]
+			id: "5A871701CDC61F90"
+			tasks: [{
+				id: "30270931A7B72EDB"
+				type: "item"
+				item: "rftoolsbuilder:blue_shield_template_block"
+			}]
+		}
+		{
+			title: "Screen!"
+			icon: "rftoolsutility:screen"
+			x: 2.0d
+			y: -2.0d
+			subtitle: "Information like no other"
+			description: ["The Screen is an amazing little tool that allows for displaying tons of information. Text, logic, storage container contents, anything. Even images!"]
+			dependencies: ["4DDAEA909ECB5C96"]
+			id: "399A3863BF332974"
+			tasks: [
+				{
+					id: "34B8AC8734D176AB"
+					type: "item"
+					item: "rftoolsutility:screen"
+				}
+				{
+					id: "3A8907623E1E8445"
+					type: "item"
+					item: "rftoolsutility:screen_controller"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			subtitle: "Another one?"
+			description: ["Rftool's Wrench. You may need it for various machines."]
+			dependencies: ["510E50CF1047BE9D"]
+			id: "5BB12049E7386A65"
+			tasks: [{
+				id: "28A6385509EBE8D5"
+				type: "item"
+				item: "rftoolsbase:smartwrench"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			description: [
+				"The Charged Porter acts like a Waystone. You can teleport to filtered Matter Recievers in the blink of an eye. Requires energy."
+				""
+				"The Advanced Charged Porter can have multiple targets."
+			]
+			dependencies: ["138150A207649AE0"]
+			id: "276FB67D698C857C"
+			tasks: [{
+				id: "0A5A3D73DBD2D058"
+				type: "item"
+				item: {
+					id: "rftoolsutility:charged_porter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Teleportation"
+			icon: "rftoolsutility:matter_transmitter"
+			x: 4.0d
+			y: -2.0d
+			description: ["The Matter blocks act kinda like Waystones. One sends the player, one recieves the player. Make sure to connect them with the Dialing Device. Requires lots of energy."]
+			dependencies: ["4DDAEA909ECB5C96"]
+			id: "138150A207649AE0"
+			tasks: [
+				{
+					id: "5EC4CE5FB08DCB93"
+					type: "item"
+					item: "rftoolsutility:matter_transmitter"
+				}
+				{
+					id: "7DE8E33CB2CA2CCC"
+					type: "item"
+					item: "rftoolsutility:matter_receiver"
+				}
+				{
+					id: "4F5455285BD55DFA"
+					type: "item"
+					item: "rftoolsutility:dialing_device"
+				}
+			]
+		}
+		{
+			title: "XNet"
+			x: 1.5d
+			y: 1.0d
+			description: ["XNet is a great extension to RFTools, adding lots of complex logistics options."]
+			dependencies: ["510E50CF1047BE9D"]
+			id: "3BF0E79008D4873A"
+			tasks: [{
+				id: "3EBE6BBFD6F0539E"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			icon: "xnet:netcable_red"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"XNet Cables provide logistics for all kinds of materials, fluids, even gas!"
+				""
+				"Connecters attach to blocks and add them to the XNet cable network."
+				""
+				"Advanced Cables provide connections to multiple blocks, and faster transfer speeds."
+			]
+			dependencies: ["3BF0E79008D4873A"]
+			id: "3B8E71C9A9AFBA0B"
+			tasks: [
+				{
+					id: "5B75B351FB8CCDE4"
+					type: "item"
+					title: "XNet Cable"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+					count: 64L
+				}
+				{
+					id: "75F82F652B68C183"
+					type: "item"
+					title: "XNet Connector"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:connectors"
+						}
+					}
+					count: 6L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			description: ["Allows for connection to multiple controllers on one network."]
+			dependencies: ["3B8E71C9A9AFBA0B"]
+			id: "58E81A30C079B8CA"
+			tasks: [{
+				id: "736266780DB9706A"
+				type: "item"
+				item: "xnet:router"
+			}]
+		}
+		{
+			x: 2.0112244897959215d
+			y: 3.00714285714286d
+			shape: "rsquare"
+			description: ["Covers cabling with a block of your choice."]
+			dependencies: ["3B8E71C9A9AFBA0B"]
+			size: 0.8d
+			id: "5976E8CE0A815FDD"
+			tasks: [{
+				id: "66124C5D2F392F42"
+				type: "item"
+				item: "xnet:facade"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

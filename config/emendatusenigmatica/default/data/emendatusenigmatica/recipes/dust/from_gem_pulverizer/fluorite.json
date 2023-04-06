@@ -1,0 +1,11 @@
+{
+  "type": "thermal:pulverizer",
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": {
+    "tag": "forge:gems/fluorite"
+  },
+  "results": {
+    "count": 1,
+    "item": "emendatusenigmatica:fluorite_dust"
+  }
+}

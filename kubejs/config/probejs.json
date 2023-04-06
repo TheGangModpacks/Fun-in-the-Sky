@@ -1,0 +1,11 @@
+{
+  "dumpMethod": true,
+  "noAggressiveProbing": false,
+  "vanillaOrder": true,
+  "exportClassNames": true,
+  "allowObfuscated": false,
+  "docsTimestamp": 1679631772467,
+  "allowRegistryObjectDumps": false,
+  "requireSingleAndPerm": true,
+  "version": 1
+}

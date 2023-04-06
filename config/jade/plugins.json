@@ -66,10 +66,16 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "mcjtylib": {
+    "jadeaddons": true
+  },
   "apotheosis": {
     "adventure": true,
     "ench": true,
     "spawner": true
+  },
+  "lootr": {
+    "info": true
   },
   "ae2": {
     "part_icon": true,
@@ -82,6 +88,9 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "modularrouters": {
+    "router": true
   },
   "extendedcrafting": {
     "elite_auto_table": true,
@@ -97,6 +106,9 @@
     "crafting_core": true,
     "advanced_auto_table": true,
     "compressor": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
   },
   "mekanism": {
     "infuse_type": true,
@@ -126,6 +138,17 @@
     "mortar": true,
     "cauldron": true
   },
+  "create": {
+    "filter": true,
+    "goggles.requires_goggles": true,
+    "goggles": true,
+    "copper_backtank": true,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "waystones": {
     "waystone": true
   },
@@ -140,5 +163,10 @@
     "infused_farmland": true,
     "crop": true,
     "inferium_crop": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "display.content": true,
+    "display.status": true
   }
 }

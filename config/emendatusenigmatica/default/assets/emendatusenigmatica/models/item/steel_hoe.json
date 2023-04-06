@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emendatusenigmatica:items/templates/hoe/00",
+    "layer1": "emendatusenigmatica:items/templates/hoe/01",
+    "layer2": "emendatusenigmatica:items/templates/hoe/02",
+    "layer3": "emendatusenigmatica:items/templates/hoe/03",
+    "layer4": "emendatusenigmatica:items/templates/hoe/grip"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emendatusenigmatica:items/templates/shovel/00",
+    "layer1": "emendatusenigmatica:items/templates/shovel/01",
+    "layer2": "emendatusenigmatica:items/templates/shovel/02",
+    "layer3": "emendatusenigmatica:items/templates/shovel/03",
+    "layer4": "emendatusenigmatica:items/templates/shovel/grip"
+  }
+}
