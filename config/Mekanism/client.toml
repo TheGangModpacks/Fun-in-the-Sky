@@ -16,6 +16,8 @@
 	opaqueTransmitters = false
 	#Allow sneak + scroll to change item modes.
 	allowModeScroll = true
+	#Align HUD (text) with left (if true) or right (if false)
+	alignHUDLeft = true
 	#Scale of the text displayed on the HUD.
 	#Range: 0.25 ~ 1.0
 	hudScale = 0.6
@@ -26,8 +28,6 @@
 	#Range at which Tile Entity Renderer's added by Mekanism can render at, for example the contents of multiblocks. Vanilla defaults the rendering range for TERs to 64 for most blocks, but uses a range of 256 for beacons and end gateways.
 	#Range: 1 ~ 1024
 	terRange = 256
-	#If true will move HUD text alignment and compass rendering to the right side of the screen, and move the MekaSuit module rendering to the left side.
-	reverseHUD = false
 
 	#Particle Config
 	[client.particle]
@@ -99,16 +99,16 @@
 				y = 2147483647
 
 			[client.gui.window.sideConfig]
-				x = 225
-				y = 60
+				x = 2147483647
+				y = 2147483647
 
 			[client.gui.window.transporterConfig]
-				x = 30
-				y = 0
+				x = 2147483647
+				y = 2147483647
 
 			[client.gui.window.upgrade]
-				x = 10
-				y = 15
+				x = 2147483647
+				y = 2147483647
 
 	#QIO Config
 	[client.qio]

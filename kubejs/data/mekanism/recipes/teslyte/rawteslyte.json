@@ -1,6 +1,0 @@
-{
-    "type": "mekanism:chemical_infusing",
-    "leftInput": "mekanism:dirty_uranium",
-    "rightInput": "mekanism:hydrogen_chloride",
-    "output": "emendatusenigmatica:gaseous_raw_teslyte"
-}
