@@ -23,6 +23,6 @@ ServerEvents.recipes(event => {
         S: 'ars_nouveau:source_gem'
     })
 
-    event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', 'emendatusenigmatica:gold_plate')
+    event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', Ingredient.of('emendatusenigmatica:gold_plate'))
 
 })
