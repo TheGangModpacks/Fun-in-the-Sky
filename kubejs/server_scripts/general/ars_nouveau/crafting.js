@@ -1,8 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({ output: 'ars_nouveau:imbuement_chamber' })
     event.remove({ output: 'ars_nouveau:sourcestone' })
-    event.remove({ output: 'ars_nouveau:enchanting_apparatus' })
-    event.remove({ output: 'ars_nouveau:arcane_core' })
 
     event.shaped('ars_nouveau:imbuement_chamber', [
         'AGA',
@@ -19,10 +17,11 @@ ServerEvents.recipes(event => {
         'ASA',
         'AAA'
     ], {
-        A: 'create:asurine',
+        A: 'botania:livingrock',
         S: 'ars_nouveau:source_gem'
     })
 
     event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', Ingredient.of('emendatusenigmatica:gold_plate'))
+    event.replaceInput({id: 'ars_nouveau:source_jar'}, 'minecraft:glass', Ingredient.of('glassential:glass_light') )
 
 })
