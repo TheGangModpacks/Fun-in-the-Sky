@@ -6,6 +6,13 @@ ServerEvents.recipes(event => {
   ], {
     S: 'mysticalagriculture:rubber_essence'
   })
+  event.shaped('4x ftbic:rubber', [
+    ' S ',
+    ' S ',
+    ' S '
+  ], {
+    S: 'mysticalagriculture:rubber_essence'
+  })
     event.shaped('industrialforegoing:plastic', [
     '  S',
     ' S ',
