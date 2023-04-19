@@ -21,17 +21,11 @@ ServerEvents.recipes(event =>{
 		item_in: {
 			item: 'exnihilosequentia:sea_water_bucket'
 		},
-		block_in: 'minecraft:cauldron',
+		block_in: 'botania:diluted_pool',
 		post: [
 		{
-			type: 'execute',
-			command: 'give @p minecraft:bucket',
-			hide: true
-		},
-		{
-			type: 'execute',
-			command: 'playsound botania:air_rod block @p',
-			hide: true
+			type: 'drop_item',
+			item: 'minecraft:bucket'
 		},
 		{
 		   type: 'place',
