@@ -20,7 +20,7 @@
 	motor_min_consumption = 8
 	#Electric Motor max input in FE (Energy transfer not consumption).
 	#Range: > 0
-	motor_max_input = 256
+	motor_max_input = 1024
 	#Electric Motor internal capacity in FE.
 	#Range: > 0
 	motor_capacity = 2048
@@ -29,7 +29,7 @@
 [alternator]
 	#Alternator max input in FE (Energy transfer, not generation).
 	#Range: > 0
-	generator_max_output = 256
+	generator_max_output = 1024
 	#Alternator internal capacity in FE.
 	#Range: > 0
 	generator_capacity = 2048
@@ -45,23 +45,6 @@
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
 	rolling_mill_stress = 16
-
-#Heater
-[heater]
-	#Induction Heater max input in FE (Energy transfer, not consumption).
-	#Range: > 0
-	heater_max_input = 256
-	#Induction Heater internal capacity in FE.
-	#Range: > 0
-	heater_capacity = 2048
-	#Induction Heater normal consumption rate in FE/t.
-	#Range: > 0
-	heater_normal_consumption = 96
-	#Induction Heater when attached to a Furnace Engine consumption rate in FE/t.
-	#Range: > 0
-	heater_furnace_engine_consumption = 1024
-	#Enable Induction Heater when attached to a Furnace Engine.
-	heater_furnace_engine_enable = false
 
 #Wires
 [wires]
@@ -84,13 +67,19 @@
 [accumulator]
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_input = 512
+	accumulator_max_input = 1024
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_output = 512
-	#Accumulator internal capacity in FE.
+	accumulator_max_output = 1024
+	#Accumulator internal capacity per block in FE.
 	#Range: > 0
-	accumulator_capacity = 4196000
+	accumulator_capacity = 2048000
+	#Accumulator max multiblock height.
+	#Range: 1 ~ 8
+	accumulator_max_height = 5
+	#Accumulator max multiblock width.
+	#Range: 1 ~ 8
+	accumulator_max_width = 3
 
 #Tesla Coil
 [tesla_coil]
@@ -103,7 +92,7 @@
 	#Tesla Coil charge rate in FE/t for recipes.
 	#Range: > 0
 	tesla_coil_recipe_charge_rate = 1024
-	#Charger internal capacity in FE.
+	#Tesla Coil internal capacity in FE.
 	#Range: > 0
 	tesla_coil_capacity = 32000
 	#Energy consumed when Tesla Coil is fired (in FE).
@@ -133,4 +122,13 @@
 	#Diamond Grit Sandpaper durability (number of uses).
 	#Range: > 3
 	diamond_grit_sandpaper_uses = 1024
+
+#Portable Energy Interface
+[portable_energy_interface]
+	#PEI max input in FE/t (Energy transfer).
+	#Range: > 0
+	pei_max_input = 4096
+	#PEI max output in FE/t (Energy transfer).
+	#Range: > 0
+	pei_max_output = 4096
 

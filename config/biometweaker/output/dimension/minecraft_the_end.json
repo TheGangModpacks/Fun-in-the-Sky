@@ -1,0 +1,14 @@
+
+{
+  "registry_name": "minecraft:the_end",
+  "dimension": {
+    "type": "minecraft:the_end",
+    "generator": {
+      "biome_source": {
+        "type": "minecraft:the_end"
+      },
+      "settings": "minecraft:end",
+      "type": "minecraft:noise"
+    }
+  }
+}

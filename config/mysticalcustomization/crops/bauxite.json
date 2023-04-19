@@ -1,0 +1,23 @@
+{
+	"name": "Bauxite",
+	"type": "resource",
+	"tier": "mysticalagriculture:3",
+	"ingredient": {
+		"item": "emendatusenigmatica:bauxite_ingot"
+	},
+	"colors": {
+		"flower": "BD6858",
+		"essence": "BD6858",
+		"seeds": "BD6858"
+	},
+	"textures": {
+		"flower": "mysticalagriculture:block/flower_ingot",
+		"essence": "mysticalagriculture:item/essence_ingot",
+		"seeds": "mysticalagriculture:item/mystical_seeds"
+	},
+	"recipes": {
+		"crafting": false,
+		"infusion": false,
+		"reprocessor": true
+	}
+}

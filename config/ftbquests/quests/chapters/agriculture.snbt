@@ -1,0 +1,1601 @@
+{
+	id: "7F2B95D3EAB90A14"
+	group: "45EE6B8D98E9487B"
+	order_index: 2
+	filename: "agriculture"
+	title: "&2Agriculture"
+	icon: "mysticalagriculture:inferium_seeds"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			title: "Agriculture Beginnings"
+			x: -8.5d
+			y: 0.0d
+			subtitle: "Prospector"
+			description: ["Welcome to the Agriculture questline! It's time to experience the wonderful world of Mystical Agriculture, Agricraft, and more. Good luck!"]
+			dependencies: ["5DFD54DB42FFC556"]
+			hide: true
+			invisible_until_tasks: 1
+			id: "144C5D45F93C620E"
+			tasks: [{
+				id: "369ED2C9A217366F"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+			}]
+		}
+		{
+			title: "Inferium"
+			x: -7.0d
+			y: 0.0d
+			subtitle: "Inferier"
+			description: ["Inferium is the entry material of Mystical Agriculture. Can come from sieving Sand."]
+			dependencies: ["144C5D45F93C620E"]
+			id: "3E158FCF8BA68C8E"
+			tasks: [{
+				id: "1E78BCF5A0C084B1"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+				count: 32L
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The Seed Base is required for every non-mob seed."]
+			dependencies: ["3E158FCF8BA68C8E"]
+			id: "0241027148617920"
+			tasks: [{
+				id: "05F0B555AEC5541D"
+				type: "item"
+				item: "mysticalagriculture:prosperity_seed_base"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Inferium Seeds produce Inferium when harvested."]
+			dependencies: ["0241027148617920"]
+			id: "13FCFAFB5507B7B0"
+			tasks: [{
+				id: "0D28C393F1AD4C33"
+				type: "item"
+				item: "mysticalagriculture:inferium_seeds"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Stone Seeds produce Stone Essence, which can be used for a few different stones."]
+			dependencies: ["0241027148617920"]
+			id: "57B102E4C649AAA6"
+			tasks: [{
+				id: "6638F8D44D46C68F"
+				type: "item"
+				item: "mysticalagriculture:stone_seeds"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Dirt Seeds produce Dirt Essence, which can be used for a variety of things other than Dirt."]
+			dependencies: ["0241027148617920"]
+			id: "21FED7DE54D1B533"
+			tasks: [{
+				id: "77312C6D9751F33D"
+				type: "item"
+				item: "mysticalagriculture:dirt_seeds"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Wood Seeds produce Wood Essence, which can be used to make multiple different types of wood and saplings."]
+			dependencies: ["0241027148617920"]
+			id: "2C36AD476DF50D3F"
+			tasks: [{
+				id: "3F2B283743EBD930"
+				type: "item"
+				item: "mysticalagriculture:wood_seeds"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Ice Seeds produce Ice Essence, which can be used to make Ice, Snow, and Basalt."]
+			dependencies: ["0241027148617920"]
+			id: "2F0BA033CED5BA3B"
+			tasks: [{
+				id: "50B9581ADDB92F8D"
+				type: "item"
+				item: "mysticalagriculture:ice_seeds"
+			}]
+		}
+		{
+			title: "Tier 2 Seeds"
+			icon: "mysticalagriculture:prudentium_block"
+			x: -4.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Tier 2 Seeds are made with Prudentium Essence."]
+			dependencies: [
+				"0241027148617920"
+				"57198546557A3379"
+			]
+			id: "57DFA35DF43129E4"
+			tasks: [{
+				id: "24650BF1775441FB"
+				type: "checkmark"
+				title: "Tier 2 Seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Nature Seeds produce Nature Essence, which is used for many different nature related things."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "236CA33F5BC1B699"
+			tasks: [{
+				id: "5E90C2B5A36FA8AA"
+				type: "item"
+				item: "mysticalagriculture:nature_seeds"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Dye Seeds produce Dye Essence, which is used to make any dye you want."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "703F3753E16C1A8E"
+			tasks: [{
+				id: "1C8527FDB6266F54"
+				type: "item"
+				item: "mysticalagriculture:dye_seeds"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Nether Seeds produce Nether Essence, which is used for a few different Nether related things."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "56B3A30F01BBDB2A"
+			tasks: [{
+				id: "5DE428105D8E10B9"
+				type: "item"
+				item: "mysticalagriculture:nether_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Coal Seeds produce Coal Essence, which is just used for Coal and Stone."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "5E0AE81E9E0E4659"
+			tasks: [{
+				id: "04D14AA0100FF81F"
+				type: "item"
+				item: "mysticalagriculture:coal_seeds"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Coral Seeds produce Coral Essence, which is used for Coral related blocks."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "3F16E1ECCC7CCC0C"
+			tasks: [{
+				id: "41383E3ECE2A9EE7"
+				type: "item"
+				item: "mysticalagriculture:coral_seeds"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Honey Seeds produce Honey Essence, which is only used for Honeycomb and Honey Bottles."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "7F011A6FDBECC1AB"
+			tasks: [{
+				id: "7DDBA18EFC4278F8"
+				type: "item"
+				item: "mysticalagriculture:honey_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Rubber Seeds produce Rubber Essence, which is used for Rubber from different mods. "]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "25ACFE94550761AE"
+			tasks: [{
+				id: "6BA2851CE0E60866"
+				type: "item"
+				item: "mysticalagriculture:rubber_seeds"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Sulfur Seeds produce Sulfur Essence, which only makes Sulfur."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "6484474CC234A81E"
+			tasks: [{
+				id: "04EFA993B4D889DE"
+				type: "item"
+				item: "mysticalagriculture:sulfur_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Copper Seeds produce Copper Essence, which is only used for Copper ingots."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "57B54CDB40CB4A39"
+			tasks: [{
+				id: "3DB1B607EE650C49"
+				type: "item"
+				item: "mysticalagriculture:copper_seeds"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Saltpeter Seeds produce Saltpeter Essence, which doesn't actually make Salt, only Niter."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "4293E181C54BCF1B"
+			tasks: [{
+				id: "37A7F2EA590A2D3C"
+				type: "item"
+				item: "mysticalagriculture:saltpeter_seeds"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Apatite Seeds produce Apatite Essence, which is only used for Apatite."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "6CE78A2635B0A111"
+			tasks: [{
+				id: "66AAA4B82A18CAA6"
+				type: "item"
+				item: "mysticalagriculture:apatite_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -8.5d
+			shape: "diamond"
+			description: ["MF Seeds produce MF Essence, which is used for Botania flowers. Quest unlocks after Botania flowers are unlocked."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "28401F4E47975D13"
+			tasks: [{
+				id: "285046128804D3DE"
+				type: "item"
+				item: "mysticalagriculture:mystical_flower_seeds"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -9.0d
+			shape: "diamond"
+			description: ["Marble Seeds produce Marble Essence, which is only used for Marble."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "39FC0EDB4C811AE3"
+			tasks: [{
+				id: "15E30E93E4F715D0"
+				type: "item"
+				item: "mysticalagriculture:marble_seeds"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -9.0d
+			shape: "diamond"
+			description: ["Limestone Seeds produce Limestone Essence, which can be used for a few different Limestones from different mods."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "01F9A858549B9F84"
+			tasks: [{
+				id: "5F6089C37F13AC96"
+				type: "item"
+				item: "mysticalagriculture:limestone_seeds"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Basalt Seeds produce Basalt Essence, which is only used for Basalt."]
+			dependencies: ["57DFA35DF43129E4"]
+			id: "6795B933DDE7B50E"
+			tasks: [{
+				id: "0591060C363A0927"
+				type: "item"
+				item: "mysticalagriculture:basalt_seeds"
+			}]
+		}
+		{
+			title: "Tier 3 Seeds"
+			icon: "mysticalagriculture:tertium_block"
+			x: -1.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Tier 3 Seeds require Tertium Essence."]
+			dependencies: [
+				"57DFA35DF43129E4"
+				"20AF91D03618E2CF"
+			]
+			id: "18AEEB9AEA88C1F8"
+			tasks: [{
+				id: "55CD176DDEE4315B"
+				type: "checkmark"
+				title: "Tier 3 Seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Iron Seeds produce Iron Essence, which is only used for Iron ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "76F432AAF8C38645"
+			tasks: [{
+				id: "06AE614E0509EB51"
+				type: "item"
+				item: "mysticalagriculture:iron_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			shape: "diamond"
+			description: ["NQ Seeds produce NQ Essence, which is used for Quartz and a few different stones."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "79CD6F752035F481"
+			tasks: [{
+				id: "10B57AADEE4919E0"
+				type: "item"
+				item: "mysticalagriculture:nether_quartz_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -11.0d
+			shape: "diamond"
+			description: ["Glowstone Seeds produce Glowstone Essence, which is used only for Glowstone. "]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "19AC707842B15ED9"
+			tasks: [{
+				id: "7ACE3B5C774B4F86"
+				type: "item"
+				item: "mysticalagriculture:glowstone_seeds"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Redstone Seeds produce Redstone Essence, which is only used for Redstone."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "197A2DB10B0EC0D1"
+			tasks: [{
+				id: "039C9B0F269103E0"
+				type: "item"
+				item: "mysticalagriculture:redstone_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Obsidian Seeds produce Obsidian Essence, which is only used for Obsidian."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "58292787CA38A0AB"
+			tasks: [{
+				id: "5FD229E10B18D456"
+				type: "item"
+				item: "mysticalagriculture:obsidian_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Prismarine Seeds produce Prismarine Essence, which is used for Prismarine and other aquatic products."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "4F0FA4CE13F90A05"
+			tasks: [{
+				id: "5E495D59A8F59635"
+				type: "item"
+				item: "mysticalagriculture:prismarine_seeds"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Tin Seeds produce Tin Essence, which is only used for Tin ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "3D169955C1DA657B"
+			tasks: [{
+				id: "01B12E145BD1746A"
+				type: "item"
+				item: "mysticalagriculture:tin_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Bronze Seeds produce Bronze Essence, which is only used for Bronze ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "47CA22F3668EE61B"
+			tasks: [{
+				id: "77B9B9222CB8B61F"
+				type: "item"
+				item: "mysticalagriculture:bronze_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Zinc Seeds produce Zinc Essence, which is used only for Zinc ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "75DAB07F984B235C"
+			tasks: [{
+				id: "270B6920F2615E69"
+				type: "item"
+				item: "mysticalagriculture:zinc_seeds"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Brass Seeds produce Brass Essence, which is only used for Brass ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "67EA4754173330DE"
+			tasks: [{
+				id: "65B8D2474F0C655C"
+				type: "item"
+				item: "mysticalagriculture:brass_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Silver Seeds produce Silver Essence, which is only used for Silver ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "37F47EB816A59CC9"
+			tasks: [{
+				id: "2EC40958680BA0ED"
+				type: "item"
+				item: "mysticalagriculture:silver_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Lead Seeds produce Lead Essence, which is used only for Lead ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "7A0A2A9A6DB96205"
+			tasks: [{
+				id: "17730939C72334B0"
+				type: "item"
+				item: "mysticalagriculture:lead_seeds"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -8.5d
+			shape: "diamond"
+			description: ["Graphite Seeds produce Graphite Essence, which is only used for Graphite ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "1DFAA5ECA95538BA"
+			tasks: [{
+				id: "53754E791C5C684C"
+				type: "item"
+				item: "mysticalagriculture:graphite_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -9.0d
+			shape: "diamond"
+			description: ["Slimesteel Seeds produce Slimesteel Essence, which is only used for Slimesteel ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "550263EE33F46199"
+			tasks: [{
+				id: "60365F568BDF03A2"
+				type: "item"
+				item: "mysticalagriculture:slimesteel_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -10.0d
+			shape: "diamond"
+			description: ["Pig Iron Seeds produce Pig Iron Essence, which is only used for Pig Iron Ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "47F1F956D74929EA"
+			tasks: [{
+				id: "3DC74EA1018A32B0"
+				type: "item"
+				item: "mysticalagriculture:pig_iron_seeds"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -9.5d
+			shape: "diamond"
+			description: ["Manasteel Seeds produce Manasteel Essence, which is only used for Manasteel ingots."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "3155D303EFCB5A94"
+			tasks: [{
+				id: "05B73412C58DD23E"
+				type: "item"
+				item: "mysticalagriculture:manasteel_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -9.0d
+			shape: "diamond"
+			description: ["SS Seeds produce SS Essence, which is only used for Sky Stone."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "6FACA7288724E76F"
+			tasks: [{
+				id: "0C82D4D7895A1602"
+				type: "item"
+				item: "mysticalagriculture:sky_stone_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -10.0d
+			shape: "diamond"
+			description: ["CQ Seeds produce CQ Essence, which is used for Certus Quartz, and Incriber Press's."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "193C2DE3733ABB97"
+			tasks: [{
+				id: "1274558211962847"
+				type: "item"
+				item: "mysticalagriculture:certus_quartz_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -11.0d
+			shape: "diamond"
+			description: ["QEI Seeds produce QEI Essence, which is only used for Quartz Enriched Iron."]
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "0C75FC521F1490B5"
+			tasks: [{
+				id: "2B6E64E71F6246DE"
+				type: "item"
+				item: "mysticalagriculture:quartz_enriched_iron_seeds"
+			}]
+		}
+		{
+			title: "Tier 4 Seeds"
+			icon: "mysticalagriculture:imperium_block"
+			x: 2.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Tier 4 Seeds require Imperium Essence."]
+			dependencies: [
+				"18AEEB9AEA88C1F8"
+				"4C3AAE742587AAC4"
+			]
+			id: "34CC41030609239A"
+			tasks: [{
+				id: "3035D2002C2FC139"
+				type: "checkmark"
+				title: "Tier 4 Seeds"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Gold Seeds produce Gold Essence, which is used for Gold ingots and Pigstep music disc."]
+			dependencies: ["34CC41030609239A"]
+			id: "7CD4EB1B157BC8C5"
+			tasks: [{
+				id: "54645FA18C3F1ADD"
+				type: "item"
+				item: "mysticalagriculture:gold_seeds"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["LL Seeds produce LL Essence, which is only used for Lapis."]
+			dependencies: ["34CC41030609239A"]
+			id: "160C961AC6A7995D"
+			tasks: [{
+				id: "2ECBD5B749D36825"
+				type: "item"
+				item: "mysticalagriculture:lapis_lazuli_seeds"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["End Seeds produce End Essence, which is used for End Stone, Purper, and Chorus."]
+			dependencies: ["34CC41030609239A"]
+			id: "114206BF895A2DAC"
+			tasks: [{
+				id: "4B147CCE849B3212"
+				type: "item"
+				item: "mysticalagriculture:end_seeds"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Steel Seeds produce Steel Essence, which is only used for Steel ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "03782B3E40283E1C"
+			tasks: [{
+				id: "73606F0BF0120AEF"
+				type: "item"
+				item: "mysticalagriculture:steel_seeds"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Nickel Seeds produce Nickel Essence, which is only used for Nickel ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "33493F4C9DAE0D60"
+			tasks: [{
+				id: "2400D7B925B2172B"
+				type: "item"
+				item: "mysticalagriculture:nickel_seeds"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Cons Seeds produce Cons Essence, which is only used for Constantan ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "2027217F268C6FFF"
+			tasks: [{
+				id: "1173D5896DC41A24"
+				type: "item"
+				item: "mysticalagriculture:constantan_seeds"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Elect Seeds produce Elect Essence, which is only used for Electrum Essence."]
+			dependencies: ["34CC41030609239A"]
+			id: "5741871B0F1CAF98"
+			tasks: [{
+				id: "708881ADF1CF4270"
+				type: "item"
+				item: "mysticalagriculture:electrum_seeds"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.5d
+			shape: "diamond"
+			description: ["Invar Seeds produce Invar Essence, which is only used for Invar ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "4627DBC57D79D85B"
+			tasks: [{
+				id: "733C149C75030C57"
+				type: "item"
+				item: "mysticalagriculture:invar_seeds"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Uranium Seeds produce Uranium Essence, which is only used for Uranium ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "2DE2B63FF4B4710E"
+			tasks: [{
+				id: "500DDB634EFF4DC1"
+				type: "item"
+				item: "mysticalagriculture:uranium_seeds"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Signal Seeds produce Signal Essence, which is only used for Signalum ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "69A2780B0A47A1B0"
+			tasks: [{
+				id: "278E264AD8D2360D"
+				type: "item"
+				item: "mysticalagriculture:signalum_seeds"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Lumium Seeds produce Lumium Essence, which is only used for Lumium ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "1F27A666FF4507FE"
+			tasks: [{
+				id: "743C8B2472008168"
+				type: "item"
+				item: "mysticalagriculture:lumium_seeds"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			shape: "diamond"
+			description: ["HOP Seeds produce HOP Essence, which is only used for HOP Graphite."]
+			dependencies: ["34CC41030609239A"]
+			id: "7BBB04AB7E937E17"
+			tasks: [{
+				id: "3C67D430B8500EB5"
+				type: "item"
+				item: "mysticalagriculture:hop_graphite_seeds"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Cobalt Seeds produce Cobalt Essence, which is only used for Cobalt ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "6F226F234D086134"
+			tasks: [{
+				id: "3F444D88190FA11D"
+				type: "item"
+				item: "mysticalagriculture:cobalt_seeds"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["RG Seeds produce RG Essence, which is only used for Rose Gold."]
+			dependencies: ["34CC41030609239A"]
+			id: "7C527F01EB4D3EF2"
+			tasks: [{
+				id: "0F49CBB3B6C352F8"
+				type: "item"
+				item: "mysticalagriculture:rose_gold_seeds"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Elem Seeds produce Elem Essence, which is only used for Elementium."]
+			dependencies: ["34CC41030609239A"]
+			id: "16653CE9E57CC649"
+			tasks: [{
+				id: "44C6A91627EB11F9"
+				type: "item"
+				item: "mysticalagriculture:elementium_seeds"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Osmium Seeds produce Osmium Essence, which is only used for Osmium ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "5A940479AA04F6BB"
+			tasks: [{
+				id: "024833A0DB60403D"
+				type: "item"
+				item: "mysticalagriculture:osmium_seeds"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Flu Seeds produce Flu Essence, which is only used for Fluorite."]
+			dependencies: ["34CC41030609239A"]
+			id: "362A2194CF2759C0"
+			tasks: [{
+				id: "3F6D45A53C9F25ED"
+				type: "item"
+				item: "mysticalagriculture:fluorite_seeds"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -8.5d
+			shape: "diamond"
+			description: ["RefG Seeds produce RefG Essence, which is only used for Refined Glowstone ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "1F5C1F93D104060C"
+			tasks: [{
+				id: "2394896CD89C5372"
+				type: "item"
+				item: "mysticalagriculture:refined_glowstone_seeds"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			shape: "diamond"
+			description: ["RO Seeds produce RO Essence, which is only used for Refined Obsidian ingots."]
+			dependencies: ["34CC41030609239A"]
+			id: "3799D142AACFC27D"
+			tasks: [{
+				id: "1721B31E38821735"
+				type: "item"
+				item: "mysticalagriculture:refined_obsidian_seeds"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Fluix Seeds produce Fluix Essence, which is only used for Fluix Crystals."]
+			dependencies: ["34CC41030609239A"]
+			id: "5E19FB8D78DE4550"
+			tasks: [{
+				id: "57CD21E38CDB2002"
+				type: "item"
+				item: "mysticalagriculture:fluix_seeds"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.5d
+			shape: "diamond"
+			description: ["ES Seeds produce ES Essence, which is only used for Energized Steel."]
+			dependencies: ["34CC41030609239A"]
+			id: "1B155FEC665AB898"
+			tasks: [{
+				id: "2FC9C14D51B28BB1"
+				type: "item"
+				item: "mysticalagriculture:energized_steel_seeds"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			shape: "diamond"
+			description: ["BC Seeds produce BC Essence, which is only used for Blazing Crystals."]
+			dependencies: ["34CC41030609239A"]
+			id: "077DAB703EE6D729"
+			tasks: [{
+				id: "0E84FED828F375C2"
+				type: "item"
+				item: "mysticalagriculture:blazing_crystal_seeds"
+			}]
+		}
+		{
+			icon: "mysticalagriculture:supremium_block"
+			x: 5.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Tier 5 Seeds require Supremium Essence."]
+			dependencies: [
+				"34CC41030609239A"
+				"4C082D9F13D8D61B"
+			]
+			id: "57640DFD195A46F7"
+			tasks: [{
+				id: "3D5229B0C50F27F0"
+				type: "checkmark"
+				title: "Tier 5 Seeds"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Dia Seeds produce Dia Essence, which is used for Diamonds and Heart of the Sea."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "29F7BF2E6481740F"
+			tasks: [{
+				id: "5530F9B9A7ADBD6C"
+				type: "item"
+				item: "mysticalagriculture:diamond_seeds"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Emer Seeds produce Emer Essence, which is only used for Emeralds."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "1F69D2F1EE1246DC"
+			tasks: [{
+				id: "152009F4E67467AC"
+				type: "item"
+				item: "mysticalagriculture:emerald_seeds"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Neth Seeds produce Neth Essence, which is used for Netherite ingots and Pigstep music disc."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "0051079BD7C70A66"
+			tasks: [{
+				id: "7AC57AE8B63132DC"
+				type: "item"
+				item: "mysticalagriculture:netherite_seeds"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Ender Seeds produce Ender Essence, which is only used for Enderium ingots."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "395CF005E14A4D38"
+			tasks: [{
+				id: "459A4C6DFC91D425"
+				type: "item"
+				item: "mysticalagriculture:enderium_seeds"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Manyu Seeds produce Manyu Essence, which is only used for Manyullyn ingots."]
+			dependencies: ["57640DFD195A46F7"]
+			invisible: true
+			id: "79CE5A2A20D0E143"
+			tasks: [{
+				id: "694ECEF0EDA3A6D1"
+				type: "item"
+				item: "mysticalagriculture:manyullyn_seeds"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["QS Seeds produce QS Essence, which only makes Queen's Slime ingots."]
+			dependencies: ["57640DFD195A46F7"]
+			invisible: true
+			id: "6A444A5132917A76"
+			tasks: [{
+				id: "4582547A92A6244F"
+				type: "item"
+				item: "mysticalagriculture:queens_slime_seeds"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Hep Seeds produce Hep Essence, which is only used for Hepatzion ingots."]
+			dependencies: ["57640DFD195A46F7"]
+			invisible: true
+			id: "278B9AADA6BB7726"
+			tasks: [{
+				id: "2B24772C48A05276"
+				type: "item"
+				item: "mysticalagriculture:hepatizon_seeds"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -7.0d
+			shape: "diamond"
+			description: ["TS Seeds produce TS Essence, which is only used for Terrasteel ingots."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "673A5329AE67C488"
+			tasks: [{
+				id: "4528242C6FC30D62"
+				type: "item"
+				item: "mysticalagriculture:terrasteel_seeds"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Niotic Seeds produce Niotic Essence, which is only used for Niotic Crystals."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "4CAA12F99B1CDEA1"
+			tasks: [{
+				id: "59FBE38E841C3D8D"
+				type: "item"
+				item: "mysticalagriculture:niotic_crystal_seeds"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Sprit Seeds produce Spirit Essence, which is only used for Spirited Crystals."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "5D1026D72501DBB2"
+			tasks: [{
+				id: "5CC585B9EEF7CF19"
+				type: "item"
+				item: "mysticalagriculture:spirited_crystal_seeds"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Uranite Seeds produce Uranite Essence, which is only used for Uranite."]
+			dependencies: ["57640DFD195A46F7"]
+			id: "0CBB6A0E185E79E3"
+			tasks: [{
+				id: "02925159AA78F6A8"
+				type: "item"
+				item: "mysticalagriculture:uraninite_seeds"
+			}]
+		}
+		{
+			icon: "mysticalagradditions:insanium_block"
+			x: 7.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Tier 6 Seeds require Insanium Essence."]
+			dependencies: [
+				"57640DFD195A46F7"
+				"6B8E18DCDEA296F9"
+			]
+			id: "63AF39BCAE4956B6"
+			tasks: [{
+				id: "5C653B5770FC5CD9"
+				type: "checkmark"
+				title: "Tier 6 Seeds"
+			}]
+		}
+		{
+			icon: "mysticalagriculture:nether_star_seeds"
+			x: 7.5d
+			y: -4.5d
+			shape: "octagon"
+			description: ["Star Seeds produce Star Essence, which is only used for Nether Star Shards. Requires a Nether Star Crux underneath farmland to grow."]
+			dependencies: ["63AF39BCAE4956B6"]
+			id: "073D69234A644A83"
+			tasks: [{
+				id: "4C5DDFAF765A39FD"
+				type: "item"
+				item: "mysticalagriculture:nether_star_seeds"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -5.5d
+			shape: "octagon"
+			description: ["Dragon Egg Seeds produce Dragon Egg Essence, which is used for Dragon chunks, and Dragon Heads. Requires Dragon Egg Crux underneath farmland to grow."]
+			dependencies: ["63AF39BCAE4956B6"]
+			id: "062FA15ECA920B97"
+			tasks: [{
+				id: "36BEE62B41D3262A"
+				type: "item"
+				item: "mysticalagriculture:dragon_egg_seeds"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -6.5d
+			shape: "octagon"
+			description: [
+				"Nitro Seeds produce Nitro Essence, which is only used for Nitro Crystals."
+				"Requires Nitro Crystal Crux underneath farmland to grow."
+			]
+			dependencies: ["63AF39BCAE4956B6"]
+			id: "6119B39C988A0E61"
+			tasks: [{
+				id: "613219166F105AF9"
+				type: "item"
+				item: "mysticalagriculture:nitro_crystal_seeds"
+			}]
+		}
+		{
+			title: "Prudentium"
+			x: -4.0d
+			y: 0.0d
+			description: ["Prudentium is the tier 2 Essence of Mystic Agri."]
+			dependencies: ["3E158FCF8BA68C8E"]
+			id: "57198546557A3379"
+			tasks: [{
+				id: "533FE7A78024ACC2"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+				count: 16L
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			shape: "gear"
+			description: ["The Infusion Crystal is used to turn Essence into a greater form. Only has 1000 uses."]
+			dependencies: ["3E158FCF8BA68C8E"]
+			id: "3EF2DF1B888B2DEB"
+			tasks: [{
+				id: "371834B1E8C14669"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.095238095238088d
+			y: 2.1190476190476133d
+			shape: "gear"
+			description: ["The Master Infusion Crystal does the same thing the regular one does, but is unbreakable, and can convert Essence blocks."]
+			dependencies: ["3E158FCF8BA68C8E"]
+			id: "12E367D1F1085D44"
+			tasks: [{
+				id: "6708DD4D359FE993"
+				type: "item"
+				item: "mysticalagriculture:master_infusion_crystal"
+			}]
+		}
+		{
+			title: "Tertium"
+			x: -1.5d
+			y: 0.0d
+			description: ["Tertium is the tier 3 Essence of Mysic Agri."]
+			dependencies: ["57198546557A3379"]
+			id: "20AF91D03618E2CF"
+			tasks: [{
+				id: "7CF015DE488662DE"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+				count: 8L
+			}]
+		}
+		{
+			title: "Imperium"
+			x: 2.0d
+			y: 0.0d
+			description: ["Imperium is the tier 4 Essence of Mysic Agri."]
+			dependencies: ["20AF91D03618E2CF"]
+			id: "4C3AAE742587AAC4"
+			tasks: [{
+				id: "281652274F78E77A"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+				count: 4L
+			}]
+		}
+		{
+			title: "Supremium"
+			x: 5.0d
+			y: 0.0d
+			description: ["Supremium is the tier 5 Essence of Mystic Agri."]
+			dependencies: ["4C3AAE742587AAC4"]
+			id: "4C082D9F13D8D61B"
+			tasks: [{
+				id: "44A5B8BECC70AA8E"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+				count: 2L
+			}]
+		}
+		{
+			title: "Insanium"
+			x: 7.5d
+			y: 0.0d
+			description: ["Insanium is the tier 6 Essence of Mystic Agri."]
+			dependencies: ["4C082D9F13D8D61B"]
+			id: "6B8E18DCDEA296F9"
+			tasks: [{
+				id: "6E299158790AACB9"
+				type: "item"
+				item: "mysticalagradditions:insanium_essence"
+			}]
+		}
+		{
+			icon: "mysticalagriculture:infusion_altar"
+			x: -5.892857142857132d
+			y: 2.1428571428571317d
+			shape: "gear"
+			description: ["The Infuser from Mystic Agri has been disabled completely. No need to worry about making it :)"]
+			dependencies: ["3E158FCF8BA68C8E"]
+			id: "1607CBC5DFA31190"
+			tasks: [{
+				id: "2D2B86D585427307"
+				type: "checkmark"
+				title: "Infusion?"
+			}]
+		}
+		{
+			title: "Soul Seeds"
+			x: -10.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Mob Seeds require Mob Soul Jars filled with their respective Mob souls."]
+			dependencies: ["0241027148617920"]
+			id: "2F903D1CE681F456"
+			tasks: [{
+				id: "3C99C2E39A6DB994"
+				type: "item"
+				item: "mysticalagriculture:soul_jar"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Pig Seeds produce Pig Essence, which is only used for Raw Porkchops."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "2D71BFAE235CD153"
+			tasks: [{
+				id: "604EB2EF366B4275"
+				type: "item"
+				item: "mysticalagriculture:pig_seeds"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Chicken Seeds produce Chicken Essence, which is used to make Raw Chicken, Eggs, and Feathers."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "16391E6965590B7B"
+			tasks: [{
+				id: "2BB206355B6A2A31"
+				type: "item"
+				item: "mysticalagriculture:chicken_seeds"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Cow Seeds produce Cow Essence, which is used to make Raw Beef, Leather, and Milk."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "0C9FDC6AC5F45662"
+			tasks: [{
+				id: "59724A3D33BF83D3"
+				type: "item"
+				item: "mysticalagriculture:cow_seeds"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Sheep Seeds produce Sheep Essence, which is used to make Raw Mutton, and Wool."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "4774EFC363A6109F"
+			tasks: [{
+				id: "403A42E01DBB5A0A"
+				type: "item"
+				item: "mysticalagriculture:sheep_seeds"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Squid Seeds produce Squid Essence, which is used for Ink Sacs, and Heart of the Sea."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "6191986AFAE444A4"
+			tasks: [{
+				id: "3F17153828FE154F"
+				type: "item"
+				item: "mysticalagriculture:squid_seeds"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Fish Seeds produce Fish Essence, which is used to make a variety of fish, and Nautlus Shells."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "23A6D3B0B6E20EEE"
+			tasks: [{
+				id: "2113DA24F8ECAE23"
+				type: "item"
+				item: "mysticalagriculture:fish_seeds"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Slime Seeds produce Slime Essence, which is used to make a variety of Slime products."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "2FD1474A5B8A5AC8"
+			tasks: [{
+				id: "07A363B362053E03"
+				type: "item"
+				item: "mysticalagriculture:slime_seeds"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Turtle Seeds produce Turtle Essence, which is only used for Scutes."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "5D291181B6B2B9B8"
+			tasks: [{
+				id: "67E8C23E7A1B62CE"
+				type: "item"
+				item: "mysticalagriculture:turtle_seeds"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Zombie Seeds produce Zombie Essence, which is used for Rotten Flesh, and Zombie Heads."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "07C91AB57F5EFF15"
+			tasks: [{
+				id: "1C2F82A654E549E7"
+				type: "item"
+				item: "mysticalagriculture:zombie_seeds"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Skeleton Seeds produce Skeleton Essence, which is used for Bones, Arrows, Skulls, and Music Discs."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "1CBF66BF4F018B58"
+			tasks: [{
+				id: "64CD561DC31A56D8"
+				type: "item"
+				item: "mysticalagriculture:skeleton_seeds"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -5.5d
+			shape: "diamond"
+			description: ["Creeper Seeds produce Creeper Essence, which is used for Gunpowder, Creeper Heads, and Music Discs."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "480D5B52AA2913BF"
+			tasks: [{
+				id: "42BD853440C97097"
+				type: "item"
+				item: "mysticalagriculture:creeper_seeds"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Spider Seeds produce Spider Essence, which is used for Spider Eyes, and String."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "7B49B7F96E0D4ADB"
+			tasks: [{
+				id: "79B30BC3E90FF49B"
+				type: "item"
+				item: "mysticalagriculture:spider_seeds"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Rabbit Seeds produce Rabbit Essence, which is used for Raw Rabbit, Rabbit Hide, and Rabbit Feet. Good luck getting this one!"]
+			dependencies: ["2F903D1CE681F456"]
+			id: "25B5CAADFFED572F"
+			tasks: [{
+				id: "6963BADC5BA33617"
+				type: "item"
+				item: "mysticalagriculture:rabbit_seeds"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Blizz Seeds produce Blizz Essence, which is only used for Blizz Cubes."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "1E95628AFE6F69C4"
+			tasks: [{
+				id: "6575CDECBC8987A3"
+				type: "item"
+				item: "mysticalagriculture:blizz_seeds"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -7.0d
+			shape: "diamond"
+			description: ["Blitz Seeds produce Blitz Essence, which is only used for Blitz Mote."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "590555416B7F1FF6"
+			tasks: [{
+				id: "79620F717DEB443C"
+				type: "item"
+				item: "mysticalagriculture:blitz_seeds"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Basalz Seeds produce Basalz Essence, which is only used for Basalz Shards."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "64D8FD3D90B6D0D8"
+			tasks: [{
+				id: "5CDB29F9FDA0D4EE"
+				type: "item"
+				item: "mysticalagriculture:basalz_seeds"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -8.0d
+			shape: "diamond"
+			description: ["Blaze Seeds produce Blaze Essence, which is used for Blaze Rods, Magma Cream, and Eyes of Ender."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "45540EDDACCD911F"
+			tasks: [{
+				id: "40DE90BB5373D32A"
+				type: "item"
+				item: "mysticalagriculture:blaze_seeds"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Ghast Seeds produce Ghast Essence, which is only used for Ghast Tears."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "2FF41EC032406360"
+			tasks: [{
+				id: "51AAA71EC40DF59B"
+				type: "item"
+				item: "mysticalagriculture:ghast_seeds"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Enderman Seeds produce Enderman Essence, which is used for E. Pearls, and Eyes of Ender."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "5EC82B3AA296F2EC"
+			tasks: [{
+				id: "7A486DCC0E4A9FF0"
+				type: "item"
+				item: "mysticalagriculture:enderman_seeds"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -8.0d
+			shape: "diamond"
+			description: ["W. Skeleton Seeds produce W. Skeleton Essence, which is used for Witherproof blocks, Wither Skulls, and Bones."]
+			dependencies: ["2F903D1CE681F456"]
+			id: "0CB3951EC9E7153B"
+			tasks: [{
+				id: "4D9928DB47F1E201"
+				type: "item"
+				item: "mysticalagriculture:wither_skeleton_seeds"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.0d
+			shape: "diamond"
+			description: ["Water Seeds produce Water Essence, which is used for water related products."]
+			dependencies: ["0241027148617920"]
+			id: "3467299B87FDB6B0"
+			tasks: [{
+				id: "140E0CFE5C69F23B"
+				type: "item"
+				item: "mysticalagriculture:water_seeds"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Fire Seeds produce Fire Essence, which is used for a variety of heat-related things...? I guess."]
+			dependencies: ["0241027148617920"]
+			id: "1A09A18FBE28AE55"
+			tasks: [{
+				id: "1BB62C6FB71F1DBF"
+				type: "item"
+				item: "mysticalagriculture:fire_seeds"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.7142857142857153d
+			shape: "gear"
+			subtitle: "This is gonna be insane! Not really"
+			description: ["Ah yes, the Ultimate Essence Singularity. Made with any essence! How boring, it's just whatever essence you've got lying around. The singularity requires 30k items for the singularity, so we recommend attaching cables on all sides, and/or use Modular Routers for both items and power. Good luck!"]
+			dependencies: ["3E158FCF8BA68C8E"]
+			id: "34F5BE85169324BE"
+			tasks: [{
+				id: "3362B544856C0410"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:essence"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -10.5d
+			shape: "diamond"
+			dependencies: ["18AEEB9AEA88C1F8"]
+			id: "0F3CFC00FB782E09"
+			tasks: [{
+				id: "3A42F71DEA2280E4"
+				type: "item"
+				item: "mysticalagriculture:bauxite_seeds"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -7.5d
+			shape: "diamond"
+			description: ["Air Seeds produce Air Essence, which is only used for Awakening."]
+			dependencies: ["0241027148617920"]
+			id: "1CB9A17F4DE9B5BA"
+			tasks: [{
+				id: "4C331CC6C0235A78"
+				type: "item"
+				item: "mysticalagriculture:air_seeds"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -7.5d
+			shape: "octagon"
+			description: ["Gaia Spirit Seeds produce Gaia Essence, used for expensive Gaia Spirits. (How many times am I gonna repeat the same quest descriptions?)"]
+			dependencies: ["63AF39BCAE4956B6"]
+			id: "496DF14646548FA9"
+			tasks: [{
+				id: "25F5A6E51DBFD968"
+				type: "item"
+				item: "mysticalagriculture:gaia_spirit_seeds"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

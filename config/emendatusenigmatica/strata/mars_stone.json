@@ -1,0 +1,10 @@
+{
+	"id": "mars_stone",
+	"baseTexture": "ad_astra:block/mars_stone",
+	"suffix": "mars_stone",
+	"fillerType": "ad_astra:mars_stone",
+	"localizedName": "Mars Stone",
+	"harvestTool": "pickaxe",
+	"hardness": 3.0,
+	"resistance": 3.0
+}

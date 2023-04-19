@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "apotheosis:rogue_spawner",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "apotheosis:rogue_spawner"
+  }
+}

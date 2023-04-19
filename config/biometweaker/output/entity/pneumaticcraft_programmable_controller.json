@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "pneumaticcraft:programmable_controller",
+  "category": "CREATURE",
+  "fire_immune": false,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 32,
+  "update_interval": 3,
+  "defaul_loot_table": "pneumaticcraft:entities/programmable_controller",
+  "size": {
+    "height": 0.175,
+    "width": 0.35,
+    "fixed": false
+  }
+}

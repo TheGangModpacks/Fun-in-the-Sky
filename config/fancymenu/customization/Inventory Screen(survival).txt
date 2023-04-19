@@ -16,9 +16,9 @@ customization {
 customization {
   identifier = %id=4976%
   orientation = bottom-centered
-  x = 47
+  x = 46
   action = movebutton
-  y = -43
+  y = -46
 }
 
 customization {
@@ -32,5 +32,13 @@ customization {
   identifier = %id=4976%
   action = setbuttonlabel
   value = Dark
+}
+
+customization {
+  identifier = %id=374169%
+  orientation = mid-centered
+  x = 57
+  action = movebutton
+  y = -12
 }
 

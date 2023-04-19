@@ -1,0 +1,20 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "tier": 1,
+  "key": {
+    "A": {
+      "item": "mysticalagriculture:inferium_essence"
+    },
+    "B": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:inferium_seeds"
+  }
+}

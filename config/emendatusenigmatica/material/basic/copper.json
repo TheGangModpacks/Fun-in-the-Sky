@@ -1,0 +1,21 @@
+{
+  "id": "copper",
+  "source": "vanilla",
+  "localizedName": "Copper",
+  "disableDefaultOre": false,
+  "processedTypes": [
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "crushed_ore",
+    "nugget"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 1
+  },
+  "colors": {
+    "materialColor": "C86841"
+  }
+}

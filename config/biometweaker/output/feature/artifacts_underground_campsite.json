@@ -1,0 +1,56 @@
+
+{
+  "registry_name": "artifacts:underground_campsite",
+  "worldgen/placed_feature": {
+    "feature": "artifacts:campsite",
+    "placement": [
+      {
+        "count": 4,
+        "type": "minecraft:count"
+      },
+      {
+        "chance": 1,
+        "type": "minecraft:rarity_filter"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "height": {
+          "min_inclusive": {
+            "absolute": -60
+          },
+          "max_inclusive": {
+            "absolute": 40
+          },
+          "type": "minecraft:uniform"
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "direction_of_search": "down",
+        "target_condition": {
+          "type": "minecraft:solid"
+        },
+        "allowed_search_condition": {
+          "blocks": "minecraft:air",
+          "type": "minecraft:matching_blocks"
+        },
+        "max_steps": 8,
+        "type": "minecraft:environment_scan"
+      },
+      {
+        "xz_spread": 0,
+        "y_spread": 1,
+        "type": "minecraft:random_offset"
+      },
+      {
+        "max_height": 6,
+        "type": "artifacts:ceiling_height_filter"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

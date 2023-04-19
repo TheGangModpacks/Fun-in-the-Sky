@@ -10,8 +10,6 @@
     "raw",
     "dust",
     "plate",
-    "gear",
-    "rod",
     "fluid",
     "slurry",
     "crystal",
@@ -36,10 +34,5 @@
     "fluidColor": "37A119",
     "materialColor": "37A119",
 	"gasColor": "37A119"
-  },
-  "compat": {
-    "create": true,
-    "occultism": false,
-    "mekanism": true
   }
 }

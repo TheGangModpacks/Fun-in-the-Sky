@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "apotheosis:boss_dungeon_2",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "apotheosis:boss_dng_2"
+  }
+}

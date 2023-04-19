@@ -1,0 +1,23 @@
+
+{
+  "registry_name": "immersiveengineering:bauxite",
+  "worldgen/placed_feature": {
+    "feature": "immersiveengineering:bauxite",
+    "placement": [
+      {
+        "height": {
+          "type": "immersiveengineering:ie_range",
+          "value": 0
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "immersiveengineering:ie_count",
+        "value": 0
+      }
+    ]
+  }
+}

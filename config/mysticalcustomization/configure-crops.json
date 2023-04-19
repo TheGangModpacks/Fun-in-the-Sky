@@ -1,1 +1,5 @@
-{}
+[{
+  "mysticalagriculture:silicon": {
+	  "essence": "kubejs:silicon_essence"
+  }
+}]

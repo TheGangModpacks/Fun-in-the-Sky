@@ -1,0 +1,31 @@
+
+{
+  "registry_name": "apotheosis:rogue_spawner_deep",
+  "worldgen/placed_feature": {
+    "feature": "apotheosis:rogue_spawner",
+    "placement": [
+      {
+        "count": 2,
+        "type": "minecraft:count"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "height": {
+          "min_inclusive": {
+            "above_bottom": 6
+          },
+          "max_inclusive": {
+            "absolute": -1
+          },
+          "type": "minecraft:uniform"
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

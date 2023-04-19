@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:config/emendatusenigmatica/material/alloy/copper.json
 {
   "id": "copper",
   "source": "vanilla",
@@ -16,4 +17,25 @@
   "colors": {
     "materialColor": "C86841"
   }
+=======
+{
+  "id": "copper",
+  "source": "vanilla",
+  "localizedName": "Copper",
+  "disableDefaultOre": false,
+  "processedTypes": [
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "crushed_ore"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 1
+  },
+  "colors": {
+    "materialColor": "C86841"
+  }
+>>>>>>> Stashed changes:config/emendatusenigmatica/material/basic/copper.json
 }

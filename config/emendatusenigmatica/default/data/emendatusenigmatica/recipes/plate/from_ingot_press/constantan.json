@@ -1,0 +1,12 @@
+{
+  "type": "thermal:press",
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/constantan"
+    }
+  ],
+  "results": {
+    "item": "emendatusenigmatica:constantan_plate"
+  }
+}

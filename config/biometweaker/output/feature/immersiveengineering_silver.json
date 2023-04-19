@@ -1,0 +1,23 @@
+
+{
+  "registry_name": "immersiveengineering:silver",
+  "worldgen/placed_feature": {
+    "feature": "immersiveengineering:silver",
+    "placement": [
+      {
+        "height": {
+          "type": "immersiveengineering:ie_range",
+          "value": 2
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "immersiveengineering:ie_count",
+        "value": 2
+      }
+    ]
+  }
+}

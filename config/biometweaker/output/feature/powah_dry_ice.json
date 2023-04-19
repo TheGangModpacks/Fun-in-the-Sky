@@ -1,0 +1,31 @@
+
+{
+  "registry_name": "powah:dry_ice",
+  "worldgen/placed_feature": {
+    "feature": "powah:dry_ice",
+    "placement": [
+      {
+        "count": 9,
+        "type": "minecraft:count"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "height": {
+          "min_inclusive": {
+            "above_bottom": 0
+          },
+          "max_inclusive": {
+            "absolute": 64
+          },
+          "type": "minecraft:uniform"
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

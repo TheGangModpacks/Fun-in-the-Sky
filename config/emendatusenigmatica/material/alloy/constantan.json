@@ -9,9 +9,7 @@
     "dust",
     "plate",
     "gear",
-    "rod",
-    "fluid",
-	"crushed_ore"
+    "fluid"
   ],
   "properties": {
   "materialType": "alloy",

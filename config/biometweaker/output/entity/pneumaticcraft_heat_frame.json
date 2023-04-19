@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "pneumaticcraft:heat_frame",
+  "category": "MISC",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 3,
+  "update_interval": 2147483647,
+  "defaul_loot_table": "pneumaticcraft:entities/heat_frame",
+  "size": {
+    "height": 1.0,
+    "width": 1.0,
+    "fixed": false
+  }
+}

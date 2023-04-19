@@ -11,7 +11,7 @@
     "dust",
     "plate",
     "gear",
-    "rod",
+	"rod",
     "fluid",
     "slurry",
     "crystal",
@@ -36,10 +36,5 @@
     "fluidColor": "D8B87D",
     "materialColor": "D8B87D",
 	"gasColor": "D8B87D"
-  },
-  "compat": {
-    "create": true,
-    "occultism": false,
-    "mekanism": true
   }
 }

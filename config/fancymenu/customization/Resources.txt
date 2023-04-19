@@ -1,0 +1,44 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.packs.PackSelectionScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
+  baseheight = 1080
+  action = autoscale
+  basewidth = 1920
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=346952%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt.png
+}
+
+customization {
+  identifier = %id=504952%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt.png
+}
+

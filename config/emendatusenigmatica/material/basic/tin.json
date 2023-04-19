@@ -9,9 +9,7 @@
     "nugget",
     "raw",
     "dust",
-    "plate",
     "gear",
-    "rod",
     "fluid",
     "slurry",
     "crystal",
@@ -36,10 +34,5 @@
     "fluidColor": "21A0CE",
     "materialColor": "21A0CE",
 	"gasColor": "21A0CE"
-  },
-  "compat": {
-    "create": true,
-    "occultism": false,
-    "mekanism": true
   }
 }

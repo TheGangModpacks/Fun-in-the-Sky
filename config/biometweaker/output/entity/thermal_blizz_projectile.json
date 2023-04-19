@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "thermal:blizz_projectile",
+  "category": "MISC",
+  "fire_immune": false,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 5,
+  "update_interval": 3,
+  "defaul_loot_table": "thermal:entities/blizz_projectile",
+  "size": {
+    "height": 0.3125,
+    "width": 0.3125,
+    "fixed": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "values": [
+    "#forge:plates/steel",
+    "#forge:plates/aluminum",
+    "#forge:plates/gold",
+    "#forge:plates/elementium",
+    "#forge:plates/lumium",
+    "#forge:plates/signalum",
+    "#forge:plates/manasteel",
+    "#forge:plates/copper",
+    "#forge:plates/invar",
+    "#forge:plates/zinc",
+    "#forge:plates/terrasteel",
+    "#forge:plates/nickel",
+    "#forge:plates/electrum",
+    "#forge:plates/osmium",
+    "#forge:plates/brass",
+    "#forge:plates/constantan",
+    "#forge:plates/lead",
+    "#forge:plates/bronze",
+    "#forge:plates/iron",
+    "#forge:plates/silver",
+    "#forge:plates/uranium",
+    "#forge:plates/bismuth"
+  ]
+}

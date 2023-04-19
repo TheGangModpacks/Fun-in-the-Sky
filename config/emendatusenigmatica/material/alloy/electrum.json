@@ -8,10 +8,7 @@
     "nugget",
     "dust",
     "plate",
-    "gear",
-    "rod",
-    "fluid",
-	"crushed_ore"
+    "fluid"
   ],
   "properties": {
   "materialType": "alloy",
@@ -22,8 +19,8 @@
     "materialColor": "E3C739"
   },
   "compat": {
-    "thermal": true,
+    "thermal": false,
     "mekanism": false,
-    "ars_novea": false
+    "ars_noveau": false
   }
 }
