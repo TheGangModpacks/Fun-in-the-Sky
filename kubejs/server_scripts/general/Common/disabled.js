@@ -16,6 +16,8 @@ ServerEvents.tags('item', event => {
     event.add(tag, "thermal:device_tree_extractor");
     event.add(tag, '/^powah:.*_starter/');
     event.add(tag, '/^powah:.*solar/')
+    event.add(tag, "createaddition:connector")
+    event.add(tag, "createaddition:gold_spool")
 })
 ServerEvents.recipes(event =>{
     //Recipes that are broken, which can likely be fixed in the future.

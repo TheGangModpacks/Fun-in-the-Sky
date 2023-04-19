@@ -1,0 +1,58 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAAABAAAA",
+    "BBACDCABB",
+    "CBBBDBBBC",
+    "CEFBBBGHC",
+    "CCCCICCCC",
+    "CJKBBBLMC",
+    "CBBBDBBBC",
+    "BBACDCABB",
+    "AAAABAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:emerald"
+    },
+    "B": {
+      "item": "mysticalagriculture:supremium_essence"
+    },
+    "C": {
+      "item": "minecraft:emerald_block"
+    },
+    "D": {
+      "item": "pickletweaks:emerald_apple"
+    },
+    "E": {
+      "item": "morevillagers:woodworking_table"
+    },
+    "F": {
+      "item": "morevillagers:decayed_workbench"
+    },
+    "G": {
+      "item": "morevillagers:blueprint_table"
+    },
+    "H": {
+      "item": "morevillagers:mining_bench"
+    },
+    "I": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    },
+    "J": {
+      "item": "morevillagers:hunting_post"
+    },
+    "K": {
+      "item": "morevillagers:oceanography_table"
+    },
+    "L": {
+      "item": "morevillagers:purpur_altar"
+    },
+    "M": {
+      "item": "morevillagers:gardening_table"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:emerald_seeds"
+  }
+}

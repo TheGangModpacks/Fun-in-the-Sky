@@ -1,0 +1,36 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCDCBA",
+    "BABDBAB",
+    "CBABABC",
+    "DDBEBDD",
+    "CBABABC",
+    "BABDBAB",
+    "ABCDCBA"
+  ],
+  "tier": 3,
+  "key": {
+    "A": {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:4.0d,Type:\"mysticalagriculture:ghast\"}"
+    },
+    "B": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:nether_agglomeratio"
+    },
+    "D": {
+      "item": "minecraft:ghast_tear"
+    },
+    "E": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:ghast_seeds"
+  }
+}

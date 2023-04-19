@@ -4,7 +4,7 @@ ServerEvents.recipes(event =>{
 	rolls: [
 	{chance: 0.1, mesh: 'iron'},
 	{chance: 0.3, mesh: 'netherite'}],
-	input: {item: 'minecraft:sand'},
+	input: {item: 'ad_astra:moon_sand'},
 	result: {item: 'rftoolsbase:dimensionalshard'},
 	waterlogged: true })
 	event.remove({output: 'exnihilosequentia:zinc_pieces'})
@@ -65,4 +65,19 @@ ServerEvents.recipes(event =>{
 			{chance: 0.20, mesh: 'diamond'}],
 			input: {item: 'immersiveengineering:slag_gravel'},
 			result:{item: 'emendatusenigmatica:salt_dust'}})
+				event.remove({output: 'emendatusenigmatica:salt_dust'})
+	event.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.10, mesh: 'string'},
+			{chance: 0.20, mesh: 'flint'},
+			{chance: 0.30, mesh: 'iron'},
+			{chance: 0.40, mesh: 'diamond'},
+			{chance: 0.50, mesh: 'emerald'},
+			{chance: 0.55, mesh: 'netherite'},
+			{chance: 0.55, mesh: 'netherite'},
+		],
+			input: {item: '#minecraft:sand'},
+			result:{item: 'minecraft:kelp'},
+			waterlogged: true})
 })

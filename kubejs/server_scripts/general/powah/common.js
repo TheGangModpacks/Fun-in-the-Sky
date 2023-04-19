@@ -90,4 +90,4 @@ ServerEvents.recipes(event =>{
        event.recipes.powah.energizing(["emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot"], Item.of("powah:uraninite", 5), 150000)
        event.recipes.powah.energizing(["emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot", "emendatusenigmatica:uranium_ingot"], Item.of("powah:uraninite", 6), 180000)
        event.recipes.powah.energizing(["emendatusenigmatica:uranium_block"], Item.of("powah:uraninite_block"), 270000)
-    })
+})
