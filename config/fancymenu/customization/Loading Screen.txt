@@ -9,6 +9,17 @@ customization-meta {
 }
 
 customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
+  baseheight = 1080
+  action = autoscale
+  basewidth = 1920
+}
+
+customization {
   keepaspectratio = false
   action = backgroundoptions
 }
@@ -49,13 +60,50 @@ customization {
 }
 
 customization {
-  orientation = mid-centered
+  orientation = bottom-left
   name = loading
-  x = -15
-  width = 30
+  x = 31
+  width = 32
   actionid = df06516c-66b9-4b3b-9576-32c4a12689e31680479112314
   action = addanimation
-  y = -15
-  height = 30
+  y = -90
+  height = 32
+}
+
+customization {
+  orientation = top-left
+  grabber_texture_normal = kubejs/assets/fancymenu/gui/button_dirt_partial_short_pressed.png
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = Loading as {"placeholder":"playername"}
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 38
+  width = 200
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 8ed70f17-03de-4fb0-9483-3dae6d601af01681417708905
+  y = 306
+  alignment = left
+  base_color = #ffff00
+  height = 14
+}
+
+customization {
+  orientation = bottom-left
+  background_texture = kubejs/assets/fancymenu/gui/Progress Bar Background.png
+  bar_texture = kubejs/assets/fancymenu/gui/Progress Bar--.png
+  progress_for_element_orientation = false
+  background_color = #ABC8F7
+  x = 37
+  width = 144
+  bar_color = #5295FF
+  action = custom_layout_element:drippy_custom_loading_bar
+  actionid = ae0513ea-b77b-49bc-b010-b518143c8c4e1681417959124
+  y = -40
+  direction = right
+  height = 16
 }
 

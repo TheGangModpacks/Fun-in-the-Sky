@@ -39,7 +39,7 @@ ServerEvents.recipes(event =>{
      event.remove({ output: "powah:dielectric_paste"})
      
     
-     event.recipes.createMixing([Item.of("powah:dielectric_paste", 12)], [Fluid.of("kubejs:blaze_blood", 25), Item.of("emendatusenigmatica:coal_coke_gem"), Item.of("pneumaticcraft:plastic")])
+     event.recipes.createMixing([Item.of("powah:dielectric_paste", 12)], [Fluid.of("kubejs:blaze_blood", 25), Item.of("thermal:coal_coke"), Item.of("pneumaticcraft:plastic")])
      event.remove({output: 'powah:energy_cell_basic'})
      event.remove({output: 'powah:energy_cable_basic'})
      event.shaped(Item.of("powah:energy_cable_basic", 4), ['aaa', 'bcb', 'aaa'], {a: "powah:dielectric_rod_horizontal",

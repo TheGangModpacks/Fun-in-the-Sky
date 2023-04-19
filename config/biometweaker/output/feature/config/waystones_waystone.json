@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "waystones:waystone",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "waystones:waystone"
+  }
+}

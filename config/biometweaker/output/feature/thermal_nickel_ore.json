@@ -1,0 +1,57 @@
+
+{
+  "registry_name": "thermal:nickel_ore",
+  "worldgen/placed_feature": {
+    "feature": {
+      "config": {
+        "targets": [
+          {
+            "target": {
+              "tag": "minecraft:stone_ore_replaceables",
+              "predicate_type": "minecraft:tag_match"
+            },
+            "state": {
+              "Name": "thermal:nickel_ore"
+            }
+          },
+          {
+            "target": {
+              "tag": "minecraft:deepslate_ore_replaceables",
+              "predicate_type": "minecraft:tag_match"
+            },
+            "state": {
+              "Name": "thermal:deepslate_nickel_ore"
+            }
+          }
+        ],
+        "size": 8,
+        "discard_chance_on_air_exposure": 0.0
+      },
+      "type": "minecraft:ore"
+    },
+    "placement": [
+      {
+        "count": 4,
+        "type": "minecraft:count"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:biome"
+      },
+      {
+        "height": {
+          "min_inclusive": {
+            "absolute": -40
+          },
+          "max_inclusive": {
+            "absolute": 120
+          },
+          "type": "minecraft:trapezoid"
+        },
+        "type": "minecraft:height_range"
+      }
+    ]
+  }
+}

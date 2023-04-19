@@ -1,0 +1,30 @@
+
+{
+  "registry_name": "immersiveengineering:silver",
+  "worldgen/configured_feature": {
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:stone_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "immersiveengineering:ore_silver"
+          }
+        },
+        {
+          "target": {
+            "tag": "minecraft:deepslate_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "immersiveengineering:deepslate_ore_silver"
+          }
+        }
+      ],
+      "type": 2
+    },
+    "type": "immersiveengineering:ie_ore"
+  }
+}

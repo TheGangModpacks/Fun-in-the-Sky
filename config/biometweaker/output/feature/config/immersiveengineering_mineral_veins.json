@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "immersiveengineering:mineral_veins",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "immersiveengineering:mineral_vein"
+  }
+}

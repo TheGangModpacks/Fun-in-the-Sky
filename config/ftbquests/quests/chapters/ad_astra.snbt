@@ -164,7 +164,7 @@
 				"This Questline is very incomplete. Expect changes soon™"
 			]
 			dependencies: ["7602F7AF2F152D28"]
-			invisible: true
+			hide: true
 			invisible_until_tasks: 1
 			id: "269B8241C07AB642"
 			tasks: [{

@@ -29,6 +29,12 @@ ServerEvents.recipes(event =>{
 			{chance: 0.39, mesh: 'netherite'}],
 			input: {item: 'immersiveengineering:slag_gravel'},
 			result:{item: 'exnihilosequentia:lead_pieces'}})
+	event.custom({
+			type: sieve,
+			rolls:[
+				{chance: 0.02, mesh: 'flint'}],
+				input: {item: 'minecraft:gravel'},
+				result:{item: 'exnihilosequentia:lead_pieces'}})
 	event.remove({output: 'exnihilosequentia:tin_pieces'})
 	event.custom({
 		type: sieve,

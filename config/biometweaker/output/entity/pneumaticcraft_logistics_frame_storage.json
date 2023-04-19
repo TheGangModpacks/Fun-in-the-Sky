@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "pneumaticcraft:logistics_frame_storage",
+  "category": "MISC",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 3,
+  "update_interval": 2147483647,
+  "defaul_loot_table": "pneumaticcraft:entities/logistics_frame_storage",
+  "size": {
+    "height": 0.5625,
+    "width": 0.625,
+    "fixed": false
+  }
+}

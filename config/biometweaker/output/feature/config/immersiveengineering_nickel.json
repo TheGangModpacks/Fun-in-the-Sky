@@ -1,0 +1,30 @@
+
+{
+  "registry_name": "immersiveengineering:nickel",
+  "worldgen/configured_feature": {
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:stone_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "immersiveengineering:ore_nickel"
+          }
+        },
+        {
+          "target": {
+            "tag": "minecraft:deepslate_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "immersiveengineering:deepslate_ore_nickel"
+          }
+        }
+      ],
+      "type": 3
+    },
+    "type": "immersiveengineering:ie_ore"
+  }
+}

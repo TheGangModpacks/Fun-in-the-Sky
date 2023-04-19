@@ -6,4 +6,6 @@
 	boneDropRate = 0.15
 	#Chance for the Soul Heart to return a Blue Heart Canister after being broken
 	soulHeartReturnChance = 1.0
+	#How often do echo shards drop from Warden? (1.0 = 100 % and 0.0 means 0%)
+	echoShardDropRate = 0.5
 

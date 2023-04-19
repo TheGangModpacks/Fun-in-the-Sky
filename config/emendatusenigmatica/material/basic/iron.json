@@ -9,7 +9,8 @@
     "plate",
     "gear",
     "rod",
-	"paxel"
+	"paxel",
+  "crushed_ore"
   ],
   "properties": {
     "materialType": "metal",

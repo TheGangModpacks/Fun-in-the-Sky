@@ -1,0 +1,293 @@
+
+{
+  "registry_name": "ad_astra:infernal_venus_barrens",
+  "biome": {
+    "precipitation": "rain",
+    "temperature": 1.6,
+    "downfall": 1.0,
+    "effects": {
+      "particle": {
+        "options": {
+          "type": "minecraft:crimson_spore"
+        },
+        "probability": 0.014
+      },
+      "sky_color": -3044526,
+      "foliage_color": 7842607,
+      "grass_color": 9551193,
+      "fog_color": -3044526,
+      "water_color": 4159204,
+      "water_fog_color": 329011
+    },
+    "features": {
+      "RAW_GENERATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:delta"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:basalt_pillar"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:basalt_blobs"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:blackstone_blobs"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:spring_delta"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:patch_soul_fire"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_magma"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:spring_closed_double"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "ad_astra:small_infernal_spire_column"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "ad_astra:large_infernal_spire_column"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "ad_astra:venus_coal_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "ad_astra:venus_gold_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "ad_astra:venus_diamond_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "ad_astra:venus_calorite_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_raw_generation"
+        }
+      ],
+      "LAKES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_lakes"
+        }
+      ],
+      "LOCAL_MODIFICATIONS": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_local_modifications"
+        }
+      ],
+      "UNDERGROUND_STRUCTURES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:rogue_spawner_deep"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon_deep"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_underground_structures"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon_2"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:rogue_spawner"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon_2_deep"
+        }
+      ],
+      "SURFACE_STRUCTURES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_surface_structures"
+        }
+      ],
+      "STRONGHOLDS": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_strongholds"
+        }
+      ],
+      "UNDERGROUND_ORES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:lead_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:cinnabar_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:nickel_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:silver_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_underground_ores"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:niter_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:apatite_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:sulfur_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:tin_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:mineral_veins"
+        }
+      ],
+      "UNDERGROUND_DECORATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_underground_decoration"
+        }
+      ],
+      "FLUID_SPRINGS": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_fluid_springs"
+        }
+      ],
+      "VEGETAL_DECORATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_vegetal_decoration"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "waystones:waystone"
+        }
+      ],
+      "TOP_LAYER_MODIFICATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_top_layer_modification"
+        }
+      ]
+    },
+    "carver": {
+      "AIR": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:cave"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:cave_extra_underground"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:canyon"
+        }
+      ]
+    },
+    "spawner_data": {
+      "creature_spawn_probability": 0.2,
+      "spawners": {
+        "monster": [
+          {
+            "type": "ad_astra:mogler",
+            "weight": 100,
+            "minCount": 1,
+            "maxCount": 3
+          },
+          {
+            "type": "ad_astra:sulfur_creeper",
+            "weight": 100,
+            "minCount": 1,
+            "maxCount": 3
+          },
+          {
+            "type": "ad_astra:zombified_pygro",
+            "weight": 100,
+            "minCount": 1,
+            "maxCount": 2
+          },
+          {
+            "type": "quark:toretoise",
+            "weight": 120,
+            "minCount": 2,
+            "maxCount": 4
+          },
+          {
+            "type": "quark:stoneling",
+            "weight": 80,
+            "minCount": 1,
+            "maxCount": 1
+          }
+        ],
+        "creature": [],
+        "ambient": [],
+        "axolotls": [],
+        "underground_water_creature": [],
+        "water_creature": [],
+        "water_ambient": [],
+        "misc": []
+      },
+      "spawn_costs": {
+        "ad_astra:mogler": {
+          "energy_budget": 0.015,
+          "charge": 0.2
+        },
+        "ad_astra:sulfur_creeper": {
+          "energy_budget": 0.02,
+          "charge": 0.2
+        },
+        "ad_astra:zombified_pygro": {
+          "energy_budget": 0.012,
+          "charge": 0.2
+        },
+        "quark:wraith": {
+          "energy_budget": 0.7,
+          "charge": 0.15
+        },
+        "quark:foxhound": {
+          "energy_budget": 0.7,
+          "charge": 0.15
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+
+{
+  "registry_name": "minecraft:overworld",
+  "dimension": {
+    "type": "minecraft:overworld",
+    "generator": {
+      "biome_source": {
+        "preset": "minecraft:overworld",
+        "type": "minecraft:multi_noise"
+      },
+      "settings": "minecraft:overworld",
+      "type": "minecraft:noise"
+    }
+  }
+}

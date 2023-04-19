@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "emendatusenigmatica:vanilla_overworld_uranium_ore_deposit",
+  "step": "underground_ores"
+}

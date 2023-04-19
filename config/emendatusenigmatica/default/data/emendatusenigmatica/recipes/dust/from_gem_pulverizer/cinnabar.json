@@ -1,0 +1,11 @@
+{
+  "type": "thermal:pulverizer",
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": {
+    "tag": "forge:gems/cinnabar"
+  },
+  "results": {
+    "count": 1,
+    "item": "emendatusenigmatica:cinnabar_dust"
+  }
+}

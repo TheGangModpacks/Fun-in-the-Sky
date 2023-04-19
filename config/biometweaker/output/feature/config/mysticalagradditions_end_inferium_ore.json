@@ -1,0 +1,22 @@
+
+{
+  "registry_name": "mysticalagradditions:end_inferium_ore",
+  "worldgen/configured_feature": {
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:end_stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "mysticalagradditions:end_inferium_ore"
+          }
+        }
+      ],
+      "size": 8,
+      "discard_chance_on_air_exposure": 0.0
+    },
+    "type": "minecraft:ore"
+  }
+}

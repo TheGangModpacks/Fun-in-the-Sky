@@ -1,0 +1,29 @@
+type = menu
+
+customization-meta {
+  identifier = %fancymenu:universal_layout%
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  max_range_value = 100
+  min_range_value = 10
+  slider_type = range
+  linked_variable = 345154
+  x = 282
+  width = 100
+  action = custom_layout_element:fancymenu_customization_item_slider
+  actionid = d55391a5-84ad-467c-bbcf-c1252b5812da1677883099249
+  y = 139
+  height = 20
+}
+

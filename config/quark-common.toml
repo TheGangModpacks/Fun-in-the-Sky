@@ -165,6 +165,12 @@
 	[building.thatch]
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
+		#This feature disables itself if any of the following mods are loaded: 
+		# - goated
+		# - environmental
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
 
 	[building.rope]
 		#Set to true to allow ropes to move Tile Entities even if Pistons Push TEs is disabled.
@@ -252,6 +258,10 @@
 	[building.celebratory_lamps]
 		"Light Level" = 15
 
+	[building.vertical_slabs]
+		#Should Walls and Panes attempt to connect to the side of Vertical Slabs?
+		"Allow Side Connections" = true
+
 [management]
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
@@ -259,7 +269,7 @@
 	"Hotbar Changer" = true
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = true
-	"Automatic Took Restock" = true
+	"Automatic Tool Restock" = true
 
 	[management.quick_armor_swapping]
 		"Swap Off Hand" = true
@@ -283,7 +293,7 @@
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
 
-	[management.automatic_took_restock]
+	[management.automatic_tool_restock]
 		#This feature disables itself if any of the following mods are loaded: 
 		# - inventorytweaks
 		#This is done to prevent content overlap.
@@ -296,6 +306,8 @@
 		#Enable comparing enchantments to find a replacement
 		"Enable Enchant Matching" = true
 		"Unstackables Only" = false
+		#Allow pulling items from one hotbar slot to another
+		"Check Hotbar" = false
 
 [tools]
 	Trowel = true
@@ -441,6 +453,10 @@
 		"Deepslate Tweak Needs Haste2" = true
 		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
 		"Librarians Exchange Ancient Tomes" = true
+		#Applying a tome will also randomly curse your item
+		"Curse Gear" = false
+		#Allows combining tomes with normal books
+		"Combine With Books" = true
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -476,6 +492,7 @@
 	"More Note Block Sounds" = true
 	"More Banner Layers" = true
 	"Lock Rotation" = true
+	"Horses Swim" = true
 	"Hoe Harvesting" = true
 	"Grab Chickens" = true
 	"Gold Tools Have Fortune" = true
@@ -525,6 +542,8 @@
 		"Easy Sticks" = true
 		#Can raw ore blocks be smelted, taking 9x the time a normal item?
 		"Smelt Raw Ore Blocks" = true
+		#Can you craft a boat around a chest to directly make a chest boat?
+		"Enable Chest Boats" = true
 
 	[tweaks.simple_harvest]
 		#Can players harvest crops with empty hand clicks?
@@ -651,6 +670,15 @@
 		"Disable Recipe Book" = false
 		#If enabled, advancements granting recipes will be stopped from loading, potentially reducing the lagspike on first world join.
 		"Filter Recipe Advancements" = true
+
+	[tweaks.double_door_opening]
+		#This feature disables itself if any of the following mods are loaded: 
+		# - utilitix
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+		"Enable Doors" = true
+		"Enable Fence Gates" = true
 
 [world]
 	"Spiral Spires" = true
@@ -1210,6 +1238,14 @@
 		#Allowed values: [0,)
 		"Ancient City Loot Quality" = 1
 
+	[world.glimmering_weald]
+		#Experimental, dont change if you dont know what you are doing. Depth max value until which biome will spawn. Increasing will make biome appear more often
+		#Allowed values: [-2,2]
+		"Max Weirdness Range" = 2.0
+		#Experimental, dont change if you dont know what you are doing. Depth min value from which biome will spawn. Decreasing will make biome appear more often
+		#Allowed values: [-2,2]
+		"Min Depth Range" = 1.5499999523162842
+
 [mobs]
 	Wraith = true
 	Toretoise = true
@@ -1457,7 +1493,7 @@
 		"Fuel Time Divisor" = 200
 		#The value of each shank of food. Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
-		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang"]
+		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife"]
 		#A list of additional stacks to display on each enchantment
 		#The format is as follows:
 		#enchant_id=item1,item2,item3...
@@ -1524,6 +1560,9 @@
 		"Disable Ice Roads" = true
 		#Makes Sheep not drop Wool when killed
 		"Disable Wool Drops" = true
+		#Disables mob griefing for only specific entities
+		"Enable Selective Mob Griefing" = true
+		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
 
 	[experimental.enchantments_begone]
 		"Enchantments To Begone" = []

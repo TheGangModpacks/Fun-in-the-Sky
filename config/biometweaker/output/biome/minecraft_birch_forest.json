@@ -1,0 +1,625 @@
+
+{
+  "registry_name": "minecraft:birch_forest",
+  "biome": {
+    "precipitation": "rain",
+    "temperature": 0.6,
+    "downfall": 0.6,
+    "effects": {
+      "mood_sound": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000,
+        "block_search_extent": 8,
+        "offset": 2.0
+      },
+      "music": {
+        "sound": "minecraft:music.overworld.jungle_and_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "sky_color": 8037887,
+      "fog_color": 12638463,
+      "water_color": 4159204,
+      "water_fog_color": 329011
+    },
+    "features": {
+      "RAW_GENERATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_raw_generation"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "rftoolsdim:rftfeature"
+        }
+      ],
+      "LAKES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:lake_lava_underground"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:lake_lava_surface"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "pneumaticcraft:oil_lake_underground"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "pneumaticcraft:oil_lake_surface"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_lakes"
+        }
+      ],
+      "LOCAL_MODIFICATIONS": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:amethyst_geode"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_local_modifications"
+        }
+      ],
+      "UNDERGROUND_STRUCTURES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:monster_room"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:monster_room_deep"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:rogue_spawner_deep"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon_deep"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_underground_structures"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon_2"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "artifacts:underground_campsite"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:rogue_spawner"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "apotheosis:boss_dungeon_2_deep"
+        }
+      ],
+      "SURFACE_STRUCTURES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_surface_structures"
+        }
+      ],
+      "STRONGHOLDS": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_strongholds"
+        }
+      ],
+      "UNDERGROUND_ORES": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_dirt"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_gravel"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_granite_upper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_granite_lower"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_diorite_upper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_diorite_lower"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_andesite_upper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_andesite_lower"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_tuff"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_coal_upper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_coal_lower"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_iron_upper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_iron_middle"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_iron_small"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_gold"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_gold_lower"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_redstone"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_redstone_lower"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_diamond"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_diamond_large"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_diamond_buried"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_lapis"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_lapis_buried"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:ore_copper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:underwater_magma"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:disk_sand"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:disk_clay"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:disk_gravel"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "powah:uraninite_ore_poor"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "powah:uraninite_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "powah:uraninite_ore_dense"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "create:striated_ores_overworld"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "create:zinc_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mysticalagriculture:inferium_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:lead_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_lead_normal"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:silver"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:lead"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:uranium"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mysticalagriculture:prosperity_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "bigreactors:yellorite_deepslate_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:cinnabar_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:bauxite"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_tin_small"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_tin_large"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:nickel_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:silver_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_underground_ores"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:niter_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_fluorite_normal"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_fluorite_buried"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_uranium_small"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_uranium_buried"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:deep_nickel"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:nickel"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "bigreactors:yellorite_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_osmium_upper"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_osmium_middle"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:ore_osmium_small"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:apatite_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "rftoolsbase:dimshard_dimensions"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "rftoolsbase:dimshard_overworld"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "mekanism:salt"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:sulfur_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "thermal:tin_ore"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "immersiveengineering:mineral_veins"
+        }
+      ],
+      "UNDERGROUND_DECORATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_underground_decoration"
+        }
+      ],
+      "FLUID_SPRINGS": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:spring_water"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:spring_lava"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_fluid_springs"
+        }
+      ],
+      "VEGETAL_DECORATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:glow_lichen"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:forest_flowers"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:trees_birch"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:flower_default"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:patch_grass_forest"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:brown_mushroom_normal"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:red_mushroom_normal"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:patch_sugar_cane"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:patch_pumpkin"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "farmersdelight:patch_wild_carrots"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "delightful:patch_wild_salmonberries"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "botania:mystical_mushrooms"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_vegetal_decoration"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "botania:mystical_flowers"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "waystones:waystone"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "farmersdelight:patch_wild_onions"
+        }
+      ],
+      "TOP_LAYER_MODIFICATION": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:freeze_top_layer"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "quark:deferred_feature_top_layer_modification"
+        }
+      ]
+    },
+    "carver": {
+      "AIR": [
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:cave"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:cave_extra_underground"
+        },
+        {
+          "kind": "REFERENCE",
+          "registry_name": "minecraft:canyon"
+        }
+      ]
+    },
+    "spawner_data": {
+      "spawners": {
+        "monster": [
+          {
+            "type": "minecraft:spider",
+            "weight": 100,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:zombie",
+            "weight": 95,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:zombie_villager",
+            "weight": 5,
+            "minCount": 1,
+            "maxCount": 1
+          },
+          {
+            "type": "minecraft:skeleton",
+            "weight": 100,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:creeper",
+            "weight": 100,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:slime",
+            "weight": 100,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:enderman",
+            "weight": 10,
+            "minCount": 1,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:witch",
+            "weight": 5,
+            "minCount": 1,
+            "maxCount": 1
+          },
+          {
+            "type": "quark:toretoise",
+            "weight": 120,
+            "minCount": 2,
+            "maxCount": 4
+          },
+          {
+            "type": "quark:stoneling",
+            "weight": 80,
+            "minCount": 1,
+            "maxCount": 1
+          }
+        ],
+        "creature": [
+          {
+            "type": "minecraft:sheep",
+            "weight": 12,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:pig",
+            "weight": 10,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:chicken",
+            "weight": 10,
+            "minCount": 4,
+            "maxCount": 4
+          },
+          {
+            "type": "minecraft:cow",
+            "weight": 8,
+            "minCount": 4,
+            "maxCount": 4
+          }
+        ],
+        "ambient": [
+          {
+            "type": "minecraft:bat",
+            "weight": 10,
+            "minCount": 8,
+            "maxCount": 8
+          }
+        ],
+        "axolotls": [],
+        "underground_water_creature": [
+          {
+            "type": "minecraft:glow_squid",
+            "weight": 10,
+            "minCount": 4,
+            "maxCount": 6
+          }
+        ],
+        "water_creature": [],
+        "water_ambient": [],
+        "misc": []
+      },
+      "spawn_costs": {
+        "quark:wraith": {
+          "energy_budget": 0.7,
+          "charge": 0.15
+        },
+        "quark:foxhound": {
+          "energy_budget": 0.7,
+          "charge": 0.15
+        }
+      }
+    }
+  }
+}

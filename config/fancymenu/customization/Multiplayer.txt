@@ -1,0 +1,126 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=346948%
+  action = setbuttonlabel
+  value = Connect
+}
+
+customization {
+  identifier = %id=346948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=450948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=580972%
+  action = setbuttonlabel
+  value = Done
+}
+
+customization {
+  identifier = %id=580972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_shorter_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_shorter.png
+}
+
+customization {
+  identifier = %id=504972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_shorter_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_shorter.png
+}
+
+customization {
+  identifier = %id=554948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=34636%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=45036%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=55436%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=55%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_short_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_short.png
+}
+
+customization {
+  identifier = %id=346972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_shorter_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_shorter.png
+}
+
+customization {
+  identifier = %id=426972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/fancymenu/gui/button_grassy_partial_shorter_pressed.png
+  backgroundnormal = kubejs/assets/fancymenu/gui/button_dirt_partial_shorter.png
+}
+

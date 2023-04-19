@@ -6,6 +6,8 @@ disable_equipment_damage = true
 #Time in ticks that it takes for a dummy to be considered out of combat after having recieved damage
 #Range: 20 ~ 1000
 maximum_out_of_combat_interval = 120
+#Makes monsters target a dummy that is wearing a player head
+dummy_decoy = false
 
 [scarecrow]
 	#Equip a dummy with a pumpkin to make hit act as a scarecrow

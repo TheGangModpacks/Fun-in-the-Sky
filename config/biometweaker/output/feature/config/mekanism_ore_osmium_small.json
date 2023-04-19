@@ -1,0 +1,33 @@
+
+{
+  "registry_name": "mekanism:ore_osmium_small",
+  "worldgen/configured_feature": {
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:stone_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "mekanism:osmium_ore"
+          }
+        },
+        {
+          "target": {
+            "tag": "minecraft:deepslate_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "mekanism:deepslate_osmium_ore"
+          }
+        }
+      ],
+      "oreVeinType": {
+        "type": "osmium",
+        "index": 2
+      }
+    },
+    "type": "mekanism:ore"
+  }
+}

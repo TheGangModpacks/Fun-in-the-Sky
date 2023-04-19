@@ -1,0 +1,22 @@
+
+{
+  "registry_name": "rftoolsbase:dimshard_end",
+  "worldgen/configured_feature": {
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:end_stones",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "rftoolsbase:dimensionalshard_end"
+          }
+        }
+      ],
+      "size": 10,
+      "discard_chance_on_air_exposure": 0.0
+    },
+    "type": "minecraft:ore"
+  }
+}

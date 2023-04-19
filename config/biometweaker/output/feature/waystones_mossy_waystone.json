@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "waystones:mossy_waystone",
+  "worldgen/placed_feature": {
+    "feature": {
+      "config": {},
+      "type": "waystones:mossy_waystone"
+    },
+    "placement": [
+      {
+        "heightmap": "OCEAN_FLOOR_WG",
+        "type": "waystones:waystone"
+      }
+    ]
+  }
+}

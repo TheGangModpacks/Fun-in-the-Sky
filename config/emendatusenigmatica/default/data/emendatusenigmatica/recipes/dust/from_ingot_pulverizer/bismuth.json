@@ -1,0 +1,12 @@
+{
+  "type": "thermal:pulverizer",
+  "energy_mod": 0.5,
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": {
+    "tag": "forge:ingots/bismuth"
+  },
+  "results": {
+    "count": 1,
+    "item": "emendatusenigmatica:bismuth_dust"
+  }
+}

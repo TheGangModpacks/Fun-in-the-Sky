@@ -1,7 +1,7 @@
 {
 	id: "0CD6D4CF195A8C4A"
 	group: "45EE6B8D98E9487B"
-	order_index: 9
+	order_index: 6
 	filename: "powah"
 	title: "Powah!"
 	icon: "powah:thermo_generator_nitro"
@@ -21,7 +21,7 @@
 				"&oFor the record, you don't have to worry about carbon emissions in Minecraft."
 			]
 			dependencies: ["1F788C5B5AF4DEF7"]
-			invisible: true
+			hide: true
 			invisible_until_tasks: 1
 			id: "64A609C5C723910D"
 			tasks: [{

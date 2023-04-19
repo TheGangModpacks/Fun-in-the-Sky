@@ -1,3 +1,9 @@
+#A list of strings that will prevent the dark shader to be used.
+#Each string consists of the class and the method or any part of it to prevent the use of the dark shader.
+#The dump will consist of a bunch of string with this style 'net.minecraftforge.client.gui.overlay.ForgeGui:renderHunger' (class:method), any part of that dump (like just using renderHunger) will prevent the hunger bar from using the dark shader.
+METHOD_SHADER_BLACKLIST = ["mezz.jei.common.render.FluidTankRenderer:drawTextureWithMasking", "renderCrosshair", "net.minecraft.client.gui.screens.TitleScreen", "renderSky", "renderHotbar", "setupOverlayRenderState", "net.minecraftforge.client.gui.overlay.ForgeGui", "renderFood", "renderExperienceBar"]
+#Enabling this config will dump every 5 seconds which classes & methods were used to render something in the screen and the dark shader was trying to be used
+METHOD_SHADER_DUMP = false
 
 ["Button Position"]
 	#Pixels away from the bottom left of the GUI in the x axis
