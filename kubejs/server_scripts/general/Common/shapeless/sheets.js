@@ -192,15 +192,6 @@ ServerEvents.recipes(event =>{
   ]
 )
 	event.shapeless(
-  Item.of('emendatusenigmatica:zinc_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:zinc_ingot',
-	'emendatusenigmatica:zinc_ingot',
-	'emendatusenigmatica:zinc_ingot'
-  ]
-)
-	event.shapeless(
   Item.of('emendatusenigmatica:gold_plate'),
   [ 
     'immersiveengineering:hammer',

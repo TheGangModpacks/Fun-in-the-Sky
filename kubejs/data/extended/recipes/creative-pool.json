@@ -2,13 +2,13 @@
   "type": "extendedcrafting:shaped_table",
   "pattern": [
     "AAAAAAAAA",
-    "ABCDDDCEA",
+    "ABCDWDCEA",
     "AFGHIHJFA",
     "AKHLMLHKA",
     "NOIMPMION",
     "QKHLMLHKQ",
     "QFRHSHTFQ",
-    "QUCDDDCVQ",
+    "QUCDWDCVQ",
     "QQQQQQQQQ"
   ],
   "key": {
@@ -46,7 +46,7 @@
       "item": "botania:elementium_block"
     },
     "L": {
-      "item": "botania:fabulous_pool"
+      "item": "botanicadds:dreaming_pool"
     },
     "M": {
       "type": "forge:nbt",
@@ -80,6 +80,9 @@
     },
     "V": {
       "item": "botania:rune_sloth"
+    },
+    "W": {
+      "item": "botanicadds:gaiasteel_block"
     }
   },
   "result": {

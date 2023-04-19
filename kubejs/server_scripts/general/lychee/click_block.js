@@ -21,11 +21,17 @@ ServerEvents.recipes(event =>{
 		item_in: {
 			item: 'exnihilosequentia:sea_water_bucket'
 		},
-		block_in: 'botania:diluted_pool',
+		block_in: 'minecraft:cauldron',
 		post: [
 		{
-			type: 'drop_item',
-			item: 'minecraft:bucket'
+			type: 'execute',
+			command: 'give @p minecraft:bucket',
+			hide: true
+		},
+		{
+			type: 'execute',
+			command: 'playsound botania:air_rod block @p',
+			hide: true
 		},
 		{
 		   type: 'place',
@@ -45,4 +51,15 @@ ServerEvents.recipes(event =>{
 		   block: 'botania:fabulous_pool'
 		}
 	})
+	event.custom({
+		type: 'lychee:block_interacting',
+		item_in: {
+			item: 'botania:gaia_ingot'
+		},
+		block_in: 'botania:fabulous_pool',
+		post: {
+			type: 'place',
+			block: 'botanicadds:dreaming_pool'
+		}
+	}).id('botanicadds:dreaming_pool')
 })
