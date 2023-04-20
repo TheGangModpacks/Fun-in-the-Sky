@@ -257,6 +257,7 @@
 		{
 			x: 18.0d
 			y: 0.0d
+			subtitle: "Needs a little magic"
 			dependencies: ["2C67090F17275058"]
 			id: "68E598EE354627D8"
 			tasks: [
@@ -686,6 +687,8 @@
 		{
 			x: 11.0d
 			y: 3.0d
+			subtitle: "Fabulous!"
+			description: ["The rod of the bifrost isnt needed for this anymore but you will need it later."]
 			dependencies: ["59A00B6564C09A9F"]
 			id: "14E3325A1BA1C6AC"
 			tasks: [{
@@ -801,6 +804,73 @@
 					item: "botania:corporea_index"
 				}
 			]
+		}
+		{
+			x: 10.5d
+			y: 4.5d
+			subtitle: "Am I dreaming?"
+			description: ["Holds twice as much mana as a regular pool. Go compact your setup!"]
+			dependencies: ["14E3325A1BA1C6AC"]
+			id: "331361BF67298194"
+			tasks: [{
+				id: "550E4F80974B7B6B"
+				type: "item"
+				item: "botanicadds:dreaming_pool"
+			}]
+		}
+		{
+			x: 21.5d
+			y: 1.5d
+			subtitle: "Finally"
+			description: ["This plate makes terrasteel more efficiently while also allowing you to make gaiasteel!"]
+			dependencies: ["294BA107CD584A41"]
+			id: "7ABFC33E8244376F"
+			tasks: [{
+				id: "1F3B10CD0F2E35C5"
+				type: "item"
+				item: "botanicadds:gaia_plate"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 3.0d
+			subtitle: "Alfsteel?"
+			description: [
+				"Refined gaia spirit that can be used for some overpowered things."
+				""
+				"Basically like alfsteel but red if you have used it before."
+			]
+			dependencies: ["7ABFC33E8244376F"]
+			id: "31D33EAB7E6EF819"
+			tasks: [{
+				id: "393C81EFA9F473F3"
+				type: "item"
+				item: "botanicadds:gaiasteel_ingot"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			description: ["You can attach sparks to this instead of needing a spreader."]
+			dependencies: ["02F8163D60C0DF7E"]
+			id: "36A3E8447DE3EA58"
+			tasks: [{
+				id: "626BDC3868F972DA"
+				type: "item"
+				item: "botanicadds:elven_altar"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 3.0d
+			description: ["You can attach sparks to this instead of needing a spreader."]
+			dependencies: ["4461F93DCB3AADCF"]
+			id: "0AC359CAAB136252"
+			tasks: [{
+				id: "55D2967038B34B98"
+				type: "item"
+				item: "botanicadds:elven_brewery"
+			}]
 		}
 	]
 	quest_links: [ ]

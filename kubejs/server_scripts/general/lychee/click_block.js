@@ -51,4 +51,15 @@ ServerEvents.recipes(event =>{
 		   block: 'botania:fabulous_pool'
 		}
 	})
+	event.custom({
+		type: 'lychee:block_interacting',
+		item_in: {
+			item: 'botania:gaia_ingot'
+		},
+		block_in: 'botania:fabulous_pool',
+		post: {
+			type: 'place',
+			block: 'botanicadds:dreaming_pool'
+		}
+	}).id('botanicadds:dreaming_pool')
 })
