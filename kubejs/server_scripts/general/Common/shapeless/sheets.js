@@ -1,4 +1,4 @@
-ServerEvents.recipes(event =>{
+ServerEvents.recipes(event => {
 	event.remove({ id: 'immersiveengineering:crafting/plate_copper_hammering' })
 	event.remove({ id: 'emendatusenigmatica:plate/from_ingot/copper' })
 	event.remove({ id: 'immersiveengineering:crafting/plate_nickel_hammering' })
@@ -35,6 +35,7 @@ ServerEvents.recipes(event =>{
 	event.remove({ id: 'immersiveengineering:crafting/plate_iron_hammering' })
 	event.remove({ id: 'emendatusenigmatica:plate/from_ingot/iron' })
 	event.remove({ id: 'create:pressing/iron_ingot' })
+	event.remove({ id: 'ad_astra:hammering/iron_plate' })
 	event.remove({ id: 'createaddition:pressing/lead_ingot' })
 	event.remove({ id: 'createaddition:pressing/nickel_ingot' })
 	event.remove({ id: 'createaddition:pressing/constantan_ingot' })
@@ -65,403 +66,604 @@ ServerEvents.recipes(event =>{
 	event.remove({ id: 'thermal:machines/press/press_gold_ingot_to_plate' })
 	event.remove({ id: 'thermal:machines/press/press_copper_ingot_to_plate' })
 	event.remove({ id: 'thermal:machines/press/press_iron_ingot_to_plate' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot/osmium' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/osmium' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/zinc' })
+
+	event.remove({ id: 'ad_astra:compressing/steel_plate_from_compressing_steel_ingot' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/aluminum' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/nickel' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/constantan' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/lead' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/silver' })
+	event.remove({ id: 'emendatusenigmatica:plate/from_ingot_press/uranium' })
+
 	event.shapeless(
-  Item.of('emendatusenigmatica:copper_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'minecraft:copper_ingot',
-	'minecraft:copper_ingot',
-	'minecraft:copper_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:copper_plate'),
+		[
+			'immersiveengineering:hammer',
+			'minecraft:copper_ingot',
+			'minecraft:copper_ingot',
+			'minecraft:copper_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:nickel_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:nickel_ingot',
-	'emendatusenigmatica:nickel_ingot',
-	'emendatusenigmatica:nickel_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:nickel_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:nickel_ingot',
+			'emendatusenigmatica:nickel_ingot',
+			'emendatusenigmatica:nickel_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:steel_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:steel_ingot',
-	'emendatusenigmatica:steel_ingot',
-	'emendatusenigmatica:steel_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:steel_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:steel_ingot',
+			'emendatusenigmatica:steel_ingot',
+			'emendatusenigmatica:steel_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:electrum_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:electrum_ingot',
-	'emendatusenigmatica:electrum_ingot',
-	'emendatusenigmatica:electrum_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:electrum_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:electrum_ingot',
+			'emendatusenigmatica:electrum_ingot',
+			'emendatusenigmatica:electrum_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:aluminum_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:aluminum_ingot',
-	'emendatusenigmatica:aluminum_ingot',
-	'emendatusenigmatica:aluminum_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:aluminum_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:aluminum_ingot',
+			'emendatusenigmatica:aluminum_ingot',
+			'emendatusenigmatica:aluminum_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:brass_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:brass_ingot',
-	'emendatusenigmatica:brass_ingot',
-	'emendatusenigmatica:brass_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:brass_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:brass_ingot',
+			'emendatusenigmatica:brass_ingot',
+			'emendatusenigmatica:brass_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:constantan_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:constantan_ingot',
-	'emendatusenigmatica:constantan_ingot',
-	'emendatusenigmatica:constantan_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:constantan_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:constantan_ingot',
+			'emendatusenigmatica:constantan_ingot',
+			'emendatusenigmatica:constantan_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:lead_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:lead_ingot',
-	'emendatusenigmatica:lead_ingot',
-	'emendatusenigmatica:lead_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:lead_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:lead_ingot',
+			'emendatusenigmatica:lead_ingot',
+			'emendatusenigmatica:lead_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:bronze_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:bronze_plate',
-	'emendatusenigmatica:bronze_plate',
-	'emendatusenigmatica:bronze_plate'
-  ]
-)
+		Item.of('emendatusenigmatica:bronze_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:bronze_plate',
+			'emendatusenigmatica:bronze_plate',
+			'emendatusenigmatica:bronze_plate'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:lumium_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:lumium_ingot',
-	'emendatusenigmatica:lumium_ingot',
-	'emendatusenigmatica:lumium_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:lumium_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:lumium_ingot',
+			'emendatusenigmatica:lumium_ingot',
+			'emendatusenigmatica:lumium_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:signalum_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:signalum_ingot',
-	'emendatusenigmatica:signalum_ingot',
-	'emendatusenigmatica:signalum_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:signalum_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:signalum_ingot',
+			'emendatusenigmatica:signalum_ingot',
+			'emendatusenigmatica:signalum_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:invar_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:invar_ingot',
-	'emendatusenigmatica:invar_ingot',
-	'emendatusenigmatica:invar_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:invar_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:invar_ingot',
+			'emendatusenigmatica:invar_ingot',
+			'emendatusenigmatica:invar_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:silver_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:silver_ingot',
-	'emendatusenigmatica:silver_ingot',
-	'emendatusenigmatica:silver_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:silver_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:silver_ingot',
+			'emendatusenigmatica:silver_ingot',
+			'emendatusenigmatica:silver_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:uranium_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'emendatusenigmatica:uranium_ingot',
-	'emendatusenigmatica:uranium_ingot',
-	'emendatusenigmatica:uranium_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:uranium_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:uranium_ingot',
+			'emendatusenigmatica:uranium_ingot',
+			'emendatusenigmatica:uranium_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:gold_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'minecraft:gold_ingot',
-	'minecraft:gold_ingot',
-	'minecraft:gold_ingot'
-  ]
-)
+		Item.of('emendatusenigmatica:zinc_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:zinc_ingot',
+			'emendatusenigmatica:zinc_ingot',
+			'emendatusenigmatica:zinc_ingot'
+		]
+	)
 	event.shapeless(
-  Item.of('emendatusenigmatica:iron_plate'),
-  [ 
-    'immersiveengineering:hammer',
-    'minecraft:iron_ingot',
-	'minecraft:iron_ingot',
-	'minecraft:iron_ingot'
-  ]
-)
-    event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:nickel_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:nickel_plate', count: 2 }]
-		
-	})
+		Item.of('emendatusenigmatica:gold_plate'),
+		[
+			'immersiveengineering:hammer',
+			'minecraft:gold_ingot',
+			'minecraft:gold_ingot',
+			'minecraft:gold_ingot'
+		]
+	)
+	event.shapeless(
+		Item.of('emendatusenigmatica:iron_plate'),
+		[
+			'immersiveengineering:hammer',
+			'minecraft:iron_ingot',
+			'minecraft:iron_ingot',
+			'minecraft:iron_ingot'
+		]
+	)
+	event.shapeless(
+		Item.of('emendatusenigmatica:osmium_plate'),
+		[
+			'immersiveengineering:hammer',
+			'emendatusenigmatica:osmium_ingot',
+			'emendatusenigmatica:osmium_ingot',
+			'emendatusenigmatica:osmium_ingot'
+		]
+	)
+	event.shapeless(
+		Item.of('emendatusenigmatica:manasteel_plate'),
+		[
+			'immersiveengineering:hammer',
+			'botania:manasteel_ingot',
+			'botania:manasteel_ingot',
+			'botania:manasteel_ingot'
+		]
+	)
+	event.shapeless(
+		Item.of('emendatusenigmatica:elementium_plate'),
+		[
+			'immersiveengineering:hammer',
+			'botania:elementium_ingot',
+			'botania:elementium_ingot',
+			'botania:elementium_ingot'
+		]
+	)
+	event.shapeless(
+		Item.of('emendatusenigmatica:terrasteel_plate'),
+		[
+			'immersiveengineering:hammer',
+			'botania:terrasteel_ingot',
+			'botania:terrasteel_ingot',
+			'botania:terrasteel_ingot'
+		]
+	)
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:steel_ingot' }],
+			item: 'emendatusenigmatica:nickel_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:steel_plate', count: 2 }]
-		
-	})
-	event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:electrum_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:electrum_plate', count: 2 }]
-		
-	})
-	event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:aluminum_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:aluminum_plate', count: 2 }]
-		
-	})
-	event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:brass_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:brass_plate', count: 2 }]
-		
-	})
-	event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:constantan_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:constantan_plate', count: 2 }]
-		
-	})
-	event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:lead_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:lead_plate', count: 2 }]
-		
-	})
-	event.custom({
-		type: 'create:pressing',
-		ingredients: [{
-		item: 'emendatusenigmatica:bronze_ingot' }],
-		results: [{
-		item: 'emendatusenigmatica:bronze_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:nickel_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:lumium_ingot' }],
+			item: 'emendatusenigmatica:steel_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:lumium_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:steel_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:signalum_ingot' }],
+			item: 'emendatusenigmatica:electrum_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:signalum_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:electrum_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:invar_ingot' }],
+			item: 'emendatusenigmatica:aluminum_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:invar_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:aluminum_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:silver_ingot' }],
+			item: 'emendatusenigmatica:brass_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:silver_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:brass_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:uranium_ingot' }],
+			item: 'emendatusenigmatica:constantan_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:uranium_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:constantan_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'emendatusenigmatica:zinc_ingot' }],
+			item: 'emendatusenigmatica:lead_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:zinc_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:lead_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'minecraft:gold_ingot' }],
+			item: 'emendatusenigmatica:bronze_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:gold_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:bronze_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'minecraft:copper_ingot' }],
+			item: 'emendatusenigmatica:lumium_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:copper_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:lumium_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'create:pressing',
 		ingredients: [{
-		item: 'minecraft:iron_ingot' }],
+			item: 'emendatusenigmatica:signalum_ingot'
+		}],
 		results: [{
-		item: 'emendatusenigmatica:iron_plate', count: 2 }]
-		
+			item: 'emendatusenigmatica:signalum_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'emendatusenigmatica:invar_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:invar_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'emendatusenigmatica:silver_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:silver_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'emendatusenigmatica:uranium_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:uranium_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'emendatusenigmatica:zinc_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:zinc_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'minecraft:gold_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:gold_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'minecraft:copper_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:copper_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'minecraft:iron_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:iron_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'emendatusenigmatica:osmium_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:osmium_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'botania:manasteel_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:manasteel_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'botania:elementium_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:elementium_plate', count: 2
+		}]
+
+	})
+	event.custom({
+		type: 'create:pressing',
+		ingredients: [{
+			item: 'botania:terrasteel_ingot'
+		}],
+		results: [{
+			item: 'emendatusenigmatica:terrasteel_plate', count: 2
+		}]
+
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:nickel_ingot' },
+			item: 'emendatusenigmatica:nickel_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:nickel_plate', count: 3 }]
+			item: 'emendatusenigmatica:nickel_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:steel_ingot' },
+			item: 'emendatusenigmatica:steel_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:steel_plate', count: 3 }]
+			item: 'emendatusenigmatica:steel_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:electrum_ingot' },
+			item: 'emendatusenigmatica:electrum_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:electrum_plate', count: 3 }]
+			item: 'emendatusenigmatica:electrum_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:aluminum_ingot' },
+			item: 'emendatusenigmatica:aluminum_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:aluminum_plate', count: 3 }]
+			item: 'emendatusenigmatica:aluminum_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:brass_ingot' },
+			item: 'emendatusenigmatica:brass_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:brass_plate', count: 3 }]
+			item: 'emendatusenigmatica:brass_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:constantan_ingot' },
+			item: 'emendatusenigmatica:constantan_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:constantan_plate', count: 3 }]
+			item: 'emendatusenigmatica:constantan_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:lead_ingot' },
+			item: 'emendatusenigmatica:lead_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:lead_plate', count: 3 }]
+			item: 'emendatusenigmatica:lead_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:bronze_ingot' },
+			item: 'emendatusenigmatica:bronze_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:bronze_plate', count: 3 }]
+			item: 'emendatusenigmatica:bronze_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:lumium_ingot' },
+			item: 'emendatusenigmatica:lumium_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:lumium_plate', count: 3 }]
+			item: 'emendatusenigmatica:lumium_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:signalum_ingot' },
+			item: 'emendatusenigmatica:signalum_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:signalum_plate', count: 3 }]
+			item: 'emendatusenigmatica:signalum_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:invar_ingot' },
+			item: 'emendatusenigmatica:invar_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:invar_plate', count: 3 }]
+			item: 'emendatusenigmatica:invar_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:silver_ingot' },
+			item: 'emendatusenigmatica:silver_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:silver_plate', count: 3 }]
+			item: 'emendatusenigmatica:silver_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:uranium_ingot' },
+			item: 'emendatusenigmatica:uranium_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:uranium_plate', count: 3 }]
+			item: 'emendatusenigmatica:uranium_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'emendatusenigmatica:zinc_ingot' },
+			item: 'emendatusenigmatica:zinc_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:zinc_plate', count: 3 }]
+			item: 'emendatusenigmatica:zinc_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'minecraft:gold_ingot' },
+			item: 'minecraft:gold_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:gold_plate', count: 3 }]
+			item: 'emendatusenigmatica:gold_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'minecraft:copper_ingot' },
+			item: 'minecraft:copper_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:copper_plate', count: 3 }]
+			item: 'emendatusenigmatica:copper_plate', count: 3
+		}]
 	})
 	event.custom({
 		type: 'thermal:press',
 		ingredient: {
-		item: 'minecraft:iron_ingot' },
+			item: 'minecraft:iron_ingot'
+		},
 		result: [{
-		item: 'emendatusenigmatica:iron_plate', count: 3 }]
+			item: 'emendatusenigmatica:iron_plate', count: 3
+		}]
+	})
+	event.custom({
+		type: 'thermal:press',
+		ingredient: {
+			item: 'emendatusenigmatica:osmium_ingot'
+		},
+		result: [{
+			item: 'emendatusenigmatica:osmium_plate', count: 3
+		}]
+	})
+	event.custom({
+		type: 'thermal:press',
+		ingredient: {
+			item: 'botania:manasteel_ingot'
+		},
+		result: [{
+			item: 'emendatusenigmatica:manasteel_plate', count: 3
+		}]
+	})
+	event.custom({
+		type: 'thermal:press',
+		ingredient: {
+			item: 'botania:elementium_ingot'
+		},
+		result: [{
+			item: 'emendatusenigmatica:elementium_plate', count: 3
+		}]
+	})
+	event.custom({
+		type: 'thermal:press',
+		ingredient: {
+			item: 'botania:terrasteel_ingot'
+		},
+		result: [{
+			item: 'emendatusenigmatica:terrasteel_plate', count: 3
+		}]
 	})
 })

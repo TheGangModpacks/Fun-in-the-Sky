@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'botania:conjuration_catalyst',
-            'botania:mana_diamond',
+            'emendatusenigmatica:manasteel_gear',
             'ars_nouveau:source_gem_block',
             'ars_nouveau:blaze_fiber',
             'ars_nouveau:abjuration_essence',
@@ -35,8 +35,8 @@ ServerEvents.recipes(event => {
             'minecraft:nether_star',
             'ars_nouveau:end_fiber',
             'ars_nouveau:end_fiber',
-            'botania:terrasteel_ingot',
-            'botania:terrasteel_ingot',
+            'emendatusenigmatica:terrasteel_gear',
+            'emendatusenigmatica:elementium_gear',
             'minecraft:totem_of_undying',
             'ars_nouveau:amethyst_golem_charm',
             'ars_nouveau:bookwyrm_charm',
