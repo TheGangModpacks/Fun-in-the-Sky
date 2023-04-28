@@ -1,0 +1,23 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "tier": 1,
+  "key": {
+    "A": {
+      "item": "mysticalagriculture:air_agglomeratio"
+    },
+    "B": {
+      "item": "mysticalagriculture:inferium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:air_seeds"
+  }
+}
