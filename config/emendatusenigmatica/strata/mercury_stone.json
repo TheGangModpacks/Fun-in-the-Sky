@@ -1,0 +1,10 @@
+{
+	"id": "mercury_stone",
+	"baseTexture": "ad_astra:block/mercury_stone",
+	"suffix": "mercury_stone",
+	"fillerType": "ad_astra:mercury_stone",
+	"localizedName": "Mercury Stone",
+	"harvestTool": "pickaxe",
+	"hardness": 3.0,
+	"resistance": 3.0
+}

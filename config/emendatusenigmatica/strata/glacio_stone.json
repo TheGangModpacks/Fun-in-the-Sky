@@ -1,0 +1,10 @@
+{
+	"id": "glacio_stone",
+	"baseTexture": "ad_astra:block/glacio_stone",
+	"suffix": "glacio_stone",
+	"fillerType": "ad_astra:glacio_stone",
+	"localizedName": "Glacio Stone",
+	"harvestTool": "pickaxe",
+	"hardness": 3.0,
+	"resistance": 3.0
+}

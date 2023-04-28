@@ -1,0 +1,10 @@
+{
+	"id": "moon_stone",
+	"baseTexture": "ad_astra:block/moon_stone",
+	"suffix": "moon_stone",
+	"fillerType": "ad_astra:moon_stone",
+	"localizedName": "Moon Stone",
+	"harvestTool": "pickaxe",
+	"hardness": 3.0,
+	"resistance": 3.0
+}

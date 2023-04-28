@@ -1,0 +1,26 @@
+{
+  "id": "invar",
+  "source": "modded",
+  "localizedName": "Invar",
+  "processedTypes": [
+    "storage_block",
+    "ingot",
+    "nugget",
+    "dust",
+    "plate",
+    "gear"
+  ],
+  "properties": {
+  "materialType": "alloy",
+  "harvestLevel": 2
+},
+  "colors": {
+    "fluidColor": "7C8082",
+    "materialColor": "7C8082"
+  },
+  "compat": {
+    "thermal": false,
+    "mekanism": false,
+    "ars_novea": false
+  }
+}
