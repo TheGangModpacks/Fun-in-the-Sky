@@ -4,5 +4,6 @@
     "entity.minecraft.villager.immersiveengineering.electrician": "Electrician",
     "entity.minecraft.villager.immersiveengineering.gunsmith": "Gunsmith",
     "entity.minecraft.villager.immersiveengineering.outfitter": "Outfitter",
-    "entity.minecraft.villager.immersiveengineering.engineer": "Engineer"
+    "entity.minecraft.villager.immersiveengineering.engineer": "Engineer",
+    "block.immersiveengineering.alloy_smelter": "Industrial Kiln"
 }
