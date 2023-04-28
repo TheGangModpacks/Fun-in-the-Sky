@@ -1,6 +1,9 @@
+//priority: 1
 ServerEvents.recipes(event =>{
 let EX = (id) => `extendedgears:${id}`
+let EXL = (id) => `extendedgears:large_${id}`
 let CR = (id) => `create:${id}`
+let CRL = (id) => `create:large_${id}`
 let MC = (id) => `minecraft:${id}`
 let EE = (id) => `emendatusenigmatica:${id}`
 event.remove({ output: (CR('andesite_alloy'))})
@@ -21,17 +24,37 @@ event.shaped(Item.of(EX('iron_cogwheel')),
 event.shaped(Item.of(EX('steel_cogwheel', 2)),
 [ 'A A', 'ABA', 'A A'],{ A: (EE('steel_ingot')), B: (EX('iron_cogwheel'))})
 //Large Cogwheels
-event.shaped(Item.of(EX('large_copper_cogwheel', 2)),
+event.shaped(Item.of(EXL('copper_cogwheel', 2)),
 [ 'A A', ' B ', 'A A'],{ A: (MC('copper_ingot')), B: (EX('copper_cogwheel'))})
-event.shaped(Item.of(EX('large_iron_cogwheel')),
+event.shaped(Item.of(EXL('iron_cogwheel')),
 [ 'A A', ' B ', 'A A'],{ A: (MC('iron_ingot')), B: (EX('large_copper_cogwheel'))})
-event.shaped(Item.of(EX('large_steel_cogwheel')),
+event.shaped(Item.of(EXL('steel_cogwheel')),
 [ 'A A', ' B ', 'A A'],{ A: (EE('steel_ingot')), B: (EX('steel_cogwheel'))})
+event.shaped(Item.of(CRL('cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('spruce_planks')), B: (CR('cogwheel'))})
+event.shaped(Item.of(EXL('birch_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('birch_planks')), B: (EX('birch_cogwheel'))})
+event.shaped(Item.of(EXL('jungle_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('jungle_planks')), B: (EX('jungle_cogwheel'))})
+event.shaped(Item.of(EXL('dark_oak_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('dark_oak_planks')), B: (EX('dark_oak_cogwheel'))})
+event.shaped(Item.of(EXL('mangrove_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('mangrove_planks')), B: (EX('mangrove_cogwheel'))})
+event.shaped(Item.of(EXL('oak_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('oak_planks')), B: (EX('oak_cogwheel'))})
+event.shaped(Item.of(EXL('acacia_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('acacia_planks')), B: (EX('acacia_cogwheel'))})
+event.shaped(Item.of(EXL('warped_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('warped_planks')), B: (EX('warped_cogwheel'))})
+event.shaped(Item.of(EXL('crimson_cogwheel', 4)),
+[ 'A A', ' B ', 'A A'],{ A: (MC('crimson_planks')), B: (EX('crimson_cogwheel'))})
 //Wooden Cogs
 event.shaped(Item.of(CR('cogwheel', 4)),
 [ ' A ', ' B ', ' A '],{ A: (MC('spruce_planks')), B: (EX('copper_cogwheel'))})
 event.shaped(Item.of(EX('birch_cogwheel', 4)),
 [ ' A ', ' B ', ' A '],{ A: (MC('birch_planks')), B: (EX('copper_cogwheel'))})
+event.shaped(Item.of(EX('mangrove_cogwheel', 4)),
+[ ' A ', ' B ', ' A '],{ A: (MC('mangrove_planks')), B: (EX('copper_cogwheel'))})
 event.shaped(Item.of(EX('oak_cogwheel', 4)),
 [ ' A ', ' B ', ' A '],{ A: (MC('oak_planks')), B: (EX('copper_cogwheel'))})
 event.shaped(Item.of(EX('dark_oak_cogwheel', 4)),
@@ -44,5 +67,4 @@ event.shaped(Item.of(EX('warped_cogwheel', 4)),
 [ ' A ', ' B ', ' A '],{ A: (MC('warped_planks')), B: (EX('copper_cogwheel'))})
 event.shaped(Item.of(EX('crimson_cogwheel', 4)),
 [ ' A ', ' B ', ' A '],{ A: (MC('crimson_planks')), B: (EX('copper_cogwheel'))})
-//Large Wooden Cogs
 })

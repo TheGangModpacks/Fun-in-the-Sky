@@ -34,7 +34,7 @@ JEIEvents.information(event =>{
 })
 
 JEIEvents.hideItems(event =>{
-  event.hide('mekanism:enrichment_chamber').stage('mekanism_machines')
+  event.hide('/^emendatusenigmatica:.*_basalt_/')
 })
 
 JEIEvents.removeCategories(event =>{

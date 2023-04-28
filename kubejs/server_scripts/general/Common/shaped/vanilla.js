@@ -36,4 +36,11 @@ ServerEvents.recipes(event =>{
 	  B: '#forge:sand',
 	  C: 'thermal:gunpowder_block' }
 	)
+	event.shaped(Item.of("emendatusenigmatica:iron_paxel"), ['abc', ' d ', ' d '], {
+		a: "minecraft:iron_pickaxe",
+		b: "minecraft:iron_axe",
+		c: "minecraft:iron_shovel",
+		d: "immersiveengineering:stick_treated"
+	}).id('emendatusenigmatica:paxel/from_ingot/iron')
+	event.replaceInput({id: 'emendatusenigmatica:paxel/from_ingot/steel'}, 'minecraft:stick', "immersiveengineering:stick_treated")
 })

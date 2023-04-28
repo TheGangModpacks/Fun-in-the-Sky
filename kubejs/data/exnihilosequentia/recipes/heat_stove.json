@@ -1,0 +1,8 @@
+{
+    "type": "exnihilosequentia:heat",
+    "block": "farmersdelight:stove",
+    "amount": 20,
+    "state": {
+        "lit": "true"
+    }
+}

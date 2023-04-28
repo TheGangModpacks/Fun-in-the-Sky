@@ -45,18 +45,22 @@ ServerEvents.recipes(event =>{
 	event.replaceInput({id: 'immersiveengineering:crafting/conveyor_basic'}, 'minecraft:iron_ingot', 'kubejs:leaded_iron')
 	//Alloy Kiln
 	event.replaceInput({id: 'immersiveengineering:crafting/alloybrick'}, 'minecraft:brick', 'emendatusenigmatica:steel_ingot')
-	event.replaceInput({id: 'immersiveengineering:crafting/alloybrick'}, '#forge:sandstone', 'create:cut_calcite_bricks')
+	event.replaceInput({id: 'immersiveengineering:crafting/alloybrick'}, '#forge:sandstone', 'create:cut_granite_bricks')
 	//Coke
 	event.replaceInput({id: 'immersiveengineering:crafting/cokebrick'}, 'minecraft:clay_ball', 'exnihilosequentia:porcelain_clay')
+	event.replaceInput({id: 'immersiveengineering:crafting/cokebrick'}, 'minecraft:brick', 'kubejs:porcelain_brick')
 	event.replaceInput({id: 'immersiveengineering:crafting/cokebrick'}, '#forge:sandstone', 'create:cut_dripstone_bricks')
 	//Blast
 	event.replaceInput({id: 'immersiveengineering:crafting/blastbrick'}, 'minecraft:brick', 'kubejs:leaded_iron')
+	event.replaceInput({id: 'immersiveengineering:crafting/blastbrick'}, 'minecraft:nether_brick', 'kubejs:porcelain_nether_brick')
 	//Tools / Upgrades
 	event.replaceInput({id: 'immersiveengineering:crafting/toolupgrade_drill_waterproof'}, 'minecraft:blue_dye', 'pneumaticcraft:plastic')
 	event.shaped(Item.of('immersiveengineering:toolupgrade_drill_lube'), [' a ', 'aba', ' ac'], {a: "immersiveengineering:plate_duroplast",
 	b: "immersiveengineering:plantoil_bucket", c: "immersiveengineering:fluid_pipe"}).id('immersiveengineering:crafting/toolupgrade_drill_lube')
 	event.replaceInput({id: 'immersiveengineering:crafting/toolupgrade_drill_capacity'}, 'minecraft:red_dye', 'pneumaticcraft:plastic')
-
+	event.remove({id: 'ad_astra:recipes/steel_ingot_from_blasting_iron_ingot'})
+	event.replaceInput({id: 'immersiveengineering:crafting/fluid_pipe'}, '#forge:plates/iron', "emendatusenigmatica:steel_plate")
+	event.replaceInput({id: 'immersiveengineering:crafting/fluid_pump'}, '#forge:plates/iron', "emendatusenigmatica:steel_plate")
 
 
 

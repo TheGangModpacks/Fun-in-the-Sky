@@ -88,4 +88,31 @@ results: [
 		],
 		transitionalItem: Item.of(KJ('core')).toJson()
 	})
+	event.custom({
+		type: metallurgic_infuser,
+		chemicalInput: {amount: 80, tag: 'mekanism:refined_obsidian'},
+		itemInput: {ingredient: Item.of('emendatusenigmatica:fluorite_gem').toJson()},
+		output: Item.of("kubejs:fluoridian_crystal")
+	})
+	event.replaceInput({id: (MK('processing/lategame/plutonium_pellet/from_reaction'))}, '#forge:dusts/fluorite', 'kubejs:fluoridian_crystal')
+	event.replaceInput({id: (MK('processing/lategame/polonium_pellet/from_reaction'))}, '#forge:dusts/fluorite', 'kubejs:fluoridian_crystal')
+	event.custom({
+		type: prc,
+		duration: 120,
+		energyRequired: 3000,
+		fluidInput: Fluid.of('mekanism:brine', 200).toJson(),
+		gasInput: {amount: 20, gas: 'mekanism:ethene'},
+		gasOutput: {amount: 20, gas: 'kubejs:fluoridelyne'},
+		itemInput: {ingredient: Item.of('kubejs:fluoridian_crystal').toJson()}
+	})
+	event.custom({
+		type: neutron_activator,
+		input: {amount: 2, gas: "kubejs:monster_waste"},
+		output: {amount: 5, gas: 'mekanism:polonium'}
+	})
+	event.custom({
+		type: isotopic,
+		input: {amount: 2, gas: "kubejs:monster_waste"},
+		output: {amount: 5, gas: 'mekanism:plutonium'}
+	})
 })
