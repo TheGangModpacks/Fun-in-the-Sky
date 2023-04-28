@@ -1,4 +1,3 @@
-Platform.mods.kubejs.name = "Fun in the Sky"
 StartupEvents.registry('item', event => {
 	event.create('mk1circuit').displayName('MK1 Circuit')
 	event.create('mk2circuit').displayName('MK2 Circuit')
@@ -23,10 +22,24 @@ StartupEvents.registry('item', event => {
 	event.create('photovoltaic_cell_niotic')
 	event.create('photovoltaic_cell_spirited')
 	event.create('photovoltaic_cell_nitro')
+	event.create('porcelain_brick').tag('forge:ingots').tag('forge:ingots/porcelain_brick')
+	event.create('porcelain_nether_brick').tag('forge:ingots').tag('forge:ingots/porcelain_nether_brick')
+	event.create('fluoridian_crystal').tag('forge:gems/fluoridium').tag('forge:gems')
+	//Food
+	event.create('cooked_apple').food(food =>{food.hunger(8).saturation(1)})
 })
 StartupEvents.registry('block', event =>{
 	event.create('dielectric_block').displayName('Dielectric Block').material('moss').hardness(0.5).tagBlock('minecraft:mineable/hoe').requiresTool(false)
 	event.create('unprocessed_frame').displayName('Unprocessed Frame').material('metal').hardness(0.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('compressed_cobblestone_x1').material('deepslate').hardness(1.0).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('compressed_cobblestone_x2').material('deepslate').hardness(1.3).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('compressed_cobblestone_x3').material('deepslate').hardness(1.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('compressed_sand_x1', 'falling').material('sand').hardness(1.0).tagBlock('minecraft:mineable/shovel').requiresTool(true)
+	event.create('compressed_sand_x2', 'falling').material('sand').hardness(1.3).tagBlock('minecraft:mineable/shovel').requiresTool(true)
+	event.create('compressed_sand_x3', 'falling').material('sand').hardness(1.5).tagBlock('minecraft:mineable/shovel').requiresTool(true)
+	event.create('compressed_gravel_x1', 'falling').material('dirt').hardness(1.0).tagBlock('minecraft:mineable/shovel').requiresTool(true)
+	event.create('compressed_gravel_x2', 'falling').material('dirt').hardness(1.3).tagBlock('minecraft:mineable/shovel').requiresTool(true)
+	event.create('compressed_gravel_x3', 'falling').material('dirt').hardness(1.5).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 })
 	StartupEvents.registry('fluid', event =>{
 		event.create('blitz_blood')
@@ -50,3 +63,6 @@ StartupEvents.registry('block', event =>{
     .bucketColor(0xFFA300)
     .displayName('Blaze Blood')
 })
+StartupEvents.registry('enchantment', event =>{
+	event.create('durable_threads').displayName('Durable Threads')
+	});
