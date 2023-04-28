@@ -1,0 +1,250 @@
+{
+	id: "03F41673112FAF1B"
+	group: "67B4334297F15B2D"
+	order_index: 4
+	filename: "2twilight_forest"
+	title: "&2Twilight Forest"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			title: "The Naga"
+			icon: "twilightforest:naga_scale"
+			x: 0.0d
+			y: 0.0d
+			description: ["Eliminate the Naga."]
+			dependencies: ["6559CC67BF9CB433"]
+			hide: true
+			invisible_until_tasks: 1
+			id: "1DE0FD929150D4B5"
+			tasks: [
+				{
+					id: "761C6B14B9381053"
+					type: "kill"
+					icon: "twilightforest:naga_trophy"
+					entity: "twilightforest:naga"
+					value: 1L
+				}
+				{
+					id: "7EE474DA0686672A"
+					type: "advancement"
+					advancement: "twilightforest:progress_naga"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Twilight Lich"
+			icon: {
+				id: "twilightforest:twilight_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -1.5d
+			description: ["Eliminate the Twilight Lich."]
+			dependencies: ["1DE0FD929150D4B5"]
+			id: "745D5C10C3986B03"
+			tasks: [
+				{
+					id: "0440A10AC9F77BF2"
+					type: "kill"
+					icon: "twilightforest:lich_trophy"
+					entity: "twilightforest:lich"
+					value: 1L
+				}
+				{
+					id: "32A3585CCF20B39B"
+					type: "advancement"
+					advancement: "twilightforest:progress_lich"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Minotaur"
+			icon: {
+				id: "twilightforest:gold_minotaur_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: -3.5d
+			description: ["Eliminate the Minotaur."]
+			dependencies: ["745D5C10C3986B03"]
+			id: "7ACA333D4769F656"
+			tasks: [
+				{
+					id: "5389DD59B6194F38"
+					type: "kill"
+					icon: "twilightforest:minoshroom_trophy"
+					entity: "twilightforest:minotaur"
+					value: 1L
+				}
+				{
+					id: "69D066C5DDD59C80"
+					type: "advancement"
+					advancement: "twilightforest:progress_labyrinth"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Hydra"
+			icon: "twilightforest:hydra_chop"
+			x: 1.5d
+			y: -5.5d
+			description: ["Eliminate the Hydra."]
+			dependencies: ["7ACA333D4769F656"]
+			id: "3EFB9CF7CCAFD7C6"
+			tasks: [
+				{
+					id: "37205D53916EEB29"
+					type: "kill"
+					icon: "twilightforest:hydra_trophy"
+					entity: "twilightforest:hydra"
+					value: 1L
+				}
+				{
+					id: "163BE9D190F46B4B"
+					type: "advancement"
+					icon: "twilightforest:hydra_spawn_egg"
+					advancement: "twilightforest:progress_hydra"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Knight Phantom"
+			icon: "minecraft:phantom_membrane"
+			x: 0.0d
+			y: -7.0d
+			description: ["Eliminate the Knight Phantom."]
+			dependencies: ["3EFB9CF7CCAFD7C6"]
+			id: "3B06AF40F8560753"
+			tasks: [
+				{
+					id: "3CE6C3B87016DE93"
+					type: "kill"
+					icon: "twilightforest:knight_phantom_trophy"
+					entity: "twilightforest:knight_phantom"
+					value: 1L
+				}
+				{
+					id: "01D32A3082DB7F2E"
+					type: "advancement"
+					icon: "twilightforest:knightmetal_ring"
+					advancement: "twilightforest:progress_knights"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Ur-Ghast"
+			icon: "twilightforest:reappearing_block"
+			x: -1.5d
+			y: -5.5d
+			description: ["Eliminate the Ur-Ghast."]
+			dependencies: ["3B06AF40F8560753"]
+			id: "056FC87EA546CA2B"
+			tasks: [
+				{
+					id: "1572E3EF5782E75C"
+					type: "kill"
+					icon: "twilightforest:ur_ghast_trophy"
+					entity: "twilightforest:ur_ghast"
+					value: 1L
+				}
+				{
+					id: "27A7B177DE09A058"
+					type: "advancement"
+					icon: "twilightforest:fiery_tears"
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Alpha Yeti"
+			icon: "twilightforest:alpha_yeti_fur"
+			x: -1.5d
+			y: -3.5d
+			description: ["Eliminate the Alpha Yeti."]
+			dependencies: ["056FC87EA546CA2B"]
+			id: "4DBF876043164E31"
+			tasks: [
+				{
+					id: "2185D84587681B95"
+					type: "kill"
+					icon: "twilightforest:alpha_yeti_trophy"
+					entity: "twilightforest:alpha_yeti"
+					value: 1L
+				}
+				{
+					id: "3628F4EC42C0171F"
+					type: "advancement"
+					advancement: "twilightforest:progress_yeti"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Snow Queen"
+			icon: "minecraft:snow_block"
+			x: -1.5d
+			y: -1.5d
+			description: ["Eliminate the Snow Queen."]
+			dependencies: ["4DBF876043164E31"]
+			id: "2FDB3C6CFEB1E3D6"
+			tasks: [
+				{
+					id: "28021D8CA44EA4A0"
+					type: "kill"
+					icon: "twilightforest:snow_queen_trophy"
+					entity: "twilightforest:snow_queen"
+					value: 1L
+				}
+				{
+					id: "0696806BB0B45758"
+					type: "advancement"
+					icon: "minecraft:ice"
+					advancement: "twilightforest:progress_glacier"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Fiery Ingots"
+			x: 3.5d
+			y: -7.0d
+			dependencies: ["3EFB9CF7CCAFD7C6"]
+			id: "6390F78C5192509D"
+			tasks: [{
+				id: "041D089072535A6A"
+				type: "item"
+				item: "twilightforest:fiery_ingot"
+				count: 8L
+			}]
+		}
+		{
+			title: "Steeleaf"
+			x: 4.0d
+			y: -3.5d
+			dependencies: ["7ACA333D4769F656"]
+			id: "7EB0DB38CCFFEB72"
+			tasks: [{
+				id: "4A985C16EACD2D69"
+				type: "item"
+				item: "twilightforest:steeleaf_ingot"
+				count: 8L
+			}]
+		}
+	]
+	quest_links: [ ]
+}
