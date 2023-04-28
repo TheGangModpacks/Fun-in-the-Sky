@@ -1,0 +1,85 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.17.1",
+    "name": "",
+    "author": "FooterMan14",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 4,
+      "max_y": 8,
+      "max_z": 4
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 9,
+          "item": {
+            "id": "mekanismgenerators:electromagnetic_coil"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 8,
+          "item": {
+            "id": "mekanism:pressure_disperser"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "mekanismgenerators:rotational_complex"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 9,
+          "item": {
+            "id": "mekanismgenerators:saturating_condenser"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 46,
+          "item": {
+            "id": "mekanism:structural_glass"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 80,
+          "item": {
+            "id": "mekanismgenerators:turbine_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "mekanismgenerators:turbine_rotor"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 2,
+          "item": {
+            "id": "mekanismgenerators:turbine_valve"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 33,
+          "item": {
+            "id": "mekanismgenerators:turbine_vent"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAA/6WVzW7cNhCAqZnRWtnkBYoemh6Kngvk5AforUGOaS4LesVuhOpnIWqNJE+XRyspfgq8QWDYqA/6RGk4HH4rD/fOvXDW+sXvXbrdl3unbh/D3Pm++xLm9MLtXR0Xv4TG2Vs/BPfrEP71YxeHUxjD7JdpjrfLZb7rxnA4+tiNpzznicl+2pLdxmW+HFMe3x9OvY/xGUl+eaSi+zAuz0j187d6znOI8TKHQ9vFc5hjjn9ymt9/UFHow3GZp8GfxrB0x8Nx6vr/mTL6LGxJylO2sQ3j06rcu/27eUqbWroQG/fqn/7StYd+Op1C6+ownJfPblv29SNu5ykNn7GF336QK+VIG5jG9LMfp+Hch0/PSPhYcfe+vw/5E9fzFC1N/uoe/FVQoEK7CqhcBQUqE+0qQYqDApXEdrVAioMClYXtqoAUBwUqhdlWYE2ZUKBCg25XiqygQN0RB90NcVCg3hAH03dR1oUCFRp03wwWClRo26uqXAzmEtYxTBPKGKaJZWz8hDVBUKDWrFOXpMlDmQwF6q68N5g8VGtSKFBviLth3YZioUBtWLe5/sQqKFChbWqqUqRUZWwwp16fC89h3ur6XHkO89bW58Zz4xOvM1dP6yaFsdbUUVPaLl9WT4InwZPgSfAkeBI8CZ4ET4InwZPgSfAkePruP6RQoELbPp2q0GBOhRdltuJD8aF4UDwoHpTvRfGgeFA8KB4UD4oHxYPiQfGgeFA8KB4UD4oHxYPiQfHwXQcoFKjQthZVZTa5Pxn9aR1rRRzMJdCfjP5k9KcSB9MCRn8y+pPRn0ocTFejPxn9yehPJQ4mBWUfUKBCg8mz0Z+M/mT0pxIHk2ejPxn9yehPJQ7mc2tdFypMfm3vdh+Db8PcuJ2/LB/T2fXyz2lawvyXH/94k17fTZexjWmrQzf+jZV0+3679Z8+4CLd5oCm3L7fnnbjh62KMR9Q+fx5cIY16w/3+u7S9W06tE++PYUl3raXYfh8eHDU/QdGAcvjmwkAAA\u003d\u003d"
+}

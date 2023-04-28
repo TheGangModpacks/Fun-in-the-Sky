@@ -1,0 +1,57 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.17.1",
+    "name": "Copy 0",
+    "author": "FooterMan14",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 6,
+      "max_y": 6,
+      "max_z": 6
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 13,
+          "item": {
+            "id": "mekanismgenerators:control_rod_assembly"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 52,
+          "item": {
+            "id": "mekanismgenerators:fission_fuel_assembly"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 117,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_port"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 96,
+          "item": {
+            "id": "mekanismgenerators:reactor_glass"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAA/62WzY7jRBSFq+r+qCfwBKx6B+xAYjVbJHYgljOzidzt6oxFbEe2I9E8PeXU55CgEQwSWeSzfG/9nTpV17sQ3gRtm6XZhRBsV5+DhN2cp645dn/kqQTCLti8NEt+CPpL0+fwbZ9/a4Zu7g95yFOzjNP89qWb524c9lNunsuL/XMzd8Nhbfsvne7C7tdpPOVp6fJcRujHNgfrhtN5CduAX3/GgKdxWj5juK3Lx090uXV1ODbz/N+n/uXL8dy1++N4OOQ2WO5Py+t1Cd/8wxJezvm4L0Pm/un4+j+P+ynpnsdhmcbjfhrbm2HfBDmNs4YQvwo3vwgTVGjQ7xJjiLFmJyhQiRsd+l3HKUSYoECFxgR8m4jQDiYoUKEJ7eR2AaUdTFCgQmOhfrfg0g4mKFChIYz/TaAIExSo0KBfBd0UDShYKVChQb/wkhXXrAgFWqxdeSQvkQcFWqpxh2vK5Q8KNCEPlgnVPCjQlDxYJhwvyVCgGXmG5Zz1wwQFKjTofm/VeHVWpUCFBn1LiXWxCWqs7x2uW36JQ03E4Rq6/EEV4rAMXONQlTgsE6pJUI24cfScdcEEBSo06H49soIenIhKgQoN+iZVrCkRCrRY4w7XI4CPBB8JPhL0EUYVfCT4SPCRoJOgk+AjwUeCjwS9BL0EHwk+Enwk6CboJugm6CboJugm6CbodndTxOuNUSlQoUHfrBWrpAlqrO8drlcFPlJ8pOik6KT4SPGRoo8yC8VHio8UXRRdFB8pPlL0UPRQ9FD0UPRQ9FD0UPS4uwHj9SasFKjQoG9HLFZrRSjQYr26PJKXyIMCLdW4w/UVPjJ8ZPjI0MnQyfCR4SPDR4ZexioMHxk+Mnxk6GboZuhm6GboZuhm6GbodlcBIkxQoEKDvlWMWK+mCBMUqNAi7eA6ZeqpU0+deurUU6ee1nawTMipp049deqpU0+delrbwbIAp5469dSpp049deppbQfLgp166tRTp5469dSpp7UdLP/OPjj74OyDsw/OPjj74LvgH3PT5ukheHNePo5T+OKncVzy9HMzfP9DCT+N56Gdy2nqu+F9VWN9fLc9Nr9/qGteH9//9fhue+yGD5fZle+uYf3u8h/H0+vjd+Wr6uYj7uGyrY9P5+7Ylq/jQ9Me8jK/bc99/7q/+db7E3dg/TSZCwAA"
+}
