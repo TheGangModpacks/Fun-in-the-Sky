@@ -1,7 +1,6 @@
 *
-!/.gitignore 
+!/.gitignore
 !/config/ftbquests/quests/
-!/defaultconfigs/
 !/kubejs/assets/
 !/kubejs/client_scripts/
 !/kubejs/data/
