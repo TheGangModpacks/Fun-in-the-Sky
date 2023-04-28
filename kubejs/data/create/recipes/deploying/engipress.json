@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "refinedstorage:quartz_enriched_iron_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "appliedenergistics2:engineering_processor_press"
+    }
+  ]
+}

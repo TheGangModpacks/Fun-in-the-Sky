@@ -1,0 +1,10 @@
+{
+  "type": "mekanism:reaction",
+  "itemInput": "thermal:basalz_rod",
+  "fluidInput": "immersiveengineering:acetaldehyde",
+  "gasInput": "emendatusenigmatica:gaseous_raw_teslyte",
+  "energyRequired": 10000,
+  "duration": 600,
+  "itemOutput": "minecraft:blaze_powder",
+  "gasOutput": "emendatusenigmatica:gaseous_partial_teslyte"
+}

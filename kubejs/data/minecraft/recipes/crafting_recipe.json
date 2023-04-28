@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "emendatusenigmatica:copper_block"
+    },
+    "result": "emendatusenigmatica:copper_block", "thermal:copper_block",
+    "count": 1
+}
