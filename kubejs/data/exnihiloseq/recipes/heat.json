@@ -1,8 +1,0 @@
-{
-    "type": "exnihilosequentia:heat",
-    "block": "ftbic:nuclear_reactor",
-    "amount": 100,
-    "state": {
-        "active": "true"
-    }
-}
