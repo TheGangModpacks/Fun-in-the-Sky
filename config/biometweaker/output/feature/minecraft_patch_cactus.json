@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "minecraft:patch_cactus",
-  "worldgen/placed_feature": {
-    "feature": "minecraft:patch_cactus",
-    "placement": []
-  }
-}

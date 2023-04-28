@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "twilightforest:tree/dummy",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "minecraft:no_op"
-  }
-}

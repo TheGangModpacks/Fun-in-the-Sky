@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "artifacts:campsite",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "artifacts:campsite"
-  }
-}

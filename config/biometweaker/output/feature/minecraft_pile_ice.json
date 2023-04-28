@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "minecraft:pile_ice",
-  "worldgen/placed_feature": {
-    "feature": "minecraft:pile_ice",
-    "placement": []
-  }
-}
