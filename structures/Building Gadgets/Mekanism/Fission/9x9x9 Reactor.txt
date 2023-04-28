@@ -1,0 +1,57 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.17.1",
+    "name": "Copy 0",
+    "author": "FooterMan14",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 8,
+      "max_y": 8,
+      "max_z": 8
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 25,
+          "item": {
+            "id": "mekanismgenerators:control_rod_assembly"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 150,
+          "item": {
+            "id": "mekanismgenerators:fission_fuel_assembly"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 189,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_port"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 192,
+          "item": {
+            "id": "mekanismgenerators:reactor_glass"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAA/63YzY/bRBzG8Zn5vU0Df0RvwK1InHpF4gbi2Paychs3tUjilZ1ILH89TubrsEEVFImq2k+0GY9fnnkcbzYpvUi67U7dJqVkm/Y6SdrM/TR0++GPflreSJtk86k79TXpL92hT98d+t+64zAfdv2xn7rTOM2vPw7zPIzHh6nvPiy/ePjQzcNxd9n2XybdpM2v0/jYT6ehn5c9HMZtn2w4Pp5Pad3hN1+ww8dxOn3B7tYpX35mynWq3b6b5/9+6F9/3J+H7cN+3O36bbL+8Hh6up3Ct/9wCh/P/f5h2WV/eL9/+p/3+7lL92E8nqZx/zCN22e7fZHkcZw1pfIqPfuXsaCgoWNgvdswp5zb1gUFFQ2d8cEO692OS8pYUFDR0DE44Hp34Ms8WFBQ0dAxOOG6nrgyDxYUVDR0DGUefX4Bl3mwoKCioWNw4etdAMs8WFBQ0dAxCK7eBbjMgwUFFQ0dg+Dr3xZAxoKCioaOgfW2gNYVlFghTUFFQ8fAevW6Vb5slVHQMHLbRc2ML4xHQcMobVzFy9DrDxQ0DGE8LgfexqOgYSjjcTnBNh4FDcMYj8uFaONR0DCc8bhcsHw9KBQ0jGB8cCuo5IIFBRUNHQNrvb+l5FvDm4KKho6Bdd0ktxAKKnpu71e8LOnrOFT0wji8DLn+QEUXxuFygG0cKroyDpcTaONQ0Y1xuJxgG4eK7ozD5QK0naOiB+OCW3Xl+mJBQUVDx8CKiTtnvt1Bm4KKho6BdY00t00yChpGbuMqXm499FDoodBDoYdCbsJRCT0Ueij0UOihkJ+Qn9BDoYdCD4UeCjkKOQo9FHoo9FDooZCnkKfQQ6GHQg+FHgq5CrkKPRR6KPRQ6KGQr5CvkK+Qr5CvkK+Qr5CvkK+Q790nWr59sjUFFQ0dA+ta1dyWQkFFz+39ipePEnqo9FDpoZKnkqfSQ6WHSg+VHJWjVXqo9FDpoZKfkp/SQ6WHSg+V3JTclB4qPVR6qOSl5KX0UOmh0kMlJyUnJSclJyUnJSclJyUnJSclp7snhnx7cmgKKho6Btb1VppbVTMKGkZu4ypePvLpodFDo4dGD43cjNyMHho9NHpo9NDIz8jP6KHRQ6OHRg+NHI2zNnpo9NDoodFDI08jT6OHRg+NHho9NHI1cjV6aPTQ6KHRQyNfI18jXyNfI18jXyNfI18jXyPfuye5fHuiawoqGjoG1vUjMrdbcEFFz+39ist/p4dOD50eOnk6eTo9dHro9NDJ0cnR6aHTQ6eHTn5Ofk4PnR46PXRyc87e6aHTQ6eHTl5OXk4PnR46PXRycnJycnJycnJycnJycnJycnJyuntSzrcn5qagoqFjYF0fYXL7iMwoaBi5PcrWzPjCeBQ0jNLGVbz8ih4GPQx6GPQwyC/IL+hh0MOgh0EPgxyDHIMeBj0Mehj0MMgzyDPoYdDDoIdBD4Ncg6sa9DDoYdDDoIdBvkG+Qb5BvkG+Qb5BvkG+Qb5Bvnd/wWQsKKho6BhY17+AcntEzVhQUNHQMTLz4OUUr/NgQUFFQ8cozIPLCbR5sKCgoqFjCPPgcgHaPFhQUNHQMZR5cLmAbR4sKKho6BjGPLgE0ObBgoKKho7hzINLgG0eLCioaOgYwTy4/Kysw8o6rKzDyjqsrMPKOqysw8o6rJvkn/pu20/LPac7nz6NU/rqp3E89dPP3fH7H5a334/n43Ze7oqH4fi2pXt5+WZ92f3+rmV2efn2r5dv1pfD8R1Hq8fL90T+4/j49PJVevH8S6d6XcYv35+H/XY47nbddtef5tfb8+Hw9PDsu6k/AfGWlEdJFAAA"
+}

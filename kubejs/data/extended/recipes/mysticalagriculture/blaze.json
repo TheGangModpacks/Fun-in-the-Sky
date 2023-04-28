@@ -1,0 +1,39 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCCCBA",
+    "BABDBAB",
+    "CBABABC",
+    "CEBFBEC",
+    "CBABABC",
+    "BABDBAB",
+    "ABCCCBA"
+  ],
+  "tier": 3,
+  "key": {
+    "A": {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:10.0d,Type:\"mysticalagriculture:blaze\"}"
+    },
+    "B": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "C": {
+      "item": "botania:blaze_block"
+    },
+    "D": {
+      "item": "exnihilosequentia:blaze_doll"
+    },
+    "E": {
+      "item": "create:blaze_cake"
+    },
+    "F": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:blaze_seeds"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.17.1",
+    "name": "Isotopic Centrifuge",
+    "author": "FooterMan15",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 6,
+      "max_y": 8,
+      "max_z": 6
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 12,
+          "item": {
+            "id": "mekanism:block_refined_obsidian"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 67,
+          "item": {
+            "id": "mekanism:boiler_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "minecraft:dirt"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 8,
+          "item": {
+            "id": "mekanism:dynamic_tank"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "mekanism:elite_chemical_tank"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 56,
+          "item": {
+            "id": "mekanism:induction_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "emendatusenigmatica:lead_block"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 2,
+          "item": {
+            "id": "mekanism:steel_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 36,
+          "item": {
+            "id": "mekanism:structural_glass"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAA/52WzY7bNhSFSfFejeIU3RQpECBo8wpZZDPbAgW6aNFlmo1AS7SHiH4G+kE7fbg+Wynx83S8izsY4KPIa+qeYx3RB2NeGWn94g8mDQ95bJw5zGGKvot/hyktmIPRefFLqIz85vtgvu/DFz/Eub8/jrELU934OQ7nrfArd/gh9GFIpeschnju/RIbf98F39bHbmy+3LDT2+de4tCuzRLH4fZ2fvxP0Hb7egqnOIS2Ho9zbKMf/lc/8zKlftbJd/W58/N8wyZvnjdpnwbfx6Ze/HCLK29edBFC9/WOHMzh92l8DNMSw1yZb07dGtu6G8/n0BoN/ePyVJny5JttO/kzzIu53PPd8z1DF5dQNw8hdZ7U39j7t33yvpn8ablv47Rsz6h7HGdJpf+YF38WFtBBgQrLS7XNLC8ffJ7JLKCDAhWWOwtj7UZnCuig2Lyu0BaZBXRQoELrNoopoIPiqINWqIMOilAHrVIHHRSlDtqS/qCDArW8ttjCAjooUGG5020+5XrooNi8rjZvlXwq8KPYdkt+7FSYdOdrmPTla+XzZWYBHRSoO1PxXaaDcnf96FhYQAcFKixZSvoc+tw267gWm9fVZouSvsS77ft36HTozPMuXytMevO8MA+T7jyvzCv7l5lFSR9cC9Sdu36Hfof+q8hYWEAHBSossSTpF/QL36+gX9Av6Bd0C7oFvYJeQaegU9An6BP0Cd+voE/Ql/u/o5+du05BZ16vWK+uXxEWFtBBgQpLHvGkW8m/kn8l/0r+Fd1K/pX8K/lX/FDyr+Rfyb+SfyX/Sv6V/Cv5V/Kv5F/Jv5J/Jf9K/pX8K74qviq+Kr4qviq+Kr5mP2DyU/Ezz1fXr1wLC+igQIXl5dVqM8ud1fZfHkz5kH4VhCmN/bo8jJN5/fM4LmH61Q8fPqbl47gO7ZzcT6fGH/k22/DTZej/+rzdIw+3gioPP11m4/B57zk9FcN2/Hz3yzwu42Ns3v8UhmWKp/Uc0hH04tCqdnHvj2vs2nQMnn17Dst83659/1S/ONv+BQXx7chfCQAA"
+}

@@ -1,0 +1,49 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABBBCBBBB",
+    "CCDEFEGCC",
+    "ECCCFCCCE",
+    "EHHCCCHHE",
+    "EEEEIEEEE",
+    "EHHCCCHHE",
+    "ECCCJCCCE",
+    "CCGEJEDCC",
+    "BBBBCBBBA"
+  ],
+  "key": {
+    "A": {
+      "item": "powah:energizing_rod_niotic"
+    },
+    "B": {
+      "item": "powah:energy_cable_niotic"
+    },
+    "C": {
+      "item": "mysticalagriculture:supremium_essence"
+    },
+    "D": {
+      "item": "powah:furnator_niotic"
+    },
+    "E": {
+      "item": "powah:niotic_crystal_block"
+    },
+    "F": {
+      "item": "powah:magmator_niotic"
+    },
+    "G": {
+      "item": "powah:solar_panel_niotic"
+    },
+    "H": {
+      "item": "powah:capacitor_niotic"
+    },
+    "I": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    },
+    "J": {
+      "item": "powah:thermo_generator_niotic"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:niotic_crystal_seeds"
+  }
+}

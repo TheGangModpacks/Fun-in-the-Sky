@@ -1,0 +1,71 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.17.1",
+    "name": "Summoning Altar",
+    "author": "FooterMan15",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 6,
+      "max_y": 7,
+      "max_z": 6
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 20,
+          "item": {
+            "id": "mekanism:block_refined_glowstone"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 2,
+          "item": {
+            "id": "minecraft:gold_block"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 40,
+          "item": {
+            "id": "minecraft:red_wool"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "minecraft:soul_campfire"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 97,
+          "item": {
+            "id": "immersiveengineering:treated_wood_horizontal"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "minecraft:wither_skeleton_skull"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 24,
+          "item": {
+            "id": "dustrial_decor:wrapped_gold_chains"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAA/72VPY/jNhCGKc6Qu+ctAgQBUt4idYqkSOMuTboEAdJcrjG4Fm0LK4sGJcd399vy40KLj3edNLcLHOLCL0WOhu8z4sfCmDdG2zCFhSnNRW0bMYsx5i703aeYy4BZGDdOYYoLs/g9p0PMUxfHW6PhQzea5qMpzd/CPprv2uM4nV9ctXGd8vKUw+EQ29U29e1qvQvdMJ6TfWaWS7av990Q1zlspmUuSU4p9a94+/tuv4957P6KcdiWRCV42C6nHEvMnKxd7VLuPqVhCq/Je7+Pj2Hoxv3yoU/rx1WOm5K9MPbpNE5piC/I9Z863p1KX+7Tdhtb4zahH8tsd2O3HUolN12OT53Sd5PRKR9L22/CuiAZPcVxevoE3z4XbUzHfrUO+8Oc4v92FcOXcXVJ8c1zink5zdV/PdVtTqW3S4Npfniy9/Y596mbdjGvxsfYx/I1S+PYv2R5fNHiuVKkafeC6r0xckijFh9/m6tfg1pUUEUd6okWIVqrNlr7LSqoMu5Qr2R3VRvUoR6tE5Vn1NzwfHNt2Z7/ZrWooIo60PwlThhHS2CD/zqOCqqoQ/2ss/956ga1qKCKOlfj/azlZX9WZ5y/LrnFjK1/lcPCYeGwcNS4hjhUUUsKQRVthHFUUEWdUEIlHrWooIo6rfEeLXWw1MFSB0sdLHW4WlqWIs7mBF6BV+AVeAVegVfgFXgFXoG3LgFhHBVUpY57tEwo8Aq8Aq/AK/AKvAKvwDsvVuFZUXfp93Xxys31lrJ15sqv8Cv8Cr/Cr/Ar/Aq/wq/wK/zK91b4FX6FX/neCr/Cr/Ar/Aq/wq/wK/wKv/K9FX6F/+rosHXRV14Hr4PXwevgdfh2+HXsU4dPh0+HT4dPh0/HPnXsU4dfh1+HX4dfh1/HPi16e96nszr/76OvQe3TCVVVUYd6jpxSd49/j3/POek5Jz3npMe/x7/Hv+ec9JyTHp+e2T3npOec9JyTfmH8LoY25nJNhHI7pGzufkmp3DK/huHHn8rwQzoO7ViWQrku/qw45+a7SzN8eH9mqc1zwE1tvrv0dsP7uTbl3hnO985Xfxz3+zSUG+n+534KuVw3V7ff7VzA+4dj17clZBvabZzGZVve+bi6uiT/Ab7MSdZlCgAA"
+}

@@ -1,0 +1,37 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAABCBAAA",
+    "CCADBDACC",
+    "DCCCBCCCD",
+    "DEECCCEED",
+    "DDDDFDDDD",
+    "DEECCCEED",
+    "DCCCBCCCD",
+    "CCADBDACC",
+    "AAABCBAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "bigreactors:reprocessorglass"
+    },
+    "B": {
+      "item": "bigreactors:ridiculite_ingot"
+    },
+    "C": {
+      "item": "mysticalagriculture:supremium_essence"
+    },
+    "D": {
+      "item": "bigreactors:cyanite_block"
+    },
+    "E": {
+      "item": "emendatusenigmatica:compressednuclearwaste"
+    },
+    "F": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:cyanite_seeds"
+  }
+}

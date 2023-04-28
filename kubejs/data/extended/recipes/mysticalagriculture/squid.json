@@ -1,0 +1,26 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "tier": 1,
+  "key": {
+    "A": {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:6.0d,Type:\"mysticalagriculture:squid\"}"
+    },
+    "B": {
+      "item": "mysticalagriculture:prudentium_essence"
+    },
+    "C": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:squid_seeds"
+  }
+}
