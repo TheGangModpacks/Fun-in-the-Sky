@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "quark:deferred_feature_local_modifications",
-  "worldgen/placed_feature": {
-    "feature": "quark:deferred_feature_local_modifications",
-    "placement": []
-  }
-}

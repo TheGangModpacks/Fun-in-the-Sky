@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "twilightforest:simple_well",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "twilightforest:simple_well"
-  }
-}
