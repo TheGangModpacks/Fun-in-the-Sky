@@ -10,8 +10,8 @@ ServerEvents.recipes(event =>{
     event.remove({ output: 'mekanism:ultimate_chemical_tank'})
     event.shaped(Item.of('mekanism:basic_fluid_tank'),
     [ 'ABA', 'BCB', 'ABA'],
-    { B: 'emendatusenigmatica:osmium_ingot',
-      A: 'ae2:fluix_dust',
+    { B: 'emendatusenigmatica:steel_ingot',
+      A: 'exnihilosequentia:porcelain_clay',
       C: 'ae2:quartz_vibrant_glass'})
 
     event.shaped(Item.of('mekanism:basic_chemical_tank'),

@@ -321,4 +321,41 @@ ServerEvents.recipes(event =>{
 	event.shaped( Item.of(MK('ultimate_control_circuit')),
 	[
 		'A A', ' B ', 'A A' ],{ B: (MK('elite_control_circuit')), A: (MK('alloy_atomic'))})
+		event.custom({
+			type: 'create:mechanical_crafting',
+			acceptMirrored: false,
+			key: {
+				A: Item.of('mekanism:ingot_refined_obsidian'),
+				B: Item.of(MK('ultimate_control_circuit')),
+				C: Item.of(MK('steel_casing')),
+				E: Item.of(MK('boiler_casing')),
+				G: Item.of(MK('advanced_fluid_tank')),
+			},
+			pattern: [
+				' GAAG ',
+				'EBCCBE',
+				'EBAABE',
+				'EEGGEE'
+			],
+			result: Item.of(MK('chemical_washer'))
+		}).id(MK('chemical_washer'))
+		event.custom({
+			type: 'create:mechanical_crafting',
+			acceptMirrored: false,
+			key: {
+				A: Item.of('mekanism:ingot_refined_obsidian'),
+				B: Item.of(MK('ultimate_control_circuit')),
+				C: Item.of(MK('steel_casing')),
+				D: Item.of("kubejs:fluoridian_crystal"),
+				E: Item.of(('ae2:quartz_growth_accelerator')),
+				F: Item.of(MK('structural_glass')),
+			},
+			pattern: [
+				'DFDDFD',
+				'FDCCDF',
+				'FEBBEF',
+				'EAEEAE'
+			],
+			result: Item.of(MK('chemical_crystallizer'))
+		}).id(MK('chemical_crystallizer'))
 })
