@@ -1,0 +1,81 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 100000,
+  "input": {
+    "item": "mysticalagriculture:wither_skeleton_seeds"
+  },
+  "ingredients": [
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "extendedcrafting:nether_star_block"
+    },
+    {
+      "item": "mysticalagradditions:withering_soul"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagradditions:withering_soul"
+    },
+    {
+      "item": "mysticalagradditions:withering_soul"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "mysticalagradditions:withering_soul"
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    {
+      "item": "extendedcrafting:ender_star"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:8.0d,Type:\"mysticalagriculture:wither_skeleton\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "mysticalagriculture:soul_jar",
+      "count": 1,
+      "nbt": "{Souls:8.0d,Type:\"mysticalagriculture:wither_skeleton\"}"
+    },
+    {
+      "item": "extendedcrafting:ender_star"
+    },
+    {
+      "item": "extendedcrafting:crystaltine_catalyst"
+    },
+    {
+      "item": "industrialforegoing:wither_builder"
+    },
+    {
+      "item": "extendedcrafting:flux_star"
+    },
+    {
+      "item": "extendedcrafting:flux_star"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "extendedcrafting:singularity",
+      "count": 1,
+      "nbt": "{Id:\"extendedcrafting:onion\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "extendedcrafting:singularity",
+      "count": 1,
+      "nbt": "{Id:\"extendedcrafting:cardboard\"}"
+    }
+  ],
+  "result": {
+    "item": "mysticalagriculture:nether_star_seeds"
+  }
+}

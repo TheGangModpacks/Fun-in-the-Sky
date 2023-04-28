@@ -1,0 +1,37 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAAABAAAA",
+    "BBACDCABB",
+    "CBBBDBBBC",
+    "CEEBBBEEC",
+    "CCCCFCCCC",
+    "CEEBBBEEC",
+    "CBBBDBBBC",
+    "BBACDCABB",
+    "AAAABAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:enderium_glass"
+    },
+    "B": {
+      "item": "mysticalagriculture:supremium_essence"
+    },
+    "C": {
+      "item": "emendatusenigmatica:enderium_block"
+    },
+    "D": {
+      "item": "thermal:ender_bucket"
+    },
+    "E": {
+      "item": "thermal:upgrade_augment_3"
+    },
+    "F": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:enderium_seeds"
+  }
+}

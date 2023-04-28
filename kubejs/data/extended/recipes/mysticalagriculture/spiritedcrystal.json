@@ -1,0 +1,49 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABBBCBBBB",
+    "CCDEFEGCC",
+    "ECCCFCCCE",
+    "EHHCCCHHE",
+    "EEEEIEEEE",
+    "EHHCCCHHE",
+    "ECCCJCCCE",
+    "CCGEJEDCC",
+    "BBBBCBBBA"
+  ],
+  "key": {
+    "A": {
+      "item": "powah:energizing_rod_spirited"
+    },
+    "B": {
+      "item": "powah:energy_cable_spirited"
+    },
+    "C": {
+      "item": "mysticalagriculture:supremium_essence"
+    },
+    "D": {
+      "item": "powah:furnator_spirited"
+    },
+    "E": {
+      "item": "powah:spirited_crystal_block"
+    },
+    "F": {
+      "item": "powah:magmator_spirited"
+    },
+    "G": {
+      "item": "powah:solar_panel_spirited"
+    },
+    "H": {
+      "item": "powah:capacitor_spirited"
+    },
+    "I": {
+      "item": "mysticalagriculture:prosperity_seed_base"
+    },
+    "J": {
+      "item": "powah:thermo_generator_spirited"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:spirited_crystal_seeds"
+  }
+}
