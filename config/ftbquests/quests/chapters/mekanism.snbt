@@ -1,0 +1,501 @@
+{
+	id: "014408FEEAD28AB9"
+	group: "45EE6B8D98E9487B"
+	order_index: 8
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: "mekanism:crusher"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			x: -4.0d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["The Metallurgic Infuser is like an Alloy Smelter, but boring. It infuses items with Carbon, or Redstone, for example."]
+			dependencies: ["62303264E2676947"]
+			hide: true
+			invisible_until_tasks: 1
+			id: "34D498402298FA2C"
+			tasks: [{
+				id: "7C6B3557F0085ED1"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [{
+				id: "366B1DB7CA62B11A"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "Mekanism Machines"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			shape: "square"
+			description: ["The Basic Control Circuit is used for electronic components."]
+			dependencies: ["34D498402298FA2C"]
+			id: "42989B2C968224C0"
+			tasks: [{
+				id: "2955122949FA47E6"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			shape: "square"
+			description: ["The Advanced Control Circuit furthers the potency of the Basic circuit."]
+			dependencies: [
+				"57DCE8CEC664989E"
+				"42989B2C968224C0"
+			]
+			id: "5266006C886E627A"
+			tasks: [{
+				id: "29F1093CFDDB530E"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.5d
+			shape: "square"
+			description: ["                     &l&o&bElite!"]
+			dependencies: [
+				"5266006C886E627A"
+				"397228F24B47CEE9"
+			]
+			id: "48E6DA15916FDD2D"
+			tasks: [{
+				id: "274C1A46E6CE5687"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -10.0d
+			shape: "gear"
+			description: ["For when \"Basic\" isn't enough for you."]
+			dependencies: [
+				"48E6DA15916FDD2D"
+				"1B2E193663BF6BE1"
+			]
+			id: "3654BA9F1F0025D1"
+			tasks: [{
+				id: "5338A56AFD6EBC41"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -10.0d
+			shape: "gear"
+			description: ["Atomic wafer!"]
+			dependencies: ["397228F24B47CEE9"]
+			id: "1B2E193663BF6BE1"
+			tasks: [{
+				id: "377B1C7B67BA6182"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.5d
+			shape: "square"
+			description: ["Reinforced wafer!"]
+			dependencies: ["57DCE8CEC664989E"]
+			id: "397228F24B47CEE9"
+			tasks: [{
+				id: "34804CE7C51E8BF8"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			shape: "square"
+			description: ["Infused Alloy is an advanced little... wafer thing? I'm not really sure."]
+			dependencies: ["34D498402298FA2C"]
+			id: "57DCE8CEC664989E"
+			tasks: [{
+				id: "193A2550F6B0810A"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["The Enrichment Chamber is used to enrich items into their purest forms. Useful for 8x Infuse Materials."]
+			dependencies: ["57DCE8CEC664989E"]
+			id: "7773E983403EBD94"
+			tasks: [{
+				id: "40523921F262F598"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			title: "Compressed Materials"
+			icon: "mekanism:enriched_carbon"
+			x: 1.0d
+			y: -3.5d
+			description: ["Enriching certain materials can make compressed versions, giving more Infuse material in the Metallurgic Infuser."]
+			dependencies: ["7773E983403EBD94"]
+			id: "6DE2E730B0DAB3EB"
+			tasks: [
+				{
+					id: "7972AE25A4E80097"
+					type: "item"
+					item: "mekanism:enriched_carbon"
+				}
+				{
+					id: "7AB2280CDD3FE9DB"
+					type: "item"
+					item: "mekanism:enriched_redstone"
+				}
+				{
+					id: "01934C4B9E0E7004"
+					type: "item"
+					item: "mekanism:enriched_diamond"
+				}
+				{
+					id: "7787AF6D1E60F956"
+					type: "item"
+					item: "mekanism:enriched_refined_obsidian"
+				}
+				{
+					id: "2FA56CD69B9708D9"
+					type: "item"
+					item: "mekanism:enriched_gold"
+				}
+				{
+					id: "4D7176FE7A2F929C"
+					type: "item"
+					item: "mekanism:enriched_tin"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			description: ["Generates passive Energy."]
+			dependencies: [
+				"60DBE8C4A9E6FCFD"
+				"57DCE8CEC664989E"
+			]
+			id: "1DBF4F1B2628D261"
+			tasks: [{
+				id: "308320447C75D5C6"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			description: ["Produces Energy from burnable materials."]
+			dependencies: ["42989B2C968224C0"]
+			id: "60DBE8C4A9E6FCFD"
+			tasks: [{
+				id: "0CA956CA1855D1A3"
+				type: "item"
+				item: "mekanismgenerators:heat_generator"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			shape: "rsquare"
+			description: ["Electrical Furnace."]
+			dependencies: [
+				"397228F24B47CEE9"
+				"5266006C886E627A"
+			]
+			id: "1BCFFF36D8AC4258"
+			tasks: [{
+				id: "7F498C1C95CFBE96"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.0d
+			shape: "pentagon"
+			description: [
+				"Tier Installers improve your Mekanism machinery, by increasing how much it can process at one time."
+				"* The Basic Tier Installer adds two extra processing lanes to machines that support it."
+				"* Machines upgraded by Tier Installers now have a \"Sort\" option, enabling machines to distribute input evenly to each lane."
+				"* Machines upgrades by Tier Installers consume extra power."
+			]
+			dependencies: ["42989B2C968224C0"]
+			id: "2F4B885BAC2E0C8B"
+			tasks: [{
+				id: "3DD1FA299704C8EA"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.0d
+			shape: "pentagon"
+			description: ["Adds two extra lanes to machines upgraded to \"Basic\" tier."]
+			dependencies: [
+				"2F4B885BAC2E0C8B"
+				"5266006C886E627A"
+			]
+			id: "33DAA245A9850827"
+			tasks: [{
+				id: "3709B0970D3E804C"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.5d
+			shape: "pentagon"
+			description: ["Adds two extra lanes to machines upgraded to \"Advanced\" tier."]
+			dependencies: [
+				"33DAA245A9850827"
+				"48E6DA15916FDD2D"
+			]
+			id: "1D4FC42A881CFE40"
+			tasks: [{
+				id: "247654AF8696E675"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -10.0d
+			shape: "pentagon"
+			description: ["Adds two extra lanes to machines upgraded to \"Elite\" tier, in total giving machines 9 processing lanes."]
+			dependencies: [
+				"1D4FC42A881CFE40"
+				"3654BA9F1F0025D1"
+			]
+			id: "46968692C7762E76"
+			tasks: [{
+				id: "1DFAA2B29411A6FC"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: ["The Electrolytic Seperator does exactly what it says on the tin. It seperates Gasses from Fluids."]
+			dependencies: ["5266006C886E627A"]
+			id: "26D0E2687C30F81C"
+			tasks: [{
+				id: "06131CE4C080423A"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			shape: "rsquare"
+			description: [
+				"Purifies materials with Oxygen."
+				"The Chamber on it's own is capable of doubling material output."
+			]
+			dependencies: [
+				"26D0E2687C30F81C"
+				"7773E983403EBD94"
+			]
+			id: "3958C78C5D1378CD"
+			tasks: [{
+				id: "39B180F0A26FEEA1"
+				type: "item"
+				item: "mekanism:purification_chamber"
+			}]
+		}
+		{
+			title: "Machine Upgrades"
+			icon: "mekanism:upgrade_speed"
+			x: -7.0d
+			y: -5.0d
+			description: [
+				"Mekanism Machines can house little modules that helps with your material production.                                                   "
+				"-Speed Upgrades increase a machine's speed. Stacks up to 8 in one machine.                         "
+				"-Energy Upgrades increase a machine's energy capacity and efficiency.                                                                  "
+				"-Filter Upgrades are only used for extracting Heavy Water.                      "
+				"-There is usually a Muffling Upgrade, but we have a mod called Extreme Sound Muffler, which allows you to fine tune the volume of any sound you want.                                                          "
+				"-Gas Upgrades increase efficiency of Gas related machines.                                         "
+				"-Anchor Upgrades chunkload any chunk it find's itself in, as long as it's inserted into a machine. Note: Anchor upgrades are usually disabled by Server owners because it bypasses FTBChunks. Don't be surprised if it doesn't work."
+			]
+			dependencies: ["57DCE8CEC664989E"]
+			id: "1BA22B68F38579E8"
+			tasks: [
+				{
+					id: "13853CF9B1F22B60"
+					type: "item"
+					item: "mekanism:upgrade_speed"
+				}
+				{
+					id: "04866B6C3A743A36"
+					type: "item"
+					item: "mekanism:upgrade_energy"
+				}
+				{
+					id: "2BBCA8A873265A3B"
+					type: "item"
+					item: "mekanism:upgrade_filter"
+				}
+				{
+					id: "7B6E9CEB10E032C1"
+					type: "item"
+					item: "mekanism:upgrade_gas"
+				}
+				{
+					id: "550B279F263483FC"
+					type: "item"
+					item: "mekanism:upgrade_anchor"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: [
+				"The Crusher is a beefy little block that grinds materials down to their last atom."
+				"-Not a toy."
+			]
+			dependencies: ["5266006C886E627A"]
+			id: "69CCCE17AE89D6DF"
+			tasks: [{
+				id: "3D351467DA7ADE82"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["The Osmium Compressor alloy's Osmium with various other materials."]
+			dependencies: ["5266006C886E627A"]
+			id: "42DEE737CCE81D10"
+			tasks: [{
+				id: "06ABA815DB74502F"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: [
+				"The Precision Sawmill is used to more efficiently cut down Wooden materials, increasing their output."
+				"-&oMay not be as precise as advertized."
+			]
+			dependencies: ["5266006C886E627A"]
+			id: "613C185B424E80CE"
+			tasks: [{
+				id: "72B528AB158002E8"
+				type: "item"
+				item: "mekanism:precision_sawmill"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: ["The Chemical Infuser combines two Gasses into one."]
+			dependencies: ["26D0E2687C30F81C"]
+			id: "24FAF7E9652806B5"
+			tasks: [{
+				id: "0A23423D0B87F2BF"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["Directly converts Items into Gasses."]
+			dependencies: ["26D0E2687C30F81C"]
+			id: "526E497A02983709"
+			tasks: [{
+				id: "73F33C8FE4D11C1E"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			shape: "rsquare"
+			description: ["The PRC is a very complex machine, creating Items and Gasses from three inputs. Very expensive."]
+			dependencies: ["48E6DA15916FDD2D"]
+			id: "3BBA62D261175CE2"
+			tasks: [{
+				id: "193C34517FDD26AD"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["Either Condenses Gasses to Fluids, or De-Condenses Fluids to Gasses."]
+			dependencies: ["5266006C886E627A"]
+			id: "46BBD9CF9076EB28"
+			tasks: [{
+				id: "2F0832CBF3AE6242"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -10.5d
+			shape: "rsquare"
+			description: ["The Chemical Dissolution Chamber is used to make Dirty Slurries from raw ores and Sulfuric Acid."]
+			dependencies: [
+				"3654BA9F1F0025D1"
+				"42DEE737CCE81D10"
+			]
+			id: "17AB6A61F5C35A66"
+			tasks: [{
+				id: "542D38DAD95F1ACC"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -10.5d
+			shape: "rsquare"
+			description: ["The Chemical Washer washes Dirty Slurries from Dissolution Chambers."]
+			dependencies: ["17AB6A61F5C35A66"]
+			id: "43486C754C7B5F25"
+			tasks: [{
+				id: "2F10778E8D967690"
+				type: "item"
+				item: "mekanism:chemical_washer"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
