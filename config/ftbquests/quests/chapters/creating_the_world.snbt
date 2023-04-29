@@ -151,7 +151,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["764927A0428B3988"]
-			invisible: true
+			hide: true
 			invisible_until_tasks: 1
 			id: "318C3AA1FD1918D3"
 			tasks: [{
@@ -452,8 +452,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["764927A0428B3988"]
-			invisible: true
-			invisible_until_tasks: 1
+			hide: true
 			id: "597E411D5DD0C715"
 			tasks: [{
 				id: "14A4C4555F4D51E7"
@@ -473,7 +472,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["764927A0428B3988"]
-			invisible: true
+			hide: true
 			invisible_until_tasks: 1
 			id: "1E2518E28DDAFF97"
 			tasks: [{
@@ -563,7 +562,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["764927A0428B3988"]
-			invisible: true
+			hide: true
 			invisible_until_tasks: 1
 			id: "6C34C54C8169ABCC"
 			tasks: [{
@@ -752,7 +751,7 @@
 			y: -5.5d
 			subtitle: "Wingardiam Leviosaah "
 			description: [
-				"The Wand of Symm is an awesome building tool, mirroring your places blocks. Great for architecture!"
+				"The Wand of Symm is an awesome building tool, mirroring your placed blocks. Great for architecture!"
 				""
 				"Hold CTRL for controls."
 			]
@@ -923,7 +922,7 @@
 			description: ["Create has a bunch of extra items for things like redstone control. Check them out, I promise they're useful."]
 			hide_dependency_lines: true
 			dependencies: ["764927A0428B3988"]
-			invisible: true
+			hide: true
 			invisible_until_tasks: 1
 			id: "39DE977D710C790B"
 			tasks: [{
