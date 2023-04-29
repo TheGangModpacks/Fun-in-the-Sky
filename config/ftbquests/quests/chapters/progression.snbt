@@ -1,0 +1,1875 @@
+{
+	id: "6DFAA9231A5FCAD6"
+	group: ""
+	order_index: 0
+	filename: "progression"
+	title: "&fProgression"
+	icon: "twilightforest:filled_ore_map"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "&7Immersive Engineering"
+			x: 0.5d
+			y: -1.5d
+			shape: "rsquare"
+			description: ["Crafting the Hammer unlocks the IE Questline."]
+			dependencies: ["2CA294BAE1134404"]
+			id: "2C57309260111ED1"
+			tasks: [{
+				id: "17BBD2B61B435993"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "&2Twilight Forest"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			disable_toast: true
+			x: -0.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"To make the Twilight Forest Portal, you make a 2x2 of water surrounded by dirt, place down any kind of plant like Saplings, Flowers, etc on the dirt, and throw a Finished PCB in the water."
+				"Note: Portal will spawn Lightning. Keep away from any wood flooring."
+				""
+				"Completing this unlocks the Twilight Forest Questline."
+			]
+			dependencies: [
+				"2C57309260111ED1"
+				"1BB7C983C892EDB9"
+			]
+			id: "6559CC67BF9CB433"
+			tasks: [{
+				id: "70D94497C31DF7B8"
+				type: "dimension"
+				dimension: "twilightforest:twilight_forest"
+			}]
+		}
+		{
+			title: "Botania"
+			icon: "botania:orange_petal"
+			x: 0.0d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["Crafting a Petal Apothecary opens the Botania Questline."]
+			dependencies: ["6559CC67BF9CB433"]
+			id: "0E51BD89CBC21868"
+			tasks: [{
+				id: "4D94F4E4DE4AE8CF"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			title: "Pneumaticcraft"
+			x: 1.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Exploding Leaded Iron and obtaining the result unlocks Pneumaticcraft!"]
+			dependencies: ["2C57309260111ED1"]
+			id: "1BB7C983C892EDB9"
+			tasks: [{
+				id: "65831997B0877DA8"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			title: "Leather"
+			icon: {
+				id: "minecraft:leather_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: -8.0d
+			dependencies: ["11AC41B7BCDD7FBE"]
+			id: "4E74D97CFEDC2DFA"
+			tasks: [
+				{
+					id: "1DA0E0B82E3694EF"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4A4595978132B82D"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4F5DD73BCEFFDE30"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "090F0736BDFD7345"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -8.0d
+			description: [
+				"Crafting Armor in this pack requires you to go through one armor set after another. So no, you cannot make Iron gear normally. Enjoy!"
+				"TGM's Inc is not responsible for lost/deleted/broken armor pieces."
+			]
+			id: "11AC41B7BCDD7FBE"
+			tasks: [{
+				id: "66507A32E450F7FE"
+				type: "checkmark"
+				title: "Armory"
+			}]
+		}
+		{
+			title: "Flint"
+			icon: {
+				id: "pickletweaks:flint_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: -8.0d
+			dependencies: ["4E74D97CFEDC2DFA"]
+			id: "33CD099ABD559296"
+			tasks: [
+				{
+					id: "2A512262ADA0EC9A"
+					type: "item"
+					item: {
+						id: "pickletweaks:flint_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E10632FD463489B"
+					type: "item"
+					item: {
+						id: "pickletweaks:flint_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3723FEB5E4E928B1"
+					type: "item"
+					item: {
+						id: "pickletweaks:flint_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "14FF8F99663DE083"
+					type: "item"
+					item: {
+						id: "pickletweaks:flint_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Chainmail"
+			icon: {
+				id: "minecraft:chainmail_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -8.0d
+			dependencies: ["33CD099ABD559296"]
+			id: "3EF6C2D699388881"
+			tasks: [
+				{
+					id: "1A7300F9EBFAC5A9"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5F791FB73DD20D13"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7BA1C18F99A3958F"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "171E1312DE5F9575"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Compressed Iron"
+			icon: {
+				id: "pneumaticcraft:compressed_iron_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -8.0d
+			dependencies: ["7C4B3DEAAD259143"]
+			id: "702A2EBBD10BEDFA"
+			tasks: [
+				{
+					id: "5442101621429808"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4C622EFE58892010"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7A31C23A673C1C40"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6E6C0C9BEE277E92"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Lapis"
+			icon: {
+				id: "mekanismtools:lapis_lazuli_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -8.0d
+			dependencies: ["3EF6C2D699388881"]
+			id: "7C4B3DEAAD259143"
+			tasks: [
+				{
+					id: "2A4CB752A1A61115"
+					type: "item"
+					item: {
+						id: "mekanismtools:lapis_lazuli_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "50E1B5525A5231C2"
+					type: "item"
+					item: {
+						id: "mekanismtools:lapis_lazuli_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1F5415E5D62CAA04"
+					type: "item"
+					item: {
+						id: "mekanismtools:lapis_lazuli_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "08DAFA9CFC07CD2C"
+					type: "item"
+					item: {
+						id: "mekanismtools:lapis_lazuli_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Iron"
+			icon: {
+				id: "minecraft:iron_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: -8.0d
+			dependencies: ["702A2EBBD10BEDFA"]
+			id: "1A074E2912E68350"
+			tasks: [
+				{
+					id: "4B3A40B993358BA4"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3CB0073256C22448"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "59348C2FD70A0BDC"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4804B89DA6187C65"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Ironwood"
+			icon: {
+				id: "twilightforest:ironwood_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						lvl: 1s
+						id: "minecraft:protection"
+					}]
+				}
+			}
+			x: 3.5d
+			y: -8.0d
+			dependencies: ["1A074E2912E68350"]
+			id: "57B656BEED2B1330"
+			tasks: [
+				{
+					id: "7CB6A715A522EE86"
+					type: "item"
+					item: {
+						id: "twilightforest:ironwood_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "minecraft:aqua_affinity"
+							}]
+						}
+					}
+				}
+				{
+					id: "44774A1D751AC96B"
+					type: "item"
+					item: {
+						id: "twilightforest:ironwood_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "5E3F43A2BF126364"
+					type: "item"
+					item: {
+						id: "twilightforest:ironwood_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "35840B8FC23BA8DA"
+					type: "item"
+					item: {
+						id: "twilightforest:ironwood_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 1s
+								id: "minecraft:feather_falling"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Arctic"
+			icon: {
+				id: "twilightforest:arctic_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -6.5d
+			dependencies: ["57B656BEED2B1330"]
+			id: "604DD1CE38FD37B0"
+			tasks: [
+				{
+					id: "07674F6DFDF07806"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "378B3F762D724444"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "335BFBACF0DA8D81"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "321D8DAF2553994F"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Gold"
+			icon: {
+				id: "minecraft:golden_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: -6.5d
+			dependencies: ["604DD1CE38FD37B0"]
+			id: "0E4542128A70D4EF"
+			tasks: [
+				{
+					id: "7FD6807D651E86B0"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "257F947B24747C34"
+					type: "item"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "165D610E0A09ED4A"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1DF919BE8117601F"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Naga"
+			icon: {
+				id: "twilightforest:naga_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						lvl: 3s
+						id: "minecraft:fire_protection"
+					}]
+				}
+			}
+			x: 1.5d
+			y: -6.0d
+			dependencies: ["0E4542128A70D4EF"]
+			id: "7505DB55F55D90CA"
+			tasks: [
+				{
+					id: "54D7F7358974B38A"
+					type: "item"
+					item: {
+						id: "twilightforest:naga_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 3s
+								id: "minecraft:fire_protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "3E1F90E3C2032B3D"
+					type: "item"
+					item: {
+						id: "twilightforest:naga_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 3s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Manasteel"
+			icon: {
+				id: "botania:manasteel_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -7.0d
+			dependencies: ["0E4542128A70D4EF"]
+			id: "63B81D2CA3D2A2BA"
+			tasks: [
+				{
+					id: "04AA1AC062E0CC78"
+					type: "item"
+					item: {
+						id: "botania:manasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2F293AFA2534C8C6"
+					type: "item"
+					item: {
+						id: "botania:manasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Bronze"
+			icon: {
+				id: "mekanismtools:bronze_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -6.5d
+			dependencies: [
+				"7505DB55F55D90CA"
+				"63B81D2CA3D2A2BA"
+			]
+			id: "153DF699CD8B04A5"
+			tasks: [
+				{
+					id: "7E3DE67BC3175350"
+					type: "item"
+					item: {
+						id: "mekanismtools:bronze_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "382299ED0F6D0588"
+					type: "item"
+					item: {
+						id: "mekanismtools:bronze_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "541549A6516CEE1D"
+					type: "item"
+					item: {
+						id: "mekanismtools:bronze_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "683681FC16411DF2"
+					type: "item"
+					item: {
+						id: "mekanismtools:bronze_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Mekanism!"
+			x: 0.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["Crafting a Metallurgic Infuser opens the Mekanism Questline."]
+			dependencies: ["670A163129BF4DE5"]
+			id: "62303264E2676947"
+			tasks: [{
+				id: "0C909CB374CF5AC0"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			title: "Create"
+			x: 1.0d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["Crafting some Compressed Alloy unlocks the Create Questline."]
+			dependencies: ["1BB7C983C892EDB9"]
+			id: "648D003C88FD41AB"
+			tasks: [{
+				id: "4165260FC2637953"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			icon: {
+				id: "ad_astra:tier_1_rocket"
+				Count: 1b
+				tag: {
+					BotariumData: { }
+				}
+			}
+			x: 2.0d
+			y: 3.0d
+			shape: "rsquare"
+			description: ["Ad Astra currently has no dependencies. Enjoy!"]
+			dependencies: ["648D003C88FD41AB"]
+			id: "7602F7AF2F152D28"
+			tasks: [{
+				id: "745036F97AD2FCA4"
+				type: "checkmark"
+				title: "Ad Astra!"
+			}]
+		}
+		{
+			title: "Digital Storage!"
+			icon: "refinedstorage:red_creative_controller"
+			x: 2.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: ["Obtaining Silicon unlocks the Digital Storage Questline!"]
+			dependencies: ["1BB7C983C892EDB9"]
+			id: "0048CFCE5675B1EE"
+			tasks: [{
+				id: "09D6A776EDF277A6"
+				type: "item"
+				item: "emendatusenigmatica:silicon_gem"
+				count: 8L
+			}]
+		}
+		{
+			title: "RFTools"
+			icon: "rftoolsbase:machine_frame"
+			x: -1.0d
+			y: 3.0d
+			shape: "rsquare"
+			description: ["Obtain Dimensional Shards to unlock RFTools!"]
+			dependencies: ["0E51BD89CBC21868"]
+			id: "16EFE494874CE030"
+			tasks: [{
+				id: "5C3B2BBF30144286"
+				type: "item"
+				item: "rftoolsbase:dimensionalshard"
+				count: 32L
+			}]
+		}
+		{
+			title: "Mystical Agriculture!"
+			x: -1.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: ["Mining Prosperity in the Twilight Forest unlocks the Agriculture Questline!"]
+			dependencies: ["6559CC67BF9CB433"]
+			id: "5DFD54DB42FFC556"
+			tasks: [{
+				id: "4FE4AA45715DEDD0"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+			}]
+		}
+		{
+			title: "Enchanting"
+			icon: "apotheosis:library"
+			x: -2.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: ["Enchanting currently has no dependencies. Enjoy!"]
+			dependencies: ["16EFE494874CE030"]
+			id: "5F3CABDA72BC6D60"
+			tasks: [{
+				id: "62523D4B586A5C56"
+				type: "checkmark"
+				title: "Enchantment"
+			}]
+		}
+		{
+			title: "Compact Crafting"
+			x: 1.0d
+			y: 4.0d
+			shape: "rsquare"
+			description: [
+				"The Compact Crafting Mod adds Field Projectors, which can condense blocks placed in the world into anything!"
+				""
+				"To set up such a contraption, all you need to do is this:"
+				"1* Place down any block, and then a Field Projector on top."
+				"2* Right click the projector to show where to put the next projectors."
+				"3* Repeat until all 4 projectors are placed. After doing so, a big orange box should appear. If not, you messed it up."
+				"4* You're pretty much done! You can now build structures inside the orange box and condense them into items / blocks."
+				""
+				"Hit \"U\" on a field projector in your inventory / JEI to see the recipes. We will provide structure files for each craft, you can find them inside the \"structures\" folder in the Modpack directory."
+			]
+			dependencies: ["7602F7AF2F152D28"]
+			id: "670A163129BF4DE5"
+			tasks: [{
+				id: "442AEB4A950E1B5F"
+				type: "item"
+				item: "compactcrafting:field_projector"
+				count: 4L
+			}]
+		}
+		{
+			title: "Industrial Foregoing"
+			x: 2.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["Craft a Pity Machine Frame to open the Industrial Foregoing Questline."]
+			dependencies: ["670A163129BF4DE5"]
+			id: "78690BEE1FDB0616"
+			tasks: [{
+				id: "1663490783C62E7A"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "Powah!"
+			x: 3.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Crafting Dielectric Paste opens the Powah! Questline."]
+			dependencies: ["1BB7C983C892EDB9"]
+			id: "1F788C5B5AF4DEF7"
+			tasks: [{
+				id: "0B43C170C0E2DDEE"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			title: "Ars Nouveau!"
+			icon: "ars_nouveau:source_gem"
+			x: -2.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["Grabbing up some Source Berries unlocks Ars Nouveau!"]
+			dependencies: ["62303264E2676947"]
+			id: "63827F8260F11CBD"
+			tasks: [{
+				id: "286F2074E040DAE3"
+				type: "item"
+				item: "ars_nouveau:source_berry"
+				count: 16L
+			}]
+		}
+		{
+			title: "Steel"
+			icon: {
+				id: "mekanismtools:steel_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -6.5d
+			dependencies: ["153DF699CD8B04A5"]
+			id: "38888AA047988ADC"
+			tasks: [
+				{
+					id: "703C319049B06644"
+					type: "item"
+					item: {
+						id: "mekanismtools:steel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "10EE7B1B70E732AE"
+					type: "item"
+					item: {
+						id: "mekanismtools:steel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "227ADF57B21DB540"
+					type: "item"
+					item: {
+						id: "mekanismtools:steel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "328856E0BCA23636"
+					type: "item"
+					item: {
+						id: "mekanismtools:steel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Yeti"
+			icon: {
+				id: "twilightforest:yeti_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						lvl: 2s
+						id: "minecraft:protection"
+					}]
+				}
+			}
+			x: -1.5d
+			y: -6.5d
+			dependencies: ["38888AA047988ADC"]
+			id: "3283E9F009FC3AAD"
+			tasks: [
+				{
+					id: "37DA42D1D532D53C"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "35F512DFA88C62A9"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "35FD205301A9F21F"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "69B301773D218232"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 2s
+									id: "minecraft:protection"
+								}
+								{
+									lvl: 4s
+									id: "minecraft:feather_falling"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Steeleaf"
+			icon: {
+				id: "twilightforest:steeleaf_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						lvl: 2s
+						id: "minecraft:blast_protection"
+					}]
+				}
+			}
+			x: -2.5d
+			y: -6.5d
+			dependencies: ["3283E9F009FC3AAD"]
+			id: "7CC439C65911EAA1"
+			tasks: [
+				{
+					id: "688C0C9AEACC8486"
+					type: "item"
+					item: {
+						id: "twilightforest:steeleaf_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:projectile_protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "627045365E9E4E88"
+					type: "item"
+					item: {
+						id: "twilightforest:steeleaf_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:blast_protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "055D54CC51A24229"
+					type: "item"
+					item: {
+						id: "twilightforest:steeleaf_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:fire_protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "77CB0FC933D38B6B"
+					type: "item"
+					item: {
+						id: "twilightforest:steeleaf_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:feather_falling"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Knightmetal"
+			icon: {
+				id: "twilightforest:knightmetal_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.5d
+			y: -6.5d
+			dependencies: ["7CC439C65911EAA1"]
+			id: "4D424747C0EAF315"
+			tasks: [
+				{
+					id: "3686F427A9EE23CE"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "768B47AB1D491778"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "482AE7E5AEA7AE9E"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1C49B6CF09147787"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Refined Glowstone"
+			icon: {
+				id: "mekanismtools:refined_glowstone_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.5d
+			y: -5.0d
+			dependencies: ["4D424747C0EAF315"]
+			id: "7B12B4FACB57F168"
+			tasks: [
+				{
+					id: "66E9819C6CE2FD01"
+					type: "item"
+					item: {
+						id: "mekanismtools:refined_glowstone_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A6DF32756552DEE"
+					type: "item"
+					item: {
+						id: "mekanismtools:refined_glowstone_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "733A79B3C47EDF31"
+					type: "item"
+					item: {
+						id: "mekanismtools:refined_glowstone_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1FDAF0E3F122F48F"
+					type: "item"
+					item: {
+						id: "mekanismtools:refined_glowstone_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Osmium"
+			icon: {
+				id: "mekanismtools:osmium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: -5.0d
+			dependencies: ["4EA8919B1B96C53E"]
+			id: "2214A863F8650122"
+			tasks: [
+				{
+					id: "63CF4DEB0FD2FE3D"
+					type: "item"
+					item: {
+						id: "mekanismtools:osmium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "568CEE0B8AC133CA"
+					type: "item"
+					item: {
+						id: "mekanismtools:osmium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "790058085FB1BC4B"
+					type: "item"
+					item: {
+						id: "mekanismtools:osmium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6316FDE4874C38DF"
+					type: "item"
+					item: {
+						id: "mekanismtools:osmium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Terrasteel"
+			icon: {
+				id: "botania:terrasteel_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -5.0d
+			dependencies: ["2214A863F8650122"]
+			id: "6D69D4FDCFDFC6F6"
+			tasks: [
+				{
+					id: "6FA519229597887D"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "119BD26E141A41E4"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "68CF6EEA52DBB803"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "55BB13B7C1DD6AD8"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Inferium"
+			icon: {
+				id: "mysticalagriculture:inferium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["6D69D4FDCFDFC6F6"]
+			id: "45F8AF471FA57244"
+			tasks: [
+				{
+					id: "67787C675088FAEE"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7696212F287DE1E8"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "25CBA90C22C9AF9B"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0F6B1C6C01425138"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Prudentium"
+			icon: {
+				id: "mysticalagriculture:prudentium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -5.0d
+			dependencies: ["45F8AF471FA57244"]
+			id: "26DDB16B833747A2"
+			tasks: [
+				{
+					id: "44048BBE4759B538"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1F3E77C1569BD9C6"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "61FFF2544A7656C1"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "71A36BEFA62009E2"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Fiery"
+			icon: {
+				id: "twilightforest:fiery_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: -5.0d
+			dependencies: ["26DDB16B833747A2"]
+			id: "6847814EE416AD47"
+			tasks: [
+				{
+					id: "0DB190F797A75E32"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "05AD5F2732FA62AD"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5AB17B32E4451C73"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "752A4C1F72798978"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Emerald"
+			icon: {
+				id: "pickletweaks:emerald_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -5.0d
+			dependencies: ["6847814EE416AD47"]
+			id: "4E010AEFCB799A81"
+			tasks: [
+				{
+					id: "5ACF60439B290669"
+					type: "item"
+					item: {
+						id: "pickletweaks:emerald_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3BA9A6C97D910549"
+					type: "item"
+					item: {
+						id: "pickletweaks:emerald_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0C6C9D448191BDC6"
+					type: "item"
+					item: {
+						id: "pickletweaks:emerald_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4F116F075678627C"
+					type: "item"
+					item: {
+						id: "pickletweaks:emerald_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tertium"
+			icon: {
+				id: "mysticalagriculture:tertium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -3.5d
+			dependencies: ["4E010AEFCB799A81"]
+			id: "2FE6D0AA0153CEE7"
+			tasks: [
+				{
+					id: "1E53DD422934EA28"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1BD0222BC2598383"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "627FE7BCD4753849"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "78882BB7A21ACDA5"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Netherite"
+			icon: {
+				id: "minecraft:netherite_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: -3.5d
+			dependencies: ["2FE6D0AA0153CEE7"]
+			id: "63D98BB55C40B929"
+			tasks: [
+				{
+					id: "1FDFB25B6B5BB3B0"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E5B9E47189D609A"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2C671BF2A2F8BF50"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7724D539662F56B5"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Diamond"
+			icon: {
+				id: "minecraft:diamond_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["7B12B4FACB57F168"]
+			id: "4EA8919B1B96C53E"
+			tasks: [
+				{
+					id: "4EB22C45D86B7320"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3EA88EFF4898181F"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "72C37401EEB62625"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "52F277F783FA2FE0"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

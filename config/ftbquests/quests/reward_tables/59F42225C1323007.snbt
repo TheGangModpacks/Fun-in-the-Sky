@@ -1,0 +1,8 @@
+{
+	id: "59F42225C1323007"
+	order_index: 3
+	title: "LootBasket"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [ ]
+}
