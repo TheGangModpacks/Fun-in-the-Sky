@@ -35,6 +35,7 @@ event.add('forge:dusts/niter', EE('salt_dust'))
 event.remove('twilightforest:portal/activator', 'minecraft:diamond')
 event.add('twilightforest:portal/activator', "pneumaticcraft:printed_circuit_board")
 event.add('forge:armor/leather', '/^minecraft:.*_leather_/')
+event.add('forge:slates/black_iron', 'extendedcrafting:black_iron_slate')
 })
 ServerEvents.tags('fluid', event =>{
 	event.removeAll('minecraft:water')

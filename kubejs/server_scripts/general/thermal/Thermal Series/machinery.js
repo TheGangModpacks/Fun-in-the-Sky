@@ -61,7 +61,7 @@ event.custom({
     event.custom({
 	type: 'lychee:block_interacting',
 	item_in: {
-		item: 'extendedcrafting:ender_ingot_block'
+		item: 'mekanism:structural_glass'
 	},
 	block_in: 'thermal:machine_frame',
 	post: {

@@ -25,6 +25,9 @@ ServerEvents.tags('item', event => {
     event.add(tag, "mekanismtools:steel_paxel")
     event.add(tag, "ad_astra:hammer")
     event.add(tag, "emendatusenigmatica:enigmatic_hammer")
+    event.add(tag, "extendedcrafting:black_iron_ingot")
+    event.add(tag, "extendedcrafting:black_iron_block")
+    event.add(tag, "extendedcrafting:black_iron_nugget")
 })
 ServerEvents.recipes(event =>{
     //Recipes that are broken, which can likely be fixed in the future.
