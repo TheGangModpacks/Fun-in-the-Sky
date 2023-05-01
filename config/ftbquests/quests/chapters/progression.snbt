@@ -33,7 +33,7 @@
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			disable_toast: true
 			x: -0.5d
-			y: 0.0d
+			y: -0.5d
 			shape: "rsquare"
 			description: [
 				"To make the Twilight Forest Portal, you make a 2x2 of water surrounded by dirt, place down any kind of plant like Saplings, Flowers, etc on the dirt, and throw a Finished PCB in the water."
@@ -888,8 +888,8 @@
 		}
 		{
 			title: "Mystical Agriculture!"
-			x: -1.5d
-			y: 1.0d
+			x: -2.0d
+			y: 0.0d
 			shape: "rsquare"
 			description: ["Mining Prosperity in the Twilight Forest unlocks the Agriculture Questline!"]
 			dependencies: ["6559CC67BF9CB433"]

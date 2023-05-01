@@ -65,7 +65,7 @@ ServerEvents.recipes(event =>{
 			{chance: 0.55, mesh: 'netherite'},
 			{chance: 0.55, mesh: 'netherite'},
 		],
-			input: {item: 'minecraft:sand'},
+			input: {item: '#minecraft:sand'},
 			result:{item: 'minecraft:kelp'},
 			waterlogged: true})
 			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:spore_blossom')
