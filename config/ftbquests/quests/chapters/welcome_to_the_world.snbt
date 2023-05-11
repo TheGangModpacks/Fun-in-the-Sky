@@ -7,7 +7,6 @@
 	icon: "minecraft:oak_sapling"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	hide_quest_details_until_startable: true
 	quests: [
 		{
 			icon: "minecraft:grass_block"
@@ -99,8 +98,9 @@
 			description: [
 				"Do you require assistance? Join our Discord server and ask any question that you could possibly have in that blocky head of yours.                           "
 				"Additionally, if you think you found some bugs, we recommend you open a bug report in our Github page.                      "
-				"Oh, you didn't get a sapling? Sorry about that, here, take this one."
+				"Are you confused about something? Maybe you want to know the Developers? We have a Wiki!"
 			]
+			guide_page: "https://the-gang-modpacks.gitbook.io/fits/"
 			dependencies: ["10F52602C501C23E"]
 			id: "6BE0B3E7D92C4158"
 			tasks: [{

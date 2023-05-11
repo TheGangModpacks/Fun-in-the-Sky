@@ -62,8 +62,21 @@ StartupEvents.registry('block', event =>{
 	event.create('blaze_blood')
 	.thickTexture(0xFFA300)
     .bucketColor(0xFFA300)
-    .displayName('Blaze Blood')
+    .displayName('Blaze Blood'),
+	event.create('carbon_dioxide_liquid')
+	.thinTexture(0xFFFFFF)
+	.noBucket()
+	.noBucket()
+	.displayName('Carbon Dioxide Liquid')
+	//Chemical Liquids
+	event.create('calcium_hydroxide_liquid')
+	.thinTexture(0xC6E2D9)
+	.noBucket()
+	.noBlock()
+	.displayName('Calcium Hydroxide Liquid'),
+	event.create('lithium_peroxide_liquid')
+	.thinTexture(0x7a5700)
+	.noBucket()
+	.noBlock()
+	.displayName('Lithium Peroxide Liquid')
 })
-StartupEvents.registry('enchantment', event =>{
-	event.create('durable_threads').displayName('Durable Threads')
-	});
