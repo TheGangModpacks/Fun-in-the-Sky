@@ -1,4 +1,3 @@
-Platform.mods.kubejs.name = "Fun in the Sky"
 StartupEvents.registry('item', event => {
 	event.create('mk1circuit').displayName('MK1 Circuit')
 	event.create('mk2circuit').displayName('MK2 Circuit')
@@ -26,6 +25,7 @@ StartupEvents.registry('item', event => {
 	event.create('porcelain_brick').tag('forge:ingots').tag('forge:ingots/porcelain_brick')
 	event.create('porcelain_nether_brick').tag('forge:ingots').tag('forge:ingots/porcelain_nether_brick')
 	event.create('fluoridian_crystal').tag('forge:gems/fluoridium').tag('forge:gems')
+	event.create('black_iron_slate').tag('forge:slates/black_iron')
 	//Food
 	event.create('cooked_apple').food(food =>{food.hunger(8).saturation(1)})
 })

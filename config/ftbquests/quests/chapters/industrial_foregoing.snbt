@@ -3,7 +3,7 @@
 	group: "45EE6B8D98E9487B"
 	order_index: 9
 	filename: "industrial_foregoing"
-	title: "Industrial Foregoing"
+	title: "&fIndustrial Foregoing"
 	icon: "industrialforegoing:dissolution_chamber"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
