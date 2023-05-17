@@ -1,6 +1,0 @@
-{
-  "type": "mekanism:chemical_infusing",
-  "leftInput": "emendatusenigmatica:gaseous_partial_teslyte",
-  "rightInput": "mekanism:superheated_sodium",
-  "output": "emendatusenigmatica:gaseous_teslyte"
-}
