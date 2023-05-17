@@ -26,12 +26,14 @@ StartupEvents.registry('item', event => {
 	event.create('porcelain_nether_brick').tag('forge:ingots').tag('forge:ingots/porcelain_nether_brick')
 	event.create('fluoridian_crystal').tag('forge:gems/fluoridium').tag('forge:gems')
 	event.create('black_iron_slate').tag('forge:slates/black_iron')
+	event.create('archaic_gold_ingot').tag('forge:ingots').tag('forge:ingots/archaic_gold').fireResistant(true).rarity("uncommon")
+	event.create('archaic_pink_gold_ingot').tag('forge:ingots').tag('forge:ingots/archaic_pink_gold').fireResistant(true).rarity("uncommon")
 	//Food
 	event.create('cooked_apple').food(food =>{food.hunger(8).saturation(1)})
 })
 StartupEvents.registry('block', event =>{
-	event.create('dielectric_block').displayName('Dielectric Block').material('moss').hardness(0.5).tagBlock('minecraft:mineable/hoe').requiresTool(false)
-	event.create('unprocessed_frame').displayName('Unprocessed Frame').material('metal').hardness(0.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('dielectric_block').material('moss').hardness(0.5).tagBlock('minecraft:mineable/hoe')
+	event.create('unprocessed_frame').material('metal').hardness(0.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	event.create('compressed_cobblestone_x1').material('deepslate').hardness(1.0).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	event.create('compressed_cobblestone_x2').material('deepslate').hardness(1.3).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	event.create('compressed_cobblestone_x3').material('deepslate').hardness(1.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
@@ -41,6 +43,7 @@ StartupEvents.registry('block', event =>{
 	event.create('compressed_gravel_x1', 'falling').material('dirt').hardness(1.0).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 	event.create('compressed_gravel_x2', 'falling').material('dirt').hardness(1.3).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 	event.create('compressed_gravel_x3', 'falling').material('dirt').hardness(1.5).tagBlock('minecraft:mineable/shovel').requiresTool(true)
+	event.create('archaic_gold_block').tagBlock('minecraft:mineable/pickaxe').tag('forge:storage_blocks').tag('forge:storage_blocks/archaic_gold').material('copper').requiresTool(true)
 })
 	StartupEvents.registry('fluid', event =>{
 		event.create('blitz_blood')

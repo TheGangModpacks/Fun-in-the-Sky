@@ -16,4 +16,8 @@ GASES.register('lithium_peroxide', 0x493300)
 GASES.register('carbon_dioxide', 0xFFFFFF)
 GASES.register('monster_meka_coolant', 0x6660FF)
 GASES.register('monster_waste', 0x660055, new $Radiation(0.04))
+
+INFUSETYPE.register('raw_rubber', 0xFFFFFF)
+
 GASES.register($EventBuses.getModEventBus('kubejs').get())
+INFUSETYPE.register($EventBuses.getModEventBus('kubejs').get())
