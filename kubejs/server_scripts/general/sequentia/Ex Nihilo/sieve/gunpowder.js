@@ -1,0 +1,13 @@
+ServerEvents.recipes(event =>{
+	event.remove({ output: 'minecraft:gunpowder', type: 'exnihilosequentia:sieve' })
+    event.recipes.exnihilosequentia.sieve('exnihilosequentia:dust', 'minecraft:gunpowder')
+        .addRoll(0.01, 'string')
+        .addRoll(0.03, 'flint')
+        .addRoll(0.05, 'iron')
+        .addRoll(0.10, 'diamond')
+        .addRoll(0.15, 'emerald')
+        .addRoll(0.15, 'emerald')
+        .addRoll(0.25, 'netherite')
+        .addRoll(0.25, 'netherite')
+        .addRoll(0.25, 'netherite')
+})

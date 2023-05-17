@@ -1,1 +1,0 @@
-{"type":"mekanism:dissolution","itemInput":{"ingredient":{"item":"twilightdelight:fiery_snakes"}},"gasInput":{"amount":1,"gas":"mekanism:sulfuric_acid"},"output":{"gas":"kubejs:dirty_delightful_slurry","amount":1000,"chemicalType":"gas"}}

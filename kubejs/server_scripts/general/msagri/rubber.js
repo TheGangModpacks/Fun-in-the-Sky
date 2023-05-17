@@ -5,12 +5,5 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     S: 'mysticalagriculture:rubber_essence'
-  })
-    event.shaped('industrialforegoing:plastic', [
-    '  S',
-    ' S ',
-    'S  '
-  ], {
-    S: 'mysticalagriculture:rubber_essence'
-  })
+  }).id('fits:mystical/crafting/thermal/cured_rubber')
 })

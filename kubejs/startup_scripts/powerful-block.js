@@ -51,4 +51,6 @@ CapabilityEvents.blockEntity(event => {
 				return stack.amount
 			})
 		)*/
+		event.attach("industrialforegoing:dissolution_chamber", CapabilityBuilder.ENERGY.customBlockEntity() 
+		.getMaxEnergyStored(be => 75000))
 })

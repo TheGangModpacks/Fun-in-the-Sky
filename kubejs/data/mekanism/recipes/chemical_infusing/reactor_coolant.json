@@ -1,1 +1,0 @@
-{"type":"mekanism:chemical_infusing","leftInput":{"amount":1,"gas":"mekanism:oxygen"},"rightInput":{"amount":1,"gas":"mekanism:hydrogen"},"output":{"gas":"kubejs:reactor_coolant","amount":1}}

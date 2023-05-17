@@ -1,5 +1,4 @@
 const pncFluidType = "pneumaticcraft:fluid";
-const pn_prefix = 'fits:materials/processing/thermo-pn/';
 ServerEvents.recipes(event =>{
     event.custom({
         type: thermo_plant,
