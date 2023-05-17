@@ -1,5 +1,10 @@
 ClientEvents.highPriorityAssets(event => {
     event.addLang('gas.kubejs.fluoridelyne', "Fluoridelyne")
     event.addLang('gas.kubejs.monster_meka_coolant', "Monster Meka Coolant")
+    event.addLang('gas.kubejs.sodium_hydroxide', "Sodium Hydroxide")
+    event.addLang('gas.kubejs.calcium_hydroxide', "Calcium Hydroxide")
+    event.addLang('gas.kubejs.lithium_hydroxide', "Lithium Hydroxide")
+    event.addLang('gas.kubejs.lithium_peroxide', "Lithium Peroxide")
+    event.addLang('gas.kubejs.carbon_dioxide', "Carbon Dioxide")
     event.addLang('gas.kubejs.monster_waste', "Monster Waste")
 })

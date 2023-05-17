@@ -1,4 +1,5 @@
 *
+!*/
 !.gitignore
 !config/
 !config/ftbquests/
@@ -16,8 +17,8 @@
 !/kubejs/
 !/kubejs/data/
 !/kubejs/data/
-!/kubejs/server_scripts/general
-!/kubejs/server_scripts/general**
+!/kubejs/server_scripts/general/
+!/kubejs/server_scripts/general/**/*
 !/kubejs/startup_scripts/
 !/kubejs/startup_scripts/**
 !/resources/

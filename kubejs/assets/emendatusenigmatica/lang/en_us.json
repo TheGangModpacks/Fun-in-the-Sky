@@ -7,5 +7,7 @@
 	"item.emendatusenigmatica.fluorite_gem": "Fluorite",
 	"item.emendatusenigmatica.sulfur_gem": "Sulfur",
 	"item.emendatusenigmatica.salt_dust": "Nitrate Dust",
-	"block.emendatusenigmatica.salt_block": "Block of Nitrate"
+	"block.emendatusenigmatica.salt_block": "Block of Nitrate",
+	"item.emendatusenigmatica.calcium_ingot": "Calcium Metal",
+	"item.emendatusenigmatica.trio_exopherilium_base_dust": "Trio Exopherillium Base"
 }
