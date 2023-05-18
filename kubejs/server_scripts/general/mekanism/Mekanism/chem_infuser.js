@@ -14,4 +14,11 @@ ServerEvents.recipes(event =>{
         output: {amount: 1, gas: "kubejs:lithium_peroxide"},
         rightInput: {amount: 1, gas: "kubejs:lithium_hydroxide"}
     }).id(`${c_infuser_prefix}lithium_peroxide`)
+
+    event.custom({
+        type: chem_infuser,
+        leftInput: {amount: 100, gas: 'mekanism:brine'},
+        rightInput: {amount: 20, gas: 'mekanism:water_vapor'},
+        output: {amount: 50, gas: 'kubejs:sodium_hydroxide'}
+    })
 })
