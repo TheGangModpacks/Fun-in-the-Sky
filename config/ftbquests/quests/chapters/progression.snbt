@@ -1870,6 +1870,20 @@
 				}
 			]
 		}
+		{
+			title: "Hexerei"
+			x: 2.5d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["Completing this unlocks the hexerei questline."]
+			dependencies: ["2C57309260111ED1"]
+			id: "049BAB7F1C7B5E21"
+			tasks: [{
+				id: "183B175EB9603CB1"
+				type: "item"
+				item: "hexerei:mixing_cauldron"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

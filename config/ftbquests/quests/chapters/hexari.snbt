@@ -1,0 +1,593 @@
+{
+	id: "2505503308B2E076"
+	group: "45EE6B8D98E9487B"
+	order_index: 11
+	filename: "hexari"
+	title: "Hexerei"
+	icon: {
+		id: "hexerei:willow_broom"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -2.0d
+		y: -2.0d
+		width: 13.0d
+		height: 13.0d
+		rotation: 0.0d
+		image: "modpack:textures/broom.png"
+		alpha: 100
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Hexerei!"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "The wizarding world"
+			description: ["Hexerei is a magic mod focused around herbs and alchemy. Grow magical herbs and make special items like flying broom sticks!"]
+			dependencies: ["049BAB7F1C7B5E21"]
+			id: "6FE5E435450B20F4"
+			tasks: [{
+				id: "7DA4919642FD554A"
+				type: "item"
+				item: "hexerei:mixing_cauldron"
+			}]
+			rewards: [
+				{
+					id: "1D79B960064A1CDF"
+					type: "item"
+					item: {
+						id: "hexerei:witch_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "65BE394E8F83118D"
+					type: "item"
+					item: "hexerei:animal_fat"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Sieve grass to obtain"
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "3D8286DF231F094A"
+			tasks: [{
+				id: "36EE689831A514D0"
+				type: "item"
+				item: "hexerei:mandrake_flower"
+			}]
+			rewards: [{
+				id: "16400A1DF1B04796"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Seive grass to obtain"
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "688B9D472ADE562E"
+			tasks: [{
+				id: "7865D7154AF67EB0"
+				type: "item"
+				item: "hexerei:belladonna_flower"
+			}]
+			rewards: [{
+				id: "055E25F21FEC992D"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			subtitle: "Seive grass to obtain"
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "2DFBCE89D588FF6A"
+			tasks: [{
+				id: "4EC1964F5B719F04"
+				type: "item"
+				item: "hexerei:yellow_dock_bush"
+			}]
+			rewards: [{
+				id: "1C50F52E2AA2AC10"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			subtitle: "Seive grass to obtain"
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "2BA2652DD2900AF8"
+			tasks: [{
+				id: "227325E1058CE021"
+				type: "item"
+				item: "hexerei:mugwort_bush"
+			}]
+			rewards: [{
+				id: "457AE00F20333730"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 3.75d
+			y: 0.75d
+			subtitle: "Best not to listen"
+			dependencies: ["3D8286DF231F094A"]
+			hide: true
+			size: 0.75d
+			id: "42BC7869C0A7EFE0"
+			tasks: [{
+				id: "44AE84E6AC9AEFFF"
+				type: "item"
+				item: "hexerei:mandrake_root"
+			}]
+			rewards: [{
+				id: "38BEBA871CDFB4E0"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 3.75d
+			y: 0.0d
+			dependencies: ["3D8286DF231F094A"]
+			hide: true
+			size: 0.75d
+			id: "76269EE46E1294BC"
+			tasks: [{
+				id: "07EA83AC9B4C73DC"
+				type: "item"
+				item: "hexerei:mandrake_flowers"
+			}]
+			rewards: [{
+				id: "6D066DCCA9139562"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 3.375d
+			y: 1.5d
+			subtitle: "Edible?"
+			dependencies: ["688B9D472ADE562E"]
+			hide: true
+			size: 0.75d
+			id: "267A266A0967B2AB"
+			tasks: [{
+				id: "2463F53398B440C3"
+				type: "item"
+				item: "hexerei:belladonna_berries"
+			}]
+			rewards: [{
+				id: "0A0D248983E08807"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 2.625d
+			y: 1.875d
+			dependencies: ["688B9D472ADE562E"]
+			hide: true
+			size: 0.75d
+			id: "0DB7A355ACFFAC69"
+			tasks: [{
+				id: "3870B2EF9050D238"
+				type: "item"
+				item: "hexerei:belladonna_flowers"
+			}]
+			rewards: [{
+				id: "7A854A1032846EE3"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 1.875d
+			y: 2.625d
+			subtitle: "Potent"
+			dependencies: ["2BA2652DD2900AF8"]
+			hide: true
+			size: 0.75d
+			id: "70F2A070680C7373"
+			tasks: [{
+				id: "58C2A0C82171E7F2"
+				type: "item"
+				item: "hexerei:mugwort_leaves"
+			}]
+			rewards: [{
+				id: "1B94EAFA85A16C07"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.375d
+			dependencies: ["2BA2652DD2900AF8"]
+			hide: true
+			size: 0.75d
+			id: "6750B2553EB54F8B"
+			tasks: [{
+				id: "729C71C074EAF8B0"
+				type: "item"
+				item: "hexerei:mugwort_flowers"
+			}]
+			rewards: [{
+				id: "7A1D5D0E80D11B90"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.75d
+			y: 3.75d
+			dependencies: ["2DFBCE89D588FF6A"]
+			hide: true
+			size: 0.75d
+			id: "6CCA6E425AFF4A0F"
+			tasks: [{
+				id: "2D706238A04A65C0"
+				type: "item"
+				item: "hexerei:yellow_dock_leaves"
+			}]
+			rewards: [{
+				id: "0DFD90307CB79C8D"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.75d
+			subtitle: "Pointy"
+			dependencies: ["2DFBCE89D588FF6A"]
+			hide: true
+			size: 0.75d
+			id: "257D3C03E22D17B2"
+			tasks: [{
+				id: "4C292612574B24B2"
+				type: "item"
+				item: "hexerei:yellow_dock_flowers"
+			}]
+			rewards: [{
+				id: "44F413E983420335"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["This is the guidebook for Hexerei. To use it, place it on an altar and open the book with a right click. There is no gui though, the book is fully interactive!"]
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "32A491328540A471"
+			tasks: [{
+				id: "17D7B9E01BABC19D"
+				type: "item"
+				item: "hexerei:witch_hazel_altar"
+			}]
+			rewards: [
+				{
+					id: "51746CA4C32813F7"
+					type: "item"
+					item: {
+						id: "hexerei:book_of_shadows"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4E37A5EE52A81640"
+					type: "item"
+					item: {
+						id: "hexerei:witch_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			subtitle: "Prickly"
+			description: ["Place the blood sigil into the mixing cauldron and jump in. It should draw blood from you that can be collected with a bottle."]
+			dependencies: ["32A491328540A471"]
+			hide: true
+			id: "758A03644B1C4322"
+			tasks: [{
+				id: "5DAF6735CAEC5E19"
+				type: "item"
+				item: "hexerei:blood_sigil"
+			}]
+			rewards: [{
+				id: "5485BB57579BEA97"
+				type: "item"
+				item: "minecraft:glass_bottle"
+				count: 3
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			subtitle: "Sieve leaves to obtain"
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "0ED577F901BCFBB1"
+			tasks: [
+				{
+					id: "5A41298A75D8393C"
+					type: "item"
+					item: "hexerei:willow_sapling"
+				}
+				{
+					id: "54618AB3D2B90FDB"
+					type: "item"
+					item: "hexerei:witch_hazel_sapling"
+				}
+			]
+			rewards: [{
+				id: "060295AC9202CEE3"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			subtitle: "The Strongest Wizard's Wood"
+			dependencies: ["0ED577F901BCFBB1"]
+			hide: true
+			id: "10859D6093BA2A64"
+			tasks: [{
+				id: "3EA055B1210D61FD"
+				type: "item"
+				item: "hexerei:mahogany_sapling"
+			}]
+			rewards: [
+				{
+					id: "37978D4F6CC71DB7"
+					type: "item"
+					item: {
+						id: "hexerei:warhammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "71F9A78177E40F8F"
+					type: "item"
+					item: "hexerei:book_of_shadows_altar"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Seive grass to obtain"
+			dependencies: ["6FE5E435450B20F4"]
+			hide: true
+			id: "7CFC12B7275FFB9D"
+			tasks: [{
+				id: "44ACBB06FBC3389C"
+				type: "item"
+				item: "hexerei:sage_seed"
+			}]
+			rewards: [{
+				id: "46AF406C448AEF27"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			subtitle: "No mo mobs"
+			description: ["Prevents mob spawning in a 48 block radius as long as it is lit with sage bundles."]
+			dependencies: ["7CFC12B7275FFB9D"]
+			hide: true
+			id: "0AC856334BF9BE5C"
+			tasks: [
+				{
+					id: "4511A17D56917C68"
+					type: "item"
+					item: "hexerei:sage_burning_plate"
+				}
+				{
+					id: "127C413DD1641AA5"
+					type: "item"
+					item: {
+						id: "hexerei:dried_sage_bundle"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "114A8A7BCEDCE11F"
+				type: "item"
+				item: "hexerei:sage_bundle"
+				count: 8
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			subtitle: "Spice Blender"
+			description: ["You can use the mortar and pestle to craft various items. See JEI for recipes."]
+			dependencies: ["32A491328540A471"]
+			hide: true
+			id: "1E7C595CB218C5C6"
+			tasks: [{
+				id: "692E50499A41F05E"
+				type: "item"
+				item: "hexerei:pestle_and_mortar"
+			}]
+			rewards: [{
+				id: "7319E970984E55AF"
+				type: "item"
+				item: "hexerei:candle_dipper"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			subtitle: "Clothesline"
+			description: ["Dry out many things on this rack or place items on it for decoration."]
+			dependencies: ["32A491328540A471"]
+			hide: true
+			id: "4CB234D5842C8D99"
+			tasks: [{
+				id: "621254A6F195266E"
+				type: "item"
+				item: "hexerei:herb_drying_rack"
+			}]
+			rewards: [{
+				id: "3EA06CDB4A8B7FA2"
+				type: "item"
+				item: "hexerei:herb_drying_rack_full"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			subtitle: "Your a wizard Harry!"
+			description: [
+				"Take to the skies with this flying broom. Its a great option for early game flight to traverse around and looks cool!"
+				""
+				"Requires a broom brush to fly, otherwise it will slowly descend. Open its inventory to replace the brush. &oIt crafts with one equipped automatically.&r"
+			]
+			dependencies: ["758A03644B1C4322"]
+			hide: true
+			id: "00F409FA4F079111"
+			tasks: [{
+				id: "7A7CD0DD8781F656"
+				type: "item"
+				item: {
+					id: "hexerei:willow_broom"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6AF855313E407BDB"
+				type: "item"
+				item: "hexerei:wet_broom_brush"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.5d
+			subtitle: "Firebolt"
+			description: ["The new and improved fire resistant broom stick! Its also much faster than its mahogany counterpart."]
+			dependencies: ["00F409FA4F079111"]
+			hide: true
+			id: "7BA238310E24345F"
+			tasks: [{
+				id: "33AB944D142A4430"
+				type: "item"
+				item: {
+					id: "hexerei:mahogany_broom"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "02EA3B5140A58A86"
+					type: "item"
+					item: {
+						id: "hexerei:witch_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3A5703F4235BED14"
+					type: "item"
+					item: "hexerei:wet_herb_enhanced_broom_brush"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			subtitle: "Silly little box"
+			description: ["The coffer acts as a neat little storage block. It opens up when you come near it too."]
+			dependencies: ["32A491328540A471"]
+			hide: true
+			id: "6BE523DA8031D0A8"
+			tasks: [{
+				id: "2A46FA093B726071"
+				type: "item"
+				item: {
+					id: "hexerei:coffer"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1FFA1986C6A44A5D"
+				type: "item"
+				item: {
+					id: "hexerei:herb_jar"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			subtitle: "Plank overload"
+			description: ["Basically a stonecutter for wood. Produces 6 planks per log without needing a machine and can make stairs more efficiently."]
+			dependencies: ["32A491328540A471"]
+			hide: true
+			id: "7B762A83AD11CA60"
+			tasks: [{
+				id: "22BEA3EF6F3C428A"
+				type: "item"
+				item: "hexerei:witch_hazel_woodcutter"
+			}]
+			rewards: [{
+				id: "5F332EA8616392F0"
+				type: "item"
+				item: "hexerei:candelabra"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
