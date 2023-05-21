@@ -1,3 +1,4 @@
+---
 name: Bug report
 about: Report issues with the modpack.
 title: ''
