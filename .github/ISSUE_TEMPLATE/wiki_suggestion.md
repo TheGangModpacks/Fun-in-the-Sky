@@ -1,7 +1,7 @@
 ---
 name: Wiki Addition Suggestion
 about: Suggest an addition for the wiki
-title: "[Wiki]: "
+title: ""
 labels: wiki, suggestion
 assignees: 
 
