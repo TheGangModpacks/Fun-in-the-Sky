@@ -343,7 +343,7 @@
 		{
 			x: 3.0d
 			y: 5.0d
-			description: ["IE provides a few forms of enchanting that may be useful."]
+			description: ["&lIE &rprovides a few forms of enchanting that may be useful."]
 			dependencies: ["5A50B3FF2EE15F84"]
 			id: "59DAAADBE9B2BEA8"
 			tasks: [{

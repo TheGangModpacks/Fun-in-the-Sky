@@ -7,4 +7,5 @@ ClientEvents.highPriorityAssets(event => {
     event.addLang('gas.kubejs.lithium_peroxide', "Lithium Peroxide")
     event.addLang('gas.kubejs.carbon_dioxide', "Carbon Dioxide")
     event.addLang('gas.kubejs.monster_waste', "Monster Waste")
+    event.addLang('infuse_type.kubejs.raw_rubber', "Raw Rubber")
 })
