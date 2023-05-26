@@ -1,0 +1,26 @@
+{
+  "id": "signalum",
+  "source": "modded",
+  "localizedName": "Signalum",
+  "processedTypes": [
+    "storage_block",
+    "ingot",
+    "nugget",
+    "dust",
+    "plate",
+    "gear"
+  ],
+  "properties": {
+  "materialType": "alloy",
+  "harvestLevel": 3
+},
+  "colors": {
+    "fluidColor": "E55912",
+    "materialColor": "E55912"
+  },
+  "compat": {
+    "thermal": false,
+    "mekanism": false,
+    "ars_novea": false
+  }
+}
