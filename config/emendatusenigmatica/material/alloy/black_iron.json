@@ -1,0 +1,17 @@
+{
+    "id": "black_iron",
+    "source": "modded",
+    "localizedName": "Black Iron",
+    "processedTypes": [
+      "storage_block",
+      "ingot",
+      "nugget"
+    ],
+    "properties": {
+    "materialType": "alloy",
+    "harvestLevel": 3
+  },
+    "colors": {
+      "materialColor": "222222"
+    }
+}

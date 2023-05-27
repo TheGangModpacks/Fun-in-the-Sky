@@ -61,11 +61,18 @@
 			description: ["Crafting a Petal Apothecary opens the Botania Questline."]
 			dependencies: ["6559CC67BF9CB433"]
 			id: "0E51BD89CBC21868"
-			tasks: [{
-				id: "4D94F4E4DE4AE8CF"
-				type: "item"
-				item: "botania:apothecary_default"
-			}]
+			tasks: [
+				{
+					id: "4D94F4E4DE4AE8CF"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+				{
+					id: "3304944D7455092E"
+					type: "item"
+					item: "botania:white_mystical_flower"
+				}
+			]
 		}
 		{
 			title: "Pneumaticcraft"
@@ -1869,6 +1876,20 @@
 					}
 				}
 			]
+		}
+		{
+			title: "Hexerei"
+			x: 2.5d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["Completing this unlocks the hexerei questline."]
+			dependencies: ["2C57309260111ED1"]
+			id: "049BAB7F1C7B5E21"
+			tasks: [{
+				id: "183B175EB9603CB1"
+				type: "item"
+				item: "hexerei:mixing_cauldron"
+			}]
 		}
 	]
 	quest_links: [ ]
