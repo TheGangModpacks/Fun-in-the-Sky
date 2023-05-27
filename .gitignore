@@ -6,6 +6,8 @@
 !config/ftbquests/**
 !config/ftbquests/quests/
 !config/ftbquests/quests/**
+!config/emendatusenigmatica/material/
+!config/emendatusenigmatica/material/**
 !/kubejs/assets/
 !/kubejs/assets/**
 !/kubejs/client_scripts/
