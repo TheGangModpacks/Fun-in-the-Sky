@@ -1,0 +1,26 @@
+{
+  "id": "lumium",
+  "source": "modded",
+  "localizedName": "Lumium",
+  "processedTypes": [
+    "storage_block",
+    "ingot",
+    "nugget",
+    "dust",
+    "plate",
+    "gear"
+  ],
+  "properties": {
+  "materialType": "alloy",
+  "harvestLevel": 3
+},
+  "colors": {
+    "fluidColor": "FFC200",
+    "materialColor": "FFC200"
+  },
+  "compat": {
+    "thermal": false,
+    "mekanism": false,
+    "ars_novea": false
+  }
+}

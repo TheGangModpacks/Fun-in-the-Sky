@@ -1,0 +1,17 @@
+{
+    "id": "gaiasteel",
+    "source": "modded",
+    "localizedName": "Gaiasteel",
+    "processedTypes": [
+      "plate",
+      "gear",
+      "rod"
+    ],
+    "properties": {
+      "materialType": "metal",
+      "harvestLevel": 2
+    },
+    "colors": {
+      "materialColor": "882025"
+    }
+}

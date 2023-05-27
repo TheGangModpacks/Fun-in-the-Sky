@@ -3,7 +3,7 @@
 	group: "45EE6B8D98E9487B"
 	order_index: 11
 	filename: "hexari"
-	title: "Hexerei"
+	title: "&eHexerei"
 	icon: {
 		id: "hexerei:willow_broom"
 		Count: 1b
@@ -24,6 +24,7 @@
 		dev: false
 		corner: false
 	}]
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "Hexerei!"
@@ -32,6 +33,7 @@
 			subtitle: "The wizarding world"
 			description: ["Hexerei is a magic mod focused around herbs and alchemy. Grow magical herbs and make special items like flying broom sticks!"]
 			dependencies: ["049BAB7F1C7B5E21"]
+			hide: true
 			id: "6FE5E435450B20F4"
 			tasks: [{
 				id: "7DA4919642FD554A"
@@ -64,7 +66,6 @@
 			y: 0.0d
 			subtitle: "Sieve grass to obtain"
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "3D8286DF231F094A"
 			tasks: [{
 				id: "36EE689831A514D0"
@@ -82,7 +83,6 @@
 			y: 1.0d
 			subtitle: "Seive grass to obtain"
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "688B9D472ADE562E"
 			tasks: [{
 				id: "7865D7154AF67EB0"
@@ -100,7 +100,6 @@
 			y: 2.5d
 			subtitle: "Seive grass to obtain"
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "2DFBCE89D588FF6A"
 			tasks: [{
 				id: "4EC1964F5B719F04"
@@ -118,7 +117,6 @@
 			y: 2.0d
 			subtitle: "Seive grass to obtain"
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "2BA2652DD2900AF8"
 			tasks: [{
 				id: "227325E1058CE021"
@@ -136,7 +134,6 @@
 			y: 0.75d
 			subtitle: "Best not to listen"
 			dependencies: ["3D8286DF231F094A"]
-			hide: true
 			size: 0.75d
 			id: "42BC7869C0A7EFE0"
 			tasks: [{
@@ -154,7 +151,6 @@
 			x: 3.75d
 			y: 0.0d
 			dependencies: ["3D8286DF231F094A"]
-			hide: true
 			size: 0.75d
 			id: "76269EE46E1294BC"
 			tasks: [{
@@ -173,7 +169,6 @@
 			y: 1.5d
 			subtitle: "Edible?"
 			dependencies: ["688B9D472ADE562E"]
-			hide: true
 			size: 0.75d
 			id: "267A266A0967B2AB"
 			tasks: [{
@@ -191,7 +186,6 @@
 			x: 2.625d
 			y: 1.875d
 			dependencies: ["688B9D472ADE562E"]
-			hide: true
 			size: 0.75d
 			id: "0DB7A355ACFFAC69"
 			tasks: [{
@@ -210,7 +204,6 @@
 			y: 2.625d
 			subtitle: "Potent"
 			dependencies: ["2BA2652DD2900AF8"]
-			hide: true
 			size: 0.75d
 			id: "70F2A070680C7373"
 			tasks: [{
@@ -228,7 +221,6 @@
 			x: 1.5d
 			y: 3.375d
 			dependencies: ["2BA2652DD2900AF8"]
-			hide: true
 			size: 0.75d
 			id: "6750B2553EB54F8B"
 			tasks: [{
@@ -246,7 +238,6 @@
 			x: 0.75d
 			y: 3.75d
 			dependencies: ["2DFBCE89D588FF6A"]
-			hide: true
 			size: 0.75d
 			id: "6CCA6E425AFF4A0F"
 			tasks: [{
@@ -265,7 +256,6 @@
 			y: 3.75d
 			subtitle: "Pointy"
 			dependencies: ["2DFBCE89D588FF6A"]
-			hide: true
 			size: 0.75d
 			id: "257D3C03E22D17B2"
 			tasks: [{
@@ -284,7 +274,6 @@
 			y: -2.0d
 			description: ["This is the guidebook for Hexerei. To use it, place it on an altar and open the book with a right click. There is no gui though, the book is fully interactive!"]
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "32A491328540A471"
 			tasks: [{
 				id: "17D7B9E01BABC19D"
@@ -320,7 +309,6 @@
 			subtitle: "Prickly"
 			description: ["Place the blood sigil into the mixing cauldron and jump in. It should draw blood from you that can be collected with a bottle."]
 			dependencies: ["32A491328540A471"]
-			hide: true
 			id: "758A03644B1C4322"
 			tasks: [{
 				id: "5DAF6735CAEC5E19"
@@ -339,7 +327,6 @@
 			y: 1.5d
 			subtitle: "Sieve leaves to obtain"
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "0ED577F901BCFBB1"
 			tasks: [
 				{
@@ -364,7 +351,6 @@
 			y: 0.0d
 			subtitle: "The Strongest Wizard's Wood"
 			dependencies: ["0ED577F901BCFBB1"]
-			hide: true
 			id: "10859D6093BA2A64"
 			tasks: [{
 				id: "3EA055B1210D61FD"
@@ -395,7 +381,6 @@
 			y: -0.5d
 			subtitle: "Seive grass to obtain"
 			dependencies: ["6FE5E435450B20F4"]
-			hide: true
 			id: "7CFC12B7275FFB9D"
 			tasks: [{
 				id: "44ACBB06FBC3389C"
@@ -414,7 +399,6 @@
 			subtitle: "No mo mobs"
 			description: ["Prevents mob spawning in a 48 block radius as long as it is lit with sage bundles."]
 			dependencies: ["7CFC12B7275FFB9D"]
-			hide: true
 			id: "0AC856334BF9BE5C"
 			tasks: [
 				{
@@ -447,7 +431,6 @@
 			subtitle: "Spice Blender"
 			description: ["You can use the mortar and pestle to craft various items. See JEI for recipes."]
 			dependencies: ["32A491328540A471"]
-			hide: true
 			id: "1E7C595CB218C5C6"
 			tasks: [{
 				id: "692E50499A41F05E"
@@ -466,7 +449,6 @@
 			subtitle: "Clothesline"
 			description: ["Dry out many things on this rack or place items on it for decoration."]
 			dependencies: ["32A491328540A471"]
-			hide: true
 			id: "4CB234D5842C8D99"
 			tasks: [{
 				id: "621254A6F195266E"
@@ -489,7 +471,6 @@
 				"Requires a broom brush to fly, otherwise it will slowly descend. Open its inventory to replace the brush. &oIt crafts with one equipped automatically.&r"
 			]
 			dependencies: ["758A03644B1C4322"]
-			hide: true
 			id: "00F409FA4F079111"
 			tasks: [{
 				id: "7A7CD0DD8781F656"
@@ -512,7 +493,6 @@
 			subtitle: "Firebolt"
 			description: ["The new and improved fire resistant broom stick! Its also much faster than its mahogany counterpart."]
 			dependencies: ["00F409FA4F079111"]
-			hide: true
 			id: "7BA238310E24345F"
 			tasks: [{
 				id: "33AB944D142A4430"
@@ -548,7 +528,6 @@
 			subtitle: "Silly little box"
 			description: ["The coffer acts as a neat little storage block. It opens up when you come near it too."]
 			dependencies: ["32A491328540A471"]
-			hide: true
 			id: "6BE523DA8031D0A8"
 			tasks: [{
 				id: "2A46FA093B726071"
@@ -575,7 +554,6 @@
 			subtitle: "Plank overload"
 			description: ["Basically a stonecutter for wood. Produces 6 planks per log without needing a machine and can make stairs more efficiently."]
 			dependencies: ["32A491328540A471"]
-			hide: true
 			id: "7B762A83AD11CA60"
 			tasks: [{
 				id: "22BEA3EF6F3C428A"

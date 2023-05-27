@@ -1,0 +1,13 @@
+{
+	"id": "silicon",
+	"source": "modded",
+	"localizedName": "Silicon",
+	"processedTypes": [
+	"gem"
+	],
+	"properties": {
+		"materialType": "gem",
+		"harvestLevel": 2,
+		"gemTexture": 8
+	}
+}

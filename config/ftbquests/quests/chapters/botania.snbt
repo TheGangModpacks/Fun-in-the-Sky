@@ -10,36 +10,60 @@
 	hide_quest_details_until_startable: true
 	quests: [
 		{
+			title: "Botania!"
+			icon: "botania:white_mystical_flower"
 			x: 0.0d
 			y: 0.0d
+			subtitle: "Spreading"
+			description: [
+				"Botania is all about manipulating mana to do what you want. Power machines, enchant, farm automatically, and much more!"
+				""
+				"To use the petal apothecary, use a bucket of water to fill it with some water. Then, throw in the required items for the recipe and throw in a seed to finish the crafting."
+			]
 			dependencies: ["0E51BD89CBC21868"]
 			hide: true
 			invisible_until_tasks: 1
 			id: "328A7B1841EEFEA3"
-			tasks: [{
-				id: "16F3A81FF4FFE377"
-				type: "item"
-				title: "Mystical Flower"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "botania:mystical_flowers"
-					}
+			tasks: [
+				{
+					id: "6CB9F008D9A476B1"
+					type: "item"
+					item: "botania:apothecary_default"
 				}
-				count: 8L
-			}]
-			rewards: [{
-				id: "657CA993256E1C62"
-				type: "item"
-				item: "botania:fertilizer"
-				count: 2
-				random_bonus: 2
-			}]
+				{
+					id: "1306C3D31CB02F43"
+					type: "item"
+					title: "Any #botania:mystical_flowers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "botania:mystical_flowers"
+						}
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "6DCED2C844DD0D14"
+					type: "item"
+					item: "botania:lexicon"
+				}
+				{
+					id: "77F62C4C7EBF6B9F"
+					type: "item"
+					item: "botania:fertilizer"
+					count: 4
+					random_bonus: 4
+				}
+			]
 		}
 		{
 			x: -1.5d
 			y: 0.0d
+			subtitle: "Much nicer"
+			description: ["Holds a stack of each type of mystical flower."]
 			dependencies: ["328A7B1841EEFEA3"]
 			id: "11F2BB0D05ADB4EC"
 			tasks: [{
@@ -47,33 +71,38 @@
 				type: "item"
 				item: "botania:flower_bag"
 			}]
-		}
-		{
-			x: 1.5d
-			y: 0.0d
-			dependencies: ["328A7B1841EEFEA3"]
-			id: "51A1020621A073DF"
-			tasks: [{
-				id: "4BAD2BE41D08A89F"
+			rewards: [{
+				id: "33492242C1B16E2B"
 				type: "item"
-				item: "botania:apothecary_default"
+				item: "botania:fertilizer"
+				count: 2
+				random_bonus: 2
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.0d
-			dependencies: ["51A1020621A073DF"]
+			x: 1.0d
+			y: -1.5d
+			subtitle: "Purity"
+			description: ["Converts blocks around it on the same y level into different onces."]
+			dependencies: ["328A7B1841EEFEA3"]
 			id: "68F0070B1D434848"
 			tasks: [{
 				id: "4D222B78C4FB11A3"
 				type: "item"
 				item: "botania:pure_daisy"
 			}]
+			rewards: [{
+				id: "05EE66C92069D3EB"
+				type: "item"
+				item: "botania:floating_pure_daisy"
+			}]
 		}
 		{
 			title: "They're Alive!"
-			x: 4.5d
+			icon: "botania:livingwood_log"
+			x: 2.0d
 			y: 0.0d
+			description: ["Made with twilight forest logs and reinforced stone."]
 			dependencies: ["68F0070B1D434848"]
 			id: "4F16E38D5CB66CE9"
 			tasks: [
@@ -81,17 +110,26 @@
 					id: "2A4C2BEECCD9DB1A"
 					type: "item"
 					item: "botania:livingwood_log"
+					count: 8L
 				}
 				{
 					id: "5B93845E587531F3"
 					type: "item"
 					item: "botania:livingrock"
+					count: 8L
 				}
 			]
+			rewards: [{
+				id: "4ABE24C227E29605"
+				type: "item"
+				item: "botania:apothecary_livingrock"
+			}]
 		}
 		{
-			x: 6.0d
-			y: 0.5d
+			x: 3.0d
+			y: 1.5d
+			subtitle: "This isnt plants vs zombies"
+			description: ["Use on generating flora to link it to a spreader or use it on a spreader to link it to a block like a manapool or another spreader."]
 			dependencies: ["4F16E38D5CB66CE9"]
 			id: "1E2E693F422C98AF"
 			tasks: [{
@@ -106,11 +144,22 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4C8368B06E2BB6A6"
+				type: "item"
+				item: "botania:fel_pumpkin"
+			}]
 		}
 		{
 			title: "Diluted Mana Pool"
-			x: 6.0d
-			y: -0.5d
+			x: 4.5d
+			y: 0.0d
+			subtitle: "Humble beginnings"
+			description: [
+				"Holds mana and is able to convert certain items when they are thrown into it."
+				""
+				"The diluted pool is a smaller version of the regular pool, able to hold a lot less than the regular one."
+			]
 			dependencies: ["4F16E38D5CB66CE9"]
 			id: "39E6A449D961658C"
 			tasks: [{
@@ -118,10 +167,19 @@
 				type: "item"
 				item: "botania:diluted_pool"
 			}]
+			rewards: [{
+				id: "17C812ABDE7F59C4"
+				type: "item"
+				item: "botania:black_lotus"
+			}]
 		}
 		{
-			x: 7.5d
-			y: 0.0d
+			title: "Mana Generation"
+			icon: "botania:mana_spreader"
+			x: 5.5d
+			y: 1.5d
+			subtitle: "Beams of power"
+			description: ["The endoflame is an easy mana generating flower that burns items like coal to produce mana. Link it to a spreader and then that spreader to a mana pool and watch the beams go!"]
 			dependencies: [
 				"1E2E693F422C98AF"
 				"39E6A449D961658C"
@@ -139,10 +197,17 @@
 					item: "botania:mana_spreader"
 				}
 			]
+			rewards: [{
+				id: "7430654584F5B5EE"
+				type: "item"
+				item: "botania:hydroangeas"
+			}]
 		}
 		{
-			x: 8.0d
-			y: 1.5d
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Im very experienced"
+			description: ["Eats the xp right out of you to produce mana. Make sure you dont run out!"]
 			dependencies: ["061D38D6DF850034"]
 			id: "680D998F0C34F0E5"
 			tasks: [{
@@ -150,10 +215,17 @@
 				type: "item"
 				item: "botania:rosa_arcana"
 			}]
+			rewards: [{
+				id: "1DE850BDDFEB1209"
+				type: "item"
+				item: "botania:floating_rosa_arcana"
+			}]
 		}
 		{
-			x: 12.0d
+			x: 9.5d
 			y: 0.0d
+			subtitle: "Bound into stone"
+			description: ["The runic altar will bind items onto a block of livingrock to form a rune. Use the item on the altar to put them in and then drop a living rock onto the altar. The altar requires mana from a spreader to power it and once the meter is full, use the wand to finish crafting."]
 			dependencies: ["6C9F97BA584586E6"]
 			id: "02F8163D60C0DF7E"
 			tasks: [{
@@ -161,10 +233,21 @@
 				type: "item"
 				item: "botania:runic_altar"
 			}]
+			rewards: [{
+				id: "6072C3BBBC88AC28"
+				type: "item"
+				item: "botania:livingrock"
+				count: 2
+				random_bonus: 2
+			}]
 		}
 		{
-			x: 15.0d
+			title: "Making Terrasteel!"
+			icon: "botania:terra_plate"
+			x: 12.5d
 			y: 0.0d
+			subtitle: "All my mana gone"
+			description: ["To use the terraplate, attach a spark to it first. Then, either drop the required materials on the plate or rclick the plate with the items to drop them directly onto the plate. Once a valid recipe is found, the crafting process will start and mana will start to be channeled. Don't pick up the items during crafting or you will lose all the mana used up to that point."]
 			dependencies: ["05D4E889E0F34A64"]
 			id: "255CFEF05C956FC3"
 			tasks: [
@@ -186,10 +269,27 @@
 					count: 4L
 				}
 			]
+			rewards: [{
+				id: "33EE1864624A68C7"
+				type: "item"
+				item: {
+					id: "botania:mana_pool"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							mana: 500000
+						}
+					}
+				}
+			}]
 		}
 		{
-			x: 13.5d
-			y: 0.0d
+			title: "Basic Runes"
+			icon: "botania:rune_mana"
+			x: 11.0d
+			y: 1.5d
+			subtitle: "Elemental"
+			description: ["These are the basic runes for many crafting recipes. When used in a recipe in the runic altar, the rune will not be used."]
 			dependencies: ["02F8163D60C0DF7E"]
 			id: "05D4E889E0F34A64"
 			tasks: [
@@ -219,10 +319,17 @@
 					item: "botania:rune_mana"
 				}
 			]
+			rewards: [{
+				id: "65BFF7D0160F5EA3"
+				type: "item"
+				item: "quark:rainbow_rune"
+			}]
 		}
 		{
-			x: 16.5d
+			x: 14.0d
 			y: 0.0d
+			subtitle: "Mana overload"
+			description: ["Terrasteel needs a manasteel ingot, mana pearl, and a mana diamond. It will take half a manapool to craft so your going to need a ton of mana."]
 			dependencies: ["255CFEF05C956FC3"]
 			id: "2C67090F17275058"
 			tasks: [{
@@ -230,10 +337,25 @@
 				type: "item"
 				item: "botania:terrasteel_ingot"
 			}]
+			rewards: [{
+				id: "5569CDBD4EC9A135"
+				type: "item"
+				item: {
+					id: "botania:terra_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
-			x: 9.0d
+			title: "Mana Materials"
+			icon: "botania:manasteel_ingot"
+			x: 6.5d
 			y: 0.0d
+			subtitle: "Shiny and Blue"
+			description: ["Made by throwing items into a mana pool with sufficient mana inside."]
 			dependencies: ["061D38D6DF850034"]
 			id: "7EC71586C83AB65B"
 			tasks: [
@@ -252,11 +374,41 @@
 					type: "item"
 					item: "botania:mana_pearl"
 				}
+				{
+					id: "1AA51909AA60000D"
+					type: "item"
+					item: "botanicadds:mana_lapis"
+				}
+			]
+			rewards: [
+				{
+					id: "161F4247D4F37C65"
+					type: "item"
+					item: "botania:mana_string"
+				}
+				{
+					id: "5E5F279B0C50AF35"
+					type: "item"
+					item: "botania:mana_powder"
+				}
+				{
+					id: "5248B4E0E9848CE2"
+					type: "item"
+					item: "botania:mana_bottle"
+				}
 			]
 		}
 		{
-			x: 18.0d
-			y: 0.0d
+			title: "The Elven World"
+			icon: "botania:natura_pylon"
+			x: 15.5d
+			y: 1.5d
+			subtitle: "Guess I can't go there"
+			description: [
+				"Build the portal to the alfheim (the lexica shows how) and start it up."
+				""
+				"To use it, throw the required items through the portal for the elves to craft and the portal will then throw out your finished product. Don't forget to give your lexica botania to them too!"
+			]
 			dependencies: ["2C67090F17275058"]
 			id: "68E598EE354627D8"
 			tasks: [
@@ -290,10 +442,20 @@
 					count: 2L
 				}
 			]
+			rewards: [{
+				id: "2896CBE5D586823C"
+				type: "item"
+				item: "botania:spark_upgrade_dominant"
+				count: 2
+			}]
 		}
 		{
-			x: 17.5d
-			y: -1.5d
+			title: "Elven Materials"
+			icon: "botania:elementium_ingot"
+			x: 14.0d
+			y: 1.5d
+			subtitle: "Pink?"
+			description: ["Make by throwing items into the alfheim portal."]
 			dependencies: ["68E598EE354627D8"]
 			id: "37E50257C06438CF"
 			tasks: [
@@ -312,11 +474,45 @@
 					type: "item"
 					item: "botania:pixie_dust"
 				}
+				{
+					id: "0E287F0BEF69FCE2"
+					type: "item"
+					item: "botanicadds:elven_lapis"
+				}
+				{
+					id: "0B2085175D20156C"
+					type: "item"
+					item: "botania:dreamwood_log"
+				}
+				{
+					id: "3F84C7BB87F543D9"
+					type: "item"
+					item: "botanicadds:dreamrock"
+				}
+			]
+			rewards: [
+				{
+					id: "0D3D88369A29345E"
+					type: "item"
+					item: "botania:elf_glass"
+				}
+				{
+					id: "276F4776380B0BEB"
+					type: "item"
+					item: "botania:quartz_elven"
+				}
 			]
 		}
 		{
-			x: 10.5d
-			y: 0.0d
+			title: "Sparks"
+			x: 8.0d
+			y: -1.5d
+			subtitle: "Who needs spreaders?"
+			description: [
+				"Sparks are used for large mana transfer across distances. Some machines require sparks to function like the terraplate."
+				""
+				"To use them, rclick the spark onto a manapool or a machine. Some may not allow sparks."
+			]
 			dependencies: ["7EC71586C83AB65B"]
 			id: "6C9F97BA584586E6"
 			tasks: [{
@@ -324,10 +520,25 @@
 				type: "item"
 				item: "botania:spark"
 			}]
+			rewards: [{
+				id: "6004C5CE5D986EDC"
+				type: "item"
+				item: "botania:spark"
+			}]
 		}
 		{
-			x: 19.5d
-			y: 0.0d
+			title: "Guardian of Gaia"
+			icon: "botania:gaia_pylon"
+			x: 17.0d
+			y: 1.5d
+			subtitle: "The fight of your life"
+			description: [
+				"The guardian of gaia is the boss of botania. Refer to the lexica botania on how to set up the stadium and then shift rclick the beacon with some terrasteel to summon gaia. Make sure not to leave the bounding box of the fight or gaia will disappear and your terrasteel will be lost."
+				""
+				"Defeating gaia will drop gaia shards. Good luck!"
+				""
+				"&oMight want to go to the end first"
+			]
 			dependencies: ["68E598EE354627D8"]
 			id: "62873B319615F5B4"
 			tasks: [
@@ -348,12 +559,59 @@
 					item: "minecraft:iron_block"
 					count: 9L
 				}
+				{
+					id: "06C4C7E6EE2B9829"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "7AAD75889B60E87E"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+				}
+				{
+					id: "3849F79412112CB2"
+					type: "item"
+					item: {
+						id: "botania:brew_vial"
+						Count: 1b
+						tag: {
+							brewKey: "botania:resistance"
+						}
+					}
+				}
+				{
+					id: "396A76B2BAA5B276"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:absorption"
+						}
+					}
+				}
+				{
+					id: "07B06A1204C2AF1B"
+					type: "item"
+					item: {
+						id: "botania:brew_vial"
+						Count: 1b
+						tag: {
+							brewKey: "botania:overload"
+						}
+					}
+				}
 			]
 		}
 		{
+			title: "Defeat Gaia"
 			icon: "botania:gaia_head"
-			x: 21.0d
+			x: 17.0d
 			y: 0.0d
+			subtitle: "Its only the beginning"
 			dependencies: ["62873B319615F5B4"]
 			id: "3561AE54C84C5BDE"
 			tasks: [{
@@ -361,10 +619,16 @@
 				type: "item"
 				item: "botania:life_essence"
 			}]
+			rewards: [{
+				id: "3143065872A101FA"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
 		}
 		{
-			x: 22.5d
+			x: 18.5d
 			y: 0.0d
+			subtitle: "Spiritual"
 			dependencies: ["3561AE54C84C5BDE"]
 			id: "294BA107CD584A41"
 			tasks: [{
@@ -372,11 +636,18 @@
 				type: "item"
 				item: "botania:gaia_ingot"
 			}]
+			rewards: [{
+				id: "44408B3E7056BC2D"
+				type: "item"
+				item: "botania:diva_charm"
+			}]
 		}
 		{
-			x: 24.0d
-			y: 0.0d
-			dependencies: ["294BA107CD584A41"]
+			x: 18.5d
+			y: 3.0d
+			subtitle: "Your fate is in my hands"
+			description: ["Refer to the lexica botanica for what each relic does. You cant get duplicate relics so dont worry about that."]
+			dependencies: ["7DD363261958C59E"]
 			id: "77B07D61D2C22C90"
 			tasks: [{
 				id: "738A0D0694DD0EEA"
@@ -385,8 +656,8 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: -1.5d
+			x: 17.0d
+			y: 5.0d
 			dependencies: ["77B07D61D2C22C90"]
 			id: "70A435E7950F4029"
 			tasks: [{
@@ -394,10 +665,15 @@
 				type: "item"
 				item: "botania:infinite_fruit"
 			}]
+			rewards: [{
+				id: "1E0F42BA2C249B7F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
-			x: 24.5d
-			y: -1.5d
+			x: 20.5d
+			y: 4.0d
 			dependencies: ["77B07D61D2C22C90"]
 			id: "41A318D1415F9046"
 			tasks: [{
@@ -405,10 +681,15 @@
 				type: "item"
 				item: "botania:king_key"
 			}]
+			rewards: [{
+				id: "34C1C84645D67F37"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
-			x: 25.5d
-			y: -0.5d
+			x: 20.0d
+			y: 5.0d
 			dependencies: ["77B07D61D2C22C90"]
 			id: "251802E212835355"
 			tasks: [{
@@ -416,10 +697,15 @@
 				type: "item"
 				item: "botania:flugel_eye"
 			}]
+			rewards: [{
+				id: "40F585E11E785E45"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
-			x: 25.5d
-			y: 0.5d
+			x: 20.5d
+			y: 3.0d
 			dependencies: ["77B07D61D2C22C90"]
 			id: "56D38558B75567C2"
 			tasks: [{
@@ -427,10 +713,15 @@
 				type: "item"
 				item: "botania:thor_ring"
 			}]
+			rewards: [{
+				id: "4FD405268ED8C9B8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
-			x: 24.5d
-			y: 1.5d
+			x: 19.0d
+			y: 5.5d
 			dependencies: ["77B07D61D2C22C90"]
 			id: "676CAB39B7240F93"
 			tasks: [{
@@ -449,10 +740,15 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "55FE864438D34F36"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
-			x: 23.0d
-			y: 1.5d
+			x: 18.0d
+			y: 5.5d
 			dependencies: ["77B07D61D2C22C90"]
 			id: "71834EC39F1FE7EE"
 			tasks: [{
@@ -460,10 +756,19 @@
 				type: "item"
 				item: "botania:loki_ring"
 			}]
+			rewards: [{
+				id: "5BB80B298BC01798"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
-			x: 10.0d
+			title: "Spark Augments"
+			icon: "botania:spark_upgrade_dominant"
+			x: 6.5d
 			y: -1.5d
+			subtitle: "I'm dominant"
+			description: ["Use on a spark to add the augment. The lexica botania will give info on how each augment works."]
 			dependencies: ["6C9F97BA584586E6"]
 			id: "37919C9BB6D56769"
 			tasks: [
@@ -488,10 +793,24 @@
 					item: "botania:spark_upgrade_isolated"
 				}
 			]
+			rewards: [
+				{
+					id: "06A4FF4CC121BFCA"
+					type: "item"
+					item: "botania:lens_firework"
+				}
+				{
+					id: "04BFF422F3F86F06"
+					type: "item"
+					item: "botania:lens_paint"
+				}
+			]
 		}
 		{
-			x: 14.0d
-			y: 1.5d
+			x: 12.5d
+			y: 3.0d
+			subtitle: "Magical Brewing"
+			description: ["The botanical brewery can allow you to make some pretty powerful potions. These potions can be used more than once or are more powerful."]
 			dependencies: ["05D4E889E0F34A64"]
 			id: "4461F93DCB3AADCF"
 			tasks: [{
@@ -499,10 +818,29 @@
 				type: "item"
 				item: "botania:brewery"
 			}]
+			rewards: [{
+				id: "36315A0FF1635E83"
+				type: "item"
+				item: {
+					id: "botania:brew_flask"
+					Count: 1b
+					tag: {
+						brewKey: "botania:haste"
+					}
+				}
+			}]
 		}
 		{
-			x: 13.0d
+			title: "Lenses"
+			icon: "botania:lens_normal"
+			x: 12.5d
 			y: 1.5d
+			subtitle: "Upgradable"
+			description: [
+				"Lenses can be used on spreader to make them more efficient. Refer to the lexica botania for information on what each kind of lens can do."
+				""
+				"Lenses can also be combined to form better lenses."
+			]
 			dependencies: ["05D4E889E0F34A64"]
 			id: "2CD06A9CE0AFDB6D"
 			tasks: [
@@ -527,12 +865,20 @@
 					item: "botania:lens_efficiency"
 				}
 			]
+			rewards: [{
+				id: "6E6FD050AA8EE24D"
+				type: "item"
+				item: "minecraft:slime_ball"
+				count: 4
+				random_bonus: 4
+			}]
 		}
 		{
-			x: 12.5d
+			x: 11.0d
 			y: -1.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
+			subtitle: "Battery"
+			description: ["The band of mana holds mana within that some magical items need. Upgrades make it hold more mana."]
+			dependencies: ["167ECF4AC11A2550"]
 			id: "229948A1A80EE347"
 			tasks: [{
 				id: "5ED4480EA32BA769"
@@ -541,9 +887,8 @@
 			}]
 		}
 		{
-			x: 12.5d
+			x: 11.0d
 			y: -2.5d
-			hide_dependency_lines: true
 			dependencies: ["229948A1A80EE347"]
 			id: "48C83149C0FBCE94"
 			tasks: [{
@@ -553,10 +898,11 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 12.5d
 			y: -1.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
+			subtitle: "Portable Generator"
+			description: ["The band of aura will passively generate mana and put it into any available band of mana. Upgrades produce more mana."]
+			dependencies: ["167ECF4AC11A2550"]
 			id: "0B520BFEFDE1CA5D"
 			tasks: [{
 				id: "14B47C3ABF4081ED"
@@ -565,9 +911,8 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 12.5d
 			y: -2.5d
-			hide_dependency_lines: true
 			dependencies: ["0B520BFEFDE1CA5D"]
 			id: "436F0F9A7D3EDD15"
 			tasks: [{
@@ -577,115 +922,36 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: -4.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
-			id: "35E3000E354AA9F2"
-			tasks: [{
-				id: "7EA850ACB6795FBC"
-				type: "item"
-				item: "botania:water_ring"
-			}]
-		}
-		{
-			x: 14.0d
-			y: -4.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
-			id: "4EF1EE03F68A7DA8"
-			tasks: [{
-				id: "027443296C64DAED"
-				type: "item"
-				item: "botania:swap_ring"
-			}]
-		}
-		{
-			x: 12.5d
-			y: -3.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
-			id: "0CAD13EB6E205DF9"
-			tasks: [{
-				id: "742F252FDDD0704A"
-				type: "item"
-				item: "botania:dodge_ring"
-			}]
-		}
-		{
-			x: 14.5d
-			y: -3.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
-			id: "2DD21DCC9AD77DFB"
-			tasks: [{
-				id: "73679FAEE6F88186"
-				type: "item"
-				item: "botania:mining_ring"
-			}]
-		}
-		{
-			x: 13.5d
-			y: -3.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
-			id: "1E7F4635E388EE4A"
-			tasks: [{
-				id: "5586C7F3A37DE533"
-				type: "item"
-				item: {
-					id: "botania:reach_ring"
-					Count: 1b
-					tag: {
-						baubleUUID: [I;
-							-1757782789
-							1691633520
-							-1299784922
-							1672444841
-						]
-					}
-				}
-			}]
-		}
-		{
-			x: 13.5d
-			y: -1.5d
-			hide_dependency_lines: true
-			dependencies: ["05D4E889E0F34A64"]
-			id: "0B4C6AA00F294A2D"
-			tasks: [{
-				id: "7C533CA5D3A1B279"
-				type: "item"
-				item: "botania:travel_belt"
-			}]
-		}
-		{
-			x: 13.5d
-			y: -2.5d
-			hide_dependency_lines: true
-			dependencies: ["0B4C6AA00F294A2D"]
-			id: "68A74D101C2FD06F"
-			tasks: [{
-				id: "6C7C64A80A1ED50C"
-				type: "item"
-				item: "botania:super_travel_belt"
-			}]
-		}
-		{
-			x: 11.5d
+			title: "Elven Crafting Materials"
+			x: 9.5d
 			y: 1.5d
-			description: ["It doesnt get used. Dont make 20 like I have - ogmon1243"]
+			subtitle: "Rainbow"
+			description: ["You will need these later down the line."]
 			dependencies: ["02F8163D60C0DF7E"]
 			id: "59A00B6564C09A9F"
-			tasks: [{
-				id: "05C0D8F99EB33A9A"
+			tasks: [
+				{
+					id: "05C0D8F99EB33A9A"
+					type: "item"
+					item: "botania:rainbow_rod"
+				}
+				{
+					id: "23D03C96E3752602"
+					type: "item"
+					item: "botania:spawner_mover"
+				}
+			]
+			rewards: [{
+				id: "6F3793AA9C531898"
 				type: "item"
-				item: "botania:rainbow_rod"
+				item: "botania:dirt_rod"
 			}]
 		}
 		{
-			x: 11.0d
+			x: 7.5d
 			y: 3.0d
+			subtitle: "Fabulous!"
+			description: ["A shiny manapool."]
 			dependencies: ["59A00B6564C09A9F"]
 			id: "14E3325A1BA1C6AC"
 			tasks: [{
@@ -693,10 +959,21 @@
 				type: "item"
 				item: "botania:fabulous_pool"
 			}]
+			rewards: [{
+				id: "43DD733D7670CB35"
+				type: "item"
+				item: "botania:bifrost_perm"
+				count: 4
+				random_bonus: 4
+			}]
 		}
 		{
-			x: 5.5d
-			y: -2.0d
+			title: "Catalysts"
+			icon: "botania:alchemy_catalyst"
+			x: 3.5d
+			y: -1.5d
+			subtitle: "Swappable"
+			description: ["Place under a manapool to be able to perform certain conversions. The texture of the catalyst should be visible on the bottom of the man pool."]
 			dependencies: ["39E6A449D961658C"]
 			id: "79FEB51200EA6895"
 			tasks: [
@@ -711,11 +988,19 @@
 					item: "botania:conjuration_catalyst"
 				}
 			]
+			rewards: [{
+				id: "23A59C8502C941EA"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
 		}
 		{
+			title: "Mana Enchanter"
 			icon: "botania:enchanter"
-			x: 13.5d
+			x: 11.0d
 			y: 3.0d
+			subtitle: "Copy and Paste"
+			description: ["The mana enchanter will apply enchants from books directly onto items like an anvil but the enchanted book wont be used."]
 			dependencies: ["05D4E889E0F34A64"]
 			id: "0EB4A2965315AB7C"
 			tasks: [
@@ -730,22 +1015,77 @@
 					item: "botania:mana_pylon"
 					count: 6L
 				}
+				{
+					id: "02E2C768A879B06A"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 17L
+				}
+				{
+					id: "76DBC8B3D7B3FAC8"
+					type: "item"
+					title: "Any #botania:mystical_flowers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "botania:mystical_flowers"
+						}
+					}
+					count: 10L
+				}
+			]
+			rewards: [
+				{
+					id: "6F1537F6C4930099"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 8s
+								id: "minecraft:sharpness"
+							}]
+						}
+					}
+				}
+				{
+					id: "73C197DF1C3FD81C"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:healing"
+						}
+					}
+				}
 			]
 		}
 		{
-			x: 8.0d
-			y: -1.5d
-			dependencies: ["061D38D6DF850034"]
+			x: 2.5d
+			y: 3.0d
+			subtitle: "Your under my control"
+			description: ["Use on a speader to link all nearby flowers to it."]
+			dependencies: ["1E2E693F422C98AF"]
 			id: "7F7DF289540DA0F6"
 			tasks: [{
 				id: "12ECD95819CDAAC8"
 				type: "item"
 				item: "botania:obedience_stick"
 			}]
+			rewards: [{
+				id: "36BA428A829E03E1"
+				type: "item"
+				item: "botania:vivid_seeds"
+			}]
 		}
 		{
-			x: 17.5d
-			y: 1.5d
+			x: 15.5d
+			y: 3.0d
+			subtitle: "All knowledgeable"
+			description: ["This book will now provide information on elvish things. Be sure to check out all the new stuff to learn."]
 			dependencies: ["68E598EE354627D8"]
 			id: "328C7530F6B7F416"
 			tasks: [{
@@ -759,10 +1099,16 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1EA8E68FC34432AA"
+				type: "xp"
+				xp: 200
+			}]
 		}
 		{
-			x: 5.5d
-			y: 2.0d
+			x: 1.0d
+			y: 1.5d
+			subtitle: "I swear its different"
 			dependencies: ["1E2E693F422C98AF"]
 			id: "1CF1A7607E477C23"
 			tasks: [{
@@ -777,11 +1123,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "545B98B8A0D90144"
+				type: "item"
+				item: "botania:cocoon"
+			}]
 		}
 		{
-			x: 10.0d
-			y: 1.5d
-			description: ["The book will explain the corporea storage system a lot better than I can"]
+			title: "Corporea System"
+			icon: "botania:corporea_index"
+			x: 8.0d
+			y: 1.0d
+			subtitle: "Mana Storage"
+			description: ["The lexica botania will explain the corporea storage system a lot better than I can"]
 			dependencies: ["6C9F97BA584586E6"]
 			id: "3F3DC11C69704C49"
 			tasks: [
@@ -799,6 +1153,307 @@
 					id: "6A3C506619C8176A"
 					type: "item"
 					item: "botania:corporea_index"
+				}
+			]
+			rewards: [{
+				id: "42347786BE2BECEC"
+				type: "item"
+				item: {
+					id: "sophisticatedstorage:diamond_chest"
+					Count: 1b
+					tag: {
+						woodType: "spruce"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 3.0d
+			subtitle: "Am I dreaming?"
+			description: ["The dreaming mana pool can hold 2x as much mana as a regular one."]
+			dependencies: ["14E3325A1BA1C6AC"]
+			id: "1E04AA9040B31174"
+			tasks: [{
+				id: "4AEE280F53EE2A0B"
+				type: "item"
+				item: "botanicadds:dreaming_pool"
+			}]
+			rewards: [{
+				id: "39CE33F84A4C5DB3"
+				type: "item"
+				item: "botania:gravity_rod"
+			}]
+		}
+		{
+			title: "Gaia Shards"
+			x: 21.0d
+			y: 0.0d
+			subtitle: "Splitting Spirits"
+			dependencies: ["294BA107CD584A41"]
+			id: "74F729C2A28EDA38"
+			tasks: [
+				{
+					id: "513B647B8AB3C2EA"
+					type: "item"
+					item: "botanicadds:terra_catalyst"
+				}
+				{
+					id: "7E23F35D9967881A"
+					type: "item"
+					item: "botanicadds:gaia_shard"
+				}
+			]
+			rewards: [{
+				id: "5EF832DEB8C418D8"
+				type: "item"
+				item: "botanicadds:mana_tesseract"
+			}]
+		}
+		{
+			title: "Additional Runes"
+			x: 19.5d
+			y: 1.5d
+			subtitle: "There's more?"
+			dependencies: ["294BA107CD584A41"]
+			id: "3961588F38384BD7"
+			tasks: [
+				{
+					id: "0A1C1EAB49DAE59D"
+					type: "item"
+					item: "botanicadds:rune_energy"
+				}
+				{
+					id: "0B5B6FE5F2935425"
+					type: "item"
+					item: "botanicadds:rune_tp"
+				}
+			]
+			rewards: [{
+				id: "101AC7CD84E4935D"
+				type: "xp"
+				xp: 200
+			}]
+		}
+		{
+			x: 22.0d
+			y: 1.5d
+			dependencies: [
+				"3961588F38384BD7"
+				"74F729C2A28EDA38"
+			]
+			id: "429D3910F6FE4FBB"
+			tasks: [
+				{
+					id: "127104884E1A919B"
+					type: "item"
+					item: "botanicadds:gaia_plate"
+				}
+				{
+					id: "66B1AA199909E0CF"
+					type: "item"
+					item: "botanicadds:dreamrock"
+					count: 5L
+				}
+				{
+					id: "3E0D3079E8889921"
+					type: "item"
+					item: "botanicadds:elven_lapis_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "1E7E49E1044B098E"
+				type: "item"
+				item: {
+					id: "botanicadds:mana_stealer_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 24.0d
+			y: 1.5d
+			dependencies: ["429D3910F6FE4FBB"]
+			id: "0F455E5597FA382C"
+			tasks: [{
+				id: "766758A0CB3133FC"
+				type: "item"
+				item: "botanicadds:gaiasteel_ingot"
+			}]
+			rewards: [{
+				id: "281E3D598CA05230"
+				type: "item"
+				item: {
+					id: "botania:terra_pick"
+					Count: 1b
+					tag: {
+						mana: 999999999
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.5d
+			subtitle: "Elvish Runes"
+			description: ["Can accept mana from a spark."]
+			dependencies: ["02F8163D60C0DF7E"]
+			id: "46851E639732C2D0"
+			tasks: [{
+				id: "116DBF59D1D95399"
+				type: "item"
+				item: "botanicadds:elven_altar"
+			}]
+			rewards: [{
+				id: "11BCF194D300E1A5"
+				type: "item"
+				item: "botania:blacker_lotus"
+				count: 2
+			}]
+		}
+		{
+			x: 14.0d
+			y: 3.0d
+			subtitle: "Elvish Potions"
+			description: ["Can accept mana from a spark."]
+			dependencies: ["4461F93DCB3AADCF"]
+			id: "49C5F3C966C45B51"
+			tasks: [{
+				id: "3AAF2B1E799D3246"
+				type: "item"
+				item: "botanicadds:elven_brewery"
+			}]
+			rewards: [{
+				id: "3E4A35A6E11CD2B4"
+				type: "item"
+				item: "botania:blacker_lotus"
+				count: 2
+			}]
+		}
+		{
+			x: 12.5d
+			y: -3.5d
+			dependencies: ["436F0F9A7D3EDD15"]
+			id: "01A811005C407532"
+			tasks: [{
+				id: "3CAEFDC17EA5C704"
+				type: "item"
+				item: "botanicadds:aura_ring_gaia"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.5d
+			dependencies: ["48C83149C0FBCE94"]
+			id: "128A651063E4F182"
+			tasks: [{
+				id: "5F2AACC378AF4344"
+				type: "item"
+				item: "botanicadds:mana_ring_gaia"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			subtitle: "I carry it with me"
+			description: ["Botania offers a variety of magical trinkets that you can wear for certain benefits."]
+			dependencies: ["05D4E889E0F34A64"]
+			id: "167ECF4AC11A2550"
+			tasks: [{
+				id: "022331755046A1E6"
+				type: "checkmark"
+				title: "Trinkets"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			subtitle: "The real thing"
+			description: ["The regular mana pool."]
+			dependencies: ["39E6A449D961658C"]
+			id: "08062852B8EE507D"
+			tasks: [{
+				id: "536C69A0A806F936"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "0294AAD35DC7123A"
+				type: "item"
+				item: "botania:blacker_lotus"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			subtitle: "Magical Conversion"
+			description: ["Converts energy from surrounding blocks to prouce mana. It makes mana generation much easier once you get a good supply of energy."]
+			dependencies: ["061D38D6DF850034"]
+			id: "40E83DF23AD1779E"
+			tasks: [{
+				id: "5D0834B54F3BE498"
+				type: "item"
+				item: "botanicadds:flowers/energizera"
+			}]
+			rewards: [{
+				id: "3A6CFCB8B6953A81"
+				type: "item"
+				item: "botanicadds:flowers/floating/energizera"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -0.5d
+			subtitle: "Red hot"
+			description: ["This pylon will reduce the mana requirement for using the alfheim portal. Replace the natura pylons with these"]
+			dependencies: ["68E598EE354627D8"]
+			id: "1F331023D45B4CE5"
+			tasks: [{
+				id: "56370A3BA1700900"
+				type: "item"
+				item: "botanicadds:gaiasteel_pylon"
+			}]
+			rewards: [{
+				id: "249257CA2C84493B"
+				type: "item"
+				item: "botania:blacker_lotus"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 17.0d
+			y: 3.0d
+			subtitle: "Your gonna need more potions"
+			description: ["Tier II gaia is summoned by using a gaia spirt ingot. Be prepared because this version is much harder but yeilds much better rewards. Various runes, more gaia spirit, and some wills. Good luck!"]
+			dependencies: ["62873B319615F5B4"]
+			id: "7DD363261958C59E"
+			tasks: [{
+				id: "69CAAEB8FD9F4953"
+				type: "checkmark"
+				title: "Gaia Tier II"
+			}]
+			rewards: [
+				{
+					id: "0A571CB95CE30920"
+					type: "item"
+					item: "mysticalagradditions:supremium_apple"
+				}
+				{
+					id: "460C22B35C796922"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:healing"
+						}
+					}
 				}
 			]
 		}
