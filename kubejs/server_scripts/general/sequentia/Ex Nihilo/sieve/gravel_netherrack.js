@@ -97,6 +97,7 @@ ServerEvents.recipes(event =>{
         .addRoll(0.32, 'netherite')
         .addRoll(0.32, 'netherite')
         .addRoll(0.32, 'netherite')
+<<<<<<< Updated upstream
     //Coal
     event.remove({output: 'minecraft:coal', type: 'exnihilosequentia:sieve'})
     event.recipes.exnihilosequentia.sieve("minecraft:gravel", "minecraft:coal")
@@ -108,4 +109,6 @@ ServerEvents.recipes(event =>{
         .addRoll(0.23, 'netherite')
         .addRoll(0.23, 'netherite')
         .addRoll(0.23, 'netherite')
+=======
+>>>>>>> Stashed changes
 })

@@ -8,6 +8,7 @@ const thermopneumatic_prefix = 'fits:materials/processing/thermo-pn/'
 //Immersive Engineering
 const alloysmelter_prefix = 'fits:materials/processing/ie/alloy_smelting/'
 const blastfurnace_prefix = 'fits:materials/processing/ie/blast_furnace/'
+const fermenter_prefix = 'fits:materials/processing/ie/'
 
 //Thermal Series
 const thermal_smelting_prefix = 'fits:materials/processing/ts/smelting'

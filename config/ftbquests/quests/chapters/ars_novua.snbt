@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+<<<<<<< Updated upstream
 	default_quest_shape: ""
 	filename: "ars_novua"
 	group: "45EE6B8D98E9487B"
@@ -8,6 +9,9 @@
 	id: "03B3086A7456AF55"
 	order_index: 10
 	quest_links: [ ]
+=======
+	hide_quest_details_until_startable: true
+>>>>>>> Stashed changes
 	quests: [
 		{
 			dependencies: ["63827F8260F11CBD"]

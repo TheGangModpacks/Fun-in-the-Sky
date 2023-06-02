@@ -1,4 +1,32 @@
 ServerEvents.recipes(event =>{
+<<<<<<< Updated upstream
+=======
+
+    event.remove({id: 'pneumaticcraft:heat_frame_cooling/plastic'})
+    event.custom({
+        type: fermenter,
+        energy: 7000,
+        fluid: Fluid.of('immersiveengineering:ethanol').withAmount('2000').toJson(),
+        input: Item.of('honey_block')
+    }).id(`${fermenter_prefix}ethanol/2000`)
+    event.remove({id: 'immersiveengineering:refinery/acetaldehyde'})
+    event.custom({
+            "type": "immersiveengineering:refinery",
+            "catalyst": {
+              "tag": "forge:ingots/silver"
+            },
+            "energy": 120,
+            "input0": {
+              "amount": 20,
+              "tag": "forge:ethanol"
+            },
+            "result": {
+              "amount": 100,
+              "fluid": "immersiveengineering:acetaldehyde"
+            }
+    })
+    event.recipes.immersiveengineering.metal_press('pneumaticcraft:compressed_iron_gear', '6x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_gear')
+>>>>>>> Stashed changes
     event.recipes.immersiveengineering.metal_press('6x pneumaticcraft:pressure_chamber_wall', '12x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_packing_9')
     .id('pneumaticcraft:pressure_chamber_wall')
     event.remove({id: 'pneumaticcraft:pressure_chamber_valve'})
