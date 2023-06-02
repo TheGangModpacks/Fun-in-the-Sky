@@ -28,6 +28,7 @@ ServerEvents.tags('item', event => {
     event.add(tag, "extendedcrafting:black_iron_ingot")
     event.add(tag, "extendedcrafting:black_iron_block")
     event.add(tag, "extendedcrafting:black_iron_nugget")
+    event.add(tag, "cobblefordays:tier_1")
 })
 ServerEvents.recipes(event =>{
     //Recipes that are broken, which can likely be fixed in the future.

@@ -1,61 +1,59 @@
 {
-	id: "27A0C883FBEAB0FD"
-	group: "45EE6B8D98E9487B"
-	order_index: 3
-	filename: "refined_storage"
-	title: "&bDigital Storage"
-	icon: "refinedstorage:creative_controller"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "refined_storage"
+	group: "45EE6B8D98E9487B"
 	hide_quest_details_until_startable: true
+	icon: "refinedstorage:creative_controller"
+	id: "27A0C883FBEAB0FD"
+	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0048CFCE5675B1EE"]
+			description: ["Welcome to Refined Storage! "]
+			hide: true
+			id: "0640073DDD7DCF38"
+			invisible_until_tasks: 1
+			shape: "gear"
+			tasks: [{
+				id: "10D64B26500F3A10"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
 			title: "Refined Storage"
 			x: 1.5d
 			y: 1.0d
-			shape: "gear"
-			description: ["Welcome to Refined Storage! "]
-			dependencies: ["0048CFCE5675B1EE"]
-			hide: true
-			invisible_until_tasks: 1
-			id: "0640073DDD7DCF38"
-			tasks: [{
-				id: "10D64B26500F3A10"
-				type: "item"
-				item: "refinedstorage:quartz_enriched_iron"
-			}]
 		}
 		{
-			x: 1.0d
-			y: 2.0d
-			description: ["Silicon is a base material for many Digital Storage related things."]
 			dependencies: [
 				"0640073DDD7DCF38"
 				"384319551B959E84"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Silicon is a base material for many Digital Storage related things."]
 			id: "020D21BAB43DAAE0"
 			tasks: [{
 				id: "35F691F4D550DA43"
-				type: "item"
-				title: "Silicon"
 				item: "emendatusenigmatica:silicon_gem"
+				title: "Silicon"
+				type: "item"
 			}]
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			x: 2.5d
-			y: 1.0d
 			dependencies: ["0640073DDD7DCF38"]
 			id: "607A51FFADD8E177"
 			tasks: [{
 				id: "427B2A820ABF0656"
-				type: "item"
 				item: "refinedstorage:processor_binding"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 1.0d
 		}
 		{
-			x: 2.5d
-			y: 2.0d
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"607A51FFADD8E177"
@@ -63,13 +61,13 @@
 			id: "01835A47430DA015"
 			tasks: [{
 				id: "4FA9F8C273CA74C9"
-				type: "item"
 				item: "refinedstorage:raw_basic_processor"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 2.0d
 		}
 		{
-			x: 2.5d
-			y: 4.0d
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"607A51FFADD8E177"
@@ -77,13 +75,13 @@
 			id: "3739D515F26E8629"
 			tasks: [{
 				id: "1110DC939CFC220B"
-				type: "item"
 				item: "refinedstorage:raw_improved_processor"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 4.0d
 		}
 		{
-			x: 2.5d
-			y: 3.0d
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"607A51FFADD8E177"
@@ -91,1346 +89,1348 @@
 			id: "3D446563D0ACB58C"
 			tasks: [{
 				id: "08EDF2784E4A7081"
-				type: "item"
 				item: "refinedstorage:raw_advanced_processor"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 3.0d
 		}
 		{
-			icon: "refinedstorage:basic_processor"
-			x: 3.5d
-			y: 2.0d
 			dependencies: ["01835A47430DA015"]
+			icon: "refinedstorage:basic_processor"
 			id: "5514D78050505642"
 			tasks: [
 				{
 					id: "372C433D8821D5F0"
-					type: "item"
 					item: "refinedstorage:basic_processor"
+					type: "item"
 				}
 				{
 					id: "4F962BCE391BBA27"
-					type: "item"
 					item: "refinedstorage:construction_core"
+					type: "item"
 				}
 				{
 					id: "7336F23840D4FC4E"
-					type: "item"
 					item: "refinedstorage:destruction_core"
+					type: "item"
 				}
 			]
+			x: 3.5d
+			y: 2.0d
 		}
 		{
-			x: 3.5d
-			y: 4.0d
 			dependencies: ["3739D515F26E8629"]
 			id: "74B1061F3B87DB02"
 			tasks: [{
 				id: "7428E3B273B5F19D"
-				type: "item"
 				item: "refinedstorage:improved_processor"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 4.0d
 		}
 		{
-			x: 3.5d
-			y: 3.0d
 			dependencies: ["3D446563D0ACB58C"]
 			id: "499BB1709FA0CE62"
 			tasks: [{
 				id: "2A20B66F175255E4"
-				type: "item"
 				item: "refinedstorage:advanced_processor"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 3.0d
 		}
 		{
-			icon: "refinedstorage:creative_controller"
-			x: 5.0d
-			y: 3.0d
-			shape: "rsquare"
 			dependencies: [
 				"499BB1709FA0CE62"
 				"74B1061F3B87DB02"
 				"5514D78050505642"
 			]
-			size: 1.3d
+			icon: "refinedstorage:creative_controller"
 			id: "4172A1B728825CAA"
+			shape: "rsquare"
+			size: 1.3d
 			tasks: [{
 				id: "57A0D1EA994C67C6"
-				type: "item"
 				item: "refinedstorage:controller"
+				type: "item"
 			}]
+			x: 5.0d
+			y: 3.0d
 		}
 		{
-			x: 5.0d
-			y: 5.5d
-			shape: "diamond"
 			dependencies: ["4172A1B728825CAA"]
 			id: "4B209209709BF5E4"
+			shape: "diamond"
 			tasks: [{
 				id: "79C0B57767571AF3"
-				type: "item"
 				item: "refinedstorage:grid"
+				type: "item"
 			}]
+			x: 5.0d
+			y: 5.5d
 		}
 		{
-			x: 4.821428571428569d
-			y: 6.25d
-			shape: "diamond"
 			dependencies: ["4B209209709BF5E4"]
-			size: 0.97d
 			id: "43B8736F2D130E10"
+			shape: "diamond"
+			size: 0.97d
 			tasks: [{
 				id: "447C65DB9F264194"
-				type: "item"
 				item: "refinedstorage:crafting_grid"
+				type: "item"
 			}]
+			x: 4.821428571428569d
+			y: 6.25d
 		}
 		{
-			x: 4.147959183673471d
-			y: 6.494897959183675d
-			shape: "diamond"
 			dependencies: ["4B209209709BF5E4"]
-			size: 0.97d
 			id: "7650CA7E092F1D11"
+			shape: "diamond"
+			size: 0.97d
 			tasks: [{
 				id: "32D6B99FFFF83C9F"
-				type: "item"
 				item: "refinedstorage:pattern_grid"
+				type: "item"
 			}]
+			x: 4.147959183673471d
+			y: 6.494897959183675d
 		}
 		{
-			x: 4.357142857142861d
-			y: 5.785714285714285d
-			shape: "diamond"
 			dependencies: ["4B209209709BF5E4"]
-			size: 0.97d
 			id: "12A90AABB2B9B4E3"
+			shape: "diamond"
+			size: 0.97d
 			tasks: [{
 				id: "18383B6A54DD3761"
-				type: "item"
 				item: "refinedstorage:fluid_grid"
+				type: "item"
 			}]
+			x: 4.357142857142861d
+			y: 5.785714285714285d
 		}
 		{
-			x: 7.6d
-			y: 7.2d
 			dependencies: ["0E200AD51EEE2750"]
-			size: 0.8d
 			id: "6AA3B68C52B4E265"
+			size: 0.8d
 			tasks: [{
 				id: "6BB6BAF779B91101"
-				type: "item"
 				item: "refinedstorage:wireless_fluid_grid"
+				type: "item"
 			}]
+			x: 7.6d
+			y: 7.2d
 		}
 		{
-			x: 6.5d
-			y: 7.5d
 			dependencies: ["43B8736F2D130E10"]
 			id: "0E200AD51EEE2750"
 			tasks: [{
 				id: "6CF1FB7BC3B06D27"
-				type: "item"
 				item: "refinedstorage:wireless_crafting_monitor"
+				type: "item"
 			}]
+			x: 6.5d
+			y: 7.5d
 		}
 		{
-			x: 6.5d
-			y: 5.5d
 			dependencies: ["4172A1B728825CAA"]
 			id: "347A4B790B6E5DFF"
 			tasks: [{
 				id: "35C6902B84A98C66"
-				type: "item"
 				item: "refinedstorage:cable"
+				type: "item"
 			}]
+			x: 6.5d
+			y: 5.5d
 		}
 		{
-			x: 7.0d
-			y: 9.0d
 			dependencies: ["0E200AD51EEE2750"]
 			id: "4F79494843C24C3A"
 			tasks: [
 				{
 					id: "1C723865D96D1702"
-					type: "item"
 					item: "refinedstorage:wireless_transmitter"
+					type: "item"
 				}
 				{
 					id: "3F816FA0D34E7D77"
-					type: "item"
 					item: "refinedstorage:range_upgrade"
+					type: "item"
 				}
 			]
+			x: 7.0d
+			y: 9.0d
 		}
 		{
-			x: 5.5d
-			y: 9.5d
 			dependencies: ["4F79494843C24C3A"]
 			id: "014E6942437BDD38"
 			tasks: [{
 				id: "4491FA4EBFFE3C6E"
-				type: "item"
 				item: "rsinfinitybooster:dimension_card"
+				type: "item"
 			}]
+			x: 5.5d
+			y: 9.5d
 		}
 		{
-			x: 5.800000000000011d
-			y: 8.342857142857135d
-			shape: "hexagon"
 			dependencies: ["014E6942437BDD38"]
 			id: "7442D0639B2D2800"
+			shape: "hexagon"
 			tasks: [{
 				id: "56515CB3615AE1D4"
-				type: "item"
 				item: "rsinfinitybooster:infinity_card"
+				type: "item"
 			}]
+			x: 5.800000000000011d
+			y: 8.342857142857135d
 		}
 		{
-			x: 6.0d
-			y: 1.5d
-			shape: "diamond"
 			dependencies: ["4172A1B728825CAA"]
 			id: "5076877606BEF7A0"
+			shape: "diamond"
 			tasks: [{
 				id: "37BE327F463C047F"
-				type: "item"
 				item: "refinedstorage:disk_drive"
+				type: "item"
 			}]
+			x: 6.0d
+			y: 1.5d
 		}
 		{
-			x: 6.5d
-			y: 2.0d
-			shape: "diamond"
 			dependencies: ["4172A1B728825CAA"]
 			id: "3F6F4D3AA9DF9424"
+			shape: "diamond"
 			tasks: [{
 				id: "3B3E7611F232488A"
-				type: "item"
 				item: "refinedstorage:1k_storage_part"
+				type: "item"
 			}]
+			x: 6.5d
+			y: 2.0d
 		}
 		{
-			x: 5.0d
-			y: 0.5d
-			shape: "diamond"
 			dependencies: ["4172A1B728825CAA"]
 			id: "47BBC9DEFA3783BA"
+			shape: "diamond"
 			tasks: [{
 				id: "4C39D6B0D8271866"
-				type: "item"
 				item: "refinedstorage:64k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.0d
+			y: 0.5d
 		}
 		{
-			x: 8.5d
-			y: 5.5d
-			shape: "rsquare"
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "1AF8EE6C488ADA9C"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "58524301BB3F0BB7"
-					type: "item"
 					item: "refinedstorage:importer"
+					type: "item"
 				}
 				{
 					id: "0B613825CB357AE2"
-					type: "item"
 					item: "refinedstorage:exporter"
+					type: "item"
 				}
 			]
+			x: 8.5d
+			y: 5.5d
 		}
 		{
-			x: 8.5d
-			y: 6.5d
-			shape: "rsquare"
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "5AFAD2DE1CD555BE"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "2F77F53BED496722"
-					type: "item"
 					item: "refinedstorage:constructor"
+					type: "item"
 				}
 				{
 					id: "309663567BB99A26"
-					type: "item"
 					item: "refinedstorage:destructor"
+					type: "item"
 				}
 			]
+			x: 8.5d
+			y: 6.5d
 		}
 		{
-			x: 10.5d
-			y: 6.0d
-			shape: "rsquare"
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "6F3C396F5D6D5728"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "5F3EF5BA3741594E"
-					type: "item"
 					item: "refinedstorage:network_receiver"
+					type: "item"
 				}
 				{
 					id: "1A2DC57D92ADA2E2"
-					type: "item"
 					item: "refinedstorage:network_transmitter"
+					type: "item"
 				}
 				{
 					id: "5FAA1BA53F289234"
-					type: "item"
 					item: "refinedstorage:network_card"
+					type: "item"
 				}
 			]
+			x: 10.5d
+			y: 6.0d
 		}
 		{
-			x: 5.547619047619051d
-			y: 1.021088435374132d
 			dependencies: ["5076877606BEF7A0"]
-			size: 0.75d
 			id: "615B0C1E3C9ECAAA"
+			size: 0.75d
 			tasks: [{
 				id: "105645477A1CC907"
-				type: "item"
 				item: "refinedstorage:disk_manipulator"
+				type: "item"
 			}]
+			x: 5.547619047619051d
+			y: 1.021088435374132d
 		}
 		{
-			x: 9.5d
-			y: 6.5d
-			shape: "rsquare"
 			dependencies: ["347A4B790B6E5DFF"]
 			id: "021BFBE258BE347C"
+			shape: "rsquare"
 			tasks: [{
 				id: "198A6DA1F10C8399"
-				type: "item"
 				item: "refinedstorage:external_storage"
+				type: "item"
 			}]
+			x: 9.5d
+			y: 6.5d
 		}
 		{
-			title: "Security"
-			icon: "refinedstorage:security_card"
-			x: 4.125d
-			y: 0.75d
-			shape: "diamond"
 			dependencies: ["4172A1B728825CAA"]
-			size: 0.75d
+			icon: "refinedstorage:security_card"
 			id: "11F1AAFF003813F9"
+			shape: "diamond"
+			size: 0.75d
 			tasks: [
 				{
 					id: "1F6E312FDB60443F"
-					type: "item"
 					item: "refinedstorage:security_manager"
+					type: "item"
 				}
 				{
 					id: "027FF8E65D4E93DD"
-					type: "item"
 					item: "refinedstorage:security_card"
+					type: "item"
 				}
 			]
+			title: "Security"
+			x: 4.125d
+			y: 0.75d
 		}
 		{
-			x: 6.514285714285727d
-			y: 3.2357142857142804d
-			shape: "pentagon"
 			dependencies: ["4172A1B728825CAA"]
 			id: "7D19FC6B2D404DCE"
+			shape: "pentagon"
 			tasks: [{
 				id: "7C6A050A99B15475"
-				type: "item"
 				item: "refinedstorage:crafter"
+				type: "item"
 			}]
+			x: 6.514285714285727d
+			y: 3.2357142857142804d
 		}
 		{
-			x: 7.5d
-			y: 3.5d
-			shape: "pentagon"
 			dependencies: ["7D19FC6B2D404DCE"]
 			id: "3B33A29CFD9B4327"
+			shape: "pentagon"
 			tasks: [{
 				id: "661FB044717F2AA6"
-				type: "item"
 				item: "extrastorage:iron_crafter"
+				type: "item"
 			}]
+			x: 7.5d
+			y: 3.5d
 		}
 		{
-			x: 8.5d
-			y: 3.0d
-			shape: "hexagon"
 			dependencies: ["3B33A29CFD9B4327"]
 			id: "72A7DA1ABD053B49"
+			shape: "hexagon"
 			tasks: [{
 				id: "5E3E80E687BABF66"
-				type: "item"
 				item: "extrastorage:gold_crafter"
+				type: "item"
 			}]
+			x: 8.5d
+			y: 3.0d
 		}
 		{
-			x: 9.5d
-			y: 3.5d
-			shape: "octagon"
 			dependencies: ["72A7DA1ABD053B49"]
 			id: "449490DD3258E894"
+			shape: "octagon"
 			tasks: [{
 				id: "29E455D959DF3ACE"
-				type: "item"
 				item: "extrastorage:diamond_crafter"
+				type: "item"
 			}]
+			x: 9.5d
+			y: 3.5d
 		}
 		{
-			x: 8.523809523809533d
-			y: 4.178571428571452d
-			shape: "gear"
 			dependencies: ["449490DD3258E894"]
-			size: 1.2d
 			id: "7ADE6FBB31211E63"
+			shape: "gear"
+			size: 1.2d
 			tasks: [{
 				id: "7A19138888B3A5E6"
-				type: "item"
 				item: "extrastorage:netherite_crafter"
+				type: "item"
 			}]
+			x: 8.523809523809533d
+			y: 4.178571428571452d
 		}
 		{
-			x: 4.125d
-			y: 1.5d
-			shape: "diamond"
 			dependencies: ["4172A1B728825CAA"]
-			size: 0.75d
 			id: "4DAFFCFE336F008C"
+			shape: "diamond"
+			size: 0.75d
 			tasks: [{
 				id: "1E2A4C85E120A418"
-				type: "item"
 				item: "refinedstorage:speed_upgrade"
+				type: "item"
 			}]
+			x: 4.125d
+			y: 1.5d
 		}
 		{
-			x: 4.5d
-			y: 1.125d
-			shape: "diamond"
 			dependencies: ["4DAFFCFE336F008C"]
-			size: 0.75d
 			id: "7E94FAA5334C54A4"
+			shape: "diamond"
+			size: 0.75d
 			tasks: [{
 				id: "0AB3C1265967C913"
-				type: "item"
 				item: "refinedstorage:stack_upgrade"
+				type: "item"
 			}]
+			x: 4.5d
+			y: 1.125d
 		}
 		{
-			x: 5.597619047619034d
-			y: 6.13333333333334d
-			shape: "diamond"
 			dependencies: ["43B8736F2D130E10"]
-			size: 0.97d
 			id: "18AD3389A288925C"
+			shape: "diamond"
+			size: 0.97d
 			tasks: [{
 				id: "03F639615FBF08BB"
-				type: "item"
 				item: "refinedstorage:crafting_monitor"
+				type: "item"
 			}]
+			x: 5.597619047619034d
+			y: 6.13333333333334d
 		}
 		{
-			x: 7.0d
-			y: 1.5d
-			shape: "diamond"
 			dependencies: ["3F6F4D3AA9DF9424"]
 			id: "3C46043749FD947D"
+			shape: "diamond"
 			tasks: [{
 				id: "557194BCE2322CAC"
-				type: "item"
 				item: "refinedstorage:4k_storage_part"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 1.5d
 		}
 		{
-			x: 6.5d
-			y: 1.0d
-			shape: "diamond"
 			dependencies: ["3C46043749FD947D"]
 			id: "4F20EF93BF779569"
+			shape: "diamond"
 			tasks: [{
 				id: "1CB47FEB12F22F1A"
-				type: "item"
 				item: "refinedstorage:16k_storage_part"
+				type: "item"
 			}]
+			x: 6.5d
+			y: 1.0d
 		}
 		{
-			x: 7.0d
-			y: 0.5d
-			shape: "diamond"
 			dependencies: ["4F20EF93BF779569"]
 			id: "250EAF1C761CC404"
+			shape: "diamond"
 			tasks: [{
 				id: "549B45AAF9BEC545"
-				type: "item"
 				item: "refinedstorage:64k_storage_part"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 0.5d
 		}
 		{
-			x: 7.5d
-			y: 1.0d
-			shape: "diamond"
 			dependencies: ["250EAF1C761CC404"]
 			id: "449BD24020BEDB19"
+			shape: "diamond"
 			tasks: [{
 				id: "532936FCE90F5DD9"
-				type: "item"
 				item: "extradisks:256k_storage_part"
+				type: "item"
 			}]
+			x: 7.5d
+			y: 1.0d
 		}
 		{
-			x: 7.5d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["449BD24020BEDB19"]
 			id: "2A2CE0A19A131B98"
+			shape: "diamond"
 			tasks: [{
 				id: "2CD294B83724AAF4"
-				type: "item"
 				item: "extradisks:1024k_storage_part"
+				type: "item"
 			}]
+			x: 7.5d
+			y: 0.0d
 		}
 		{
-			x: 8.0d
-			y: 0.5d
-			shape: "diamond"
 			dependencies: ["2A2CE0A19A131B98"]
 			id: "1FE3C9DDC8361F83"
+			shape: "diamond"
 			tasks: [{
 				id: "7F29BB5853AE8533"
-				type: "item"
 				item: "extradisks:4096k_storage_part"
+				type: "item"
 			}]
+			x: 8.0d
+			y: 0.5d
 		}
 		{
-			x: 8.0d
-			y: -0.5d
-			shape: "diamond"
 			dependencies: ["1FE3C9DDC8361F83"]
 			id: "2C7CC40D9456CF86"
+			shape: "diamond"
 			tasks: [{
 				id: "04E91BB6B4EFF141"
-				type: "item"
 				item: "extradisks:16384k_storage_part"
+				type: "item"
 			}]
+			x: 8.0d
+			y: -0.5d
 		}
 		{
-			x: 8.5d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["2C7CC40D9456CF86"]
 			id: "114E7B7857B39FBE"
+			shape: "diamond"
 			tasks: [{
 				id: "527190F754591A3F"
-				type: "item"
 				item: "extradisks:65536k_storage_part"
+				type: "item"
 			}]
+			x: 8.5d
+			y: 0.0d
 		}
 		{
-			x: 8.5d
-			y: -1.0d
-			shape: "diamond"
 			dependencies: ["114E7B7857B39FBE"]
 			id: "6FAFB708BF97DFF9"
+			shape: "diamond"
 			tasks: [{
 				id: "755FC63C3B396B92"
-				type: "item"
 				item: "extradisks:262144k_storage_part"
+				type: "item"
 			}]
+			x: 8.5d
+			y: -1.0d
 		}
 		{
-			x: 9.0d
-			y: -0.5d
-			shape: "diamond"
 			dependencies: ["6FAFB708BF97DFF9"]
 			id: "6844253313DB8373"
+			shape: "diamond"
 			tasks: [{
 				id: "2D678CA23F48E027"
-				type: "item"
 				item: "extradisks:1048576k_storage_part"
+				type: "item"
 			}]
+			x: 9.0d
+			y: -0.5d
 		}
 		{
-			x: 10.2d
-			y: -0.6d
-			shape: "octagon"
 			dependencies: ["6844253313DB8373"]
-			size: 1.2d
 			id: "1E949C3E39386CEC"
+			shape: "octagon"
+			size: 1.2d
 			tasks: [{
 				id: "2BF4D972C8943500"
-				type: "item"
 				item: "extradisks:infinite_storage_part"
+				type: "item"
 			}]
+			x: 10.2d
+			y: -0.6d
 		}
 		{
-			x: 4.5d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["47BBC9DEFA3783BA"]
 			id: "345E87F6556FC7F3"
+			shape: "diamond"
 			tasks: [{
 				id: "67C50BD46B94B42E"
-				type: "item"
 				item: "refinedstorage:256k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 4.5d
+			y: 0.0d
 		}
 		{
-			x: 5.5d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["345E87F6556FC7F3"]
 			hide: false
 			id: "3D585207D845FF52"
+			shape: "diamond"
 			tasks: [{
 				id: "0E1CDD7F79226CD1"
-				type: "item"
 				item: "refinedstorage:1024k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.5d
+			y: 0.0d
 		}
 		{
-			x: 5.0d
-			y: -0.5d
-			shape: "diamond"
 			dependencies: ["3D585207D845FF52"]
 			id: "636051CC75D6DD6F"
+			shape: "diamond"
 			tasks: [{
 				id: "3EA7B87A1CFB39B7"
-				type: "item"
 				item: "refinedstorage:4096k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.0d
+			y: -0.5d
 		}
 		{
-			x: 4.5d
-			y: -1.0d
-			shape: "diamond"
 			dependencies: ["636051CC75D6DD6F"]
 			id: "265D36686BF59D44"
+			shape: "diamond"
 			tasks: [{
 				id: "10C6CF59DF8E485E"
-				type: "item"
 				item: "extradisks:16384k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -1.0d
 		}
 		{
-			x: 5.5d
-			y: -1.0d
-			shape: "diamond"
 			dependencies: ["265D36686BF59D44"]
 			id: "06164A77014CDB83"
+			shape: "diamond"
 			tasks: [{
 				id: "59AECA0D34DF420A"
-				type: "item"
 				item: "extradisks:65536k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.5d
+			y: -1.0d
 		}
 		{
-			x: 5.0d
-			y: -1.5d
-			shape: "diamond"
 			dependencies: ["06164A77014CDB83"]
 			id: "3549258E20D1787F"
+			shape: "diamond"
 			tasks: [{
 				id: "4998D82C9020EA1D"
-				type: "item"
 				item: "extradisks:262144k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.0d
+			y: -1.5d
 		}
 		{
-			x: 5.0d
-			y: -2.5d
-			shape: "diamond"
 			dependencies: ["3549258E20D1787F"]
 			id: "4D1E68C4456CA843"
+			shape: "diamond"
 			tasks: [{
 				id: "4FB8C4E16DA526A1"
-				type: "item"
 				item: "extradisks:1048576k_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.0d
+			y: -2.5d
 		}
 		{
-			x: 5.034353741496588d
-			y: -3.829251700680267d
-			shape: "hexagon"
 			dependencies: ["4D1E68C4456CA843"]
-			size: 1.2d
 			id: "7BF4B0BEDBE39BFA"
+			shape: "hexagon"
+			size: 1.2d
 			tasks: [{
 				id: "15E2BF136C2F0A56"
-				type: "item"
 				item: "extradisks:infinite_fluid_storage_part"
+				type: "item"
 			}]
+			x: 5.034353741496588d
+			y: -3.829251700680267d
 		}
 		{
-			title: "Interfaces!"
-			icon: "refinedstorage:interface"
-			x: 9.5d
-			y: 5.5d
-			shape: "rsquare"
 			dependencies: ["347A4B790B6E5DFF"]
+			icon: "refinedstorage:interface"
 			id: "64BF1E3DB9CBBB2E"
+			shape: "rsquare"
 			tasks: [{
 				id: "6539A4F3E5D7AA17"
-				type: "item"
-				title: "Interfaces"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "quests:interfaces"
 					}
 				}
+				title: "Interfaces"
+				type: "item"
 			}]
+			title: "Interfaces!"
+			x: 9.5d
+			y: 5.5d
 		}
 		{
-			title: "Applied Energistics 2"
-			icon: "ae2:certus_quartz_crystal"
-			x: 0.5d
-			y: 1.0d
-			shape: "gear"
 			dependencies: ["0048CFCE5675B1EE"]
 			hide: true
-			invisible_until_tasks: 1
+			icon: "ae2:certus_quartz_crystal"
 			id: "384319551B959E84"
+			invisible_until_tasks: 1
+			shape: "gear"
 			tasks: [
 				{
-					id: "2B801D86924E2EEB"
-					type: "item"
-					item: "ae2:certus_quartz_crystal"
 					count: 32L
+					id: "2B801D86924E2EEB"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
 				}
 				{
-					id: "330818ED6AB23ADA"
-					type: "item"
-					item: "ae2:charged_certus_quartz_crystal"
 					count: 32L
+					id: "330818ED6AB23ADA"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
 				}
 			]
+			title: "Applied Energistics 2"
+			x: 0.5d
+			y: 1.0d
 		}
 		{
-			x: -0.5d
-			y: 3.0d
-			description: ["The Inscriber is used to create finished Processors."]
 			dependencies: [
 				"020D21BAB43DAAE0"
 				"384319551B959E84"
 			]
+			description: ["The Inscriber is used to create finished Processors."]
 			id: "30696F02128F919D"
 			tasks: [{
 				id: "64387A72ABBDAA44"
-				type: "item"
 				item: "ae2:inscriber"
+				type: "item"
 			}]
+			x: -0.5d
+			y: 3.0d
 		}
 		{
-			x: -1.0d
-			y: 4.0d
 			dependencies: ["30696F02128F919D"]
 			id: "3067F149CA62049B"
 			tasks: [{
 				id: "0D1C99D361721B41"
-				type: "item"
 				item: "ae2:logic_processor"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 4.0d
 		}
 		{
-			x: -1.5d
-			y: 3.0d
 			dependencies: ["30696F02128F919D"]
 			id: "45B397A242BF5A57"
 			tasks: [{
 				id: "5F9F3CEC039F14CA"
-				type: "item"
 				item: "ae2:engineering_processor"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 3.0d
 		}
 		{
-			x: -1.0d
-			y: 2.0d
 			dependencies: ["30696F02128F919D"]
 			id: "39BFE4A9D012C19E"
 			tasks: [{
 				id: "06A617D562510D55"
-				type: "item"
 				item: "ae2:calculation_processor"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 2.0d
 		}
 		{
-			x: -2.9914965986394932d
-			y: 1.488265306122475d
 			dependencies: ["7EEE53E5D519F83F"]
 			id: "5F2DEB1C5F3852E0"
 			tasks: [{
 				id: "41B4973B17ED1186"
-				type: "item"
 				item: "ae2:fluix_glass_cable"
+				type: "item"
 			}]
+			x: -2.9914965986394932d
+			y: 1.488265306122475d
 		}
 		{
-			x: -2.0d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["5F2DEB1C5F3852E0"]
 			id: "1AA19BF4EE7FCF05"
+			shape: "diamond"
 			tasks: [{
 				id: "00D13439B321CA47"
-				type: "item"
 				item: "ae2:fluix_covered_cable"
+				type: "item"
 			}]
+			x: -2.0d
+			y: 0.0d
 		}
 		{
-			x: -1.5d
-			y: 0.5d
-			shape: "diamond"
 			dependencies: ["1AA19BF4EE7FCF05"]
 			id: "7037AA2F4797A5D5"
+			shape: "diamond"
 			tasks: [{
 				id: "1629587FA257BFBF"
-				type: "item"
 				item: "ae2:fluix_smart_cable"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 0.5d
 		}
 		{
-			x: -1.5d
-			y: -0.5d
-			shape: "diamond"
 			dependencies: ["1AA19BF4EE7FCF05"]
 			id: "030C9CF8C337A6F2"
+			shape: "diamond"
 			tasks: [{
 				id: "315DAE3787395BC5"
-				type: "item"
 				item: "ae2:fluix_covered_dense_cable"
+				type: "item"
 			}]
+			x: -1.5d
+			y: -0.5d
 		}
 		{
-			x: -1.0d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["030C9CF8C337A6F2"]
 			id: "2827AF90FC56B4C2"
+			shape: "diamond"
 			tasks: [{
 				id: "6411E7A6DAAEEA83"
-				type: "item"
 				item: "ae2:fluix_smart_dense_cable"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 0.0d
 		}
 		{
-			x: -4.0d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: [
 				"5F2DEB1C5F3852E0"
 				"7D4FC821B2D99255"
 			]
 			id: "2CE92AA34A6EC0DA"
+			shape: "diamond"
 			tasks: [{
 				id: "1EBD267333364774"
-				type: "item"
 				item: "ae2:terminal"
+				type: "item"
 			}]
+			x: -4.0d
+			y: 0.0d
 		}
 		{
-			x: -4.5d
-			y: -0.5d
-			shape: "diamond"
 			dependencies: ["5F2DEB1C5F3852E0"]
 			id: "227EDCF7B0C253A7"
+			shape: "diamond"
 			tasks: [{
 				id: "439C811932A556E6"
-				type: "item"
 				item: "ae2:crafting_terminal"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -0.5d
 		}
 		{
-			x: -5.0d
-			y: 0.0d
-			shape: "diamond"
 			dependencies: ["5F2DEB1C5F3852E0"]
 			id: "33EACAEC137C2F6B"
+			shape: "diamond"
 			tasks: [{
 				id: "04DF8B7331571723"
-				type: "item"
 				item: "ae2:pattern_encoding_terminal"
+				type: "item"
 			}]
+			x: -5.0d
+			y: 0.0d
 		}
 		{
-			x: -4.5d
-			y: 0.5d
-			shape: "diamond"
 			dependencies: ["5F2DEB1C5F3852E0"]
 			id: "293981A3E0E551A9"
+			shape: "diamond"
 			tasks: [{
 				id: "0ECFC5DDBAD104ED"
-				type: "item"
 				item: "ae2:pattern_access_terminal"
+				type: "item"
 			}]
+			x: -4.5d
+			y: 0.5d
 		}
 		{
-			x: -2.9914965986394932d
-			y: -1.011734693877525d
 			dependencies: ["7D4FC821B2D99255"]
 			id: "6F97F92E0052C131"
 			tasks: [{
 				id: "2EABA927E7EB37DC"
-				type: "item"
 				item: "ae2:drive"
+				type: "item"
 			}]
+			x: -2.9914965986394932d
+			y: -1.011734693877525d
 		}
 		{
-			x: -1.9914965986394932d
-			y: -2.011734693877525d
-			shape: "diamond"
 			dependencies: ["6F97F92E0052C131"]
 			id: "60B54178CC0BF09B"
+			shape: "diamond"
 			tasks: [{
 				id: "67CE468EFFF97338"
-				type: "item"
 				item: "ae2:cell_component_1k"
+				type: "item"
 			}]
+			x: -1.9914965986394932d
+			y: -2.011734693877525d
 		}
 		{
-			x: -1.5d
-			y: -1.5d
-			shape: "diamond"
 			dependencies: ["60B54178CC0BF09B"]
 			id: "668A60613BA11883"
+			shape: "diamond"
 			tasks: [{
 				id: "636B9B1092A06A80"
-				type: "item"
 				item: "ae2:cell_component_4k"
+				type: "item"
 			}]
+			x: -1.5d
+			y: -1.5d
 		}
 		{
-			x: -1.5d
-			y: -2.5d
-			shape: "diamond"
 			dependencies: ["668A60613BA11883"]
 			id: "67F66D72B252740C"
+			shape: "diamond"
 			tasks: [{
 				id: "30898063F619A02B"
-				type: "item"
 				item: "ae2:cell_component_16k"
+				type: "item"
 			}]
+			x: -1.5d
+			y: -2.5d
 		}
 		{
-			x: -1.0d
-			y: -2.0d
-			shape: "diamond"
 			dependencies: ["67F66D72B252740C"]
 			id: "44274440DC6F338A"
+			shape: "diamond"
 			tasks: [{
 				id: "27EB5666B01822EA"
-				type: "item"
 				item: "ae2:cell_component_64k"
+				type: "item"
 			}]
+			x: -1.0d
+			y: -2.0d
 		}
 		{
-			x: -1.0d
-			y: -3.0d
-			shape: "diamond"
 			dependencies: ["44274440DC6F338A"]
 			id: "2994BD7453F09958"
+			shape: "diamond"
 			tasks: [{
 				id: "38A8BF99EA8E94A1"
-				type: "item"
 				item: "ae2:cell_component_256k"
+				type: "item"
 			}]
+			x: -1.0d
+			y: -3.0d
 		}
 		{
-			x: -0.5d
-			y: -2.5d
-			shape: "diamond"
 			dependencies: ["2994BD7453F09958"]
 			id: "28944C3282FA9800"
+			shape: "diamond"
 			tasks: [{
 				id: "0205F32854C86481"
-				type: "item"
 				item: "ae2additions:cell_component_1024"
+				type: "item"
 			}]
+			x: -0.5d
+			y: -2.5d
 		}
 		{
-			x: -0.5d
-			y: -3.5d
-			shape: "diamond"
 			dependencies: ["28944C3282FA9800"]
 			id: "3CE5C02A83511E53"
+			shape: "diamond"
 			tasks: [{
 				id: "47C246CF7BBF1F58"
-				type: "item"
 				item: "ae2additions:cell_component_4096"
+				type: "item"
 			}]
+			x: -0.5d
+			y: -3.5d
 		}
 		{
-			x: 0.0d
-			y: -3.0d
-			shape: "diamond"
 			dependencies: ["3CE5C02A83511E53"]
 			id: "61B826BBC991ADCE"
+			shape: "diamond"
 			tasks: [{
 				id: "3C3BF317F8D6B055"
-				type: "item"
 				item: "ae2additions:cell_component_16384"
+				type: "item"
 			}]
+			x: 0.0d
+			y: -3.0d
 		}
 		{
-			x: 0.27551020408163396d
-			y: -3.7843537414965986d
-			shape: "diamond"
 			dependencies: ["61B826BBC991ADCE"]
-			size: 1.1d
 			id: "49B50C0549122A10"
+			shape: "diamond"
+			size: 1.1d
 			tasks: [{
 				id: "2D4E0EC288ECE8F5"
-				type: "item"
 				item: "ae2additions:cell_component_65536"
+				type: "item"
 			}]
+			x: 0.27551020408163396d
+			y: -3.7843537414965986d
 		}
 		{
-			title: "Cores"
-			x: -2.9710884353741847d
-			y: 0.2897959183673713d
-			shape: "hexagon"
 			dependencies: ["5F2DEB1C5F3852E0"]
-			size: 0.78d
 			id: "7D4FC821B2D99255"
+			shape: "hexagon"
+			size: 0.78d
 			tasks: [
 				{
 					id: "7DDFC91C7C32FE16"
-					type: "item"
 					item: "ae2:formation_core"
+					type: "item"
 				}
 				{
 					id: "634C614095422617"
-					type: "item"
 					item: "ae2:annihilation_core"
+					type: "item"
 				}
 			]
+			title: "Cores"
+			x: -2.9710884353741847d
+			y: 0.2897959183673713d
 		}
 		{
-			x: -2.9914965986394932d
-			y: -2.511734693877525d
-			shape: "diamond"
 			dependencies: ["6F97F92E0052C131"]
 			id: "3964411356A28AE7"
+			shape: "diamond"
 			tasks: [{
 				id: "26251BA95D531463"
-				type: "item"
 				item: "ae2additions:super_cell_component_1k"
+				type: "item"
 			}]
+			x: -2.9914965986394932d
+			y: -2.511734693877525d
 		}
 		{
-			x: -2.4914965986394932d
-			y: -3.011734693877525d
-			shape: "diamond"
 			dependencies: ["3964411356A28AE7"]
 			id: "5547435BC857AC41"
+			shape: "diamond"
 			tasks: [{
 				id: "2EE7A4147EF80075"
-				type: "item"
 				item: "ae2additions:super_cell_component_4k"
+				type: "item"
 			}]
+			x: -2.4914965986394932d
+			y: -3.011734693877525d
 		}
 		{
-			x: -3.4914965986394932d
-			y: -3.011734693877525d
-			shape: "diamond"
 			dependencies: ["5547435BC857AC41"]
 			id: "13400DD6AED7948A"
+			shape: "diamond"
 			tasks: [{
 				id: "6BEACD7AAD0E16B6"
-				type: "item"
 				item: "ae2additions:super_cell_component_16k"
+				type: "item"
 			}]
+			x: -3.4914965986394932d
+			y: -3.011734693877525d
 		}
 		{
-			x: -2.9914965986394932d
-			y: -3.511734693877525d
-			shape: "diamond"
 			dependencies: ["13400DD6AED7948A"]
 			id: "4807130D2EFE569F"
+			shape: "diamond"
 			tasks: [{
 				id: "3BC4722F28364CC9"
-				type: "item"
 				item: "ae2additions:super_cell_component_64k"
+				type: "item"
 			}]
+			x: -2.9914965986394932d
+			y: -3.511734693877525d
 		}
 		{
-			x: -2.4914965986394932d
-			y: -4.011734693877525d
-			shape: "diamond"
 			dependencies: ["4807130D2EFE569F"]
 			id: "5E81302C29F337CF"
+			shape: "diamond"
 			tasks: [{
 				id: "1C4E9E90014549DB"
-				type: "item"
 				item: "ae2additions:super_cell_component_256k"
+				type: "item"
 			}]
+			x: -2.4914965986394932d
+			y: -4.011734693877525d
 		}
 		{
-			x: -3.4914965986394932d
-			y: -4.011734693877525d
-			shape: "diamond"
 			dependencies: ["5E81302C29F337CF"]
 			id: "50B49D2B790A4844"
+			shape: "diamond"
 			tasks: [{
 				id: "4109D5EA240D9D82"
-				type: "item"
 				item: "ae2additions:super_cell_component_1024k"
+				type: "item"
 			}]
+			x: -3.4914965986394932d
+			y: -4.011734693877525d
 		}
 		{
-			x: -2.9914965986394932d
-			y: -4.511734693877525d
-			shape: "diamond"
 			dependencies: ["50B49D2B790A4844"]
 			id: "3BCFCD16F34952A3"
+			shape: "diamond"
 			tasks: [{
 				id: "55DA0EBD97F9F910"
-				type: "item"
 				item: "ae2additions:super_cell_component_4096k"
+				type: "item"
 			}]
+			x: -2.9914965986394932d
+			y: -4.511734693877525d
 		}
 		{
-			x: -2.9914965986394932d
-			y: -5.511734693877525d
-			shape: "diamond"
 			dependencies: ["3BCFCD16F34952A3"]
 			id: "15187EC7247B5E77"
+			shape: "diamond"
 			tasks: [{
 				id: "438BAE122D98E5E4"
-				type: "item"
 				item: "ae2additions:super_cell_component_16m"
+				type: "item"
 			}]
+			x: -2.9914965986394932d
+			y: -5.511734693877525d
 		}
 		{
-			x: -2.934693877551055d
-			y: -6.583163265306098d
-			shape: "hexagon"
 			dependencies: ["15187EC7247B5E77"]
-			size: 1.2d
 			id: "278B86DFFFA229D6"
+			shape: "hexagon"
+			size: 1.2d
 			tasks: [{
 				id: "6410F2F17EAA7096"
-				type: "item"
 				item: "ae2additions:super_cell_component_65m"
+				type: "item"
 			}]
+			x: -2.934693877551055d
+			y: -6.583163265306098d
 		}
 		{
-			x: -3.9914965986394932d
-			y: -2.011734693877525d
-			shape: "diamond"
 			dependencies: ["6F97F92E0052C131"]
-			optional: true
 			id: "012F88197D40C375"
+			optional: true
+			shape: "diamond"
 			tasks: [{
 				id: "1EC6DC7598B1B293"
-				type: "item"
 				item: "ae2:spatial_cell_component_2"
+				type: "item"
 			}]
+			x: -3.9914965986394932d
+			y: -2.011734693877525d
 		}
 		{
-			x: -4.491496598639493d
-			y: -1.511734693877525d
-			shape: "diamond"
 			dependencies: ["012F88197D40C375"]
-			optional: true
 			id: "3E42DB29BAA786C5"
+			optional: true
+			shape: "diamond"
 			tasks: [{
 				id: "61731F18779E4390"
-				type: "item"
 				item: "ae2:spatial_cell_component_16"
+				type: "item"
 			}]
+			x: -4.491496598639493d
+			y: -1.511734693877525d
 		}
 		{
-			x: -4.720408163265333d
-			y: -2.2610544217687014d
-			shape: "diamond"
 			dependencies: ["3E42DB29BAA786C5"]
-			size: 1.1d
-			optional: true
 			id: "6D49B0498F1598DE"
+			optional: true
+			shape: "diamond"
+			size: 1.1d
 			tasks: [{
 				id: "2CEB5F74D3A84D3D"
-				type: "item"
 				item: "ae2:spatial_cell_component_128"
+				type: "item"
 			}]
+			x: -4.720408163265333d
+			y: -2.2610544217687014d
 		}
 		{
-			x: -3.0d
-			y: 3.0d
-			shape: "rsquare"
-			description: ["The Energy Accepter turns Forge Energy or Botania Mana into AE Energy."]
 			dependencies: [
 				"39BFE4A9D012C19E"
 				"3067F149CA62049B"
 				"45B397A242BF5A57"
 			]
-			size: 1.3d
+			description: ["The Energy Accepter turns Forge Energy or Botania Mana into AE Energy."]
 			id: "7EEE53E5D519F83F"
+			shape: "rsquare"
+			size: 1.3d
 			tasks: [{
 				id: "37A62499343BD0A5"
-				type: "item"
 				item: "ae2:energy_acceptor"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 3.0d
 		}
 		{
-			title: "Storing AE"
+			dependencies: ["7EEE53E5D519F83F"]
+			description: ["Energy Cells can be used to store AE Energy."]
 			icon: {
-				id: "ae2:energy_cell"
 				Count: 1b
+				id: "ae2:energy_cell"
 				tag: { }
 			}
-			x: -2.5d
-			y: 5.5d
-			description: ["Energy Cells can be used to store AE Energy."]
-			dependencies: ["7EEE53E5D519F83F"]
 			id: "766182C446A72D0C"
 			tasks: [
 				{
 					id: "300B7E42F400F4FB"
-					type: "item"
 					item: {
-						id: "ae2:energy_cell"
 						Count: 1b
+						id: "ae2:energy_cell"
 						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "5BF3BFB377AA1742"
-					type: "item"
 					item: {
-						id: "ae2:dense_energy_cell"
 						Count: 1b
+						id: "ae2:dense_energy_cell"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			title: "Storing AE"
+			x: -2.5d
+			y: 5.5d
 		}
 		{
-			title: "Cell Surgery"
-			x: -3.5d
-			y: 5.5d
 			dependencies: ["7EEE53E5D519F83F"]
 			id: "5B781F43FA04F74C"
 			tasks: [{
 				id: "501FBA1CBDD29FDA"
-				type: "item"
 				item: "ae2:cell_workbench"
+				type: "item"
 			}]
+			title: "Cell Surgery"
+			x: -3.5d
+			y: 5.5d
 		}
 		{
-			title: "Auto Crafting Storage"
-			icon: "ae2:crafting_unit"
-			x: -6.5d
-			y: -1.0d
+			dependencies: ["32AB3EBE5AA0700F"]
 			description: [
 				"You will require these connected to your system at all times if you want auto-crafting. The more items involved, the more crafting storage you need."
 				""
 				"You can also add a Crafting Monitor to your crafting storage to see what it's up to."
 			]
-			dependencies: ["32AB3EBE5AA0700F"]
+			icon: "ae2:crafting_unit"
 			id: "7FE8499FADFB632D"
 			tasks: [
 				{
 					id: "2DA517C1184868A4"
-					type: "item"
 					item: "ae2:crafting_unit"
+					type: "item"
 				}
 				{
 					id: "62E125C38D76062A"
-					type: "item"
 					item: "ae2:crafting_accelerator"
+					type: "item"
 				}
 				{
 					id: "7B525D1C4D9D5BFC"
-					type: "item"
-					title: "Basic Crafting Storage"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "quests:ae_basic_crafting_blocks"
 						}
 					}
+					title: "Basic Crafting Storage"
+					type: "item"
 				}
 			]
+			title: "Auto Crafting Storage"
+			x: -6.5d
+			y: -1.0d
 		}
 		{
-			title: "Molecular Assembly"
-			x: -7.0d
-			y: 0.0d
+			dependencies: ["32AB3EBE5AA0700F"]
 			description: [
 				"Molecular Assemblers are used for regular grid auto-crafting. Slap an interface next to it and you're done!"
 				""
 				"To auto-craft with other machines, slap an interface on any side of the machine. If it shows in the Access Terminal, but with the wrong name, rename it in an anvil."
 			]
-			dependencies: ["32AB3EBE5AA0700F"]
 			id: "4110C2A7C8C132A9"
 			tasks: [{
-				id: "6F5B92690A4F0536"
-				type: "item"
-				item: "ae2:molecular_assembler"
 				count: 4L
+				id: "6F5B92690A4F0536"
+				item: "ae2:molecular_assembler"
+				type: "item"
 			}]
+			title: "Molecular Assembly"
+			x: -7.0d
+			y: 0.0d
 		}
 		{
-			x: -6.0d
-			y: 0.0d
+			dependencies: [
+				"43BE21D442311497"
+				"33EACAEC137C2F6B"
+			]
 			description: [
 				"Patterns store auto-crafting recipes. Program them in the Pattern Terminal."
 				""
 				"To program Vanilla recipes (Smith Table, Furnace, etc), set it to the appropriate type."
 				"For Modded recipes (Mekanism Infuser, Thermal Furnace, etc), set it to Processing."
 			]
-			dependencies: [
-				"43BE21D442311497"
-				"33EACAEC137C2F6B"
-			]
 			id: "32AB3EBE5AA0700F"
 			tasks: [{
 				id: "718CA3BB718B2E5C"
-				type: "item"
 				item: "ae2:blank_pattern"
+				type: "item"
 			}]
+			x: -6.0d
+			y: 0.0d
 		}
 		{
-			x: -4.5d
-			y: 3.0d
-			shape: "pentagon"
-			description: ["The ME Controller is used to add more \"channels\" to your ME System."]
 			dependencies: ["7EEE53E5D519F83F"]
+			description: ["The ME Controller is used to add more \"channels\" to your ME System."]
 			id: "679D0314EFCCD784"
+			shape: "pentagon"
 			tasks: [{
 				id: "4F72D4A378F2B950"
-				type: "item"
 				item: "ae2:controller"
+				type: "item"
 			}]
+			x: -4.5d
+			y: 3.0d
 		}
 		{
-			x: -4.5d
-			y: 1.5d
 			dependencies: ["5F2DEB1C5F3852E0"]
 			id: "43BE21D442311497"
 			tasks: [{
 				id: "57631D98E67E2E5E"
-				type: "item"
 				item: "ae2:interface"
+				type: "item"
 			}]
+			x: -4.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["679D0314EFCCD784"]
+			description: ["You can connect ME Controllers together, but will not output more channels to one block, they mostly just connect to look good, and get power. The max size for connected Controllers is a 7x7x7 hollow cube, 68 Controllers."]
+			id: "67080EDB7E733289"
+			shape: "octagon"
+			tasks: [{
+				count: 68L
+				id: "289E9DE0B5E959C1"
+				item: "ae2:controller"
+				type: "item"
+			}]
 			title: "&5The MEGA Controller"
 			x: -6.0d
 			y: 3.0d
-			shape: "octagon"
-			description: ["You can connect ME Controllers together, but will not output more channels to one block, they mostly just connect to look good, and get power. The max size for connected Controllers is a 7x7x7 hollow cube, 68 Controllers."]
-			dependencies: ["679D0314EFCCD784"]
-			id: "67080EDB7E733289"
-			tasks: [{
-				id: "289E9DE0B5E959C1"
-				type: "item"
-				item: "ae2:controller"
-				count: 68L
-			}]
 		}
 	]
-	quest_links: [ ]
+	title: "&bDigital Storage"
 }

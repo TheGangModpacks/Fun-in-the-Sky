@@ -1,5 +1,4 @@
 ServerEvents.recipes(event =>{
-    event.recipes.immersiveengineering.metal_press('pneumaticcraft:compressed_iron_gear', '6x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_gear')
     event.recipes.immersiveengineering.metal_press('6x pneumaticcraft:pressure_chamber_wall', '12x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_packing_9')
     .id('pneumaticcraft:pressure_chamber_wall')
     event.remove({id: 'pneumaticcraft:pressure_chamber_valve'})
@@ -40,4 +39,5 @@ ServerEvents.recipes(event =>{
         item_input: Item.of('thermal:coal_coke'),
         temperature:{min_temp: 500}
         }).id('pneumaticcraft:thermo_plant/plastic_from_biodiesel')
+    event.recipes.create.mixing(['pneumaticcraft:plastic', Fluid.of('pneumaticcraft:yeast_culture', 5)], [Fluid.of('pneumaticcraft:plastic'), 'immersiveengineering:plate_duroplast']).id('fits:mixing/pncr/plastic')
 })

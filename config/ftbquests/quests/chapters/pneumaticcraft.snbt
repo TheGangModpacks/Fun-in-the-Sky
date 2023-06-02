@@ -1,79 +1,78 @@
 {
-	id: "1E06D9F94C392A88"
-	group: "67B4334297F15B2D"
-	order_index: 3
-	filename: "pneumaticcraft"
-	title: "Pneumaticcraft"
-	icon: "pneumaticcraft:pressure_tube"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticcraft"
+	group: "67B4334297F15B2D"
 	hide_quest_details_until_startable: true
+	icon: "pneumaticcraft:pressure_tube"
+	id: "1E06D9F94C392A88"
+	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			description: ["Compressed Iron is the base material for PNC. Make lots of it."]
 			dependencies: ["1BB7C983C892EDB9"]
+			description: ["Compressed Iron is the base material for PNC. Make lots of it."]
 			hide: true
-			invisible_until_tasks: 1
 			id: "7B2DF7D879840487"
+			invisible_until_tasks: 1
 			tasks: [{
 				id: "492FF3E1420BFC60"
-				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["7B2DF7D879840487"]
+			description: ["Pressure Tubes flow \"Pressure\" or \"Bar\" to your PNC machinery. Be careful not to make too much pressure, or leave any open tubes."]
+			id: "493E977152D28BCC"
+			tasks: [{
+				count: 16L
+				id: "20D3022F44FB6753"
+				item: "pneumaticcraft:pressure_tube"
+				type: "item"
+			}]
 			title: "Pressure Logistics"
 			x: 2.0d
 			y: 0.0d
-			description: ["Pressure Tubes flow \"Pressure\" or \"Bar\" to your PNC machinery. Be careful not to make too much pressure, or leave any open tubes."]
-			dependencies: ["7B2DF7D879840487"]
-			id: "493E977152D28BCC"
-			tasks: [{
-				id: "20D3022F44FB6753"
-				type: "item"
-				item: "pneumaticcraft:pressure_tube"
-				count: 16L
-			}]
 		}
 		{
-			x: 2.0d
-			y: -1.5d
+			dependencies: ["493E977152D28BCC"]
 			description: [
 				"The Manual Compressor is a cheap pressure creator."
 				"Max Pressure: &l5.0 Bar"
 				"Consumes Hunger."
 				"Pumps slower if at high pressure capacity."
 			]
-			dependencies: ["493E977152D28BCC"]
 			id: "26E243C6F2B1C5B4"
 			tasks: [{
 				id: "1437F862C13B210E"
-				type: "item"
 				item: "pneumaticcraft:manual_compressor"
+				type: "item"
 			}]
+			x: 2.0d
+			y: -1.5d
 		}
 		{
-			x: 2.0d
-			y: -2.5d
+			dependencies: ["26E243C6F2B1C5B4"]
 			description: [
 				"The Air Compressor produces Pressure using solid fuels."
 				"Max Pressure: &l5.0 Bar"
 				"Does not accept fuel in buckets."
 				"This block is very volatile, don't enable it when pressure is high."
 			]
-			dependencies: ["26E243C6F2B1C5B4"]
 			id: "111254C83AA2C4CC"
 			tasks: [{
 				id: "0773870133841606"
-				type: "item"
 				item: "pneumaticcraft:air_compressor"
+				type: "item"
 			}]
+			x: 2.0d
+			y: -2.5d
 		}
 		{
-			x: 2.0d
-			y: -3.5d
+			dependencies: ["111254C83AA2C4CC"]
 			description: [
 				"The Liquid Compressor creates Pressure with liquid fuels."
 				"Max Pressure: &l5.0 Bar"
@@ -81,232 +80,238 @@
 				"Fluids must be pumped in, or inserted to the GUI."
 				"Different fuels produce different outputs. Check the stats in the tab inside the GUI."
 			]
-			dependencies: ["111254C83AA2C4CC"]
 			id: "2FE327145A87D898"
 			tasks: [{
 				id: "15CCCEB0025466C8"
-				type: "item"
 				item: "pneumaticcraft:liquid_compressor"
+				type: "item"
 			}]
+			x: 2.0d
+			y: -3.5d
 		}
 		{
-			x: 2.0d
-			y: -4.5d
+			dependencies: ["2FE327145A87D898"]
 			description: [
 				"Flux Compressor produces Pressure with Energy."
 				"Max Pressure: &l20.0 Bar"
 				"Produces heat."
 				"40% Efficiency. Lower if using Speed modifiers."
 			]
-			dependencies: ["2FE327145A87D898"]
 			id: "6B4F47F4C6969EC8"
 			tasks: [{
 				id: "52348B92EA8BEEC9"
-				type: "item"
 				item: "pneumaticcraft:flux_compressor"
+				type: "item"
 			}]
+			x: 2.0d
+			y: -4.5d
 		}
 		{
-			x: 3.0d
-			y: -2.5d
+			dependencies: ["111254C83AA2C4CC"]
 			description: [
 				"The Advanced Air Compressor expands it's production rate, but at a cost."
 				"Max Pressure: &l20.0 Bar"
 				"Produces heat."
 				"Does not explode."
 			]
-			dependencies: ["111254C83AA2C4CC"]
 			id: "69A5D4E1FB0D2A22"
 			tasks: [{
 				id: "3826670A492F7BC7"
-				type: "item"
 				item: "pneumaticcraft:advanced_air_compressor"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -2.5d
 		}
 		{
-			x: 1.0d
-			y: -3.5d
+			dependencies: ["2FE327145A87D898"]
 			description: [
 				"The Advanced Liquid Compressor produces more Pressure, with less maintenance."
 				"Max Pressure: &l20.0 Bar"
 				"Does not explode."
 			]
-			dependencies: ["2FE327145A87D898"]
 			id: "24950F9C6F00A50A"
 			tasks: [{
 				id: "64058660DBCFC49B"
-				type: "item"
 				item: "pneumaticcraft:advanced_liquid_compressor"
+				type: "item"
 			}]
+			x: 1.0d
+			y: -3.5d
 		}
 		{
-			title: "Pressure Safety"
-			x: 1.5d
-			y: 1.5d
-			shape: "diamond"
+			dependencies: ["493E977152D28BCC"]
 			description: [
 				"The Safety Tube Module dumps air to prevent high pressure exploding tubes."
 				"Released Air activly wastes fuel."
 				"Dumps nothing when given a redstone signal."
 				"Can be configured better with a Module Expansion Card."
 			]
-			dependencies: ["493E977152D28BCC"]
 			id: "7216EA956512D911"
+			shape: "diamond"
 			tasks: [{
 				id: "639CCE2222FE4081"
-				type: "item"
 				item: "pneumaticcraft:safety_tube_module"
+				type: "item"
 			}]
+			title: "Pressure Safety"
+			x: 1.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["493E977152D28BCC"]
+			description: ["The Gauge Module emits a redstone signal based on amount of Pressure in tubes. Helpful for automating compressors."]
+			id: "2C721ED2F207BF12"
+			shape: "diamond"
+			tasks: [{
+				id: "4C155C72A3FD09A7"
+				item: "pneumaticcraft:pressure_gauge_module"
+				type: "item"
+			}]
 			title: "Pressure Gauge"
 			x: 2.5d
 			y: 1.5d
-			shape: "diamond"
-			description: ["The Gauge Module emits a redstone signal based on amount of Pressure in tubes. Helpful for automating compressors."]
-			dependencies: ["493E977152D28BCC"]
-			id: "2C721ED2F207BF12"
-			tasks: [{
-				id: "4C155C72A3FD09A7"
-				type: "item"
-				item: "pneumaticcraft:pressure_gauge_module"
-			}]
 		}
 		{
-			title: "Pressure Chamber"
-			icon: "pneumaticcraft:pressure_chamber_wall"
-			x: 4.5d
-			y: 0.0d
-			shape: "rsquare"
+			dependencies: ["493E977152D28BCC"]
 			description: [
 				"The Pressure Chamber is an amazing multiblock that creates advanced parts and materials for use in later PNC."
 				"The Chamber requires &l5.0 Bar"
 				"Both interfaces must not be equal. Hold Shift on the Interface to see how to place them."
 				"Chambers can accept specific Glass, but cannot be used as the frame."
 			]
-			dependencies: ["493E977152D28BCC"]
-			size: 1.1d
+			icon: "pneumaticcraft:pressure_chamber_wall"
 			id: "64E7ECBC52FF6E38"
+			shape: "rsquare"
+			size: 1.1d
 			tasks: [
 				{
-					id: "60507CBD556B251F"
-					type: "item"
-					item: "pneumaticcraft:pressure_chamber_wall"
 					count: 20L
+					id: "60507CBD556B251F"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
 				}
 				{
 					id: "77D6CC4921EC6F82"
-					type: "item"
 					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
 				}
 				{
-					id: "4373FF71011827E0"
-					type: "item"
-					item: "pneumaticcraft:pressure_chamber_interface"
 					count: 2L
+					id: "4373FF71011827E0"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
 				}
 			]
+			title: "Pressure Chamber"
+			x: 4.5d
+			y: 0.0d
 		}
 		{
-			title: "Refinery"
-			icon: "pneumaticcraft:refinery"
-			x: 4.5d
-			y: -2.5d
+			dependencies: ["493E977152D28BCC"]
 			description: [
 				"The Refinery is used to extract rarer fluids from Oil, like LPG, or Kerosene."
 				"Requires a minimum of 2 Outputs."
 				"Covering all sides of the Refinery and it's outputs holds in heat, increasing performance. Pipes count towards that."
 			]
-			dependencies: ["493E977152D28BCC"]
+			icon: "pneumaticcraft:refinery"
 			id: "63A88A37B4531ECB"
 			tasks: [
 				{
 					id: "7E8F1F6015047FA9"
-					type: "item"
 					item: "pneumaticcraft:refinery"
+					type: "item"
 				}
 				{
-					id: "50932CF462C56083"
-					type: "item"
-					item: "pneumaticcraft:refinery_output"
 					count: 2L
+					id: "50932CF462C56083"
+					item: "pneumaticcraft:refinery_output"
+					type: "item"
 				}
 			]
+			title: "Refinery"
+			x: 4.5d
+			y: -2.5d
 		}
 		{
-			x: 5.5d
-			y: -2.5d
+			dependencies: ["63A88A37B4531ECB"]
 			description: [
 				"This weird machine is used to form a bunch of fluids and solids. Pretty much everything requires a PNC fluid."
 				"Requires heat, and Pressure, depending on the recipe."
 				"Cover all sides of the machine to keep heat in, increasing performance."
 			]
-			dependencies: ["63A88A37B4531ECB"]
 			id: "2753A37298E0CE9A"
 			tasks: [{
 				id: "6454928F5ED376BA"
-				type: "item"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
 			}]
+			x: 5.5d
+			y: -2.5d
 		}
 		{
+			dependencies: [
+				"2753A37298E0CE9A"
+				"4C734BAE597CDB86"
+			]
+			description: ["Mixing Molten Plastic with Duroplast creates Plastic!"]
+			id: "324D397DEA4CB9AF"
+			shape: "rsquare"
+			tasks: [{
+				count: 16L
+				id: "0B560F42CE567177"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
 			title: "Plastic"
 			x: 7.0d
 			y: -2.5d
-			shape: "rsquare"
-			description: ["Plastic can be formed by placing Molten Plastic in the world."]
-			dependencies: ["2753A37298E0CE9A"]
-			id: "324D397DEA4CB9AF"
-			tasks: [{
-				id: "0B560F42CE567177"
-				type: "item"
-				item: "pneumaticcraft:plastic"
-				count: 16L
-			}]
 		}
 		{
-			title: "Electronics"
-			icon: "pneumaticcraft:transistor"
-			x: 7.0d
-			y: 0.5d
-			description: ["Capacitors and Transistors are a hefty part of PNC. You will need lots of them."]
 			dependencies: [
 				"324D397DEA4CB9AF"
 				"64E7ECBC52FF6E38"
 			]
+			description: ["Capacitors and Transistors are a hefty part of PNC. You will need lots of them."]
+			icon: "pneumaticcraft:transistor"
 			id: "0A335AD1AB0AAB11"
 			tasks: [
 				{
 					id: "65CA1FDF0168367A"
-					type: "item"
 					item: "pneumaticcraft:capacitor"
+					type: "item"
 				}
 				{
 					id: "36930EA82BA2498E"
-					type: "item"
 					item: "pneumaticcraft:transistor"
+					type: "item"
 				}
 			]
+			title: "Electronics"
+			x: 7.0d
+			y: 0.5d
 		}
 		{
-			x: 7.0d
-			y: -0.5d
-			description: ["Empty PCB's are used as a base for advanced electronics in PNC."]
 			dependencies: [
 				"324D397DEA4CB9AF"
 				"64E7ECBC52FF6E38"
 			]
+			description: ["Empty PCB's are used as a base for advanced electronics in PNC."]
 			id: "5D18C51A8B6637B7"
 			tasks: [{
 				id: "60A223235657D041"
-				type: "item"
 				item: "pneumaticcraft:empty_pcb"
+				type: "item"
 			}]
+			x: 7.0d
+			y: -0.5d
 		}
 		{
-			title: "The PCB Construction"
-			x: 10.5d
-			y: -2.5d
+			dependencies: [
+				"5D18C51A8B6637B7"
+				"06712ED519609BFB"
+				"7BE867A08227AEAA"
+			]
 			description: [
 				"To make a Finished PCB:"
 				"1. Gather Empty PCB's that have been exposed to UV light."
@@ -315,401 +320,399 @@
 				"3b. Failed PCB's can be melted in a Blast Furnace to give it another chance."
 				"4. Craft the Unassembled PCB with Capacitors and Transistors to create a Finished PCB."
 			]
-			dependencies: [
-				"5D18C51A8B6637B7"
-				"06712ED519609BFB"
-				"7BE867A08227AEAA"
-			]
 			id: "418EFD2DF262077D"
 			tasks: [
 				{
 					id: "1C031306672F4E30"
-					type: "item"
 					item: "pneumaticcraft:unassembled_pcb"
+					type: "item"
 				}
 				{
 					id: "53D9FE07D47B42CA"
-					type: "item"
 					item: "pneumaticcraft:printed_circuit_board"
+					type: "item"
 				}
 			]
+			title: "The PCB Construction"
+			x: 10.5d
+			y: -2.5d
 		}
 		{
-			x: 8.5d
-			y: -4.0d
+			dependencies: ["074B99B3EFAB6B42"]
 			description: [
 				"The UV Light Box is used to increase the efficiency of Empty PCBs. Requires a PCB Blueprint from the Amadron."
 				"Some PCBs may be failed if Empty base has not sat in the light for extended periods of time."
 			]
-			dependencies: ["074B99B3EFAB6B42"]
 			id: "06712ED519609BFB"
 			tasks: [{
 				id: "55FAE09FBA825330"
-				type: "item"
 				item: "pneumaticcraft:uv_light_box"
+				type: "item"
 			}]
+			x: 8.5d
+			y: -4.0d
 		}
 		{
-			title: "The Amadron"
-			icon: {
-				id: "pneumaticcraft:amadron_tablet"
-				Count: 1b
-				tag: {
-					"pneumaticcraft:air": 30000
-				}
-			}
-			x: 7.0d
-			y: -4.0d
-			subtitle: "Amazon to the skies!"
+			dependencies: ["324D397DEA4CB9AF"]
 			description: [
 				"The Amadron Tablet serves as an online shopping tool, but in Minecraft. Uses Emeralds to fetch you what it sells."
 				"Must be charged with Pressure in a Charging Station."
 				"Shift + RClick on a Storage container and Fluid tank to send/recive fluids and items."
 			]
-			dependencies: ["324D397DEA4CB9AF"]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:amadron_tablet"
+				tag: {
+					"pneumaticcraft:air": 30000
+				}
+			}
 			id: "074B99B3EFAB6B42"
+			subtitle: "Amazon to the skies!"
 			tasks: [
 				{
 					id: "2915EF4B4CB130C4"
-					type: "item"
 					item: "pneumaticcraft:amadron_tablet"
+					type: "item"
 				}
 				{
 					id: "246249EF03B6E552"
-					type: "item"
 					item: "pneumaticcraft:charging_station"
+					type: "item"
 				}
 			]
+			title: "The Amadron"
+			x: 7.0d
+			y: -4.0d
 		}
 		{
-			x: 9.5d
-			y: -2.5d
-			description: [
-				"The Tank is used to further process PCB's to a partially usable form."
-				"Requires Etching Acid."
-			]
 			dependencies: [
 				"06712ED519609BFB"
 				"5D18C51A8B6637B7"
 				"781E259C6E836CD4"
 			]
+			description: [
+				"The Tank is used to further process PCB's to a partially usable form."
+				"Requires Etching Acid."
+			]
 			id: "7BE867A08227AEAA"
 			tasks: [{
 				id: "25D0287EB06E8271"
-				type: "item"
 				item: "pneumaticcraft:etching_tank"
+				type: "item"
 			}]
+			x: 9.5d
+			y: -2.5d
 		}
 		{
-			x: 8.5d
-			y: -2.5d
-			description: ["Etching Acid is made in the Pressure Chamber, and is used for refining PCBs."]
 			dependencies: [
 				"5D18C51A8B6637B7"
 				"06712ED519609BFB"
 			]
+			description: ["Etching Acid is made in the Pressure Chamber, and is used for refining PCBs."]
 			id: "781E259C6E836CD4"
 			tasks: [{
 				id: "3C13C6E679B05A0A"
-				type: "item"
 				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
 			}]
+			x: 8.5d
+			y: -2.5d
 		}
 		{
-			title: "Programs"
-			icon: "pneumaticcraft:assembly_program_laser"
-			x: 7.0d
-			y: -5.0d
+			dependencies: ["074B99B3EFAB6B42"]
 			description: [
 				"Programs are used for Assembling Machines to define what they can produce."
 				"Purchased from the Amadron."
 			]
-			dependencies: ["074B99B3EFAB6B42"]
+			icon: "pneumaticcraft:assembly_program_laser"
 			id: "753F7867BC6AE7BF"
 			tasks: [
 				{
 					id: "1F0A446639E0A35D"
-					type: "item"
 					item: "pneumaticcraft:assembly_program_laser"
+					type: "item"
 				}
 				{
 					id: "4F08BBE0BF0BBFB2"
-					type: "item"
 					item: "pneumaticcraft:assembly_program_drill"
+					type: "item"
 				}
 				{
 					id: "3A6590542F3FC861"
-					type: "item"
 					item: "pneumaticcraft:assembly_program_drill_laser"
+					type: "item"
 				}
 			]
+			title: "Programs"
+			x: 7.0d
+			y: -5.0d
 		}
 		{
-			x: 2.0d
-			y: -5.5d
+			dependencies: ["2FE327145A87D898"]
 			description: [
 				"The Solar Compressor creates Pressure from the sunlight. It requires proper cooling, otherwise it will melt down and require repair."
 				"Max Pressure: &l20.0 Bar"
 			]
-			dependencies: ["2FE327145A87D898"]
 			id: "0AA3D532A58A124C"
 			tasks: [{
 				id: "3BBD5A2147BE68AE"
-				type: "item"
 				item: "pneumaticcraft:solar_compressor"
+				type: "item"
 			}]
+			x: 2.0d
+			y: -5.5d
 		}
 		{
-			title: "Assembly Line"
-			icon: "pneumaticcraft:assembly_drill"
-			x: 10.5d
-			y: -5.0d
+			dependencies: [
+				"418EFD2DF262077D"
+				"753F7867BC6AE7BF"
+			]
 			description: [
 				"Kind of like Create Sequenced Crafting, these little machines take items and throw lasers at them pretty much. Requires a program based on what blocks you have."
 				""
 				"Can be used to create Unassembled PCBs way more efficiently, only requiring a few parts."
 			]
-			dependencies: [
-				"418EFD2DF262077D"
-				"753F7867BC6AE7BF"
-			]
+			icon: "pneumaticcraft:assembly_drill"
 			id: "7B20FAFF35BC704D"
 			tasks: [
 				{
 					id: "376394AA47F25D82"
-					type: "item"
 					item: "pneumaticcraft:assembly_platform"
+					type: "item"
 				}
 				{
 					id: "4A0EE03A1326C39E"
-					type: "item"
 					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
 				}
 				{
 					id: "4EAD8DDF074B7618"
-					type: "item"
 					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
 				}
 				{
 					id: "4BC03FD676007E96"
-					type: "item"
 					item: "pneumaticcraft:assembly_drill"
+					type: "item"
 				}
 				{
 					id: "57CA28152A5AEAF6"
-					type: "item"
 					item: "pneumaticcraft:assembly_laser"
+					type: "item"
 				}
 				{
 					id: "30652D23CCEE9941"
-					type: "item"
 					item: "pneumaticcraft:assembly_controller"
+					type: "item"
 				}
 			]
+			title: "Assembly Line"
+			x: 10.5d
+			y: -5.0d
 		}
 		{
-			title: "Reinforced Tubular Transport"
-			x: 6.0d
-			y: -1.5d
+			dependencies: ["2753A37298E0CE9A"]
 			description: [
 				"Reinforced Pressure Tubes are pretty much stronger tubes."
 				"Max Safe Pressure: &l10.0 Bar"
 			]
-			dependencies: ["2753A37298E0CE9A"]
 			id: "3C2913BC6DE07696"
 			tasks: [{
 				id: "26D5AF3FBDFAA027"
-				type: "item"
 				item: "pneumaticcraft:reinforced_pressure_tube"
+				type: "item"
 			}]
+			title: "Reinforced Tubular Transport"
+			x: 6.0d
+			y: -1.5d
 		}
 		{
-			title: "Advanced Tubular Transport"
-			x: 12.0d
-			y: -5.0d
+			dependencies: ["7B20FAFF35BC704D"]
 			description: [
 				"Advanced Pressure tubes are stronger than Reinforced... as you'd expect. Made from Pressure Chamber Valves, or blocks of Compressed Iron."
 				"Max Safe Pressure: &l20.0 Bar"
 			]
-			dependencies: ["7B20FAFF35BC704D"]
 			id: "0746E680454CF1D4"
 			tasks: [{
 				id: "5DB6912B2406533D"
-				type: "item"
 				item: "pneumaticcraft:advanced_pressure_tube"
+				type: "item"
 			}]
+			title: "Advanced Tubular Transport"
+			x: 12.0d
+			y: -5.0d
 		}
 		{
-			title: "Drones"
-			icon: {
-				id: "pneumaticcraft:drone"
-				Count: 1b
-				tag: {
-					"pneumaticcraft:air": 120000
-				}
-			}
-			x: 12.0d
-			y: -2.5d
+			dependencies: ["418EFD2DF262077D"]
 			description: [
 				"Drones are really useful for those extreme tasks a normal person would never be able to do in a quick amount of time. You can Program these Drones to do whatever you'd like, maybe dig blocks, take items from an inventory and put them in another, anything."
 				""
 				"You will require a Programmer and Puzzle Pieces to program your Drones."
 			]
-			dependencies: ["418EFD2DF262077D"]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:drone"
+				tag: {
+					"pneumaticcraft:air": 120000
+				}
+			}
 			id: "01D4C6B844C8E084"
 			tasks: [
 				{
 					id: "66CEE5D959745D97"
-					type: "item"
 					item: "pneumaticcraft:drone"
+					type: "item"
 				}
 				{
 					id: "2D8C1DE6C48AC9DB"
-					type: "item"
 					item: "pneumaticcraft:programmer"
+					type: "item"
 				}
 				{
-					id: "27F289E899F1FC84"
-					type: "item"
-					item: "pneumaticcraft:programming_puzzle"
 					count: 32L
+					id: "27F289E899F1FC84"
+					item: "pneumaticcraft:programming_puzzle"
+					type: "item"
 				}
 			]
+			title: "Drones"
+			x: 12.0d
+			y: -2.5d
 		}
 		{
-			title: "A Freakin' Minigun!"
+			dependencies: ["074B99B3EFAB6B42"]
+			description: ["The Minigun is... well, I'll let you figure it out."]
 			icon: {
-				id: "pneumaticcraft:minigun"
 				Count: 1b
+				id: "pneumaticcraft:minigun"
 				tag: {
 					"pneumaticcraft:air": 30000
 				}
 			}
-			x: 5.5d
-			y: -4.0d
-			description: ["The Minigun is... well, I'll let you figure it out."]
-			dependencies: ["074B99B3EFAB6B42"]
 			id: "272797B0BF16CDA2"
 			tasks: [
 				{
 					id: "542A7D71DBD6208D"
-					type: "item"
 					item: "pneumaticcraft:minigun"
+					type: "item"
 				}
 				{
 					id: "6F5BEE91518582C8"
-					type: "item"
 					item: {
-						id: "pneumaticcraft:gun_ammo"
 						Count: 1b
+						id: "pneumaticcraft:gun_ammo"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 			]
+			title: "A Freakin' Minigun!"
+			x: 5.5d
+			y: -4.0d
 		}
 		{
-			title: "Alternative Ammunition"
-			icon: {
-				id: "pneumaticcraft:gun_ammo_explosive"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: 5.0d
-			y: -5.0d
+			dependencies: ["272797B0BF16CDA2"]
 			description: [
 				"There are a bunch of different types of Ammo you can use in your Minigun."
 				""
 				"You can also tip your regular Ammo with Potion effects."
 			]
-			dependencies: ["272797B0BF16CDA2"]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:gun_ammo_explosive"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4527F7E03352C6BB"
 			tasks: [
 				{
 					id: "6152178017EF84A6"
-					type: "item"
 					item: {
-						id: "pneumaticcraft:gun_ammo_incendiary"
 						Count: 1b
+						id: "pneumaticcraft:gun_ammo_incendiary"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "29CBFB9ACF748378"
-					type: "item"
 					item: {
-						id: "pneumaticcraft:gun_ammo_weighted"
 						Count: 1b
+						id: "pneumaticcraft:gun_ammo_weighted"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "1A708D42EFF30AFF"
-					type: "item"
 					item: {
-						id: "pneumaticcraft:gun_ammo_ap"
 						Count: 1b
+						id: "pneumaticcraft:gun_ammo_ap"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "3E13FD289D05ABC7"
-					type: "item"
 					item: {
-						id: "pneumaticcraft:gun_ammo_explosive"
 						Count: 1b
+						id: "pneumaticcraft:gun_ammo_explosive"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "6A60E61D949F627D"
-					type: "item"
 					item: {
-						id: "pneumaticcraft:gun_ammo_freezing"
 						Count: 1b
+						id: "pneumaticcraft:gun_ammo_freezing"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 			]
+			title: "Alternative Ammunition"
+			x: 5.0d
+			y: -5.0d
 		}
 		{
-			x: 2.0d
-			y: 2.0d
-			shape: "diamond"
+			dependencies: ["493E977152D28BCC"]
 			description: [
 				"The Camoflauge Applicator does exactly what it says."
 				""
 				"You can grab any block by R-Clicking, and then you can R-Click on pipes to set their appearance to the block."
 			]
-			dependencies: ["493E977152D28BCC"]
-			optional: true
 			id: "4DD12390815D8104"
+			optional: true
+			shape: "diamond"
 			tasks: [{
-				id: "559FAD9A6AA87E27"
-				type: "item"
 				icon: {
-					id: "pneumaticcraft:camo_applicator"
 					Count: 1b
+					id: "pneumaticcraft:camo_applicator"
 					tag: {
 						"pneumaticcraft:air": 30000
 					}
 				}
+				id: "559FAD9A6AA87E27"
 				item: "pneumaticcraft:camo_applicator"
+				type: "item"
 			}]
+			x: 2.0d
+			y: 2.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Pneumaticcraft"
 }

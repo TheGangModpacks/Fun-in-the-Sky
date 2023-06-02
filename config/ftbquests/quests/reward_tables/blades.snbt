@@ -1,20 +1,19 @@
 {
-	id: "07D4C49FB8950675"
-	order_index: 1
-	title: "Blades"
 	icon: {
-		id: "immersiveengineering:sawblade"
 		Count: 1b
+		id: "immersiveengineering:sawblade"
 		tag: {
 			Damage: 0
 		}
 	}
+	id: "07D4C49FB8950675"
 	loot_size: 1
+	order_index: 1
 	rewards: [
 		{
 			item: {
-				id: "immersiveengineering:rockcutter"
 				Count: 1b
+				id: "immersiveengineering:rockcutter"
 				tag: {
 					Damage: 0
 				}
@@ -22,12 +21,13 @@
 		}
 		{
 			item: {
-				id: "immersiveengineering:sawblade"
 				Count: 1b
+				id: "immersiveengineering:sawblade"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
 	]
+	title: "Blades"
 }

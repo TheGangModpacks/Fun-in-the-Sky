@@ -36,6 +36,7 @@ event.remove('twilightforest:portal/activator', 'minecraft:diamond')
 event.add('twilightforest:portal/activator', "pneumaticcraft:printed_circuit_board")
 event.add('forge:armor/leather', '/^minecraft:.*_leather_/')
 event.add('forge:slates/black_iron', 'extendedcrafting:black_iron_slate')
+event.add('thermal:crafting/dies', '/^immersiveengineering:.*mold_/')
 })
 ServerEvents.tags('fluid', event =>{
 	event.removeAll('minecraft:water')

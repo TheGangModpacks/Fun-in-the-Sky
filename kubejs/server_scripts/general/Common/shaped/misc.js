@@ -54,4 +54,6 @@ ServerEvents.recipes(event => {
 	event.shaped(Item.of('furnace'), ['aaa', 'a a', 'aaa'], { a: "kubejs:compressed_cobblestone_x1" }).id(`${shaped_prefix_misc}furnace`)
 	event.shaped(Item.of('clickmachine:auto_clicker'), ['aaa', 'abc', 'ada'], {a: "emendatusenigmatica:signar_ingot", b: "mekanism:steel_casing", c: "create:deployer", d: "immersiveengineering:heavy_engineering"})
     .id('clickmachine:auto_clicker')
+
+	event.remove({id: 'quark:tweaks/crafting/utility/misc/charcoal_to_black_dye'})
 })
