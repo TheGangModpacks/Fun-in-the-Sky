@@ -42,7 +42,3 @@ ServerEvents.tags('fluid', event =>{
 	event.removeAll('minecraft:water')
 	event.add('minecraft:water', 'minecraft:water')
 })
-ServerEvents.recipes(event => {
-    event.remove({output: '#custom:disabled'})
-	console.log('Excecute Order 66');
-})

@@ -6,7 +6,7 @@
 	hide_quest_details_until_startable: true
 	icon: "mekanism:crusher"
 	id: "014408FEEAD28AB9"
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{

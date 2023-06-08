@@ -6,7 +6,7 @@
 	hide_quest_details_until_startable: true
 	icon: "xnet:controller"
 	id: "2D1180F257D11A06"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{

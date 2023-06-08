@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const rod_ingots = {
         emendatusenigmatica: ['nickel', 'steel', 'aluminum', 'brass'],
-        minecraft: ['iron', 'copper'],
+        minecraft: ['iron', 'copper', 'gold'],
         botania: ['manasteel', 'terrasteel', 'elementium'],
         botanicadds: ['gaiasteel']
     };
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
             type: "createaddition:rolling",
             input: {item: `${mod}:${ingot}_ingot`},
             result: {item: `emendatusenigmatica:${ingot}_rod`}})
+            event.shapeless(`emendatusenigmatica:${ingot}_rod`, [`${mod}:${ingot}_ingot`, `${mod}:${ingot}_ingot`, `${mod}:${ingot}_ingot`, `${mod}:${ingot}_ingot`, 'exnihilosequentia:iron_hammer']).damageIngredient('exnihilosequentia:iron_hammer', 1)
         }
     }
-    event.shapeless(Item.of('emendatusenigmatica:nickel_rod'), ['immersiveengineering:hammer', 'emendatusenigmatica:nickel_ingot', 'emendatusenigmatica:nickel_ingot', 'emendatusenigmatica:nickel_ingot', 'emendatusenigmatica:nickel_ingot'])
 })

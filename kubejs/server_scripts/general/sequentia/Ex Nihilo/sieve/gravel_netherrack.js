@@ -85,19 +85,18 @@ ServerEvents.recipes(event =>{
         .addRoll(0.40, 'netherite')
     //Diamond
     event.recipes.exnihilosequentia.sieve("minecraft:gravel", "minecraft:diamond")
-        .addRoll(0.24, 'emerald')
-        .addRoll(0.24, 'emerald')
-        .addRoll(0.32, 'netherite')
-        .addRoll(0.32, 'netherite')
-        .addRoll(0.32, 'netherite')
+        .addRoll(0.02, 'emerald')
+        .addRoll(0.02, 'emerald')
+        .addRoll(0.04, 'netherite')
+        .addRoll(0.04, 'netherite')
+        .addRoll(0.04, 'netherite')
     //Emerald
     event.recipes.exnihilosequentia.sieve("minecraft:gravel", "minecraft:emerald")
-        .addRoll(0.24, 'emerald')
-        .addRoll(0.24, 'emerald')
-        .addRoll(0.32, 'netherite')
-        .addRoll(0.32, 'netherite')
-        .addRoll(0.32, 'netherite')
-<<<<<<< Updated upstream
+        .addRoll(0.02, 'emerald')
+        .addRoll(0.02, 'emerald')
+        .addRoll(0.05, 'netherite')
+        .addRoll(0.05, 'netherite')
+        .addRoll(0.05, 'netherite')
     //Coal
     event.remove({output: 'minecraft:coal', type: 'exnihilosequentia:sieve'})
     event.recipes.exnihilosequentia.sieve("minecraft:gravel", "minecraft:coal")
@@ -109,6 +108,4 @@ ServerEvents.recipes(event =>{
         .addRoll(0.23, 'netherite')
         .addRoll(0.23, 'netherite')
         .addRoll(0.23, 'netherite')
-=======
->>>>>>> Stashed changes
 })

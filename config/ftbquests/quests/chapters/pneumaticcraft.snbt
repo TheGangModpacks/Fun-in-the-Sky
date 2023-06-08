@@ -25,7 +25,10 @@
 		}
 		{
 			dependencies: ["7B2DF7D879840487"]
-			description: ["Pressure Tubes flow \"Pressure\" or \"Bar\" to your PNC machinery. Be careful not to make too much pressure, or leave any open tubes."]
+			description: [
+				"Pressure Tubes flow \"Pressure\" or \"Bar\" to your PNC machinery. Be careful not to make too much pressure, or leave any open tubes."
+				"Max Safe Pressure: &l5.0 Bar"
+			]
 			id: "493E977152D28BCC"
 			tasks: [{
 				count: 16L
@@ -208,11 +211,18 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["493E977152D28BCC"]
+			dependencies: [
+				"493E977152D28BCC"
+				"6BE5430BFF76FB02"
+			]
 			description: [
-				"The Refinery is used to extract rarer fluids from Oil, like LPG, or Kerosene."
-				"Requires a minimum of 2 Outputs."
-				"Covering all sides of the Refinery and it's outputs holds in heat, increasing performance. Pipes count towards that."
+				"The Refinery is used for refining high-density Fluids, such as Melted Bitumen and Oil."
+				""
+				"Refining Bitumen yields: Heavy Oil 2mb, Crude Oil 4mb, and Liquifacted Tar 2mb."
+				""
+				"Refining Oil yields: Diesel 2mb, Kerosene 3mb, Gasoline 3mb, and LPG 2mb."
+				""
+				"The Refinery requires at minimum two outputs connected to function, while also needing to be Encased and Heated. The more Heat applied, the faster it runs."
 			]
 			icon: "pneumaticcraft:refinery"
 			id: "63A88A37B4531ECB"
@@ -289,7 +299,7 @@
 			]
 			title: "Electronics"
 			x: 7.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -304,13 +314,14 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"5D18C51A8B6637B7"
 				"06712ED519609BFB"
 				"7BE867A08227AEAA"
+				"0A335AD1AB0AAB11"
 			]
 			description: [
 				"To make a Finished PCB:"
@@ -321,6 +332,7 @@
 				"4. Craft the Unassembled PCB with Capacitors and Transistors to create a Finished PCB."
 			]
 			id: "418EFD2DF262077D"
+			shape: "octagon"
 			tasks: [
 				{
 					id: "1C031306672F4E30"
@@ -400,7 +412,7 @@
 				item: "pneumaticcraft:etching_tank"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 9.0d
 			y: -2.5d
 		}
 		{
@@ -415,7 +427,7 @@
 				item: "pneumaticcraft:etching_acid_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: -2.5d
 		}
 		{

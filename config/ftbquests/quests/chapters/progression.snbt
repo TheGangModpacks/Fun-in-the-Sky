@@ -894,7 +894,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["6559CC67BF9CB433"]
+			dependencies: [
+				"6559CC67BF9CB433"
+				"2FF3AB2C7BC251F9"
+			]
 			description: ["Mining Prosperity in the Twilight Forest unlocks the Agriculture Questline!"]
 			id: "5DFD54DB42FFC556"
 			shape: "rsquare"
@@ -919,8 +922,8 @@
 				type: "checkmark"
 			}]
 			title: "Enchanting"
-			x: -2.0d
-			y: 2.0d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7602F7AF2F152D28"]
@@ -1890,6 +1893,23 @@
 			title: "Hexerei"
 			x: 2.5d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0E51BD89CBC21868"
+				"648D003C88FD41AB"
+			]
+			description: ["Crafting &0Black Iron &runlocks the Extended Crafting, P1 Questline!"]
+			id: "2FF3AB2C7BC251F9"
+			shape: "rsquare"
+			tasks: [{
+				id: "6621FB18984DE816"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
+			title: "Extended Crafting, Part 1"
+			x: -2.0d
+			y: 1.5d
 		}
 	]
 	title: "&fProgression"

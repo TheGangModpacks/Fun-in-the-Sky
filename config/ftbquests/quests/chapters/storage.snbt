@@ -124,14 +124,7 @@
 			y: 0.0d
 		}
 		{
-<<<<<<< Updated upstream
 			dependencies: ["18DC7BC00AC3C031"]
-=======
-			title: "Control Them ALL"
-			x: 6.5d
-			y: 0.0d
-			subtitle: "Great for mob farms"
->>>>>>> Stashed changes
 			description: [
 				"The drawer controller can link to any drawer that is connected to it in a certain range. This range can be increased by adding drawer controller slaves."
 				""
@@ -185,18 +178,10 @@
 				type: "item"
 			}]
 			title: "Not that kind of slave"
-			x: 7.5d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
-<<<<<<< Updated upstream
-=======
-			title: "Locked and Loaded"
-			x: 4.0d
-			y: -0.5d
-			subtitle: "Keys are under the doormat"
-			description: ["The Drawer Key locks specific items inside drawers so other's cannot be pushed in when said drawer is empty. Useful for automated drawer systems."]
->>>>>>> Stashed changes
 			dependencies: ["18DC7BC00AC3C031"]
 			description: ["The Drawer Key locks specific items inside drawers so other's cannot be pushed in when said drawer is empty. Useful for automated drawer systems."]
 			id: "21643E01598B0E6D"
@@ -237,14 +222,6 @@
 			y: -1.5d
 		}
 		{
-<<<<<<< Updated upstream
-=======
-			title: "Secretive Storage"
-			x: 5.5d
-			y: -2.0d
-			subtitle: "The DS under the pillow"
-			description: ["The Concealment Key hides the item label on a Drawer. No, this will not hide your social life."]
->>>>>>> Stashed changes
 			dependencies: ["18DC7BC00AC3C031"]
 			description: ["The Concealment Key hides the item label on a Drawer. No, this will not hide your social life."]
 			id: "09E2CA3A6DFC2DCF"
@@ -271,13 +248,6 @@
 			y: -1.5d
 		}
 		{
-<<<<<<< Updated upstream
-=======
-			x: 4.0d
-			y: 0.5d
-			subtitle: "Pocket dimentions are ramping up!"
-			description: ["Storage Upgrades made from Iron increas the base storage of a Drawer by 4 times. Yes, it does stack with other upgrades."]
->>>>>>> Stashed changes
 			dependencies: ["18DC7BC00AC3C031"]
 			description: ["Storage Upgrades made from Iron increas the base storage of a Drawer by 4 times. Yes, it does stack with other upgrades."]
 			id: "74BA2A4A8F7281D2"
@@ -314,13 +284,6 @@
 			y: 1.5d
 		}
 		{
-<<<<<<< Updated upstream
-=======
-			x: 5.5d
-			y: 2.0d
-			subtitle: "How about the whole universe?"
-			description: ["Storage Upgrades made of Diamonds increases a drawer's capacity by 16 times."]
->>>>>>> Stashed changes
 			dependencies: ["18DC7BC00AC3C031"]
 			description: ["Storage Upgrades made of Diamonds increases a drawer's capacity by 16 times."]
 			id: "22D13568F31D09F9"
@@ -339,13 +302,6 @@
 			y: 1.5d
 		}
 		{
-<<<<<<< Updated upstream
-=======
-			x: 6.5d
-			y: 2.5d
-			subtitle: "Almost Limitless potential"
-			description: ["Storage Upgrades made of Emeralds increase a drawer's capacity by 32 times... don't forget they multiply with other upgrades."]
->>>>>>> Stashed changes
 			dependencies: ["18DC7BC00AC3C031"]
 			description: ["Storage Upgrades made of Emeralds increase a drawer's capacity by 32 times... don't forget they multiply with other upgrades."]
 			id: "0A15EBF801FE76CF"
@@ -574,13 +530,6 @@
 			y: 1.0d
 		}
 		{
-<<<<<<< Updated upstream
-=======
-			x: 5.5d
-			y: 0.0d
-			subtitle: "Compressers but in your pocket!... pretty much"
-			description: ["Compacting Drawers automatically compact items into another if the item has a 2x2/3x3 compressing recipe, for example, 9 iron ingots into a block. There are 3 slots, the bottom right holds the base item, to the left is the first compressed item, and the top holds a compressed version of that last compressed block. Confused? Aren't we all!"]
->>>>>>> Stashed changes
 			dependencies: ["18DC7BC00AC3C031"]
 			description: ["Compacting Drawers automatically compact items into another if the item has a 2x2/3x3 compressing recipe, for example, 9 iron ingots into a block. There are 3 slots, the bottom right holds the base item, to the left is the first compressed item, and the top holds a compressed version of that last compressed block. Confused? Aren't we all!"]
 			id: "23688AA3E8707BD3"

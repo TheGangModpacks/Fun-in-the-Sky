@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream:kubejs/server_scripts/general/Common/materials/gears.js
 //priority: 70000
 
 ServerEvents.recipes(event =>{
@@ -41,8 +40,6 @@ ServerEvents.recipes(event =>{
         'botania:terrasteel_ingot',
          ee('invar_nugget')], 20000)
 })
-=======
-//priority: 70000
 
 ServerEvents.recipes(event =>{
     let mold = 'immersiveengineering:mold_gear';
@@ -52,6 +49,8 @@ ServerEvents.recipes(event =>{
     event.replaceInput({mod: 'thermal'}, 'thermal:press_gear_die', 'immersiveengineering:mold_gear')
     event.replaceInput({mod: 'emendatusenigmatica'}, 'thermal:press_gear_die', 'immersiveengineering:mold_gear')
     event.recipes.thermal.press(['pneumaticcraft:compressed_iron_gear'], ['6x pnumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_gear']).energy(2400)
+    event.recipes.thermal.press(['emendatusenigmatica:lapis_gear'], ['12x minecraft:lapis_lazuli', 'immersiveengineering:mold_gear']).energy(2400)
+    event.recipes.immersiveengineering.metal_press(e('lapis_gear'), '12x minecraft:lapis_lazuli', mold)
     
     
     
@@ -75,4 +74,3 @@ ServerEvents.recipes(event =>{
         'botania:terrasteel_ingot',
          ee('invar_nugget')], 20000)
 })
->>>>>>> Stashed changes:kubejs/server_scripts/general/Common/materials/processing/gears.js

@@ -40,7 +40,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["59E4E09BD3378F5B"]
@@ -65,8 +65,8 @@
 				type: "item"
 			}]
 			title: "Coke Oven"
-			x: 0.0d
-			y: -1.5d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3BA9C67CC6E29A59"]
@@ -89,7 +89,7 @@
 				}
 			]
 			title: "Blast Furnace"
-			x: 0.0d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
@@ -112,32 +112,23 @@
 				}
 			]
 			title: "Creosote"
-			x: 1.5d
-			y: -1.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["353CD0C4E4E52421"]
 			description: [
-				"Treated Wood can be used to create a few different things, like an Engineer's Crafting Table and Workbench."
+				"Treated Wood can be used to create a few different things, like an Engineer's Workbench."
 				""
 				"The Workbench is used for many special components."
-				""
-				"The Crafting Table holds items for easy later use, and holds things in the crafting grid while you're not using it."
 			]
 			icon: "immersiveengineering:workbench"
 			id: "5E0D7BD45D9D48D4"
-			tasks: [
-				{
-					id: "55936812D4DD2F74"
-					item: "immersiveengineering:workbench"
-					type: "item"
-				}
-				{
-					id: "64BD9596714AFC5C"
-					item: "immersiveengineering:craftingtable"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "55936812D4DD2F74"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
 			title: "Engineer's Crafting Stations"
 			x: 3.0d
 			y: -4.5d
@@ -160,8 +151,8 @@
 				type: "item"
 			}]
 			title: "Components"
-			x: 4.0d
-			y: -3.6d
+			x: 4.4d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -181,8 +172,8 @@
 				title: "Engineer's Tools and Weapons"
 				type: "checkmark"
 			}]
-			x: 2.0d
-			y: -7.0d
+			x: 1.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["573E61DE595B5B97"]
@@ -378,12 +369,11 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["3BA9C67CC6E29A59"]
+			dependencies: ["642DF490F8521F4E"]
 			description: ["The Kiln is a smaller multiblock that allows for the creation of&l&b Basic alloys. "]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "08C63A1D3207BB2A"
-			shape: "octagon"
-			size: 0.8d
+			shape: "circle"
 			tasks: [{
 				count: 8L
 				id: "394A0609FBDBEF94"
@@ -391,8 +381,8 @@
 				type: "item"
 			}]
 			title: "Industrial Kiln"
-			x: 0.7999999999999998d
-			y: -2.0999999999999996d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5E0D7BD45D9D48D4"]
@@ -794,8 +784,8 @@
 				type: "item"
 			}]
 			title: "Banner Patterns"
-			x: 3.2d
-			y: -2.8d
+			x: 3.6d
+			y: -3.2d
 		}
 		{
 			dependencies: ["5E0D7BD45D9D48D4"]
@@ -815,8 +805,8 @@
 				type: "item"
 			}]
 			title: "Metal Press Molds"
-			x: 3.6d
-			y: -3.2d
+			x: 4.0d
+			y: -3.6d
 		}
 		{
 			dependencies: ["4CC0794D4E6D3DAD"]
@@ -1821,8 +1811,8 @@
 		}
 		{
 			dependencies: [
-				"642DF490F8521F4E"
 				"5E0D7BD45D9D48D4"
+				"08C63A1D3207BB2A"
 			]
 			description: ["The first major circuit. This will be used in many low-grade electronic devices and blocks."]
 			id: "1CD51ADD8D908E80"
@@ -1832,8 +1822,8 @@
 				title: "&2MK-1 Circuit"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 1.0d
+			y: -5.5d
 		}
 	]
 	title: "&7Immersive Engineering"

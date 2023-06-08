@@ -273,7 +273,7 @@
 		}
 		{
 			dependencies: ["151BA5F11D763A60"]
-			description: ["Each type of Mesh can yield different resources, or the same resources at a higher chance of getting them. Make sure to check JEI before claiming a material is obtained from the Nether."]
+			description: ["Each type of Mesh can yield different resources, or the same resources at a higher chance of getting them. Make sure to check JEI before claiming a material can only be obtained from the Nether."]
 			id: "4C81CD71381AC197"
 			tasks: [{
 				icon: "create:schematic_table"
@@ -281,12 +281,13 @@
 				title: "Loot Tables"
 				type: "checkmark"
 			}]
+			title: "Mesh Tiers"
 			x: 2.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["4C81CD71381AC197"]
-			description: ["The Flint mesh enables the chance of getting metallic resources."]
+			description: ["The Flint mesh enables the chance of getting Minerals, thus increasing output."]
 			id: "2C36E1B6F2C00110"
 			rewards: [{
 				id: "46BC6F8D8F714BF9"
@@ -343,7 +344,7 @@
 		}
 		{
 			dependencies: ["0241F635A2243EC4"]
-			description: ["The Emerald mesh more or less does the same as the Diamond mesh."]
+			description: ["The Emerald Mesh can double how much you get from Sieving entirely."]
 			id: "03FB16F3CD7AE883"
 			rewards: [{
 				id: "0F5E6BEB0AEC11E0"
@@ -674,25 +675,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["151BA5F11D763A60"]
-			description: ["The Cobblestone Generator does exactly what it says. It generates cobblestone. Welcome to Skyblock."]
-			id: "75D13DC4058348DD"
-			rewards: [{
-				id: "3F8DFC99756E9F9E"
-				type: "xp"
-				xp: 50
-			}]
-			subtitle: "Cobble cobble cobble"
-			tasks: [{
-				id: "075E25504D6A88D6"
-				item: "cobblefordays:tier_1"
-				type: "item"
-			}]
-			title: "Cobblestone Generator"
-			x: 1.5d
-			y: 6.0d
-		}
-		{
 			dependencies: [
 				"151BA5F11D763A60"
 				"7019ED13B7586EB0"
@@ -714,8 +696,11 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["75D13DC4058348DD"]
-			description: ["Increased Cobble gen speed."]
+			dependencies: [
+				"20250DC6750C070D"
+				"02557C58049A3DB4"
+			]
+			description: ["The base Cobble Gen."]
 			id: "0E736F77EF203478"
 			rewards: [{
 				id: "41C2F37338750635"
@@ -727,8 +712,8 @@
 				item: "cobblefordays:tier_2"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 6.5d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3B18C8FE299F3058"]
@@ -762,8 +747,8 @@
 				item: "cobblefordays:tier_3"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["18CF5C6C30CD92FE"]
@@ -797,8 +782,8 @@
 				item: "cobblefordays:tier_4"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 7.5d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["44795C843AA6A245"]
@@ -836,13 +821,15 @@
 					type: "random"
 				}
 			]
+			shape: "gear"
+			size: 1.1d
 			tasks: [{
 				id: "4F62852C5CD31C1E"
 				item: "cobblefordays:tier_5"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 8.0d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1183,6 +1170,61 @@
 			title: "Sea Water"
 			x: 4.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["151BA5F11D763A60"]
+			description: [
+				"Sieving different blocks can yield many different things. Such as:"
+				""
+				"Sand: Bitumen, Fluix, and Prismarine materials."
+				""
+				"Gravel: Several common Minerals, or Gems."
+				""
+				"Dust: Bone Meal, and an assortment of Dusts."
+				""
+				"Dirt: An assortment of random Seeds and Stone Pebbles."
+				""
+				"Moss: An assortment of general Lush or mossy things."
+				""
+				"Some of these items require a higher tier of Mesh."
+				""
+				"Additionally, there are some extra things that can only be obtained later in the Modpack. Good luck!"
+			]
+			hide: true
+			icon: "thermal:bitumen"
+			id: "6BE5430BFF76FB02"
+			min_width: 260
+			tasks: [
+				{
+					id: "5CE2AFFFC1339E07"
+					item: "thermal:bitumen"
+					type: "item"
+				}
+				{
+					id: "23612EC9600B668D"
+					item: "exnihilosequentia:iron_pieces"
+					type: "item"
+				}
+				{
+					id: "10C8AF76132F2569"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "7FF06DA45341690C"
+					item: "exnihilosequentia:deepslate_pebble"
+					title: "Pebbles"
+					type: "item"
+				}
+				{
+					id: "4466C20F733F7804"
+					item: "minecraft:spore_blossom"
+					type: "item"
+				}
+			]
+			title: "Materials"
+			x: 1.0d
+			y: 4.5d
 		}
 	]
 	title: "&aWelcome to the World"

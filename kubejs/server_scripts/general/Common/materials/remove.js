@@ -1,3 +1,4 @@
+//priority: 1000
 ServerEvents.recipes(event =>{
 	event.remove({ id: 'immersiveengineering:smelting/ingot_electrum_from_dust' })
 	event.remove({ id: 'thermal:smelting/electrum_ingot_from_dust_smelting' })
@@ -42,4 +43,12 @@ ServerEvents.recipes(event =>{
 	event.remove({ id: 'thermal:fire_charge/bronze_ingot_4'})
 	event.remove({ id: 'thermal:fire_charge/signalum_ingot_4'})
 	event.remove({ id: 'thermal:fire_charge/invar_ingot_3'})
+	event.remove({ id: 'immersiveengineering:crafting/electrum_mix'})
+	event.remove({ id: 'thermal:bronze_dust_4'})
+	event.remove({ id: 'thermal:invar_dust_3'})
+	event.remove({ id: 'thermal:invar_dust_3'})
+    event.remove({ id: 'thermal:lumium_dust_4'})
+    event.remove({ id: 'thermal:signalum_dust_4'})
+    event.remove({ id: 'thermal:enderium_dust_2'})
+    event.remove({ id: 'thermal:constantan_dust_2'})
 })
