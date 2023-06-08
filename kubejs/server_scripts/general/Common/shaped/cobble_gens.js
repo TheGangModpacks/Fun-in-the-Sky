@@ -1,0 +1,10 @@
+ServerEvents.recipes(event =>{
+    event.replaceInput({id: 'cobblefordays:tier_2'}, '#forge:cobblestone', 'kubejs:compressed_cobblestone_x1')
+    event.replaceInput({id: 'cobblefordays:tier_3'}, 'minecraft:iron_ingot', 'iron_block')
+    event.replaceInput({id: 'cobblefordays:tier_3'}, 'minecraft:glass', 'cobblefordays:tier_2')
+    event.replaceInput({id: 'cobblefordays:tier_4'}, 'minecraft:gold_ingot', 'gold_block')
+    event.replaceInput({id: 'cobblefordays:tier_4'}, 'minecraft:glass', 'cobblefordays:tier_3')
+    event.replaceInput({id: 'cobblefordays:tier_5'}, 'minecraft:diamond', 'diamond_block')
+    event.replaceInput({id: 'cobblefordays:tier_5'}, 'minecraft:glass', 'cobblefordays:tier_4')
+    event.replaceInput({id: 'thermal:device_rock_gen'}, 'minecraft:piston', 'cobblefordays:tier_2')
+})

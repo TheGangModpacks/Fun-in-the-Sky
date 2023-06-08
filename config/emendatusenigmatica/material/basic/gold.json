@@ -12,7 +12,8 @@
     "crystal",
     "shard",
     "dirty_dust",
-    "slurry"
+    "slurry",
+    "rod"
   ],
   "properties": {
     "materialType": "metal",

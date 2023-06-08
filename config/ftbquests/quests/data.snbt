@@ -1,24 +1,24 @@
 {
-	version: 13
-	title: "Fun in the Sky"
-	icon: "botania:white_floating_flower"
-	default_reward_team: false
-	default_consume_items: false
 	default_autoclaim_rewards: "disabled"
-	default_quest_shape: "circle"
+	default_consume_items: false
 	default_quest_disable_jei: false
-	emergency_items: [{ id: "minecraft:oak_sapling", Count: 1b }]
-	emergency_items_cooldown: 24000
-	drop_loot_crates: false
-	loot_crate_no_drop: {
-		passive: 4000
-		monster: 600
-		boss: 0
-	}
-	disable_gui: false
-	grid_scale: 0.5d
-	pause_game: false
-	lock_message: ""
-	progression_mode: "default"
+	default_quest_shape: "circle"
+	default_reward_team: false
 	detection_delay: 20
+	disable_gui: false
+	drop_loot_crates: false
+	emergency_items: [{ Count: 1b, id: "minecraft:oak_sapling" }]
+	emergency_items_cooldown: 24000
+	grid_scale: 0.5d
+	icon: "botania:white_floating_flower"
+	lock_message: ""
+	loot_crate_no_drop: {
+		boss: 0
+		monster: 600
+		passive: 4000
+	}
+	pause_game: false
+	progression_mode: "default"
+	title: "Fun in the Sky"
+	version: 13
 }

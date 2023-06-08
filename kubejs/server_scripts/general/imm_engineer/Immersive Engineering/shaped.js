@@ -17,11 +17,11 @@ ServerEvents.recipes(event =>{
 	event.shaped(Item.of('immersiveengineering:connector_lv_relay', 5), ['   ', ' a ', 'bab'], {a: "emendatusenigmatica:constantan_ingot", b: "immersiveengineering:insulating_glass"})
 	.id('immersiveengineering:crafting/connector_lv_relay')
 	event.shaped(Item.of('immersiveengineering:light_engineering', 2), ['aba', 'bcb', 'aba'], {a: "immersiveengineering:sheetmetal_iron",
-	b: "immersiveengineering:component_iron", c: "kubejs:leaded_iron"}).id('immersiveengineering:crafting/light_engineering')
+	b: "immersiveengineering:component_iron", c: "emendatusenigmatica:nickel_ingot"}).id('immersiveengineering:crafting/light_engineering')
 	event.shaped(Item.of('immersiveengineering:rs_engineering', 2), ['aba', 'bcb', 'aba'], {a: "immersiveengineering:sheetmetal_iron",
 	b: "create:rose_quartz", c: "kubejs:leaded_iron"}).id('immersiveengineering:crafting/rs_engineering')
 	event.shaped(Item.of(Item.of('immersiveengineering:heavy_engineering', 2)), ['aba', 'bcb', 'aba'], {a: "immersiveengineering:sheetmetal_steel",
-	b: "immersiveengineering:component_steel", c: "emendatusenigmatica:electrum_ingot"}).id('immersiveengineering:crafting/heavy_engineering')
+	b: "immersiveengineering:component_steel", c: "emendatusenigmatica:invar_ingot"}).id('immersiveengineering:crafting/heavy_engineering')
 	event.shaped(Item.of('immersiveengineering:dynamo'), ['   ', 'aba', 'cdc'], {a: 'kubejs:leaded_iron_compound', b: 'immersiveengineering:component_iron',
 	c: 'kubejs:leaded_iron', d: 'immersiveengineering:coil_lv'}).id('immersiveengineering:crafting/dynamo')
 	//Blueprints
@@ -61,6 +61,7 @@ ServerEvents.recipes(event =>{
 	event.remove({id: 'ad_astra:recipes/steel_ingot_from_blasting_iron_ingot'})
 	event.replaceInput({id: 'immersiveengineering:crafting/fluid_pipe'}, '#forge:plates/iron', "emendatusenigmatica:steel_plate")
 	event.replaceInput({id: 'immersiveengineering:crafting/fluid_pump'}, '#forge:plates/iron', "emendatusenigmatica:steel_plate")
+	event.remove({id: 'immersiveengineering:crafting/treated_wood_horizontal'})
 
 
 

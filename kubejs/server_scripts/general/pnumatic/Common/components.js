@@ -1,4 +1,12 @@
 ServerEvents.recipes(event =>{
+
+    event.remove({id: 'pneumaticcraft:heat_frame_cooling/plastic'})
+    event.custom({
+        type: fermenter,
+        energy: 7000,
+        fluid: Fluid.of('immersiveengineering:ethanol').withAmount('2000').toJson(),
+        input: Item.of('honey_block')
+    }).id(`${fermenter_prefix}ethanol/2000`)
     event.recipes.immersiveengineering.metal_press('pneumaticcraft:compressed_iron_gear', '6x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_gear')
     event.recipes.immersiveengineering.metal_press('6x pneumaticcraft:pressure_chamber_wall', '12x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_packing_9')
     .id('pneumaticcraft:pressure_chamber_wall')
@@ -40,4 +48,15 @@ ServerEvents.recipes(event =>{
         item_input: Item.of('thermal:coal_coke'),
         temperature:{min_temp: 500}
         }).id('pneumaticcraft:thermo_plant/plastic_from_biodiesel')
+    event.recipes.create.mixing(['pneumaticcraft:plastic', Fluid.of('pneumaticcraft:yeast_culture', 5)], [Fluid.of('pneumaticcraft:plastic'), 'immersiveengineering:plate_duroplast']).id('fits:mixing/pncr/plastic')
+    event.custom({
+        type: inside,
+        item_in: [{item: 'immersiveengineering:plate_duroplast'}, {item: 'pneumaticcraft:wheat_flour'}],
+        block_in: {
+            blocks: ['pneumaticcraft:plastic']
+        },
+        post: [
+            {type: 'drop_item', item: 'pneumaticcraft:plastic'}
+        ]
+    }).id('fits:item_inside/pncr/plastic')
 })

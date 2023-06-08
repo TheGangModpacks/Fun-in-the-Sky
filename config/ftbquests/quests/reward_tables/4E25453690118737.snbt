@@ -1,14 +1,13 @@
 {
-	id: "4E25453690118737"
-	order_index: 2
-	title: "ExNihilo Basket"
 	icon: "minecraft:chest"
+	id: "4E25453690118737"
 	loot_size: 1
+	order_index: 2
 	rewards: [
 		{
 			item: {
+				Count: 1b
 				id: "exnihilosequentia:tuff_crook"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -16,8 +15,8 @@
 		}
 		{
 			item: {
+				Count: 1b
 				id: "exnihilosequentia:red_nether_brick_crook"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -25,26 +24,26 @@
 		}
 		{
 			item: {
+				Count: 1b
 				id: "exnihilosequentia:iron_crook"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
 			}
 		}
-		{ item: "exnihilosequentia:silkworm", count: 5 }
-		{ item: "exnihilosequentia:dripstone_pebble", count: 32 }
-		{ item: "exnihilosequentia:andesite_pebble", count: 32 }
-		{ item: "exnihilosequentia:basalt_pebble", count: 32 }
-		{ item: "exnihilosequentia:blackstone_pebble", count: 32 }
-		{ item: "exnihilosequentia:calcite_pebble", count: 32 }
-		{ item: "exnihilosequentia:diorite_pebble", count: 32 }
-		{ item: "exnihilosequentia:granite_pebble", count: 32 }
-		{ item: "exnihilosequentia:tuff_pebble", count: 32 }
+		{ count: 5, item: "exnihilosequentia:silkworm" }
+		{ count: 32, item: "exnihilosequentia:dripstone_pebble" }
+		{ count: 32, item: "exnihilosequentia:andesite_pebble" }
+		{ count: 32, item: "exnihilosequentia:basalt_pebble" }
+		{ count: 32, item: "exnihilosequentia:blackstone_pebble" }
+		{ count: 32, item: "exnihilosequentia:calcite_pebble" }
+		{ count: 32, item: "exnihilosequentia:diorite_pebble" }
+		{ count: 32, item: "exnihilosequentia:granite_pebble" }
+		{ count: 32, item: "exnihilosequentia:tuff_pebble" }
 		{
 			item: {
+				Count: 1b
 				id: "exnihilosequentia:calcite_hammer"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -52,8 +51,8 @@
 		}
 		{
 			item: {
+				Count: 1b
 				id: "exnihilosequentia:iron_hammer"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -61,14 +60,15 @@
 		}
 		{
 			item: {
-				id: "exnihilosequentia:dripstone_hammer"
 				Count: 1b
+				id: "exnihilosequentia:dripstone_hammer"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
-		{ item: "exnihilosequentia:grass_seeds", count: 3 }
-		{ item: "exnihilosequentia:dust", count: 32 }
+		{ count: 3, item: "exnihilosequentia:grass_seeds" }
+		{ count: 32, item: "exnihilosequentia:dust" }
 	]
+	title: "ExNihilo Basket"
 }

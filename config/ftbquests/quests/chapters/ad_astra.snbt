@@ -1,187 +1,185 @@
 {
-	id: "7936903066484C01"
-	group: "45EE6B8D98E9487B"
-	order_index: 5
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
 	filename: "ad_astra"
-	title: "Ad Astra!"
+	group: "45EE6B8D98E9487B"
+	hide_quest_details_until_startable: true
 	icon: {
-		id: "ad_astra:tier_1_rocket"
 		Count: 1b
+		id: "ad_astra:tier_1_rocket"
 		tag: {
 			BotariumData: { }
 		}
 	}
-	default_quest_shape: ""
-	default_hide_dependency_lines: false
-	hide_quest_details_until_startable: true
+	id: "7936903066484C01"
+	order_index: 6
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d
-			y: -6.3d
-			shape: "octagon"
-			description: ["The Nasa Workbench builds Space Rockets, enabling travel to other planets."]
 			dependencies: ["2271F371FC3269F6"]
-			size: 1.4d
+			description: ["The Nasa Workbench builds Space Rockets, enabling travel to other planets."]
 			id: "59D6C4157C09F822"
-			tasks: [{
-				id: "035AF7EA504F8DA2"
-				type: "item"
-				item: "ad_astra:nasa_workbench"
-			}]
 			rewards: [{
 				id: "4322A860671407CD"
-				type: "item"
 				item: "ad_astra:astrodux"
+				type: "item"
 			}]
+			shape: "octagon"
+			size: 1.4d
+			tasks: [{
+				id: "035AF7EA504F8DA2"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.3d
 		}
 		{
-			x: 0.0d
-			y: -4.5d
-			description: ["To launch a rocket, you need a Launch Pad to place it on. Requires a 3x3x1 space."]
 			dependencies: ["032C27D3C074B9F4"]
+			description: ["To launch a rocket, you need a Launch Pad to place it on. Requires a 3x3x1 space."]
 			id: "2271F371FC3269F6"
 			tasks: [{
 				id: "1D35244F3FA4C5F2"
-				type: "item"
 				item: "ad_astra:launch_pad"
+				type: "item"
 			}]
+			x: 0.0d
+			y: -4.5d
 		}
 		{
-			icon: "ad_astra:fuel_refinery"
-			x: -1.5d
-			y: -2.5d
-			description: ["The Fuel Refinery creates Rocket Fuel from Oil."]
 			dependencies: ["269B8241C07AB642"]
+			description: ["The Fuel Refinery creates Rocket Fuel from Oil."]
+			icon: "ad_astra:fuel_refinery"
 			id: "18E6F8698B93142E"
 			tasks: [
 				{
 					id: "6843215CD203771E"
-					type: "item"
 					item: "ad_astra:fuel_refinery"
+					type: "item"
 				}
 				{
 					id: "1C6DC6122FBFA15B"
-					type: "item"
 					item: "ad_astra:fuel_bucket"
+					type: "item"
 				}
 			]
+			x: -1.5d
+			y: -2.5d
 		}
 		{
-			icon: "ad_astra:oxygen_loader"
-			x: 0.0d
-			y: -3.0d
-			description: ["Loads Oxygen into Buckets and Oxygen Tanks."]
 			dependencies: ["269B8241C07AB642"]
+			description: ["Loads Oxygen into Buckets and Oxygen Tanks."]
+			icon: "ad_astra:oxygen_loader"
 			id: "032C27D3C074B9F4"
 			tasks: [
 				{
 					id: "7A61B0AE0BAD6ADD"
-					type: "item"
 					item: "ad_astra:oxygen_loader"
+					type: "item"
 				}
 				{
 					id: "2AAACAEAAE69D68D"
-					type: "item"
 					item: {
-						id: "ad_astra:oxygen_tank"
 						Count: 1b
+						id: "ad_astra:oxygen_tank"
 						tag: {
 							BotariumData: { }
 						}
 					}
+					type: "item"
 				}
 			]
+			x: 0.0d
+			y: -3.0d
 		}
 		{
-			title: "Space Gear"
+			dependencies: ["269B8241C07AB642"]
+			description: ["To survive in Space, you will require a Space Suit. It should protect you from most enviromental forms of damage."]
 			icon: {
-				id: "ad_astra:space_suit"
 				Count: 1b
+				id: "ad_astra:space_suit"
 				tag: {
 					BotariumData: { }
 					Damage: 0
 				}
 			}
-			x: 1.5d
-			y: -2.5d
-			description: ["To survive in Space, you will require a Space Suit. It should protect you from most enviromental forms of damage."]
-			dependencies: ["269B8241C07AB642"]
 			id: "1B8D88E07AC1500B"
 			tasks: [
 				{
 					id: "66F97A744ADA43E9"
-					type: "item"
 					item: {
-						id: "ad_astra:space_helmet"
 						Count: 1b
+						id: "ad_astra:space_helmet"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "77158345F46FB167"
-					type: "item"
 					item: {
-						id: "ad_astra:space_suit"
 						Count: 1b
+						id: "ad_astra:space_suit"
 						tag: {
 							BotariumData: { }
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "2E252B44E4232761"
-					type: "item"
 					item: {
-						id: "ad_astra:space_pants"
 						Count: 1b
+						id: "ad_astra:space_pants"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "1F38A235112F3749"
-					type: "item"
 					item: {
-						id: "ad_astra:space_boots"
 						Count: 1b
+						id: "ad_astra:space_boots"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 			]
+			title: "Space Gear"
+			x: 1.5d
+			y: -2.5d
 		}
 		{
-			icon: "ad_astra:earth_globe"
-			x: 0.0d
-			y: -1.5d
+			dependencies: ["7602F7AF2F152D28"]
 			description: [
 				"Welcome to Ad Astra! This mod brings fourth Space Travel! Blast off to different planets and obtain awesome gear."
 				"This Questline is very incomplete. Expect changes soon™"
 			]
-			dependencies: ["7602F7AF2F152D28"]
 			hide: true
-			invisible_until_tasks: 1
+			icon: "ad_astra:earth_globe"
 			id: "269B8241C07AB642"
-			tasks: [{
-				id: "34514EE3285A6E6F"
-				type: "checkmark"
-				title: "Ad Astra!"
-			}]
+			invisible_until_tasks: 1
 			rewards: [{
 				id: "5DEB498247EB68DE"
-				type: "item"
 				item: "ad_astra:astrodux"
+				type: "item"
 			}]
+			tasks: [{
+				id: "34514EE3285A6E6F"
+				title: "Ad Astra!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
 		}
 		{
-			x: 0.0d
-			y: -8.0d
-			shape: "rsquare"
+			dependencies: ["59D6C4157C09F822"]
 			description: [
 				"The Tier 1 Rocket can travel to the Moon, and Earth."
 				""
@@ -189,263 +187,265 @@
 				"To get a trip back to Earth, you need to supply at least 3 buckets of Fuel (3000mb) and tons of Oxygen to survive."
 				"Additionally, bring much food, and Glowstone, as regular Torches won't work well in the Space enviroment."
 			]
-			dependencies: ["59D6C4157C09F822"]
-			size: 1.2d
 			id: "218DC303987DF890"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "434C0B98A961B8AD"
-				type: "item"
 				item: {
-					id: "ad_astra:tier_1_rocket"
 					Count: 1b
+					id: "ad_astra:tier_1_rocket"
 					tag: {
 						BotariumData: { }
 					}
 				}
+				type: "item"
 			}]
+			x: 0.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["218DC303987DF890"]
+			description: ["Welcome to the Moon! Here you can find lots of Ores, &6Desh&f, Lunarians, and more."]
+			id: "0F8057FA84E4126D"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "346865EF03EF8777"
+				type: "dimension"
+			}]
 			title: "The Moon!"
 			x: 0.0d
 			y: -9.5d
-			description: ["Welcome to the Moon! Here you can find lots of Ores, &6Desh&f, Lunarians, and more."]
-			dependencies: ["218DC303987DF890"]
-			id: "0F8057FA84E4126D"
-			tasks: [{
-				id: "346865EF03EF8777"
-				type: "dimension"
-				icon: "ad_astra:moon_globe"
-				dimension: "ad_astra:moon"
-			}]
 		}
 		{
+			dependencies: ["0F8057FA84E4126D"]
+			description: ["&6Desh&f is a very strong galactic material, used to make advanced Rockets, and gear."]
+			id: "14113385B28784A7"
+			shape: "rsquare"
+			tasks: [{
+				count: 8L
+				id: "5351BBF5B561F39F"
+				item: "ad_astra:desh_ingot"
+				title: "Desh Ingots"
+				type: "item"
+			}]
 			title: "&6Desh"
 			x: 1.5d
 			y: -9.5d
-			shape: "rsquare"
-			description: ["&6Desh&f is a very strong galactic material, used to make advanced Rockets, and gear."]
-			dependencies: ["0F8057FA84E4126D"]
-			id: "14113385B28784A7"
-			tasks: [{
-				id: "5351BBF5B561F39F"
-				type: "item"
-				title: "Desh Ingots"
-				item: "ad_astra:desh_ingot"
-				count: 8L
-			}]
 		}
 		{
-			x: 1.5d
-			y: -11.0d
-			shape: "rsquare"
-			description: ["The Tier 2 Rocket's advanced Desh systems can bring you to Mars!"]
 			dependencies: ["14113385B28784A7"]
-			size: 1.2d
+			description: ["The Tier 2 Rocket's advanced Desh systems can bring you to Mars!"]
 			id: "2B7C4CF36D5D2A65"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "74B1B6BB61556645"
-				type: "item"
 				item: {
-					id: "ad_astra:tier_2_rocket"
 					Count: 1b
+					id: "ad_astra:tier_2_rocket"
 					tag: {
 						BotariumData: { }
 					}
 				}
+				type: "item"
 			}]
+			x: 1.5d
+			y: -11.0d
 		}
 		{
-			title: "Mars!"
-			icon: "ad_astra:mars_globe"
-			x: 1.499999999999993d
-			y: -12.442857142857129d
-			description: ["Welcome to Mars! Home to much less than the Moon, just barren terrain and &8Ostrum&f."]
 			dependencies: ["2B7C4CF36D5D2A65"]
+			description: ["Welcome to Mars! Home to much less than the Moon, just barren terrain and &8Ostrum&f."]
+			icon: "ad_astra:mars_globe"
 			id: "53F3C91F1BE8C125"
 			tasks: [{
+				dimension: "ad_astra:mars"
 				id: "2DBE5186B7D69214"
 				type: "dimension"
-				dimension: "ad_astra:mars"
 			}]
+			title: "Mars!"
+			x: 1.499999999999993d
+			y: -12.442857142857129d
 		}
 		{
+			dependencies: ["53F3C91F1BE8C125"]
+			description: ["&8Ostrum&f is the next major metal in Space, used for even more advanced Rocket systems."]
+			id: "0BCBD19ABC9FF8E8"
+			shape: "rsquare"
+			tasks: [{
+				count: 8L
+				id: "5CCC8C0850DE8406"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
 			title: "&8Ostrum"
 			x: 0.0d
 			y: -12.5d
-			shape: "rsquare"
-			description: ["&8Ostrum&f is the next major metal in Space, used for even more advanced Rocket systems."]
-			dependencies: ["53F3C91F1BE8C125"]
-			id: "0BCBD19ABC9FF8E8"
-			tasks: [{
-				id: "5CCC8C0850DE8406"
-				type: "item"
-				item: "ad_astra:ostrum_ingot"
-				count: 8L
-			}]
 		}
 		{
-			x: 0.0d
-			y: -14.0d
-			shape: "rsquare"
-			description: ["The Tier 3 Rocket is made from the extremely durable Ostrum metal found on Mars. This rocket is capable of landing on Mercury and Venus."]
 			dependencies: ["0BCBD19ABC9FF8E8"]
-			size: 1.2d
+			description: ["The Tier 3 Rocket is made from the extremely durable Ostrum metal found on Mars. This rocket is capable of landing on Mercury and Venus."]
 			id: "5E5604CDBB3DBB4C"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "459ABDDBC8A7E408"
-				type: "item"
 				item: {
-					id: "ad_astra:tier_3_rocket"
 					Count: 1b
+					id: "ad_astra:tier_3_rocket"
 					tag: {
 						BotariumData: { }
 					}
 				}
+				type: "item"
 			}]
+			x: 0.0d
+			y: -14.0d
 		}
 		{
-			title: "Mercury!"
-			icon: "ad_astra:mercury_globe"
-			x: -1.5d
-			y: -14.5d
-			description: ["Mercury is quite an interesting planet. Terrain like a Basalt Delta... and not much else. Nothing else of interest here."]
 			dependencies: ["5E5604CDBB3DBB4C"]
+			description: ["Mercury is quite an interesting planet. Terrain like a Basalt Delta... and not much else. Nothing else of interest here."]
+			icon: "ad_astra:mercury_globe"
 			id: "4631DDE92552ABE2"
 			tasks: [{
+				dimension: "ad_astra:mercury"
 				id: "7368297C27A5DC51"
 				type: "dimension"
-				dimension: "ad_astra:mercury"
 			}]
+			title: "Mercury!"
+			x: -1.5d
+			y: -14.5d
 		}
 		{
-			title: "Venus!"
-			icon: "ad_astra:venus_globe"
-			x: 1.5d
-			y: -14.5d
-			description: ["Welcome down to Venus! Be extremely careful, as there is very hurtful rain everywhere, seething heat, and many unfriendly guests."]
 			dependencies: ["5E5604CDBB3DBB4C"]
+			description: ["Welcome down to Venus! Be extremely careful, as there is very hurtful rain everywhere, seething heat, and many unfriendly guests."]
+			icon: "ad_astra:venus_globe"
 			id: "424423C6580B251F"
 			tasks: [{
+				dimension: "ad_astra:venus"
 				id: "3E871D56F87319D9"
 				type: "dimension"
-				dimension: "ad_astra:venus"
 			}]
+			title: "Venus!"
+			x: 1.5d
+			y: -14.5d
 		}
 		{
+			dependencies: ["424423C6580B251F"]
+			description: ["Calorite is the most durable material in the universe, as far as we know. Obtaining this metal shows the way to the far side of the solar system."]
+			id: "11753F6D19D70324"
+			tasks: [{
+				count: 8L
+				id: "29FF4F928BA7E15F"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
 			title: "&cCalorite"
 			x: 0.0d
 			y: -15.5d
-			description: ["Calorite is the most durable material in the universe, as far as we know. Obtaining this metal shows the way to the far side of the solar system."]
-			dependencies: ["424423C6580B251F"]
-			id: "11753F6D19D70324"
-			tasks: [{
-				id: "29FF4F928BA7E15F"
-				type: "item"
-				item: "ad_astra:calorite_ingot"
-				count: 8L
-			}]
 		}
 		{
-			title: "&9The Ultimate Rocket"
-			x: 0.0357142857142847d
-			y: -16.978571428571414d
-			description: ["The Tier 4 Rocket is made of the absolutely stunning Calorite metal. This rocket has the ability to visit Glacio, the planet previously thought to be just a star."]
 			dependencies: ["11753F6D19D70324"]
-			size: 1.45d
+			description: ["The Tier 4 Rocket is made of the absolutely stunning Calorite metal. This rocket has the ability to visit Glacio, the planet previously thought to be just a star."]
 			id: "6BCB859E40640855"
+			size: 1.45d
 			tasks: [{
 				id: "7BAAA4F6A4ACD001"
-				type: "item"
 				item: {
-					id: "ad_astra:tier_4_rocket"
 					Count: 1b
+					id: "ad_astra:tier_4_rocket"
 					tag: {
 						BotariumData: { }
 					}
 				}
+				type: "item"
 			}]
+			title: "&9The Ultimate Rocket"
+			x: 0.0357142857142847d
+			y: -16.978571428571414d
 		}
 		{
-			title: "Glacio!"
-			icon: "ad_astra:glacio_globe"
-			x: 0.0d
-			y: -18.5d
+			dependencies: ["6BCB859E40640855"]
 			description: [
 				"Welcome to the final planet reachable with our current technology. Glacio is a very cold planet, with snow and permafrost spanning the globe. Unfortunately there isn't much to see here, just some cute little Rams."
 				""
 				"This is the end of Ad Astra. Hope you had a great journey!"
 			]
-			dependencies: ["6BCB859E40640855"]
+			icon: "ad_astra:glacio_globe"
 			id: "0F1D960097CF56D1"
 			tasks: [{
+				dimension: "ad_astra:glacio"
 				id: "133EBBE41B7EBF35"
 				type: "dimension"
-				dimension: "ad_astra:glacio"
 			}]
+			title: "Glacio!"
+			x: 0.0d
+			y: -18.5d
 		}
 		{
-			title: "Netherite Space Suit"
+			dependencies: ["0BCBD19ABC9FF8E8"]
+			description: ["You can upgrade your grubby musty Space Suit with Netherite and Ostrum to make it unbelievably strong."]
 			icon: {
-				id: "ad_astra:netherite_space_suit"
 				Count: 1b
+				id: "ad_astra:netherite_space_suit"
 				tag: {
 					BotariumData: { }
 					Damage: 0
 				}
 			}
-			x: -1.5d
-			y: -12.5d
-			description: ["You can upgrade your grubby musty Space Suit with Netherite and Ostrum to make it unbelievably strong."]
-			dependencies: ["0BCBD19ABC9FF8E8"]
 			id: "4052B5DC69E875F9"
 			tasks: [
 				{
 					id: "1E4BAED02ED728A0"
-					type: "item"
 					item: {
-						id: "ad_astra:netherite_space_helmet"
 						Count: 1b
+						id: "ad_astra:netherite_space_helmet"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "36F4B5E7C448518F"
-					type: "item"
 					item: {
-						id: "ad_astra:netherite_space_suit"
 						Count: 1b
+						id: "ad_astra:netherite_space_suit"
 						tag: {
 							BotariumData: { }
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "75CBA2518177E214"
-					type: "item"
 					item: {
-						id: "ad_astra:netherite_space_pants"
 						Count: 1b
+						id: "ad_astra:netherite_space_pants"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "768C1F018DF82D0A"
-					type: "item"
 					item: {
-						id: "ad_astra:netherite_space_boots"
 						Count: 1b
+						id: "ad_astra:netherite_space_boots"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 			]
+			title: "Netherite Space Suit"
+			x: -1.5d
+			y: -12.5d
 		}
 	]
-	quest_links: [ ]
+	title: "Ad Astra!"
 }
