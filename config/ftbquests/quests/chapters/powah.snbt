@@ -1,18 +1,16 @@
 {
-	id: "0CD6D4CF195A8C4A"
-	group: "45EE6B8D98E9487B"
-	order_index: 2
-	filename: "powah"
-	title: "Powah!"
-	icon: "powah:thermo_generator_nitro"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "45EE6B8D98E9487B"
 	hide_quest_details_until_startable: true
+	icon: "powah:thermo_generator_nitro"
+	id: "0CD6D4CF195A8C4A"
+	order_index: 4
+	quest_links: [ ]
 	quests: [
 		{
-			icon: "powah:book"
-			x: 0.0d
-			y: 0.0d
+			dependencies: ["1F788C5B5AF4DEF7"]
 			description: [
 				"Welcome to Powah! This is the semi-ultimate Power generation mod, next to Mekanism Generators. Enjoy diverse power generation options, power logistics, everything!"
 				""
@@ -20,85 +18,86 @@
 				""
 				"&oFor the record, you don't have to worry about carbon emissions in Minecraft."
 			]
-			dependencies: ["1F788C5B5AF4DEF7"]
 			hide: true
-			invisible_until_tasks: 1
+			icon: "powah:book"
 			id: "64A609C5C723910D"
-			tasks: [{
-				id: "66EE37C0D27D0130"
-				type: "checkmark"
-				title: "Ultimate Powah!!!"
-			}]
+			invisible_until_tasks: 1
 			rewards: [
 				{
 					id: "7B338407805113C4"
-					type: "item"
 					item: {
-						id: "powah:wrench"
 						Count: 1b
+						id: "powah:wrench"
 						tag: {
 							PowahWrenchNBT: { }
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "482CCB72A19EC756"
-					type: "item"
 					item: "powah:book"
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "66EE37C0D27D0130"
+				title: "Ultimate Powah!!!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["64A609C5C723910D"]
+			description: ["Dielectric Paste is used abundantly in the Powah! mod, used every step of the way. You will want to set up automation for this."]
+			id: "7F8A519F1702B1F0"
+			tasks: [{
+				count: 36L
+				id: "497453543E3249B1"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
 			title: "Dielectric Paste"
 			x: 1.5d
 			y: -1.5d
-			description: ["Dielectric Paste is used abundantly in the Powah! mod, used every step of the way. You will want to set up automation for this."]
-			dependencies: ["64A609C5C723910D"]
-			id: "7F8A519F1702B1F0"
-			tasks: [{
-				id: "497453543E3249B1"
-				type: "item"
-				item: "powah:dielectric_paste"
-				count: 36L
-			}]
 		}
 		{
-			title: "Tiers!"
-			x: 1.5d
-			y: -3.0d
+			dependencies: ["7F8A519F1702B1F0"]
 			description: [
 				"Powah! adds several tiers to your power gen blocks, &0Starter, &8Basic, &7Hardened, &6Blazing, &3Niotic, &2Spirited, &fand &4Nitro."
 				""
 				"Starter Tier is completely disabled in this pack, as it's just boring and useless."
 			]
-			dependencies: ["7F8A519F1702B1F0"]
 			id: "4422AD0BB8A34373"
 			tasks: [{
-				id: "31585373723A9BAE"
-				type: "item"
-				item: "powah:capacitor_basic"
 				count: 16L
+				id: "31585373723A9BAE"
+				item: "powah:capacitor_basic"
+				type: "item"
 			}]
+			title: "Tiers!"
+			x: 1.5d
+			y: -3.0d
 		}
 		{
-			x: 3.0d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"The Furnator burns solid fuels and produces Powah!"
 				""
 				"-Generates: 80 fe/t"
 			]
-			dependencies: ["4422AD0BB8A34373"]
 			id: "3B20495EF5FAA96E"
 			tasks: [{
 				id: "5F908CB7FDCC230D"
-				type: "item"
 				item: "powah:furnator_basic"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -3.0d
 		}
 		{
-			x: 4.5d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"The Thermo Generator produces Powah! with the heat of the block / fluid beneath them, along with coolant pumped in."
 				""
@@ -106,34 +105,33 @@
 				""
 				"See Coolants / Heat Sources in JEI"
 			]
-			dependencies: ["4422AD0BB8A34373"]
 			id: "078C7C00C8BF42E5"
 			tasks: [{
 				id: "63F307EB40B18E90"
-				type: "item"
 				item: "powah:thermo_generator_basic"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -3.0d
 		}
 		{
-			x: 6.0d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"The Magmator produces Powah! with the immense heat of Lava. If you have a way to get Lava easily, you can build lots of these and be good for quite some time!"
 				""
 				"Generates: 80 fe/t"
 			]
-			dependencies: ["4422AD0BB8A34373"]
 			id: "72E410A068FFABA1"
 			tasks: [{
 				id: "1660DB8781E8E96E"
-				type: "item"
 				item: "powah:magmator_basic"
+				type: "item"
 			}]
+			x: 6.0d
+			y: -3.0d
 		}
 		{
-			title: "Reactor (Basic)"
-			x: 0.0d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"The Powah! Reactor is an absolute amazing choice for early Power generation. It never explodes, produces insane amounts of power, it's just awesome."
 				""
@@ -147,104 +145,103 @@
 				""
 				"Reactors also come with an \"Auto Mode\" which will automatically stop the Reactor when it reaches full capacity, and start when falling below 70% capacity."
 			]
-			dependencies: ["4422AD0BB8A34373"]
 			id: "284EBD5C2AAEF47E"
 			tasks: [{
-				id: "49D20D7060249A76"
-				type: "item"
-				item: "powah:reactor_basic"
 				count: 36L
+				id: "49D20D7060249A76"
+				item: "powah:reactor_basic"
+				type: "item"
 			}]
+			title: "Reactor (Basic)"
+			x: 0.0d
+			y: -3.0d
 		}
 		{
-			title: "Energy Storage (Basic)"
-			icon: "powah:energy_cell_basic"
-			x: -1.5d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"The Energy Cell and Battery do pretty much what every other energy cell and battery do. They store energy, and they can distribute energy in your inventory."
 				"The Ender Cell can be linked to other cells, sharing an energy inventory. This is useful for long-range power needs. To make this happen, in both cells you shift click a battery inside, and it will set it to the \"frequency\" of your choosing."
 				""
 				"All Basic Energy Storage options hold 4M fe."
 			]
-			dependencies: ["4422AD0BB8A34373"]
+			icon: "powah:energy_cell_basic"
 			id: "740B6AA74219B496"
 			tasks: [
 				{
 					id: "52F13280FDCE1045"
-					type: "item"
 					item: "powah:energy_cell_basic"
+					type: "item"
 				}
 				{
 					id: "0D06FC9DF8FE20EF"
-					type: "item"
 					item: "powah:ender_cell_basic"
+					type: "item"
 				}
 				{
 					id: "3CDDA2AEB2D33229"
-					type: "item"
 					item: {
-						id: "powah:battery_basic"
 						Count: 1b
+						id: "powah:battery_basic"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			title: "Energy Storage (Basic)"
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			title: "Powah Solar?"
-			x: -4.5d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"Powah has Solar Panels, but they have been disabled in this pack in place for Solar Flux Reborn. Don't worry, the Powah solar panels have been re-made, so you can enjoy them with connecting textures!"
 				""
 				"Solar Panel I makes a measly 1 fe/t, can transfer 8 fe/t, and has a capacity of 25k fe."
 			]
-			dependencies: ["4422AD0BB8A34373"]
 			id: "62667C6C34C43B64"
 			tasks: [{
 				id: "6EA54EAC53AEFDBA"
-				type: "item"
 				item: "solarflux:sp_1"
+				type: "item"
 			}]
+			title: "Powah Solar?"
+			x: -4.5d
+			y: -3.0d
 		}
 		{
-			x: -5.5d
-			y: -3.5d
+			dependencies: ["62667C6C34C43B64"]
 			description: [
 				"Generates: 8 fe/t"
 				"Transfer: 64 fe/t"
 				"Capacity: 125k fe."
 			]
-			dependencies: ["62667C6C34C43B64"]
 			id: "5F4401623CC050D7"
 			tasks: [{
 				id: "74ADF2097329D2DF"
-				type: "item"
 				item: "solarflux:sp_2"
+				type: "item"
 			}]
+			x: -5.5d
+			y: -3.5d
 		}
 		{
-			x: -4.5d
-			y: -4.0d
+			dependencies: ["5F4401623CC050D7"]
 			description: [
 				"Generates: 32 fe/t"
 				"Transfer: 256 fe/t"
 				"Capacity: 425k fe."
 			]
-			dependencies: ["5F4401623CC050D7"]
 			id: "674DA0AE1E8F2C4B"
 			tasks: [{
 				id: "3D8556ACB7887F41"
-				type: "item"
 				item: "solarflux:sp_3"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -4.0d
 		}
 		{
-			icon: "powah:energizing_orb"
-			x: 1.5d
-			y: -4.0d
-			shape: "pentagon"
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"The Energizing Orb produces new materials by pumping mass amounts of Energy into items."
 				"How to set up:"
@@ -255,907 +252,908 @@
 				""
 				"Now you have set up your Energizing Orb! You can place down many many more rods, for future reference."
 			]
-			dependencies: ["4422AD0BB8A34373"]
+			icon: "powah:energizing_orb"
 			id: "520EB6E05FD85E3F"
+			shape: "pentagon"
 			tasks: [
 				{
 					id: "67D7DD1187D82C76"
-					type: "item"
 					item: "powah:energizing_orb"
+					type: "item"
 				}
 				{
 					id: "178BE71F98B11753"
-					type: "item"
 					item: "powah:energizing_rod_basic"
+					type: "item"
 				}
 				{
 					id: "009E3F0620ECBFEC"
-					type: "item"
 					item: "powah:energizing_rod_basic"
+					type: "item"
 				}
 			]
+			x: 1.5d
+			y: -4.0d
 		}
 		{
-			title: "Energized Steel!"
-			icon: "powah:steel_energized"
-			x: 1.5d
-			y: -5.0d
-			description: ["Energized Steel is made by combining Osmium with Gold in the Energizing Orb, and can be used for Tier 2 Powah machines."]
 			dependencies: ["520EB6E05FD85E3F"]
+			description: ["Energized Steel is made by combining Osmium with Gold in the Energizing Orb, and can be used for Tier 2 Powah machines."]
+			icon: "powah:steel_energized"
 			id: "49277C931CEF49E1"
 			tasks: [
 				{
-					id: "7F1AB0D788FA7F0D"
-					type: "item"
-					item: "powah:steel_energized"
 					count: 16L
+					id: "7F1AB0D788FA7F0D"
+					item: "powah:steel_energized"
+					type: "item"
 				}
 				{
-					id: "7D48EB372CC85BB8"
-					type: "item"
-					item: "powah:capacitor_hardened"
 					count: 8L
+					id: "7D48EB372CC85BB8"
+					item: "powah:capacitor_hardened"
+					type: "item"
 				}
 			]
+			title: "Energized Steel!"
+			x: 1.5d
+			y: -5.0d
 		}
 		{
-			x: -4.5d
-			y: -5.0d
+			dependencies: [
+				"0AB00D5C559303B2"
+				"49277C931CEF49E1"
+			]
 			description: [
 				"Generates: 100 fe/t"
 				"Transfer: 800 fe/t"
 				"Capacity: 200k fe."
 			]
-			dependencies: [
-				"0AB00D5C559303B2"
-				"49277C931CEF49E1"
-			]
 			id: "214276EC24A82775"
 			tasks: [{
 				id: "21F2F0082095B627"
-				type: "item"
 				item: "solarflux:sp_custom_hardened"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -5.0d
 		}
 		{
-			x: -5.5d
-			y: -4.5d
+			dependencies: ["674DA0AE1E8F2C4B"]
 			description: [
 				"Generates: 60 fe/t"
 				"Transfer: 320 fe/t"
 				"Capacity: 80k fe."
 			]
-			dependencies: ["674DA0AE1E8F2C4B"]
 			id: "0AB00D5C559303B2"
 			tasks: [{
 				id: "2352F0E480A8F051"
-				type: "item"
 				item: "solarflux:sp_custom_basic"
+				type: "item"
 			}]
+			x: -5.5d
+			y: -4.5d
 		}
 		{
-			title: "Reactor (Hardened)"
-			x: 0.0d
-			y: -5.0d
+			dependencies: ["49277C931CEF49E1"]
 			description: [
 				"Gen Factor: 2.5k fe/t"
 				"Max Transfer: 10k fe/t"
 				"Capacity: 2.5M fe"
 			]
-			dependencies: ["49277C931CEF49E1"]
 			id: "2155E1476DD91E6E"
 			tasks: [{
-				id: "6A457F8D20C830BB"
-				type: "item"
-				item: "powah:reactor_hardened"
 				count: 36L
+				id: "6A457F8D20C830BB"
+				item: "powah:reactor_hardened"
+				type: "item"
 			}]
+			title: "Reactor (Hardened)"
+			x: 0.0d
+			y: -5.0d
 		}
 		{
-			title: "Energy Storage (Hardened)"
-			icon: "powah:energy_cell_hardened"
-			x: -1.5d
-			y: -5.0d
-			description: ["All Hardened Energy Storage options hold 10M fe."]
 			dependencies: ["49277C931CEF49E1"]
+			description: ["All Hardened Energy Storage options hold 10M fe."]
+			icon: "powah:energy_cell_hardened"
 			id: "2F59EE4B7B725399"
 			tasks: [
 				{
 					id: "3E52BC41347FB34B"
-					type: "item"
 					item: "powah:energy_cell_hardened"
+					type: "item"
 				}
 				{
 					id: "7F4602B397804290"
-					type: "item"
 					item: "powah:ender_cell_hardened"
+					type: "item"
 				}
 				{
 					id: "2124E92CF9220680"
-					type: "item"
 					item: {
-						id: "powah:battery_hardened"
 						Count: 1b
+						id: "powah:battery_hardened"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			title: "Energy Storage (Hardened)"
+			x: -1.5d
+			y: -5.0d
 		}
 		{
-			x: 3.0d
-			y: -5.0d
-			description: ["Generates: 200 fe/t"]
 			dependencies: ["49277C931CEF49E1"]
+			description: ["Generates: 200 fe/t"]
 			id: "13A2A991BE4042D9"
 			tasks: [{
 				id: "7EE5F20500C080A5"
-				type: "item"
 				item: "powah:furnator_hardened"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -5.0d
 		}
 		{
-			x: 4.5d
-			y: -5.0d
-			description: ["Generates: 100 fe/t"]
 			dependencies: ["49277C931CEF49E1"]
+			description: ["Generates: 100 fe/t"]
 			id: "4079F8739F2D8289"
 			tasks: [{
 				id: "33A8AC702FF95433"
-				type: "item"
 				item: "powah:thermo_generator_hardened"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -5.0d
 		}
 		{
-			x: 6.0d
-			y: -5.0d
-			description: ["Generates: 200fe /t"]
 			dependencies: ["49277C931CEF49E1"]
+			description: ["Generates: 200fe /t"]
 			id: "41CC7B4719837470"
 			tasks: [{
 				id: "048AF7F0CDAF674E"
-				type: "item"
 				item: "powah:magmator_hardened"
+				type: "item"
 			}]
+			x: 6.0d
+			y: -5.0d
 		}
 		{
-			title: "Blazing Crystal!"
-			icon: "powah:crystal_blazing"
-			x: 1.5d
-			y: -6.0d
-			description: ["The Blazing Crystal is the next major Powah material, created by energizing Blaze Powder / Rods."]
 			dependencies: ["49277C931CEF49E1"]
+			description: ["The Blazing Crystal is the next major Powah material, created by energizing Blaze Powder / Rods."]
+			icon: "powah:crystal_blazing"
 			id: "367AFAACEC6AB7F9"
 			tasks: [
 				{
-					id: "0EFF7420806A79B6"
-					type: "item"
-					item: "powah:crystal_blazing"
 					count: 16L
+					id: "0EFF7420806A79B6"
+					item: "powah:crystal_blazing"
+					type: "item"
 				}
 				{
-					id: "6BDE488379EED65A"
-					type: "item"
-					item: "powah:capacitor_blazing"
 					count: 8L
+					id: "6BDE488379EED65A"
+					item: "powah:capacitor_blazing"
+					type: "item"
 				}
 			]
+			title: "Blazing Crystal!"
+			x: 1.5d
+			y: -6.0d
 		}
 		{
-			x: 3.0d
-			y: -6.0d
-			description: ["Generates: 800 fe/t"]
 			dependencies: ["367AFAACEC6AB7F9"]
+			description: ["Generates: 800 fe/t"]
 			id: "77A6C5E05227569A"
 			tasks: [{
 				id: "2CE612F1D717828D"
-				type: "item"
 				item: "powah:furnator_blazing"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -6.0d
 		}
 		{
-			x: 4.5d
-			y: -6.0d
-			description: ["Generates: 200 fe/t"]
 			dependencies: ["367AFAACEC6AB7F9"]
+			description: ["Generates: 200 fe/t"]
 			id: "628690FAC166DEC8"
 			tasks: [{
 				id: "38494DC28D2E3F91"
-				type: "item"
 				item: "powah:thermo_generator_blazing"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -6.0d
 		}
 		{
-			x: 6.0d
-			y: -6.0d
-			description: ["Generates: 800 fe/t"]
 			dependencies: ["367AFAACEC6AB7F9"]
+			description: ["Generates: 800 fe/t"]
 			id: "6993552072DF36D8"
 			tasks: [{
 				id: "38F2B3B32ECA150E"
-				type: "item"
 				item: "powah:magmator_blazing"
+				type: "item"
 			}]
+			x: 6.0d
+			y: -6.0d
 		}
 		{
-			title: "Reactor (Blazing)"
-			x: 0.0d
-			y: -6.0d
+			dependencies: ["367AFAACEC6AB7F9"]
 			description: [
 				"Gen Factor: 10k fe/t"
 				"Max Transfer: 40k fe/t"
 				"Capacity: 10M fe"
 			]
-			dependencies: ["367AFAACEC6AB7F9"]
 			id: "18B7A5AE42810241"
 			tasks: [{
-				id: "1C583CA2E0C25C93"
-				type: "item"
-				item: "powah:reactor_blazing"
 				count: 36L
+				id: "1C583CA2E0C25C93"
+				item: "powah:reactor_blazing"
+				type: "item"
 			}]
+			title: "Reactor (Blazing)"
+			x: 0.0d
+			y: -6.0d
 		}
 		{
-			icon: "powah:energy_cell_hardened"
-			x: -1.5d
-			y: -6.0d
-			description: ["All Blazing Energy Storage options hold 40M fe."]
 			dependencies: ["367AFAACEC6AB7F9"]
+			description: ["All Blazing Energy Storage options hold 40M fe."]
+			icon: "powah:energy_cell_hardened"
 			id: "3F18E217B3F12DBD"
 			tasks: [
 				{
 					id: "65D1F73E57305074"
-					type: "item"
 					item: "powah:energy_cell_blazing"
+					type: "item"
 				}
 				{
 					id: "4361BCC3DDA53660"
-					type: "item"
 					item: "powah:ender_cell_blazing"
+					type: "item"
 				}
 				{
 					id: "064DF524D6B34DD9"
-					type: "item"
 					item: {
-						id: "powah:battery_blazing"
 						Count: 1b
+						id: "powah:battery_blazing"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			x: -1.5d
+			y: -6.0d
 		}
 		{
-			title: "Niotic Crystal!"
-			icon: "powah:crystal_niotic"
-			x: 1.5d
-			y: -7.0d
-			description: ["The Niotic Crystal is the next Powah material, making way for some extremely powerful machines. Made by energizing Diamonds."]
 			dependencies: ["367AFAACEC6AB7F9"]
+			description: ["The Niotic Crystal is the next Powah material, making way for some extremely powerful machines. Made by energizing Diamonds."]
+			icon: "powah:crystal_niotic"
 			id: "700C33C9F86BB214"
 			tasks: [
 				{
-					id: "7CB2B1032688C1E6"
-					type: "item"
-					item: "powah:crystal_niotic"
 					count: 16L
+					id: "7CB2B1032688C1E6"
+					item: "powah:crystal_niotic"
+					type: "item"
 				}
 				{
-					id: "1A8C994ADDA14E32"
-					type: "item"
-					item: "powah:capacitor_niotic"
 					count: 8L
+					id: "1A8C994ADDA14E32"
+					item: "powah:capacitor_niotic"
+					type: "item"
 				}
 			]
+			title: "Niotic Crystal!"
+			x: 1.5d
+			y: -7.0d
 		}
 		{
-			x: 3.0d
-			y: -7.0d
-			description: ["Generates: 2k fe/t"]
 			dependencies: ["700C33C9F86BB214"]
+			description: ["Generates: 2k fe/t"]
 			id: "2AC17592C41A0F9E"
 			tasks: [{
 				id: "419651B3EDC16B24"
-				type: "item"
 				item: "powah:furnator_niotic"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -7.0d
 		}
 		{
-			x: 4.5d
-			y: -7.0d
-			description: ["Generates: 400 fe/t"]
 			dependencies: ["700C33C9F86BB214"]
+			description: ["Generates: 400 fe/t"]
 			id: "1B7C668D2D7BBEDC"
 			tasks: [{
 				id: "6529829F3F00BA53"
-				type: "item"
 				item: "powah:thermo_generator_niotic"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -7.0d
 		}
 		{
-			x: 6.0d
-			y: -7.0d
-			description: ["Generates: 2k fe/t"]
 			dependencies: ["700C33C9F86BB214"]
+			description: ["Generates: 2k fe/t"]
 			id: "5DFCCCBCD7BDB39A"
 			tasks: [{
 				id: "1486A894EAE724E1"
-				type: "item"
 				item: "powah:magmator_niotic"
+				type: "item"
 			}]
+			x: 6.0d
+			y: -7.0d
 		}
 		{
-			title: "Reactor (Niotic)"
-			x: 0.0d
-			y: -7.0d
+			dependencies: ["700C33C9F86BB214"]
 			description: [
 				"Gen Factor: 25k fe/t"
 				"Max Transfer: 100k fe/t"
 				"Capacity: 25M fe"
 			]
-			dependencies: ["700C33C9F86BB214"]
 			id: "54D3B7ADDE12FCA7"
 			tasks: [{
-				id: "30F9B497F0475EE1"
-				type: "item"
-				item: "powah:reactor_niotic"
 				count: 36L
+				id: "30F9B497F0475EE1"
+				item: "powah:reactor_niotic"
+				type: "item"
 			}]
+			title: "Reactor (Niotic)"
+			x: 0.0d
+			y: -7.0d
 		}
 		{
-			icon: "powah:energy_cell_niotic"
-			x: -1.5d
-			y: -7.0d
-			description: ["All Niotic Energy Storage options hold 100M fe."]
 			dependencies: ["700C33C9F86BB214"]
+			description: ["All Niotic Energy Storage options hold 100M fe."]
+			icon: "powah:energy_cell_niotic"
 			id: "1C05DBD2C04CC015"
 			tasks: [
 				{
 					id: "206D617D3D4D507B"
-					type: "item"
 					item: "powah:energy_cell_niotic"
+					type: "item"
 				}
 				{
 					id: "354D2D5FF5E89004"
-					type: "item"
 					item: "powah:ender_cell_niotic"
+					type: "item"
 				}
 				{
 					id: "636189601C9AC282"
-					type: "item"
 					item: {
-						id: "powah:battery_niotic"
 						Count: 1b
+						id: "powah:battery_niotic"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			x: -1.5d
+			y: -7.0d
 		}
 		{
-			title: "Spirited Crystal!"
-			icon: "powah:crystal_spirited"
-			x: 1.5d
-			y: -8.0d
-			description: ["The Spirited Crystal made from the legendary Villager currency can be used for amazing Powah generation machines."]
 			dependencies: ["700C33C9F86BB214"]
+			description: ["The Spirited Crystal made from the legendary Villager currency can be used for amazing Powah generation machines."]
+			icon: "powah:crystal_spirited"
 			id: "2D2F7C16DEE51051"
 			tasks: [
 				{
-					id: "13384905B8F918FA"
-					type: "item"
-					item: "powah:crystal_spirited"
 					count: 16L
+					id: "13384905B8F918FA"
+					item: "powah:crystal_spirited"
+					type: "item"
 				}
 				{
-					id: "60E2EE303DC76A56"
-					type: "item"
-					item: "powah:capacitor_spirited"
 					count: 8L
+					id: "60E2EE303DC76A56"
+					item: "powah:capacitor_spirited"
+					type: "item"
 				}
 			]
+			title: "Spirited Crystal!"
+			x: 1.5d
+			y: -8.0d
 		}
 		{
-			x: 3.0d
-			y: -8.0d
-			description: ["Generates: 8k fe/t"]
 			dependencies: ["2D2F7C16DEE51051"]
+			description: ["Generates: 8k fe/t"]
 			id: "6AEDFCC2BCE9D6A8"
 			tasks: [{
 				id: "3BDA050104B27DD4"
-				type: "item"
 				item: "powah:furnator_spirited"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -8.0d
 		}
 		{
-			x: 4.5d
-			y: -8.0d
-			description: ["Generates: 800 fe/t"]
 			dependencies: ["2D2F7C16DEE51051"]
+			description: ["Generates: 800 fe/t"]
 			id: "02A5DAF2EDAAC481"
 			tasks: [{
 				id: "5FEA090833D8568B"
-				type: "item"
 				item: "powah:thermo_generator_spirited"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -8.0d
 		}
 		{
-			x: 6.0d
-			y: -8.0d
-			description: ["Generates: 8k fe/t"]
 			dependencies: ["2D2F7C16DEE51051"]
+			description: ["Generates: 8k fe/t"]
 			id: "3C954BBD8EE9C85D"
 			tasks: [{
 				id: "68BD09051CE6FC9E"
-				type: "item"
 				item: "powah:magmator_spirited"
+				type: "item"
 			}]
+			x: 6.0d
+			y: -8.0d
 		}
 		{
-			title: "Reactor (Spirited)"
-			x: 0.0d
-			y: -8.0d
+			dependencies: ["2D2F7C16DEE51051"]
 			description: [
 				"Gen Factor: 100k fe/t"
 				"Max Transfer: 400k fe/t"
 				"Capacity: 100M fe"
 			]
-			dependencies: ["2D2F7C16DEE51051"]
 			id: "055596E067CEB937"
 			tasks: [{
-				id: "7CA23E53BF550550"
-				type: "item"
-				item: "powah:reactor_spirited"
 				count: 36L
+				id: "7CA23E53BF550550"
+				item: "powah:reactor_spirited"
+				type: "item"
 			}]
+			title: "Reactor (Spirited)"
+			x: 0.0d
+			y: -8.0d
 		}
 		{
-			icon: "powah:energy_cell_spirited"
-			x: -1.5d
-			y: -8.0d
-			description: ["All Spirited Energy Storage options hold 400M fe."]
 			dependencies: ["2D2F7C16DEE51051"]
+			description: ["All Spirited Energy Storage options hold 400M fe."]
+			icon: "powah:energy_cell_spirited"
 			id: "56666E2F599EFE67"
 			tasks: [
 				{
 					id: "6B74DF5817FC4169"
-					type: "item"
 					item: "powah:energy_cell_spirited"
+					type: "item"
 				}
 				{
 					id: "6E79121A28D7131F"
-					type: "item"
 					item: "powah:ender_cell_spirited"
+					type: "item"
 				}
 				{
 					id: "229273E246F0D14F"
-					type: "item"
 					item: {
-						id: "powah:battery_spirited"
 						Count: 1b
+						id: "powah:battery_spirited"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			x: -1.5d
+			y: -8.0d
 		}
 		{
-			title: "&4Nitro Crystal"
-			icon: "powah:crystal_nitro"
-			x: 1.5d
-			y: -9.5d
-			shape: "octagon"
-			description: ["Nitro is the final Powah material, giving the ability to make unbelievable machines to generate Powah."]
 			dependencies: ["2D2F7C16DEE51051"]
-			size: 1.1d
+			description: ["Nitro is the final Powah material, giving the ability to make unbelievable machines to generate Powah."]
+			icon: "powah:crystal_nitro"
 			id: "279F631015FEEA13"
+			shape: "octagon"
+			size: 1.1d
 			tasks: [
 				{
-					id: "6FF936FE3DD9E5D0"
-					type: "item"
-					item: "powah:crystal_nitro"
 					count: 64L
+					id: "6FF936FE3DD9E5D0"
+					item: "powah:crystal_nitro"
+					type: "item"
 				}
 				{
-					id: "4147E1B1280B5DBC"
-					type: "item"
-					item: "powah:capacitor_nitro"
 					count: 16L
+					id: "4147E1B1280B5DBC"
+					item: "powah:capacitor_nitro"
+					type: "item"
 				}
 			]
+			title: "&4Nitro Crystal"
+			x: 1.5d
+			y: -9.5d
 		}
 		{
-			x: 3.0d
-			y: -9.5d
-			shape: "hexagon"
-			description: ["Generates: 40k fe/t"]
 			dependencies: ["279F631015FEEA13"]
+			description: ["Generates: 40k fe/t"]
 			id: "73CE2A942C9E4EC1"
+			shape: "hexagon"
 			tasks: [{
 				id: "2AEFBECAB43B5E9D"
-				type: "item"
 				item: "powah:furnator_nitro"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -9.5d
 		}
 		{
-			x: 4.5d
-			y: -9.5d
-			shape: "hexagon"
-			description: ["Generates: 2k fe/t"]
 			dependencies: ["279F631015FEEA13"]
+			description: ["Generates: 2k fe/t"]
 			id: "282A71D48539FA13"
+			shape: "hexagon"
 			tasks: [{
 				id: "4089A2CE8C477A6E"
-				type: "item"
 				item: "powah:thermo_generator_nitro"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -9.5d
 		}
 		{
-			x: 6.0d
-			y: -9.5d
-			shape: "hexagon"
-			description: ["Generates: 40k fe/t"]
 			dependencies: ["279F631015FEEA13"]
+			description: ["Generates: 40k fe/t"]
 			id: "3201CF1A3B72D6F0"
+			shape: "hexagon"
 			tasks: [{
 				id: "0DCB7A8ABCEBE722"
-				type: "item"
 				item: "powah:magmator_nitro"
+				type: "item"
 			}]
+			x: 6.0d
+			y: -9.5d
 		}
 		{
-			title: "Reactor (Nitro)"
-			x: 0.0d
-			y: -9.5d
-			shape: "hexagon"
+			dependencies: ["279F631015FEEA13"]
 			description: [
 				"Gen Factor: 500k fe/t"
 				"Max Transfer: 2M fe/t"
 				"Capacity: 500M fe"
 			]
-			dependencies: ["279F631015FEEA13"]
 			id: "2F2F53EE14B29734"
+			shape: "hexagon"
 			tasks: [{
-				id: "049852D502CB5916"
-				type: "item"
-				item: "powah:reactor_nitro"
 				count: 36L
+				id: "049852D502CB5916"
+				item: "powah:reactor_nitro"
+				type: "item"
 			}]
+			title: "Reactor (Nitro)"
+			x: 0.0d
+			y: -9.5d
 		}
 		{
-			icon: "powah:energy_cell_nitro"
-			x: -1.5d
-			y: -9.5d
-			shape: "hexagon"
-			description: ["All Nitro Energy Storage options hold 2B fe."]
 			dependencies: ["279F631015FEEA13"]
+			description: ["All Nitro Energy Storage options hold 2B fe."]
+			icon: "powah:energy_cell_nitro"
 			id: "3AC465D0FE4A4CD9"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "5D22A4CB2B4DC8DB"
-					type: "item"
 					item: "powah:energy_cell_nitro"
+					type: "item"
 				}
 				{
 					id: "53DE0EC24A03EF65"
-					type: "item"
 					item: "powah:ender_cell_nitro"
+					type: "item"
 				}
 				{
 					id: "28CD796B932C9E36"
-					type: "item"
 					item: {
-						id: "powah:battery_nitro"
 						Count: 1b
+						id: "powah:battery_nitro"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			x: -1.5d
+			y: -9.5d
 		}
 		{
-			x: -5.5d
-			y: -5.5d
+			dependencies: ["214276EC24A82775"]
 			description: [
 				"Generation: 128 fe/t"
 				"Transfer: 1024 fe/t"
 				"Capacity: 2M fe."
 			]
-			dependencies: ["214276EC24A82775"]
 			id: "5651304C185C878F"
 			tasks: [{
 				id: "6E884A2864CE70E4"
-				type: "item"
 				item: "solarflux:sp_4"
+				type: "item"
 			}]
+			x: -5.5d
+			y: -5.5d
 		}
 		{
-			x: -4.5d
-			y: -6.0d
+			dependencies: [
+				"5651304C185C878F"
+				"367AFAACEC6AB7F9"
+			]
 			description: [
 				"Generation: 200 fe/t"
 				"Transfer: 3.2k fe/t"
 				"Capacity: 80k fe."
 			]
-			dependencies: [
-				"5651304C185C878F"
-				"367AFAACEC6AB7F9"
-			]
 			id: "017167695E47BC0D"
 			tasks: [{
 				id: "231371266360FCD4"
-				type: "item"
 				item: "solarflux:sp_custom_blazing"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -6.0d
 		}
 		{
-			x: -4.5d
-			y: -7.0d
+			dependencies: [
+				"017167695E47BC0D"
+				"700C33C9F86BB214"
+			]
 			description: [
 				"Generation: 400 fe/t"
 				"Transfer: 8k fe/t"
 				"Capacity: 2M fe."
 			]
-			dependencies: [
-				"017167695E47BC0D"
-				"700C33C9F86BB214"
-			]
 			id: "602B95AAF9C2D417"
 			tasks: [{
 				id: "3F7C4A43693C4084"
-				type: "item"
 				item: "solarflux:sp_custom_niotic"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -7.0d
 		}
 		{
-			x: -5.5d
-			y: -7.5d
+			dependencies: ["602B95AAF9C2D417"]
 			description: [
 				"Generation: 512 fe/t"
 				"Transfer: 4096 fe/t"
 				"Capacity: 8M fe."
 			]
-			dependencies: ["602B95AAF9C2D417"]
 			id: "698AA6F573A3527B"
 			tasks: [{
 				id: "169D930C32C63991"
-				type: "item"
 				item: "solarflux:sp_5"
+				type: "item"
 			}]
+			x: -5.5d
+			y: -7.5d
 		}
 		{
-			x: -4.5d
-			y: -8.0d
+			dependencies: [
+				"698AA6F573A3527B"
+				"2D2F7C16DEE51051"
+			]
 			description: [
 				"Generation: 800fe /t"
 				"Transfer: 32k fe/t"
 				"Capacity: 8M fe."
 			]
-			dependencies: [
-				"698AA6F573A3527B"
-				"2D2F7C16DEE51051"
-			]
 			id: "0160E4D23F4C490C"
 			tasks: [{
 				id: "2E23FCB2F65D58FC"
-				type: "item"
 				item: "solarflux:sp_custom_spirited"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -8.0d
 		}
 		{
-			x: -4.5d
-			y: -9.5d
-			shape: "hexagon"
+			dependencies: [
+				"0160E4D23F4C490C"
+				"279F631015FEEA13"
+			]
 			description: [
 				"Generation: 2k fe/t"
 				"Transfer: 16k fe/t"
 				"Capacity: 40M fe."
 			]
-			dependencies: [
-				"0160E4D23F4C490C"
-				"279F631015FEEA13"
-			]
 			id: "0A7B44A1900A58AD"
+			shape: "hexagon"
 			tasks: [{
 				id: "280CFE2E4D8006A7"
-				type: "item"
 				item: "solarflux:sp_custom_nitro"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -9.5d
 		}
 		{
-			x: -5.5d
-			y: -10.0d
+			dependencies: ["0A7B44A1900A58AD"]
 			description: [
 				"Generation: 2048 fe/t"
 				"Transfer: 16.3k fe/t"
 				"Capacity: 32M fe."
 			]
-			dependencies: ["0A7B44A1900A58AD"]
 			id: "29DB3A831491291A"
 			tasks: [{
 				id: "2880811DFC52228F"
-				type: "item"
 				item: "solarflux:sp_6"
+				type: "item"
 			}]
+			x: -5.5d
+			y: -10.0d
 		}
 		{
-			x: -4.5d
-			y: -10.5d
+			dependencies: ["29DB3A831491291A"]
 			description: [
 				"Generation: 8192 fe/t"
 				"Transfer: 65.5k fe/t"
 				"Capacity: 64M fe."
 			]
-			dependencies: ["29DB3A831491291A"]
 			id: "7AB0110EA56BDE48"
 			tasks: [{
 				id: "53316ACA70B9CFFD"
-				type: "item"
 				item: "solarflux:sp_7"
+				type: "item"
 			}]
+			x: -4.5d
+			y: -10.5d
 		}
 		{
-			x: -5.0d
-			y: -12.0d
-			shape: "octagon"
+			dependencies: ["7AB0110EA56BDE48"]
 			description: [
 				"Generation: 32.7k fe/t"
 				"Transfer: 262k fe/t"
 				"Capacity: 128M fe."
 			]
-			dependencies: ["7AB0110EA56BDE48"]
-			size: 1.2d
 			id: "171FCEDA04DF301B"
+			shape: "octagon"
+			size: 1.2d
 			tasks: [{
 				id: "3A12BEAA4DC72839"
-				type: "item"
 				item: "solarflux:sp_8"
+				type: "item"
 			}]
+			x: -5.0d
+			y: -12.0d
 		}
 		{
-			icon: "powah:player_transmitter_basic"
-			x: 7.5d
-			y: -3.0d
+			dependencies: ["72E410A068FFABA1"]
 			description: [
 				"Player Transmitters are used to send Powah to specific players."
 				""
 				"There are no other Quests for these as they're not worth making a million of."
 			]
-			dependencies: ["72E410A068FFABA1"]
+			icon: "powah:player_transmitter_basic"
 			id: "72FCB672D301A797"
 			tasks: [
 				{
 					id: "62A72E8EF2440177"
-					type: "item"
 					item: "powah:player_transmitter_basic"
+					type: "item"
 				}
 				{
 					id: "03EAB02A37A73971"
-					type: "item"
 					item: "powah:binding_card"
+					type: "item"
 				}
 			]
+			x: 7.5d
+			y: -3.0d
 		}
 		{
-			x: 8.5d
-			y: -2.5d
-			description: ["The Dimensional Binding Card allows the Transmitter to send Powah to you whenever, wherever."]
 			dependencies: ["72FCB672D301A797"]
+			description: ["The Dimensional Binding Card allows the Transmitter to send Powah to you whenever, wherever."]
 			id: "7C68127E475E6A79"
 			tasks: [{
 				id: "06EFFB58A024D4D7"
-				type: "item"
 				item: "powah:binding_card_dim"
+				type: "item"
 			}]
+			x: 8.5d
+			y: -2.5d
 		}
 		{
-			title: "Powah Logistics (Hardened)"
-			icon: "powah:energizing_rod_hardened"
-			x: -3.0d
-			y: -5.0d
-			description: ["Max Transfer: 5Kfe /t"]
 			dependencies: ["49277C931CEF49E1"]
+			description: ["Max Transfer: 5Kfe /t"]
+			icon: "powah:energizing_rod_hardened"
 			id: "15D71ACE4D4503CD"
 			tasks: [
 				{
 					id: "18C4CE8448B5258B"
-					type: "item"
 					item: "powah:energizing_rod_hardened"
+					type: "item"
 				}
 				{
-					id: "1D90D2B06C772E1B"
-					type: "item"
-					item: "powah:energy_cable_hardened"
 					count: 16L
+					id: "1D90D2B06C772E1B"
+					item: "powah:energy_cable_hardened"
+					type: "item"
 				}
 			]
+			title: "Powah Logistics (Hardened)"
+			x: -3.0d
+			y: -5.0d
 		}
 		{
-			title: "Powah Logistics (Blazing)"
-			icon: "powah:energizing_rod_blazing"
-			x: -3.0d
-			y: -6.0d
-			description: ["Max Transfer: 20k fe/t"]
 			dependencies: ["367AFAACEC6AB7F9"]
+			description: ["Max Transfer: 20k fe/t"]
+			icon: "powah:energizing_rod_blazing"
 			id: "54BE8DCD7AB86874"
 			tasks: [
 				{
 					id: "7604CCFE6BA4830A"
-					type: "item"
 					item: "powah:energizing_rod_blazing"
+					type: "item"
 				}
 				{
-					id: "360008CA7591109B"
-					type: "item"
-					item: "powah:energy_cable_blazing"
 					count: 16L
+					id: "360008CA7591109B"
+					item: "powah:energy_cable_blazing"
+					type: "item"
 				}
 			]
+			title: "Powah Logistics (Blazing)"
+			x: -3.0d
+			y: -6.0d
 		}
 		{
-			title: "Powah Logistics (Niotic)"
-			icon: "powah:energizing_rod_niotic"
-			x: -3.0d
-			y: -7.0d
-			description: ["Max Transfer: 50k fe/t"]
 			dependencies: ["700C33C9F86BB214"]
+			description: ["Max Transfer: 50k fe/t"]
+			icon: "powah:energizing_rod_niotic"
 			id: "487EB35C83E2A02F"
 			tasks: [
 				{
 					id: "3FFCFB1D9156D2C9"
-					type: "item"
 					item: "powah:energizing_rod_niotic"
+					type: "item"
 				}
 				{
-					id: "2C5970C691D6FAF3"
-					type: "item"
-					item: "powah:energy_cable_niotic"
 					count: 16L
+					id: "2C5970C691D6FAF3"
+					item: "powah:energy_cable_niotic"
+					type: "item"
 				}
 			]
+			title: "Powah Logistics (Niotic)"
+			x: -3.0d
+			y: -7.0d
 		}
 		{
-			icon: "powah:energizing_rod_spirited"
-			x: -3.0d
-			y: -8.0d
-			description: ["Max Transfer: 200k fe/t"]
 			dependencies: ["2D2F7C16DEE51051"]
+			description: ["Max Transfer: 200k fe/t"]
+			icon: "powah:energizing_rod_spirited"
 			id: "4FE6C04859D0F206"
 			tasks: [
 				{
 					id: "370E620CDB02A02B"
-					type: "item"
 					item: "powah:energizing_rod_spirited"
+					type: "item"
 				}
 				{
-					id: "50ECF1AD56DB4DBB"
-					type: "item"
-					item: "powah:energy_cable_spirited"
 					count: 16L
+					id: "50ECF1AD56DB4DBB"
+					item: "powah:energy_cable_spirited"
+					type: "item"
 				}
 			]
+			x: -3.0d
+			y: -8.0d
 		}
 		{
-			icon: "powah:energizing_rod_nitro"
-			x: -3.0d
-			y: -9.5d
-			shape: "hexagon"
-			description: ["Max Transfer: 1M fe/t"]
 			dependencies: ["279F631015FEEA13"]
+			description: ["Max Transfer: 1M fe/t"]
+			icon: "powah:energizing_rod_nitro"
 			id: "0A573743E6BE2FF5"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "71AE63FE2C9D5E01"
-					type: "item"
 					item: "powah:energizing_rod_nitro"
+					type: "item"
 				}
 				{
-					id: "41722F9FADC77FF5"
-					type: "item"
-					item: "powah:energy_cable_nitro"
 					count: 16L
+					id: "41722F9FADC77FF5"
+					item: "powah:energy_cable_nitro"
+					type: "item"
 				}
 			]
+			x: -3.0d
+			y: -9.5d
 		}
 		{
-			title: "Powah Logistics (Basic)"
-			x: -3.0d
-			y: -3.0d
+			dependencies: ["4422AD0BB8A34373"]
 			description: [
 				"Powah Cables connect to and supply machines with Powah from other generating blocks. These cables can send more energy per tier."
 				""
@@ -1166,15 +1164,17 @@
 				""
 				"Max Transfer: 2k fe/t"
 			]
-			dependencies: ["4422AD0BB8A34373"]
 			id: "451FB51D9F027152"
 			tasks: [{
-				id: "29810194EE48DEF5"
-				type: "item"
-				item: "powah:energy_cable_basic"
 				count: 16L
+				id: "29810194EE48DEF5"
+				item: "powah:energy_cable_basic"
+				type: "item"
 			}]
+			title: "Powah Logistics (Basic)"
+			x: -3.0d
+			y: -3.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Powah!"
 }

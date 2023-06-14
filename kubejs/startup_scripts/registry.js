@@ -12,7 +12,7 @@ StartupEvents.registry('item', event => {
 	event.create('leaded_iron_compound').displayName('Leaded Iron Compound')
 	event.create('leaded_iron').displayName('Leaded Iron').tag('forge:ingots').tag('forge:ingots/leaded_iron')
 	event.create('apatite_essence').displayName('Apatite Essence')
-	event.create('silicon_essence').displayName('Silicon Essence')
+	event.create('mysticalagriculture:silicon_essence').displayName('Silicon Essence')
 	event.create('fluorite_essence').displayName('Fluorite Essence')
 	event.create('sulfuric_essence').displayName('Sulfuric Essence')
 	event.create('cinnabar_essence').displayName('Cinnabar Essence')
@@ -25,13 +25,13 @@ StartupEvents.registry('item', event => {
 	event.create('porcelain_brick').tag('forge:ingots').tag('forge:ingots/porcelain_brick')
 	event.create('porcelain_nether_brick').tag('forge:ingots').tag('forge:ingots/porcelain_nether_brick')
 	event.create('fluoridian_crystal').tag('forge:gems/fluoridium').tag('forge:gems')
-	event.create('black_iron_slate').tag('forge:slates/black_iron')
 	event.create('archaic_gold_ingot').tag('forge:ingots').tag('forge:ingots/archaic_gold').fireResistant(true).rarity("uncommon")
 	event.create('archaic_pink_gold_ingot').tag('forge:ingots').tag('forge:ingots/archaic_pink_gold').fireResistant(true).rarity("uncommon")
+	event.create('meteorite_sample').maxStackSize(1).fireResistant(true).rarity('supreme')
 	//Food
-	event.create('cooked_apple').food(food =>{food.hunger(8).saturation(1)})
+	event.create('cooked_apple').food(food => { food.hunger(8).saturation(1) })
 })
-StartupEvents.registry('block', event =>{
+StartupEvents.registry('block', event => {
 	event.create('dielectric_block').material('moss').hardness(0.5).tagBlock('minecraft:mineable/hoe')
 	event.create('unprocessed_frame').material('metal').hardness(0.5).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	event.create('compressed_cobblestone_x1').material('deepslate').hardness(1.0).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
@@ -44,42 +44,49 @@ StartupEvents.registry('block', event =>{
 	event.create('compressed_gravel_x2', 'falling').material('dirt').hardness(1.3).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 	event.create('compressed_gravel_x3', 'falling').material('dirt').hardness(1.5).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 	event.create('archaic_gold_block').tagBlock('minecraft:mineable/pickaxe').tag('forge:storage_blocks').tag('forge:storage_blocks/archaic_gold').material('copper').requiresTool(true)
+	event.create('meteorite').tagBlock('minecraft:mineable/pickaxe').tagBlock('forge:needs_netherite_tool').material('gilded_blackstone').requiresTool(true).hardness(6.0).resistance(6.0).noDrops()
 })
-	StartupEvents.registry('fluid', event =>{
-		event.create('blitz_blood')
-    .thickTexture(0xE2E3C5)
-    .bucketColor(0xE2E3C5)
-    .displayName('Blitz Blood'),
+StartupEvents.registry('fluid', event => {
+	event.create('blitz_blood')
+		.thickTexture(0xE2E3C5)
+		.bucketColor(0xE2E3C5)
+		.displayName('Blitz Blood'),
 	event.create('liquifacted_graphite')
-    .thickTexture(0x373737)
-    .bucketColor(0x373737)
-    .displayName('Liquifacted Graphite'),
+		.thickTexture(0x373737)
+		.bucketColor(0x373737)
+		.displayName('Liquifacted Graphite'),
 	event.create('basalz_blood')
-    .thickTexture(0x29110D)
-    .bucketColor(0x29110D)
-    .displayName('Basalz Blood'),
+		.thickTexture(0x29110D)
+		.bucketColor(0x29110D)
+		.displayName('Basalz Blood'),
 	event.create('raw_oil_mixture')
-    .thinTexture(0x544227)
-    .bucketColor(0x544227)
-    .displayName('Raw Oil Mixture'),
+		.thinTexture(0x544227)
+		.bucketColor(0x544227)
+		.displayName('Raw Oil Mixture'),
 	event.create('blaze_blood')
-	.thickTexture(0xFFA300)
-    .bucketColor(0xFFA300)
-    .displayName('Blaze Blood'),
+		.thickTexture(0xFFA300)
+		.bucketColor(0xFFA300)
+		.displayName('Blaze Blood'),
 	event.create('carbon_dioxide_liquid')
-	.thinTexture(0xFFFFFF)
-	.noBucket()
-	.noBucket()
-	.displayName('Carbon Dioxide Liquid')
+		.thinTexture(0xFFFFFF)
+		.noBucket()
+		.noBucket()
+		.displayName('Carbon Dioxide Liquid')
 	//Chemical Liquids
 	event.create('calcium_hydroxide_liquid')
-	.thinTexture(0xC6E2D9)
-	.noBucket()
-	.noBlock()
-	.displayName('Calcium Hydroxide Liquid'),
+		.thinTexture(0xC6E2D9)
+		.noBucket()
+		.noBlock()
+		.displayName('Calcium Hydroxide Liquid'),
 	event.create('lithium_peroxide_liquid')
-	.thinTexture(0x7a5700)
-	.noBucket()
-	.noBlock()
-	.displayName('Lithium Peroxide Liquid')
+		.thinTexture(0x7a5700)
+		.noBucket()
+		.noBlock()
+		.displayName('Lithium Peroxide Liquid'),
+	event.create('melted_bitumen')
+		.thickTexture(0x2C2C44)
+		.displayName('Melted Bitumen'),
+	event.create('liquifacted_tar')
+		.thickTexture(0x0D0D14)
+		.displayName('Liquifacted Tar')
 })

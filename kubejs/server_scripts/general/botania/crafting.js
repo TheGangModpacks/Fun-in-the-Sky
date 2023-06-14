@@ -28,4 +28,13 @@ ServerEvents.recipes(event => {
 	})
 
 	event.replaceInput({ id: 'botania:elven_spreader' }, 'botania:elementium_ingot', Ingredient.of('emendatusenigmatica:elementium_gear'))
+	event.remove({output: 'botania:gaia_ingot'})
+	event.recipes.summoningrituals.altar('botania:terrasteel_ingot')
+	.itemOutput('botania:gaia_ingot')
+	.input('4x botania:life_essence')
+	.input('3x quark:soul_bead')
+	.input('mysticalagriculture:soulium_ingot')
+	.blockBelow('botania:natura_pylon')
+	.dayTime('night')
+	.id('fits:materials/processing/botania/gaia_ingot')
 })

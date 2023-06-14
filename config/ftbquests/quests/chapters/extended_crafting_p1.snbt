@@ -1,0 +1,152 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extended_crafting_p1"
+	group: "45EE6B8D98E9487B"
+	icon: "extendedcrafting:black_iron_ingot"
+	id: "405A148A93258335"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["16958D26CEA743F1"]
+			description: ["Made from Black Iron and Silver, the Basic Component is the perfect dense electronic for dense crafting."]
+			id: "429C6AD24120C462"
+			tasks: [{
+				id: "6417B1041BE61327"
+				item: "extendedcrafting:basic_component"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FF3AB2C7BC251F9"]
+			description: ["Extended Crafting is a heafty mod introducing extreme ways to create things. For now, you only have access to Basic and Advanced things."]
+			id: "16958D26CEA743F1"
+			tasks: [{
+				id: "5013C3892EA78CEB"
+				title: "Extended Crafting, Part 1"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"69EB2C413B9B7F01"
+				"429C6AD24120C462"
+			]
+			description: ["The Basic Catalyst is used for conducting extreme amounts of raw dark energy to a Crafting Matrix."]
+			id: "542F69B4B8072932"
+			tasks: [{
+				id: "2AC52D0663E5572E"
+				item: "extendedcrafting:basic_catalyst"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16958D26CEA743F1"]
+			description: ["Requiring many presses, the Black Iron Plate is used for dense electronic materials."]
+			id: "69EB2C413B9B7F01"
+			tasks: [{
+				id: "5D8AA84C6EE6D0DF"
+				item: "emendatusenigmatica:black_iron_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"542F69B4B8072932"
+				"16E14DE55DD01A0F"
+			]
+			description: ["Used to create Items that are just too complicated for your regular Crafting Table."]
+			id: "5C0CB62C3435D21B"
+			tasks: [{
+				id: "7DC1015FE21A6EE0"
+				item: "extendedcrafting:basic_table"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69EB2C413B9B7F01"]
+			description: ["Used to hold everything together, the Black Iron Frame has the density to hold several 1k ft high buildings to the ground with ease."]
+			id: "16E14DE55DD01A0F"
+			tasks: [{
+				id: "6B7A1BEEEB14B3E8"
+				item: "extendedcrafting:frame"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4C734BAE597CDB86"
+				"16958D26CEA743F1"
+			]
+			description: ["&eLuminessence&r is the biggest breakthrough for Technology in 30 years, allowing for extremely advanced components and electronics capable of 20x the effectiveness."]
+			id: "69CE422607DC9D41"
+			tasks: [{
+				id: "5863DAA507BBF7C6"
+				item: "extendedcrafting:luminessence"
+				title: "&eLuminessence"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"429C6AD24120C462"
+				"69CE422607DC9D41"
+			]
+			description: ["Made with the new Lumium alloy, Advanced Components now have over 15x the density of Basic Components."]
+			id: "1EC9CE7C9425D0DD"
+			tasks: [{
+				id: "736B0C0990349267"
+				item: "extendedcrafting:advanced_component"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1EC9CE7C9425D0DD"
+				"542F69B4B8072932"
+			]
+			description: ["Conducting large amounts of Dark Energy is now trivial using new Lumium technology. This allows for more Dense crafting."]
+			id: "1204CD37B2878AAB"
+			tasks: [{
+				id: "3C61F7CC47CA14BA"
+				item: "extendedcrafting:advanced_catalyst"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1204CD37B2878AAB"
+				"5C0CB62C3435D21B"
+			]
+			description: ["The next major Table from Extended Crafting. Scientists are blown away by how much more powerful this thing is, to the point where their value can be as much as 4.2 Billion USD."]
+			id: "2D9528302A7F1C4B"
+			tasks: [{
+				id: "76A738D982B36885"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+	]
+	title: "&0Extended Crafting, P1"
+}

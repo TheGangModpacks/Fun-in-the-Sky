@@ -4,3 +4,12 @@ BlockEvents.modification(e => {
         block.soundType = $SoundType.DEEPSLATE
     })
 })
+
+ItemEvents.modification(e =>{
+    e.modify('thermal:bitumen', item =>{
+        item.fireResistant = true
+    })
+    e.modify('thermal:bitumen_block', item =>{
+        item.fireResistant = true
+    })
+})
