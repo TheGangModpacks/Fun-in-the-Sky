@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ars_nouveau:water_essence' })
     
     event.recipes.ars_nouveau.imbuement(
-        'emendatusenigmatica:lead_crystal', // input item
+        "mekanism:enriched_iron", // input item
         'ars_nouveau:source_gem', // output
         500 // source cost
     )
