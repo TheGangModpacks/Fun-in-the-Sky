@@ -23,6 +23,7 @@
 		{
 			dependencies: ["2FF3AB2C7BC251F9"]
 			description: ["Extended Crafting is a heafty mod introducing extreme ways to create things. For now, you only have access to Basic and Advanced things."]
+			hide: true
 			id: "16958D26CEA743F1"
 			tasks: [{
 				id: "5013C3892EA78CEB"
@@ -71,7 +72,7 @@
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -83,7 +84,7 @@
 				item: "extendedcrafting:frame"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: -1.0d
 		}
 		{
@@ -144,8 +145,79 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1EC9CE7C9425D0DD"
+				"31985920002E978A"
+			]
+			description: ["The Ender Component is the result of the most talented Scientists all working together to unlock the future, after Steve provided them with the precise recipe for the Ender Ingot."]
+			id: "023EFB7ADCB8B179"
+			tasks: [{
+				id: "27F4DC9763207287"
+				item: "extendedcrafting:ender_component"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["69CE422607DC9D41"]
+			description: ["The Ender Ingot was first invented by Steve in 2023, consisting of a simple mix of Black Iron and Ender Pearls. Alex told Steve this could be the answer to all Teleportation possibilities."]
+			id: "31985920002E978A"
+			tasks: [{
+				id: "4F5CAACB0B526DFF"
+				item: "extendedcrafting:ender_ingot"
+				title: "&9Ender Ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1204CD37B2878AAB"
+				"023EFB7ADCB8B179"
+			]
+			description: ["The Ender Catalyst combines the insane performance of Advanced Components with the new Ender technology to create the ultimate crux for Teleportation, and More."]
+			id: "09E2A19768F49485"
+			tasks: [{
+				id: "524A6C96D2D63D1D"
+				item: "extendedcrafting:ender_catalyst"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"09E2A19768F49485"
+				"2D9528302A7F1C4B"
+			]
+			description: [
+				"The Ender Crafter creates Items by infusing an immense amount of Ender into multiple items at once. Scientists found this crafting method extremely difficult to invent, due to several mis-calculations during testing, leading to several Warping issues, causing them to loose several top-tier Scientists."
+				""
+				"The Ender Crafter requires Ender Alternators placed around it to pull Ender from the End. The more you have, the faster you craft."
+			]
+			icon: "extendedcrafting:ender_crafter"
+			id: "388A71D21B979373"
+			tasks: [
+				{
+					id: "5BC6182AB34F9AEF"
+					item: "extendedcrafting:ender_crafter"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3715AF6D419175AD"
+					item: "extendedcrafting:ender_alternator"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
 		}
 	]
 	title: "&0Extended Crafting, P1"

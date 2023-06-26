@@ -5,12 +5,12 @@ ServerEvents.recipes(event =>{
 		exothermic: false,
 		fluid_input: {
 			type: 'pneumaticcraft:fluid',
-			amount: 3,
-		fluid: 'pneumaticcraft:lubricant' },
-		fluid_output: {
 			amount: 10,
-		fluid: 'mekanism:ethene' },
-		item_input: { item: 'emendatusenigmatica:salt_gem' },
+			fluid: 'kubejs:witched_beeswax' },
+		fluid_output: {
+			amount: 1,
+			fluid: 'mekanism:ethene' },
+		item_input: { item: 'emendatusenigmatica:silica_cluster_shard' },
 		item_output: { item: 'emendatusenigmatica:silicon_gem' },
 		temperature: { min_temp: 643 }
 	}).id(`${thermopneumatic_prefix}silicon`)

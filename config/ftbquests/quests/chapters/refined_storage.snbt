@@ -6,98 +6,106 @@
 	hide_quest_details_until_startable: true
 	icon: "refinedstorage:creative_controller"
 	id: "27A0C883FBEAB0FD"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "refinedstorage:block/controller/cutouts/blue"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.4928571428571331d
+			y: 0.36462585034013273d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.45d
+			hover: [ ]
+			image: "ae2:block/controller_lights"
+			rotation: 0.0d
+			width: 1.45d
+			x: 0.5369047619047436d
+			y: 2.9915816326530447d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0048CFCE5675B1EE"]
-			description: ["Welcome to Refined Storage! "]
+			dependencies: [
+				"0048CFCE5675B1EE"
+				"2D9528302A7F1C4B"
+			]
+			description: [
+				"Refined Storage is a simpler Digital Storage mod, aimed at simplistics who just want something that works well. It's very easy to set up, manage, and use."
+				""
+				"Quartz Enriched Iron is made by mixing Sunny Quartz and Leaded Iron."
+			]
 			hide: true
 			id: "0640073DDD7DCF38"
-			invisible: true
 			invisible_until_tasks: 1
 			shape: "gear"
 			tasks: [{
+				count: 8L
 				id: "10D64B26500F3A10"
 				item: "refinedstorage:quartz_enriched_iron"
 				type: "item"
 			}]
 			title: "Refined Storage"
-			x: 1.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"0640073DDD7DCF38"
-				"384319551B959E84"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Silicon is a base material for many Digital Storage related things."]
-			id: "020D21BAB43DAAE0"
-			tasks: [{
-				id: "35F691F4D550DA43"
-				item: "emendatusenigmatica:silicon_gem"
-				title: "Silicon"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 2.0d
+			x: 0.4928571428571331d
+			y: 0.34285714285713453d
 		}
 		{
 			dependencies: ["0640073DDD7DCF38"]
+			description: ["&aProcessor Binding&r is used to bind circuitry together... makes sense."]
 			id: "607A51FFADD8E177"
 			tasks: [{
 				id: "427B2A820ABF0656"
 				item: "refinedstorage:processor_binding"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.0d
+			x: 3.5166666666666444d
+			y: 0.30510204081632253d
 		}
 		{
-			dependencies: [
-				"020D21BAB43DAAE0"
-				"607A51FFADD8E177"
-			]
+			dependencies: ["607A51FFADD8E177"]
+			description: ["Various Processors are first created in Raw form, and refined later."]
+			icon: "refinedstorage:raw_basic_processor"
 			id: "01835A47430DA015"
-			tasks: [{
-				id: "4FA9F8C273CA74C9"
-				item: "refinedstorage:raw_basic_processor"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"020D21BAB43DAAE0"
-				"607A51FFADD8E177"
+			shape: "diamond"
+			subtitle: "It's RAW!"
+			tasks: [
+				{
+					id: "4FA9F8C273CA74C9"
+					item: "refinedstorage:raw_basic_processor"
+					type: "item"
+				}
+				{
+					id: "26D463F14C6F0DB0"
+					item: "refinedstorage:raw_improved_processor"
+					type: "item"
+				}
+				{
+					id: "78065BCD3506BBA5"
+					item: "refinedstorage:raw_advanced_processor"
+					type: "item"
+				}
 			]
-			id: "3739D515F26E8629"
-			tasks: [{
-				id: "1110DC939CFC220B"
-				item: "refinedstorage:raw_improved_processor"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"020D21BAB43DAAE0"
-				"607A51FFADD8E177"
-			]
-			id: "3D446563D0ACB58C"
-			tasks: [{
-				id: "08EDF2784E4A7081"
-				item: "refinedstorage:raw_advanced_processor"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 3.0d
+			title: "Raw Processors"
+			x: 4.016666666666644d
+			y: 1.3051020408163225d
 		}
 		{
 			dependencies: ["01835A47430DA015"]
+			description: [
+				"Processors are a fundemental part of Refined Storage. They're used everywhere, from Grids to Crafters, and more. You will want to set up automation for these as you're going to need a lot of them."
+				""
+				"They're made in an &2Ender Crafter&r, so you should be able to set up easy automation with Modular Routers."
+			]
 			icon: "refinedstorage:basic_processor"
 			id: "5514D78050505642"
 			tasks: [
@@ -107,61 +115,39 @@
 					type: "item"
 				}
 				{
-					id: "4F962BCE391BBA27"
-					item: "refinedstorage:construction_core"
+					id: "0DF8109917D96FB8"
+					item: "refinedstorage:improved_processor"
 					type: "item"
 				}
 				{
-					id: "7336F23840D4FC4E"
-					item: "refinedstorage:destruction_core"
+					id: "15674C416AA50DAF"
+					item: "refinedstorage:advanced_processor"
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 2.0d
+			title: "Full Processors"
+			x: 4.516666666666644d
+			y: 0.30510204081632253d
 		}
 		{
-			dependencies: ["3739D515F26E8629"]
-			id: "74B1061F3B87DB02"
-			tasks: [{
-				id: "7428E3B273B5F19D"
-				item: "refinedstorage:improved_processor"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3D446563D0ACB58C"]
-			id: "499BB1709FA0CE62"
-			tasks: [{
-				id: "2A20B66F175255E4"
-				item: "refinedstorage:advanced_processor"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"499BB1709FA0CE62"
-				"74B1061F3B87DB02"
-				"5514D78050505642"
-			]
+			dependencies: ["5514D78050505642"]
+			description: ["The &3Controller&r is the most important Block to your entire Refined Storage System. All Refined Storage Blocks must connect to the Controller in some way, or piggyback off other blocks (RS Blocks will work when placed next to RS Blocks connected to a Controller)."]
 			icon: "refinedstorage:creative_controller"
 			id: "4172A1B728825CAA"
 			shape: "rsquare"
 			size: 1.3d
+			subtitle: "The Block to rule them all"
 			tasks: [{
 				id: "57A0D1EA994C67C6"
 				item: "refinedstorage:controller"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: 6.016666666666644d
+			y: 0.30510204081632253d
 		}
 		{
 			dependencies: ["4172A1B728825CAA"]
+			description: ["The Grid is a simple block that allows you to view and store Items in your RS System."]
 			id: "4B209209709BF5E4"
 			shape: "diamond"
 			tasks: [{
@@ -169,11 +155,12 @@
 				item: "refinedstorage:grid"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.5d
+			x: 6.516666666666644d
+			y: 2.9758503401360556d
 		}
 		{
 			dependencies: ["4B209209709BF5E4"]
+			description: ["The Crafting Grid is a simple superset of the regular Grid. Now you have a Crafting Table built in, for ease of use."]
 			id: "43B8736F2D130E10"
 			shape: "diamond"
 			size: 0.97d
@@ -182,71 +169,46 @@
 				item: "refinedstorage:crafting_grid"
 				type: "item"
 			}]
-			x: 4.821428571428569d
-			y: 6.25d
-		}
-		{
-			dependencies: ["4B209209709BF5E4"]
-			id: "7650CA7E092F1D11"
-			shape: "diamond"
-			size: 0.97d
-			tasks: [{
-				id: "32D6B99FFFF83C9F"
-				item: "refinedstorage:pattern_grid"
-				type: "item"
-			}]
-			x: 4.147959183673471d
-			y: 6.494897959183675d
-		}
-		{
-			dependencies: ["4B209209709BF5E4"]
-			id: "12A90AABB2B9B4E3"
-			shape: "diamond"
-			size: 0.97d
-			tasks: [{
-				id: "18383B6A54DD3761"
-				item: "refinedstorage:fluid_grid"
-				type: "item"
-			}]
-			x: 4.357142857142861d
-			y: 5.785714285714285d
-		}
-		{
-			dependencies: ["0E200AD51EEE2750"]
-			id: "6AA3B68C52B4E265"
-			size: 0.8d
-			tasks: [{
-				id: "6BB6BAF779B91101"
-				item: "refinedstorage:wireless_fluid_grid"
-				type: "item"
-			}]
-			x: 7.6d
-			y: 7.2d
+			x: 5.866666666666644d
+			y: 3.3708503401360552d
 		}
 		{
 			dependencies: ["43B8736F2D130E10"]
+			description: [
+				"Wireless access is an absolute must-have when working away from your RS System a lot. Which will be often. "
+				"To use:"
+				"Link to the RS System either by clicking any Wireless RS tool on a Transmitter or Controller."
+				"R. Click to use. Additionally, a keybind can be set to open it. Default: &eALT&r + &eF&r."
+			]
 			id: "0E200AD51EEE2750"
 			tasks: [{
-				id: "6CF1FB7BC3B06D27"
-				item: "refinedstorage:wireless_crafting_monitor"
+				icon: "refinedstorageaddons:creative_wireless_crafting_grid"
+				id: "183BDF59A057D057"
+				item: "refinedstorageaddons:wireless_crafting_grid"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			title: "Wireless Crafting"
+			x: 6.516666666666644d
+			y: 4.475850340136056d
 		}
 		{
 			dependencies: ["4172A1B728825CAA"]
+			description: ["Cables can be used to connect Refined Storage blocks to the Controller. You can also connect them to any Refined Storage block connected to a Controller for the same result."]
 			id: "347A4B790B6E5DFF"
 			tasks: [{
+				count: 36L
 				id: "35C6902B84A98C66"
 				item: "refinedstorage:cable"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.5d
+			title: "Cabling"
+			x: 7.516666666666644d
+			y: 2.8051020408163225d
 		}
 		{
 			dependencies: ["0E200AD51EEE2750"]
+			description: ["Attach to a RS Network to allow for Wireless access. Add Range Upgrades to increase it's working range."]
+			icon: "refinedstorage:wireless_transmitter"
 			id: "4F79494843C24C3A"
 			tasks: [
 				{
@@ -260,34 +222,12 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["4F79494843C24C3A"]
-			id: "014E6942437BDD38"
-			tasks: [{
-				id: "4491FA4EBFFE3C6E"
-				item: "rsinfinitybooster:dimension_card"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 9.5d
-		}
-		{
-			dependencies: ["014E6942437BDD38"]
-			id: "7442D0639B2D2800"
-			shape: "hexagon"
-			tasks: [{
-				id: "56515CB3615AE1D4"
-				item: "rsinfinitybooster:infinity_card"
-				type: "item"
-			}]
-			x: 5.800000000000011d
-			y: 8.342857142857135d
+			x: 8.016666666666644d
+			y: 4.975850340136056d
 		}
 		{
 			dependencies: ["4172A1B728825CAA"]
+			description: ["The Disk Drive is required if you want to store anything on your Network. It can hold up to 10 Storage Disks of any kind, Item, Fluid, whatever."]
 			id: "5076877606BEF7A0"
 			shape: "diamond"
 			tasks: [{
@@ -295,11 +235,12 @@
 				item: "refinedstorage:disk_drive"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.5d
+			x: 7.016666666666644d
+			y: -1.1948979591836775d
 		}
 		{
 			dependencies: ["4172A1B728825CAA"]
+			description: ["Has a &opure&r capacity of &61000&r Items."]
 			id: "3F6F4D3AA9DF9424"
 			shape: "diamond"
 			tasks: [{
@@ -307,23 +248,21 @@
 				item: "refinedstorage:1k_storage_part"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4172A1B728825CAA"]
-			id: "47BBC9DEFA3783BA"
-			shape: "diamond"
-			tasks: [{
-				id: "4C39D6B0D8271866"
-				item: "refinedstorage:64k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.5d
+			x: 7.516666666666644d
+			y: -0.6948979591836775d
 		}
 		{
 			dependencies: ["347A4B790B6E5DFF"]
+			description: [
+				"Importers and Exporters do exactly what you think. They Import to the system, and Export out of the system."
+				"To use:"
+				"&l&41.&r Place an Importer or Exporter."
+				"&l&42.&r R. Click the block."
+				"&l&43.&r Set items inside to filter."
+				""
+				"Additionally you can add Speed, Stack Upgrades to it, set NBT, Import or Export Fluids, etc."
+			]
+			icon: "refinedstorage:exporter"
 			id: "1AF8EE6C488ADA9C"
 			shape: "rsquare"
 			tasks: [
@@ -338,11 +277,21 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: 5.5d
+			title: "Import / Export"
+			x: 9.516666666666644d
+			y: 2.8051020408163225d
 		}
 		{
 			dependencies: ["347A4B790B6E5DFF"]
+			description: [
+				"Constructor:"
+				"Can either Place Blocks from the RS System, or Drop stuff from the RS System."
+				""
+				"Destructor:"
+				"Can either Destroy Blocks and send them to the RS System, or Pickup dropped Items and send them to the RS System."
+				""
+				"Both support extra upgrades for Fortune, Speed, and more."
+			]
 			id: "5AFAD2DE1CD555BE"
 			shape: "rsquare"
 			tasks: [
@@ -357,11 +306,20 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: 6.5d
+			title: "Construction / Destruction"
+			x: 9.516666666666644d
+			y: 3.8051020408163225d
 		}
 		{
 			dependencies: ["347A4B790B6E5DFF"]
+			description: [
+				"If you want to access your RS System out maybe in a different Dimension, or you just don't want to run 3 cables to a Grid, you can use these."
+				"To use:"
+				"&l&41.&r Place a Network Transmitter, R. Click with a Network Card."
+				"&l&42.&r Place a Network Reciever, put the same Network Card inside."
+				"&l&43.&r Now you have your system elsewhere!"
+			]
+			icon: "refinedstorage:network_receiver"
 			id: "6F3C396F5D6D5728"
 			shape: "rsquare"
 			tasks: [
@@ -381,11 +339,13 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: 6.0d
+			title: "Networking"
+			x: 11.516666666666644d
+			y: 3.3051020408163225d
 		}
 		{
 			dependencies: ["5076877606BEF7A0"]
+			description: ["The Disk Manipulator can transfer Items from other Disks to other Disks, handy if you're migrating to larger-sized Disks."]
 			id: "615B0C1E3C9ECAAA"
 			size: 0.75d
 			tasks: [{
@@ -393,11 +353,17 @@
 				item: "refinedstorage:disk_manipulator"
 				type: "item"
 			}]
-			x: 5.547619047619051d
-			y: 1.021088435374132d
+			x: 6.564285714285695d
+			y: -1.6738095238095454d
 		}
 		{
 			dependencies: ["347A4B790B6E5DFF"]
+			description: [
+				"This simple little thing attaches to any Block with an Inventory and allows access to that inventory. "
+				"It supports extra options in the GUI."
+				""
+				"&oNote:&r Do not use this on a Drawer Controller. When loading a world it will break and disconnect."
+			]
 			id: "021BFBE258BE347C"
 			shape: "rsquare"
 			tasks: [{
@@ -405,12 +371,13 @@
 				item: "refinedstorage:external_storage"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.5d
+			x: 10.516666666666644d
+			y: 3.8051020408163225d
 		}
 		{
 			dependencies: ["4172A1B728825CAA"]
-			icon: "refinedstorage:security_card"
+			description: ["Have annoying friends who want your diamonds? Look no further. The Security Manager allows for customization of player interaction with the network. Link a Security Card and edit the permissions."]
+			icon: "refinedstorage:security_manager"
 			id: "11F1AAFF003813F9"
 			shape: "diamond"
 			size: 0.75d
@@ -427,23 +394,39 @@
 				}
 			]
 			title: "Security"
-			x: 4.125d
-			y: 0.75d
+			x: 5.141666666666644d
+			y: -1.5241496598639444d
 		}
 		{
-			dependencies: ["4172A1B728825CAA"]
+			dependencies: ["6A1A7F96C75D5C10"]
+			description: [
+				"Crafters are amazing blocks, that can craft Items inside Blocks connected to them!"
+				""
+				"To use for regular Crafting Recipes:"
+				"&l&41.&r Place a Crafter down and connect it to the Network. Keep the Crafter from facing &ointo&r a block."
+				"&l&42.&r Put a Pattern programmed to a Crafting Recipe inside the Crafter."
+				"&l&43.&r Inside any grid, the thing you want to make should show up with \"Craft\" text. Click it, set the amount you want crafted, and get crafting! Make sure you have the items required for the Craft in your RS System."
+				""
+				"To use for Processing Recipes:"
+				"&l&41.&r Place a Crafter facing into the block you want to craft with. This can be anything from a Furnace, Machine, even a Dispenser."
+				"&l&42.&r Place a Pattern programmed to a Processing recipe inside the Crafter."
+				"&l&43.&r Inside any grid, the thing you want to make should show up with \"Craft\" text. Click it, set the amount you want crafted, and get crafting! Make sure you have the items required for the Craft in your RS System. Also make sure the thing you want to Craft with has enough Fuel, Energy, etc. You cannot send Fuel with Patterns."
+				"{image:ftbquests:textures/item/crafter_example.png width:200 height:130 align:1}"
+			]
 			id: "7D19FC6B2D404DCE"
+			min_width: 300
 			shape: "pentagon"
 			tasks: [{
 				id: "7C6A050A99B15475"
 				item: "refinedstorage:crafter"
 				type: "item"
 			}]
-			x: 6.514285714285727d
-			y: 3.2357142857142804d
+			x: 10.016666666666644d
+			y: 0.8051020408163225d
 		}
 		{
 			dependencies: ["7D19FC6B2D404DCE"]
+			description: ["Adds a bunch more slots for Patterns. This is a better solution to just placing a ton of regular Crafters on a bunch of Machines and taking up space."]
 			id: "3B33A29CFD9B4327"
 			shape: "pentagon"
 			tasks: [{
@@ -451,11 +434,12 @@
 				item: "extrastorage:iron_crafter"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.5d
+			x: 11.002380952380918d
+			y: 0.8051020408163225d
 		}
 		{
 			dependencies: ["3B33A29CFD9B4327"]
+			description: ["The Gold Crafter adds even more slots for Patterns, but is also 5 times faster than the Iron Crafter!"]
 			id: "72A7DA1ABD053B49"
 			shape: "hexagon"
 			tasks: [{
@@ -463,11 +447,12 @@
 				item: "extrastorage:gold_crafter"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.0d
+			x: 12.002380952380918d
+			y: 0.30510204081632253d
 		}
 		{
 			dependencies: ["72A7DA1ABD053B49"]
+			description: ["This is a little ridiculous. 63 Pattern Slots, 20 times faster than the Gold Crafter."]
 			id: "449490DD3258E894"
 			shape: "octagon"
 			tasks: [{
@@ -475,11 +460,15 @@
 				item: "extrastorage:diamond_crafter"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 3.5d
+			x: 13.002380952380918d
+			y: 0.8051020408163225d
 		}
 		{
 			dependencies: ["449490DD3258E894"]
+			description: [
+				"So, funny story... 81 Slots, 100 times faster than a Diamond Crafter."
+				"I think crafting this block means you've beaten the game. Congrats."
+			]
 			id: "7ADE6FBB31211E63"
 			shape: "gear"
 			size: 1.2d
@@ -488,11 +477,12 @@
 				item: "extrastorage:netherite_crafter"
 				type: "item"
 			}]
-			x: 8.523809523809533d
-			y: 4.178571428571452d
+			x: 12.02619047619045d
+			y: 1.4836734693877744d
 		}
 		{
 			dependencies: ["4172A1B728825CAA"]
+			description: ["Speed Upgrades increase the Speed at which things work, such as Importing, Exporting, Constructing, Destructing, etc."]
 			id: "4DAFFCFE336F008C"
 			shape: "diamond"
 			size: 0.75d
@@ -501,11 +491,12 @@
 				item: "refinedstorage:speed_upgrade"
 				type: "item"
 			}]
-			x: 4.125d
-			y: 1.5d
+			x: 5.516666666666644d
+			y: -1.1491496598639444d
 		}
 		{
 			dependencies: ["4DAFFCFE336F008C"]
+			description: ["Stack Upgrades are super helpful when paired with Speed Upgrades. Adding one increases the amount of Items something can work with. You can add as many as you like to Importers, Exporters, etc. It's recommended to do 3 Speed and 1 Stack in any device."]
 			id: "7E94FAA5334C54A4"
 			shape: "diamond"
 			size: 0.75d
@@ -514,24 +505,25 @@
 				item: "refinedstorage:stack_upgrade"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.125d
+			x: 5.891666666666644d
+			y: -1.5241496598639444d
 		}
 		{
-			dependencies: ["43B8736F2D130E10"]
+			dependencies: ["7D19FC6B2D404DCE"]
+			description: ["The Crafter Monitor shows all active Recipes being Crafted by Crafters. This is useful if you tried to make something Craft automatically, but it's never made, so you can see if it's crafting or not."]
 			id: "18AD3389A288925C"
 			shape: "diamond"
-			size: 0.97d
 			tasks: [{
 				id: "03F639615FBF08BB"
 				item: "refinedstorage:crafting_monitor"
 				type: "item"
 			}]
-			x: 5.597619047619034d
-			y: 6.13333333333334d
+			x: 9.516666666666644d
+			y: -1.1948979591836775d
 		}
 		{
 			dependencies: ["3F6F4D3AA9DF9424"]
+			description: ["Holds &e4000&r Items. (&e4k&r)"]
 			id: "3C46043749FD947D"
 			shape: "diamond"
 			tasks: [{
@@ -539,11 +531,12 @@
 				item: "refinedstorage:4k_storage_part"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 1.5d
+			x: 8.016666666666644d
+			y: -1.1948979591836775d
 		}
 		{
 			dependencies: ["3C46043749FD947D"]
+			description: ["Holds &a16000&r Items. (&a16k&r)"]
 			id: "4F20EF93BF779569"
 			shape: "diamond"
 			tasks: [{
@@ -551,11 +544,12 @@
 				item: "refinedstorage:16k_storage_part"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.0d
+			x: 7.516666666666644d
+			y: -1.6948979591836775d
 		}
 		{
 			dependencies: ["4F20EF93BF779569"]
+			description: ["Holds &b64000&r Items. (&b64k&r)"]
 			id: "250EAF1C761CC404"
 			shape: "diamond"
 			tasks: [{
@@ -563,11 +557,12 @@
 				item: "refinedstorage:64k_storage_part"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.5d
+			x: 8.016666666666644d
+			y: -2.1948979591836775d
 		}
 		{
 			dependencies: ["250EAF1C761CC404"]
+			description: ["Holds &6256000&r Items. (&6256k&r)"]
 			id: "449BD24020BEDB19"
 			shape: "diamond"
 			tasks: [{
@@ -575,11 +570,12 @@
 				item: "extradisks:256k_storage_part"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 8.516666666666644d
+			y: -1.6948979591836775d
 		}
 		{
 			dependencies: ["449BD24020BEDB19"]
+			description: ["Holds &e1024000&r Items. (&e1024k&r)"]
 			id: "2A2CE0A19A131B98"
 			shape: "diamond"
 			tasks: [{
@@ -587,11 +583,12 @@
 				item: "extradisks:1024k_storage_part"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 8.516666666666644d
+			y: -2.6948979591836775d
 		}
 		{
 			dependencies: ["2A2CE0A19A131B98"]
+			description: ["Holds &24096000&r Items. (&24096k&r)"]
 			id: "1FE3C9DDC8361F83"
 			shape: "diamond"
 			tasks: [{
@@ -599,11 +596,12 @@
 				item: "extradisks:4096k_storage_part"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.5d
+			x: 9.016666666666644d
+			y: -2.1948979591836775d
 		}
 		{
 			dependencies: ["1FE3C9DDC8361F83"]
+			description: ["Holds &31638400&r Items. (&316384k&r)"]
 			id: "2C7CC40D9456CF86"
 			shape: "diamond"
 			tasks: [{
@@ -611,11 +609,12 @@
 				item: "extradisks:16384k_storage_part"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -0.5d
+			x: 9.016666666666644d
+			y: -3.1948979591836775d
 		}
 		{
 			dependencies: ["2C7CC40D9456CF86"]
+			description: ["Holds &565536000&r Items. (&565536k&r)"]
 			id: "114E7B7857B39FBE"
 			shape: "diamond"
 			tasks: [{
@@ -623,11 +622,12 @@
 				item: "extradisks:65536k_storage_part"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 0.0d
+			x: 9.516666666666644d
+			y: -2.6948979591836775d
 		}
 		{
 			dependencies: ["114E7B7857B39FBE"]
+			description: ["Holds &4262144&r Items. (&4252m&r)"]
 			id: "6FAFB708BF97DFF9"
 			shape: "diamond"
 			tasks: [{
@@ -635,11 +635,12 @@
 				item: "extradisks:262144k_storage_part"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.0d
+			x: 9.516666666666644d
+			y: -3.6948979591836775d
 		}
 		{
 			dependencies: ["6FAFB708BF97DFF9"]
+			description: ["Holds &21048576&r Items. (&21048m&r)"]
 			id: "6844253313DB8373"
 			shape: "diamond"
 			tasks: [{
@@ -647,11 +648,12 @@
 				item: "extradisks:1048576k_storage_part"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -0.5d
+			x: 10.016666666666644d
+			y: -3.1948979591836775d
 		}
 		{
 			dependencies: ["6844253313DB8373"]
+			description: ["                                                                     &l&o&n&8INFINITY"]
 			id: "1E949C3E39386CEC"
 			shape: "octagon"
 			size: 1.2d
@@ -660,112 +662,16 @@
 				item: "extradisks:infinite_storage_part"
 				type: "item"
 			}]
-			x: 10.2d
-			y: -0.6d
-		}
-		{
-			dependencies: ["47BBC9DEFA3783BA"]
-			id: "345E87F6556FC7F3"
-			shape: "diamond"
-			tasks: [{
-				id: "67C50BD46B94B42E"
-				item: "refinedstorage:256k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["345E87F6556FC7F3"]
-			hide: false
-			id: "3D585207D845FF52"
-			shape: "diamond"
-			tasks: [{
-				id: "0E1CDD7F79226CD1"
-				item: "refinedstorage:1024k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3D585207D845FF52"]
-			id: "636051CC75D6DD6F"
-			shape: "diamond"
-			tasks: [{
-				id: "3EA7B87A1CFB39B7"
-				item: "refinedstorage:4096k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["636051CC75D6DD6F"]
-			id: "265D36686BF59D44"
-			shape: "diamond"
-			tasks: [{
-				id: "10C6CF59DF8E485E"
-				item: "extradisks:16384k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["265D36686BF59D44"]
-			id: "06164A77014CDB83"
-			shape: "diamond"
-			tasks: [{
-				id: "59AECA0D34DF420A"
-				item: "extradisks:65536k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["06164A77014CDB83"]
-			id: "3549258E20D1787F"
-			shape: "diamond"
-			tasks: [{
-				id: "4998D82C9020EA1D"
-				item: "extradisks:262144k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3549258E20D1787F"]
-			id: "4D1E68C4456CA843"
-			shape: "diamond"
-			tasks: [{
-				id: "4FB8C4E16DA526A1"
-				item: "extradisks:1048576k_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4D1E68C4456CA843"]
-			id: "7BF4B0BEDBE39BFA"
-			shape: "hexagon"
-			size: 1.2d
-			tasks: [{
-				id: "15E2BF136C2F0A56"
-				item: "extradisks:infinite_fluid_storage_part"
-				type: "item"
-			}]
-			x: 5.034353741496588d
-			y: -3.829251700680267d
+			x: 11.223809523809486d
+			y: -3.1734693877551123d
 		}
 		{
 			dependencies: ["347A4B790B6E5DFF"]
+			description: ["Interfaces are basically Importers and Exporters all-in-one, but you can now export up to Stacks of items."]
 			icon: "refinedstorage:interface"
 			id: "64BF1E3DB9CBBB2E"
 			shape: "rsquare"
+			subtitle: "Not like AE2's"
 			tasks: [{
 				id: "6539A4F3E5D7AA17"
 				item: {
@@ -779,40 +685,37 @@
 				type: "item"
 			}]
 			title: "Interfaces!"
-			x: 9.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["0048CFCE5675B1EE"]
-			hide: true
-			icon: "ae2:certus_quartz_crystal"
-			id: "384319551B959E84"
-			invisible: true
-			invisible_until_tasks: 1
-			shape: "gear"
-			tasks: [
-				{
-					count: 32L
-					id: "2B801D86924E2EEB"
-					item: "ae2:certus_quartz_crystal"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "330818ED6AB23ADA"
-					item: "ae2:charged_certus_quartz_crystal"
-					type: "item"
-				}
-			]
-			title: "Applied Energistics 2"
-			x: 0.5d
-			y: 1.0d
+			x: 10.516666666666644d
+			y: 2.8051020408163225d
 		}
 		{
 			dependencies: [
-				"020D21BAB43DAAE0"
-				"384319551B959E84"
+				"0048CFCE5675B1EE"
+				"2D9528302A7F1C4B"
 			]
+			description: [
+				"Applied Energistics 2 is a Digital Storage mod aimed at a more broad scale than Refined Storage."
+				"AE2 adds a lot more \"digital\" stuff, even Spacial Drives that can hold a whole structure- and you, inside a Circuit! "
+				""
+				"Certus Quartz can be obtained either by breaking Clusters, or growing them with Fertilizer in a Thermopneumatic Plant."
+			]
+			hide: true
+			icon: "ae2:certus_quartz_crystal"
+			id: "384319551B959E84"
+			invisible_until_tasks: 1
+			shape: "gear"
+			tasks: [{
+				count: 8L
+				id: "2B801D86924E2EEB"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Applied Energistics 2"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["480D82CC91E4449E"]
 			description: ["The Inscriber is used to create finished Processors."]
 			id: "30696F02128F919D"
 			tasks: [{
@@ -820,40 +723,70 @@
 				item: "ae2:inscriber"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["30696F02128F919D"]
+			description: ["Logic Processors are key components for, well, logic operations. Makes sense."]
+			icon: "ae2:logic_processor"
 			id: "3067F149CA62049B"
-			tasks: [{
-				id: "0D1C99D361721B41"
-				item: "ae2:logic_processor"
-				type: "item"
-			}]
-			x: -1.0d
+			tasks: [
+				{
+					id: "6F117AB3F120F55A"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+				{
+					id: "5ED6ABCFFB53EB56"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+			]
+			title: "Logic"
+			x: -3.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["30696F02128F919D"]
+			description: ["Engineering Processors are made to handle complex tasks, making things function like never before."]
+			icon: "ae2:engineering_processor"
 			id: "45B397A242BF5A57"
-			tasks: [{
-				id: "5F9F3CEC039F14CA"
-				item: "ae2:engineering_processor"
-				type: "item"
-			}]
-			x: -1.5d
+			tasks: [
+				{
+					id: "216650A5A391B5E7"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+				{
+					id: "2690859D501C3FEC"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Engineering"
+			x: -3.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["30696F02128F919D"]
+			description: ["Calculation Processors are used as extreme number churners. You send anything into it and it'll get it done in 0.00001 milliseconds."]
+			icon: "ae2:calculation_processor"
 			id: "39BFE4A9D012C19E"
-			tasks: [{
-				id: "06A617D562510D55"
-				item: "ae2:calculation_processor"
-				type: "item"
-			}]
-			x: -1.0d
+			tasks: [
+				{
+					id: "4C63668F21292156"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					id: "723B90F8BE873631"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+			]
+			title: "Calculation"
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -864,8 +797,8 @@
 				item: "ae2:fluix_glass_cable"
 				type: "item"
 			}]
-			x: -2.9914965986394932d
-			y: 1.488265306122475d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5F2DEB1C5F3852E0"]
@@ -876,7 +809,7 @@
 				item: "ae2:fluix_covered_cable"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -888,7 +821,7 @@
 				item: "ae2:fluix_smart_cable"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: 0.5d
 		}
 		{
@@ -900,7 +833,7 @@
 				item: "ae2:fluix_covered_dense_cable"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -912,7 +845,7 @@
 				item: "ae2:fluix_smart_dense_cable"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -927,7 +860,7 @@
 				item: "ae2:terminal"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: 0.0d
 		}
 		{
@@ -939,7 +872,7 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: -0.5d
 		}
 		{
@@ -951,7 +884,7 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
@@ -963,7 +896,7 @@
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: 0.5d
 		}
 		{
@@ -974,8 +907,8 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
-			x: -2.9914965986394932d
-			y: -1.011734693877525d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6F97F92E0052C131"]
@@ -986,8 +919,8 @@
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
-			x: -1.9914965986394932d
-			y: -2.011734693877525d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["60B54178CC0BF09B"]
@@ -998,7 +931,7 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -1010,7 +943,7 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: -2.5d
 		}
 		{
@@ -1022,7 +955,7 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -1034,7 +967,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -1046,7 +979,7 @@
 				item: "ae2additions:cell_component_1024"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -2.5d
 		}
 		{
@@ -1058,7 +991,7 @@
 				item: "ae2additions:cell_component_4096"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -3.5d
 		}
 		{
@@ -1070,7 +1003,7 @@
 				item: "ae2additions:cell_component_16384"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: -3.0d
 		}
 		{
@@ -1083,14 +1016,14 @@
 				item: "ae2additions:cell_component_65536"
 				type: "item"
 			}]
-			x: 0.27551020408163396d
-			y: -3.7843537414965986d
+			x: -1.6500000000000001d
+			y: -3.85d
 		}
 		{
 			dependencies: ["5F2DEB1C5F3852E0"]
 			id: "7D4FC821B2D99255"
 			shape: "hexagon"
-			size: 0.78d
+			size: 0.8d
 			tasks: [
 				{
 					id: "7DDFC91C7C32FE16"
@@ -1104,8 +1037,8 @@
 				}
 			]
 			title: "Cores"
-			x: -2.9710884353741847d
-			y: 0.2897959183673713d
+			x: -4.963095238095249d
+			y: 0.02729591836733647d
 		}
 		{
 			dependencies: ["6F97F92E0052C131"]
@@ -1116,8 +1049,8 @@
 				item: "ae2additions:super_cell_component_1k"
 				type: "item"
 			}]
-			x: -2.9914965986394932d
-			y: -2.511734693877525d
+			x: -5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3964411356A28AE7"]
@@ -1128,8 +1061,8 @@
 				item: "ae2additions:super_cell_component_4k"
 				type: "item"
 			}]
-			x: -2.4914965986394932d
-			y: -3.011734693877525d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5547435BC857AC41"]
@@ -1140,8 +1073,8 @@
 				item: "ae2additions:super_cell_component_16k"
 				type: "item"
 			}]
-			x: -3.4914965986394932d
-			y: -3.011734693877525d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["13400DD6AED7948A"]
@@ -1152,8 +1085,8 @@
 				item: "ae2additions:super_cell_component_64k"
 				type: "item"
 			}]
-			x: -2.9914965986394932d
-			y: -3.511734693877525d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4807130D2EFE569F"]
@@ -1164,8 +1097,8 @@
 				item: "ae2additions:super_cell_component_256k"
 				type: "item"
 			}]
-			x: -2.4914965986394932d
-			y: -4.011734693877525d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5E81302C29F337CF"]
@@ -1176,8 +1109,8 @@
 				item: "ae2additions:super_cell_component_1024k"
 				type: "item"
 			}]
-			x: -3.4914965986394932d
-			y: -4.011734693877525d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["50B49D2B790A4844"]
@@ -1188,8 +1121,8 @@
 				item: "ae2additions:super_cell_component_4096k"
 				type: "item"
 			}]
-			x: -2.9914965986394932d
-			y: -4.511734693877525d
+			x: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3BCFCD16F34952A3"]
@@ -1200,8 +1133,8 @@
 				item: "ae2additions:super_cell_component_16m"
 				type: "item"
 			}]
-			x: -2.9914965986394932d
-			y: -5.511734693877525d
+			x: -5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["15187EC7247B5E77"]
@@ -1213,8 +1146,8 @@
 				item: "ae2additions:super_cell_component_65m"
 				type: "item"
 			}]
-			x: -2.934693877551055d
-			y: -6.583163265306098d
+			x: -4.8d
+			y: -6.6d
 		}
 		{
 			dependencies: ["6F97F92E0052C131"]
@@ -1226,8 +1159,8 @@
 				item: "ae2:spatial_cell_component_2"
 				type: "item"
 			}]
-			x: -3.9914965986394932d
-			y: -2.011734693877525d
+			x: -5.991496598639493d
+			y: -1.928571428571427d
 		}
 		{
 			dependencies: ["012F88197D40C375"]
@@ -1239,8 +1172,8 @@
 				item: "ae2:spatial_cell_component_16"
 				type: "item"
 			}]
-			x: -4.491496598639493d
-			y: -1.511734693877525d
+			x: -6.491496598639493d
+			y: -1.428571428571427d
 		}
 		{
 			dependencies: ["3E42DB29BAA786C5"]
@@ -1253,8 +1186,8 @@
 				item: "ae2:spatial_cell_component_128"
 				type: "item"
 			}]
-			x: -4.720408163265333d
-			y: -2.2610544217687014d
+			x: -6.720408163265333d
+			y: -2.1778911564626036d
 		}
 		{
 			dependencies: [
@@ -1262,7 +1195,7 @@
 				"3067F149CA62049B"
 				"45B397A242BF5A57"
 			]
-			description: ["The Energy Accepter turns Forge Energy or Botania Mana into AE Energy."]
+			description: ["The Rectifier converts Forge Energy (FE) to AE Energy (AE)."]
 			id: "7EEE53E5D519F83F"
 			shape: "rsquare"
 			size: 1.3d
@@ -1271,8 +1204,8 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -4.963095238095249d
+			y: 3.0630102040816283d
 		}
 		{
 			dependencies: ["7EEE53E5D519F83F"]
@@ -1304,19 +1237,7 @@
 				}
 			]
 			title: "Storing AE"
-			x: -2.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["7EEE53E5D519F83F"]
-			id: "5B781F43FA04F74C"
-			tasks: [{
-				id: "501FBA1CBDD29FDA"
-				item: "ae2:cell_workbench"
-				type: "item"
-			}]
-			title: "Cell Surgery"
-			x: -3.5d
+			x: -4.5d
 			y: 5.5d
 		}
 		{
@@ -1353,7 +1274,7 @@
 				}
 			]
 			title: "Auto Crafting Storage"
-			x: -6.5d
+			x: -8.5d
 			y: -1.0d
 		}
 		{
@@ -1371,7 +1292,7 @@
 				type: "item"
 			}]
 			title: "Molecular Assembly"
-			x: -7.0d
+			x: -9.0d
 			y: 0.0d
 		}
 		{
@@ -1391,7 +1312,7 @@
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -1404,7 +1325,7 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: 3.0d
 		}
 		{
@@ -1415,7 +1336,7 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -1430,18 +1351,87 @@
 				type: "item"
 			}]
 			title: "&5The MEGA Controller"
-			x: -6.0d
+			x: -8.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["0048CFCE5675B1EE"]
-			description: ["The Questline is currently off-limits due to a full rework of both mods and the Questline, coming soon to a Sky near you."]
-			hide: true
-			icon: "thermal:lock"
-			id: "5CA8BBC5085945BF"
-			title: "&4NOTE"
-			x: 1.0d
-			y: 0.0d
+			dependencies: ["5514D78050505642"]
+			description: ["Processor Cores provide special functionality to some components and blocks. They aren't very stable though, so take caution."]
+			icon: "refinedstorage:construction_core"
+			id: "4E14F23CB10FB5F5"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "4A7B8B88475710A1"
+					item: "refinedstorage:construction_core"
+					type: "item"
+				}
+				{
+					id: "4353B930AFA11645"
+					item: "refinedstorage:destruction_core"
+					type: "item"
+				}
+			]
+			title: "Cores"
+			x: 4.016666666666644d
+			y: -0.6948979591836775d
+		}
+		{
+			dependencies: ["4172A1B728825CAA"]
+			description: ["Patterns store small bits of programmable info, used to configure Blocks to do specific things."]
+			id: "101CD4E9F857E1A5"
+			tasks: [{
+				id: "70E11288CD99BD2B"
+				item: "refinedstorage:pattern"
+				type: "item"
+			}]
+			x: 7.516666666666644d
+			y: 0.8051020408163225d
+		}
+		{
+			dependencies: ["101CD4E9F857E1A5"]
+			description: [
+				"The Programming Grid is used for programming Patterns with Crafting Recipes to be used in Crafters."
+				""
+				"To use:"
+				""
+				"&l&41.&r Place your Patterns inside the slot on the right with the arrow below."
+				"&l&42.&r Make a Recipe! When using Crafting, you just make a normal Crafting Recipe."
+				"&l&42.5.&r When making a Processing recipe, you will be able to send Items to a Machine, or Furnace, or blocks like that, and get Items made that way."
+				"&l&43.&r When you're finished, hit the Button with the Arrow below the slot for Patterns, and it'll create a Pattern with the Recipe! Toss it into a Crafter to use."
+			]
+			id: "6A1A7F96C75D5C10"
+			tasks: [{
+				id: "2E94D830141BA9F8"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			x: 8.516666666666644d
+			y: 0.8051020408163225d
+		}
+		{
+			dependencies: ["7D19FC6B2D404DCE"]
+			description: ["This Block allows for easy management of your Crafters. Instead of having to add Patterns to them by hand, you can access all Crafters on the RS Network with this Block, and insert Patterns remotely. "]
+			id: "30FCCAECBE4EE0C4"
+			shape: "diamond"
+			tasks: [{
+				id: "55AC3CFC6DA28EF3"
+				item: "refinedstorage:crafter_manager"
+				type: "item"
+			}]
+			x: 10.516666666666644d
+			y: -1.1948979591836775d
+		}
+		{
+			dependencies: ["384319551B959E84"]
+			id: "480D82CC91E4449E"
+			tasks: [{
+				id: "14060508A25A7254"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	title: "&bDigital Storage"

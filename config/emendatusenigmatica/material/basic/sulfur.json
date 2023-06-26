@@ -5,7 +5,7 @@
   "processedTypes": [
     "ore",
     "storage_block",
-	"gem",
+	  "gem",
     "dust"
   ],
   "properties": {

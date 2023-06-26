@@ -44,6 +44,7 @@ ServerEvents.recipes(event =>{
 	event.remove({ id: 'thermal:fire_charge/signalum_ingot_4'})
 	event.remove({ id: 'thermal:fire_charge/invar_ingot_3'})
 	event.remove({ id: 'immersiveengineering:crafting/electrum_mix'})
+	event.remove({ id: 'immersiveengineering:crafting/constantan_mix'})
 	event.remove({ id: 'thermal:bronze_dust_4'})
 	event.remove({ id: 'thermal:invar_dust_3'})
 	event.remove({ id: 'thermal:invar_dust_3'})

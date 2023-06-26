@@ -13,7 +13,7 @@ ServerEvents.recipes(event =>{
         for (const ingot of gear_ingots[mod]) {
             event.remove({output: `emendatusenigmatica:${ingot}_gear`})
             event.recipes.thermal.press([`emendatusenigmatica:${ingot}_gear`],[`4x ${mod}:${ingot}_ingot`, "immersiveengineering:mold_gear"]).energy(2400)
-            event.recipes.immersiveengineering.metal_press(`emendatusenigmatica:${ingot}_gear`, `4x ${mod}:${ingot}_ingot`, "immersiveengineering:mold_gear").energy(2400)
+            event.custom({type: 'immersiveengineering:metal_press', energy: 2400, input: { base_ingredient: {item: `${mod}:${ingot}_ingot`}, count: 4 }, mold: 'immersiveengineering:mold_gear', result: {item: `emendatusenigmatica:${ingot}_gear`}})
         }
     }
     event.recipes.thermal.press(['pneumaticcraft:compressed_iron_gear'], ['6x pneumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_gear']).energy(2400)
@@ -44,13 +44,13 @@ ServerEvents.recipes(event =>{
 ServerEvents.recipes(event =>{
     let mold = 'immersiveengineering:mold_gear';
     let e = (id) => `emendatusenigmatica:${id}`
-    event.recipes.immersiveengineering.metal_press(e('lumium_gear'), '4x emendatusenigmatica:lumium_ingot', mold)
-    event.recipes.immersiveengineering.metal_press(e('signalum_gear'), '4x emendatusenigmatica:signalum_ingot', mold)
     event.replaceInput({mod: 'thermal'}, 'thermal:press_gear_die', 'immersiveengineering:mold_gear')
     event.replaceInput({mod: 'emendatusenigmatica'}, 'thermal:press_gear_die', 'immersiveengineering:mold_gear')
     event.recipes.thermal.press(['pneumaticcraft:compressed_iron_gear'], ['6x pnumaticcraft:ingot_iron_compressed', 'immersiveengineering:mold_gear']).energy(2400)
     event.recipes.thermal.press(['emendatusenigmatica:lapis_gear'], ['12x minecraft:lapis_lazuli', 'immersiveengineering:mold_gear']).energy(2400)
-    event.recipes.immersiveengineering.metal_press(e('lapis_gear'), '12x minecraft:lapis_lazuli', mold)
+    event.recipes.thermal.press(['emendatusenigmatica:diamond_gear'], ['4x minecraft:diamond', 'immersiveengineering:mold_gear']).energy(2400)
+    event.custom({type: 'immersiveengineering:metal_press', energy: 2400, input: { item: 'minecraft:lapis_lazuli', count: 12 }, mold: 'immersivengineering:mold_gear', result: {item: 'emendatusenigmatica:lapis_gear'}})
+    event.custom({type: 'immersiveengineering:metal_press', energy: 2400, input: { item: 'minecraft:diamond', count: 4 }, mold: 'immersivengineering:mold_gear', result: {item: 'emendatusenigmatica:diamond_gear'}})
     
     
     

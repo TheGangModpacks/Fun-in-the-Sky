@@ -862,9 +862,12 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["1BB7C983C892EDB9"]
+			dependencies: [
+				"2FF3AB2C7BC251F9"
+				"1F788C5B5AF4DEF7"
+			]
 			description: ["Obtaining Silicon unlocks the Digital Storage Questline!"]
-			icon: "refinedstorage:red_creative_controller"
+			icon: "emendatusenigmatica:silicon_gem"
 			id: "0048CFCE5675B1EE"
 			shape: "rsquare"
 			tasks: [{
@@ -874,8 +877,8 @@
 				type: "item"
 			}]
 			title: "Digital Storage!"
-			x: 2.5d
-			y: 1.0d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0E51BD89CBC21868"]
@@ -908,7 +911,7 @@
 			}]
 			title: "Mystical Agriculture!"
 			x: -2.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["16EFE494874CE030"]
@@ -965,7 +968,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1BB7C983C892EDB9"]
+			dependencies: ["648D003C88FD41AB"]
 			description: ["Crafting Dielectric Paste opens the Powah! Questline."]
 			id: "1F788C5B5AF4DEF7"
 			shape: "rsquare"
@@ -975,8 +978,8 @@
 				type: "item"
 			}]
 			title: "Powah!"
-			x: 3.5d
-			y: 0.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["62303264E2676947"]
@@ -1891,8 +1894,8 @@
 				type: "item"
 			}]
 			title: "Hexerei"
-			x: 2.5d
-			y: -1.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1909,7 +1912,7 @@
 			}]
 			title: "Extended Crafting, Part 1"
 			x: -2.0d
-			y: 1.5d
+			y: 1.0d
 		}
 	]
 	title: "&fProgression"

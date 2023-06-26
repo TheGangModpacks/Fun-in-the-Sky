@@ -9,4 +9,6 @@ ServerEvents.recipes(event =>{
     event.shaped(ext('advanced_component'), ['aac', 'bba', 'bba'], {a: 'emendatusenigmatica:lumium_ingot', b: ext('black_iron_ingot'), c: ext('basic_component')}).id('fits:shaped/ext/advanced_component')
     event.shaped(ext('advanced_catalyst'), ['aba', 'bcb', 'aba'], {a: 'emendatusenigmatica:lumium_plate', b: ext('advanced_component'), c: ext('basic_catalyst')}).id('fits:shaped/ext/advanced_catalyst')
 
+    event.shaped(ext('ender_component'), ['aac', 'bba', 'bba'], {a: ext('ender_ingot'), b: ext('black_iron_ingot'), c: ext('advanced_component')}).id('fits:shaped/ext/ender_component')
+    event.shaped(ext('ender_catalyst'), ['aba', 'bcb', 'aba'], {a: 'minecraft:ender_eye', b: ext('ender_component'), c: ext('advanced_catalyst')}).id('fits:shaped/ext/ender_catalyst')
 })

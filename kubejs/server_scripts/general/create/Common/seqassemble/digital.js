@@ -41,9 +41,10 @@ ServerEvents.recipes(event =>{
 		]
 		},
 		{
-			type: 'create:pressing',
+			type: 'create:deploying',
 			ingredients: [
-			Item.of('kubejs:incomplete_advanced_processor').toJson()
+			Item.of('kubejs:incomplete_advanced_processor').toJson(),
+			Item.of('powah:crystal_niotic').toJson()
 			],
 			results: [
 		Item.of('kubejs:incomplete_advanced_processor').toJson()
@@ -100,9 +101,10 @@ ServerEvents.recipes(event =>{
 		]
 		},
 		{
-			type: 'create:pressing',
+			type: 'create:deploying',
 			ingredients: [
-			Item.of('kubejs:incomplete_improved_processor').toJson()
+			Item.of('kubejs:incomplete_improved_processor').toJson(),
+			Item.of('powah:crystal_blazing').toJson()
 			],
 			results: [
 		Item.of('kubejs:incomplete_improved_processor').toJson()
@@ -159,9 +161,10 @@ ServerEvents.recipes(event =>{
 		]
 		},
 		{
-			type: 'create:pressing',
+			type: 'create:deploying',
 			ingredients: [
-			Item.of('kubejs:incomplete_basic_processor').toJson()
+			Item.of('kubejs:incomplete_basic_processor').toJson(),
+			Item.of('powah:steel_energized').toJson()
 			],
 			results: [
 		Item.of('kubejs:incomplete_basic_processor').toJson()

@@ -557,10 +557,10 @@
 				""
 				"Additionally, Create offers many different blocks for automating the world. Looks way better than random pipes and garden cloches everywhere."
 			]
+			hide: true
 			hide_dependency_lines: true
 			icon: "create:basin"
 			id: "6C34C54C8169ABCC"
-			invisible: true
 			invisible_until_tasks: 1
 			shape: "pentagon"
 			tasks: [{
@@ -714,11 +714,6 @@
 			]
 			hide: true
 			id: "4E7EAF8D9827D47D"
-			rewards: [{
-				id: "1DF5FC268C1268D1"
-				item: "supplementaries:pancake"
-				type: "item"
-			}]
 			shape: "diamond"
 			subtitle: "And it's strong enough to pick up pancake!"
 			tasks: [{
@@ -917,10 +912,10 @@
 		{
 			dependencies: ["764927A0428B3988"]
 			description: ["Create has a bunch of extra items for things like redstone control. Check them out, I promise they're useful."]
+			hide: true
 			hide_dependency_lines: true
 			icon: "create:turntable"
 			id: "39DE977D710C790B"
-			invisible: true
 			invisible_until_tasks: 1
 			shape: "pentagon"
 			tasks: [{
@@ -1129,6 +1124,7 @@
 				""
 				"You can craft Covers for your Crafters if you want to make items using the same Crafter setup without having to take most of it down."
 			]
+			hide: true
 			id: "08946BD8A5EC0153"
 			shape: "diamond"
 			tasks: [{
@@ -1148,6 +1144,7 @@
 				""
 				"&oThe Gang Modpacks is not liable for any lost arms, legs, hands, other limbs not kept outside of the Crushing Wheels."
 			]
+			hide: true
 			id: "3B55A2EEA3D22FD9"
 			shape: "diamond"
 			tasks: [{

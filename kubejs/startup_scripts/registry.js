@@ -12,7 +12,6 @@ StartupEvents.registry('item', event => {
 	event.create('leaded_iron_compound').displayName('Leaded Iron Compound')
 	event.create('leaded_iron').displayName('Leaded Iron').tag('forge:ingots').tag('forge:ingots/leaded_iron')
 	event.create('apatite_essence').displayName('Apatite Essence')
-	event.create('mysticalagriculture:silicon_essence').displayName('Silicon Essence')
 	event.create('fluorite_essence').displayName('Fluorite Essence')
 	event.create('sulfuric_essence').displayName('Sulfuric Essence')
 	event.create('cinnabar_essence').displayName('Cinnabar Essence')
@@ -44,7 +43,8 @@ StartupEvents.registry('block', event => {
 	event.create('compressed_gravel_x2', 'falling').material('dirt').hardness(1.3).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 	event.create('compressed_gravel_x3', 'falling').material('dirt').hardness(1.5).tagBlock('minecraft:mineable/shovel').requiresTool(true)
 	event.create('archaic_gold_block').tagBlock('minecraft:mineable/pickaxe').tag('forge:storage_blocks').tag('forge:storage_blocks/archaic_gold').material('copper').requiresTool(true)
-	event.create('meteorite').tagBlock('minecraft:mineable/pickaxe').tagBlock('forge:needs_netherite_tool').material('gilded_blackstone').requiresTool(true).hardness(6.0).resistance(6.0).noDrops()
+	event.create('meteorite').tagBlock('minecraft:mineable/pickaxe').tagBlock('forge:needs_netherite_tool').material('gilded_blackstone').requiresTool(true).hardness(6.0).resistance(6.0)
+	event.create('block_of_silicon').tagBlock('minecraft:mineable/hoe').material('honey').requiresTool(false).hardness(3.2).resistance(6.0)
 })
 StartupEvents.registry('fluid', event => {
 	event.create('blitz_blood')
@@ -88,5 +88,7 @@ StartupEvents.registry('fluid', event => {
 		.displayName('Melted Bitumen'),
 	event.create('liquifacted_tar')
 		.thickTexture(0x0D0D14)
-		.displayName('Liquifacted Tar')
+		.displayName('Liquifacted Tar'),
+	event.create('witched_beeswax')
+		.thinTexture(0x69353a)
 })

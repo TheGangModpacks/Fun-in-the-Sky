@@ -15,8 +15,6 @@ event.replaceInput([
     {id: 'create:crafting/kinetics/sequenced_gearshift'}],
      'extendedgears:iron_cogwheel', 'extendedgears:steel_cogwheel')
 //Cogwheels
-event.shaped(Item.of(CR('andesite_alloy')),
-[ 'AB', 'BA'],{ A: 'pneumaticcraft:ingot_iron_compressed', B: 'emendatusenigmatica:zinc_ingot'})
 event.shaped(Item.of(EX('copper_cogwheel', ), 4),
 [ 'AAA', 'ABA', 'AAA'],{ A: (MC('copper_ingot')), B: (CR('andesite_alloy'))})
 event.shaped(Item.of(EX('iron_cogwheel')),

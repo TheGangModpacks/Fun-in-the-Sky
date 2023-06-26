@@ -12,6 +12,7 @@
 		{
 			dependencies: ["5F3CABDA72BC6D60"]
 			hide: true
+			icon: "minecraft:enchanting_table"
 			id: "3D37DB12109DFFCF"
 			invisible_until_tasks: 1
 			rewards: [{
@@ -336,6 +337,7 @@
 		}
 		{
 			dependencies: ["149095789232B82B"]
+			icon: "apotheosis:reforging_table"
 			id: "3E2F05E1AB290D2C"
 			rewards: [{
 				id: "43ED31709292F4F0"
