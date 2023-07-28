@@ -25,3 +25,4 @@ ServerEvents.recipes(event => {
     .addRoll(0.20, 'netherite')
 
 })
+Might come back to this in the future™️
