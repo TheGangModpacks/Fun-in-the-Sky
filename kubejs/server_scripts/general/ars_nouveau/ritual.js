@@ -1,4 +1,4 @@
-ServerEvents.recipes(event =>{
+/*ServerEvents.recipes(event =>{
     event.recipes.summoningrituals.altar('minecraft:oak_sapling')
     .itemOutput("ars_nouveau:purple_archwood_sapling")
     .weather('rain')
@@ -24,4 +24,4 @@ SummoningRituals.complete(event =>{
     event.level.addParticle('ars_nouveau:sparkle')
     event.level.addParticle('ars_nouveau:sparkle')
     event.level.addParticle('ars_nouveau:sparkle')
-})
+})*/

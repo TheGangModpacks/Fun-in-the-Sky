@@ -1,0 +1,7 @@
+{
+    "removed": [
+        "item:create:red_sand_paper",
+        "item:createaddition:diamond_grit_sandpaper",
+        "tag:fits:disabled"
+    ]
+}

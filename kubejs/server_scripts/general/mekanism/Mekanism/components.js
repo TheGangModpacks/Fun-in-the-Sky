@@ -40,53 +40,53 @@ ServerEvents.recipes(event =>{
 	event.remove({ output: (MK('electrolytic_core'))})
 	event.custom({
 		type: 'create:sequenced_assembly',
-		ingredient: Item.of(IE('component_electronic_adv')).toJson(),
+		ingredient: Item.of(IE('component_electronic_adv')),
 		loops: 5,
 		results: [
-			Item.of('mekanism:electrolytic_core').withChance(120.0).toJson(),
-			Item.of(IE('component_electronic_adv')).withChance(10.0).toJson()
+			Item.of('mekanism:electrolytic_core').withChance(120.0),
+			Item.of(IE('component_electronic_adv')).withChance(10.0)
 		],
 		sequence: [
 			{type: 'create:deploying',
 		ingredients: [
-			Item.of(KJ('core')).toJson(),
-			Item.of(EE('gold_dust')).toJson()
+			Item.of(KJ('core')),
+			Item.of(EE('gold_dust'))
 		],
-	results: [ Item.of(KJ('core')).toJson()
+	results: [ Item.of(KJ('core'))
 	]},
 	{type: 'create:deploying',
     ingredients: [
-		Item.of(KJ('core')).toJson(),
+		Item.of(KJ('core')),
 		Item.of(EE('steel_plate'))
 ],
     results: [
-		Item.of(KJ('core')).toJson()
+		Item.of(KJ('core'))
 ]},
 {type: 'create:deploying',
     ingredients: [
-		Item.of(KJ('core')).toJson(),
+		Item.of(KJ('core')),
 		Item.of(IE('wire_lead'))
 ],
     results: [
-		Item.of(KJ('core')).toJson()
+		Item.of(KJ('core'))
 ]},
 {type: 'create:filling',
 ingredients: [
-	Item.of(KJ('core')).toJson(),
-	Fluid.of('pneumaticcraft:oil').withAmount(1000).toJson()
+	Item.of(KJ('core')),
+	Fluid.of('pneumaticcraft:oil').withAmount(1000)
 ],
 results: [
-	Item.of(KJ('core')).toJson()
+	Item.of(KJ('core'))
 ]},
 {type: 'create:pressing',
 ingredients: [
-	Item.of(KJ('core')).toJson()
+	Item.of(KJ('core'))
 ],
 results: [
-	Item.of(KJ('core')).toJson()
+	Item.of(KJ('core'))
 ]}
 		],
-		transitionalItem: Item.of(KJ('core')).toJson()
+		transitionalItem: Item.of(KJ('core'))
 	})
 	event.custom({
 		type: metallurgic_infuser,

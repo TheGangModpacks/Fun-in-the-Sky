@@ -1,6 +1,6 @@
-ServerEvents.recipes(event =>{
-	event.remove({output: 'exnihilosequentia:zinc_pieces'})
-	event.custom({
+ServerEvents.recipes(r =>{
+	r.remove({output: 'exnihilosequentia:zinc_pieces'})
+	r.custom({
 		type: sieve,
 		rolls:[
 			{chance: 0.05, mesh: 'flint'},
@@ -10,15 +10,15 @@ ServerEvents.recipes(event =>{
 			{chance: 0.42, mesh: 'netherite'}],
 			input: {item: 'immersiveengineering:slag_gravel'},
 			result:{item: 'exnihilosequentia:zinc_pieces'}})
-	event.remove({output: 'exnihilosequentia:lead_pieces'})
-	event.custom({
+	r.remove({output: 'exnihilosequentia:lead_pieces'})
+	r.custom({
 			type: sieve,
 			rolls:[
 				{chance: 0.02, mesh: 'flint'}],
 				input: {item: 'minecraft:gravel'},
 				result:{item: 'exnihilosequentia:lead_pieces'}})
-	event.remove({output: 'exnihilosequentia:tin_pieces'})
-	event.custom({
+	r.remove({output: 'exnihilosequentia:tin_pieces'})
+	r.custom({
 		type: sieve,
 		rolls:[
 			{chance: 0.08, mesh: 'flint'},
@@ -28,8 +28,8 @@ ServerEvents.recipes(event =>{
 			{chance: 0.46, mesh: 'netherite'}],
 			input: {item: 'immersiveengineering:slag_gravel'},
 			result:{item: 'exnihilosequentia:tin_pieces'}})
-	event.remove({output: 'exnihilosequentia:aluminum_pieces'})
-	event.custom({
+	r.remove({output: 'exnihilosequentia:aluminum_pieces'})
+	r.custom({
 		type: sieve,
 		rolls:[
 			{chance: 0.05, mesh: 'flint'},
@@ -39,8 +39,8 @@ ServerEvents.recipes(event =>{
 			{chance: 0.38, mesh: 'netherite'}],
 			input: {item: 'immersiveengineering:slag_gravel'},
 			result:{item: 'exnihilosequentia:aluminum_pieces'}})
-	event.remove({output: 'emendatusenigmatica:salt_dust'})
-	event.custom({
+	r.remove({output: 'emendatusenigmatica:salt_dust'})
+	r.custom({
 		type: sieve,
 		rolls:[
 			{chance: 0.10, mesh: 'iron'},
@@ -53,8 +53,7 @@ ServerEvents.recipes(event =>{
 		],
 			input: {item: 'immersiveengineering:slag_gravel'},
 			result:{item: 'emendatusenigmatica:salt_dust'}})
-				event.remove({output: 'emendatusenigmatica:salt_dust'})
-	event.custom({
+	r.custom({
 		type: sieve,
 		rolls:[
 			{chance: 0.10, mesh: 'string'},
@@ -67,29 +66,70 @@ ServerEvents.recipes(event =>{
 		],
 			input: {item: '#minecraft:sand'},
 			result:{item: 'minecraft:kelp'},
-			waterlogged: true})
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:spore_blossom')
-			.addRoll(0.10, 'string')
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:hanging_roots')
-			.addRoll(0.10, 'string')
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:big_dripleaf')
-			.addRoll(0.05, 'string')
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:lily_pad')
-			.addRoll(0.05, 'string')
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:vine')
-			.addRoll(0.10, 'string')
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:azalea')
-			.addRoll(0.03, 'string')
-			event.recipes.exnihilosequentia.sieve('minecraft:moss_block', 'minecraft:glow_berries')
-			.addRoll(0.05, 'string')
-
-			event.recipes.exnihilosequentia.sieve('minecraft:sand', 'thermal:bitumen')
-			.addRoll(0.04, 'flint')
-			.addRoll(0.06, 'iron')
-			.addRoll(0.08, 'diamond')
-			.addRoll(0.09, 'emerald')
-			.addRoll(0.09, 'emerald')
-			.addRoll(0.12, 'netherite')
-			.addRoll(0.12, 'netherite')
-			.addRoll(0.12, 'netherite')
+			waterlogged: true
+	})
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.10, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:spore_blossom'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.10, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:hanging_roots'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:big_dripleaf'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:lily_pad'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.10, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:vine'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.03, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:azalea'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:glow_berries'}
+    })
+	r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.10, mesh: 'string'}
+		],
+			input: {item: 'minecraft:moss_block'},
+			result:{item: 'minecraft:hanging_roots'}
+    })
 })

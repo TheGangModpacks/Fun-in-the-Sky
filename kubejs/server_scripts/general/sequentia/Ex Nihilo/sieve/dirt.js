@@ -1,34 +1,104 @@
-let E = (id) => `exnihilosequentia:${id}`;
-ServerEvents.recipes(event =>{
-    event.remove({output: '#custom:other_pebbles'})
-    event.remove({output: 'exnihilosequentia:stone_pebble'})
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:granite_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:diorite_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:deepslate_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:blackstone_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:andesite_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:basalt_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:tuff_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:dripstone_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:calcite_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
-
-    event.recipes.exnihilosequentia.sieve('minecraft:dirt', 'exnihilosequentia:stone_pebble')
-    .addRoll(0.70, 'string').addRoll(0.50, 'string').addRoll(0.20, 'string').setWaterlogged()
+ServerEvents.recipes(r =>{
+    r.remove({output: '#custom:other_pebbles'})
+    r.remove({output: 'exnihilosequentia:stone_pebble'})
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:granite_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:diorite_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:deepslate_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:blackstone_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:andesite_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:basalt_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:tuff_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:dripstone_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:calcite_pebble'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.70, mesh: 'string'},
+			{chance: 0.50, mesh: 'string'},
+			{chance: 0.20, mesh: 'string'}
+		],
+			input: {item: 'minecraft:dirt'},
+			result:{item: 'exnihilosequentia:stone_pebble'}
+    })
 })

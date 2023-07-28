@@ -1,8 +1,12 @@
 {
         "item.create.andesite_alloy": "Compressed Alloy",
-        "block.create.cogwheel": "Spruce Cogwheel",
-        "block.create.large_cogwheel": "Large Spruce Cogwheel",
         "item.create.copper_backtank": "Constantan Backtank",
+        "item.create.whisk": "Zinc Whisk",
         "block.create.andesite_casing": "Compressed Alloy Casing",
-        "block.create.copper_valve_handle": "Constantan Valve Handle"
+        "block.create.copper_valve_handle": "Constantan Valve Handle",
+        "block.create.andesite_door": "Compressed Alloy Door",
+        "block.create.andesite_alloy_block": "Block of Compressed Alloy",
+        "block.create.andesite_funnel": "Funnel",
+        "item.create.sand_paper": "Rough Paper",
+        "create.recipe.sandpaper_polishing": "Rough Paper Polishing"
 }

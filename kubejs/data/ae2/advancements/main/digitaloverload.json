@@ -1,0 +1,26 @@
+{
+    "display": {
+      "icon": {
+        "item": "ae2:controller"
+      },
+      "title": "Digital Overload",
+      "description": "Place a 7x7x7 hollow cube of Controllers to create the Ultimate Controller.",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ae2:main/controller",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "ae2:controller",
+          "item": {
+            "count": 68
+          }
+        }
+      }
+    }
+  }
+  

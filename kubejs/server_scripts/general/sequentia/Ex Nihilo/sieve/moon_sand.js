@@ -1,81 +1,129 @@
-ServerEvents.recipes(event =>{
+ServerEvents.recipes(r =>{
     let moon = 'ad_astra:moon_sand';
-    event.recipes.exnihilosequentia.sieve(moon, "exnihilosequentia:gold_pieces")
-    .addRoll(0.5, 'flint')
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    event.recipes.exnihilosequentia.sieve(moon, "exnihilosequentia:nickel_pieces")
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    event.recipes.exnihilosequentia.sieve(moon, "exnihilosequentia:copper_pieces")
-    .addRoll(0.05, 'flint')
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    event.recipes.exnihilosequentia.sieve(moon, "exnihilosequentia:silver_pieces")
-    .addRoll(0.05, 'flint')
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    event.recipes.exnihilosequentia.sieve(moon, "exnihilosequentia:lead_pieces")
-    .addRoll(0.05, 'flint')
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    event.recipes.exnihilosequentia.sieve(moon, 'exnihilosequentia:iron_pieces')
-    .addRoll(1.0, 'flint')
-    .addRoll(1.0, 'iron')
-    .addRoll(1.0, 'diamond')
-    .addRoll(1.0, 'emerald')
-    .addRoll(1.0, 'emerald')
-    .addRoll(1.0, 'netherite')
-    .addRoll(1.0, 'netherite')
-    .addRoll(1.0, 'netherite')
-    event.remove({ output: 'exnihilosequentia:uranium_pieces', type: 'exnihilosequentia:sieve' })
-    event.recipes.exnihilosequentia.sieve(moon, 'exnihilosequentia:uranium_pieces')
-    .addRoll(0.05, 'flint')
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    event.remove({ output: 'exnihilomekanism:osmium_pieces', type: 'exnihilosequentia:sieve' })
-    event.recipes.exnihilosequentia.sieve(moon, 'exnihilomekanism:osmium_pieces')
-    .addRoll(0.05, 'flint')
-    .addRoll(0.10, 'iron')
-    .addRoll(0.20, 'diamond')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.30, 'emerald')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-    .addRoll(0.35, 'netherite')
-
-    event.remove({ output: 'emendatusenigmatica:fluorite_gem', type: 'exnihilosequentia:sieve' })
-	event.custom({
+    r.remove({ output: 'exnihilosequentia:uranium_pieces', type: 'exnihilosequentia:sieve' })
+    r.remove({ output: 'exnihilomekanism:osmium_pieces', type: 'exnihilosequentia:sieve' })
+    r.remove({ output: 'emendatusenigmatica:fluorite_gem', type: 'exnihilosequentia:sieve' })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilomekanism:osmium_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:uranium_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 1.0, mesh: 'flint'},
+			{chance: 1.0, mesh: 'iron'},
+			{chance: 1.0, mesh: 'diamond'},
+			{chance: 1.0, mesh: 'emerald'},
+			{chance: 1.0, mesh: 'emerald'},
+			{chance: 1.0, mesh: 'netherite'},
+			{chance: 1.0, mesh: 'netherite'},
+			{chance: 1.0, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:iron_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:lead_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:silver_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:copper_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:nickel_pieces'}
+    })
+    r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.05, mesh: 'flint'},
+			{chance: 0.10, mesh: 'iron'},
+			{chance: 0.20, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: moon},
+			result:{item: 'exnihilosequentia:gold_pieces'}
+    })
+	r.custom({
 		type: sieve,
 		rolls:[
 			{chance: 0.10, mesh: 'string'},
@@ -88,5 +136,6 @@ ServerEvents.recipes(event =>{
 		],
 			input: {item: moon},
 			result:{item: 'emendatusenigmatica:fluorite_gem'},
-			waterlogged: true})
+			waterlogged: true
+        })
 })

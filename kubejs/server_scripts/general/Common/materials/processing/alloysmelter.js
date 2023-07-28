@@ -21,4 +21,5 @@ ServerEvents.recipes(event =>{
 		input0: Item.of('kubejs:porcelain_brick').toJson(),
 		input1: { tag: 'forge:ingots/nether_brick', count: 3 },
 	result: { base_ingredient: { tag: 'forge:ingots/porcelain_nether_brick' }, count: 4 }, time: 1000 }).id(`${alloysmelter_prefix}procelain_nether_brick`)
+	event.remove({id: 'immersiveengineering:alloysmelter/brass'})
 })

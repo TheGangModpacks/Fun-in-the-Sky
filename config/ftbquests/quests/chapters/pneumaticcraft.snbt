@@ -260,10 +260,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"2753A37298E0CE9A"
-				"4C734BAE597CDB86"
-			]
+			dependencies: ["2753A37298E0CE9A"]
 			description: ["Mixing Molten Plastic with Duroplast creates Plastic!"]
 			id: "324D397DEA4CB9AF"
 			shape: "rsquare"
@@ -420,7 +417,7 @@
 				"5D18C51A8B6637B7"
 				"06712ED519609BFB"
 			]
-			description: ["Etching Acid is made in the Pressure Chamber, and is used for refining PCBs."]
+			description: ["Etching Acid is made in a Mixer, and is used for refining PCBs."]
 			id: "781E259C6E836CD4"
 			tasks: [{
 				id: "3C13C6E679B05A0A"

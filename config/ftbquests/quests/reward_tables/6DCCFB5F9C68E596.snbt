@@ -1,0 +1,16 @@
+{
+	icon: "minecraft:chest"
+	id: "6DCCFB5F9C68E596"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ count: 4, item: "ae2:charged_certus_quartz_crystal" }
+		{ count: 4, item: "ae2:fluix_crystal" }
+		{ count: 8, item: "ae2:certus_quartz_dust" }
+		{ count: 6, item: "ae2:certus_quartz_crystal" }
+		{ count: 3, item: "powah:steel_energized" }
+		{ count: 4, item: "ae2:sky_dust" }
+		{ count: 4, item: "ae2:fluix_glass_cable" }
+	]
+	title: "ae2_basket"
+}

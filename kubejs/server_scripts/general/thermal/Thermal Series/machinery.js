@@ -124,4 +124,33 @@ event.custom({
             },
             outputs: [{id: 'thermal:machine_pyrolyzer', Count: 1}]
          }).id('thermal:machine_pyrolyzer')
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+          "ABA",
+          "CDE",
+          "CCC"
+        ],
+        "tier": 1,
+        "key": {
+          "A": {
+            "item": "dustrial_decor:cast_iron_billet"
+          },
+          "B": {
+            "item": "create:chute"
+          },
+          "C": {
+            "item": "botania:livingwood_planks"
+          },
+          "D": {
+            "item": "extendedcrafting:frame"
+          },
+          "E": {
+            "item": "pneumaticcraft:logistics_core"
+          }
+        },
+        "result": {
+          "item": "thermal:device_tree_extractor"
+        }
+      }).id('fits:basic_table/thermal/arboreal_extractor')
 })

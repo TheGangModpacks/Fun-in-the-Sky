@@ -1596,6 +1596,19 @@
 			x: 7.5d
 			y: -7.5d
 		}
+		{
+			dependencies: ["57DFA35DF43129E4"]
+			description: ["Amethyst Seeds produce Amethyst Essence, which is only used for Amethyst."]
+			id: "1AE7D20F76FBBDAA"
+			shape: "diamond"
+			tasks: [{
+				id: "21DE42FA902955C4"
+				item: "mysticalagriculture:amethyst_seeds"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -9.5d
+		}
 	]
 	title: "&2Agriculture"
 }

@@ -12,4 +12,13 @@ ItemEvents.modification(e =>{
     e.modify('thermal:bitumen_block', item =>{
         item.fireResistant = true
     })
+
+    //Tier Modification:
+    e.modify('ae2:certus_quartz_cutting_knife', item =>{
+        item.setMaxDamage(256)
+    })
+    e.modify('ae2:nether_quartz_cutting_knife', item =>{
+        item.setMaxDamage(180)
+    })
+    
 })

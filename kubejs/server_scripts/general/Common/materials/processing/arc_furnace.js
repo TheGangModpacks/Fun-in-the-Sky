@@ -1,5 +1,5 @@
-ServerEvents.recipes(Event =>{
-    Event.custom({
+ServerEvents.recipes(r =>{
+    r.custom({
         type: arc_furnace,
         additives: [
         {tag: "forge:ingots/silver"},
@@ -13,4 +13,5 @@ ServerEvents.recipes(Event =>{
         results: [{base_ingredient:{tag: "forge:ingots/bismuth"}, count: 4},],
         time: 100
     })
+    r.remove({id: 'immersiveengineering:arcfurnace/alloy_brass'})
 })

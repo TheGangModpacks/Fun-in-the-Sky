@@ -297,6 +297,7 @@
 		{
 			dependencies: ["5266006C886E627A"]
 			description: ["The Electrolytic Seperator does exactly what it says on the tin. It seperates Gasses from Fluids."]
+			hide_dependent_lines: true
 			id: "26D0E2687C30F81C"
 			shape: "rsquare"
 			tasks: [{
@@ -431,6 +432,7 @@
 		{
 			dependencies: ["26D0E2687C30F81C"]
 			description: ["Directly converts Items into Gasses."]
+			hide_dependent_lines: true
 			id: "526E497A02983709"
 			shape: "rsquare"
 			tasks: [{
@@ -495,6 +497,30 @@
 			}]
 			x: 1.0d
 			y: -10.5d
+		}
+		{
+			dependencies: [
+				"526E497A02983709"
+				"26D0E2687C30F81C"
+			]
+			description: ["Sulfur Trioxide is a radiant chemical designed for advanced Fuels and Technology."]
+			disable_toast: true
+			id: "43F67BA494CA984B"
+			rewards: [{
+				auto: "invisible"
+				icon: "botania:cosmetic_questgiver_mark"
+				id: "290133FE97A1FA12"
+				type: "custom"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "60A5ED6C849ADDFD"
+				item: "mekanism:sulfur_trioxide_bucket"
+				type: "item"
+			}]
+			title: "Sulfur Trioxide"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "Mekanism"

@@ -1,37 +1,70 @@
-ServerEvents.recipes(event =>{
-        event.recipes.exnihilosequentia.sieve('exnihilosequentia:dust', 'minecraft:bone_meal')
-        .addRoll(0.25, 'flint')
-        .addRoll(0.25, 'iron')
-        .addRoll(0.30, 'diamond')
-        .addRoll(0.30, 'emerald')
-        .addRoll(0.30, 'emerald')
-        .addRoll(0.35, 'netherite')
-        .addRoll(0.35, 'netherite')
-        .addRoll(0.35, 'netherite')
-        event.recipes.exnihilosequentia.sieve('exnihilosequentia:dust', 'ae2:sky_dust')
-        .addRoll(0.15, 'emerald')
-        .addRoll(0.15, 'emerald')
-        .addRoll(0.18, 'netherite')
-        .addRoll(0.18, 'netherite')
-        .addRoll(0.18, 'netherite')
-        event.recipes.exnihilosequentia.sieve('exnihilosequentia:dust', 'minecraft:blaze_powder')
-        .addRoll(0.10, 'diamond')
-        .addRoll(0.15, 'emerald')
-        .addRoll(0.15, 'emerald')
-        .addRoll(0.20, 'netherite')
-        .addRoll(0.20, 'netherite')
-        .addRoll(0.20, 'netherite')
-        event.recipes.exnihilosequentia.sieve('exnihilosequentia:dust', 'minecraft:glowstone_dust')
-        .addRoll(0.12, 'diamond')
-        .addRoll(0.22, 'emerald')
-        .addRoll(0.22, 'emerald')
-        .addRoll(0.28, 'netherite')
-        .addRoll(0.28, 'netherite')
-        .addRoll(0.28, 'netherite')
-        event.recipes.exnihilosequentia.sieve('exnihilosequentia:dust', 'minecraft:redstone')
-        .addRoll(0.30, 'emerald')
-        .addRoll(0.30, 'emerald')
-        .addRoll(0.35, 'netherite')
-        .addRoll(0.35, 'netherite')
-        .addRoll(0.35, 'netherite')
+ServerEvents.recipes(r =>{
+        r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: 'exnihilosequentia:dust'},
+			result:{item: 'minecraft:redstone'} //Why was this minecraft:minecraft:redstone
+        })
+        r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.12, mesh: 'diamond'},
+			{chance: 0.22, mesh: 'emerald'},
+			{chance: 0.22, mesh: 'emerald'},
+			{chance: 0.28, mesh: 'netherite'},
+			{chance: 0.28, mesh: 'netherite'},
+			{chance: 0.28, mesh: 'netherite'}
+		],
+			input: {item: 'minecraft:soul_soil'},
+			result:{item: 'exnihilosequentia:gold_pieces'}
+        })
+        r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.10, mesh: 'diamond'},
+			{chance: 0.15, mesh: 'emerald'},
+			{chance: 0.15, mesh: 'emerald'},
+			{chance: 0.20, mesh: 'netherite'},
+			{chance: 0.20, mesh: 'netherite'},
+			{chance: 0.20, mesh: 'netherite'}
+		],
+			input: {item: 'exnihilosequentia:dust'},
+			result:{item: 'minecraft:blaze_powder'}
+        })
+        r.custom({
+		type: sieve,
+		rolls:[
+			{chance: 0.25, mesh: 'flint'},
+			{chance: 0.25, mesh: 'iron'},
+			{chance: 0.30, mesh: 'diamond'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.30, mesh: 'emerald'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'},
+			{chance: 0.35, mesh: 'netherite'}
+		],
+			input: {item: 'exnihilosequentia:dust'},
+			result:{item: 'minecraft:bone_meal'}
+        })
+        r.custom({
+                type: sieve,
+                rolls:[
+                        {chance: 0.04, mesh: 'flint'},
+                        {chance: 0.06, mesh: 'iron'},
+                        {chance: 0.08, mesh: 'diamond'},
+                        {chance: 0.09, mesh: 'emerald'},
+                        {chance: 0.09, mesh: 'emerald'},
+                        {chance: 0.12, mesh: 'netherite'},
+                        {chance: 0.12, mesh: 'netherite'},
+                        {chance: 0.12, mesh: 'netherite'}
+                ],
+                        input: {item: 'minecraft:sand'},
+                        result:{item: 'thermal:bitumen'}
+        })	
 })

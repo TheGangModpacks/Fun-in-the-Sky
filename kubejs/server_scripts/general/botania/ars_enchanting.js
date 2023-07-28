@@ -1,4 +1,5 @@
-ServerEvents.recipes(event => {
+//Disabled until HammerLib is fixed
+/*ServerEvents.recipes(event => {
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
@@ -27,4 +28,4 @@ ServerEvents.recipes(event => {
         'botania:gaia_spreader', // output
         5000, // source cost
     ).id('botanicadds:gaia_spreader')
-})
+})*/

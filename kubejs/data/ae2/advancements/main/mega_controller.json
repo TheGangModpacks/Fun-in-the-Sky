@@ -1,0 +1,46 @@
+{
+    "parent": "ae2:main/controller",
+    "display": {
+      "icon": {
+        "item": "ae2:controller",
+        "nbt": "{active:true}"
+      },
+      "title": {
+        "translate": "%s %s",
+        "with": [
+          "advancements.ae2.controller.title",
+          "Controller Overload"
+        ]
+      },
+      "description": {
+        "translate": "%s %s",
+        "with": [
+          "advancements.ae2.controller.description",
+          "Place 68 controllers connected to each other."
+        ]
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "controller_count": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": {
+            "block": "ae2:controller"
+          },
+          "state": {
+            "active": true
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "controller_count"
+      ]
+    ]
+  }
+  

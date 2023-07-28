@@ -17,7 +17,7 @@ REIEvents.removeCategories(event => {
   event.yeet('thermal:tree_extractor')
 })} else if (Platform.isLoaded('jei')){
 
-//Just ENough Items
+//Just Enough Items
 JEIEvents.hideItems(event =>{
   event.hide('#custom:disabled')
   event.hide('thermal:latex_bucket')
@@ -41,4 +41,5 @@ JEIEvents.removeCategories(event =>{
   event.remove('minecraft:anvil')
   event.remove('twilightforest:uncrafting')
   event.remove('thermal:tree_extractor')
+  event.remove('emi:anvil_repairing')
 })}

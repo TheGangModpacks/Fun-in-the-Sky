@@ -13,7 +13,6 @@ ServerEvents.tags('item', event => {
     event.add(tag, "immersiveengineering:hoe_steel")
     event.add(tag, "immersiveengineering:shovel_steel")
     event.add(tag, "immersiveengineering:sword_steel")
-    event.add(tag, "thermal:device_tree_extractor")
     event.add(tag, '/^powah:.*_starter/')
     event.add(tag, '/^powah:.*solar/')
     event.add(tag, '/^exnihilosequentia:.*platinum/')
@@ -28,6 +27,8 @@ ServerEvents.tags('item', event => {
     event.add(tag, "cobblefordays:tier_1")
     event.add(tag, "quark:deepslate_furnace")
     event.add(tag, "quark:blackstone_furnace")
+    event.add(tag, 'create:red_sand_paper')
+    event.add(tag, 'createaddition:diamond_grit_sandpaper')
 })
 ServerEvents.recipes(event =>{
     //Recipes that are broken, which can likely be fixed in the future.

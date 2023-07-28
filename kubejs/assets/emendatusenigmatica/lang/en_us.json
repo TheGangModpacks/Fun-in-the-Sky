@@ -9,5 +9,8 @@
 	"item.emendatusenigmatica.salt_dust": "Nitrate Dust",
 	"block.emendatusenigmatica.salt_block": "Block of Nitrate",
 	"item.emendatusenigmatica.calcium_ingot": "Calcium Metal",
-	"item.emendatusenigmatica.trio_exopherilium_base_dust": "Trio Exopherillium Base"
+	"item.emendatusenigmatica.trio_exopherilium_base_dust": "Trio Exopherillium Base",
+	"item.emendatusenigmatica.silica_ingot": "Silica Bar",
+	
+	"block.emendatusenigmatica.silica_cluster_shard_block": "Silica Shard Block"
 }

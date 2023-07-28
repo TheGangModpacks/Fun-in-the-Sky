@@ -4,7 +4,6 @@
     "localizedName": "Silica",
     "processedTypes": [
       "storage_block",
-      "raw",
       "dust",
       "cluster",
       "ingot"
@@ -16,4 +15,4 @@
     "colors": {
       "materialColor": "00DDAD"
     }
-  }
+}

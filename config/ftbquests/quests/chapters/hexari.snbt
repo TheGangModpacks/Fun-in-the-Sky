@@ -18,7 +18,7 @@
 		height: 13.0d
 		hover: [ ]
 		image: "modpack:textures/broom.png"
-		rotation: 0.0d
+		rotation: -3.0d
 		width: 13.0d
 		x: -2.0d
 		y: -2.0d

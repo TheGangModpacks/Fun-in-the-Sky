@@ -88,10 +88,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"4C734BAE597CDB86"
-				"16958D26CEA743F1"
-			]
+			dependencies: ["16958D26CEA743F1"]
 			description: ["&eLuminessence&r is the biggest breakthrough for Technology in 30 years, allowing for extremely advanced components and electronics capable of 20x the effectiveness."]
 			id: "69CE422607DC9D41"
 			tasks: [{

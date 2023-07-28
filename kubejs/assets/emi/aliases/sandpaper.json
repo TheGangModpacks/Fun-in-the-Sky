@@ -1,0 +1,10 @@
+{
+    "aliases": [
+        {"stacks": "item:create:sand_paper", "text": [
+            "alias.emi.sandpaper",
+            "alias.emi.paper",
+            "alias.emi.sand.paper",
+            "alias.emi.sand_paper"
+            ]}
+    ]
+}

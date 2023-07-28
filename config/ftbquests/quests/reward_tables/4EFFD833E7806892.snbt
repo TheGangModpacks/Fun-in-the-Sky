@@ -1,0 +1,8 @@
+{
+	icon: "minecraft:chest"
+	id: "4EFFD833E7806892"
+	loot_size: 1
+	order_index: 4
+	rewards: [ ]
+	title: "ae2_basket"
+}

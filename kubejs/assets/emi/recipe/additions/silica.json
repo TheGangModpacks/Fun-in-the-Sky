@@ -1,0 +1,6 @@
+{
+    "type": "emi:world_interaction",
+    "left": "item:emendatusenigmatica:silica_cluster",
+    "right": "item:minecraft:wooden_pickaxe",
+    "output": "item:emendatusenigmatica:silica_cluster_shard"
+}

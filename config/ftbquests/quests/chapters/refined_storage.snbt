@@ -10,6 +10,7 @@
 		{
 			click: ""
 			corner: false
+			dependency: "0640073DDD7DCF38"
 			dev: false
 			height: 2.0d
 			hover: [ ]
@@ -22,6 +23,7 @@
 		{
 			click: ""
 			corner: false
+			dependency: "384319551B959E84"
 			dev: false
 			height: 1.45d
 			hover: [ ]
@@ -138,6 +140,7 @@
 			size: 1.3d
 			subtitle: "The Block to rule them all"
 			tasks: [{
+				icon: "refinedstorage:creative_controller"
 				id: "57A0D1EA994C67C6"
 				item: "refinedstorage:controller"
 				type: "item"
@@ -718,6 +721,12 @@
 			dependencies: ["480D82CC91E4449E"]
 			description: ["The Inscriber is used to create finished Processors."]
 			id: "30696F02128F919D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "785A8FED49C6F08E"
+				table_id: 7911975033447703958L
+				type: "random"
+			}]
 			tasks: [{
 				id: "64387A72ABBDAA44"
 				item: "ae2:inscriber"
@@ -727,7 +736,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["30696F02128F919D"]
+			dependencies: ["7F39865E71C22323"]
 			description: ["Logic Processors are key components for, well, logic operations. Makes sense."]
 			icon: "ae2:logic_processor"
 			id: "3067F149CA62049B"
@@ -744,11 +753,11 @@
 				}
 			]
 			title: "Logic"
-			x: -3.0d
+			x: -4.5d
 			y: 4.0d
 		}
 		{
-			dependencies: ["30696F02128F919D"]
+			dependencies: ["7F39865E71C22323"]
 			description: ["Engineering Processors are made to handle complex tasks, making things function like never before."]
 			icon: "ae2:engineering_processor"
 			id: "45B397A242BF5A57"
@@ -765,11 +774,11 @@
 				}
 			]
 			title: "Engineering"
-			x: -3.5d
-			y: 3.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["30696F02128F919D"]
+			dependencies: ["7F39865E71C22323"]
 			description: ["Calculation Processors are used as extreme number churners. You send anything into it and it'll get it done in 0.00001 milliseconds."]
 			icon: "ae2:calculation_processor"
 			id: "39BFE4A9D012C19E"
@@ -786,22 +795,25 @@
 				}
 			]
 			title: "Calculation"
-			x: -3.0d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7EEE53E5D519F83F"]
+			dependencies: ["49D3F6ED9A2FEFA3"]
+			description: ["Fluix Cables connect ME Blocks and Machines together, supplying AE Energy and Data."]
 			id: "5F2DEB1C5F3852E0"
+			shape: "diamond"
 			tasks: [{
 				id: "41B4973B17ED1186"
 				item: "ae2:fluix_glass_cable"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.5d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5F2DEB1C5F3852E0"]
+			description: ["Covered Cables can supply more Channels than Glass Cables."]
 			id: "1AA19BF4EE7FCF05"
 			shape: "diamond"
 			tasks: [{
@@ -809,11 +821,17 @@
 				item: "ae2:fluix_covered_cable"
 				type: "item"
 			}]
+			title: "Covered Cables"
 			x: -4.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1AA19BF4EE7FCF05"]
+			description: [
+				"Smart Cables project information about a Cable network's remaining Channels."
+				""
+				"Smart Cables also come in Covered and Dense forms."
+			]
 			id: "7037AA2F4797A5D5"
 			shape: "diamond"
 			tasks: [{
@@ -821,11 +839,13 @@
 				item: "ae2:fluix_smart_cable"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.5d
+			title: "Smart™ Cable"
+			x: -4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1AA19BF4EE7FCF05"]
+			description: ["Dense Covered Dables supply even more Channels."]
 			id: "030C9CF8C337A6F2"
 			shape: "diamond"
 			tasks: [{
@@ -833,26 +853,13 @@
 				item: "ae2:fluix_covered_dense_cable"
 				type: "item"
 			}]
+			title: "Dense Cables"
 			x: -3.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["030C9CF8C337A6F2"]
-			id: "2827AF90FC56B4C2"
-			shape: "diamond"
-			tasks: [{
-				id: "6411E7A6DAAEEA83"
-				item: "ae2:fluix_smart_dense_cable"
-				type: "item"
-			}]
-			x: -3.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"5F2DEB1C5F3852E0"
-				"7D4FC821B2D99255"
-			]
+			dependencies: ["6F97F92E0052C131"]
+			description: ["The Terminal is a basic block providing access to Items inside an ME System."]
 			id: "2CE92AA34A6EC0DA"
 			shape: "diamond"
 			tasks: [{
@@ -860,11 +867,11 @@
 				item: "ae2:terminal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.0d
+			x: -10.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["5F2DEB1C5F3852E0"]
+			dependencies: ["2CE92AA34A6EC0DA"]
 			id: "227EDCF7B0C253A7"
 			shape: "diamond"
 			tasks: [{
@@ -872,11 +879,11 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -0.5d
+			x: -10.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["5F2DEB1C5F3852E0"]
+			dependencies: ["2CE92AA34A6EC0DA"]
 			id: "33EACAEC137C2F6B"
 			shape: "diamond"
 			tasks: [{
@@ -884,34 +891,36 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.0d
+			x: -11.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["5F2DEB1C5F3852E0"]
-			id: "293981A3E0E551A9"
-			shape: "diamond"
-			tasks: [{
-				id: "0ECFC5DDBAD104ED"
-				item: "ae2:pattern_access_terminal"
-				type: "item"
-			}]
-			x: -6.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["7D4FC821B2D99255"]
+			dependencies: [
+				"7D4FC821B2D99255"
+				"7EEE53E5D519F83F"
+			]
+			description: ["The ME Chest and Drive hold Cells or Drives, used to store various substances depending on what they're made of. The ME Chest holds one Cell / Drive, while the Drive holds 10."]
+			icon: "ae2:drive"
 			id: "6F97F92E0052C131"
-			tasks: [{
-				id: "2EABA927E7EB37DC"
-				item: "ae2:drive"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.0d
+			tasks: [
+				{
+					id: "2EABA927E7EB37DC"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "5093A223C59CF555"
+					item: "ae2:chest"
+					type: "item"
+				}
+			]
+			title: "Storing Things"
+			x: -7.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["6F97F92E0052C131"]
+			dependencies: ["58B714C166CABA32"]
+			dependency_requirement: "one_completed"
 			id: "60B54178CC0BF09B"
 			shape: "diamond"
 			tasks: [{
@@ -919,8 +928,8 @@
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
+			x: -3.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["60B54178CC0BF09B"]
@@ -931,8 +940,8 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.5d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["668A60613BA11883"]
@@ -943,8 +952,8 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["67F66D72B252740C"]
@@ -955,8 +964,8 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["44274440DC6F338A"]
@@ -967,8 +976,8 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: -2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2994BD7453F09958"]
@@ -979,8 +988,8 @@
 				item: "ae2additions:cell_component_1024"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["28944C3282FA9800"]
@@ -991,7 +1000,7 @@
 				item: "ae2additions:cell_component_4096"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: -3.5d
 		}
 		{
@@ -1004,26 +1013,25 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["61B826BBC991ADCE"]
 			id: "49B50C0549122A10"
 			shape: "diamond"
-			size: 1.1d
 			tasks: [{
 				id: "2D4E0EC288ECE8F5"
 				item: "ae2additions:cell_component_65536"
 				type: "item"
 			}]
-			x: -1.6500000000000001d
-			y: -3.85d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["5F2DEB1C5F3852E0"]
+			dependencies: ["7E3D3549D61F8EA8"]
+			description: ["Formation and Annihilation Cores are used for, well, Formation and Annihilation."]
 			id: "7D4FC821B2D99255"
 			shape: "hexagon"
-			size: 0.8d
 			tasks: [
 				{
 					id: "7DDFC91C7C32FE16"
@@ -1037,11 +1045,11 @@
 				}
 			]
 			title: "Cores"
-			x: -4.963095238095249d
-			y: 0.02729591836733647d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["6F97F92E0052C131"]
+			dependencies: ["60B54178CC0BF09B"]
 			id: "3964411356A28AE7"
 			shape: "diamond"
 			tasks: [{
@@ -1049,11 +1057,11 @@
 				item: "ae2additions:super_cell_component_1k"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.5d
+			x: -2.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["3964411356A28AE7"]
+			dependencies: ["668A60613BA11883"]
 			id: "5547435BC857AC41"
 			shape: "diamond"
 			tasks: [{
@@ -1061,11 +1069,11 @@
 				item: "ae2additions:super_cell_component_4k"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.0d
+			x: -1.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["5547435BC857AC41"]
+			dependencies: ["67F66D72B252740C"]
 			id: "13400DD6AED7948A"
 			shape: "diamond"
 			tasks: [{
@@ -1073,11 +1081,11 @@
 				item: "ae2additions:super_cell_component_16k"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.0d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["13400DD6AED7948A"]
+			dependencies: ["44274440DC6F338A"]
 			id: "4807130D2EFE569F"
 			shape: "diamond"
 			tasks: [{
@@ -1085,11 +1093,11 @@
 				item: "ae2additions:super_cell_component_64k"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -3.5d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["4807130D2EFE569F"]
+			dependencies: ["2994BD7453F09958"]
 			id: "5E81302C29F337CF"
 			shape: "diamond"
 			tasks: [{
@@ -1097,11 +1105,11 @@
 				item: "ae2additions:super_cell_component_256k"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -2.5d
 			y: -4.0d
 		}
 		{
-			dependencies: ["5E81302C29F337CF"]
+			dependencies: ["28944C3282FA9800"]
 			id: "50B49D2B790A4844"
 			shape: "diamond"
 			tasks: [{
@@ -1109,11 +1117,11 @@
 				item: "ae2additions:super_cell_component_1024k"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -1.5d
 			y: -4.0d
 		}
 		{
-			dependencies: ["50B49D2B790A4844"]
+			dependencies: ["3CE5C02A83511E53"]
 			id: "3BCFCD16F34952A3"
 			shape: "diamond"
 			tasks: [{
@@ -1121,36 +1129,23 @@
 				item: "ae2additions:super_cell_component_4096k"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -4.5d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["3BCFCD16F34952A3"]
-			id: "15187EC7247B5E77"
-			shape: "diamond"
-			tasks: [{
-				id: "438BAE122D98E5E4"
-				item: "ae2additions:super_cell_component_16m"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["15187EC7247B5E77"]
+			dependencies: ["49B50C0549122A10"]
 			id: "278B86DFFFA229D6"
-			shape: "hexagon"
-			size: 1.2d
+			shape: "diamond"
 			tasks: [{
 				id: "6410F2F17EAA7096"
 				item: "ae2additions:super_cell_component_65m"
 				type: "item"
 			}]
-			x: -4.8d
-			y: -6.6d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["6F97F92E0052C131"]
+			dependencies: ["58B714C166CABA32"]
 			id: "012F88197D40C375"
 			optional: true
 			shape: "diamond"
@@ -1159,8 +1154,8 @@
 				item: "ae2:spatial_cell_component_2"
 				type: "item"
 			}]
-			x: -5.991496598639493d
-			y: -1.928571428571427d
+			x: -2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["012F88197D40C375"]
@@ -1172,31 +1167,38 @@
 				item: "ae2:spatial_cell_component_16"
 				type: "item"
 			}]
-			x: -6.491496598639493d
-			y: -1.428571428571427d
+			x: -2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3E42DB29BAA786C5"]
 			id: "6D49B0498F1598DE"
 			optional: true
 			shape: "diamond"
-			size: 1.1d
 			tasks: [{
 				id: "2CEB5F74D3A84D3D"
 				item: "ae2:spatial_cell_component_128"
 				type: "item"
 			}]
-			x: -6.720408163265333d
-			y: -2.1778911564626036d
+			x: -1.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"39BFE4A9D012C19E"
 				"3067F149CA62049B"
 				"45B397A242BF5A57"
+				"5F2DEB1C5F3852E0"
+				"301882A3C0EC42C6"
 			]
 			description: ["The Rectifier converts Forge Energy (FE) to AE Energy (AE)."]
 			id: "7EEE53E5D519F83F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "356D10909FBA5793"
+				table_id: 7911975033447703958L
+				type: "random"
+			}]
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
@@ -1204,11 +1206,11 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: -4.963095238095249d
-			y: 3.0630102040816283d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["7EEE53E5D519F83F"]
+			dependencies: ["49D3F6ED9A2FEFA3"]
 			description: ["Energy Cells can be used to store AE Energy."]
 			icon: {
 				Count: 1b
@@ -1237,8 +1239,8 @@
 				}
 			]
 			title: "Storing AE"
-			x: -4.5d
-			y: 5.5d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["32AB3EBE5AA0700F"]
@@ -1264,27 +1266,82 @@
 					id: "7B525D1C4D9D5BFC"
 					item: {
 						Count: 1b
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						tag: {
-							value: "quests:ae_basic_crafting_blocks"
+							items: [
+								{
+									Count: 1b
+									id: "ae2:1k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:4k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:16k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:64k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:256k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2additions:1024k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2additions:4096k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2additions:16384k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2additions:65536k_crafting_storage"
+								}
+							]
 						}
 					}
-					title: "Basic Crafting Storage"
+					title: "Crafting Storage"
 					type: "item"
 				}
 			]
 			title: "Auto Crafting Storage"
-			x: -8.5d
-			y: -1.0d
+			x: -9.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["32AB3EBE5AA0700F"]
+			dependencies: [
+				"32AB3EBE5AA0700F"
+				"43BE21D442311497"
+				"7FE8499FADFB632D"
+			]
 			description: [
 				"Molecular Assemblers are used for regular grid auto-crafting. Slap an interface next to it and you're done!"
 				""
 				"To auto-craft with other machines, slap an interface on any side of the machine. If it shows in the Access Terminal, but with the wrong name, rename it in an anvil."
 			]
 			id: "4110C2A7C8C132A9"
+			rewards: [
+				{
+					count: 2
+					id: "25A223D759695F49"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "639573FFB2273263"
+					item: "ae2:interface"
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "6F5B92690A4F0536"
@@ -1292,67 +1349,67 @@
 				type: "item"
 			}]
 			title: "Molecular Assembly"
-			x: -9.0d
+			x: -9.5d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"43BE21D442311497"
-				"33EACAEC137C2F6B"
-			]
+			dependencies: ["33EACAEC137C2F6B"]
 			description: [
-				"Patterns store auto-crafting recipes. Program them in the Pattern Terminal."
+				"Patterns store auto-crafting recipes. Program them in the Programming Terminal."
 				""
 				"To program Vanilla recipes (Smith Table, Furnace, etc), set it to the appropriate type."
 				"For Modded recipes (Mekanism Infuser, Thermal Furnace, etc), set it to Processing."
 			]
 			id: "32AB3EBE5AA0700F"
+			rewards: [{
+				count: 8
+				id: "38427030C791B32F"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
 			tasks: [{
 				id: "718CA3BB718B2E5C"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 0.0d
+			title: "Pattern"
+			x: -11.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7EEE53E5D519F83F"]
-			description: ["The ME Controller is used to add more \"channels\" to your ME System."]
+			description: [
+				"The ME Controller is used to add more \"channels\" to your ME System."
+				""
+				"Additionally, the Controller has a Rectifier built-in, so you won't need to keep one around."
+			]
 			id: "679D0314EFCCD784"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12A82D8C1B1B2379"
+				table_id: 7911975033447703958L
+				type: "random"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "4F72D4A378F2B950"
 				item: "ae2:controller"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 3.0d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["5F2DEB1C5F3852E0"]
+			dependencies: ["7EEE53E5D519F83F"]
+			description: ["The ME Interface allows for ME Systems to interact with in-world Blocks. You can extract and import items to the System using one."]
 			id: "43BE21D442311497"
 			tasks: [{
 				id: "57631D98E67E2E5E"
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["679D0314EFCCD784"]
-			description: ["You can connect ME Controllers together, but will not output more channels to one block, they mostly just connect to look good, and get power. The max size for connected Controllers is a 7x7x7 hollow cube, 68 Controllers."]
-			id: "67080EDB7E733289"
-			shape: "octagon"
-			tasks: [{
-				count: 68L
-				id: "289E9DE0B5E959C1"
-				item: "ae2:controller"
-				type: "item"
-			}]
-			title: "&5The MEGA Controller"
-			x: -8.0d
-			y: 3.0d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5514D78050505642"]
@@ -1424,6 +1481,7 @@
 		}
 		{
 			dependencies: ["384319551B959E84"]
+			description: ["The only way to obtain Charged Certus at the moment is striking Certus Crystals with Lightning. Eventually you'll make a Charger which will make it easy to automate."]
 			id: "480D82CC91E4449E"
 			tasks: [{
 				id: "14060508A25A7254"
@@ -1432,6 +1490,260 @@
 			}]
 			x: -1.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["30696F02128F919D"]
+			description: ["Fluix is a very important material in AE2. Scientists made it as an alternative to Quartz Enriched Iron due to it's inefficient electronic capabilities, even with it making advances in the recent years. Make lots of Fluix."]
+			id: "49D3F6ED9A2FEFA3"
+			tasks: [{
+				id: "2893E116F50A1205"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49D3F6ED9A2FEFA3"]
+			description: ["The Fluix Cutting Knife is used for making Fluix Dust. It &lcannot be crushed&r."]
+			icon: {
+				Count: 1b
+				id: "ae2:fluix_cutting_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7E3D3549D61F8EA8"
+			tasks: [
+				{
+					id: "2D48E3F5E3AFCBFD"
+					item: {
+						Count: 1b
+						id: "ae2:fluix_cutting_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "383E53F677A8B029"
+					item: "ae2:fluix_dust"
+					type: "item"
+				}
+			]
+			title: "Fluix Cutting"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49D3F6ED9A2FEFA3"]
+			description: ["The&5 Mysterious Cube&r drops special Inscriber Presses for Processors. However, Scientists have yet to figure out how this is made."]
+			id: "7F39865E71C22323"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0B299BA8CA860C99"
+				table_id: 7911975033447703958L
+				type: "random"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "3D2811E49FFD1C35"
+				item: "ae2:mysterious_cube"
+				type: "item"
+			}]
+			title: "&5Mysterious Cube"
+			x: -4.7d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F39865E71C22323"]
+			description: ["Extra special Fusion Processors were made to handle \"unstable\" tasks. Can be used for more advanced Processing if configured properly though."]
+			icon: "ae2:fusion_processor"
+			id: "301882A3C0EC42C6"
+			tasks: [
+				{
+					id: "178470D09BBA058D"
+					item: "ae2:printed_fusion_processor"
+					type: "item"
+				}
+				{
+					id: "6DF47DA8E6BE6D36"
+					item: "ae2:fusion_processor"
+					type: "item"
+				}
+			]
+			title: "Fusion"
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2CE92AA34A6EC0DA"
+				"6CE9DC56642E9B4E"
+			]
+			description: [
+				"Wireless Terminals are nice if you're not near your ME System. "
+				"{image:ae2:textures/guis/security_station.png width:100 height:100 align:1}"
+				"To link a Wireless Terminal, inside a Security Station put your Terminal in the right slot with the arrow pointing to the big slot. Now it's linked!"
+				"Make sure to have a &6Battery&r or something to hold charge in your inventory so your Terminal is powered."
+			]
+			icon: "ae2:wireless_terminal"
+			id: "1F67550BF2032A79"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "266223BFF076CC7C"
+					item: "ae2:wireless_terminal"
+					type: "item"
+				}
+				{
+					id: "5EA84AB699829911"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+			]
+			title: "Wireless ME"
+			x: -10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6F97F92E0052C131"]
+			description: ["The ME Security Station allows for customization of Player Access to the ME System."]
+			icon: "ae2:security_station"
+			id: "6CE9DC56642E9B4E"
+			tasks: [
+				{
+					id: "1AB0FB664C0BAD6B"
+					item: "ae2:security_station"
+					type: "item"
+				}
+				{
+					id: "5DB8AEE4FB2EA884"
+					item: "ae2:biometric_card"
+					type: "item"
+				}
+			]
+			title: "ME Security"
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6F97F92E0052C131"]
+			description: [
+				"Chemical Cell Housings are used to hold chemical substances provided by &9Mekanism&r."
+				"They can be used with:"
+				"&bStorage Componets"
+				""
+				"They can hold:"
+				"Infuse Types"
+				"Gas"
+			]
+			id: "07635593ED0F3182"
+			tasks: [{
+				id: "61765B7580EDE0D4"
+				item: "appmek:chemical_cell_housing"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6F97F92E0052C131"]
+			description: [
+				"Item Cell Housings are used with Storage Parts to create Digital Storage for your Items!"
+				"They can be used with:"
+				"&bStorage Components&r (Up to &465536k Storage Component)"
+				"&5Spacial Components"
+			]
+			id: "58B714C166CABA32"
+			tasks: [{
+				id: "3A47EB58CC0479C9"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6F97F92E0052C131"]
+			description: [
+				"Fluid Cell Housings are used with Storage Parts to create Digital Storage for your Fluids!"
+				"They can be used with:"
+				"&bStorage Components&r (Up to &b16384k&r)"
+			]
+			id: "2BE8A33F22DD0570"
+			tasks: [{
+				id: "71BD3C01BF8530BE"
+				item: "ae2:fluid_cell_housing"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F97F92E0052C131"]
+			description: [
+				"D.I.S.K Housing is used for special Cells that can hold something up to the Max storage capacity, instead of getting stopped after 63 unique things."
+				"They can be used with:"
+				"&bStorage Components&r (Up to &b256k&r)"
+			]
+			id: "57D692EAC5AD00BA"
+			tasks: [{
+				id: "2EB9F329CDAC1489"
+				item: "ae2things:disk_housing"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2BE8A33F22DD0570"
+				"57D692EAC5AD00BA"
+				"07635593ED0F3182"
+				"58B714C166CABA32"
+			]
+			description: [
+				"&4Super Cell Housing&r is used for extreme Cells that can hold &o&nanything&r up to the Max storage capacity. And we mean &o&neverything&r."
+				"They can be used with:"
+				"&4Super Storage Components&r (Up to &465M&r)"
+				""
+				"They can store:"
+				"&7Items"
+				"&6Fluids"
+				"&9Chemicals"
+			]
+			id: "434B073E889C3AA4"
+			tasks: [{
+				id: "7729990561F47CAB"
+				item: "ae2additions:super_cell_housing"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"49D3F6ED9A2FEFA3"
+				"43F67BA494CA984B"
+			]
+			description: [
+				"Scientists finally discovered Dilithium, a radiant and powerful Crystal that has 200.00x the Energy Capacity of a Fluix Crystal, and it's made from a simple set of ingredients."
+				"&dRequires Mekanism"
+			]
+			hide_details_until_startable: false
+			id: "53AEDB894B8377E3"
+			tasks: [{
+				count: 8L
+				id: "11D4685CFAF217ED"
+				item: "ae2:dilithium_crystal"
+				type: "item"
+			}]
+			title: "Dilithium"
+			x: -4.0d
+			y: 5.5d
 		}
 	]
 	title: "&bDigital Storage"

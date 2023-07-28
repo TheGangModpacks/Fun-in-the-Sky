@@ -1,3 +1,4 @@
+//priority: 1
 ServerEvents.recipes(event =>{
 	event.remove({ id: 'rsinfinitybooster:dimension_card' })
 	event.remove({ id: 'rsinfinitybooster:infinity_card' })

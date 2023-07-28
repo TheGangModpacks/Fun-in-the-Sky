@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
             'quark:pink_framed_glass'
         ], 10400)
 
-    event.recipes.botania.runic_altar('botanicadds:gaiasteel_pylon',
+    /*event.recipes.botania.runic_altar('botanicadds:gaiasteel_pylon',
         [
             'botania:natura_pylon',
             'apotheosis:rectifier_t3',
@@ -48,5 +48,5 @@ ServerEvents.recipes(event => {
             'botanicadds:gaiasteel_nugget',
             'botania:glimmering_dreamwood',
             'botania:glimmering_dreamwood',
-        ], 20800).id('botanicadds:gaiasteel_pylon')
+        ], 20800).id('botanicadds:gaiasteel_pylon')*/
 })

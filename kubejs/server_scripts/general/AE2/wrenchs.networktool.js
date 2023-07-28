@@ -1,3 +1,4 @@
+//priority: 1
 ServerEvents.recipes(event =>{
 	event.remove({ output: 'ae2:certus_quartz_wrench' })
 	event.remove({ output: 'ae2:nether_quartz_wrench' })

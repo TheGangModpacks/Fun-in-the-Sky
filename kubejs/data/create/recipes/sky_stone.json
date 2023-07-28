@@ -1,0 +1,13 @@
+{
+    "type": "create:splashing",
+    "ingredients": [{ "tag": "twilightforest:decoration/mazestone"}],
+    "results": [
+      {
+        "item": "twilightforest:mazestone"
+      },
+      {
+          "chance": 0.05,
+          "item": "ae2:sky_stone_block"
+      }
+    ]
+}

@@ -1,3 +1,11 @@
 {
-    "block.ae2.energy_acceptor": "Rectifier"
+    "block.ae2.energy_acceptor": "Rectifier",
+    "item.ae2.cable_energy_acceptor": "Cable Rectifier",
+
+    "item.ae2.pattern_encoding_terminal": "Programming Terminal",
+    "item.ae2.pattern_access_terminal": "ME Access Terminal",
+
+    "enchantment.ae2.fluix_poisoning.desc": "When Fluix makes contact with the body, the body will crumble until it has 6 HP remaining.",
+
+    "item.ae2.mysterious_cube.tooltip.summary": "§fScientists were experimenting on Fluix, §fattempting to charge it like Certus, §fwhich in turn caused an §4explosion§f, §fkilling everyone in a 5 mile radius. §fAll §fthat was left was a §5Mysterious Cube§f."
 }

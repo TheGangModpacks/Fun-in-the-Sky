@@ -57,8 +57,8 @@ ServerEvents.recipes(event => {
 
 	event.remove({id: 'quark:tweaks/crafting/utility/misc/charcoal_to_black_dye'})
 
-	event.shaped('summoningrituals:altar', ['aba', 'cdc', 'eee'], {a: 'mekanism:block_refined_glowstone', b: "botania:red_petal_block", c: "mekanism:hdpe_sheet", d: "botania:alfheim_portal", e: 'botania:glimmering_livingwood'})
-	.id(`${shaped_prefix_misc}summoning_altar`)
+	/*event.shaped('summoningrituals:altar', ['aba', 'cdc', 'eee'], {a: 'mekanism:block_refined_glowstone', b: "botania:red_petal_block", c: "mekanism:hdpe_sheet", d: "botania:alfheim_portal", e: 'botania:glimmering_livingwood'})
+	.id(`${shaped_prefix_misc}summoning_altar`)*/
 
 	event.shaped('quark:grate', [' a ', 'a a', ' a '], {a: 'iron_bars'}).id('quark:building/crafting/grate')
 	event.shaped('waterstrainer:iron_mesh', [' a ', 'aba', ' a '], {a: 'iron_bars', b: "exnihilosequentia:iron_mesh"}).id('waterstrainer:iron_mesh')

@@ -1,9 +1,28 @@
 //priority: 1
 ServerEvents.recipes(event =>{
 
-    event.replaceInput({id: 'refinedstorage:cable'}, '#forge:glass', 'tinted_glass')
+    event.custom({
+      "type": "extendedcrafting:shaped_table",
+      "tier": 1,
+      "pattern": [
+        "   ",
+        "ABA",
+        "   "
+      ],
+      "key": {
+        "A": {
+          "item": "refinedstorage:quartz_enriched_iron"
+        },
+        "B": {
+          "item": "emendatusenigmatica:silicon_gem"
+        }
+      },
+      "result": {
+        "item": "refinedstorage:cable",
+        "count": 3
+      }
+    }).id('refinedstorage:cable')
 
-    event.remove({ output: 'refinedstorage:controller' })
     event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -22,9 +41,8 @@ ServerEvents.recipes(event =>{
           "E": {"item": "refinedstorage:machine_casing"}
         },
         "result": {"item": "refinedstorage:controller"}
-      }).id('fits:advanced_table/refined_storage/controller')
+      }).id('refinedstorage:controller')
 
-      event.remove({id: 'refinedstorage:grid'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -43,9 +61,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "refinedstorage:grid"
         }
-      }).id('fits:basic_table/refined_storage/grid')
+      }).id('refinedstorage:grid')
 
-      event.remove({id: 'refinedstorage:fluid_grid'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -64,9 +81,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "refinedstorage:fluid_grid"
         }
-      }).id('fits:basic_table/refined_storage/fluid_grid')
+      }).id('refinedstorage:fluid_grid')
 
-      event.remove({id: 'refinedstorage:crafting_grid'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -85,9 +101,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "refinedstorage:crafting_grid"
         }
-      }).id('fits:basic_table/refined_storage/crafting_grid')
+      }).id('refinedstorage:crafting_grid')
 
-      event.remove({id: 'refinedstorage:disk_drive'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -108,9 +123,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "refinedstorage:disk_drive"
         }
-      }).id('fits:advanced_table/refined_storage/disk_drive')
+      }).id('refinedstorage:disk_drive')
 
-      event.remove({id: 'refinedstorage:disk_manipulator'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -129,9 +143,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "refinedstorage:disk_manipulator"
         }
-      }).id('fits:basic_table/refined_storage/manipulator')
+      }).id('refinedstorage:disk_manipulator')
 
-      event.remove({id: 'refinedstorage:crafter'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -150,9 +163,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "refinedstorage:crafter"
         }
-      }).id('fits:basic_table/refined_storage/crafter')
+      }).id('refinedstorage:crafter')
 
-      event.remove({id: 'extrastorage:iron_crafter'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -171,9 +183,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "extrastorage:iron_crafter"
         }
-      }).id('fits:basic_table/extrastorage/iron_crafter')
+      }).id('extrastorage:iron_crafter')
 
-      event.remove({id: 'extrastorage:gold_crafter'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -192,9 +203,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "extrastorage:gold_crafter"
         }
-      }).id('fits:basic_table/extrastorage/gold_crafter')
+      }).id('extrastorage:gold_crafter')
 
-      event.remove({id: 'extrastorage:diamond_crafter'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -213,9 +223,8 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "extrastorage:diamond_crafter"
         }
-      }).id('fits:basic/_table/extrastorage/diamond_crafter')
+      }).id('extrastorage:diamond_crafter')
 
-      event.remove({id: 'extrastorage:netherite_crafter'})
       event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -234,5 +243,5 @@ ServerEvents.recipes(event =>{
         "result": {
           "item": "extrastorage:netherite_crafter"
         }
-      }).id('fits:basic_table/extrastorage/netherite_crafter')
+      }).id('extrastorage:netherite_crafter')
 })

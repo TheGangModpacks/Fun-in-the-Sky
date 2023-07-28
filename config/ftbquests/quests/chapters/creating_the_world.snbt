@@ -11,1151 +11,672 @@
 	quests: [
 		{
 			dependencies: ["648D003C88FD41AB"]
-			description: ["Create is a mod focused on taking the player through an industrial paradise, bringing in all sorts of engineering bits for your delight. Good luck out there."]
+			description: ["&6Create&r is a mod all about Beautiful and Functional Automation. When working with &6Create&r, you can solve any Automation problem you have. Automatic Carrot farm? Mob farm? You can make anything!"]
 			hide: true
 			icon: "create:goggles"
-			id: "764927A0428B3988"
-			invisible_until_tasks: 1
+			id: "5AB51F85D0514E25"
 			rewards: [{
-				id: "26A6AC51155E79B3"
+				id: "2608D16CBCCABF8C"
 				item: "create:goggles"
 				type: "item"
 			}]
 			tasks: [{
-				id: "4FAD9F67EAB256BD"
-				title: "Create"
+				id: "702741FAE66841FD"
+				title: "Start Create"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -5.5d
+			title: "Create"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["764927A0428B3988"]
+			dependencies: ["5AB51F85D0514E25"]
 			description: [
-				"Cogwheels and Shafts are the primary source for kinetic energy logistics."
+				"You will need Shafts and Cogwheels to provide Rotation to Create Blocks."
 				""
-				"Copper Cogwheels are now the standard for everything. They then upgrade to Iron, which is used for crafting, and still functions like cogwheels. Then Steel tier, which can be used for advanced Create crafting recipes."
-				""
-				"Copper Cogs can also upgrade to different Wooden cogs, for aesthetics."
-				"{@pagebreak}"
+				"Additionally, Andesite Casings are required for crafting the blocks themselves."
 			]
-			hide: true
-			hide_dependency_lines: true
-			icon: "extendedgears:large_copper_cogwheel"
-			id: "265AD5E9AC29C5ED"
-			invisible_until_tasks: 1
-			shape: "pentagon"
+			icon: "create:shaft"
+			id: "6A01B57CEF284785"
 			tasks: [
 				{
-					count: 32L
-					id: "38E7FE28613157B2"
+					count: 16L
+					id: "72061B8800DD0AAB"
 					item: "create:shaft"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "2C00AA89527A358D"
-					item: "extendedgears:copper_cogwheel"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "71E4DB9D5195F792"
-					item: "extendedgears:large_copper_cogwheel"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "086FF11350B115A0"
-					item: "extendedgears:iron_cogwheel"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "550EAAB0CD44031E"
-					item: "extendedgears:large_iron_cogwheel"
-					type: "item"
-				}
-			]
-			title: "Cogs"
-			x: -7.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["597E411D5DD0C715"]
-			description: ["The Waterwheel is a basic kinetic energy source. Will require lots of space."]
-			hide: true
-			id: "04BAEC04223267EC"
-			shape: "diamond"
-			tasks: [{
-				id: "5471EFECAC4FC6EA"
-				item: "create:water_wheel"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["597E411D5DD0C715"]
-			description: [
-				"The Steam Boiler is the best way to get your Rotational Force. When Pondering the Steam Engine, it will show you how to make it."
-				""
-				"There are 18 levels to the Steam Boiler. Each level an extra Engine can be added. Use Engineer's Goggles to see extra info."
-			]
-			hide: true
-			icon: "create:steam_engine"
-			id: "472D4A2C63E58FF8"
-			shape: "diamond"
-			subtitle: "Is this DLC?"
-			tasks: [{
-				id: "140DAA07F7F7A948"
-				item: "create:steam_engine"
-				type: "item"
-			}]
-			title: "Steam!"
-			x: 4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["597E411D5DD0C715"]
-			description: ["The Windmill is a mid-tier source of kinetic energy. Easy to set up."]
-			hide: true
-			icon: "create:white_sail"
-			id: "227BD59BB3F885F6"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "0189EB0AD8A6BE03"
-					item: "create:windmill_bearing"
-					type: "item"
-				}
-				{
-					id: "7A399511F118154A"
-					item: "create:white_sail"
-					type: "item"
-				}
-			]
-			title: "Windmill"
-			x: 4.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["764927A0428B3988"]
-			description: [
-				"Create has many options for block movement, for creating things such as elevators, carriages, etc."
-				"Do note most of these blocks require Andesite Casing."
-			]
-			hide: true
-			hide_dependency_lines: true
-			icon: "create:mechanical_bearing"
-			id: "318C3AA1FD1918D3"
-			invisible_until_tasks: 1
-			shape: "pentagon"
-			tasks: [{
-				id: "59F76E9C6E95D607"
-				type: "checkmark"
-			}]
-			title: "Mechanical Mayhem"
-			x: -2.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["318C3AA1FD1918D3"]
-			description: [
-				"An advanced Piston, capable of pushing blocks far beyond what a normal piston could do."
-				"If the block pushed has other blocks stuck to it, those blocks will be pulled along as well."
-				"Giving a redstone signal either pushes the piston, or pulls it back, depending on which way your shaft is turning."
-				"Can be placed in any direction."
-			]
-			hide: true
-			icon: "create:mechanical_piston"
-			id: "4D4B205189001DAF"
-			tasks: [
-				{
-					id: "1ED064833942D2AD"
-					item: "create:mechanical_piston"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "5B2C93FF6924683C"
-					item: "create:piston_extension_pole"
-					type: "item"
-				}
-			]
-			x: -2.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["318C3AA1FD1918D3"]
-			description: ["The Rope Pully will pull the block underneath it upwards. If the pulled block has other blocks stuck to it, those will be pulled along with it. When given a redstone signal, it will either pull the block up, or push it down, depending on the direction your shaft is turning."]
-			hide: true
-			id: "3AD08D044AEB3419"
-			tasks: [{
-				id: "29D687A0E1FE213B"
-				item: "create:rope_pulley"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["318C3AA1FD1918D3"]
-			description: ["The Gantry Carriage pulls blocks along with it down a shaft of it's own. If the pulled block has other blocks stuck to it, they will be pulled along with it. The carriage moves in a direction based on it's shafts. Can be placed in any direction."]
-			hide: true
-			icon: "create:gantry_carriage"
-			id: "22055B43713EF169"
-			tasks: [
-				{
-					id: "53736B98EB19F122"
-					item: "create:gantry_carriage"
+					count: 16L
+					id: "2699EEDC7E7D0A32"
+					item: "create:cogwheel"
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "6D1486BAD088ED8B"
-					item: "create:gantry_shaft"
-					type: "item"
-				}
-			]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["318C3AA1FD1918D3"]
-			description: [
-				"The Cart Assembler places blocks on top of a moving Minecart, when passing under."
-				"When given a redstone signal, device will allow for the blocks to attach to the cart. When unpowered, empty carts will move along without the contraption, or will take contraptions from minecarts."
-				"Use Minecart Couplings to bring carts together, allowing for advanced contraptions."
-			]
-			hide: true
-			icon: "minecraft:chest_minecart"
-			id: "235C55D9954836F3"
-			tasks: [
-				{
-					id: "37F2D0F15E2A55C3"
-					item: "create:cart_assembler"
+					id: "394980289D7033A7"
+					item: "create:large_cogwheel"
 					type: "item"
 				}
 				{
-					count: 3L
-					id: "2DF85EF641BF227A"
-					item: "create:minecart_coupling"
+					id: "5559F8B70221A562"
+					item: "create:andesite_casing"
 					type: "item"
 				}
 			]
-			title: "Minecarts"
+			title: "The Basics"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["318C3AA1FD1918D3"]
-			description: ["Device gives a redstone signal when an assembled contraption with another contact links with it."]
-			hide: true
-			id: "479C196440147C09"
-			tasks: [{
-				id: "32E0FC85FDEC4706"
-				item: "create:redstone_contact"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["764927A0428B3988"]
+			dependencies: ["6A01B57CEF284785"]
 			description: [
-				"Fluid logistics is a big part of Create, and works in a more unique way than any other modded pipe."
+				"Water Wheels are a cheap source of Rotation. Have Water flow around them and you're good to go."
 				""
-				"You can put Windows on Fluid Pipes by right-clicking with a Wrench. Does not work on corners."
+				"If you use Soul Sand to make a Bubble Column, you can make them go faster and provide more Stress capacity."
+				""
+				"You can click any Vanilla Plank onto Waterwheels to change the look."
 			]
-			hide: true
-			hide_dependency_lines: true
-			id: "4716E7AB57F8C77D"
-			invisible_until_tasks: 1
-			shape: "pentagon"
-			tasks: [{
-				count: 16L
-				id: "269BECC3EBCFC0AE"
-				item: "create:fluid_pipe"
-				type: "item"
-			}]
-			title: "Fluid Logistics"
-			x: -5.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["4716E7AB57F8C77D"]
-			description: [
-				"The Spout dumps fluid on whatever is below it."
-				"This works with either a Depot, or belts."
-				"The Spout can only recive fluids via pipe. Does not allow for manual injection."
-			]
-			hide: true
-			id: "722DE2E9F1A72EF7"
-			tasks: [{
-				id: "5C17EE431F4944B3"
-				item: "create:spout"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4716E7AB57F8C77D"]
-			description: [
-				"The Hose Pully drains fluids in the world."
-				"If the fluid being pumped has 10k source blocks or more, it is considered infinite."
-				"The speed of the pully depends on how fast fluids are being pulled in your pipes."
-				"Hold W to ponder for more."
-			]
-			hide: true
-			id: "5B29FF8B9E2C6005"
-			tasks: [{
-				id: "58555DD5E85EDE63"
-				item: "create:hose_pulley"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4716E7AB57F8C77D"]
-			description: [
-				"The Mechanical Pump pulls/pushes fluid through pipes."
-				"Requires kinetic energy."
-			]
-			hide: true
-			id: "5B0CC763C5034F17"
-			tasks: [{
-				id: "62D916C3AA965334"
-				item: "create:mechanical_pump"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["5B0CC763C5034F17"]
-			description: [
-				"The Smart Pipe only allows fluids through if they are whitelisted."
-				"Fluid Valves shut off access to pipes. Requires a valve handle."
-			]
-			hide: true
-			icon: "create:smart_fluid_pipe"
-			id: "60365FF08916FA75"
+			icon: "create:water_wheel"
+			id: "0693BAEDF5543409"
 			tasks: [
 				{
-					id: "55E316631A39B4C8"
-					item: "create:smart_fluid_pipe"
+					id: "423E6AD85FFBB9F7"
+					item: "create:water_wheel"
 					type: "item"
 				}
 				{
-					id: "0C90CF1D6CD7178E"
-					item: "create:fluid_valve"
+					id: "336582796F15705D"
+					item: "create:large_water_wheel"
 					type: "item"
 				}
 			]
-			title: "Different Pipes"
-			x: -6.0d
-			y: -2.5d
+			title: "Water Wheels!"
+			x: -2.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["4716E7AB57F8C77D"]
-			description: [
-				"Fluid tanks store, well, fluids."
-				"Can only recieve fluids via pipe. Does not allow for manual insertion."
-				"Fluid Capacity can be improved by placing more tanks together. Max width is 3x3, max hight is 30."
-			]
-			hide: true
-			id: "15ABC128A25424B6"
-			tasks: [{
-				id: "1D06EEDE6864D4E1"
-				item: "create:fluid_tank"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4716E7AB57F8C77D"]
-			description: [
-				"The Item Drain will pull fluids from items above it."
-				"Can be automated with belts."
-			]
-			hide: true
-			id: "09258CF3B1AE8893"
-			tasks: [{
-				id: "16930E7CB37D41C8"
-				item: "create:item_drain"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4716E7AB57F8C77D"]
-			description: [
-				"The Portable Fluid Interface allows for contraptions to transfer fluids to a different system, while it's moving."
-				""
-				"Ponder for more info."
-			]
-			hide: true
-			id: "14836CDF5740CA00"
-			tasks: [{
-				id: "65F2E3994433DF53"
-				item: "create:portable_fluid_interface"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["318C3AA1FD1918D3"]
-			description: ["Chassis are blocks that connect to each other without need for glue/slime. Useful for bigger contraptions."]
-			hide: true
-			icon: "create:linear_chassis"
-			id: "50C8CB0ABDDEDC75"
-			optional: true
+			dependencies: ["772C8CADBC09C2CD"]
+			description: ["Windmills are a pretty decent source of Rotation. Build Sails on a block in front of the Bearing, and then click the Bearing to let it fly."]
+			icon: "create:windmill_bearing"
+			id: "2EA3881A6A9D112F"
 			tasks: [
 				{
-					id: "2BDFF0C9EFEBFF0B"
-					item: "create:linear_chassis"
+					id: "3AE908B759ABF1E7"
+					item: "create:windmill_bearing"
 					type: "item"
 				}
 				{
-					id: "3A72EAEAB0DED819"
-					item: "create:secondary_linear_chassis"
-					type: "item"
-				}
-				{
-					id: "104AD4D332EB79B9"
-					item: "create:radial_chassis"
+					count: 16L
+					id: "36D7176A6B3FCC13"
+					item: "create:white_sail"
 					type: "item"
 				}
 			]
-			title: "Chassis"
-			x: -2.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["764927A0428B3988"]
-			description: [
-				"Most of Create uses kinetic energy to power blocks. Make sure you're using the right source for the job."
-				"The Hand Crack is the most basic form of kinetic energy."
-				""
-				"Holding R. Click turns it counter-clockwise. Crouching spins it the opposite direction."
-				""
-				"Requires hunger."
-			]
-			hide_dependency_lines: true
-			id: "597E411D5DD0C715"
-			invisible: true
-			invisible_until_tasks: 1
-			shape: "pentagon"
-			tasks: [{
-				id: "14A4C4555F4D51E7"
-				item: "create:hand_crank"
-				type: "item"
-			}]
-			title: "Kinetic Energy"
-			x: 3.0d
+			title: "Windmills!"
+			x: -2.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["764927A0428B3988"]
-			description: [
-				"There are many ways to transport items, make sure to use what works efficiently with your system."
-				""
-				"Many blocks related to Belts, and the belts themselves, require lots of Kelp."
-			]
-			hide: true
-			hide_dependency_lines: true
-			id: "1E2518E28DDAFF97"
-			invisible_until_tasks: 1
-			shape: "pentagon"
+			dependencies: ["7535DE7ADDF6296D"]
+			description: ["The Electric Motor is a very good source of Rotation, using Energy to produce it. Put enough into it and you'll be spinning at 786 RPM in no time!"]
+			id: "1C48AB1866F4C478"
 			tasks: [{
-				count: 4L
-				id: "4BDE6F4A19E8C1C5"
-				item: "create:belt_connector"
-				type: "item"
-			}]
-			title: "Item Logistics"
-			x: -8.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1E2518E28DDAFF97"]
-			description: [
-				"Funnels are used to insert/export items from an inventory."
-				""
-				"Andesite Funnels can extract one item at a time. Brass funnels can do 64, and hold filters."
-			]
-			hide: true
-			id: "21BC2591C386F5A7"
-			tasks: [{
-				id: "431F890BF6DDC744"
-				item: "create:andesite_funnel"
-				type: "item"
-			}]
-			title: "Funnels!"
-			x: -8.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1E2518E28DDAFF97"]
-			description: [
-				"Andesite Tunnels can be used to split belts. They also cover up the belts to look nice."
-				""
-				"The Brass funnel works much differently. It does the same thing the Andesite one does, but allows for filtering of items, splitting on parallel belts, and merging them. They also allow for different sorting options."
-			]
-			hide: true
-			id: "113A79FC8949CB95"
-			tasks: [{
-				id: "04F03DBFFF9F88E3"
-				item: "create:andesite_tunnel"
-				type: "item"
-			}]
-			title: "Tunnels!"
-			x: -9.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1E2518E28DDAFF97"]
-			description: [
-				"The Weighted Ejector ejects items into the air, at other blocks."
-				""
-				"While holding it, Shift + R. Click on a block to set the item's destination, then place it down."
-			]
-			hide: true
-			id: "665ADF57DBD8B73E"
-			tasks: [{
-				id: "3C4D5FA51751332A"
-				item: "create:weighted_ejector"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1E2518E28DDAFF97"]
-			description: ["The Mechanical Arm is an item transporting masterpiece. They can have many inputs/outputs, and work pretty quickly if given enough rotational force."]
-			hide: true
-			id: "12884729FB8DF25D"
-			shape: "circle"
-			tasks: [{
-				id: "16419BE474FB11E9"
-				item: "create:mechanical_arm"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["764927A0428B3988"]
-			description: [
-				"Create offers many very fun tools, allowing for really easy building, longer reach distance, everything."
-				""
-				"Additionally, Create offers many different blocks for automating the world. Looks way better than random pipes and garden cloches everywhere."
-			]
-			hide: true
-			hide_dependency_lines: true
-			icon: "create:basin"
-			id: "6C34C54C8169ABCC"
-			invisible_until_tasks: 1
-			shape: "pentagon"
-			tasks: [{
-				id: "343EDAC1C22800A1"
-				item: "create:basin"
-				type: "item"
-			}]
-			title: "Tools of the Trade"
-			x: -11.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Mechanical Press is used to press items into a better, compressed form, like iron ingots to iron sheets."
-				""
-				"While not required, if a Depot is put underneath it, items on it will be pressed. Using a Basin instead compresses items with a shapeless recipe. Check it out in REI."
-				""
-				"Some recipes may need a Blaze Burner."
-			]
-			hide: true
-			id: "341BE7FB45162054"
-			shape: "diamond"
-			subtitle: "Pressing matters"
-			tasks: [{
-				id: "40BB4330ADE52475"
-				item: "create:mechanical_press"
+				id: "7377C37CECC0E6D4"
+				item: "createaddition:electric_motor"
 				type: "item"
 			}]
 			x: -11.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Mechanical Mixer mixes items/fluids inside a Basin."
-				""
-				"It can mix anything with a shapeless crafting recipe, and some extra things."
-				""
-				"Some recipes may need a Blaze Burner."
-			]
-			hide: true
-			id: "4C734BAE597CDB86"
-			shape: "diamond"
-			tasks: [{
-				id: "1E16453917F85078"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["1E2518E28DDAFF97"]
-			description: [
-				"Chutes are like hoppers, but drop more items."
-				""
-				"Clicking a Chute on the side with another chute will place a chute diagonally."
-				""
-				"The Smart Chute adds filters, and drops more items at a time. Cannot be diagonal."
-				""
-				"With an Encased Fan, you can blow air upwards through a chute to push items up."
-				""
-				"You can R. Click a chute while holding a Wrench to add windows."
-			]
-			hide: true
-			id: "0ED979E1F44D3A48"
-			subtitle: "Well chute"
-			tasks: [{
-				id: "1B2DFE2A24E9F378"
-				item: "create:chute"
-				type: "item"
-			}]
-			title: "Chutes"
-			x: -9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1E2518E28DDAFF97"]
-			description: [
-				"The Portable Storage Interface allows for transporting items between a contraption and stationary objects."
-				""
-				"Ponder for more info."
-			]
-			hide: true
-			id: "3C432F598FAF8FFE"
-			tasks: [{
-				id: "7A47AA95AA4B1A57"
-				item: "create:portable_storage_interface"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: ["Breaks blocks when powered by rotational force, or a part of a moving contraption."]
-			hide: true
-			id: "34471BFF0850B257"
-			shape: "diamond"
-			tasks: [{
-				id: "2A41B17E8A00CC45"
-				item: "create:mechanical_drill"
-				type: "item"
-			}]
-			x: -11.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Mechanical Saw has the ability to cut down entire trees from the bottom."
-				""
-				"When a Saw is facing upright and recieving rotational force, can saw down wooden blocks plus some other things into different items. For example: Log > Planks > Sticks. Can also specify the exact recipe."
-			]
-			hide: true
-			id: "3C61F29EA007B252"
-			shape: "diamond"
-			tasks: [{
-				id: "446716E833AC7286"
-				item: "create:mechanical_saw"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Mechanical Harvester harvests crops with ease. When a part of a moving contraption, will break and replace crops when coming into contact with them."
-				""
-				"Place a Chest onto the moving contraption to store the items broken by the harvester."
-			]
-			hide: true
-			id: "600520389E87EC47"
-			shape: "diamond"
-			tasks: [{
-				id: "373385679330A261"
-				item: "create:mechanical_harvester"
-				type: "item"
-			}]
-			x: -12.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"Mechanical Ploughs can be used to pick up blocks without a solid hitbox, like Torches, or Rails, for example."
-				""
-				"Can also launch entitys without hurting them... if you wanted."
-			]
-			hide: true
-			id: "4E7EAF8D9827D47D"
-			shape: "diamond"
-			subtitle: "And it's strong enough to pick up pancake!"
-			tasks: [{
-				id: "7ECADD1490F50306"
-				item: "create:mechanical_plough"
-				type: "item"
-			}]
-			x: -12.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Deployer has a multitude of functions. It can: Break blocks, Use items on blocks, Place blocks, and Attack mobs."
-				""
-				"The rule with the Deployer: It always either imitates a R. Click, or L. Click. R. Clicking with a Wrench on the hand will change which one."
-			]
-			hide: true
-			id: "3835E10E775B2607"
-			shape: "diamond"
-			tasks: [{
-				id: "7DE6651FE599F4D1"
-				item: "create:deployer"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Wand of Symm is an awesome building tool, mirroring your places blocks. Great for architecture!"
-				""
-				"Hold CTRL for controls."
-			]
-			hide: true
-			id: "2538FFE896D45B2A"
-			subtitle: "Wingardiam Leviosaah "
-			tasks: [{
-				id: "74444118CD95C5DD"
-				item: "create:wand_of_symmetry"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"Used for configuration and collection of Create blocks."
-				""
-				"R. Click on most blocks to rotate. Scroll while hovering over a menu on some blocks to config, and Shift + R. Click to destroy and collect Create blocks."
-			]
-			hide: true
-			id: "04B450F24705B154"
-			tasks: [{
-				id: "0ECFD949C77AD377"
-				item: "create:wrench"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Constantan Backtank replaces your chestplate with a tank of Pressurized Air! Used to pressurize Potato Cannons, and diving armor."
-				""
-				"Can be enchanted with Chestplate enchants."
-			]
-			hide: true
-			id: "303CBA95D74C2FFD"
-			shape: "diamond"
-			tasks: [{
-				id: "1C07582186F4B532"
-				item: {
-					Count: 1b
-					id: "create:copper_backtank"
-					tag: {
-						Air: 900
-					}
-				}
-				type: "item"
-			}]
-			x: -15.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: ["Shoots Potatos, requires air. Yes, this is a real product."]
-			hide: true
-			id: "18E7BEB44AEF599B"
-			shape: "diamond"
-			tasks: [{
-				id: "68C144E6C509FEAA"
-				item: {
-					Count: 1b
-					id: "create:potato_cannon"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -14.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"You're probably not coming in close proximity to oceans, but whatever."
-				""
-				"Diving Armor allows for better movement in the water, and more breathing time. Requires a Backtank with air."
-			]
-			hide: true
-			icon: {
-				Count: 1b
-				id: "create:diving_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "791871FC6931DA80"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "346EBAD895B81A84"
-					item: {
-						Count: 1b
-						ForgeCaps: {
-							"agricraft:gene_inspector": {
-								agri_flag: 0b
-							}
-						}
-						id: "create:diving_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6D5EFCDC8F018569"
-					item: {
-						Count: 1b
-						id: "create:diving_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Diving Armor"
-			x: -14.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			hide: true
-			id: "3A7186969035A609"
-			tasks: [{
-				id: "53ADF0F6F2D7ED94"
-				item: {
-					Count: 1b
-					id: "create:super_glue"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -10.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: ["The Extendo Grip allows for better interaction range. Requires Air from a Backtank."]
-			hide: true
-			id: "3113CA405B398E08"
-			shape: "diamond"
-			tasks: [{
-				id: "316D72F8AFE62A23"
-				item: {
-					Count: 1b
-					id: "create:extendo_grip"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -14.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["764927A0428B3988"]
-			description: ["Create has a bunch of extra items for things like redstone control. Check them out, I promise they're useful."]
-			hide: true
-			hide_dependency_lines: true
-			icon: "create:turntable"
-			id: "39DE977D710C790B"
-			invisible_until_tasks: 1
-			shape: "pentagon"
-			tasks: [{
-				id: "1B0E4D99BF02F433"
-				title: "Checkmark"
-				type: "checkmark"
-			}]
-			title: "Create Gadgets"
-			x: -14.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["39DE977D710C790B"]
-			description: [
-				"Redstone Links allow for wireless redstone activity."
-				""
-				"Shift + R. Click to turn on recieving mode. Can apply items as frequencies."
-			]
-			hide: true
-			id: "0677795E97434817"
-			shape: "diamond"
-			tasks: [{
-				count: 2L
-				id: "715F40E2545270DC"
-				item: "create:redstone_link"
-				type: "item"
-			}]
-			title: "Redstone Link"
-			x: -15.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["39DE977D710C790B"]
-			description: [
-				"The Analog Level allows for precise redstone control."
-				""
-				"R. Click increases Redstone power level. Shift + R. Click decreases."
-			]
-			hide: true
-			id: "7DBA515989FC850C"
-			shape: "diamond"
-			tasks: [{
-				id: "120110551A150D51"
-				item: "create:analog_lever"
-				type: "item"
-			}]
-			x: -16.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["39DE977D710C790B"]
-			description: [
-				"Nixie Tubes are used to store and show info. Not much though."
-				""
-				"When powered by Redstone, shows power level. When Tubes are placed next to each other, you can apply a named name tag to show that text on them."
-			]
-			hide: true
-			id: "7ABBABB04610CEA8"
-			shape: "diamond"
-			tasks: [{
-				id: "215BFFE4F4084A30"
-				item: "create:nixie_tube"
-				type: "item"
-			}]
-			x: -16.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["39DE977D710C790B"]
-			description: ["The Pulse Repeater sends a redstone pulse when powered."]
-			hide: true
-			id: "6D75A7C63932299F"
-			shape: "diamond"
+			dependencies: [
+				"5760C47C99191165"
+				"70FE5861AEF17C9C"
+			]
+			description: [
+				"The Boiler is the best way to Rotate your &6Create&r machinery."
+				""
+				"To make one:"
+				"&e*&r Place down a 2x2 of blocks that emit heat, such as Fire, Campfire, or Blaze Burner."
+				""
+				"&e*&r Place a 2x2 of Fluid Tanks above the heat source."
+				""
+				"&e*&r Attach an Engine to any side of the tank. The Boiler will form."
+				""
+				"&e*&r Connect a Fluid Pipe to the now Boiler, and supply with Water."
+				""
+				"&e*&r Attach a Shaft to the Engine, and you have a working Boiler!"
+			]
+			icon: "create:steam_engine"
+			id: "7287333BC26B6D75"
+			tasks: [
+				{
+					count: 4L
+					id: "334B6026CEC37432"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "4A2F9BB5326BD8C8"
+					item: "create:steam_engine"
+					type: "item"
+				}
+			]
+			title: "Boiler"
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6A01B57CEF284785"]
+			description: [
+				"Holds Items and Fluids for Processing."
+				"Provides an Output Faucet for special blocks below it."
+			]
+			id: "7B754D82BBA82AD8"
 			tasks: [{
-				id: "184648662CF1E80C"
-				item: "create:pulse_repeater"
+				id: "26C1FF8D225DA7CC"
+				item: "create:basin"
 				type: "item"
 			}]
-			x: -16.5d
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B754D82BBA82AD8"]
+			description: ["The Mechanical Mixer is used for Mixing Items and / or Fluids to make something new. You know... like a mixer?"]
+			id: "5E755A5886AF0FC4"
+			tasks: [{
+				id: "4308BDB88BE17DC6"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5F8365D730F42CBD"
+				"5E755A5886AF0FC4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Blaze Burners are used to provide heat to Basins, which is required for some Mixing and Compacting Recipes."
+				""
+				"To get one, craft an &8Empty Blaze Burner&r, and then [&4R&6-&4Click&r] it on a &eBlaze&r."
+			]
+			id: "7D86E391214B5CE2"
+			tasks: [{
+				id: "44463B44946EBFC7"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B754D82BBA82AD8"]
+			description: ["The Mechanical Press is a heafty machine that can press many Tons with ease. Use it for easier production of Plates, and Compacting in a Basin."]
+			id: "5F8365D730F42CBD"
+			tasks: [{
+				id: "2D04C29C78121882"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D86E391214B5CE2"]
+			description: ["&eBrass&r is a very important material from &6Create&r. It's used for all the advanced machinery, like &eMechanical Arms&r, &eCrafters&r, and more."]
+			id: "7202821F0734709A"
+			shape: "octagon"
+			tasks: [{
+				id: "1FE8E4CA0CA6D354"
+				item: "emendatusenigmatica:brass_ingot"
+				type: "item"
+			}]
+			title: "Brass!"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A01B57CEF284785"]
+			description: [
+				"Mechanical Plough picks up non-full Blocks."
+				""
+				"Mechanical Drill breaks most full Blocks."
+				""
+				"Mechanical Saw cuts down entire Trees when cutting at the bottom."
+				"Can also be used for Cutting Recipes when facing upwards."
+			]
+			icon: "create:mechanical_plough"
+			id: "4913BED10B2549EE"
+			tasks: [
+				{
+					id: "26F760BCE0130F23"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+				{
+					id: "5418C1F0328E6A99"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "01E0F6302BEF0A6A"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "Mechanical Utilities"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5F8365D730F42CBD"]
+			description: ["Copper Casings provide substantial structure for Fluid-based machinery."]
+			id: "2D755FB4D576C302"
+			tasks: [{
+				id: "1525DE64F03CEF25"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			title: "Copper Casing"
+			x: -5.5d
 			y: -3.5d
 		}
 		{
-			dependencies: ["764927A0428B3988"]
-			description: ["Create adds amazing Trains to the game, allowing for extensive mobility, transfer of whatever you need, everything! Now, the question is: Why do you need trains in the sky?"]
-			hide: true
-			hide_dependency_lines: true
-			icon: "create:railway_casing"
-			id: "348AC59A917B7849"
-			shape: "pentagon"
-			subtitle: "Road-Killer!"
+			dependencies: [
+				"08C63A1D3207BB2A"
+				"2D755FB4D576C302"
+			]
+			description: [
+				"Transports Fluids."
+				"Built from Constantan."
+				"[&4R&6-&4Click&r] a Pipe with a Wrench to convert to a Window Pipe."
+			]
+			icon: "create:fluid_pipe"
+			id: "5760C47C99191165"
+			tasks: [
+				{
+					count: 16L
+					id: "6690702718147E79"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "79CA84FD90FCDE51"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Fluid Pipe"
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2D755FB4D576C302"]
+			description: ["Holds &b8000mb&r of &3Fluid&r. Can be stacked, and &63 &rx &63&r wide."]
+			id: "70FE5861AEF17C9C"
 			tasks: [{
-				id: "79F0B242D93CB6D3"
-				item: "create:railway_casing"
+				count: 8L
+				id: "467FB649D8B9EE61"
+				item: "create:fluid_tank"
 				type: "item"
 			}]
-			title: "Choo Choo!"
-			x: 0.0d
+			title: "Fluid Tank"
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5760C47C99191165"
+				"70FE5861AEF17C9C"
+			]
+			description: [
+				"Create adds lots of useful things you can do with Fluids, such as dispense them over an Item."
+				""
+				"&6Spout"
+				"Dispenses Fluids onto something below it."
+				""
+				"&6Drain"
+				"Items that roll over it drain into it and roll away. Additionally you can click a filled bucket on it to drain into it."
+				""
+				"&6Hose Pully"
+				"Alternative way to pump Fluids. If Hose is dropped into a large body of fluid, it will become an infinite source."
+				""
+				"&6Portable Fluid Interface"
+				"Provides a way for Contraptions to transport Fluids off without having to stop."
+			]
+			icon: "create:spout"
+			id: "5863A1DE44D75F99"
+			tasks: [
+				{
+					id: "547DECEA081232A3"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "0EE44345500A041A"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "41F239EC96B699BC"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+				{
+					id: "7565459E5A5885C4"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+			]
+			title: "Fluid Machines"
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6A01B57CEF284785"]
+			description: [
+				"The Encased Fan provides a nice way to generate air flow."
+				""
+				"Can be used for Smelting Items if Lava is placed in front of it. &4Incinerates food&r."
+				""
+				"Can be used for Smoking Food if Fire is placed in front of it."
+				""
+				"Can be used for Washing Items if Water is placed in front of it."
+				""
+				"Can be used for Haunting Items if Soul Fire is placed in front of it. Blinds Entities."
+				""
+				"Can be used for sucking / blowing Items upwards through Chutes."
+			]
+			id: "6250A49CDFF4DA31"
+			tasks: [{
+				id: "1BDC4CFC5C543529"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -1.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["348AC59A917B7849"]
-			description: ["Train Tracks are, well, tracks. You know, for the train?"]
-			id: "1C6AA4DCB5C737C5"
-			subtitle: "What, you thought you could add wings to trains?"
+			dependencies: ["6A01B57CEF284785"]
+			description: ["Crushes down small Items."]
+			id: "0524AD432E419BB6"
 			tasks: [{
-				count: 64L
-				id: "4029245E0C132C8B"
-				item: "create:track"
+				id: "3168B6E04EC51DA5"
+				item: "create:millstone"
 				type: "item"
 			}]
-			title: "Train Tracks"
-			x: -0.5d
-			y: -1.0d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["348AC59A917B7849"]
-			description: ["The Train Station is used to define stops for all incoming Trains. Give it a name, set it up next to a track, and start building a train! You won't be able to create Boegys without it"]
-			id: "79C07CC9B082B414"
-			subtitle: "Chooooo"
+			dependencies: ["7202821F0734709A"]
+			description: ["Brass Casings are extremely durable and lightweight, which is useful for advanced machinery."]
+			id: "35D140B48752580B"
 			tasks: [{
-				id: "68B0A1351BE29096"
-				item: "create:track_station"
+				id: "7FF19BFC12982708"
+				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.0d
+			x: -9.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["79C07CC9B082B414"]
-			description: ["Train Schedules can be given to the conductor of any train, and gives them the ability to automatically stop at any train station."]
-			id: "223FA57224786674"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "Late for work! Coming through!"
-			tasks: [{
-				id: "72D2C5C87D749381"
-				item: "create:schedule"
-				type: "item"
-			}]
-			x: 1.2857142857142847d
-			y: -0.5357142857142918d
-		}
-		{
-			dependencies: ["348AC59A917B7849"]
+			dependencies: ["6A01B57CEF284785"]
 			description: [
-				"Train Signals are used to block other trains from entering stations when another is already inside."
+				"There are some extra ways to move around Rotation, they're essential for Compact and Efficient &6Create&r Automation setups."
 				""
-				"Train Observers look for trains entering stations, and outputs redstone signals accordingly."
+				"&eGearbox&r, &eVertical Gearbox&r:"
+				"Gearboxes can send Rotation through different sides of the block, making for easy turns."
+				""
+				"&eGearshift&r:"
+				"When powered by Redstone, the direction the next block turns is reversed."
+				""
+				"&eEncased Chain Drive&r:"
+				"Chain Drives connected together share Rotation with each-other, which is useful for Sequenced Assembly setups with multiple machines in a row. Think of them like Mechanical Belts."
 			]
-			icon: "create:track_observer"
-			id: "331C2C5D418D4CDE"
-			subtitle: "Observe."
+			icon: "create:gearbox"
+			id: "772C8CADBC09C2CD"
 			tasks: [
 				{
-					id: "2C52B240C59E901D"
-					item: "create:track_signal"
+					id: "0BCDF71949A6153A"
+					item: "create:gearbox"
 					type: "item"
 				}
 				{
-					id: "6CC48FBA072C5200"
-					item: "create:track_observer"
+					id: "59075A2EAE21F402"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+				{
+					id: "3C990EC2B8B545FE"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					id: "418C0FC1F4C81221"
+					item: "create:encased_chain_drive"
 					type: "item"
 				}
 			]
-			title: "Misc Train Things"
-			x: 0.5d
-			y: 0.0d
+			title: "Gear Components"
+			x: -2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["348AC59A917B7849"]
+			dependencies: ["5760C47C99191165"]
 			description: [
-				"Train Controls are used to control the train's movement manually. Just right click it and hold W or S and you're good to go!"
+				"The Sprinkler can provide steady amounts of Fluid to the area."
 				""
-				"Train Doors | Trapdoors are doors specifically designed for train use. They close automatically when the train is in motion."
-			]
-			icon: "create:controls"
-			id: "7CF758A7F310A205"
-			subtitle: "All aboard!"
-			tasks: [
-				{
-					id: "78E912A5BACC0067"
-					item: "create:controls"
-					type: "item"
-				}
-				{
-					id: "35D5388C135D98FE"
-					item: "create:train_door"
-					type: "item"
-				}
-				{
-					id: "2BCF95F187F61671"
-					item: "create:train_trapdoor"
-					type: "item"
-				}
-			]
-			title: "Train Workings"
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"Mechanical Crafters are used for absolutely beautiful automatic crafting. It's not your average Sequential Fabricator, or Crafter from RFTools."
+				"With &bWater&r:"
+				"&bWaters&r the area, speeding up Crop Growth and making Wet Farmland."
+				"An Area where &bWater&r is Sprinkled, is also Raining."
 				""
-				"To use, place Crafters next to each-other. Use a Wrench to connect the Crafters to one-another. Make sure they all converge to one crafter, and have that crafter be the output. You can put an inventory in the direction the Output is facing for crafted items to be stored."
+				"With &cLava&r:"
+				"Produces Fire Damage to Entities being Sprinkled."
 				""
-				"You can craft Covers for your Crafters if you want to make items using the same Crafter setup without having to take most of it down."
+				"With &aPotion&r:"
+				"Provides a Potion Effect to Entities being Sprinkled."
 			]
-			hide: true
-			id: "08946BD8A5EC0153"
-			shape: "diamond"
+			id: "586449AE71BCFEC5"
 			tasks: [{
-				id: "5B6BDD313B392E87"
-				item: "create:mechanical_crafter"
+				id: "7A8C7ABFA1B2A0D7"
+				item: "sliceanddice:sprinkler"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 0.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["6C34C54C8169ABCC"]
-			description: [
-				"The Crushing Wheel is used for heavy grinding of objects."
-				""
-				"To use, attach two Wheels to Shafts either upright or on their sides one block apart, and make sure they're turning so the Wheels are moving inwards. Then, feed items into it for Crushing!"
-				""
-				"&oThe Gang Modpacks is not liable for any lost arms, legs, hands, other limbs not kept outside of the Crushing Wheels."
+			dependencies: ["7202821F0734709A"]
+			description: ["Rough Paper is used for Polishing certain Items."]
+			id: "5F1A74735B6BAF21"
+			tasks: [{
+				id: "39A8DCFFDEFFBE45"
+				item: {
+					Count: 1b
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F1A74735B6BAF21"]
+			description: ["Polished &cRose Quartz&r is made by sanding &cRose Quartz&r, which eventually combines with Silver to make Electron Tubes!"]
+			icon: "create:electron_tube"
+			id: "3B210E2E7CD3FA6A"
+			tasks: [
+				{
+					id: "7F300A566421A490"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "7A2383CF47E2023D"
+					item: "create:electron_tube"
+					type: "item"
+				}
 			]
-			hide: true
-			id: "3B55A2EEA3D22FD9"
-			shape: "diamond"
+			title: "Electron Material"
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3B210E2E7CD3FA6A"
+				"35D140B48752580B"
+			]
+			description: [
+				"&6Mechanical Crafters&r are required for precise Crafting Recipes no human could be able to do."
+				""
+				"Connect them Horizontally and Upwards, then use a Wrench to connect the little Belts together."
+				""
+				"Provide with Rotation, and you have a working &6Mechanical Crafter&e!"
+				""
+				"&6Slot Covers&r can be used to block &6Crafter&r'&6s&r Inputs to perform a specific recipe if you have a big &6Crafter&r."
+			]
+			icon: "create:mechanical_crafter"
+			id: "7535DE7ADDF6296D"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "69A3004C9FEF60D8"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "72968425CB158057"
+					item: "create:crafter_slot_cover"
+					type: "item"
+				}
+			]
+			title: "Mechanical Crafting"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A01B57CEF284785"]
+			description: [
+				"A &eWrench&r is your best friend when working with Create technology. "
+				""
+				"[&4R&e.&4Click&r] - Rotate's Block Face."
+				""
+				"[&4Shift &e+ &4R&e.&4Click&r] - Destroy's a &6Create&r Block and puts it straight into your Inventory."
+			]
+			id: "0052452002CB2C6A"
+			tasks: [{
+				id: "5C5B02BD2A998C11"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7535DE7ADDF6296D"]
+			description: ["Crushing Wheels breaks down Items and Entities when in-between them with ease. Provide both with Rotation and you're good to go."]
+			id: "4D1B7A54ECB74D36"
+			shape: "gear"
 			tasks: [{
 				count: 2L
-				id: "44B9660489493BAF"
+				id: "4F87BC53C987E12E"
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
 			title: "Crushing Wheels"
-			x: -11.5d
-			y: 1.0d
+			x: -10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6A01B57CEF284785"]
+			description: [
+				"Chutes are useful for dispensing Items into Inventories, as they act like Hoppers, but faster, and move 16 Items at a time."
+				""
+				"[&4R&e.&4Click &e+&r &6Wrench&r] - Adds a Window to the Chute."
+				""
+				"Encased Fans can be used to suck or blow Items Upwards through Chutes."
+			]
+			id: "388953CCA701FA03"
+			tasks: [{
+				id: "4C95F929B8A589B3"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7535DE7ADDF6296D"]
+			description: [
+				"Deploys Items onto other Items."
+				""
+				"Has an extra mode for Attacking."
+			]
+			id: "51BF5270D4FCA33F"
+			tasks: [{
+				id: "0053404868A216C6"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A01B57CEF284785"]
+			description: [
+				"Funnels allow for Items to enter Inventories with Elegance."
+				""
+				"&nOn Top of an Inventory&r:"
+				"Acts like a Hopper."
+				""
+				"&nOn the Side of an Inventory&r:"
+				"Click Items onto it to put them inside the Inventory without opening it."
+				""
+				"&nOn the Side of an Inventory, On a Belt&r:"
+				"Allows Items to enter the Inventory via Mechanical Belt."
+			]
+			id: "7F09F469432FDD90"
+			tasks: [{
+				id: "7FBD8ABB0199DCB5"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51BF5270D4FCA33F"]
+			description: ["Precision Mechanisms are very advanced Components built from Gold and Brass, used for precise moving parts or machines."]
+			id: "7A075FD539E5F0FB"
+			tasks: [{
+				id: "6461C720855E78B6"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A075FD539E5F0FB"]
+			description: ["Mechanical Arms are used for advanced logistics of compact machinery."]
+			id: "6E9E7819F86BAEE0"
+			tasks: [{
+				id: "25381EC047669CF5"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.5d
 		}
 	]
 	title: "&6Creating the World"

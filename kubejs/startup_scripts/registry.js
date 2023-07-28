@@ -1,3 +1,14 @@
+ItemEvents.toolTierRegistry(event =>{
+	event.add('fluix', tier =>{
+		tier.uses = 512
+		tier.speed = 0.3
+		tier.attackDamageBonus = 0.3
+		tier.level = 2
+		tier.enchantmentValue = 6
+		tier.repairIngredient = 'ae2:fluix_crystal'
+	})
+})
+
 StartupEvents.registry('item', event => {
 	event.create('mk1circuit').displayName('MK1 Circuit')
 	event.create('mk2circuit').displayName('MK2 Circuit')
@@ -27,8 +38,16 @@ StartupEvents.registry('item', event => {
 	event.create('archaic_gold_ingot').tag('forge:ingots').tag('forge:ingots/archaic_gold').fireResistant(true).rarity("uncommon")
 	event.create('archaic_pink_gold_ingot').tag('forge:ingots').tag('forge:ingots/archaic_pink_gold').fireResistant(true).rarity("uncommon")
 	event.create('meteorite_sample').maxStackSize(1).fireResistant(true).rarity('supreme')
+	event.create('ae2:printed_fusion_processor')
+	event.create('ae2:fusion_processor')
+	event.create('ae2:fusion_processor_press')
+	event.create('ae2:dilithium_crystal')
+	event.create('create:andesite_mechanism')
+	event.create('create:copper_mechanism')
 	//Food
 	event.create('cooked_apple').food(food => { food.hunger(8).saturation(1) })
+	//Tools
+	event.create('ae2:fluix_cutting_knife', 'sword').tier('fluix').unstackable().group('tools')
 })
 StartupEvents.registry('block', event => {
 	event.create('dielectric_block').material('moss').hardness(0.5).tagBlock('minecraft:mineable/hoe')
@@ -72,7 +91,6 @@ StartupEvents.registry('fluid', event => {
 		.noBucket()
 		.noBucket()
 		.displayName('Carbon Dioxide Liquid')
-	//Chemical Liquids
 	event.create('calcium_hydroxide_liquid')
 		.thinTexture(0xC6E2D9)
 		.noBucket()
@@ -91,4 +109,6 @@ StartupEvents.registry('fluid', event => {
 		.displayName('Liquifacted Tar'),
 	event.create('witched_beeswax')
 		.thinTexture(0x69353a)
+	event.create('energetic_substance')
+		.thickTexture(0xff4600)
 })

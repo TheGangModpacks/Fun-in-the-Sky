@@ -35,20 +35,4 @@ CapabilityEvents.blockEntity(event => {
 					return 1
 				})
 			)
-			/*event.attach("thermal:machine_smelter", CapabilityBuilder.FLUID.customBlockEntity()
-			.getCapacity(be => 4000)
-			.getFluid(be => {
-				let { level, blockPos } = be
-				let block = level.getBlockState(blockPos)
-				if (!block.getValue($AbstractFurnaceBlock.LIT)) return Fluid.of('kubejs:carbon_dioxide_liquid', 0)
-				return Fluid.of(be.getCapability(CapabilityBuilder.FLUID).getFluid().id, be.getCapability(CapabilityBuilder.FLUID).getFluid().amount)
-			})
-			.onFill((be, stack, simulate) => {
-				if (stack.amount > 4000 || stack.id != 'kubejs:lithium_peroxide_liquid') return 0
-				let { level, blockPos } = be
-				let block = level.getBlockState(blockPos)
-				if (block.getValue($AbstractFurnaceBlock.LIT)) return 0
-				return stack.amount
-			})
-		)*/
 })

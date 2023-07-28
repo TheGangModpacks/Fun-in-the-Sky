@@ -72,9 +72,19 @@
 		}
 		{
 			dependencies: ["10F52602C501C23E"]
-			description: ["In your inventory, you see a very large list of some kind to your right. It's a list of every block and item in the game. You can click on them to view recipes, or show what recipes they are used for. What a revoluntionary invention!"]
+			description: [
+				"EMI is an extra and beautiful layer to Just Enough Items (JEI). To use:"
+				"&nKeybinds&r:"
+				""
+				"[&4R&r] Shows how to make something. "
+				"[&4U&r] Shows recipes the thing is used for."
+				"[&4Shift&r] Shows the first recipe for something on the Tooltip."
+				"[&4A&r] Adds something as a Favorite."
+				"[&4T&r] Shows recipe Tree."
+			]
 			icon: "minecraft:oak_leaves"
 			id: "13CD8476A2D573FB"
+			min_width: 250
 			rewards: [{
 				id: "5E22FB23BD4ADA54"
 				item: "farmersdelight:canvas_sign"
@@ -86,7 +96,7 @@
 				title: "I've Just Had Enough!"
 				type: "checkmark"
 			}]
-			title: "There's Just enough items!"
+			title: "Egad! My Items!"
 			x: 0.5d
 			y: -4.5d
 		}
