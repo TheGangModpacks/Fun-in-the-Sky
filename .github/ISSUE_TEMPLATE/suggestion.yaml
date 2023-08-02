@@ -1,7 +1,7 @@
 name: Suggestion
 description: Suggest an idea for the Modpack.
 title: "[SUGGESTION] "
-labels: [suggestion]
+labels: [Enhancement]
 body:
   - type: textarea
     id: suggestion-description
