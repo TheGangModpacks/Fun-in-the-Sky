@@ -1,7 +1,7 @@
 name: Bug Report
 description: Create a report to help us improve the Modpack.
 title: "[BUG] "
-labels: [bug]
+labels: [Bug]
 body:
   - type: dropdown
     id: type
