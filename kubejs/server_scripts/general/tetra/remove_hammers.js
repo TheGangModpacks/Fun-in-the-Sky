@@ -1,0 +1,10 @@
+ServerEvents.recipes(event => {
+    event.remove({ id: 'tetra:hammer/granite' })
+    event.remove({ id: 'tetra:hammer/spruce' })
+    event.remove({ id: 'tetra:hammer/diorite' })
+    event.remove({ id: 'tetra:hammer/dark_oak' })
+    event.remove({ id: 'tetra:hammer/birch' })
+    event.remove({ id: 'tetra:hammer/andesite' })
+    event.remove({ id: 'tetra:hammer/jungle' })
+    event.remove({ id: 'tetra:hammer/acacia' })
+})

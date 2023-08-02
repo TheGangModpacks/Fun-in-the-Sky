@@ -6,6 +6,10 @@
 !config/ftbquests/**
 !config/ftbquests/quests/
 !config/ftbquests/quests/**
+!config/biometweaker/features/
+!config/biometweaker/features/**
+!config/biometweaker/scripts/
+!config/biometweaker/scripts/**
 !config/emendatusenigmatica/material/
 !config/emendatusenigmatica/material/**
 !/kubejs/assets/

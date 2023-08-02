@@ -1,0 +1,11 @@
+{
+    "tetra.variant.basic_hammer/leaded_iron": "Leaded Iron hammer",
+    "tetra.material.leaded_iron.prefix": "Leaded Iron",
+
+    "tetra.variant.basic_hammer/compressed_iron": "Compressed Iron hammer",
+    "tetra.material.compressed_iron.prefix": "Compressed Iron",
+
+    "tetra.variant.basic_hammer/source": "Source Gem hammer",
+    "tetra.material.source.prefix": "Source Gem"
+
+}

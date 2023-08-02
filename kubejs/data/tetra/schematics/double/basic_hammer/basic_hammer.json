@@ -1,0 +1,77 @@
+{
+    "replace": true,
+    "slots": ["double/head_left", "double/head_right"],
+    "keySuffixes": ["_left", "_right"],
+    "materialSlotCount": 1,
+    "glyph": {
+        "textureX": 64,
+        "textureY": 0
+    },
+    "displayType": "major",
+    "outcomes": [
+        {
+            "material": {
+                "tag": "minecraft:planks"
+            },
+            "moduleKey":"double/basic_hammer",
+            "moduleVariant":"basic_hammer/oak"
+        },
+        {
+            "material": {
+                "items": ["minecraft:stone"]
+            },
+            "moduleKey":"double/basic_hammer",
+            "moduleVariant":"basic_hammer/stone"
+        },
+        {
+            "material": {
+                "tag": "forge:ingots/leaded_iron"
+            },
+            "requiredTools": {
+                "hammer_dig": 2
+            },
+            "moduleKey":"double/basic_hammer",
+            "moduleVariant":"basic_hammer/leaded_iron"
+        },
+        {
+            "material": {
+                "tag": "forge:ingots/compressed_iron"
+            },
+            "requiredTools": {
+                "hammer_dig": 3
+            },
+            "moduleKey": "double/basic_hammer",
+            "moduleVariant": "basic_hammer/compressed_iron"
+        },
+        {
+            "material": {
+                "tag": "forge:ingots/manasteel"
+            },
+            "requiredTools": {
+                "hammer_dig": 4
+            },
+            "moduleKey": "double/basic_hammer",
+            "moduleVariant": "basic_hammer/manasteel"
+        },
+        {
+            "material": {
+                "tag": "forge:ingots/desh"
+            },
+            "requiredTools": {
+                "hammer_dig": 5
+            },
+            "moduleKey": "double/basic_hammer",
+            "moduleVariant": "basic_hammer/desh"
+        },
+        {
+            "material": {
+                "tag": "forge:gems/source"
+            },
+            "requiredTools": {
+                "hammer_dig": 6
+            },
+            "moduleKey": "double/basic_hammer",
+            "moduleVariant": "basic_hammer/source"
+        }
+    ]
+}

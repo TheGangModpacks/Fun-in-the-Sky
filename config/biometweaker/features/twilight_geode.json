@@ -1,0 +1,27 @@
+{
+  "feature": "biometweaker:twilight_geode_data",
+  "placement": [
+    {
+      "chance": 40,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "absolute": -15
+        },
+        "max_inclusive": {
+          "absolute": -10
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

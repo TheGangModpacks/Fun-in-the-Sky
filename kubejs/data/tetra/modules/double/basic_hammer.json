@@ -1,0 +1,174 @@
+{
+    "replace": true,
+    "slots": ["double/head_left", "double/head_right"],
+    "slotSuffixes": ["_left", "_right"],
+    "type": "tetra:multi_major_module",
+    "variants": [
+        {
+            "key": "basic_hammer/oak",
+            "attributes": {
+                "generic.attack_damage": 3,
+                "generic.attack_speed": -1.25
+            },
+            "durability": 32,
+            "integrity": -1,
+            "magicCapacity": 90,
+            "glyph": {
+                "textureX": 64,
+                "tint": "oak_glyph"
+            },
+            "category": "wood",
+            "models": [
+                {
+                    "tint": "oak",
+                    "location": "tetra:items/module/double/head/basic_hammer/log"
+                }
+            ]
+        },
+        {
+            "key": "basic_hammer/stone",
+            "tools": {
+                "hammer_dig": [1, 3.33]
+            },
+            "attributes": {
+                "generic.attack_damage": 5.5,
+                "generic.attack_speed": -1.4
+            },
+            "durability": 99,
+            "integrity": -1,
+            "magicCapacity": 90,
+            "glyph": {
+                "textureX": 64,
+                "tint": "aaaaaa"
+            },
+            "category": "stone",
+            "models": [
+                {
+                    "tint": "aaaaaa",
+                    "location": "tetra:items/module/double/head/basic_hammer/stone"
+                }
+            ]
+        },
+        {
+            "key": "basic_hammer/leaded_iron",
+            "tools": {
+                "hammer_dig": [2, 4.17]
+            },
+            "attributes": {
+                "generic.attack_damage": 6.5,
+                "generic.attack_speed": -1.35
+            },
+            "durability": 138,
+            "integrity": -2,
+            "magicCapacity": 84,
+            "glyph": {
+                "textureX": 64,
+                "tint": "203058"
+            },
+            "category": "stone",
+            "models": [
+                {
+                    "tint": "475477",
+                    "location": "tetra:items/module/double/head/basic_hammer/stone"
+                }
+            ]
+        },
+        {
+            "key": "basic_hammer/compressed_iron",
+            "tools": {
+                "hammer_dig": [3, 5.2]
+            },
+            "attributes": {
+                "generic.attack_damage": 8,
+                "generic.attack_speed": -1.5
+            },
+            "durability": 375,
+            "integrity": -2,
+            "magicCapacity": 90,
+            "glyph": {
+                "textureX": 64,
+                "tint": "c0c0c0"
+            },
+            "category": "metal",
+            "models": [
+                {
+                    "tint": "c0c0c0",
+                    "location": "tetra:items/module/double/head/basic_hammer/metal"
+                }
+            ]
+        },
+        {
+            "key": "basic_hammer/manasteel",
+            "tools": {
+                "hammer_dig": [4, 6.5]
+            },
+            "attributes": {
+                "generic.attack_damage": 6.5,
+                "generic.attack_speed": -1.25
+            },
+            "durability": 265,
+            "integrity": -3,
+            "magicCapacity": 120,
+            "glyph": {
+                "textureX": 64,
+                "tint": "6ea8f1"
+            },
+            "category": "metal",
+            "models": [
+                {
+                    "tint": "0e60e5",
+                    "location": "tetra:items/module/double/head/basic_hammer/metal"
+                }
+            ]
+        },
+        {
+            "key": "basic_hammer/desh",
+            "tools": {
+                "hammer_dig": [5, 7.5]
+            },
+            "attributes": {
+                "generic.attack_damage": 9.5,
+                "generic.attack_speed": -1.5
+            },
+            "durability": 945,
+            "integrity": -3,
+            "magicCapacity": 90,
+            "glyph": {
+                "textureX": 64,
+                "tint": "d38b4c"
+            },
+            "category": "metal",
+            "models": [
+                {
+                    "tint": "ff9437",
+                    "location": "tetra:items/module/double/head/basic_hammer/metal"
+                }
+            ]
+        },
+        {
+            "key": "basic_hammer/source",
+            "tools": {
+                "hammer_dig": [6, 8.75]
+            },
+            "attributes": {
+                "generic.attack_damage": 6.25,
+                "generic.attack_speed": -0.85
+            },
+            "durability": 625,
+            "integrity": -4,
+            "magicCapacity": 165,
+            "glyph": {
+                "textureX": 64,
+                "tint": "da97fc"
+            },
+            "category": "gem",
+            "models": [
+                {
+                    "tint": "d786ff",
+                    "location": "tetra:items/module/double/head/basic_hammer/metal"
+                }
+            ]
+        }
+
+    ]
+}
