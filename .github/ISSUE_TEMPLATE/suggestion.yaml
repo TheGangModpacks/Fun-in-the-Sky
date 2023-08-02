@@ -1,0 +1,12 @@
+name: Suggestion
+description: Suggest an idea for the Modpack.
+title: "[SUGGESTION] "
+labels: [suggestion]
+body:
+  - type: textarea
+    id: suggestion-description
+    attributes:
+      label: Suggestion Description
+      description: A clear and concise description of what you want to suggest.
+    validations:
+      required: true
