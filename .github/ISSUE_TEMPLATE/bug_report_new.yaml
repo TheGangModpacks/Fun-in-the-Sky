@@ -1,5 +1,5 @@
-name: Bug report new
-description: Create a report to help us improve
+name: Bug Report
+description: Create a report to help us improve the Modpack.
 title: "[BUG] "
 labels: [bug]
 body:
@@ -18,7 +18,7 @@ body:
     attributes:
       label: Modpack Version
       description: Enter the modpack version you are using.
-      placeholder: e.g. 1.0.0
+      placeholder: e.g. 0.1.6
     validations:
       required: true
   - type: textarea
@@ -43,12 +43,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: screenshots-or-videos
-    attributes:
-      label: Screenshots or Videos (Optional)
-      description: If applicable, add screenshots or videos to help explain your problem.
-  - type: textarea
     id: additional-context
     attributes:
       label: Additional Context (Optional)
-      description: Add any other context about the problem here.
+      description: Add any other context about the problem here (Screenshots, User Modifications).
