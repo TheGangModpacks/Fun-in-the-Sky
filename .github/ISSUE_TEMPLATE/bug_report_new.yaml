@@ -42,6 +42,14 @@ body:
       description: A clear and concise description of what you expected to happen.
     validations:
       required: true
+    - type: textarea
+    id: crash-reports-and-logs
+    attributes:
+      label: Crash Reports and Logs
+      description: Please provide a link to your crash report and latest.log file, if applicable. You can use a service like https://pastebin.com/ or https://gist.github.com/ to upload your files and share the links.
+    validations:
+      required: false
+
   - type: textarea
     id: additional-context
     attributes:
