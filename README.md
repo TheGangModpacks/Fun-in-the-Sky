@@ -1,3 +1,5 @@
+### _This Modpack is currently not in production due to complications_
+
 # Fun in the Sky
 Welcome to the Github Repo for FitS!
 When submitting an issue, you must take note:
